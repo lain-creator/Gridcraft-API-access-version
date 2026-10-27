@@ -17,3 +17,4 @@ None: every bundled asset is original to GridCraft. Builds made with craft-fonts
 
 Metafile parser adapted from WordCraft v0.11.0 (e31f2f06), copyright ArtCraft Team and contributors, MIT OR Apache-2.0. Source: https://github.com/storytold/wordcraft/tree/v0.11.0/crates/metafile
 The egui-winit 0.36.2 integration is vendored under MIT OR Apache-2.0; one local change preserves image-only paste events.
+The egui 0.36.2 UI library is vendored under MIT OR Apache-2.0, copyright (c) 2018-2021 Emil Ernerfeldt. Local changes center button contents and single-line input text; see vendor/egui/LOCAL-PATCH.md. License texts are shipped with this build.

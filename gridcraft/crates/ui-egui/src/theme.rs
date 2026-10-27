@@ -653,7 +653,10 @@ fn load_fallback(fonts: &mut FontDefinitions, han: HanOrder) -> Vec<String> {
             if loaded.contains(path) {
                 break; // a face loaded for an earlier script already covers this one
             }
-            if let Some(fd) = try_load(&[(path.as_str(), *index)]) {
+            if let Some(mut fd) = try_load(&[(path.as_str(), *index)]) {
+                if key.starts_with("sys-cjk-") {
+                    center_cjk_fallback(&mut fd);
+                }
                 fonts.font_data.insert(key.to_string(), Arc::new(fd));
                 keys.push(key.to_string());
                 loaded.push(path.clone());
@@ -662,6 +665,35 @@ fn load_fallback(fonts: &mut FontDefinitions, han: HanOrder) -> Vec<String> {
         }
     }
     keys
+}
+
+/// epaint centers a fallback face by its ascent/descent/leading, not its visible glyphs.
+/// Some CJK fonts (notably macOS Hiragino) have very asymmetric line metrics: their ink
+/// can end up above the line and get clipped in buttons and input fields. Derive the visual
+/// correction from the actual face, in em units, so it follows font size and display scale.
+/// This changes neither advances, line heights, workbook font sizes nor cell alignment.
+#[cfg(not(target_arch = "wasm32"))]
+fn center_cjk_fallback(data: &mut FontData) {
+    use skrifa::{
+        MetadataProvider,
+        instance::{LocationRef, Size},
+    };
+
+    let Ok(face) = skrifa::FontRef::from_index(&data.font, data.index) else { return };
+    let metrics = face.metrics(Size::unscaled(), LocationRef::default());
+    if metrics.units_per_em == 0 {
+        return;
+    }
+    let glyphs = face.glyph_metrics(Size::unscaled(), LocationRef::default());
+    let bounds = ['中', '田', '한'].into_iter().find_map(|c| face.charmap().map(c).and_then(|id| glyphs.bounds(id)));
+    let Some(bounds) = bounds else { return };
+    let ink_center = (bounds.y_min + bounds.y_max) * 0.5;
+    let line_center = (metrics.ascent + metrics.descent - metrics.leading) * 0.5;
+    let correction = (ink_center - line_center) / f32::from(metrics.units_per_em);
+    // A malformed font must not shift glyphs arbitrarily far outside the controls.
+    if correction.is_finite() {
+        data.tweak.y_offset_factor = correction.clamp(-0.5, 0.5);
+    }
 }
 
 #[cfg(target_arch = "wasm32")]

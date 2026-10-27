@@ -4,6 +4,8 @@
 
 本仓库保留先前的中文界面、XLS 转换、图片显示与剪贴板图片修复。主要源码在 `gridcraft/`，本地开源依赖在相邻的 `craft-libs/`。
 
+2026-10-27 对齐修复：按钮文字自动水平、垂直居中；单行输入框的文字与光标垂直居中；按实际字体度量校正中日韩回退字体的显示位置。多行输入仍从顶部开始，不修改工作簿的字号、单元格对齐、行高或原文件。详细验证见 `gridcraft/docs/local-chrome-alignment.md`。
+
 ## 使用
 
 1. 解压完整软件包，打开 GridCraft。Windows 10/11 x64 运行 `GridCraft.exe`；Mac 打开 `GridCraft.app`。
@@ -38,7 +40,7 @@ API Key 默认仅保留在进程内；勾选记住后，Mac 使用系统钥匙�
 
 ## 构建
 
-安装 Rust 1.95.0，在 `gridcraft/` 中运行 `cargo build --locked --release -p gridcraft`。本仓库保留 `vendor/egui-winit` 补丁和独立 `crates/metafile`，不能省略。Cargo 获取其余锁定依赖。原生程序需要系统 curl；Windows 10/11 使用内置 curl.exe。
+安装 Rust 1.95.0，在 `gridcraft/` 中运行 `cargo build --locked --release -p gridcraft`。本仓库保留 `vendor/egui` 对齐补丁、`vendor/egui-winit` 剪贴板补丁和独立 `crates/metafile`，不能省略。Cargo 获取其余锁定依赖。原生程序需要系统 curl；Windows 10/11 使用内置 curl.exe。
 
 打包示例：
 

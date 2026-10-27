@@ -6,11 +6,15 @@ parser=argparse.ArgumentParser()
 parser.add_argument('--platform',choices=['macos-arm64','win64'],required=True)
 parser.add_argument('--binary',type=Path,required=True)
 parser.add_argument('--output',type=Path,required=True)
+parser.add_argument('--version',default='0.12.1-api.20261027.1')
+parser.add_argument('--patch-label',default='20261027.4 Centered bilingual controls and CJK fallback metrics')
 args=parser.parse_args()
 root=Path(__file__).resolve().parents[1]
 source=root/'gridcraft'
 out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
-version='0.12.1-api.20261027'
+version=args.version
+if not version or any(c not in '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-' for c in version):
+    raise SystemExit('Invalid package version')
 archive=out/f'GridCraft-{version}-{args.platform}.zip'
 if not args.binary.is_file():raise SystemExit('The compiled binary does not exist')
 
@@ -21,7 +25,7 @@ with tempfile.TemporaryDirectory(prefix='gridcraft-api-package-') as temp:
         binary.parent.mkdir(parents=True);resource.mkdir()
         shutil.copyfile(args.binary,binary);os.chmod(binary,0o755)
         template=(source/'packaging/macos/Info.plist.in').read_text().replace('@SHORT_VERSION@','0.12.1').replace('@VERSION@',version).replace('@BUILD_SHA@','api-20261027')
-        info=plistlib.loads(template.encode());info['GridCraftLocalPatch']='20261027.3 Third-party API and selection assistant'
+        info=plistlib.loads(template.encode());info['GridCraftLocalPatch']=args.patch_label
         (bundle/'Contents/Info.plist').write_bytes(plistlib.dumps(info));(bundle/'Contents/PkgInfo').write_bytes(b'APPL????')
         shutil.copyfile(source/'assets/app-icon/gridcraft.icns',resource/'GridCraft.icns')
         destination=resource
@@ -31,6 +35,8 @@ with tempfile.TemporaryDirectory(prefix='gridcraft-api-package-') as temp:
         shutil.copy2(source/name,destination/name)
         shutil.copy2(root/'craft-libs'/name,destination/('craft-libs-'+name))
     shutil.copy2(root/'README.md',destination/'使用说明.md')
+    for name in ['LICENSE-MIT','LICENSE-APACHE']:
+        shutil.copy2(source/'vendor/egui'/name,destination/('egui-'+name))
     for path in (source/'docs').glob('local-*.md'):shutil.copy2(path,destination/path.name)
     for path in (source/'assets/fonts').glob('OFL-*.txt'):shutil.copy2(path,destination/path.name)
     if args.platform=='macos-arm64':

@@ -83,4 +83,5 @@ codegen-units = 16
 debug = 0
 
 [patch.crates-io]
+egui = { path = "vendor/egui" }
 egui-winit = { path = "vendor/egui-winit" }
