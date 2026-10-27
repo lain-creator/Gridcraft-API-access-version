@@ -9,6 +9,9 @@
 #![cfg_attr(all(target_os = "windows", not(debug_assertions)), windows_subsystem = "windows")]
 #![deny(clippy::unwrap_used, clippy::expect_used, clippy::panic, clippy::unimplemented, clippy::todo, clippy::unreachable)]
 
+mod ai_api;
+#[cfg(any(target_os = "macos", target_os = "windows"))]
+mod ai_translation;
 mod animations;
 #[cfg(target_os = "macos")]
 mod apple_events;
@@ -19,8 +22,6 @@ mod file_dialogs;
 #[cfg(any(target_os = "windows", target_os = "macos", test))]
 mod graphics;
 mod logging;
-#[cfg(any(target_os = "macos", target_os = "windows"))]
-mod pcbtool;
 mod print;
 mod region;
 #[cfg(target_os = "macos")]
@@ -246,9 +247,11 @@ fn write_prefs(path: &std::path::Path, bytes: &[u8]) -> std::io::Result<()> {
 fn services(file_dialog: file_dialogs::Hook, ctx: &egui::Context) -> Services {
     Services {
         #[cfg(any(target_os = "macos", target_os = "windows"))]
-        translate_document: Some(std::sync::Arc::new(pcbtool::translate)),
+        translate_document: Some(std::sync::Arc::new(ai_translation::translate)),
+        api_complete: Some(std::sync::Arc::new(ai_api::complete)),
+        api_save_settings: Some(Box::new(ai_api::save_settings)),
         #[cfg(any(target_os = "macos", target_os = "windows"))]
-        publish_translation: Some(Box::new(pcbtool::publish)),
+        publish_translation: Some(Box::new(ai_translation::publish)),
         file_dialog: Some(file_dialog),
         printers: Some(print::discover()),
         print_native: Some(print::submit()),
@@ -352,7 +355,7 @@ fn main() -> eframe::Result {
             "--version" => {
                 let _ = std::io::Write::write_fmt(
                     &mut std::io::stdout(),
-                    format_args!("wordcraft {} ({}) + local PCBtool translation 20261027\n", env!("CARGO_PKG_VERSION"), build_sha()),
+                    format_args!("wordcraft {} ({}) + configurable API translation 20261027.2\n", env!("CARGO_PKG_VERSION"), build_sha()),
                 );
                 return Ok(());
             }
@@ -442,6 +445,10 @@ fn main() -> eframe::Result {
             let mut app = WordApp::new(session, services(file_dialog, &cc.egui_ctx));
             app.ui.language = "zh-hans".into();
             load_prefs(&mut app);
+            match ai_api::load_settings() {
+                Ok(settings) => app.api.settings = settings,
+                Err(error) => app.status(error),
+            }
             load_user_dictionary(&mut app);
             // A region chosen in File › Options replaces the system's for the first blank
             // document too (#838).

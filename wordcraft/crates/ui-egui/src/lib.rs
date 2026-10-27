@@ -22,6 +22,7 @@ macro_rules! tl {
 
 pub mod a11y;
 pub mod a11y_pane;
+pub mod api;
 pub mod async_saves;
 pub mod autoscroll;
 pub mod backstage;
@@ -100,6 +101,8 @@ pub use file_dialogs::{FileDialogAnswer, FileDialogRequest, open_filters};
 /// Platform services injected by the host (file dialogs, file I/O).
 #[derive(Default)]
 pub struct Services {
+    pub api_complete: Option<api::Completion>,
+    pub api_save_settings: Option<api::SaveSettings>,
     /// Manual, text-only translation on a desktop worker.
     pub translate_document: Option<translation::Translator>,
     /// Save and open the frozen translation in a separate window, leaving this session intact.
@@ -542,6 +545,7 @@ fn migrate_units(v: &mut Value) {
 /// The application.
 pub struct WordApp {
     pub(crate) translation: translation::State,
+    pub api: api::State,
     pub session: Session,
     pub ui: UiState,
     pub services: Services,
@@ -710,6 +714,7 @@ impl WordApp {
         }
         WordApp {
             translation: Default::default(),
+            api: Default::default(),
             session,
             ui: UiState::default(),
             services,
@@ -993,6 +998,9 @@ impl WordApp {
     /// Run a command for a script or an agent (control channel, MCP bridge): never asks first.
     /// UI-level commands (`ui.*`) are handled here, the rest by the engine.
     pub fn execute(&mut self, id: &str, params: Value) -> Result<Value, String> {
+        if let Some(result) = self.api_command(id) {
+            return result;
+        }
         if let Some(result) = self.translation_command(id, &params) {
             return result;
         }
@@ -2521,6 +2529,7 @@ impl WordApp {
         content_controls::popup(self, &ctx);
         dialogs::show(self, &ctx);
         self.translation_window(&ctx);
+        self.api_window(&ctx);
         #[cfg(not(target_arch = "wasm32"))]
         file_browser::show(self, &ctx);
         colors::show(self, &ctx);

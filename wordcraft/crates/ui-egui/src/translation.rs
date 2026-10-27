@@ -18,7 +18,7 @@ pub struct Translation {
     pub skipped_special: usize,
     pub details: Vec<Value>,
 }
-pub type Translator = Arc<dyn Fn(Request, Progress, &AtomicBool) -> Result<Translation, String> + Send + Sync>;
+pub type Translator = Arc<dyn Fn(Request, crate::api::Profile, Progress, &AtomicBool) -> Result<Translation, String> + Send + Sync>;
 struct Job {
     cancel: Arc<AtomicBool>,
     progress: Progress,
@@ -47,11 +47,13 @@ impl Default for State {
 
 pub fn commands(app: &WordApp) -> Vec<Value> {
     [
-        ("ui.translateSelection","翻译选中区域","{}; current selection to English; explicit send to PCBtool"),
-        ("ui.translateDocument","翻译整个文档","{}; document to English; explicit send to PCBtool"),
-        ("ui.translateChinese","翻译成中文","{}; current selection to Chinese; explicit send to PCBtool"),
-        ("file.translateEnglish","Translate to English","{allowHttpUpload:true,scope?:selection|document}; default document"),
-        ("file.translateChinese","Translate to Chinese","{allowHttpUpload:true,scope?:selection|document}; default selection"),
+        ("ui.api.settings","API 设置","{}; open user-configured API settings; sends no document"),
+        ("ui.api.status","API 设置状态","{}; redacted settings, never includes API Key"),
+        ("ui.translateSelection","翻译选中区域","{}; current selection to English; explicit send to configured API"),
+        ("ui.translateDocument","翻译整个文档","{}; document to English; explicit send to configured API"),
+        ("ui.translateChinese","翻译成中文","{}; current selection to Chinese; explicit send to configured API"),
+        ("file.translateEnglish","Translate to English","{allowApiSend:true,scope?:selection|document}; default document"),
+        ("file.translateChinese","Translate to Chinese","{allowApiSend:true,scope?:selection|document}; default selection"),
         ("file.translation.status","Translation progress","{} → {state,changedSegments?,skippedBilingual?,skippedSpecial?,targetLanguage?}"),
         ("file.translation.cancel","Cancel translation","{}; stops local waiting, cannot delete server-side data"),
     ].into_iter().map(|(id,label,params)|json!({"id":id,"label":label,"params":params,"location":"Home › 翻译","enabled":app.services.translate_document.is_some(),"mutates":false})).collect()
@@ -81,8 +83,8 @@ impl WordApp {
                 if self.translation.job.is_some() {
                     return Some(Ok(self.translation.status.clone()));
                 }
-                if id.starts_with("file.") && p.get("allowHttpUpload").and_then(Value::as_bool) != Some(true) {
-                    return Some(Err("需要 allowHttpUpload:true,确认将待译文字发送到 http://tech0.top:37002/.".into()));
+                if id.starts_with("file.") && p.get("allowApiSend").and_then(Value::as_bool) != Some(true) {
+                    return Some(Err("需要 allowApiSend:true,确认将待译文字发送到当前配置的 API.".into()));
                 }
                 let target = if id.ends_with("Chinese") { Language::Chinese } else { Language::English };
                 let scope = if id.starts_with("ui.") {
@@ -132,6 +134,16 @@ impl WordApp {
             .or_else(|| self.session.file_name.clone())
             .unwrap_or_else(|| self.title_stem());
         let source = self.session.document_id();
+        let profile = self.api.settings.selected()?.clone();
+        if profile.base_url.trim().is_empty()
+            || profile.model.trim().is_empty()
+            || (profile.api_key.trim().is_empty()
+                && !profile.base_url.starts_with("http://localhost")
+                && !profile.base_url.starts_with("http://127.0.0.1"))
+        {
+            self.api.open = true;
+            return Err("请先点击 API 设置,填写 API 地址,模型 ID 和密钥.".into());
+        }
         let request = Request { doc: self.session.doc.clone(), scope, target };
         let cancel = Arc::new(AtomicBool::new(false));
         let worker_cancel = cancel.clone();
@@ -139,7 +151,7 @@ impl WordApp {
         let worker_progress = progress.clone();
         let worker = std::thread::Builder::new()
             .name("wordcraft-translation".into())
-            .spawn(move || service(request, worker_progress, &worker_cancel))
+            .spawn(move || service(request, profile, worker_progress, &worker_cancel))
             .map_err(|e| e.to_string())?;
         self.translation.status = json!({"state":"running","pending":true,"sourceId":source,"scope":label,"targetLanguage":target.code()});
         self.translation.feedback.clear();
@@ -223,8 +235,12 @@ impl WordApp {
             return;
         }
         let mut open = true;
-        egui::Window::new("PCBtool · 中英翻译").open(&mut open).default_width(500.0).resizable(false).show(ctx, |ui| {
-            ui.hyperlink_to("tech0.top · PCBtool", "http://tech0.top:37002/PCBtool");
+        egui::Window::new("第三方 API · 中英翻译").open(&mut open).default_width(500.0).resizable(false).show(ctx, |ui| {
+            ui.label(self.api.settings.selected().map(|p| format!("服务商:{} · 模型:{}", p.name, p.model)).unwrap_or_default());
+            if ui.button("API 设置").clicked() {
+                self.api.open = true;
+            }
+            ui.small("候选文字按批发送;跳过项可能复核一次.不自动重试;不上传完整文件或图片.");
             if let Some(job) = &self.translation.job {
                 ui.label(format!("{} → {}", job.scope, job.target.label()));
                 ui.horizontal(|ui| {
@@ -274,10 +290,12 @@ mod tests {
     fn fixture(service: Translator) -> WordApp {
         let mut session = wordcraft_engine::Session::new(Document::new());
         session.run("text.insert", &json!({"text":"板材","raw":true})).unwrap();
-        WordApp::new(
+        let mut app = WordApp::new(
             session,
             Services { translate_document: Some(service), publish_translation: Some(Box::new(|_, _| Ok("test.docx".into()))), ..Default::default() },
-        )
+        );
+        app.api.settings.profiles[0].api_key = "synthetic-test-key".into();
+        app
     }
     fn wait(app: &mut WordApp) {
         let ctx = egui::Context::default();
@@ -295,10 +313,11 @@ mod tests {
     fn snapshot_result_is_a_new_dirty_document_and_preserves_later_edits() {
         let ready = Arc::new(AtomicBool::new(false));
         let worker_ready = ready.clone();
-        let mut app = fixture(Arc::new(move |request, _, flag| {
+        let mut app = fixture(Arc::new(move |request, profile, _, flag| {
             while !worker_ready.load(Ordering::Relaxed) && !flag.load(Ordering::Relaxed) {
                 std::thread::yield_now();
             }
+            assert_eq!(profile.api_key, "synthetic-test-key", "in-flight settings are frozen");
             let mut doc = request.doc;
             doc.insert_text(&Pos::body(0, 6), "\nBoard material", &CharProps::default()).map_err(|e| e.to_string())?;
             Ok(Translation { doc: Some(doc), changed: 1, ..Default::default() })
@@ -311,6 +330,7 @@ mod tests {
         }));
         let source = app.session.document_id();
         app.execute("ui.translateDocument", json!({})).unwrap();
+        app.api.settings.profiles[0].api_key = "changed-after-send".into();
         app.execute("text.insert", json!({"text":"后续修改","raw":true})).unwrap();
         ready.store(true, Ordering::Relaxed);
         wait(&mut app);
@@ -322,7 +342,7 @@ mod tests {
     }
     #[test]
     fn chinese_button_captures_only_selected_text_and_programmatic_send_is_explicit() {
-        let mut app = fixture(Arc::new(|r, _, _| {
+        let mut app = fixture(Arc::new(|r, _, _, _| {
             assert_eq!(r.target, Language::Chinese);
             let Scope::Selection(s) = r.scope else { panic!("scope") };
             assert_eq!(s[0].anchor, Pos::body(0, 0));
@@ -339,12 +359,12 @@ mod tests {
     }
     #[test]
     fn failures_and_cancel_never_open_partial_results() {
-        let mut app = fixture(Arc::new(|_, _, _| Err("offline".into())));
+        let mut app = fixture(Arc::new(|_, _, _, _| Err("offline".into())));
         app.execute("ui.translateDocument", json!({})).unwrap();
         wait(&mut app);
         assert_eq!(app.translation.status["state"], "failed");
         assert_eq!(app.session.doc.para_at(&Pos::body(0, 0)).unwrap().text, "板材");
-        app.services.translate_document = Some(Arc::new(|_, _, flag| {
+        app.services.translate_document = Some(Arc::new(|_, _, _, flag| {
             while !flag.load(Ordering::Relaxed) {
                 std::thread::yield_now();
             }
@@ -382,7 +402,7 @@ mod tests {
                 let mut app = WordApp::new(
                     session,
                     Services {
-                        translate_document: Some(Arc::new(move |r, _, _| {
+                        translate_document: Some(Arc::new(move |r, _, _, _| {
                             let plan = wordcraft_engine::translation::plan(&r)?;
                             captured_worker.lock().map_err(|e| e.to_string())?.push((r.target, plan.texts));
                             Ok(Translation::default())
@@ -391,6 +411,7 @@ mod tests {
                         ..Default::default()
                     },
                 );
+                app.api.settings.profiles[0].api_key = "synthetic-test-key".into();
                 app.ui.language = "zh-hans".into();
                 let mut h = egui_kittest::Harness::builder().with_size(egui::vec2(1920.0, 900.0)).build_ui_state(
                     |ui, app: &mut WordApp| {

@@ -1342,6 +1342,11 @@ fn home(app: &mut WordApp, ui: &mut Ui) {
         big(ui, app, "editor", "Editor", "review.spelling", json!({}), false);
     });
     if app.services.translate_document.is_some() {
+        group(ui, "API", None, app, |ui, app| {
+            if ui.button("API 设置").clicked() {
+                let _ = app.run("ui.api.settings", json!({}));
+            }
+        });
         group(ui, "中英翻译", None, app, |ui, app| {
             ui.vertical(|ui| {
                 ui.spacing_mut().item_spacing.y = 3.0;

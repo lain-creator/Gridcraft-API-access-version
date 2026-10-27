@@ -1,5 +1,7 @@
 # WordCraft roadmap
 
+> **Local API edition update: 2026-10-27** · User-configured translation replaces the fixed website: editable endpoint/model/protocol and OS credential storage, retaining exact-selection, font and image fixes. Synthetic transport and selection/DOCX checks; no change in overall parity estimate. See [local API guide](docs/local-api-assistant.md).
+
 > **Highlight update:** 2026-10-25 · Highlight shortcut toggles the last chosen colour off when the whole selection has it; explicit colour commands remain setters (#4085). Readiness estimates unchanged.
 
 **Stage: alpha** · next: beta, ~15 points (60% → 75% ready for real work) and ~150–230 h away
@@ -626,6 +628,7 @@ Footer page-table height and body wrapping are corrected. Other pagination gaps 
 
 | Date | Change | Summary |
 |---|---|---|
+| 2026-10-27 | local | API translation: user endpoint/model/key, protected credentials and two compatible protocols; original-document safety and selection/font/image regressions retained |
 | 2026-10-25 | trivial | Progress log: Text Highlight Color buttons show the remembered colour, or no colour bar after No Color (#4087) |
 | 2026-10-23 | minor | A command that changes nothing is not an edit: no undo step, no unsaved changes, no relayout, and the redo stack survives it. |
 | 2026-10-23 | trivial | cu20we: preserve and render outline caps across DOCX/VML, screen and PDF; synthetic regressions; readiness estimates unchanged |
