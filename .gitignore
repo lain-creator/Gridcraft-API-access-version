@@ -1,0 +1,13 @@
+/evidence/
+/dist/
+**/target/
+.DS_Store
+__pycache__/
+*.app/
+*.exe
+.env
+.env.*
+ai-api.json
+ui.json
+prefs.json
+*.log
