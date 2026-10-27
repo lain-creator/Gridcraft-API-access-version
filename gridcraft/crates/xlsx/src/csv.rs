@@ -288,7 +288,7 @@ pub fn read_csv(bytes: &[u8], opts: &CsvOptions) -> Result<Workbook, IoError> {
                     },
                     None => StyleId::DEFAULT,
                 };
-                Cell { value: p.value, formula: None, style }
+                Cell { value: p.value, formula: None, style, ..Default::default() }
             } else {
                 Cell::value(Value::Text(Arc::from(f)))
             };

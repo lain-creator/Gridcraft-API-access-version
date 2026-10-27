@@ -62,9 +62,19 @@ pub fn open_bytes_with_password(name: &str, bytes: &[u8], password: Option<&str>
 /// the text it holds, with no number, date or boolean conversion (identifiers such as GTINs, SKUs
 /// and ZIP codes survive). It does not apply to other formats.
 pub fn open_bytes_with(name: &str, bytes: &[u8], password: Option<&str>, csv_as_text: bool) -> Result<(Workbook, Vec<String>)> {
+    open_bytes_measured(name, bytes, password, csv_as_text, None)
+}
+
+pub fn open_bytes_measured(
+    name: &str,
+    bytes: &[u8],
+    password: Option<&str>,
+    csv_as_text: bool,
+    measure: Option<&crate::TextHeight>,
+) -> Result<(Workbook, Vec<String>)> {
     if gridcraft_xlsx::sniff(bytes) != gridcraft_xlsx::Format::Encrypted {
         let (mut wb, warnings) = open_plain(name, bytes, csv_as_text)?;
-        fit_imported_rows(&mut wb);
+        fit_imported_rows(&mut wb, measure);
         return Ok((wb, warnings));
     }
     // A scheme no password opens is said straight away, rather than after asking for one.
@@ -78,7 +88,7 @@ pub fn open_bytes_with(name: &str, bytes: &[u8], password: Option<&str>, csv_as_
         return Err(EngineError::Other(format!("We can't open '{name}': the encrypted file is damaged (it holds another encrypted file).")));
     }
     let (mut wb, mut warnings) = open_plain(name, &plain, csv_as_text)?;
-    fit_imported_rows(&mut wb);
+    fit_imported_rows(&mut wb, measure);
     warnings.insert(0, DECRYPTED_NOTICE.into());
     Ok((wb, warnings))
 }
@@ -87,7 +97,7 @@ pub fn open_bytes_with(name: &str, bytes: &[u8], password: Option<&str>, csv_as_
 /// height grow to fit their content. Rows the file made taller keep their height — our
 /// line-height estimate can differ from Excel's, and shrinking files that already look
 /// right would be a visible regression. Custom-height rows are left alone entirely.
-fn fit_imported_rows(wb: &mut Workbook) {
+pub fn fit_imported_rows(wb: &mut Workbook, measure: Option<&crate::TextHeight>) {
     for si in 0..wb.sheets.len() {
         let Some(sh) = wb.sheet(si) else { continue };
         let mut rows: Vec<u32> = sh.cells.iter().map(|(c, _)| c.row).collect();
@@ -95,7 +105,7 @@ fn fit_imported_rows(wb: &mut Workbook) {
         rows.dedup();
         for row in rows {
             let before = wb.sheet(si).and_then(|sh| sh.rows.get(&row)).and_then(|i| i.size);
-            crate::cmd::auto_row_height(wb, si, row);
+            crate::cmd::auto_row_height_with(wb, si, row, measure);
             let Some(before) = before else { continue };
             let after = wb.sheet(si).and_then(|sh| sh.rows.get(&row)).and_then(|i| i.size);
             if after.is_none_or(|a| before > a + 0.5)
@@ -1199,17 +1209,17 @@ mod tests {
             (styled("yyyy-mm-dd"), styled("$#,##0.00"), styled("0.0%"), styled("# ?/?"), styled("@"), styled("0.00"), styled("#,##0"));
         let sh = wb.sheet_mut(0).unwrap();
         let cells = [
-            ("A1", Cell { value: Value::Number(46023.0), formula: None, style: date }),
-            ("B1", Cell { value: Value::Number(1234.5), formula: None, style: money }),
-            ("C1", Cell { value: Value::Number(0.125), formula: None, style: pct }),
-            ("D1", Cell { value: Value::Number(1.5), formula: None, style: frac }),
-            ("E1", Cell { value: Value::text("007"), formula: None, style: text }),
-            ("F1", Cell { value: Value::Error(CellError::NA), formula: None, style: money }),
-            ("G1", Cell { value: Value::Bool(true), formula: None, style: StyleId::DEFAULT }),
+            ("A1", Cell { value: Value::Number(46023.0), formula: None, style: date, ..Default::default() }),
+            ("B1", Cell { value: Value::Number(1234.5), formula: None, style: money, ..Default::default() }),
+            ("C1", Cell { value: Value::Number(0.125), formula: None, style: pct, ..Default::default() }),
+            ("D1", Cell { value: Value::Number(1.5), formula: None, style: frac, ..Default::default() }),
+            ("E1", Cell { value: Value::text("007"), formula: None, style: text, ..Default::default() }),
+            ("F1", Cell { value: Value::Error(CellError::NA), formula: None, style: money, ..Default::default() }),
+            ("G1", Cell { value: Value::Bool(true), formula: None, style: StyleId::DEFAULT, ..Default::default() }),
             ("A2", Cell { value: Value::Number(46024.0), style: date, ..Cell::formula(Formula::new("A1+1")) }),
-            ("B2", Cell { value: Value::Number(12345678.9), formula: None, style: fixed }),
-            ("C2", Cell { value: Value::Number(-0.25), formula: None, style: StyleId::DEFAULT }),
-            ("D2", Cell { value: Value::Number(1234567.0), formula: None, style: thousands }),
+            ("B2", Cell { value: Value::Number(12345678.9), formula: None, style: fixed, ..Default::default() }),
+            ("C2", Cell { value: Value::Number(-0.25), formula: None, style: StyleId::DEFAULT, ..Default::default() }),
+            ("D2", Cell { value: Value::Number(1234567.0), formula: None, style: thousands, ..Default::default() }),
         ];
         for (a, c) in cells {
             sh.set_cell(CellRef::parse(a).unwrap(), c);

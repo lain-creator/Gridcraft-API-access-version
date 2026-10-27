@@ -1,0 +1,16 @@
+[package]
+name = "craft-i18n-tests"
+description = "Checks on the translation catalogs themselves: rows are well formed, placeholders and plural forms match the English source text, locale and file names follow the layout."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+intl_pluralrules = "=7.0.2"
+unic-langid = "0.9"
+
+[lints]
+workspace = true

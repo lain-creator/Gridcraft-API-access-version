@@ -14,6 +14,45 @@ fn s() -> Session {
     s
 }
 
+#[test]
+fn rich_text_survives_unchanged_edit_and_whole_cell_font_commands() {
+    use gridcraft_model::{Cell, RichTextRun, RunFont};
+    let mut s = s();
+    let at = CellRef::new(0, 0);
+    let original = vec![RichTextRun { text: "中文 ABC".into(), font: RunFont { size: Some(20.0), bold: Some(true), ..Default::default() } }];
+    std::sync::Arc::make_mut(&mut s.doc_mut().unwrap().wb)
+        .sheet_mut(0)
+        .unwrap()
+        .set_cell(at, Cell { value: Value::text("中文 ABC"), rich_text: original.clone(), ..Default::default() });
+    s.execute("cell.set", json!({"cell":"A1","input":"中文 ABC"})).unwrap();
+    assert_eq!(s.doc().unwrap().wb.active().unwrap().cells.get(at).unwrap().rich_text, original);
+    s.execute("home.fontSize", json!({"range":"A1","size":12})).unwrap();
+    s.execute("home.bold", json!({"range":"A1","on":false})).unwrap();
+    let runs = &s.doc().unwrap().wb.active().unwrap().cells.get(at).unwrap().rich_text;
+    assert_eq!(runs[0].font.size, Some(12.0));
+    assert_eq!(runs[0].font.bold, Some(false));
+    s.execute("edit.clearFormats", json!({"range":"A1"})).unwrap();
+    assert!(s.doc().unwrap().wb.active().unwrap().cells.get(at).unwrap().rich_text.is_empty());
+    s.execute("edit.undo", json!({})).unwrap();
+    assert!(!s.doc().unwrap().wb.active().unwrap().cells.get(at).unwrap().rich_text.is_empty());
+    s.execute("cell.set", json!({"cell":"A1","input":"new text"})).unwrap();
+    assert!(s.doc().unwrap().wb.active().unwrap().cells.get(at).unwrap().rich_text.is_empty());
+}
+
+#[test]
+fn measured_auto_rows_grow_but_custom_heights_stay_unchanged() {
+    let mut s = s();
+    s.text_height = Some(std::sync::Arc::new(|_, _, _| Some(64.0)));
+    s.execute("cell.set", json!({"cell":"A1","input":"中文 ABC"})).unwrap();
+    assert!(s.doc().unwrap().wb.active().unwrap().row_height(0) >= 64.0);
+    let sh = std::sync::Arc::make_mut(&mut s.doc_mut().unwrap().wb).sheet_mut(0).unwrap();
+    let row = sh.rows.entry(0).or_default();
+    row.custom = true;
+    row.size = Some(19.0);
+    s.execute("cell.set", json!({"cell":"A1","input":"changed"})).unwrap();
+    assert_eq!(s.doc().unwrap().wb.active().unwrap().row_height(0), 19.0);
+}
+
 fn v(s: &Session, a: &str) -> Value {
     s.doc().unwrap().wb.active().unwrap().value(CellRef::parse(a).unwrap())
 }

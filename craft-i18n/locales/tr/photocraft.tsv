@@ -1,0 +1,3017 @@
+# Türkçe (tr) interface catalog for PhotoCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	% of all commits	Tüm taahhütlerin yüzdesi
+	(coming soon)	(yakında)
+	(No neutral color exists for {mode} mode.)	({mode} modu için nötr renk bulunmuyor.)
+	(none)	(none)
+	(print to the printer)	(yazıcıya yazdırın)
+	+ Add variable	+ Değişken ekle
+	0 turns this threshold off; SVG groups nested deeper than 100 levels are always rasterized.	0 bu eşiği kapatır; 100 düzeyden daha derine yerleştirilmiş SVG grupları her zaman rasterleştirilir.
+	10 fps	10 fps
+	100%	100%
+	101 by 101 Average	101'e 101 Ortalama
+	11 by 11 Average	11'e 11 Ortalama
+	12 Columns	12 Sütun
+	125%	125%
+	15 fps	15 fps
+	150%	150%
+	16 Bits/Channel	16 Bit/Kanal
+	175%	175%
+	180°	180°
+	2-up Horizontal	2'li Yatay
+	2-up Vertical	2'li Dikey
+	200%	200%
+	24 fps	24 fps
+	25 fps	25 fps
+	250%	250%
+	3 by 3 Average	3'e 3 Ortalama
+	3 x 3	3 x 3
+	3-up Horizontal	3'lü Yatay
+	3-up Stacked	3'lü Yığılmış
+	3-up Vertical	3'lü Dikey
+	30 fps	30 fps
+	30 frames @ 30 fps	30 kare @ 30 fps
+	300%	300%
+	31 by 31 Average	31'e 31 Ortalama
+	32 bit (float)	32 bitlik (kayan noktalı)
+	32 Bits/Channel	32 Bit/Kanal
+	32-bit Preview Options	32 bit Önizleme Seçenekleri
+	32-bit Preview Options…	32-bit Önizleme Seçenekleri…
+	3D	3D
+	3D LUT File	3D LUT Dosyası
+	3D…	3 boyutlu…
+	4 x 4	4 x 4
+	4-up	4'lü
+	5 by 5 Average	5'e 5 Ortalama
+	5 Columns, 3 Rows	5 Sütun, 3 Satır
+	5 x 5	5 x 5
+	50% Gray	%50 Gri
+	51 by 51 Average	51'e 51 Ortalama
+	6-up	6'lı
+	75%	75%
+	8 Bits/Channel	8 Bit/Kanal
+	8 Columns	8 Sütun
+	80%	80%
+	85%	85%
+	90%	90%
+	90° Clockwise	90° Saat Yönünde
+	90° Counter Clockwise	90° Saat Yönünün Tersine
+	95%	95%
+	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{binAdded} / −{binDeleted} binary assets, {first} – {last}	@{login}: {prs} PR'ler, {commits} taahhütler, +{added} / −{deleted} satırlar (Δ {delta}), +{binAdded} / −{binDeleted} ikili varlıklar, {first} – {last}
+	A brush preset with this name already exists	Bu adda bir fırça ön ayarı zaten var
+	A save to {name} is still running; try again when it finishes	{name} konumuna kaydetme işlemi hâlâ devam ediyor; bittiğinde tekrar dene
+	About PhotoCraft	PhotoCraft Hakkında
+	About {app}	{app} Hakkında
+	Accept and Go to Conflict	Kabul Et ve Çakışmaya Git
+	ACES	ACES
+	Action	Eylem
+	Action playback stopped	Eylem oynatma durduruldu
+	Actual Color	Gerçek Renk
+	Actual Pixels	Gerçek Pikseller
+	Adaptive Wide Angle	Uyarlanabilir Geniş Açı
+	Adaptive Wide Angle isn't open	Uyarlanabilir Geniş Açı açık değil
+	Adaptive Wide Angle…	Uyarlanabilir Geniş Açı…
+	Add a layer style	Katman stili ekleme
+	Add a mask  (from the selection; {key} inverts)	Bir maske ekleyin (seçimden; {key} tersine çevirir)
+	Add a mask  (from the selection; ⌥ inverts)	Bir maske ekleyin (seçimden; ⌥ tersine çevirir)
+	Add an adjustment	Düzenleme ekle
+	Add Anchor Point Tool	Bağlantı Noktası Ekleme Aracı
+	Add beauty precomp from the AOVs	AOV'lerden güzellik ön kompozisyonu ekleyin
+	Add disk	Disk ekle
+	Add Layer Above to Selection	Seçime Yukarıdaki Katmanı Ekle
+	Add Layer Below to Selection	Aşağıdaki Katmanı Seçime Ekle
+	Add Layer Mask	Katman Maskesi Ekle
+	Add Mask	Maske Ekle
+	Add Mask to Selection	Maskeyi Seçime Ekle
+	Add New Artboard	Yeni Çalışma Yüzeyi Ekle
+	Add Noise	Gürültü Ekle
+	Add Noise…	Gürültü Ekle…
+	Add Open Files	Açık Dosyaları Ekle
+	Add pair	Çift ekle
+	Add Pins	Pin Ekle
+	Add Shortcut	Kısayol Ekle
+	Add space after paragraph	Paragraftan sonra boşluk ekle
+	Add space before paragraph	Paragraftan önce boşluk ekleyin
+	Add Stop	Durak Ekle
+	Add to	Ekle
+	Add to Sample	Örneğe Ekle
+	Add to selection  ({key})	Seçime ekle ({key})
+	Add to selection  (⇧)	Seçime ekle (⇧)
+	Add Vector Mask	Vektör Maskesi Ekle
+	Add vector mask	Vektör maskesi ekle
+	Additional plugins folder	Ek eklentiler klasörü
+	Adds grain to the soft edges of the brush tip.	Fırça ucunun yumuşak kenarlarına gren ekler.
+	Adds the current gradient to the Gradients panel	Geçerli degradeyi Degradeler paneline ekler
+	Adjust for Zoom	Yakınlaştırma için Ayarlama
+	Adjust Interval For Loops	Döngüler İçin Aralığı Ayarla
+	Adjustment	Ayarlama
+	Adjustment Layer	Ayarlama Katmanı
+	Adjustment Layers	Ayarlama Katmanları
+	Adjustment layers have nothing to transform	Ayarlama katmanlarının dönüştürülecek hiçbir şeyi yok
+	Adjustment Preview	Ayar Önizlemesi
+	Adjustment Properties	Ayarlama Özellikleri
+	Adjustment visible	Ayar görünür
+	Adobe	Adobe
+	Adobe Every-line Composer	Adobe Her Satır Oluşturucusu
+	Adobe PDF Presets…	Adobe PDF Hazır Ayarları…
+	Adobe rgb	Adobe rgb
+	Adobe RGB (1998)	Adobe RGB (1998)
+	Adobe RGB (1998) compatible	Adobe RGB (1998) uyumlu
+	Adobe Single-line Composer	Adobe Tek Satır Oluşturucu
+	Advanced Blending	Gelişmiş Harmanlama
+	Advanced Controls	Gelişmiş Kontroller
+	Adwaita	Adwaita
+	Adwaita dark	Adwaita karanlık
+	Adwaita Dark Theme	Adwaita Karanlık Tema
+	Adwaita Light Theme	Adwaita Işık Teması
+	After	Sonra
+	After (X)	(X)'ten sonra
+	Again	Yinele
+	AI Integrations	Yapay Zeka Entegrasyonları
+	AI Integrations…	Yapay Zeka Entegrasyonları…
+	Airbrush: keeps depositing paint while the pointer rests.	Airbrush: İşaretçi dururken boyayı bırakmaya devam eder.
+	Airbrush: keeps painting while the pointer rests.	Airbrush: İşaretçi dururken boyamaya devam eder.
+	Align and Distribute	Hizala ve Dağıt
+	Align and distribute	Hizala ve dağıt
+	Align horizontal centers	Yatay merkezleri hizalayın
+	Align left edges	Sol kenarları hizala
+	Align right edges	Sağ kenarları hizalayın
+	Align with layer	Katmanla hizala
+	Align {what}	{what} hizala
+	Aligned	Hizalı
+	All Layers No Adjustments	Tüm Katmanlar Ayarlama Yok
+	All shortcuts reset to PhotoCraft defaults.	Tüm kısayollar PhotoCraft varsayılanlarına sıfırlanır.
+	All User Slices	Tüm Kullanıcı Dilimleri
+	Allow agent control	Aracı kontrolüne izin ver
+	Allow Continue	Devam Etmeye İzin Ver
+	Allow scripts to connect	Komut dosyalarının bağlanmasına izin ver
+	Alt-click to define a source point to clone from	Kopyalanacak kaynak noktayı tanımlamak için Alt tuşuna basarak tıklayın
+	Alt-click went to the desktop, which moves windows with Alt-drag. Set its window-move key to Super, or latch Alt in Window › Modifier Keys.	Alt tuşuna basıp masaüstüne giderek pencereleri Alt tuşuyla sürükleyerek hareket ettirin. Pencere taşıma tuşunu Süper olarak ayarlayın veya Pencere › Değiştirici Tuşlar'da Alt'ı mandallayın.
+	Alternates for Current Selection	Mevcut Seçimin Alternatifleri
+	Alternative	Alternatif
+	Altitude	Rakım
+	Always create smart objects when placing	Yerleştirirken daima akıllı nesneler yaratın
+	Always Show Overlay	Kaplamayı Her Zaman Göster
+	Always use pressure for opacity	Opaklık için her zaman baskıyı kullanın
+	Always use pressure for size	Her zaman boyuta göre baskı kullanın
+	Ambience	ortam
+	Ambient	Ortam
+cameraRaw	Amount	Miktar
+	Amplitude Max	Genlik Maksimum
+	Amplitude Min	Genlik Min
+	Analysis	Analiz
+	Anamorphic 2:1 (2)	Anamorfik 2:1 (2)
+	Anchor:	Çapa:
+	Android 1080p	Android1080p
+	Angle Gradient	Açı Gradyanı
+	Angle Jitter	Açı Değişimi
+	Angled Strokes	Açılı Vuruşlar
+	Animated zoom	Animasyonlu yakınlaştırma
+	Anisotropic	Anizotropik
+	Answer the unsaved-changes prompt first	Önce kaydedilmemiş değişiklikler istemini yanıtlayın
+	Anti-aliased	Kenar yumuşatma
+	Anti-aliasing method	Kenar yumuşatma yöntemi
+	Aperture	Diyafram
+	Appearance (Layer Style)	Görünüm (Katman Stili)
+	Appearance Mode	Görünüm Modu
+	Apple RGB	Apple RGB
+	Apple Watch 45mm	Apple Watch 45mm
+	Applies at next launch.	Bir sonraki açılışta geçerlidir.
+	Apply At Canvas Bounds	Kanvas Sınırlarında Uygula
+	Apply auto tone	Otomatik tonu uygula
+	Apply Data Set…	Veri Kümesini Uygula…
+	Apply Image	Resmi Uygula
+	Apply Image…	Resmi Uygula…
+	Apply Layer Comp	Katman Kompozisyonunu Uygula
+	Apply Layer Mask	Katman Maskesini Uygula
+	Apply Mask	Maske Uygula
+	Apply next selected layer comp	Sonraki seçilen katman kompozisyonunu uygula
+	Apply Per Tip	İpucu Başına Uygula
+	Apply previous selected layer comp	Önceki seçilen katman kompozisyonunu uygula
+	Apply the pen's tilt and rotation to the tip shape	Kalemin eğimini ve dönüşünü uç şekline uygulayın
+	Apply the removal ({key})	Kaldırmayı uygula ({key})
+	Apply to All	Tümüne Uygula
+	Apply Vanishing Point ({key})	Ufuk Noktasını Uygula ({key})
+	Aqua	Su
+cameraRaw	Aqua	Camgöbeği
+	Arbitrary	keyfi
+	Arbitrary…	Keyfi…
+	Arch	Kemer
+	Are you sure you want to quit?	Vazgeçmek istediğinden emin misin?
+	Are you sure?	Emin misin?
+	Around Center	Merkez Çevresi
+	Arrangement	Düzenleme
+	Art & Illustration	Sanat ve İllüstrasyon
+	Art History Brush	Sanat Tarihi Fırçası
+	Artboard Background Color	Çalışma Yüzeyi Arka Plan Rengi
+	Artboard from Group	Gruptan çalışma yüzeyi
+	Artboard from Group…	Gruptan çalışma yüzeyi…
+	Artboard from Layers	Katmanlardan Çalışma Yüzeyi
+	Artboard from Layers…	Katmanlardan Çalışma Yüzeyi…
+	Artboard Guides	Çalışma Yüzeyi Kılavuzları
+	Artboard Tool	Çalışma Yüzeyi Aracı
+	Artboards to Files	Çalışma Yüzeylerinden Dosyalara
+	Artboards to Files…	Çalışma Yüzeylerinden Dosyalara…
+	Artboards to PDF	Çalışma yüzeylerini PDF'ye dönüştürme
+	Artboards to PDF…	Çalışma yüzeylerinden PDF'ye…
+	Artboard…	Çalışma yüzeyi…
+	Artist	Sanatçı
+	Ask	Sor
+	Ask before saving layered tiff	Katmanlı tiff'i kaydetmeden önce sor
+	Ask Before Saving Saved Embedded	Kaydedilen Gömülü Kaydetmeden Önce Sor
+	Ask When Pasting	Yapıştırırken Sor
+	Assign Profile	Profil Ata
+	Assign working space	Çalışma alanı atayın
+	At	Şu tarihte:
+	Attempt to Automatically Align Source Images	Kaynak Görüntüleri Otomatik Hizalamayı Dene
+	Auto Add/Delete	Otomatik Ekle/Sil
+	Auto Adjust Opacity	Opaklığı Otomatik Ayarla
+	Auto Center Preview	Otomatik Merkezleme Önizlemesi
+	Auto Clean Brush	Otomatik Temizleme Fırçası
+	Auto collapse icon panels	Simge panellerini otomatik daralt
+	Auto Contrast	Otomatik Kontrast
+	Auto Erase	Otomatik Silme
+	Auto Hide	Otomatik Gizle
+	Auto Hide Notifications	Bildirimleri Otomatik Gizle
+	Auto Scale	Otomatik Ölçeklendirme
+	Auto show hidden panels	Gizli panelleri otomatik göster
+	Auto show home screen	Ana ekranı otomatik göster
+	Auto Show Overlay	Otomatik Göster Yer Paylaşımı
+	Auto Tone	Otomatik Ton
+	Auto-Align Layers	Katmanları Otomatik Hizala
+	Auto-Align Layers…	Katmanları Otomatik Hizala…
+	Auto-Blend Layers	Katmanları Otomatik Karıştır
+	Auto-Blend Layers…	Katmanları Otomatik Karıştır…
+	Auto-Hide	Otomatik Gizle
+	Auto-Leading	Otomatik Satır Aralığı
+	Auto-leading %	Otomatik satır aralığı %
+	Auto-Select:	Otomatik Seç:
+	Automatic (recommended)	Otomatik (önerilen)
+	Automatic uses GPU acceleration when available and falls back to CPU rendering on errors.	Otomatik, mümkün olduğunda GPU hızlandırmayı kullanır ve hatalarda CPU oluşturmaya geri döner.
+	Automatically Create First Snapshot	İlk Anlık Görüntüyü Otomatik Olarak Oluştur
+	Automatically Create New Snapshot When Saving	Kaydederken Otomatik Olarak Yeni Anlık Görüntü Oluştur
+	Automatically level near-horizontal line segments	Yataya yakın çizgi bölümlerini otomatik olarak hizalayın
+	Automatically straighten and level	Otomatik olarak düzeltin ve seviyelendirin
+	Automatically straighten near-vertical line segments	Dikeye yakın çizgi bölümlerini otomatik olarak düzelt
+	Autosave	Otomatik kaydetme
+	Autosave minutes	Dakikaları otomatik kaydet
+	Avoid Widows/Orphans	Dul/Yetimlerden Kaçının
+	Back	Geri
+	Background (Default)	Arka plan (varsayılan)
+	Background Eraser Tool	Arka Plan Silgisi Aracı
+	Background From Layer	Katmandan Arka Plan
+	Background from Layer	Katmandan Arka Plan
+	Background Level	Arka Plan Düzeyi
+	Bamboo	Bambu
+	Bas Relief	Bas Rölyef
+	Base Tree Type	Temel Ağaç Türü
+	Baseline shift	Taban çizgisi kayması
+	Beep when done	Bittiğinde bip sesi
+	Before	önce
+	Before (Y)	Önce (Y)
+	Begin recording	Kaydı başlat
+	Berries	Meyveler
+	Best	En iyi
+	Bevel	Eğim
+	Bevel & Emboss	Eğim Ver ve Kabart
+	Bevel & Emboss…	Eğim ve Kabartma…
+	Bicubic (smooth gradients)	Bikübik (düzgün degradeler)
+	Bicubic automatic	Bikübik otomatik
+	Bicubic sharper	Bikübik daha keskin
+	Bicubic Sharper (reduction)	Bikübik Daha Keskin (azaltma)
+	Bicubic smoother	Bikübik daha pürüzsüz
+	Bicubic Smoother (enlargement)	Bikübik Pürüzsüzleştirici (büyütme)
+	Bilinear	Çift doğrusal
+	Binary assets added	İkili varlıklar eklendi
+	Binary assets removed	İkili varlıklar kaldırıldı
+	Bit depth	Bit derinliği
+	Bitmap…	Bit eşlem…
+fontWeight	Black	En Kalın
+	Black & White…	Siyah ve Beyaz…
+	Black Clip	Siyah Klip
+	Black Matte	Siyah Mat
+	Black Point Compensation	Kara Nokta Telafisi
+	Black, White	Siyah, Beyaz
+cameraRaw	Blacks	Siyahlar
+	Blade Curvature	Bıçak Eğrisi
+	BLANK DOCUMENT PRESETS ({n})	BOŞ BELGE ÖN AYARLARI ({n})
+	Blast	Patlama
+	Bleach Bypass	Ağartma Baypası
+	Blend	Karışım
+	Blend If	Eğer karıştır
+	Blend If:	Eğer Karışım:
+	Blend RGB Colors Using Gamma 1.0	Gama 1.0 Kullanarak RGB Renklerini Karıştırın
+	Blending	Karıştırma
+cameraRaw	Blending	Karışım
+	Blending Options	Karıştırma Seçenekleri
+	Blending Options…	Karışım Seçenekleri…
+cameraRaw	Blue	Mavi
+	Blue Yellow	Mavi Sarı
+	Blue, Red, Yellow	Mavi, Kırmızı, Sarı
+	Blues	Blues
+	Blur Gallery	Bulanıklaştırma Galerisi
+	Blur More	Daha Fazla Bulanıklaştır
+	Blur Tool	Bulanıklık Aracı
+fontWeight	Bold	Kalın
+	Bold Italic	Kalın İtalik
+	Border…	Kenarlık…
+	Both Axes	Her İki Eksen
+	Bottom Edges	Alt Kenarlar
+	Box Blur	Kutu Bulanıklığı
+	Box Blur…	Kutu Bulanıklığı…
+	Branches Color	Dal Rengi
+	Branches Height	Dal Yüksekliği
+	Branches Thickness	Dal Kalınlığı
+	Breeze dark	Esinti karanlık
+	Breeze Dark Theme	Esinti Koyu Tema
+	Breeze light	Esinti ışığı
+	Breeze Light Theme	Esinti Işık Teması
+	Brightness Jitter	Parlaklık Değişimi
+	Brightness/Contrast	Parlaklık/Kontrast
+	Brightness/Contrast…	Parlaklık/Kontrast…
+	Bring the selected pin forward	Seçilen pini öne getir
+	Bristle Detail	Kıl Detayı
+	Browser storage is unavailable; brushes are session-only. Keep this tab open to retain them.	Tarayıcı depolama alanı kullanılamıyor; fırçalar yalnızca oturum içindir. Bunları korumak için bu sekmeyi açık tutun.
+	Browse…	Göz at…
+	Brush	Fırça
+	Brush Detail	Fırça Detayı
+	Brush Name	Fırça Adı
+	Brush name	Fırça adı
+	Brush picker	Fırça seçici
+	Brush Pose	Fırça Duruşu
+	Brush preset changes are not saved: {error}	Fırça hazır ayarı değişiklikleri kaydedilmiyor: {error}
+	Brush Preset Options	Fırça Ön Ayarı Seçenekleri
+	Brush Preset picker	Fırça Ön Ayarı seçici
+	Brush Preview	Fırça Önizlemesi
+	Brush preview color	Fırça önizleme rengi
+	Brush Projection	Fırça Projeksiyonu
+	Brush Reconstruct Options	Fırçayla Yeniden Yapılandırma Seçenekleri
+	Brush Settings	Fırça Ayarları
+	Brush Settings…  (F5): every option of this brush	Fırça Ayarları… (F5): bu fırçanın tüm seçenekleri
+	Brush Stroke	Fırça Darbesi
+	Brush Tip	Fırça Ucu
+	Brush Tip Shape	Fırça Ucu Şekli
+	Brush Tool	Fırça Aracı
+	Brush Tool Options	Fırça Aracı Seçenekleri
+	Brush Type	Fırça Tipi
+	Build-up	İnşaat
+	Bundle Arrow-Key Nudges	Ok tuşlarıyla kaydırmaları birleştir
+	Burn	Yanık
+	Burn Tool	Koyulaştırma Aracı
+	Butt / Flat	Popo / Düz
+	Button Mode	Düğme modu
+	Button Mode On	Düğme modu açık
+	Byline	Yazar yazısı
+	Byline Title	Yazar Başlığı
+	Cache Level:	Önbellek Düzeyi:
+	Cache levels	Önbellek düzeyleri
+	Cache tile size	Önbellek kutucuğu boyutu
+	Calculations	Hesaplamalar
+	Calculations…	Hesaplamalar…
+	Camera Calibration	Kamera Kalibrasyonu
+	Camera Data	Kamera Verileri
+	Camera Make	Kamera Markası
+	Camera Model	Kamera Modeli
+	Camera Raw	Camera Raw
+	Camera Raw ({name})	Camera Raw ({name})
+	Camera Raw Defaults	Camera Raw Varsayılanları
+	Camera Raw Filter	Camera Raw Filtresi
+	Camera Raw Filter ({layer})	Camera Raw Filtresi ({layer})
+	Camera Raw Filter…	Camera Raw Filtresi…
+	Camera Raw isn't open	Camera Raw açık değil
+	Camera Raw…	Kamera Raw…
+	Cancel (Esc)	İptal (Esc)
+	Cancel any current edits (Esc)	Mevcut düzenlemeleri iptal et (Esc)
+	Cancel current crop operation  (Esc)	Geçerli kırpma işlemini iptal et (Esc)
+	Cancel opening	Açılışı iptal et
+	Cancel transform (Esc)	Dönüşümü iptal et (Esc)
+	Cancel warp (Esc)	Çözgüyü iptal et (Esc)
+	Cancelled opening {name}	{name} açılışı iptal edildi
+	Cancelled {label}	{label} iptal edildi
+	Candle Light	Mum Işığı
+	Canvas border	Kanvas kenarlığı
+	Canvas color	Kanvas rengi
+	Canvas custom color	Kanvas özel rengi
+	Canvas extension color:	Kanvas uzatma rengi:
+	Canvas Guides	Kanvas Kılavuzları
+	Canvas rotation	Kanvas döndürme
+	Canvas Size	Kanvas Boyutu
+	Canvas Size…	Tuval Boyutu…
+	Caps	Kapaklar
+	Caption Credits	Altyazı Kredisi
+	Capture	Yakala
+	Capture Brush Size in Preset	Fırça Boyutunu Ön Ayara Kaydet
+	Capture Comp	Comp'ı Yakala
+	Capture the visibility, position and style of every layer with + below, then switch between versions.	Aşağıdaki + ile her katmanın görünürlüğünü, konumunu ve stilini yakalayın, ardından sürümler arasında geçiş yapın.
+	Catch-up on Stroke End	Strok Sonunda Yakalama
+	Center	Merkez
+	Center Columns	Merkezi Sütunlar
+	Center Crop Marks	Orta Kırpma İşaretleri
+	Center text	Metni ortala
+	Centre the gradient (offset 0, 0)	Degradeyi ortalayın (kaydırma 0, 0)
+	Chalk & Charcoal	Tebeşir ve Kömür
+	Chalk Area	Tebeşir Alanı
+	Change Panel Group	Panel Grubunu Değiştir
+	Change Screen Mode  (F)	Ekran Modunu Değiştir (F)
+	Change To:	Şuna Değiştir:
+	Changes have not been saved.	Değişiklikler kaydedilmedi.
+	Changes Saved	Değişiklikler Kaydedildi
+	Changes undone.	Değişiklikler geri alındı.
+	Change…	Değiştir…
+	Channel Color	Kanal Rengi
+	Channel Mixer…	Kanal Karıştırıcı…
+	Channel1	Kanal1
+	Channel2	Kanal2
+	Channel3	Kanal3
+	Channel4	Kanal4
+	Channel:	Kanal:
+	Channels:	Kanallar:
+	Character Panel	Karakter Paneli
+	Character Styles Panel	Karakter Stilleri Paneli
+	Charcoal	Kömür
+	Charcoal Area	Kömür Alanı
+	Charcoal Thickness	Kömür Kalınlığı
+	Check All Layers	Tüm Katmanları Kontrol Et
+	Check Spelling	Yazımı Kontrol Et
+	Chisel Hard	Sert Keski
+	Chisel Soft	Yumuşak Keski
+	Choke	Şok
+	Choose a format that keeps it, such as Photoshop (PSD), or save a copy.	Photoshop (PSD) gibi her şeyi koruyan bir biçim seçin ya da bir kopyasını kaydedin.
+	Choose a gradient file (.grd).	Bir gradyan dosyası (.grd) seçin.
+	Choose a new shortcut for this command, or leave it without one.	Bu komut için yeni bir kısayol seçin veya kısayolsuz bırakın.
+	Choose Folder	Klasör Seçin
+	Choose Stack Mode:	Yığın Modunu Seçin:
+	Chrome	Krom
+	CIE RGB	CIE RGB
+	Circle	daire
+	Circularity	Dairesellik
+	Classic Theme	Klasik Tema
+	Cleanliness	Temizlik
+	Clear Amount	Temizleme Miktarı
+	Clear Brush Controls	Fırça Denetimlerini Temizle
+	Clear Brush Strokes	Fırça Darbelerini Temizle
+	Clear Canvas Guides	Şeffaf Kanvas Kılavuzları
+	Clear Existing Guides	Mevcut Kılavuzları Temizle
+	Clear Layer Style	Katman Stilini Temizle
+	Clear Override	Geçersiz Kılmayı Temizle
+	Clear Samples	Örnekleri Temizle
+	Clear Selected Artboard Guides	Seçilen Çalışma Yüzeyi Kılavuzlarını Temizle
+	Clear Selected Guides	Seçili Kılavuzları Temizle
+	Clear Selection	Seçimi Temizle
+	Clear Slices	Dilimleri Temizle
+	Clear Smart Filters	Akıllı Filtreleri Temizle
+	Click a red pupil to neutralize it	Nötrleştirmek için kırmızı bir gözbebeğine tıklayın
+	Click a segment to add an anchor point · {alt}-click an anchor to delete it	Bağlantı noktası eklemek için bir segmenti tıklayın · {alt}-silmek için bir bağlantıyı tıklayın
+	Click an anchor point to delete it · {alt}-click a segment to add one	Silmek için bir bağlantı noktasını tıklayın · {alt}-bir parça eklemek için bir parçayı tıklayın
+	Click sets foreground · right-click sets background	Ön planı ayarlar'a tıklayın · arka planı sağ tıklayın
+	Click the first point or press {key} to close · Esc cancels	Kapatmak için ilk noktayı tıklayın veya {key} tuşuna basın · Esc iptal eder
+	Click the first point or press {key} to close · {del} removes a point · Esc cancels	İlk noktayı tıklayın veya kapatmak için {key} tuşuna basın · {del} bir noktayı kaldırır · Esc iptal eder
+	Click the first point or press ↵ to close · Esc cancels	Kapatmak için ilk noktayı tıklayın veya ↵ tuşuna basın · Esc iptal eder
+	Click the image to add a pin; drag a pin to move it, or its ring to change its blur. Delete removes the selected pin.	Pim eklemek için görüntüye tıklayın; taşımak için pimi, bulanıklığını değiştirmek için halkasını sürükleyin. Delete seçili pimi siler.
+	Click to add a point · drag off or {key}-click or Delete to remove	Nokta eklemek için tıklayın · sürükleyin veya {key} tuşuna basıp tıklayın veya kaldırmak için Sil
+	Click to add a point · drag off or ⌘/Ctrl-click or Delete to remove	Nokta eklemek için tıklayın · sürükleyin veya kaldırmak için ⌘/Ctrl tuşuna basarak tıklayın veya Sil
+	Click to add a point, right-click to remove	Nokta eklemek için tıklayın, kaldırmak için sağ tıklayın
+	Click to add text	Metin eklemek için tıklayın
+	Click to apply, {key}-click to clear overrides, double-click for Style Options	Uygulamak için tıklayın, geçersiz kılmaları temizlemek için {key}-tıklayın, Stil Seçenekleri için çift tıklayın
+	Click to apply, ⌥-click to clear overrides, double-click for Style Options	Uygulamak için tıklayın, geçersiz kılmaları temizlemek için ⌥-tıklayın, Stil Seçenekleri için çift tıklayın
+	Click to edit the gradient	Degradeyi düzenlemek için tıklayın
+	Click to fill similar colours	Benzer renkleri doldurmak için tıklayın
+	Click to pick · Esc to cancel	Seçmek için tıklayın · İptal etmek için Esc
+	Click to place · Alt-click or drag off-canvas to remove	Yerleştirmek için tıklayın · Kaldırmak için Alt tuşuna basarak tıklayın veya tuvalin dışına sürükleyin
+	Click to restore the current colour	Mevcut rengi geri yüklemek için tıklayın
+	Click to sample the foreground colour  ·  {key}-click for background	Ön plan rengini örneklemek için tıklayın · {key}-arka plan için tıklayın
+	Click to zoom in  ·  {key}-click to zoom out  ·  drag right/left to zoom in/out	Yakınlaştırmak için tıklayın · {key}-uzaklaştırmak için tıklayın · yakınlaştırmak/uzaklaştırmak için sağa/sola sürükleyin
+	Click to zoom in  ·  ⌥-click to zoom out	Yakınlaştırmak için tıklayın · Uzaklaştırmak için ⌥-tıklayın
+	Click with the Note tool to add a note.	Not eklemek için Not aracıyla tıklayın.
+	Click, then move along an edge · click to fasten a point · {alt}-click for a straight segment · double-click to close	Tıklayın, ardından bir kenar boyunca hareket edin · bir noktayı sabitlemek için tıklayın · düz bir parça için {alt}-tıklayın · kapatmak için çift tıklayın
+	Click: corner · Drag: smooth · Click first point: close · {key} finish · Esc cancel	Tıklayın: köşe · Sürükleyin: pürüzsüz · İlk noktaya tıklayın: kapat · {key} bitiş · Esc iptal
+	Click: corner · Drag: smooth · Click first point: close · ↩ finish · Esc cancel	Tıklayın: köşe · Sürükleyin: pürüzsüz · İlk noktaya tıklayın: kapat · ↩ bitir · Esc iptal
+	Click: corner · Drag: smooth · {alt}-drag: break handle · Click or drag first point: close · {key} finish · Esc cancel	Tıklayın: köşe · Sürükleyin: pürüzsüz · {alt}-sürükleyin: tutamacı kırın · İlk noktayı tıklayın veya sürükleyin: kapat · {key} bitiş · Esc iptal
+	Click: select anchor · Drag: move anchor, handle or segment · {shift}-click: add · {alt}-click: whole subpath	Tıklayın: çapayı seçin · Sürükleyin: çapayı, tutamacı veya parçayı taşıyın · {shift}-tıklayın: ekleyin · {alt}-tıklayın: alt yolun tamamı
+	Click: smooth point · Double-click: corner · Drag a point: move · Click first point: close · {key} finish	Tıklama: düzgün nokta · Çift tıklama: köşe · Bir noktayı sürükleyin: taşıma · İlk noktayı tıklayın: kapat · {key} bitiş
+	Clip Thumbnails to Layer Bounds	Küçük resimleri katman sınırlarına kırp
+	Clip thumbnails to layer bounds	Küçük resimleri katman sınırlarına kırp
+	Clip to layer below	Aşağıdaki katmana klip
+	Clipped	Kırpılmış
+	Clipping Path	Kırpma Yolu
+	Clone Source	Klon Kaynağı
+	Clone source {n} ({key}-click with Clone Stamp to set)	Kaynağı kopyala {n} ({key}-ayarlamak için Klonlama Damgası ile tıklayın)
+	Clone Stamp	Klon Damgası
+	Clone Stamp Tool	Klonlama Damgası Aracı
+	Close Others	Diğerlerini Kapat
+	Close Style Options	Stil Seçeneklerini Kapat
+	Close Tab Group	Sekme Grubunu Kapat
+	Close Window	Pencereyi Kapat
+	Clouds	Bulutlar
+	Clumped	Topaklanmış
+	Coated CMYK	Kaplamalı CMYK
+	Coerce to sRGB	sRGB'ye baskı yapın
+	Collapse All Groups	Tüm Grupları Daralt
+	Collapse group  ({key}-click: all groups)	Grubu daralt ({key}-tıklama: tüm gruplar)
+	Collapse group  (⌥-click: all groups)	Grubu daralt (⌥ tuşuna basarak tıklayın: tüm gruplar)
+	Collapse Panel Group	Panel Grubunu Daralt
+cameraRaw	Color	Renk
+	Color & Swatches	Renk ve Renk Örnekleri
+	Color Adaptation	Renk Uyarlaması
+	Color Balance…	Renk Dengesi…
+	Color Blindness — Deuteranopia-type	Renk Körlüğü – Döteranopi tipi
+	Color Blindness — Protanopia-type	Renk Körlüğü — Protanopi tipi
+	Color Burn (Paint.NET)	Renk Yanması (Paint.NET)
+	Color Decontaminate	Renkli Dekontaminasyon
+	Color Decontaminate…	Renkli Dekontamine…
+	Color Detail	Renk Detayı
+cameraRaw	Color Detail	Renk Detayı
+	Color Dodge (Paint.NET)	Renk Soldurma (Paint.NET)
+	Color Dynamics	Renk Dinamiği
+	Color Grading	Renk Derecelendirmesi
+cameraRaw	Color Grading	Renk Derecelendirme
+	Color Halftone	Renk Noktalı Resim
+	Color Halftone…	Renk Yarım Tonu…
+	Color indicates	Renk şunu gösterir:
+	Color Indicates:	Rengin Gösterdiği:
+	Color Lookup	Renk Arama
+	Color Lookup Tables	Renk Arama Tabloları
+	Color Lookup Tables…	Renk Arama Tabloları…
+	Color Lookup…	Renk Arama…
+	Color Management Policies	Renk Yönetimi Politikaları
+	Color Mixer	Renk Karıştırıcı
+	Color Noise Reduction	Renk Gürültü Azaltma
+	Color Overlay	Renk Kaplaması
+	Color Overlay…	Renk Kaplama…
+	Color picker	Renk seçici
+	Color Picker (Crop Shield Color)	Renk Seçici (Kırpma Kalkanı Rengi)
+	Color Picker (Fill Color)	Renk Seçici (Dolgu Rengi)
+	Color Picker (Layer Style Color)	Renk Seçici (Katman Stili Rengi)
+	Color Picker (Solid Color)	Renk Seçici (Düz Renk)
+	Color Picker (Stroke Color)	Renk Seçici (Kontur Rengi)
+	Color Picker (Text Color)	Renk Seçici (Metin Rengi)
+	Color Picker ({name})	Renk Seçici ({name})
+	Color Priority	Renk Önceliği
+	Color Profile	Renk Profili
+	Color Range	Renk Aralığı
+	Color Range preview	Renk Aralığı önizlemesi
+	Color Range…	Renk Aralığı…
+	Color Replacement	Renk Değiştirme
+	Color Replacement Tool	Renk Değiştirme Aracı
+	Color space	Renk alanı
+	Color Table…	Renk Tablosu…
+	Color to Alpha…	Alfa'ya Renk…
+	Colored Pencil	Renkli Kalem
+	ColorMatch RGB	ColorMatch RGB
+	ColorSync	Renk Senkronizasyonu
+	Combine Shapes	Şekilleri Birleştir
+	Comic Book	Çizgi Roman
+	command or shortcut	komut veya kısayol
+	Commit any current edits ({key})	Mevcut düzenlemeleri tamamlayın ({key})
+	Commit any current edits (⌘↩)	Mevcut düzenlemeleri taahhüt et (⌘↩)
+	Commit current crop operation  ({key})	Geçerli kırpma işlemini gerçekleştir ({key})
+	Commit current crop operation  (↵)	Mevcut kırpma işlemini gerçekleştir (↵)
+	Commit Perspective Warp ({key})	Perspektif Çarpıtma İşlemi ({key})
+	Commit Perspective Warp (↩)	Perspektif Çarpıtma İşlemi (↩)
+	Commit Puppet Warp ({key})	Kukla Çarpıtma İşlemi ({key})
+	Commit Puppet Warp (↩)	Kukla Çarpıtma İşlemi (↩)
+	Commit transform ({key})	Dönüşümü kaydet ({key})
+	Commit transform (↩)	Dönüşümü kaydet (↩)
+	Commit warp ({key})	Çözgü gerçekleştir ({key})
+	Commit warp (↩)	Çözgü gerçekleştir (↩)
+	Commits	Taahhütler
+	Compose	Oluştur
+	Concise	Kısa
+	Condensed	Yoğunlaştırılmış
+	Conditional Mode Change	Koşullu Mod Değişikliği
+	Conditional Mode Change…	Koşullu Mod Değişikliği…
+	Cone (Inverted)	Koni (Ters Çevrilmiş)
+	Cone - Inverted	Koni - Ters
+	Confirm	Onayla
+	Conform	Uygun
+	Consolidate All to Tabs	Tümünü Sekmelerde Birleştir
+	Constant	Sabit
+	Constrain proportions	Oranları sınırla
+	Constraints	Kısıtlamalar
+	Constraints ({n})	Kısıtlamalar ({n})
+	Contact Sheet II	İletişim Sayfası II
+	Contact Sheet II…	İletişim Sayfası II…
+	Content-Aware	İçeriğe Duyarlı
+	Content-Aware Fill	İçeriğe Uygun Dolgu
+	Content-Aware Fill needs a selection on a pixel layer	İçeriğe Uygun Dolgu, piksel katmanında seçim yapılmasını gerektirir
+	Content-Aware Fill…	İçeriğe Uygun Dolgu…
+	Content-Aware Move	İçeriğe Uygun Taşıma
+	Content-Aware Move Tool	İçeriğe Uygun Taşıma Aracı
+	Content-Aware Scale	İçeriğe Uygun Ölçek
+	Contents:	İçerik:
+	Contextual Alternates	Bağlamsal Alternatifler
+	Contiguous	Bitişik
+	Contour	Kontur
+	Contour Editor	Kontur Düzenleyici
+	Contract	Sözleşme
+	Contract…	Daralt…
+	Contrasty	Kontrastlı
+	Contributors: {contributors} · Commits: {commits}	Katkıda Bulunanlar: {contributors} · Taahhütler: {commits}
+	Control port	Kontrol portu
+	Control:	Kontrol:
+	Conté Crayon	Conte Crayon
+	Convert	Convert
+	Convert for Smart Filters	Akıllı Filtreler için Dönüştürme
+	Convert Frames > Video Layers	Çerçeveleri Dönüştür > Video Katmanları
+	Convert Point Tool	Nokta Dönüştürme Aracı
+	Convert to Embedded	Gömülüye Dönüştür
+	Convert to Grayscale	Gri Tonlamaya Dönüştür
+	Convert to Layers	Katmanlara Dönüştür
+	Convert to Linked	Bağlantılıya Dönüştür
+	Convert to Linked…	Bağlantılıya Dönüştür…
+	Convert to Paragraph Text	Paragraf Metnine Dönüştür
+	Convert to Point Text	Nokta Metnine Dönüştür
+	Convert to Profile	Profile Dönüştür
+	Convert to Profile…	Profile Dönüştür…
+	Convert to Smart Object	Akıllı Nesneye Dönüştür
+	Convert to srgb	srgb'ye dönüştür
+	Convert to the working space ({profile})	Çalışma alanına dönüştürün ({profile})
+	Cool	Harika
+	Cooling L B B	Soğutma L B B
+	Cooling80	Soğutma80
+	Cooling82	Soğutma82
+	Copper	Bakır
+	Copy Layer Style	Katman Stilini Kopyala
+	Copy Merged	Birleştirilmiş Olarak Kopyala
+	Copy Texture to Other Tools	Dokuyu Diğer Araçlara Kopyala
+	Copyright and Contact Info	Telif Hakkı ve İletişim Bilgileri
+	Copyright Info URL	Telif Hakkı Bilgisi URL'si
+	Copyright Status	Telif Hakkı Durumu
+	Corner Crop Marks	Köşe Kırpma İşaretleri
+	Corner radius	Köşe yarıçapı
+	Correct C A	Doğru CA
+	Correct Distortion	Bozulmanın Düzeltilmesi
+	Correct Vignette	Doğru Vinyet
+	Could not complete the Free Transform command because the layer is locked.	Katman kilitli olduğundan Serbest Dönüştürme komutu tamamlanamadı.
+	Could not open	Açılamadı
+	Could not transform: the layer is empty	Dönüştürülemedi: katman boş
+	Could not use Perspective Warp: the layer is empty	Perspektif Çarpıtma kullanılamadı: katman boş
+	Could not use Puppet Warp: no opaque pixels	Puppet Warp kullanılamadı: opak piksel yok
+	Could not use Puppet Warp: the layer is empty	Puppet Warp kullanılamadı: katman boş
+	Could not use the move tool because the layer is locked.	Katman kilitli olduğundan taşıma aracı kullanılamadı.
+	Couldn't place {name}: {error}	{name} yerleştirilemedi: {error}
+	Count	Sayım
+	Count Jitter	Titreşimi say
+	Count Tool	Sayma Aracı
+	Count: {n}	Sayım: {n}
+	Cove - Deep	Koy - Derin
+	Cove - Shallow	Koy - Sığ
+	CPU (no GPU acceleration)	CPU (GPU hızlandırması yok)
+	CPU / Compatibility	CPU / Uyumluluk
+	Craquelure	Küçük çatlak
+	Create a new count group	Yeni bir sayım grubu oluşturun
+	Create a new document or open an existing file.	Yeni bir belge oluşturun veya mevcut bir dosyayı açın.
+	Create a new elliptical frame	Yeni bir eliptik çerçeve oluşturun
+	Create a new group	Yeni bir grup oluştur
+	Create a new layer	Yeni bir katman oluştur
+	Create a new layer  (⇧⌘N)	Yeni bir katman oluştur (⇧⌘N)
+	Create a new rectangular frame	Yeni bir dikdörtgen çerçeve oluşturun
+	Create By	Oluşturan
+	Create Date	Tarih Oluştur
+	Create Droplet	Damlacık Oluştur
+	Create Droplet…	Damlacık oluştur…
+	Create Ellipse	Elips Oluştur
+	Create Layer	Katman Oluştur
+	Create Multiple Picture Packages	Çoklu Resim Paketleri Oluşturun
+	Create new action	Yeni eylem oluştur
+	Create new brush from the current settings	Mevcut ayarlardan yeni fırça oluştur
+	Create new brush from these settings	Bu ayarlardan yeni fırça oluşturun
+	Create new brush preset from the current settings	Geçerli ayarlardan yeni fırça hazır ayarı oluşturun
+	Create new channel	Yeni kanal oluştur
+	Create new count group	Yeni sayım grubu oluştur
+	Create new document from current state	Mevcut durumdan yeni belge oluştur
+	Create new fill or adjustment layer	Yeni dolgu veya ayarlama katmanı oluştur
+	Create new gradient	Yeni degrade oluştur
+	Create new group	Yeni grup oluştur
+	Create new layer	Yeni katman oluştur
+	Create new layer comp	Yeni katman kompozisyonu oluştur
+	Create new path	Yeni yol oluştur
+	Create new pattern from the selection	Seçimden yeni desen oluştur
+	Create new set	Yeni grup oluştur
+	Create new shape from the current path	Geçerli yoldan yeni şekil oluştur
+	Create new snapshot	Yeni anlık görüntü oluştur
+	Create new style (from the selected type)	Yeni stil oluştur (seçilen türden)
+	Create new style from the selected layer	Seçilen katmandan yeni stil oluştur
+	Create new swatch	Yeni renk örneği oluştur
+	Create new tool preset	Yeni araç ön ayarı oluştur
+	Create Plane	Düzlem Oluştur
+	Create Polygon	Çokgen Oluştur
+	Create Rectangle	Dikdörtgen Oluştur
+	Create Smart Object after Loading Layers	Katmanları Yükledikten Sonra Akıllı Nesne Oluştur
+	Create Snapshot	Anlık Görüntü Oluştur
+	Create Texture	Doku Oluştur
+	Create Triangle	Üçgen Oluştur
+	Create Video Timeline	Video Zaman Çizelgesi Oluşturun
+	Create Warped Text	Çarpık Metin Oluştur
+	Create Work Path	İş Yolu Oluştur
+	Create…	Oluştur…
+	Credit	Kredi
+	Crisp	Çıtır
+	Crop and Straighten Photos	Fotoğrafları Kırp ve Düzelt
+	Crop Factor	Mahsul Faktörü
+	Crop Shield color	Kırpma Kalkanı rengi
+	Crop Tool	Kırpma Aracı
+	Cross Process	Çapraz Süreç
+	Crosswise	Çapraz olarak
+	current	akım
+	Current & Below	Güncel ve Aşağıda
+	Current & Below No Adjustments	Mevcut ve Altında Ayarlama Yok
+	Current Layer	Geçerli Katman
+	Current Path	Geçerli Yol
+	Current Size	Mevcut Boyut
+	Current Tool	Güncel Araç
+	Current Tool Only	Yalnızca Geçerli Araç
+	Cursors	İmleçler
+	Cursors…	İmleçler…
+	Curvature Pen Tool	Eğrilik Kalemi Aracı
+	Curve Darks	Eğri Koyuları
+	Curve Fit:	Eğri Fitili:
+	Curve Highlights	Eğrinin Öne Çıkan Noktaları
+	Curve Lights	Eğri Işıkları
+	Curve Shadows	Eğri Gölgeleri
+	Curve Splits	Eğri Bölmeleri
+	Custom background color	Özel Arka Plan Rengi
+	Custom Branch Color	Özel Şube Rengi
+	Custom dark	Özel koyu
+	Custom light	Özel ışık
+	Custom pattern	Özel desen
+	Custom Pattern:	Özel Desen:
+	Custom Pixel Aspect Ratio	Özel Piksel En Boy Oranı
+	Custom Pixel Aspect Ratio…	Özel Piksel En Boy Oranı…
+	Custom Shape Tool	Özel Şekil Aracı
+	Custom Shapes	Özel Şekiller
+	Custom…	Özel…
+	Cutout	Kesim
+	Cyan  ·  Red	Camgöbeği · Kırmızı
+	Cyans	Camgöbeği
+	Cycle Orientation	Döngü Yönü
+	Cycle Overlay	Döngü Yerleşimi
+	Cycle Screen Mode	Döngü Ekranı Modu
+	D1/DV NTSC (0.91)	D1/DV NTSC (0,91)
+	D1/DV NTSC Widescreen (1.21)	D1/DV NTSC Geniş Ekran (1.21)
+	D1/DV PAL (1.09)	D1/DV PAL (1,09)
+	D1/DV PAL Widescreen (1.46)	D1/DV PAL Geniş Ekran (1,46)
+	Daisies	Papatyalar
+	Dark	Karanlık
+	Dark Intensity	Karanlık Yoğunluk
+	Dark Rough	Karanlık Sert
+	Darken Amount	Koyulaştırma Miktarı
+	Darken Interface	Arayüzü koyulaştır
+	Darken Only	Yalnızca Koyulaştır
+	Darker Color	Daha Koyu Renk
+	Darks	Karanlıklar
+cameraRaw	Darks	Koyular
+	Dash	Çizgi
+	Dash / gap lengths × stroke width	Çizgi / boşluk uzunlukları × kontur genişliği
+	Dash offset	Çizgi ofseti
+	Dashed line	Kesikli çizgi
+	Dashed lines	Kesikli çizgiler
+	Data Sets as Files	Dosya Olarak Veri Kümeleri
+	Data Sets as Files…	Dosya Olarak Veri Kümeleri…
+	Data Sets…	Veri Setleri…
+cameraData	Date Taken	Çekim Tarihi
+	DateTime Original	TarihSaat Orijinal
+	Day For Night	Gündüz Gece
+	De-Interlace…	Taramasızlaştırma…
+	Decontaminate	Dekontaminasyon
+	Decrease Brush Hardness	Fırça sertliğini azalt
+	Decrease Brush Size	Fırça boyutunu küçült
+	Deep Blue	Derin Mavi
+	Deep Emerald	Derin Zümrüt
+	Deep Red	Koyu Kırmızı
+	Deep Yellow	Koyu Sarı
+	Default colours (D)	Varsayılan renkler (D)
+	Default Features	Varsayılan Özellikler
+	Default Foreground and Background Colors	Varsayılan Ön Plan ve Arka Plan Renkleri
+	Default Leaves	Varsayılan İzinler
+	Default PhotoCraft Size	Varsayılan PhotoCraft Boyutu
+	Default printer	Varsayılan yazıcı
+	Default restored.	Varsayılan geri yüklendi.
+	Defaults	Varsayılanlar
+	Defaults restored.	Varsayılanlar geri yüklendi.
+	Define	Tanımla
+	Define at least one variable first.	İlk önce en az bir değişken tanımlayın.
+	Define Brush Preset	Fırça Ön Ayarını Tanımla
+	Define Brush Preset…	Fırça Ön Ayarını Tanımla…
+	Define Custom Shape	Özel Şekli Tanımla
+	Define Custom Shape…	Özel Şekil Tanımlayın…
+	Define Pattern	Deseni Tanımla
+	Define Pattern…	Deseni Tanımla…
+	Define…	Tanımla…
+	Definition	Tanım
+	Defringe	Bordürleri kaldır
+	Defringe…	Borcu kaldır…
+	Degrees	Dereceler
+	Dehaze	Buğu giderme
+	Delete All Empty Layers	Tüm Boş Katmanları Sil
+	Delete Anchor Point Tool	Bağlantı Noktası Silme Aracı
+	Delete and Fill Selection	Seçimi Sil ve Doldur
+	Delete brush	Fırçayı sil
+	Delete count group	Sayım grubunu sil
+	Delete Crop Preset…	Kırpma Ön Ayarını Sil…
+	Delete Cropped Pixels	Kırpılmış Pikselleri Sil
+	Delete current channel	Mevcut kanalı sil
+	Delete current state	Mevcut durumu sil
+	Delete effect layer	Efekt katmanını sil
+	Delete Filter Mask	Filtre Maskesini Sil
+	Delete Frame	Çerçeveyi Sil
+	Delete layer	Katmanı sil
+	Delete layer comp	Katman kompozisyonunu sil
+	Delete Layer Mask	Katman Maskesini Sil
+	Delete layer ‘{name}’?	'{name}' katmanı silinsin mi?
+	Delete layer?	Katman silinsin mi?
+	Delete Layers	Katmanları Sil
+	Delete Layer…	Katmanı Sil…
+	Delete note	Notu sil
+	Delete Path	Yolu Sil
+	Delete path	Yolu sil
+	Delete Pins	Pinleri Sil
+	Delete Preset…	Ön Ayarı Sil…
+	Delete selected measurements	Seçilen ölçümleri sil
+	Delete Shortcut	Kısayolu Sil
+	Delete Smart Filters	Akıllı Filtreleri Sil
+	Delete Snapshot	Anlık Görüntüyü Sil
+	Delete style	Stili sil
+	Delete this set	Bu Kümeyi Sil
+	Delete Timeline	Zaman Çizelgesini Sil
+	Delete Tool Preset	Araç Ön Ayarını Sil
+	Delete tool preset	Araç ön ayarını sil
+	Delete Vector Mask	Vektör Maskesini Sil
+	Delete vector mask	Vektör maskesini sil
+	Delete Workspace…	Çalışma Alanını Sil…
+	Delete {count} layers? {names}	{count} katman silinsin mi? {names}
+	Density	Yoğunluk
+	Density:	Yoğunluk:
+	Depth Jitter	Derinlik Değişimi
+	Depth Map	Derinlik Haritası
+	Depth Mode	Derinlik Modu
+	Desaturate Monitor Colors By	Monitör Renklerinin Doygunluğunu Azaltma
+	Deselect Layers	Katmanların Seçimini Kaldır
+	Despeckle	Benek giderme
+	Detail	Detay
+	Detailed	Detaylı
+	Detect Faces	Yüzleri Algıla
+	Developing {name}	{name} geliştiriliyor
+	Diagonal (Descending)	Çapraz (Azalan)
+	Diamond	Elmas
+	Diamond Gradient	Elmas Degrade
+	Difference Clouds	Fark Bulutları
+	Diffuse	Yaygın
+	Diffuse…	Yaygın…
+	Dimensions:	Boyutlar:
+	Direction of Stroke	İnme Yönü
+	DirectX 12	DirectX 12
+	Disable	Devre dışı bırak
+	Disable Filter Mask	Filtre Maskesini Devre Dışı Bırak
+	Disable Layer Mask	Katman Maskesini Devre Dışı Bırak
+	Disable Mask	Maskeyi Devre Dışı Bırak
+	Disable Smart Filters	Akıllı Filtreleri Devre Dışı Bırak
+	Disabled	Devre dışı
+	Discard Changes	Değişiklikleri İptal Et
+	Discard Layers and Save a Copy	Katmanları Atın ve Bir Kopyasını Kaydedin
+	Discard the embedded profile (don't color manage)	Gömülü profili atın (renk yönetimi yapmayın)
+	Discontiguous	bitişik değil
+	Disks	Diskler
+	Displace	Yer değiştir
+	Displace…	Yer değiştir…
+	Display P3	Display P3
+	Display p3	Ekran p3
+	Display Text	Metni Görüntüle
+	Dissolve	Eritme
+	Distribution	Dağıtım
+	Dither	Titreşim
+	Divide…	Böl…
+	Do you want to save the changes you made to “{name}” before closing?	Kapatmadan önce “{name}” üzerinde yaptığınız değişiklikleri kaydetmek istiyor musunuz?
+	Do you want to save the changes you made to “{name}” before quitting?	Çıkmadan önce “{name}” öğesinde yaptığınız değişiklikleri kaydetmek istiyor musunuz?
+	Do you want to save you made to “{name}” before quitting?	Çıkmadan önce yaptığınız işi “{name}” konumuna kaydetmek istiyor musunuz?
+	Doc: {flat}/{layered}	Doküman: {flat}/{layered}
+	Doc: {w} × {h} px	Doküman: {w} × {h} piksel
+	Document Bounds	Belge Sınırları
+	Document Dimensions	Belge Boyutları
+	Document Profile	Belge Profili
+	Document Size	Belge Boyutu
+	Document Sizes	Belge Boyutları
+	Documentation	Dokümantasyon
+	Dodge	Dodge
+	Dodge Tool	Açıklaştırma Aracı
+	Dodge/Burn	Soldurma/Yakma
+	Domed	Kubbeli
+	Domed (Inverted)	Kubbeli (Ters)
+	Don't also tick Mirror Image in Print Settings…: the two flips cancel out.	Yazdırma Ayarlarında ayrıca Ayna Görüntüsünü açmayın: iki yansıtma birbirini iptal eder.
+	Don't Import	İçe Aktarma
+	Don't show again	Bir daha gösterme
+	Double click layer mask launches select and mask	Çift tıklama katman maskesi seçme ve maskelemeyi başlatır
+	Double Line	Çift Hat
+	Drag (lasso) or click points (polygonal) · {add} add · {sub} subtract	Noktaları sürükleyin (kement) veya tıklayın (çokgen) · {add} ekle · {sub} çıkar
+	Drag a box or click four corners · drag the corners onto the edges of a skewed shape · {commit} commits · Esc cancels	Bir kutuyu sürükleyin veya dört köşeyi tıklayın · köşeleri çarpık bir şeklin kenarlarına sürükleyin · {commit} taahhütleri · Esc iptalleri
+	Drag a crop box · drag inside to move · edges resize ({ratio} ratio, {centre} centre) · Space moves while drawing · arrows nudge · X swaps orientation · {commit} commits · Esc cancels	Kırpma kutusunu sürükleyin · taşımak için içeriye sürükleyin · kenarları yeniden boyutlandırın ({ratio} oranı, {centre} merkez) · Çizim sırasında boşluk hareket eder · oklar iter · X yönünü değiştirir · {commit} gerçekleştirir · Esc iptal eder
+	Drag a rectangle around the object	Nesnenin çevresine bir dikdörtgen sürükleyin
+	Drag around the centre to rotate the view  ·  Shift constrains to 15°	Görünümü döndürmek için merkezin etrafında sürükleyin · Kaydırma 15° ile sınırlandırılır
+	Drag on the image to add a constraint; Shift for horizontal/vertical; right-click to delete.	Kısıtlama eklemek için resmin üzerine sürükleyin; Yatay/dikey için kaydırma; silmek için sağ tıklayın.
+	Drag or click polygon points · hold Alt during lasso for straight segments · {add} add · {sub} before drawing subtracts	Çokgen noktalarını sürükleyin veya tıklayın · düz parçalar için kement sırasında Alt tuşunu basılı tutun · {add} ekleyin · çizim çıkarmadan önce {sub}
+	Drag the arrow to set the angle, the dots to set the roundness	Açıyı ayarlamak için oku, yuvarlaklığı ayarlamak için noktaları sürükleyin
+	Drag the handles on the outline to resize and turn it, the square to round its corners, and the dots inside to set where the blur starts.	Yeniden boyutlandırmak ve döndürmek için dış çizgideki tutamaçları, köşeleri yuvarlamak için kareyi, bulanıklığın nerede başlayacağını belirlemek için içerideki noktaları sürükleyin.
+	Drag the handles on the outline to resize and turn it; the ring sets the blur angle.	Yeniden boyutlandırmak ve döndürmek için dış çizgideki tutamaçları sürükleyin; halka bulanıklık açısını belirler.
+	Drag the pin to move the band, or its ring to change its blur. Drag the solid lines to widen the sharp band, the dashed lines to set the transition, and the dots to turn it.	Bandı taşımak için pimi, bulanıklığını değiştirmek için halkasını sürükleyin. Keskin bandı genişletmek için düz çizgileri, geçişi ayarlamak için kesikli çizgileri, döndürmek için noktaları sürükleyin.
+	Drag to draw a gradient	Degrade çizmek için sürükleyin
+	Drag to draw the curve · {key}-click draws a straight line	Eğriyi çizmek için sürükle · {key}-tıklama düz çizgi çizer
+	Drag to move the active layer	Etkin katmanı taşımak için sürükleyin
+	Drag to move the active shape's path or the Work Path	Etkin şeklin yolunu veya Çalışma Yolunu taşımak için sürükleyin
+	Drag to move the layer	Katmanı taşımak için sürükleyin
+	Drag to pan  ·  hold Space with any tool	Kaydırmak için sürükleyin · herhangi bir araçla Space tuşunu basılı tutun
+	Drag to pan · Scroll to zoom · Double-click to fit	Kaydırmak için sürükleyin · Yakınlaştırmak için kaydırın · Sığdırmak için çift tıklayın
+	Drag: draw freehand · Release on the start point: close	Sürükleyin: serbest çizim yapın · Başlangıç noktasında bırakın: kapat
+	Drag: draw freehand · {alt}-click: straight segment · Release on the start point: close	Sürükle: serbest çiz · {alt}-tıkla: düz segment · Başlangıç noktasında bırak: kapat
+	Draw to modify the curve	Eğriyi değiştirmek için çiz
+	Draw with the Pen tool (P) or make a work path from a selection.	Kalem aracıyla (P) çizim yapın veya seçimden bir çalışma yolu oluşturun.
+	Drop an image or PSD anywhere to open it.	Açmak için bir görüntüyü veya PSD'yi herhangi bir yere bırakın.
+	Drop shadow	Alt gölge
+	Dry Brush	Kuru Fırça
+	Dual Axis	Çift Eksen
+	Dual Brush	Çift Fırça
+	Duotone	Çift tonlu
+	Duotone…	Çift tonlu…
+	Duplicate Frame	Çerçeveyi Çoğalt
+	Duplicate Layer Comp	Yinelenen Katman Kompozisyonu
+	Duplicate Layers	Katmanları Çoğalt
+	Duplicate Layers…	Katmanları Çoğalt…
+	Duplicate Layer…	Katmanı Çoğalt…
+	Duplicate Path	Yinelenen Yol
+	Duplicate style	Yinelenen stil
+	Duplicated selection name	Yinelenen seçim adı
+	Dust & Scratches	Toz ve Çizikler
+	Dust & Scratches…	Toz ve Çizikler…
+	DVCPRO HD 1080/HDV 1080 (1.5)	DVCPRO HD 1080/HDV 1080 (1,5)
+	Dynamic color sliders	Dinamik renk kaydırıcıları
+	East asian	Doğu Asya
+	East Asian Features	Doğu Asya Özellikleri
+	Edge Extension	Kenar Uzantısı
+	Edge Fidelity	Kenar Doğruluğu
+	Edit in Quick Mask Mode	Hızlı Maske Modunda Düzenleme
+	Edit in Quick Mask Mode  (Q)	Hızlı Maske Modunda Düzenleme (Q)
+	Edit in Standard Mode  (Q)	Standart Modda Düzenleme (Q)
+	Edit Pins	Pinleri Düzenle
+	Edit Plane	Düzlemi Düzenle
+	Edit points to modify the curve	Eğriyi değiştirmek için noktaları düzenle
+	Edit Selected Guides	Seçili Kılavuzları Düzenle
+	Edit Toolbar…	Araç Çubuğunu Düzenle…
+	Edit Type	Türü Düzenle
+	Edit › Keyboard Shortcuts › Reset All to Defaults undoes an import.	Düzenle › Klavye Kısayolları › Tümünü Varsayılanlara Sıfırla, içe aktarma işlemini geri alır.
+	Edit › Paste	Düzenle › Yapıştır
+@id	edit.purge.undo	Geri Al
+@id	edit.stroke	Kontur…
+@id	edit.transform.scale	Ölçekle
+	Edits that change the whole document, such as a layer's blend mode, opacity or visibility, redraw all of it.	Bir katmanın karışım modu, opaklığı veya görünürlüğü gibi belgenin tamamını değiştiren düzenlemeler, belgenin tamamını yeniden çizer.
+	Effect cache mb	Efekt önbelleği mb
+	Efficiency	Verimlilik
+	Efficiency: 100%	Verimlilik: %100
+	Elliptical Marquee Tool	Eliptik İşaretleme Aracı
+	Email	E-posta
+	Embed Color Profile	Renk Profilini Göm
+	Embed profiles	Profilleri yerleştir
+	Embedded Profile Mismatch	Gömülü Profil Uyuşmazlığı
+	Emboss…	Kabartma…
+	Emulsion Down	Emülsiyon Aşağı
+	Enable airbrush-style build-up effects	Airbrush stili oluşturma efektlerini etkinleştirin
+	Enable animations	Animasyonları etkinleştir
+	Enable Crop Shield	Kırpma Kalkanını Etkinleştir
+	Enable flick panning	Hızlı kaydırmayı etkinleştir
+	Enable floating document window docking	Kayan belge penceresi yerleştirmeyi etkinleştir
+	Enable Layer Mask	Katman Maskesini Etkinleştir
+	Enable Mask	Maskeyi Etkinleştir
+	Enable narrow options bar	Dar seçenekler çubuğunu etkinleştir
+	Enable Smart Filters	Akıllı Filtreleri Etkinleştir
+	Enable Timeline Quick Config	Zaman Çizelgesi Hızlı Yapılandırmasını Etkinleştir
+	Enable Vector Mask	Vektör Maskesini Etkinleştir
+	Enable {name}	{name}'yi etkinleştir
+	Enabled	Etkin
+	End X	X'in sonu
+	End Y	Y Sonu
+	Enhance Edge	Kenarı Geliştir
+	Enhanced Controls	Gelişmiş Kontroller
+	Enhanced Controls…	Gelişmiş Kontroller…
+	Enter a name for the brush preset	Fırça ön ayarı için bir ad girin
+	Enter a name for the crop preset	Kırpma ön ayarı için bir ad girin
+	Enter description…	Açıklamayı girin…
+	Entropy	Entropi
+	Equalize	Eşitle
+	Error File	Hata Dosyası
+	Errors	Hatalar
+	Esc to cancel	İptal etmek için Esc
+	Essentials	Temel bilgiler
+	Exclude Overlapping Shapes	Çakışan Şekilleri Hariç Tut
+	Excluded Area	Hariç Tutulan Alan
+	EXIF	EXIF
+	EXIF Version	EXIF Sürümü
+	Expand All Groups	Tüm Grupları Genişlet
+	Expand Detection Area	Algılama Alanını Genişlet
+	Expand group  ({key}-click: all groups)	Grubu genişlet ({key}-tıklayın: tüm gruplar)
+	Expand group  (⌥-click: all groups)	Grubu genişlet (⌥ tuşuna basarak tıklayın: tüm gruplar)
+	Expand Panel Group	Panel Grubunu Genişlet
+	Expand…	Genişlet…
+	Expansion:	Genişleme:
+	Export clipboard	Panoyu dışa aktar
+	Export Contents	İçeriği Dışa Aktar
+	Export Contents…	İçeriği Dışa Aktar…
+	Export Image	Görüntüyü Dışa Aktar
+	Export Preferences	Dışa Aktarma Tercihleri
+	Export Preferences…	Dışa Aktarma Tercihleri…
+	Export Presets	Ön Ayarları Dışa Aktarma
+	Export selected measurements (CSV)	Seçilen ölçümleri dışa aktar (CSV)
+	Export Settings	Ayarları Dışa Aktarma
+	Export Swatches for Exchange…	Değişim için Renk Örneklerini Dışa Aktar…
+	Export Swatches…	Renk Örneklerini Dışa Aktar…
+	Export/Import Presets	Ön Ayarları Dışa Aktarma/İçe Aktarma
+	Export/Import Presets…	Ön Ayarları Dışa/İçe Aktar…
+@plural	Exported {n} swatch to {file}|Exported {n} swatches to {file}	{n} renk örneği {file} dosyasına dışa aktarıldı|{n} renk örneği {file} dosyasına dışa aktarıldı
+	Exporting…	Dışa aktarılıyor…
+cameraData	Exposure	Pozlama
+	Exposure and Gamma	Pozlama ve Gama
+	Exposure Program	Maruziyet Programı
+	Exposure:	Pozlama:
+	Exposure…	Pozlama…
+	Extend	Uzat
+	Extensions	Uzantılar
+	Extra Bold	Ekstra Kalın
+	Extra Large	Ekstra Büyük
+	Extra large	Ekstra büyük
+	Extra Light	Ekstra Işık
+	ExtraBold	Ekstra Kalın
+fontWeight	ExtraBold	Ekstra Kalın
+	ExtraLight	Ekstra Hafif
+fontWeight	ExtraLight	Ekstra İnce
+	Extras	Ekstralar
+	Extrude	Ekstrüzyon
+	Extrude…	Ekstrüzyon…
+	Eyedroppers:	Damlalıklar:
+	F	F
+	F cycles the views; hold X to see the image	F görünümleri döndürür; resmi görmek için X'i basılı tutun
+cameraData	F-Stop	Diyafram
+	Facet	Faset
+	Factor:	Faktör:
+	Fade	Solmaya
+	Fade steps	Adımları soldur
+	Fade…	Solmaya…
+	Failed	Başarısız
+	Failed to open file	Dosya açılamadı
+	Failed to save file	Dosya kaydedilemedi
+	Faux Bold	Sahte Kalın
+	Faux Italic	Sahte İtalik
+	Feather Radius	Tüy Yarıçapı
+	Feather…	Geçiş Yumuşatma…
+	Fewer Points	Daha Az Puan
+	Fiber Length	Elyaf Uzunluğu
+	Fibers	Lifler
+	Fibers…	Lifler…
+	Field Blur	Alan Bulanıklığı
+	Field Blur…	Alan Bulanıklığı…
+	File Handling…	Dosya İşleme…
+	File Info	Dosya Bilgileri
+	File Naming	Dosya Adlandırma
+	File not found	Dosya bulunamadı
+	File path	Dosya yolu
+	File Settings	Dosya Ayarları
+	Filename	Dosya adı
+	Fill Color	Dolgu Rengi
+	Fill color	Rengi doldur
+	Fill Content	İçeriği Doldur
+	Fill Layer	Dolgu Katmanı
+	Fill Light	Işık Doldur
+	Fill new type layers with placeholder	Yeni yazı katmanlarını yer tutucuyla doldurma
+	Fill Opacity	Dolgu Opaklığı
+	Fill Path	Yolu Doldur
+	Fill path with foreground color	Yolu ön plan rengiyle doldur
+	Fill Screen	Doldurma Ekranı
+	Fill Settings	Dolgu Ayarları
+	Fill with {mode}-neutral color (50% gray)	{mode} nötr rengiyle doldur (%50 gri)
+	Fill with {mode}-neutral color (black)	{mode} nötr rengiyle doldur (siyah)
+	Fill with {mode}-neutral color (white)	{mode} nötr rengiyle doldur (beyaz)
+	Fill…	Doldur…
+	Film & Video	Film ve Video
+	Film Grain	Film Tahıl
+	Filter for adjustment layers	Ayarlama katmanları için filtre
+	Filter for pixel layers	Piksel katmanları için filtre
+	Filter for shape layers	Şekil katmanları için filtre
+	Filter for smart objects	Akıllı nesneler için filtre
+	Filter for type layers	Yazım katmanları için filtre
+	Filter Gallery	Filtre Galerisi
+	Filter Gallery…	Galeriyi Filtrele…
+@id	filter.sharpen.sharpen	Keskinleştir
+	Filter:	Filtre:
+	Find and Replace Text	Metni Bul ve Değiştir
+	Find and Replace Text…	Metni Bul ve Değiştir…
+	Find Edges	Kenarları Bul
+	Find Layers	Katmanları Bul
+	Fine	iyi
+	Finger Painting	Parmak Boyama
+	First Color Readout	İlk Renk Okuması
+	First commit	İlk taahhüt
+	First Line Indent	İlk Satır Girintisi
+	Fish	Balık
+	Fisheye	Balıkgözü
+	Fit	Uygun
+	Fit Artboard on Screen	Çalışma Yüzeyini Ekrana Sığdır
+	Fit Image	Resmi Sığdır
+	Fit Image…	Resmi Sığdır…
+	Fit Layer(s) on Screen	Katmanları Ekrana Sığdır
+	Fit on Screen	Ekrana Sığdır
+	Fit Screen	Ekrana Sığdır
+	Fit to Window	Pencereye Sığdır
+	Fix the red plane first: its corners must form a convex quad	Önce kırmızı düzlemi düzeltin: köşeleri dışbükey bir dörtgen oluşturmalı
+	Fixed Ratio	Sabit Oran
+	Fixed Size	Sabit Boyut
+	Flag	Bayrak
+	Flame	Alev
+	Flame Bottom Alignment	Alev Alt Hizalaması
+	Flame Lines	Alev Hatları
+	Flame Shape	Alev Şekli
+	Flame Style	Alev Stili
+	Flame Type	Alev Tipi
+	Flame…	Alev…
+	Flat	Düz
+	Flat Shading	Düz Gölgeleme
+	Flatten All Layer Effects	Tüm Katman Efektlerini Düzleştir
+	Flatten All Masks	Tüm Maskeleri Düzleştir
+	Flatten Frames Into Clips	Çerçeveleri Klipsler halinde Düzleştirin
+	Flatten Frames Into Layers	Çerçeveleri Katmanlara Düzleştirin
+	Flatten Image	Görüntüyü Düzleştir
+	Flip Canvas Horizontal	Kanvası Yatay Çevir
+	Flip Canvas Vertical	Kanvası Dikey Çevir
+	Flip X	X'i Çevir
+	Flip X Jitter	X Değişimini Çevir
+	Flip Y	Y Çevirme
+	Flip Y Jitter	Çevir Y Titreşimi
+	Float All in Windows	Tümünü Windows'ta Kaydır
+	Float in Window	Pencerede Kaydır
+	Float Panel	Şamandıra Paneli
+	Floating point	Kayan nokta
+	Flow	Akış
+	Flow Jitter	Akış Değişimi
+	Flower Color	Çiçek Rengi
+	Focal Distance	Odak Mesafesi
+	Focal Length	Odak Uzunluğu
+cameraData	Focal Length	Odak Uzaklığı
+cameraData	Focal Length (35 mm)	Odak Uzaklığı (35 mm)
+	Focal Length35mm	Odak Uzunluğu35mm
+	Focus Area	Odak Alanı
+	Focus Area…	Odaklanma Alanı…
+	Follows only edges this close to the pointer ([ and ] change it)	Yalnızca işaretçiye bu kadar yakın olan kenarları takip eder ([ ve ] bunu değiştirir)
+	Font	Yazı tipi
+	Font preview	Yazı tipi önizlemesi
+	Font Preview Size	Yazı Tipi Önizleme Boyutu
+	Foreground	Ön plan
+	Foreground Color	Ön Plan Rengi
+	Foreground Level	Ön Plan Seviyesi
+	Foreground to Background	Ön Plandan Arka Plana
+	Foreground/Background Jitter	Ön Plan/Arka Plan Değişimi
+	Fragment	Parça
+	Frame Duration	Kare Süresi
+	Frame from Layers	Katmanlardan Çerçeve
+	Frame from Layers…	Katmanlardan Çerçeve…
+	Frame Sync	Çerçeve Senkronizasyonu
+	Frame Tool	Çerçeve Aracı
+	Frame {current} / {total}	Çerçeve {current} / {total}
+	Free Transform a Copy	Bir Kopyayı Ücretsiz Dönüştürme
+	Free Transform is still being applied; try again when it has finished.	Serbest Dönüştürme hâlâ uygulanıyor; bittiğinde yeniden deneyin.
+	Freeform Pen Tool	Serbest Kalem Aracı
+	Freeze Lasso: drag to freeze an area, Alt-drag to thaw it (L)	Kementi Dondur: Bir alanı dondurmak için sürükleyin, buzunu çözmek için Alt tuşuna basarak sürükleyin (L)
+	Fresco	Fresk
+	From Center	Merkezden
+	From Left	Soldan
+	From Right	Sağdan
+	From Transparency	Şeffaflıktan
+	Front Image	Ön Resim
+	Fuchsia	Fuşya
+	Full Screen	Tam Ekran
+	Full Screen Mode With Menu Bar	Menü Çubuklu Tam Ekran Modu
+	Full size tip	Tam boyutlu uç
+	Full Spherical	Tam Küresel
+	Full-resolution preview unavailable	Tam çözünürlüklü önizleme kullanılamıyor
+	Fullscreen	Tam ekran
+	Fuzziness	bulanıklık
+	Fuzziness:	Bulanıklık:
+	Gamma:	Gama:
+	Gamut warning color	Gamut uyarı rengi
+	Gamut warning opacity	Gamut uyarı opaklığı
+	Gap	Boşluk
+	Gaussian	Gaussian
+	General Blend	Genel Karışım
+	General Brushes	Genel Fırçalar
+	Generator enabled	Jeneratör etkin
+	Generators	Jeneratörler
+	Generic	jenerik
+	Gif	Gif
+cameraRaw	Global	Genel
+	Global Light	Küresel Işık
+	Global Light…	Küresel Işık…
+	Gloss	parlaklık
+	Gloss Contour	Parlak Kontur
+	Glossy	parlak
+	Glow Amount	Işıma Miktarı
+	Glow Color	Parıltılı Renk
+	Glowing Edges	Parlayan Kenarlar
+	Glyph	Glif
+	Glyph Scaling	Glif Ölçekleme
+	Glyphs Panel	Glifler Paneli
+	Go to Layer	Katmana Git
+	Golden Ratio	Altın Oran
+	Golden Spiral	Altın Spiral
+	GPS	GPS
+	GPU	GPU
+	GPU acceleration could not continue. Your documents are unchanged.	GPU hızlandırması devam edemedi. Belgeleriniz değişmedi.
+	GPU Backend	GPU Arka Ucu
+	GPU backend	GPU arka ucu
+	GPU Memory (MB, 0 = Automatic)	GPU Belleği (MB, 0 = Otomatik)
+	GPU memory budget: {budget}	GPU bellek bütçesi: {budget}
+	GPU Memory Full	GPU Belleği Dolu
+	Grab bag	Çantayı al
+	Grade Balance	Not Dengesi
+	Grade Blending	Sınıf Harmanlama
+	Grade Global	Küresel Sınıf
+	Grade Highlights	Notun Öne Çıkan Noktaları
+	Grade Midtones	Derece Orta Tonları
+	Grade Shadows	Sınıf Gölgeleri
+	Gradient Editor	Degrade Düzenleyici
+	Gradient Map	Gradyan Haritası
+	Gradient Map…	Degrade Eşlemesi…
+	Gradient Options	Degrade Seçenekleri
+	Gradient Overlay	Degrade Yerleşimi
+	Gradient Overlay…	Degrade Kaplama…
+	Gradient picker	Degrade seçici
+	Gradient Preset Options	Gradyan Ön Ayarı Seçenekleri
+	Gradient stops	Gradyan durakları
+	Gradient…	Gradyan…
+	Grain Amount	Tane Miktarı
+	Grain Roughness	Tahıl Pürüzlülüğü
+	Grain Size	Tane Boyutu
+	Graphic and Web	Grafik ve Web
+	Graphic and web	Grafik ve web
+	Graphic Pen	Grafik Kalemi
+	Gray Value (Maximum)	Gri Değeri (Maksimum)
+	Gray Value (Mean)	Gri Değeri (Ortalama)
+	Gray Value (Median)	Gri Değeri (Medyan)
+	Gray Value (Minimum)	Gri Değeri (Minimum)
+	Gray:	Gri:
+	Grayscale Slider	Gri Tonlama Kaydırıcısı
+cameraRaw	Green	Yeşil
+	Greens	Yeşiller
+	Grid  (⌘')	Izgara (⌘')
+	Grid color	Izgara rengi
+	Grid colors	Izgara renkleri
+	Grid size	Izgara boyutu
+	Grid style	Izgara stili
+	Grid unit	Izgara ünitesi
+	Grid:	Izgara:
+	Group from Layers	Katmanlardan Gruplandır
+	Group from Layers…	Katmanlardan Grup…
+	Group Layer	Grup Katmanı
+	Group Layers	Grup Katmanları
+	Group name	Grup adı
+	Group · {n} layer	Grup · {n} katman
+@plural	Group · {n} layer|Group · {n} layers	Grup · {n} katman|Grup · {n} katman
+	Group…	Grup…
+	Grow	Büyüt
+	Guide color	Kılavuz rengi
+	Guide Layout…	Kılavuz Düzeni…
+	Guide style	Kılavuz stili
+	Guides, Grid & Slices	Kılavuzlar, Izgaralar ve Dilimler
+	Guides, Grid & Slices…	Kılavuzlar, Izgaralar ve Dilimler…
+	Gutter	Oluk
+	H	H
+	Half Round	Yarım Yuvarlak
+	Hanging Punctuation	Asılı Noktalama İşaretleri
+	Hardness	Sertlik
+	Hardness:	Sertlik:
+	HDR Toning	HDR Tonlama
+	HDR Toning…	HDR Tonlama…
+	HDTV (Rec. 709)	HDTV (Kayıt 709)
+	HDV 1080/DVCPRO HD 720 (1.33)	HDV 1080/DVCPRO HD 720 (1,33)
+	Heal	İyileşmek
+	Heal Auto	Otomatik İyileştirme
+	Heal Color	Rengi İyileştir
+	Heal Off	İyileşme
+	Heal On	İyileşme
+	Healing	Şifa
+	Healing Brush Tool	Düzeltme Fırçası Aracı
+	Hearts	Kalpler
+	Heptagon	Yedigen
+	Hidden Layers	Gizli Katmanlar
+	Hide All Effects	Tüm Efektleri Gizle
+	Hide Auto Slices	Otomatik Dilimleri Gizle
+	Hide Layers	Katmanları Gizle
+	Hide Properties	Özellikleri Gizle
+	Hide Selection	Seçimi Gizle
+	Hide the layer's effects  ({key}-click: all layers)	Katmanın efektlerini gizle ({key}-tıklama: tüm katmanlar)
+	Hide the layer's effects  (⌥-click: all layers)	Katmanın efektlerini gizleyin (⌥ tuşuna basarak tıklayın: tüm katmanlar)
+	Hide {app}	{app}'ı gizle
+	High Pass…	Yüksek Geçiş…
+	Higher values follow only edges that contrast sharply with their surroundings	Daha yüksek değerler yalnızca çevreleriyle keskin bir kontrast oluşturan kenarları takip eder
+	Highlight	Vurgula
+	Highlight Amount	Vurgu Miktarı
+	Highlight Clipping Warning (O)	Kırpılma Uyarısını Vurgula (O)
+	Highlight Compression	Sıkıştırmayı Vurgula
+	Highlight Priority	Önceliği Vurgula
+	Highlight Radius	Yarıçapı Vurgula
+	Highlight Strength	Gücü Vurgula
+	Highlight Tone	Vurgu Tonu
+	Highlights from:	Öne çıkanlar:
+	Histories	Geçmiş
+	History Brush	Tarih Fırçası
+	History Brush Tool	Geçmiş Fırçası Aracı
+	History Log	Geçmiş Günlüğü
+	History Log…	Geçmiş Günlüğü…
+	History states	Tarih durumları
+	Hold Alt while drawing for straight segments	Düz parçalar çizerken Alt tuşunu basılı tutun
+	Home	Ana sayfa
+	Horizontal Centers	Yatay Merkezler
+	Horizontal Only	Yalnızca Yatay
+	Horizontal type	Yatay tip
+	Horizontal Type Mask Tool	Yatay Metin Maskesi Aracı
+	Horizontal Type Tool	Yatay Metin Aracı
+	Hotspot	Sıcak nokta
+	How often fastening points are placed by themselves	Sabitleme noktalarının kendi başlarına ne sıklıkla yerleştirildiği
+	Hsb	HSB
+	HSB Color	HSB Rengi
+	HSB/HSL	HSB/HSL
+	Hsl	HSL
+	Hsl Hue	Hsl Ton
+	Hsl Lum	Hsl Lum
+	Hsl Sat	HSL Cumartesi
+	HSL/Grayscale	HSL/Gri tonlamalı
+cameraRaw	Hue	Ton
+	Hue Jitter	Ton Değişimi
+	Hue/Saturation	Ton/Doygunluk
+	Huge	Devasa
+	Humidity	Nem
+	Hyphenate	Tireleme
+	ICO is limited to 256 × 256 pixels	ICO 256 × 256 piksel ile sınırlıdır
+	Ignore exif profile tag	Exif profil etiketini yoksay
+	Image Assets	Resim Varlıkları
+	Image Balance	Görüntü Dengesi
+	image file path	resim dosyası yolu
+	Image interpolation	Görüntü enterpolasyonu
+	Image previews	Resim önizlemeleri
+	Image Processor	Görüntü İşlemcisi
+	Image Processor…	Görüntü İşlemcisi…
+	Image Rotation	Görüntü Döndürme
+	Image Size:	Resim Boyutu:
+	Image Size…	Görüntü Boyutu…
+	Import .GRD	.GRD İçe Aktar
+	Import Brushes	Fırçaları İçe Aktar
+	Import brushes (.abr)	Fırçaları içe aktar (.abr)
+	Import Brushes…	Fırçaları İçe Aktar…
+	Import Brushes… (.abr)	Fırçaları İçe Aktar… (.abr)
+	Import Image	Görüntüyü İçe Aktar
+	Import keyboard shortcuts?	Klavye kısayolları içe aktarılsın mı?
+	Import Options	İçe Aktarma Seçenekleri
+	Import Presets	Ön Ayarları İçe Aktar
+	Import Settings	Ayarları İçe Aktarma
+	Import Shortcuts…	Kısayolları İçe Aktar…
+	Import Swatches…	Renk Örneklerini İçe Aktar…
+	Imported	İthal
+@plural	Imported {n} brush from {group}|Imported {n} brushes from {group}	{group} grubundan {n} fırça içe aktarıldı|{group} grubundan {n} fırça içe aktarıldı
+	Imported {n} shortcuts from {file}. Click OK to keep them.	{n} kısayolları {file} adresinden içe aktarıldı. Bunları saklamak için Tamam'ı tıklayın.
+@plural	Imported {n} swatch from {file}|Imported {n} swatches from {file}	{file} dosyasından {n} renk örneği içe aktarıldı|{file} dosyasından {n} renk örneği içe aktarıldı
+	Importing…	İçe aktarılıyor…
+	Impressionist	Empresyonist
+	In	içinde
+	In Black	Siyah
+	In White	Beyaz
+	Include All Subfolders	Tüm Alt Klasörleri Dahil Et
+	Include Color	Rengi Dahil Et
+	Include ICC Profile	ICC Profilini Ekle
+	Include in playback	Oynatmaya dahil et
+	Include Tool Settings	Araç Ayarlarını Dahil Et
+	Including layers will increase file size.	Katmanların eklenmesi dosya boyutunu artıracaktır.
+	Increase Brush Hardness	Fırça sertliğini artır
+	Increase Brush Size	Fırça boyutunu büyüt
+	Indent First	Önce Girintiyi Girin
+	Indent first line	İlk satıra girinti koy
+	Indent Left	Sola Girinti
+	Indent left margin	Sol kenar boşluğunu girintile
+	Indent Right	Sağa Girinti
+	Indent right margin	Sağ kenar boşluğuna girinti
+	Indexed	Dizine eklendi
+	Indexed Color	İndekslenmiş Renk
+	Indexed Color…	İndekslenmiş Renk…
+	Indicates	Gösterir
+	Indigo	Çivit mavisi
+	Industry Standard	Endüstri Standardı
+	Infinite	Sonsuz
+	Info Options…	Bilgi Seçenekleri…
+	Information	Bilgi
+	Initial Direction	Başlangıç Yönü
+	Initial Direction of Stroke	Başlangıç Strok Yönü
+	Ink Characteristics	Mürekkep Özellikleri
+	Ink Outlines	Mürekkep Ana Hatları
+	Inner Bevel	İç Eğim
+	Inner Glow	İç Işıma
+	Inner Shadow	İç Gölge
+	Inner Shadow…	İç Gölge…
+	Input	Giriş
+	Input Levels	Giriş Seviyeleri
+	Input Mode	Giriş Modu
+	Insert Blank Frame	Boş Çerçeve Ekle
+	Insert Stop…	Durdurma Ekle…
+	Integer	Tamsayı
+	Integrated Density	Entegre Yoğunluk
+	Integrations	Entegrasyonlar
+	Integrations…	Entegrasyonlar…
+	Interface…	Arayüz…
+	Internet Standard RGB	İnternet Standardı RGB
+	Interpolation:	Enterpolasyon:
+	Interpret Footage	Görüntüyü Yorumlama
+	Interpret Footage…	Görüntüyü Yorumla…
+	Intersect Mask with Selection	Maskeyi Seçimle Kesiştir
+	Intersect Shape Areas	Şekil Alanlarını Kesiş
+	Intersect with	İle kesiştir
+	Intersect with selection  ({key})	Seçimle kesiştir ({key})
+	Intersect with selection  (⇧⌥)	Seçimle kesiştir (⇧⌥)
+	Interval	Aralık
+	Invalid delete command	Geçersiz silme komutu
+	Invalid guide layout	Geçersiz kılavuz düzeni
+	Invalid {mode} profile	Geçersiz {mode} profili
+	Inverse	Ters Çevir
+	Inverse Selection	Ters Seçim
+	Invert All	Tümünü Ters Çevir
+	Invert has no settings.	Tersine çevirmenin hiçbir ayarı yoktur.
+	Invert Selection	Seçimi Ters Çevir
+	Invert…	Ters çevir…
+	Iris Blur	İris Bulanıklığı
+	Iris Blur…	İris Bulanıklığı…
+	ISO	ISO
+	ISO Speed	ISO Hızı
+cameraData	ISO Speed	ISO Hızı
+	Isolate Layers	Katmanları Yalıt
+	Italic	italik
+fontWeight	Italic	İtalik
+	Its layers need {needed} of GPU memory; the budget leaves them {budget}.	Katmanlarının {needed} GPU belleğine ihtiyacı var; bütçe onlara {budget} bırakıyor.
+	Ivy	sarmaşık
+	Jag	Jag
+	Jpeg quality	JPEG kalitesi
+	Jpg	Jpg
+	Justify	Gerekçelendir
+	Justify all	Hepsini gerekçelendir
+	Justify last centered	Son ortayı iki yana yasla
+	Justify last left	Son sola yasla
+	Justify last right	Son sağa yasla
+	Keep proportions	Oranları koruyun
+	Keep this tab open to retain your brushes.	Fırçalarınızı korumak için bu sekmeyi açık tutun.
+	Keep Using CPU	CPU'yu Kullanmaya Devam Edin
+	Keep view in sync	Görünümü senkronize tutun
+	Keeps the current texture when switching presets.	Ön ayarları değiştirirken mevcut dokuyu korur.
+	Kernel	çekirdek
+	Keyboard	Klavye
+	Keyboard Shortcuts and Menus	Klavye Kısayolları ve Menüler
+	Keyboard shortcuts imported	İçe aktarılan klavye kısayolları
+	Keywords	Anahtar Kelimeler
+	Knockout	Nakavt
+	Kurtosis	Basıklık
+	Lab Color	Laboratuvar Rengi
+	Label Size	Etiket Boyutu
+	Lanczos (sharp)	Lanczos (keskin)
+	Landscape	Manzara
+	Landscape, 10 x 8	Yatay, 10 x 8
+	Landscape, 6 x 4	Yatay, 6 x 4
+	Landscape, 7 x 5	Yatay, 7 x 5
+	Large document: redrawing on the CPU	Büyük belge: CPU'da yeniden çizim
+	Large tabs	Büyük sekmeler
+	Lasso around an area, then drag the selection	Bir alanı kementle çevreleyin, ardından seçimi sürükleyin
+	Last commit	Son taahhüt
+	Last Document State	Son Belge Durumu
+	Last Filter	Son Filtre
+	Last Modified	Son Değiştirilme
+	Layer Comp	Katman Kompozisyonu
+	Layer Comps	Katman Kompozisyonları
+	Layer Comps to Files	Dosyalara Katman Kompozisyonları
+	Layer Comps to Files…	Dosyalara Katman Kompozisyonları…
+	Layer Content Options	Katman İçeriği Seçenekleri
+	Layer Content Options…	Katman İçerik Seçenekleri…
+	Layer Count	Katman Sayısı
+	Layer deleted, but confirmation preference could not be saved: {error}	Katman silindi ancak onay tercihi kaydedilemedi: {error}
+	Layer Edges	Katman Kenarları
+	Layer From Background	Arka Plandan Katman
+	Layer from Background	Arka Plandan Katman
+	Layer From Background…	Arka Plandan Katman…
+	Layer from Background…	Arka Plandan Katman…
+	Layer Knocks Out Drop Shadow	Katman Alt Gölgeyi Ortadan Kaldırır
+	Layer Mask	Katman Maskesi
+	Layer Properties	Katman Özellikleri
+	Layer Style	Katman Stili
+	Layer Styles	Katman Stilleri
+	Layer via Copy	Kopyalama yoluyla katman
+	Layer via Cut	Kesim Yoluyla Katman
+	Layers to Files	Dosyalara Katmanlar
+	Layers to Files…	Katmanlardan Dosyalara…
+	Layer…	Katman…
+	Leading (set to the font size × auto-leading when Auto)	Satır Aralığı (Otomatik olduğunda yazı tipi boyutu × otomatik satır aralığına ayarlanır)
+	Leaf Color	Yaprak Rengi
+	Learn More	Daha Fazla Bilgi Edinin
+	Leave as is (don't color manage)	Olduğu gibi bırakın (renk yönetimi yapmayın)
+	Leave empty for automatic size	Otomatik boyut için boş bırakın
+	Leaves Amount	Yaprak Miktarı
+	Leaves Color	Yaprak Rengi
+	Leaves Size	Yaprak Boyutu
+	Left align text	Metni sola hizala
+	Left Edges	Sol Kenarlar
+	Legacy	Eski
+	Legacy compositing	Eski birleştirme
+	Legacy Macintosh RGB	Eski Macintosh RGB
+	Lens	Objektif
+cameraData	Lens	Lens
+	Lens Blur	Mercek Bulanıklığı
+	Lens Blur…	Mercek Bulanıklığı…
+	Lens Correction	Mercek Düzeltme
+	Lens Corrections	Mercek Düzeltmeleri
+	Lens Correction…	Mercek Düzeltme…
+	Lens Flare…	Mercek Parlaması…
+	Lens Info	Objektif Bilgisi
+	Letter Spacing	Harf Aralığı
+	Level Based	Seviyeye Dayalı
+	Ligature	Ligatür
+	Light	Işık
+cameraRaw	Light	Açık Tonlar
+fontWeight	Light	Hafif
+	Light Dark Balance	Açık Karanlık Dengesi
+	Light Red	Açık Kırmızı
+	Light Rough	Hafif Kaba
+	Light Source	Işık Kaynağı
+	Light X	Işık X
+	Light Y	Işık Y
+	Light Z	Açık Z
+	Lighten Grout	Harcı hafifletmek
+	Lighten Interface	Arayüzü açıklaştır
+	Lighten Only	Yalnızca Açıklaştır
+	Lighting Effects…	Aydınlatma Efektleri…
+	Lights	Işıklar
+cameraRaw	Lights	Açıklar
+	Limit Playback	Oynatmayı Sınırla
+	Limits:	Sınırlar:
+	Line	Hat
+	Line delta	Çizgi deltası
+	Line Tool	Çizgi Aracı
+	Linear Dodge	Doğrusal Soldurma
+	Linear Dodge (Add)	Doğrusal Soldurma (Ekle)
+	Linear Height	Doğrusal Yükseklik
+	Lines +/−	Çizgiler +/−
+	Lines added	Satırlar eklendi
+	Lines deleted	Satırlar silindi
+	Link	Link
+	Link Layer Mask	Bağlantı Katmanı Maskesi
+	Link Layers	Katmanları Bağla
+	Link layers	Katmanları bağlayın
+	Link radii	Bağlantı yarıçapları
+	Link the mask to the layer	Maskeyi katmana bağlama
+	Link Vector Mask	Bağlantı Vektör Maskesi
+	Link width and height	Bağlantı genişliği ve yüksekliği
+	Link with Layer	Katmanla Bağlantı
+	Linux display server	Linux görüntü sunucusu
+	Liquify	Sıvılaştır
+	Liquify is not open	Sıvılaştırma açık değil
+	Liquify…	Sıvılaştır…
+	Live Preview	Canlı Önizleme
+	Load	Yükle
+	Load 3D LUT	3D LUT'u yükleyin
+	Load 3D LUT…	3D LUT'u yükleyin…
+	Load a keyboard shortcut set saved as .kys	.kys olarak kaydedilen bir klavye kısayolu kümesi yükleyin
+	Load Actions…	Eylemleri Yükle…
+	Load channel as selection	Kanalı seçim olarak yükle
+	Load Default Type Styles	Varsayılan Yazım Stillerini Yükle
+	Load Files into Stack	Dosyaları Yığına Yükle
+	Load Files into Stack…	Dosyaları Yığına Yükle…
+	Load path as a selection	Yolu seçim olarak yükle
+	Load Selection	Yük Seçimi
+	Load Selection…	Seçimi Yükle…
+	Load settings from a Camera Raw .xmp file	Ayarları bir Camera Raw .xmp dosyasından yükle
+	Load Settings…	Ayarları Yükle…
+	Loaded Camera Raw settings from {file}	Camera Raw ayarları {file} dosyasından yüklendi
+	Loaded Camera Raw settings from {file} ({n} not supported)	Camera Raw ayarları {file} dosyasından yüklendi ({n} desteklenmiyor)
+@plural	Loaded {n} action from {file}|Loaded {n} actions from {file}	{file} dosyasından {n} eylem yüklendi|{file} dosyasından {n} eylem yüklendi
+	Loading fonts…	Yazı tipleri yükleniyor…
+	Loading…	Yükleniyor…
+	Load…	Yükle…
+	Localize Color Clusters	Renk Kümelerini Yerelleştirin
+	Localized Color Clusters	Yerelleştirilmiş Renk Kümeleri
+	Lock All	Tümünü Kilitle
+	Lock all	Tümünü kilitle
+	Lock Image Pixels	Görüntü Piksellerini Kilitle
+	Lock image pixels	Resim piksellerini kilitle
+	Lock layer	Katmanı kilitle
+	Lock Layers	Katmanları Kilitle
+	Lock Layers…	Katmanları Kilitle…
+	Lock Position	Kilit Konumu
+	Lock position	Kilit konumu
+	Lock Transparent Pixels	Şeffaf Pikselleri Kilitle
+	Lock transparent pixels	Şeffaf pikselleri kilitle
+	Lock Workspace	Çalışma Alanını Kilitle
+	Lock:	Kilit:
+	Lock: keep these settings when picking another preset	Kilitle: başka bir ön ayar seçerken bu ayarları koruyun
+	Log Errors To File	Hataları Dosyaya Günlüğe Kaydet
+	Logical Length:	Mantıksal Uzunluk:
+	Logical Units:	Mantıksal Birimler:
+	Loop	Döngü
+	Lorem Ipsum	Lorem İpsum
+	Lossless	Kayıpsız
+	Low resolution previews	Düşük çözünürlüklü önizlemeler
+	Low-Latency Drawing (vsync off, applies at next launch)	Düşük gecikmeli çizim (dikey eşitleme kapalı, sonraki açılışta geçerli)
+	Lower	Daha düşük
+	Lowercase extension	Küçük harf uzantısı
+	Lum	Lum
+cameraRaw	Luminance	Parlaklık
+	Luminance Detail	Parlaklık Detayı
+cameraRaw	Luminance Detail	Parlaklık Detayı
+	Luminance Smoothness	Parlaklık Pürüzsüzlüğü
+	Lut	Lut
+	Mac Crisp	Mac Çıtır
+	Mac LCD	Mac LCD'si
+	Mac OS	Mac OS
+	Mac Sharp	Mac Keskin
+	Mac Smooth	Mac Pürüzsüz
+	Mac Strong	Mac Güçlü
+cameraRaw	Magenta	Macenta
+	Magenta  ·  Green	Macenta · Yeşil
+	Magentas	Macentalar
+	Magic Eraser Tool	Sihirli Silgi Aracı
+	Magnetic Lasso	Manyetik Kement
+	Magnetic Lasso Tool	Manyetik Kement Aracı
+	Maintain aspect ratio	En boy oranını koru
+	Make	Yap
+cameraData	Make	Üretici
+	Make Default	Varsayılan Yap
+	Make Landscape	Manzara Yap
+	Make Portrait	Portre Yap
+	Make Selection	Seçim Yap
+	Make Work Path	İş Yolu Yap
+	Make work path from selection	Seçimden iş yolunu yap
+	Manage submitted jobs in the system print queue	Gönderilen işleri sistem yazdırma kuyruğunda yönetin
+	Manual	Manuel
+	Map Document	Harita Belgesi
+	Map Layer	Harita Katmanı
+	Map Path	Harita Yolu
+	Marching Ants	Yürüyen Karıncalar
+	Margin	Marj
+	Marker Size	İşaretleyici Boyutu
+	Marquee	Seçim Çerçevesi
+	Mask All	Tümünü Maskele
+	Mask All Objects	Tüm Nesneleri Maskele
+	Mask Incomplete Blocks	Tamamlanmamış Blokları Maskele
+	Mask Options	Maske Seçenekleri
+	Masked Areas	Maskelenmiş Alanlar
+	Masking	Maskeleme
+cameraRaw	Masking	Maskeleme
+	Master	Usta
+	Match All	Tümünü Eşleştir
+	Match Canvas	Maç Kanvası
+	Match Color	Rengi Eşleştir
+	Match Color…	Rengi Eşleştir…
+	Match Location	Eşleşme Konumu
+	Match Rotation	Maç Rotasyonu
+	Match Zoom	Yakınlaştırmayı Eşleştir
+	Matting	Paspas
+	Max Offset	Maksimum Ofset
+	Max Radius	Maksimum Yarıçap
+	Maximize psd compatibility	PSD uyumluluğunu en üst düzeye çıkarın
+	Maximum…	Maksimum…
+	Mean	ortalama
+	Mean:	Anlamı:
+	Measurement Log	Ölçüm Günlüğü
+	Measurement Scale	Ölçüm Ölçeği
+	Measurement Scale Marker	Ölçüm Ölçeği İşaretleyicisi
+	Median:	Medyan:
+	Median…	Medyan…
+fontWeight	Medium	Orta
+	Medium Blue	Orta Mavi
+	Medium gray	Orta gri
+	Medium Strokes	Orta Vuruşlar
+	Memory usage mb	Bellek kullanımı mb
+	Menus	Menüler
+	Menus…	Menüler…
+	Merge Down	Aşağı Birleştir
+	Merge Group	Grubu Birleştir
+	Merge Shape Components	Şekil Bileşenlerini Birleştir
+	Merge to HDR Pro	HDR Pro'ya Birleştir
+	Merge to HDR Pro…	HDR Pro'ya Birleştir…
+	Merge Visible	Görünürleri Birleştir
+	Merged PRs	Birleştirilmiş PR'ler
+	Mesh Size	Örgü Boyutu
+	Metal	Metal
+	Metallic	metalik
+	Metering Mode	Ölçüm Modu
+	Metrics	Metrikler
+	Middle Eastern & South Asian Composer	Orta Doğulu ve Güney Asyalı Besteci
+	Middle Eastern Features	Orta Doğu Özellikleri
+	Midtone	Orta ton
+	Midtones from:	Orta tonlar:
+	Midtones to:	Orta tonlar:
+	Migrate Presets	Ön Ayarları Taşı
+	Minimalistic	Minimalist
+	Minimum Depth	Minimum Derinlik
+	Minimum Diameter	Minimum Çap
+	Minimum Roundness	Minimum Yuvarlaklık
+	Minimum…	Asgari…
+	Missing delete command	Silme komutu eksik
+	Missing glyph protection	Glif koruması eksik
+	Missing Profiles: Ask When Opening	Eksik Profiller: Açarken Sor
+	Miter	Gönye
+	Miter limit	Gönye sınırı
+	Mix	Karışım
+	Mix Jitter	Karıştırma Titreşimi
+	Mixer Brush	Karıştırıcı Fırça
+	Mixer Brush Tool	Karıştırıcı Fırça Aracı
+	Model	Modeli
+cameraData	Model	Model
+	modified	değiştirilmiş
+	Modifier Keys	Değiştirici Tuşlar
+	Modify Date	Tarihi Değiştir
+	Mono Contrast	Mono Kontrast
+	Monochromatic	Tek renkli
+	More documents	Daha fazla belge
+	More panels	Daha fazla panel
+	More Points	Daha Fazla Puan
+	Mosaic…	Mozaik…
+	Motion Blur	Hareket Bulanıklığı
+	Motion Blur…	Hareket Bulanıklığı…
+	Mouse	Fare
+	Mouse Controls	Fare Kontrolleri
+	Mouse Coordinates	Fare Koordinatları
+	Move effect layer down	Efekt katmanını aşağı taşı
+	Move effect layer up	Efekt katmanını yukarı taşı
+	Move Group Down	Grubu Aşağı Taşı
+	Move Group Up	Grubu Yukarı Taşı
+	Move Layer	Katmanı Taşı
+	Move to	Şuraya taşı:
+	Move Tool	Taşıma Aracı
+	Movie Prime	Film Başbakanı
+	Multichannel	Çok kanallı
+	Multiple Flames Along Path	Yol Boyunca Çoklu Alevler
+	Multiple Flames One Direction	Çoklu Alevler Tek Yön
+	Multiple Flames Path Directions	Çoklu Alev Yolu Yönleri
+	Multiple Flames Various Length	Çoklu Alevler Çeşitli Uzunluklar
+	My Brushes	Fırçalarım
+	name	isim
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	Yerel dosya sürükle ve bırak özelliği henüz Wayland'de desteklenmiyor. Dosyayı Kullan › Aç veya resmi dosya yöneticinize kopyalayıp {paste} ile yapıştırın.
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or run PhotoCraft under XWayland with `WAYLAND_DISPLAY= photocraft`.	Yerel dosya sürükle ve bırak özelliği henüz Wayland'de desteklenmiyor. Dosya › Aç'ı kullanın veya PhotoCraft'ı XWayland altında `WAYLAND_DISPLAY= photocraft` ile çalıştırın.
+	Native file drag-and-drop is unavailable	Yerel dosya sürükle ve bırak özelliği kullanılamıyor
+	Nearest Neighbor	En Yakın Komşu
+	Nearest neighbor	En yakın komşu
+	Nearest Neighbor (hard edges)	En Yakın Komşu (sert kenarlar)
+	Negation	Olumsuzluk
+	Neutralize	Nötrleştir
+	Neutrals	Nötrler
+	Never Show Overlay	Kaplamayı Hiçbir Zaman Gösterme
+	new	yeni
+	New Adjustment Layer	Yeni Ayarlama Katmanı
+	New Blank Video Layer	Yeni Boş Video Katmanı
+	New Brush	Yeni Fırça
+	New Brush Preset…	Yeni Fırça Ön Ayarı…
+	New Channel	Yeni Kanal
+	New channel only	Yalnızca yeni kanal
+	New Crop Preset…	Yeni Kırpma Ön Ayarı…
+	New Document With Mask	Maskeli Yeni Belge
+	New document…	Yeni belge…
+	New document…     ⌘N	Yeni belge… ⌘N
+	New effect layer	Yeni efekt katmanı
+	New Fill Layer	Yeni Dolgu Katmanı
+	New from Clipboard	Pano'dan yeni
+	New Guide Layout	Yeni Kılavuz Düzeni
+	New Guide Layout…	Yeni Kılavuz Düzeni…
+	New Guides From Shape	Shape'den Yeni Kılavuzlar
+	New Guide…	Yeni Kılavuz…
+	New Layer Based Slice	Yeni Katman Tabanlı Dilim
+	New Layer Comp	Yeni Katman Kompozisyonu
+	New Layer from Brush	Brush'tan Yeni Katman
+	New Layer With Mask	Maskeli Yeni Katman
+	New Path	Yeni Yol
+	New Selection	Yeni Seçim
+	New selection	Yeni seçim
+	New Set…	Yeni Küme…
+	New Shape Layer	Yeni Şekil Katmanı
+	New Size	Yeni Boyut
+	New Smart Object via Copy	Kopyalama Yoluyla Yeni Akıllı Nesne
+	New Snapshot	Yeni Anlık Görüntü
+	New Swatch Group…	Yeni Swatch Grubu…
+	New Tool Preset	Yeni Araç Ön Ayarı
+	New Type Layer	Yeni Tip Katmanı
+	New Video Group	Yeni Video Grubu
+	New Video Layer	Yeni Video Katmanı
+	New Video Layer from File	Dosyadan Yeni Video Katmanı
+	New Video Layer from File…	Dosyadan Yeni Video Katmanı…
+	New Window for Document	Belge için Yeni Pencere
+	Newspaper	Gazete
+	Next Document	Sonraki Belge
+	Next frame	Sonraki kare
+	Next note	Sonraki not
+	Next Theme	Sonraki Tema
+	No author	Yazar yok
+	No brush presets	Fırça ön ayarı yok
+	No character style	Karakter stili yok
+layerLabel	No Color	Renk Yok
+	No Color Management	Renk Yönetimi Yok
+	No contributor data was built into this copy.	Bu kopyaya hiçbir katkıda bulunan verisi eklenmedi.
+	No Image	Resim Yok
+	No Layer Comps	Katman Kompozisyonu Yok
+	No Layers	Katman Yok
+	No layers	Katman yok
+	No matching settings	Eşleşen ayar yok
+	No model credits were built into this copy.	Bu kopyaya hiçbir model kredisi eklenmemiştir.
+	No object found there — drag a rectangle around it	Orada nesne bulunamadı — çevresine bir dikdörtgen sürükleyin
+	No path to make a selection from: draw one with the Pen tool or select one in the Paths panel.	Seçim yapılabilecek yol yok: Kalem aracıyla bir yol çizin veya Yollar panelinden birini seçin.
+	No patterns	Desen yok
+	No pin selected	Seçili pim yok
+	No presets for the current tool.	Geçerli araç için ön ayar yok.
+	No presets of this type.	Bu türden ön ayar yok.
+	No properties	Mülk yok
+	No Results	Sonuç Yok
+	No Results Found	Sonuç Bulunamadı
+	No saved presets yet.	Henüz kayıtlı ön ayar yok.
+	No Spelling Suggestions	Yazım Önerisi Yok
+	No subject found — try a rectangle around the object	Konu bulunamadı — nesnenin etrafında bir dikdörtgen oluşturmayı deneyin
+	No subject found — try Object Selection or the Lasso	Konu bulunamadı — Nesne Seçimi'ni veya Kement'i deneyin
+	No tool presets.	Araç ön ayarı yok.
+	Noise Color	Gürültü Rengi
+	Noise Color Detail	Gürültü Rengi Ayrıntısı
+	Noise Luminance	Gürültü Parlaklığı
+	Noise Luminance Detail	Gürültü Parlaklığı Ayrıntısı
+	Noise Reduction	Gürültü Azaltma
+	Nonlinear History	Doğrusal Olmayan Geçmiş
+	Normal tip	Normal uç
+	Not a web colour: click for the nearest web colour	Web rengi değil: en yakın web rengi için tıklayın
+	Not in Dictionary:	Sözlükte Yok:
+	Note Paper	Not Kağıdı
+	Note Tool	Not Aracı
+	Note tool	Not aracı
+	Notes	Notlar
+	Notes…	Notlar…
+	Nothing to Redo	Tekrarlanacak bir şey yok
+	Nothing to Undo	Geri Alınacak Bir Şey Yok
+	Notification Duration (seconds)	Bildirim Süresi (saniye)
+	Now drag the selection onto another area	Şimdi seçimi başka bir alana sürükleyin
+	NTSC (1953)	NTSC (1953)
+	Nudge Bundle Pause (ms)	Kaydırma birleştirme duraklaması (ms)
+	Number Of Levels	Seviye Sayısı
+	Object Finder	Nesne Bulucu
+	Object Name / Title	Nesne Adı / Başlığı
+	Object Selection found nothing there — try a tighter rectangle	Nesne Seçimi burada hiçbir şey bulamadı; daha dar bir dikdörtgen deneyin
+	Object Selection Tool	Nesne Seçme Aracı
+	Ocean Ripple	Okyanus Dalgalanması
+	Off: the speed of the pointer sets the spacing	Kapalı: işaretçinin hızı aralığı belirler
+	Offset…	Ofset…
+	Oil Paint	Yağlı Boya
+	Oil Paint…	Yağlı Boya…
+	Oldstyle	Eski tarz
+	On Black	Siyah
+	On Layers	Katmanlarda
+	On White	Beyaz
+	One Flame Along Path	Yol Boyunca Bir Alev
+	Onion Skin	Soğan Kabuğu
+	Opacity Jitter	Opaklık Değişimi
+	Opacity Mask	Opaklık Maskesi
+	Opacity Threshold	Opaklık Eşiği
+	Open a document to define variables.	Değişkenleri tanımlamak için bir belge açın.
+	Open a document to select a colour range.	Bir renk aralığı seçmek için bir belge açın.
+	Open a document to use the timeline.	Zaman çizelgesini kullanmak için bir belge açın.
+	Open As	Farklı Aç
+	Open as smart object	Akıllı nesne olarak aç
+	Open As…	Farklı Aç…
+	Open color-less EXR as ACEScg	Renk bilgisi olmayan EXR'yi ACEScg olarak aç
+	Open documents as tabs	Belgeleri sekmeler halinde aç
+	Open EXR Parts…	EXR Parçalarını açın…
+	Open File	Dosyayı Aç
+	Open Folder	Klasörü Aç
+	Open Image	Resmi Aç
+	Open in camera raw	Camera raw'da aç
+	Open paths use centered strokes	Açık yollar ortalanmış konturlar kullanır
+	open source	açık kaynak
+	Opened {name}	{name} tarihinde açıldı
+	OpenGL	OpenGL
+	Opening	Açılış
+	Opening {name}	{name} açılıyor
+	Opening {name}…	{name} açılıyor…
+	Opening…	Açılıyor…
+	Open…     ⌘O	Aç… ⌘O
+	Operation	Operasyon
+	Operation canceled	İşlem iptal edildi
+	Operation cancelled	İşlem iptal edildi
+	Operation completed	İşlem tamamlandı
+	Operation failed	İşlem başarısız oldu
+	Optical	Optik
+	Option-click to define a source point to clone from	Kopyalanacak bir kaynak noktası tanımlamak için Option tuşunu basılı tutarak tıklayın
+	Or set Preferences › Performance › Linux display server to X11: PhotoCraft then always starts under XWayland.	Veya Tercihler › Performans › Linux görüntüleme sunucusunu X11: PhotoCraft olarak ayarlayın, ardından her zaman XWayland altında başlar.
+cameraRaw	Orange	Turuncu
+	Original Ratio	Orijinal Oran
+	Ornaments	Süsler
+	Other…	Diğer…
+	Out	Dışarı
+	Out Black	Siyah
+	Out From Center	Merkezden Dışarı
+	Out Of Gamut	Gamut Dışı
+	Out of gamut for printing: click for the nearest printable colour	Yazdırma için gamın dışında: yazdırılabilir en yakın renk için tıklayın
+	Out of memory	Bellek yetersiz
+	Out White	Beyaz Dışı
+	Outer Bevel	Dış Eğim
+	Outer Glow	Dış Parıltı
+	Output Channel:	Çıkış Kanalı:
+	Output Levels	Çıkış Seviyeleri
+	Output Levels:	Çıkış Seviyeleri:
+	Output Settings	Çıkış Ayarları
+	Output To	Çıkış Hedefi
+	Oval	oval
+	Overlay Color	Kaplama Rengi
+	Overlay Edge	Kaplama Kenarı
+	Overlay Opacity	Kaplama Opaklığı
+	Overlay: Rule of Thirds	Kaplama: Üçte Bir Kuralı
+	Override Action "Save" Commands	Eylem "Kaydet" Komutlarını Geçersiz Kıl
+	Override Pressure	Basıncı Geçersiz Kıl
+	Override Rotation	Döndürmeyi Geçersiz Kıl
+	Override Tilt	Eğimi Geçersiz Kıl
+	Overscroll	Aşırı kaydırma
+	Package	Paket
+	Page Setup…	Sayfa Yapısı…
+	Paint Bucket Tool	Boya Kovası Aracı
+	Paint Daubs	Boya Lekeleri
+	Paint over hair or fur on the image; Alt paints the other mode	Görüntünün üzerine saç veya kürkün üzerini boyayın; Alt diğer modu boyar
+	Paint Overlay	Boya Kaplaması
+	Paints from the document's opening state	Belgenin açılış durumundaki boyalar
+	PAL/SECAM	PAL/SECAM
+	Palette Knife	Palet Bıçağı
+	Panel locations are saved in the workspace. Keyboard shortcuts, menus and toolbar are optional.	Panel konumları çalışma alanına kaydedilir. Klavye kısayolları, menüler ve araç çubuğu isteğe bağlıdır.
+	Paper Brightness	Kağıt Parlaklığı
+	Paper Height	Kağıt Yüksekliği
+	Paper Width	Kağıt Genişliği
+	Paragraph Panel	Paragraf Paneli
+	Paragraph Styles Panel	Paragraf Stilleri Paneli
+	Parallel	paralel
+	Pass Through	Geçirgen
+	Paste in Place	Yerine Yapıştır
+	Paste Into	İçine Yapıştır
+	Paste Layer Style	Katman Stilini Yapıştır
+	Paste Lorem Ipsum	Lorem Ipsum'u Yapıştır
+	Paste Outside	Dışına Yapıştır
+	Patch	Yama
+	Patch Tool	Yama Aracı
+	Patch:	Yama:
+	Path Blur	Yol Bulanıklığı
+	Path Blur…	Yol Bulanıklığı…
+	Path Selection Tool	Yol Seçimi Aracı
+	Path to Illustrator…	İllüstratöre Giden Yol…
+	Paths to Illustrator	Illustrator'a Giden Yollar
+	Paths to Illustrator…	İllüstratöre Giden Yollar…
+	Pattern Overlay	Desen Yerleşimi
+	Pattern Overlay…	Desen Kaplama…
+	Pattern Preview	Desen Önizlemesi
+	Pattern Size	Desen Boyutu
+	Pattern Stamp	Desen Damgası
+	Pattern Stamp Tool	Desen Damgası Aracı
+	Patterns	Desenler
+	Pattern…	Desen…
+	PDF Presentation…	PDF Sunumu…
+	Pen Pressure	Kalem Basıncı
+	Pen Tilt	Kalem Eğimi
+	Pencil Width	Kalem Genişliği
+	Perceptual	algısal
+	Performance…	Performans…
+	Permission denied	İzin reddedildi
+	Perspective Crop	Perspektif Kırpma
+	Perspective Crop Tool	Perspektif Kırpma Aracı
+	Perspective Warp	Perspektif Çarpıtma
+	Perspective Warp is not active	Perspektif Çarpıtma etkin değil
+	Perspective Warp: draw planes along the image's perspective, then switch to Warp	Perspektif Çarpıtma: görüntünün perspektifi boyunca düzlemler çizin, ardından Çarpıtma'ya geçin
+	Phone	Telefon
+	Photo (2 × 3 in)	Fotoğraf (2 × 3 inç)
+	Photo (4 × 6 in)	Fotoğraf (4 × 6 inç)
+	Photo (5 × 7 in)	Fotoğraf (5 × 7 inç)
+	Photo (8 × 10 in)	Fotoğraf (8 × 10 inç)
+	Photo Filter	Fotoğraf Filtresi
+	Photo Filter…	Fotoğraf Filtresi…
+	PhotoCraft	PhotoCraft
+	PhotoCraft Defaults	PhotoCraft Varsayılanları
+	PhotoCraft found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from PhotoCraft's. Import it?	PhotoCraft, {set} klavye kısayol setinizi bu bilgisayardaki başka bir resim düzenleyicide buldu: {n} kısayolları PhotoCraft'ınkilerden farklı. İçe aktarılsın mı?
+	PhotoCraft is using the CPU image compositor. The window may still use your graphics adapter.	PhotoCraft, CPU görüntü düzenleyicisini kullanıyor. Pencere hala grafik bağdaştırıcınızı kullanıyor olabilir.
+	PhotoCraft Manages Colors	PhotoCraft Renkleri Yönetir
+	PhotoCraft on GitHub	GitHub'da PhotoCraft
+	PhotoCraft Website	PhotoCraft Web Sitesi
+	PhotoCraft website	PhotoCraft web sitesi
+	PhotoCraft — an open-source, native image editor written in Rust.	PhotoCraft — Rust'ta yazılmış açık kaynaklı, yerel bir resim düzenleyici.
+	PhotoCraft — Screen Color Picker	PhotoCraft — Ekran Rengi Seçici
+	Photography	Fotoğrafçılık
+	Photomerge	Fotoğraf Birleştir
+	Photomerge…	Fotoğraf Birleştir…
+	Pick a screen pixel or press Esc to cancel	Bir ekran pikseli seçin veya iptal etmek için Esc tuşuna basın
+	Pick Color From Image	Görüntüden Renk Seç
+	Pick screen color	Ekran rengini seç
+	Picture Frame	Resim Çerçevesi
+	Picture Frame…	Resim Çerçevesi…
+	Picture Package…	Resim Paketi…
+	Pillow Emboss	Yastık Kabartma
+	Pin Depth:	Pim Derinliği:
+	Pinch	Tutam
+	Pinch…	Tut…
+	Pins	Pimler
+	Pixel Art	Piksel Sanatı
+	Pixel Art Preview	Piksel Sanat Önizlemesi
+	Pixel Aspect Ratio	Piksel En Boy Oranı
+	Pixel Aspect Ratio Correction	Piksel En Boy Oranı Düzeltme
+	Pixel Grid	Piksel Izgarası
+	Pixel Layer	Piksel Katmanı
+	Pixel Length:	Piksel Uzunluğu:
+	Pixel Replacement	Piksel Değiştirme
+	Pixels/Centimeter	Piksel/Santimetre
+	Pixels/Inch	Piksel/İnç
+	Pixels:	Piksel:
+	Place Embedded	Gömülü Yer
+	Place Embedded…	Gömülü Olarak Yerleştir…
+	Place Linked	Bağlantılı Yer
+	Place Linked…	Bağlantılı Olarak Yerleştir…
+	Place Scale Marker	Ölçek İşaretçisini Yerleştirin
+	Place Scale Marker…	Ölçek İşaretçisini Yerleştirin…
+	Plane	Uçak
+	Planes	Uçaklar
+	Plaster	Alçı
+	Plastic Wrap	Plastik Sarma
+	Play Once	Bir Kez Oyna
+	Play selection	Seçimi oynat
+@plural	Played {n} step|Played {n} steps	{n} adım oynatıldı|{n} adım oynatıldı
+	Please wait…	Lütfen bekleyin…
+	Plug-ins…	Eklentiler…
+	Png	png
+	Point Curve	Nokta Eğrisi
+	Point Curve Blue	Nokta Eğrisi Mavi
+	Point Curve Green	Nokta Eğrisi Yeşil
+	Point Curve Red	Nokta Eğrisi Kırmızı
+	Point Sample	Nokta Örneği
+	Point size	Nokta boyutu
+	Pointed	Sivri
+	Polar Coordinates	Kutupsal Koordinatlar
+	Polar Coordinates…	Kutupsal Koordinatlar…
+	Polar To Rectangular	Polar'dan Dikdörtgen'e
+	Polygonal Lasso Tool	Çokgen Kement Aracı
+	Pond Ripples	Gölet Dalgaları
+	Portrait	Portre
+	Portrait, 4 x 6	Portre, 4 x 6
+	Portrait, 5 x 7	Portre, 5 x 7
+	Position	Pozisyon
+	Position and Size	Konum ve Boyut
+	Posterize…	Posterleştir…
+	PostScript (72 points/inch)	PostScript (72 nokta/inç)
+	Precise	Hassas
+	Presentation	Sunum
+	Preserve Details	Ayrıntıları Koru
+	Preserve details	Ayrıntıları koru
+	Preserve Transparency	Şeffaflığı Koruyun
+	PRESET DETAILS	ÖN AYAR DETAYLARI
+	Preset Manager…	Ön Ayar Yöneticisi…
+	Preset Name	Ön Ayar Adı
+	Preset Name:	Ön Ayar Adı:
+	Preset Type	Ön Ayar Türü
+	Press keys	Tuşlara basın
+	Pressure curve	Basınç eğrisi
+	Pressure for Opacity	Opaklık Basıncı
+	Pressure for Size	Boyuta Göre Basınç
+	Prevent auto-nesting in and out of Artboards and Frames	Çalışma Yüzeyleri ve Çerçevelerin içine ve dışına otomatik yerleştirmeyi önleyin
+	Preview Image	Resmin Önizlemesi
+	Previous Document	Önceki Belge
+	Previous frame	Önceki çerçeve
+	Previous note	Önceki not
+	Prime105	Prime105
+	Prime35	Prime35
+	Print One Copy	Bir Kopya Yazdır
+	Print resolution	Yazdırma çözünürlüğü
+	Print Resolution:	Baskı Çözünürlüğü:
+	Print Settings…	Yazdırma Ayarları…
+	Print Size	Baskı Boyutu
+	Printer Manages Colors	Yazıcı Renkleri Yönetir
+	Printer Setup	Yazıcı Kurulumu
+	Printing Marks	Baskı İşaretleri
+	Pro	Profesyonel
+	Pro (Dark)	Pro (Koyu)
+	Pro (Light Gray)	Pro (Açık Gri)
+	Pro (Light)	Pro (Hafif)
+	Pro (Medium Gray)	Pro (Orta Gri)
+	Pro light	Profesyonel ışık
+	Pro light gray	Pro açık gri
+	Pro Light Gray Theme	Pro Açık Gri Tema
+	Pro Light Theme	Profesyonel Işık Teması
+	Pro Medium	Profesyonel Orta
+	Pro medium	Profesyonel orta
+	Pro Medium Gray Theme	Pro Orta Gri Tema
+	Pro photo	Profesyonel fotoğraf
+	Pro Theme	Profesyonel Tema
+	Processing…	İşleniyor…
+	Profile Mismatches: Ask When Opening	Profil Uyuşmazlıkları: Açarken Sor
+	Promote	Tanıt
+	Proof Colors	Prova Renkleri
+	ProPhoto	ProFotoğraf
+	ProPhoto RGB	ProPhoto RGB
+	Protect Detail	Detayı Koruyun
+	Protect Foreground Color	Ön Plan Rengini Koruyun
+	Protect skin tones	Ten tonlarını koru
+	Protect Texture	Dokuyu Koruyun
+	Protect Tones	Tonları Koruyun
+	Protect:	Koru:
+	Province / State	İl / Eyalet
+	Proximity Match	Yakınlık Eşleşmesi
+	PSD	PSD
+	Pulled String Mode	Çekilmiş Dize Modu
+	Pupil Size	Öğrenci Boyutu
+	Puppet Warp	Kukla Çözgü
+	Puppet Warp is not active	Kukla Çarpıtma etkin değil
+	Purge	Temizle
+	Purity	saflık
+cameraRaw	Purple	Mor
+	Put this command's shortcuts back as they were	Bu komutun kısayollarını eski haline getir
+	Pyramids	Piramitler
+	Quick Export As PNG	PNG Olarak Hızlı Dışa Aktarma
+	Quick Export as PNG	PNG Olarak Hızlı Dışa Aktarma
+	Quick export format	Hızlı dışa aktarma formatı
+	Quick export location	Hızlı dışa aktarma konumu
+	Quick Mask	Hızlı Maske
+	Quick Selection	Hızlı Seçim
+	Quick Selection found nothing there	Hızlı Seçim orada hiçbir şey bulamadı
+	Quick Selection Tool	Hızlı Seçim Aracı
+	Quick Sync	Hızlı Senkronizasyon
+	Quit	Çıkış
+	Quit PhotoCraft	PhotoCraft'tan Çık
+	Quit {app}	{app}'dan çık
+	Radius X	Yarıçap X
+	Radius Y	Y Yarıçapı
+	Randomize Length	Uzunluğu Rastgeleleştir
+	Randomize Shapes	Şekilleri Rastgeleleştir
+	Rasterize Fill Content	Dolgu İçeriğini Rasterleştir
+	Rasterize Layer	Katmanı Rasterleştir
+	Rasterize Layer Style	Katman Stilini Rasterleştir
+	Rasterize Layers	Katmanları Rasterleştir
+	Rasterize Shape	Şekli Rasterleştir
+	Rasterize Smart Object	Akıllı Nesneyi Rasterleştir
+	Rasterize svg groups deeper than	Svg gruplarını şundan daha derin bir şekilde rasterleştirin:
+	Rasterize Type	Rasterleştirme Türü
+	Rasterize Type Layer	Tip Katmanını Rasterleştir
+	Rate	Oran
+	Raw Data	Ham Veri
+	Raw Defaults	Ham Varsayılanlar
+	Raw Defaults…	Ham Varsayılanlar…
+	Reading	Okuma
+	Reading…	Okunuyor…
+	Real name	Gerçek isim
+	Recent	Son
+	Recent file count	Son dosya sayısı
+	Recent files	Son dosyalar
+	Recent fonts	En yeni yazı tipleri
+	Recent Items	Son Öğeler
+	Recently Used	Son Kullanılanlar
+	Reconstruct	Yeniden inşa et
+	Record Measurements	Ölçümleri Kaydet
+	Record ● a sequence of edits, then play ▶ it on any document.	Bir dizi düzenlemeyi kaydedin ● ve ardından herhangi bir belgede oynatın.
+	Recover on launch	Başlatıldığında kurtar
+	Recovery	Kurtarma
+	Rectangular Marquee Tool	Dikdörtgen İşaretleme Aracı
+	Rectangular Selection	Dikdörtgen Seçimi
+	Rectangular To Polar	Dikdörtgenden Polar'a
+cameraRaw	Red	Kırmızı
+	Red Cyan	Kırmızı Camgöbeği
+	Red Eye	Kırmızı Göz
+	Red Eye Tool	Kırmızı Göz Aracı
+	Redefine style by current selection	Stili geçerli seçime göre yeniden tanımlayın
+	Redrawing	Yeniden çiziliyor
+	Reds	Kırmızılar
+	Reduce Color Noise	Renk Gürültüsünü Azaltın
+	Reduce Noise…	Gürültüyü Azaltın…
+	Reference point location	Referans noktası konumu
+	Refine Edge	Kenarı İyileştir
+	Refine Edge Brush (R)	Kenar Fırçasını İncelt (R)
+	Refine Strokes	Konturları İyileştir
+	Reflect	Yansıt
+	Reflected Gradient	Yansıyan Degrade
+	Registration Marks	Tescil İşaretleri
+fontWeight	Regular	Normal
+	Release Clipping Mask	Kırpma Maskesini Serbest Bırakın
+	Relight…	Yeniden aydınlat…
+	Relink to File	Dosyaya Yeniden Bağlan
+	Relink to File…	Dosyaya Yeniden Bağla…
+	Reload Frame	Çerçeveyi Yeniden Yükle
+	Remember this choice for future images	Bu seçimi sonraki görüntüler için hatırla
+	Remember to turn off the printer's own colour management in Print Settings…	Yazdırma Ayarlarında yazıcının kendi renk yönetimini kapatmayı unutmayın…
+	Remember workspace changes	Çalışma alanı değişikliklerini hatırla
+	Remove after each stroke	Her vuruştan sonra kaldır
+	Remove All	Tümünü Kaldır
+	Remove All Pins	Tüm Pinleri Kaldır
+	Remove Black Matte	Siyah Matı Kaldır
+	Remove from Recent	En Son'dan kaldır
+	Remove Jpeg Artifact	Jpeg Yapısını Kaldır
+	Remove pair	Çifti kaldır
+	Remove Planes	Uçakları Kaldır
+	Remove stop	Durağı kaldır
+	Remove Tool	Aracı Kaldır
+	Remove variable	Değişkeni kaldır
+	Remove Warp Split	Warp Split'i Kaldır
+	Remove White Matte	Beyaz Matı Kaldır
+	Remove {name} from Recent	{name} öğesini En Son'dan kaldır
+	Rename Brush	Fırçayı Yeniden Adlandır
+	Rename Brush…	Fırçayı Yeniden Adlandır…
+	Rename Group	Grubu Yeniden Adlandır
+	Rename Layer	Katmanı Yeniden Adlandır
+	Rename Layer Comp	Katman Kompozisyonunu Yeniden Adlandırın
+	Rename Layer…	Katmanı Yeniden Adlandır…
+	Rename Tool Preset	Araç Ön Ayarını Yeniden Adlandır
+	Rename Tool Preset…	Araç Ön Ayarını Yeniden Adlandır…
+	Render	İşleme
+	Render Video	Videoyu Oluştur
+	Render Video…	Videoyu Oluştur…
+	Rendering Mode	İşleme Modu
+	Rendering mode	Oluşturma modu
+	Rendering…	Oluşturuluyor…
+	Reorder Layer	Katmanı Yeniden Sırala
+	Replace All Missing Fonts	Tüm Eksik Yazı Tiplerini Değiştir
+	Replace Color	Rengi Değiştir
+	Replace Color…	Rengi Değiştir…
+	Replace Contents	İçeriği Değiştir
+	Replace Contents…	İçeriği Değiştir…
+	Replace Footage	Görüntüyü Değiştir
+	Replace Footage…	Görüntüyü Değiştir…
+	Replace it with this document, or cancel and use File › Save As to keep both.	Bu belgeyle değiştirin ya da iptal edip ikisini de korumak için Dosya › Farklı Kaydet'i kullanın.
+	Replace Swatches…	Renk Örneklerini Değiştirin…
+	Report a Bug	Hata Bildir
+	Report an Issue	Sorun Bildir
+	Resample	Yeniden örnekle
+	Reset Alignment	Hizalamayı Sıfırla
+	Reset All	Tümünü Sıfırla
+	Reset All Locked Settings	Tüm Kilitli Ayarları Sıfırla
+	Reset All to Defaults	Tümünü Varsayılanlara Sıfırla
+	Reset All Tools	Tüm Araçları Sıfırla
+	Reset all tools to their default settings?	Tüm araçlar varsayılan ayarlarına sıfırlansın mı?
+	Reset GPU Backend	GPU Arka Uçunu Sıfırla
+	Reset Section	Bölümü Sıfırla
+	Reset Swatches	Renk Örneklerini Sıfırla
+	Reset the brush to the defaults	Fırçayı varsayılanlara sıfırlayın
+	Reset to Default	Varsayılana Sıfırla
+	Reset to defaults	Varsayılanlara sıfırla
+	Reset Tool	Aracı Sıfırla
+	Reset Transform	Dönüşümü Sıfırla
+	Reset View	Görünümü Sıfırla
+	Reset Workspace	Çalışma Alanını Sıfırla
+	Resize image during place	Yerleştirme sırasında resmi yeniden boyutlandır
+	Resolution: {dpi} pixels/inch	Çözünürlük: {dpi} piksel/inç
+	Resolve Missing Fonts	Eksik Yazı Tiplerini Çözün
+	Resolve Missing Fonts…	Eksik Yazı Tiplerini Çözün…
+	Response curve	Yanıt eğrisi
+	Restart	Yeniden başlat
+	Restart Required	Yeniden Başlatma Gerekli
+	Restore All	Tümünü Geri Yükle
+	Restore All Frames	Tüm Çerçeveleri Geri Yükle
+	Restore Defaults	Varsayılanları Geri Yükle
+	Restore Frame	Çerçeveyi Geri Yükle
+	Restore last viewed comp	Son görüntülenen kompozisyonu geri yükle
+	Restore Original Edge	Orijinal Kenarı Geri Yükle
+	Restore original size	Orijinal boyutu geri yükle
+	Restrictive (Web)	Kısıtlayıcı (Web)
+	Reticulation	Retikülasyon
+	Retry	Yeniden dene
+	Retry GPU	GPU'yu yeniden dene
+	Retry GPU requires a restart. Save your work first.	GPU'yu yeniden dene, yeniden başlatma gerektirir. Öncelikle çalışmanızı kaydedin.
+	Retry saving presets	Ön ayarları kaydetmeyi yeniden deneyin
+	Reveal All	Tümünü Göster
+	Reveal Selection	Seçimi Göster
+	Revert “{name}” to the last saved version? Your changes will be lost.	“{name}” son kaydedilen sürüme döndürülsün mü? Değişiklikleriniz kaybolacak.
+	Rgb	RGB
+	Ridges	Sırtlar
+	Right align text	Metni sağa hizala
+	Right click with painting tools	Boyama araçlarıyla sağ tıklayın
+	Right Edges	Sağ Kenarlar
+	Rigid	Sert
+	Ring	Yüzük
+	Ring - Double	Yüzük - Çift Kişilik
+	Ripple	Dalgalanma
+	Ripple Magnitude	Dalgalanma Büyüklüğü
+	Ripple Size	Dalgalanma Boyutu
+	Ripple…	Dalgalanma…
+	Rise	Yüksel
+	Rolling Slope - Descending	Yuvarlanan Eğim - Azalan
+	Roman	Roma
+	Roman Hanging Punctuation	Roma Asılı Noktalama İşaretleri
+	Rope	Halat
+	Roses	Güller
+	Rotate 180°	180° Döndür
+	Rotate 90° Clockwise	90° Saat Yönünde Döndür
+	Rotate 90° Counter Clockwise	90° Saat Yönünün Tersine Döndür
+	Rotate Auto	Otomatik Döndür
+	Rotate Fixed	Sabit Döndür
+	Rotate View	Görünümü Döndür
+	Rotate View Tool	Görünümü Döndürme Aracı
+	Rotate view with trackpad	İzleme dörtgeniyle görünümü döndürme
+	Rotation Adaptation	Döndürme Uyarlaması
+	Rough Pastels	Kaba Pastel
+	Roughness	Pürüzlülük
+cameraRaw	Roughness	Pürüzlülük
+	Round	Yuvarlak
+	Rounded Steps	Yuvarlak Adımlar
+	Roundness Jitter	Yuvarlaklık Değişimi
+	Row Order	Satır Sırası
+	Rule of Thirds	Üçte Bir Kuralı
+	Ruler Tool	Cetvel Aracı
+	Ruler Units	Cetvel Birimleri
+	Rulers  (⌘R)	Cetveller (⌘R)
+	Same folder	Aynı klasör
+	Sample a pixel anywhere on the screen	Ekranın herhangi bir yerinde bir pikseli örnekleyin
+	Sample All Layers	Tüm Katmanları Örnekle
+	Sample Size:	Örnek Boyutu:
+	Sample:	Örnek:
+	Sample: foreground colour	Örnek: ön plan rengi
+	Sampled Colors	Örneklenen Renkler
+	Sampler	Örnekleyici
+	Sampling Area	Örnekleme Alanı
+	Sampling Area Options	Örnekleme Alanı Seçenekleri
+	Sampling Area Overlay	Örnekleme Alanı Kaplaması
+	Sampling Brush Tool	Örnekleme Fırçası Aracı
+	Sampling: Background Swatch	Örnekleme: Arka Plan Renk Örneği
+	Sampling: Continuous	Örnekleme: Sürekli
+	Sampling: Once	Örnekleme: Bir kez
+	Sat	Cumartesi
+	Satin	Saten
+	Satin…	Saten…
+	Saturate	Doygunluk
+	Saturation Jitter	Doygunluk Değişimi
+	Save a list of these shortcuts as a web page	Bu kısayolların listesini web sayfası olarak kaydet
+	Save Actions…	Eylemleri Kaydet…
+	Save As Preset	Ön Ayar Olarak Kaydet
+	Save before closing?	Kapatmadan önce kaydet?
+	Save cancelled	Kaydetme iptal edildi
+	Save Changes	Değişiklikleri Kaydet
+	Save Default Type Styles	Varsayılan Yazım Stillerini Kaydet
+	Save failed: {error}	Kaydetme başarısız oldu: {error}
+	Save File	Dosyayı Kaydet
+	Save for Web (Legacy)	Web için Kaydet (Eski)
+	Save for Web (Legacy)…	Web İçin Kaydet (Eski)…
+	Save HTML and Images	HTML ve Görselleri Kaydet
+	Save Image	Resmi Kaydet
+	Save in background	Arka planda kaydet
+	Save Pixel Aspect Ratio	Piksel En Boy Oranını Kaydet
+	Save selection as channel	Seçimi kanal olarak kaydet
+	Save Settings…	Ayarları Kaydet…
+	Save Set…	Seti Kaydet…
+	Save the changes to this set	Bu kümedeki değişiklikleri kaydet
+	Save these settings as a Camera Raw .xmp file	Bu ayarları Camera Raw .xmp dosyası olarak kaydet
+	Save these shortcuts as a .kys file	Bu kısayolları .kys dosyası olarak kaydet
+	Save these shortcuts as a new set	Bu kısayolları yeni bir küme olarak kaydet
+@plural	Saved for Web: {n} file|Saved for Web: {n} files	Web İçin Kaydedildi: {n} dosya|Web İçin Kaydedildi: {n} dosya
+	Saved Multichannel	Çok Kanallı Kaydedildi
+	Saved {name}	{name} kaydedildi
+@plural	Saved {n} action to {file}|Saved {n} actions to {file}	{n} eylem {file} dosyasına kaydedildi|{n} eylem {file} dosyasına kaydedildi
+	Saving brush presets… Keep this tab open until saving finishes.	Fırça ön ayarları kaydediliyor… Kaydetme bitene kadar bu sekmeyi açık tutun.
+	Saving {name}	{name} kaydediliyor
+	Saving {percent}	Kaydediliyor {percent}
+	Saving…	Kaydediliyor…
+	Sawtooth 1	Testere dişi 1
+	Scale Effects	Ölçek Efektleri
+	Scale Effects…	Ölçek Etkileri…
+	Scale Factor	Ölçek Faktörü
+	Scale Horizontally	Yatay Olarak Ölçeklendir
+	Scale or rotate the moved area, then press {key}	Taşınan alanı ölçeklendirin veya döndürün, ardından {key} tuşuna basın
+	Scale to Fit Media	Medyaya Sığacak Şekilde Ölçeklendirin
+	Scale Units	Ölçek Birimleri
+	Scale Vertically	Dikey Ölçeklendir
+	Scallops	tarak
+	Scatter	Dağılım
+	Scattering	Saçılma
+	Scope	Kapsam
+	Scratch disks	Kazıma diskleri
+	Scratch Sizes	Çizik Boyutları
+	Scratch: {size}	Çizik: {size}
+	Screen resolution	Ekran çözünürlüğü
+	Script Events Manager	Komut Dosyası Olay Yöneticisi
+	Script Events Manager…	Komut Dosyası Olay Yöneticisi…
+	Scroll to zoom	Yakınlaştırmak için kaydırın
+	Scrubby slider acceleration	Temiz kaydırıcı hızlandırması
+	Scrubby Zoom	Süpürge Yakınlaştırma
+	Seafoam	Deniz köpüğü
+	Search Brushes	Fırçalarda Ara
+	Search commands	Arama komutları
+	Search commands (⌘K)	Arama komutları (⌘K)
+	Search commands, tools and panels	Komutları, araçları ve panelleri arayın
+	Search commands, tools and panels…	Komutları, araçları ve panelleri arayın…
+	Search fonts	Yazı tiplerini arayın
+	Search menus	Arama menüleri
+	Search settings…	Arama ayarları…
+	Search…	Ara…
+	Second Color Readout	İkinci Renk Okuması
+	Seed	tohum
+	Select a type layer or click into text to insert glyphs	Bir yazım katmanı seçin veya glif eklemek için metne tıklayın
+	Select a type layer to edit its character and paragraph settings.	Karakter ve paragraf ayarlarını düzenlemek için bir yazı katmanı seçin.
+	Select All Layers	Tüm Katmanları Seç
+	Select an action first	Önce bir eylem seçin
+	Select and Mask	Seç ve Maskele
+	Select and Mask…	Seç ve Maskele…
+	Select Bottom Layer	Alt Katmanı Seçin
+	Select Data Points	Veri Noktalarını Seçin
+	Select Data Points…	Veri Noktalarını Seçin…
+	Select Folder…	Klasör Seç…
+	Select Inverse	Tersini Seç
+	Select Layer	Katman Seç
+	Select Layer Above	Yukarıdaki Katmanı Seçin
+	Select Layer Below	Aşağıdaki Katmanı Seçin
+	Select Linked Layers	Bağlantılı Katmanları Seçin
+	Select Plane	Düzlem Seç
+	Select Similar Colors	Benzer Renkleri Seçin
+	Select Subject	Konuyu Seçin
+	Select text to apply a character style	Karakter stili uygulamak için metni seçin
+	Select the crop presets to delete	Silinecek kırpma ön ayarlarını seçin
+	Select the crop presets to delete:	Silinecek kırpma ön ayarlarını seçin:
+	Select Top Layer	Üst Katmanı Seçin
+@id	select.all	Tümünü Seç
+	Selected	Seçilen
+	Selected Areas	Seçilen Alanlar
+	Selected Artboards	Seçilen Çalışma Yüzeyleri
+	Selection Edges	Seçim Kenarları
+	Selection Preview:	Seçim Önizlemesi:
+	Selections	Seçimler
+	Selective Color	Seçici Renk
+	Selective Color…	Seçici Renk…
+	Semi Bold	Yarı Kalın
+	SemiBold	Yarı Kalın
+fontWeight	SemiBold	Yarı Kalın
+	Send the selected pin backward	Seçilen pini geriye gönder
+	Sepia	Sepya
+	Sessions only	Yalnızca oturumlar
+	Set additional Crop options	Ek Kırpma seçeneklerini ayarlayın
+	Set additional smoothing options	Ek yumuşatma seçeneklerini ayarlayın
+	Set background color	Arka plan rengini ayarla
+	Set Black Point	Siyah Noktayı Ayarla
+	Set Colors	Renkleri Ayarla
+	Set deleted.	Küme silindi.
+	Set foreground color	Ön plan rengini ayarla
+	Set GPU Memory in Preferences › Performance to what your graphics card can hold, at most 3/8 of its memory. Automatic follows Memory Usage, within a quarter of this computer's memory and 3/8 of the card's, and doesn't count the document against a card whose memory is known. The status bar shows GPU Memory Full while they don't fit.	Tercihler › Performans içindeki GPU Belleği'ni ekran kartınızın kaldırabileceği miktara, en fazla belleğinin 3/8'ine ayarlayın. Otomatik, Bellek kullanımını izler; bu bilgisayarın belleğinin dörtte biri ve kartın belleğinin 3/8'i içinde kalır, belleği bilinen bir kartta belgeyi hesaba katmaz. Sığmadıkları sürece durum çubuğu GPU Belleği Dolu gösterir.
+	Set horizontal skew	Yatay eğmeyi ayarla
+	set in Print Settings…	Yazdırma Ayarlarında belirlenir…
+	Set Measurement Scale	Ölçüm Ölçeğini Ayarla
+	Set Measurement Scale…	Ölçüm Ölçeğini Ayarla…
+	set name	küme adı
+	Set Neutral Gray Point	Nötr Gri Noktayı Ayarla
+	Set New Snapshot as Default	Yeni Anlık Görüntüyü Varsayılan Olarak Ayarla
+	Set painting symmetry options	Boyama simetrisi seçeneklerini ayarlama
+	Set saved.	Küme kaydedildi.
+	Set shape fill type	Şekil doldurma türünü ayarla
+	Set shape stroke type	Şekil kontur türünü ayarlama
+	Set Start Timecode…	Başlangıç Zaman Kodunu Ayarla…
+	Set the overlay options for the Crop tool	Kırpma aracının kaplama seçeneklerini ayarlama
+	Set the text color	Metin rengini ayarlama
+	Set vertical skew	Dikey eğmeyi ayarla
+	Set White Point	Beyaz Noktayı Ayarla
+	Shadow Amount	Gölge Miktarı
+	Shadow Clipping Warning (U)	Gölge Kırpılması Uyarısı (U)
+	Shadow Intensity	Gölge Yoğunluğu
+	Shadow Radius	Gölge Yarıçapı
+	Shadow Tone	Gölge Tonu
+	Shadows up to:	Şuna kadar gölgeler:
+	Shadows/Highlights	Gölgeler/Vurgular
+	Shadows/Highlights…	Gölgeler/Vurgular…
+	Shape Blur	Şekil Bulanıklığı
+	Shape Blur…	Şekil Bulanıklığı…
+	Shape Dynamics	Şekil Dinamiği
+	Shape Layer	Şekil Katmanı
+	Sharp	Keskin
+	Sharpen Amount	Keskinleştirme Miktarı
+	Sharpen Detail	Detayı Keskinleştir
+	Sharpen Details	Ayrıntıları Keskinleştir
+	Sharpen Edges	Kenarları Keskinleştirin
+	Sharpen for	Şunun için keskinleştir:
+	Sharpen Masking	Maskelemeyi Keskinleştir
+	Sharpen More	Daha Fazla Keskinleştir
+	Sharpen Radius	Yarıçapı Keskinleştir
+	Sharpen Tool	Keskinleştirme Aracı
+	Sharpening	Bileme
+	Shear	Kesme
+	Shear…	Kesme…
+	Shell Lower	Kabuk Alt Kısmı
+	Shell Upper	Kabuk Üstü
+	Shift Edge	Kenarı Kaydır
+	Shine	Parıltı
+	shortcut	kısayol
+	Shortcut removed.	Kısayol kaldırıldı.
+	Show All Menu Items	Tüm Menü Öğelerini Göster
+	Show Altered Video	Değiştirilen Videoyu Göster
+	Show Backdrop	Arka Planı Göster
+	Show bounding box when dragging layer	Katmanı sürüklerken sınırlayıcı kutuyu göster
+	Show canvas dots	Kanvas noktalarını göster
+	Show channels in color	Kanalları renkli göster
+	Show Cropped Area	Kırpılmış Alanı Göster
+	Show crosshair in brush tip	Fırça ucunda artı işaretini göster
+	Show dialog during playback	Oynatma sırasında iletişim kutusunu göster
+	Show Edge	Kenarı Göster
+	Show extension panels	Uzatma panellerini göster
+	Show Extras Options	Ekstra Seçeneklerini Göster
+	Show Extras Options…	Ekstra Seçeneklerini Göster…
+	Show font names in english	İngilizce yazı tipi adlarını göster
+	Show Guides  (⌘;)	Kılavuzları Göster (⌘;)
+	Show highlight on rollover	Rollover sırasında vurgulamayı göster
+	Show home recent files	Ana ekranda son dosyaları göster
+	Show in Explorer	Explorer'da Göster
+	Show Lab Color Readouts	Laboratuvar Renk Okumalarını Göster
+	Show menu colors	Menü renklerini göster
+	Show New Snapshot Dialog by Default	Yeni Anlık Görüntü İletişim Kutusunu Varsayılan Olarak Göster
+	Show only crosshair while painting	Boyama sırasında yalnızca artı işaretini göster
+	Show or hide the Notes panel	Notlar panelini gösterme veya gizleme
+	Show Original	Orijinali Göster
+	Show Overlay	Kaplamayı Göster
+	Show Red at 3 o'clock	Kırmızıyı saat 3 yönünde göster
+	Show Sampling Area	Örnekleme Alanını Göster
+	Show Sampling Ring	Örnekleme Halkasını Göster
+	Show Selected Region	Seçilen Bölgeyi Göster
+	Show Skin Tone Indicator	Cilt Tonu Göstergesini Göster
+	Show slice numbers	Dilim numaralarını göster
+	Show the layer mask as an overlay	Katman maskesini kaplama olarak göster
+	Show the layer's effects  ({key}-click: all layers)	Katmanın efektlerini göster ({key}-tıklama: tüm katmanlar)
+	Show the layer's effects  (⌥-click: all layers)	Katmanın efektlerini göster (⌥ tuşuna basarak tıklayın: tüm katmanlar)
+	Show tooltips	Araç ipuçlarını göster
+	Show Transform Controls	Dönüştürme Kontrollerini Göster
+	Show transformation values	Dönüşüm değerlerini göster
+	Show Vectorscope	Vectorscope'u göster
+	Show/Hide All Panels	Tüm Panelleri Göster/Gizle
+	Show/Hide Panels	Panelleri Göster/Gizle
+	Shutter Speed	Enstantane Hızı
+	Sides	Taraflar
+	Similar	Benzer
+	Simple	Basit
+	Sine	sinüs
+	Single Column Marquee Tool	Tek Sütun İşaretleme Aracı
+	Single Row Marquee Tool	Tek Satır İşaretleme Aracı
+	Single Word Justification	Tek Kelime Gerekçesi
+	Size Jitter	Boyut Değişimi
+	Skewness	çarpıklık
+	Skip	Atla
+	Sky	Gökyüzü
+	Slant	Eğimli
+	Slice color	Dilim rengi
+	Slice Select Tool	Dilim Seçme Aracı
+	Slices are locked (View › Lock Slices)	Dilimler kilitlidir (Görünüm › Dilimleri Kilitle)
+	Slices From Guides	Kılavuzlardan Dilimler
+	Smart Filter	Akıllı Filtre
+	Smart Filters	Akıllı Filtreler
+	Smart guide color	Akıllı kılavuz rengi
+	Smart Object	Akıllı Nesne
+	Smart Object Layer	Akıllı Nesne Katmanı
+	Smart Objects	Akıllı Nesneler
+	Smart Radius	Akıllı Yarıçap
+	Smart Sharpen	Akıllı Keskinleştirme
+	Smart Sharpen…	Akıllı Keskinleştirme…
+	Smooth	Pürüzsüz
+	Smooth the curve values	Eğri değerlerini yumuşat
+	Smoothing	Pürüzsüzleştirme
+	Smooth…	Düzelt…
+	SMPTE C	SMPTE-C
+	Smudge Stick	Leke Çubuğu
+	Smudge Tool	Leke Aracı
+	Snap	Yapış
+	Snap To	Şuna Yapış
+	Snap to Origin	Orijine Yapış
+	Snap vector tools and transforms to pixel grid	Vektör araçlarını tutturun ve piksel ızgarasına dönüştürün
+	Snapshot 1	Anlık Görüntü 1
+	Snapshots	Anlık görüntüler
+	Snowflakes	Kar taneleri
+	Soft dark	Yumuşak koyu
+	Soft Dark Theme	Yumuşak koyu tema
+	Soft light	Yumuşak açık
+	Soft Light Theme	Yumuşak açık tema
+	Software	Yazılım
+	Solarized dark	Solarize karanlık
+	Solarized Dark Theme	Solarize Karanlık Tema
+	Solid	Katı
+	Solid Color	Düz Renk
+	Solid Color…	Düz Renk…
+	Solid Front Faces	Katı Ön Yüzler
+	Solidity:	Doluluk:
+	Some brush presets could not be loaded	Bazı fırça ön ayarları yüklenemedi
+	Sort By Name	Ada Göre Sırala
+	Source Files	Kaynak Dosyalar
+	Source Layer	Kaynak Katmanı
+	Source: not set ({key}-click with Clone Stamp)	Kaynak: ayarlanmadı ({key}-Klon Damgası ile tıklayın)
+	Source: set	Kaynak: ayarlandı
+	Space After	Sonraki Boşluk
+	Space Before	Önceki Boşluk
+	Sparkle	ışıltı
+	Spell check complete.	Yazım denetimi tamamlandı.
+	Spherize…	Küreselleştir…
+	Spin	Döndürme
+	Spin Blur	Döndürme Bulanıklığı
+	Spin Blur…	Döndürme Bulanıklığı…
+	Split at Playhead	Oynatma Kafasında Böl
+	Split Toning	Bölünmüş Tonlama
+	Split Warp Crosswise	Çözgüyü Çapraz Olarak Böl
+	Split Warp Horizontally	Çözgüyü Yatay Olarak Böl
+	Split Warp Vertically	Çözgüyü Dikey Olarak Böl
+	Split:	Bölünmüş:
+	Sponge	Sünger
+	Sponge Tool	Sünger Aracı
+	Spot	nokta
+	Spot Channel	Spot Kanal
+	Spot Healing	Nokta Şifası
+	Spot Healing Brush Tool	Nokta Düzeltme Fırçası Aracı
+	Spot:	Nokta:
+	Sprayed Strokes	Püskürtülmüş Vuruşlar
+	Spread	Yayılma
+	Sprinkles	serpintiler
+	Square, 12 x 12	Kare, 12x12
+	Square, 5 x 5	Kare, 5x5
+	Squareness	Karelik
+	Squeeze	Sıkıştır
+	Srgb	Srgb
+	sRGB	sRGB
+	Stack Mode	Yığın Modu
+	Stagger	Sendeleme
+	Stamp Down	Damgalama
+	Stamp Visible	Damga Görünür
+	Standard Deviation	Standart Sapma
+	Standard Screen Mode	Standart Ekran Modu
+	Star ratio	Yıldız oranı
+	Star Ratio:	Yıldız Oranı:
+	Stars	Yıldızlar
+	Start X	X'i başlat
+	Start Y	Y'yi başlat
+	Starting serial	Başlangıç sıra numarası
+	Statistics…	İstatistikler…
+	Status Information	Durum Bilgileri
+	Std Dev:	Standart Geliştirme:
+	Step Backward	Geri Adım
+	Step Forward	İleri Adım
+	Step {step} is waiting for its dialog	{step}. adım iletişim kutusunu bekliyor
+	Stop For Errors	Hatalar İçin Durdur
+	Stop playing/recording	Oynatmayı/kaydetmeyi durdur
+	Stops	Duraklar
+	Straighten	Düzelt
+	Straighten Layer	Katmanı Düzleştir
+	Straighten the image by drawing a line on it	Üzerine bir çizgi çizerek görüntüyü düzeltin
+	Strength:	Güç:
+	Strikethrough	Üstü çizili
+	Stroke Catch-up	İnme Yakalama
+	Stroke color	Kontur rengi
+	Stroke Detail	Kontur Detayı
+	Stroke Direction	Strok Yönü
+	Stroke Path	Kontur Yolu
+	Stroke path with brush	Fırçayla kontur yolu
+	Stroke Pressure	Strok Basıncı
+	Stroke Size	Kontur Boyutu
+	Stroke Width	Kontur Genişliği
+	Strokes	Vuruşlar
+	Strokes to remove: {n} (Enter applies, Esc cancels)	Kaldırılacak vuruşlar: {n} (Enter uygular, Esc iptal eder)
+	Stroke…	Kontur…
+	Strong	Güçlü
+	Structure:	Yapı:
+	Studio (Dark)	Stüdyo (Karanlık)
+	Studio (Light)	Stüdyo (Işık)
+	Studio Light	Stüdyo Işığı
+	Studio light	Stüdyo ışığı
+	Studio Light Theme	Stüdyo Işık Teması
+	Studio Theme	Stüdyo Teması
+	Style Options	Stil Seçenekleri
+	Style Options…	Stil Seçenekleri…
+	Style {name} saved	{name} stili kaydedildi
+	Style: Normal	Tarz: Normal
+	Stylistic Alternates	Stilistik Alternatifler
+	Stylization	Stilizasyon
+	Stylus Wheel	Kalem Tekerleği
+	Subject Distance	Konu Mesafesi
+	Subtract from	Şundan çıkar:
+	Subtract from Sample	Örnekten Çıkart
+	Subtract from selection  ({key})	Seçimden çıkar ({key})
+	Subtract from selection  (⌥)	Seçimden çıkar (⌥)
+	Subtract Front Shape	Ön Şekli Çıkart
+	Subtract Mask from Selection	Maskeyi Seçimden Çıkar
+	Suggestions:	Öneriler:
+	Summarize…	Özetle…
+	Summation	Toplama
+	Supplemental Categories	Tamamlayıcı Kategoriler
+	Surface Blur	Yüzey Bulanıklığı
+	Surface Blur…	Yüzey Bulanıklığı…
+	Swap colours (X)	Renkleri değiştir (X)
+	Swaps height and width	Yüksekliği ve genişliği değiştirir
+	Swash	çalkalama
+	Switch between free transform and warp modes	Serbest dönüştürme ve çarpıtma modları arasında geçiş yapın
+	Switch Foreground and Background Colors	Ön Plan ve Arka Plan Renklerini Değiştir
+	Switch theme	Temayı değiştir
+	Switched to CPU rendering	CPU oluşturmaya geçildi
+	Symmetry Off	Simetri Kapalı
+	System Info	Sistem Bilgisi
+	System Info…	Sistem Bilgisi…
+	System title bar	Sistem başlık çubuğu
+	Tablet	tablet
+	Take the shortcut from the other command and select it	Kısayolu diğer komuttan al ve o komutu seç
+	Targa Options	Targa Seçenekleri
+	Target Path	Hedef Yolu
+	Target X	Hedef X
+	Target Y	Hedef Y
+	Teal Orange	turkuaz turuncu
+	Technique	Teknik
+	Technology Previews	Teknoloji Önizlemeleri
+	Technology Previews…	Teknoloji Önizlemeleri…
+cameraRaw	Temperature	Sıcaklık
+	Tetrahedral	dörtyüzlü
+	Text engine	Metin motoru
+	Text file	Metin dosyası
+	Text Layer	Metin Katmanı
+	Text Position:	Metin Konumu:
+	Text Replacement	Metin Değiştirme
+	Texture Coverage	Doku Kapsamı
+	Texture Each Tip	Her Ucu Doku
+	Texturizer	Dokulaştırıcı
+	The current gradient (pick one in Window › Gradients)	Geçerli degrade (Pencere › Degradeler'den birini seçin)
+	The document is closed	Belge kapatıldı
+	The document or selected layers changed. Please request deletion again.	Belge veya seçilen katmanlar değişti. Lütfen tekrar silme talebinde bulunun.
+	The document “{name}” does not have an embedded {mode} profile.	'{name}' belgesinde gömülü bir {mode} profili yok.
+	The document “{name}” has an embedded color profile that does not match the current {mode} working space.	'{name}' belgesinin gömülü renk profili geçerli {mode} çalışma alanıyla eşleşmiyor.
+	The file could not be opened.	Dosya açılamadı.
+	The file could not be saved.	Dosya kaydedilemedi.
+	The GPU compositor wasn't used: {reason}	GPU dizgicisi kullanılmadı: {reason}
+	The gradient the Gradient tool paints with	Degrade aracının boyadığı degrade
+	The keyboard shortcut set was not imported: {error}	Klavye kısayol seti içe aktarılmadı: {error}
+	The layer or its mask changed. Drag the mask onto the Trash again.	Katman veya maskesi değişti. Maskeyi yeniden Çöp Kutusu'na sürükleyin.
+	The layers need {needed} of GPU memory and may hold {budget}, so edits that redraw the whole document do it on the CPU. Click to set GPU Memory.	Katmanların {needed} GPU belleğine ihtiyacı var ve en fazla {budget} kullanabilirler; bu yüzden tüm belgeyi yeniden çizen düzenlemeler bunu CPU'da yapar. GPU Belleği'ni ayarlamak için tıklayın.
+	The transform couldn't be applied.	Dönüştürme uygulanamadı.
+	There are too many sets: delete one first.	Çok fazla küme var: önce birini silin.
+	There is no crop size or ratio to save	Kaydedilecek kırpma boyutu veya oranı yok
+	These settings aren't available in PhotoCraft yet.	Bu ayarlar henüz PhotoCraft'ta mevcut değildir.
+	Thin	İnce
+fontWeight	Thin	İnce
+	This document's layers need {needed} but may hold {budget}: whole-document redraws use the CPU	Bu belgenin katmanlarının {needed} belleğe ihtiyacı var ama en fazla {budget} kullanabilirler: tüm belgenin yeniden çizimi CPU'yu kullanır
+	This document's layers: {needed} of {budget} for layers	Bu belgenin katmanları: katmanlar için {budget} içinden {needed}
+	This redraw took {seconds} s on the CPU.	Bu yeniden çizim CPU'da {seconds} saniye sürdü.
+	Threshold Level	Eşik Seviyesi
+	Threshold…	Eşik…
+	Thumbnail size (smallest: list)	Küçük resim boyutu (en küçük: liste)
+	TIFF Options	TIFF Seçenekleri
+	Tile All Horizontally	Tümünü Yatay Olarak Döşe
+	Tile All Vertically	Tümünü Dikey Olarak Döşe
+	Tiles	Fayans
+	Tiles…	Fayans…
+	Tilt Scale	Eğim Ölçeği
+	Tilt X	X'i yatır
+	Tilt Y	Y Eğimi
+	Tilt-Shift	Tilt-Shift
+	Tilt-Shift…	Tilt-Shift…
+	Timing	Zamanlama
+cameraRaw	Tint	Renk Tonu
+	Tiny	minik
+	Tiny Lens	Minik Mercek
+	Title	Title
+	Titling Alternates	Başlık Alternatifleri
+	To Center	Merkeze
+	To drop files, start PhotoCraft under XWayland: `{command}`	Dosyaları bırakmak için XWayland altında PhotoCraft'ı başlatın: `{command}`
+	Toggle count group visibility	Sayım grubu görünürlüğünü değiştir
+	Toggle Last State	Son Durumu Değiştir
+	Toggle reference point	Referans noktasını değiştir
+	Toggle text orientation	Metin yönünü değiştir
+	Toggle the Brush Settings panel  (F5)	Fırça Ayarları panelini açın/kapatın (F5)
+	Toggle visibility	Görünürlüğü aç/kapat
+	Tone Curve	Ton Eğrisi
+	Tone Histogram	Ton Histogramı
+	Tone:	Ton:
+	Tool Options	Araç Seçenekleri
+	Tool Presets	Araç Ön Ayarları
+	Toolbar	Araç Çubuğu
+	Toolbar…	Araç Çubuğu…
+	Tools…	Araçlar…
+	Top Edges	Üst Kenarlar
+	Torn Edges	Yırtık Kenarlar
+	Total Ink	Toplam Mürekkep
+	Touch gestures	Dokunma hareketleri
+	Trace Contour	Konturu İzle
+	Trace Contour…	Konturu İzle…
+	Tracking (1/1000 em)	Takip (1/1000 em)
+	Traditional (72.27 points/inch)	Geleneksel (72,27 nokta/inç)
+	Transfer	Aktarım
+	Transform Again on a Copy	Bir Kopyada Yeniden Dönüştür
+	Transform On Drop	Bırakınca Dönüştür
+	Transform Selection	Seçimi Dönüştür
+	Transform Symmetry	Simetriyi Dönüştür
+	Transformation	Dönüşüm
+	Transition	Geçiş
+	Transmission Reference	İletim Referansı
+	Transparency & Gamut	Şeffaflık ve Gamut
+	Transparency & Gamut…	Şeffaflık ve Gamut…
+	Transparency Threshold	Saydamlık Eşiği
+	Trap	Tuzak
+	Tree	Ağaç
+	Tree…	Ağaç…
+	Triangle Tool	Üçgen Aracı
+	Trilinear	Üç çizgili
+	Trim	Kırpma
+	Trim…	Kırp (Kenar)…
+	Turn the prompt back on with Ask On Mismatch in Edit › Color Settings.	Soruyu Düzen › Renk Ayarları'ndaki Ask On Mismatch ile yeniden açabilirsiniz.
+	Twirl…	Döndür…
+	Type	Metin
+	Type Layer	Tip Katmanı
+	Type Options	Tip Seçenekleri
+	Type Styles	Tip Stilleri
+	Type units	Tip birimleri
+	UI font size	kullanıcı arayüzü yazı tipi boyutu
+	UI scale	Kullanıcı arayüzü ölçeği
+	Ultra Bold	Ultra Kalın
+	Ultra Light	Ultra Hafif
+	Unaltered	değiştirilmemiş
+	Unavailable in this color mode	Bu renk modunda kullanılamaz
+	Uncoated CMYK	Kaplamasız CMYK
+	Undefined Areas	Tanımsız Alanlar
+	Underline	Altı çizili
+	Underpainting	Alt boyama
+	Underwater	Sualtı
+	Undo Changes	Değişiklikleri Geri Al
+	Ungroup Layers	Katmanların Grubunu Çöz
+	Unite Shapes	Şekilleri Birleştir
+	Units & Rulers	Birimler ve Cetveller
+	Units & Rulers…	Birimler ve Cetveller…
+	Unix	Unix
+	Unlink Layer Mask	Katman Maskesinin Bağlantısını Kaldır
+	Unlink the mask from the layer	Maskenin katmanla bağlantısını kaldırın
+	Unlock: picking a preset replaces these settings	Kilidi aç: bir ön ayarın seçilmesi bu ayarların yerini alır
+	Unlocked	Kilitli değil
+	Unnamed {mode} profile	Adsız {mode} profili
+	Unsaved Changes	Kaydedilmemiş Değişiklikler
+	Unsharp Mask…	Keskinliği Azaltma Maskesi…
+	Unsupported file format	Desteklenmeyen dosya biçimi
+	Unsupported format	Desteklenmeyen biçim
+	Untagged {mode}	Etiketlenmemiş {mode}
+	Untitled-1	İsimsiz-1
+	Up	Up
+	Update All Modified Content	Değiştirilen Tüm İçeriği Güncelle
+	Update All Text Layers	Tüm Metin Katmanlarını Güncelle
+	Update Layer Comp	Katman Kompozisyonunu Güncelle
+	Update layer comp (visibility, position and appearance)	Katman kompozisyonunu güncelleyin (görünürlük, konum ve görünüm)
+	Update Modified Content	Değiştirilen İçeriği Güncelle
+	Update the current brush with these settings	Mevcut fırçayı bu ayarlarla güncelleyin
+@plural	Updated {n} linked smart object changed on disk|Updated {n} linked smart objects changed on disk	Diskte değişen {n} bağlantılı akıllı nesne güncellendi|Diskte değişen {n} bağlantılı akıllı nesne güncellendi
+	Upper	Üst
+	Urgency	Aciliyet
+	URLs	URLs
+	Use additional plugins folder	Ek eklentiler klasörünü kullan
+	Use Classic Mode	Klasik Modu Kullan
+	Use Custom Color	Özel Renk Kullan
+	Use esc to commit	Taahhüt etmek için esc kullanın
+	Use File › Open to open an image.	Bir resmi açmak için Dosya › Aç'ı kullanın.
+	Use File › Open, or paste a copied image with {paste}.	Dosya › Aç'ı kullanın veya kopyalanan görüntüyü {paste} ile yapıştırın.
+	Use finite lengths and a positive pattern total	Sonlu uzunluklar ve pozitif bir model toplamı kullanın
+	Use Global Light	Global Light'ı kullanın
+	Use gpu	GPU'yu kullan
+	Use Legacy	Eskiyi Kullan
+	Use legacy free transform	Eski ücretsiz dönüşümü kullanın
+	Use Measurement Scale	Ölçüm Ölçeğini Kullan
+	Use Previous Layer to Create Clipping Mask	Kırpma Maskesi Oluşturmak İçin Önceki Katmanı Kullan
+	Use Selection In Source	Kaynaktaki Seçimi Kullan
+	Use Selection In Target	Hedefteki Seçimi Kullan
+	Use shift key for tool switch	Araç anahtarı için Shift tuşunu kullanın
+	Use tablet pressure	Tablet basıncını kullan
+	Use tablet pressure to change pen width	Kalem genişliğini değiştirmek için tablet basıncını kullanın
+	Use the embedded profile ({profile})	Gömülü profili kullanın ({profile})
+	Use:	Kullan:
+	Uses the foreground and background colors.	Ön plan ve arka plan renklerini kullanır.
+	Uses the foreground and background colours.	Ön plan ve arka plan renklerini kullanır.
+	Vanishing Point	Ufuk Noktası
+	Vanishing Point is not active	Ufuk Noktası etkin değil
+	Vanishing Point: click four corners to create a plane	Ufuk Noktası: düzlem oluşturmak için dört köşeye tıklayın
+	Vanishing Point…	Ufuk Noktası…
+	Variable Data Sets	Değişken Veri Setleri
+	Variable Data Sets…	Değişken Veri Setleri…
+	Variables bind a layer's visibility, text or pixels to a named data slot.	Değişkenler bir katmanın görünürlüğünü, metnini veya piksellerini adlandırılmış bir veri yuvasına bağlar.
+	Variance	Varyans
+	Vary round brush hardness on hud	Hud üzerinde yuvarlak fırça sertliğini değiştirin
+	Vector Mask	vektör maskesi
+	Vector Mask from Current Path	Geçerli Yoldan Vektör Maskesi
+	Vertical Centers	Dikey Merkezler
+	Vertical Only	Yalnızca Dikey
+	Vertical scale	Dikey ölçek
+	Vertical type	Dikey tip
+	Vertical Type Mask Tool	Dikey Metin Maskesi Aracı
+cameraRaw	Vibrance	Titreşim
+	Vibrance…	Titreşim…
+	Video Cache	Video Önbelleği
+	Video Frames to Layers	Video Karelerinden Katmanlara
+	Video Frames to Layers…	Video Karelerinden Katmanlara…
+	Video Layers	Video Katmanları
+	View menu	Menüyü görüntüle
+	View Options	Seçenekleri Görüntüle
+	Vignette Amount	Vinyet Miktarı
+	Vignette Feather	Vinyet Tüyü
+	Vignette Highlights	Vinyet Öne Çıkanlar
+	Vignette Midpoint	Vinyet Orta Noktası
+	Vignette Roundness	Vinyet Yuvarlaklığı
+	Vignette Style	Vinyet Stili
+	Vignetting	Kenar ayrıntısı kaybı
+	Vine Color	Asma Rengi
+	Vine With Flowers	Çiçekli Asma
+	Vine With Leaves	Yapraklı Asma
+	Violent	Şiddet içeren
+	Violet, Orange	Menekşe, Turuncu
+	Visible	Görünür
+	Vulkan	Vulkan
+	W	W
+	W x H x Resolution	G x Y x Çözünürlük
+	Wand	Değnek
+	Warm	Sıcak
+	Warming L B A	Isınma L B A
+	Warming81	Isınma81
+	Warming85	Isınma85
+	Warmth	sıcaklık
+	Warp Text	Metni Çözgü
+	Warp Text…	Metni Çözgü…
+	Warp:	Çözgü:
+	Water Paper	Su Kağıdı
+	Watercolor	Suluboya
+	Watercolour look: lighter interior, darker rims.	Suluboya görünümü: daha açık iç kısım, daha koyu jantlar.
+	Wavelength Max	Maksimum Dalga Boyu
+	Wavelength Min	Dalga Boyu Min
+	Waves	Dalgalar
+	Web Color	Web Rengi
+	Web Large	Web Büyük
+	Web Minimum	Web Minimumu
+	Web Most Common	Web En Yaygın
+	Web Photo Gallery…	Web Fotoğraf Galerisi…
+	Web Snap	Web Snap
+	Webp	Webp
+	WebP (lossless)	WebP (kayıpsız)
+	Weight:	Ağırlık:
+	Wet Edges	Islak Kenarlar
+	Wetness	ıslaklık
+	Wetness Jitter	Islaklık Titreme
+	White Balance: As Shot	Beyaz Dengesi: Çekildiği Gibi
+	White Clip	Beyaz Klip
+	White Matte	Beyaz Mat
+cameraRaw	Whites	Beyazlar
+	WIA Support	WIA Desteği
+	WIA Support…	WIA Desteği…
+	Wide Blurry	Geniş Bulanık
+	Wide Gamut RGB	Wide Gamut RGB
+	Wide Sharp	Geniş Keskin
+	Wind	Rüzgâr
+	Windows LCD	Windows LCD'si
+	Wind…	Rüzgar…
+	Word Spacing	Kelime Aralığı
+	Work Path	Çalışma Yolu
+	Working	Çalışma
+	Working Black Plate	Siyah Plaka Çalışma
+	Working CMY Plate	Çalışan CMY Plakası
+	Working Cyan Plate	Çalışan Camgöbeği Plaka
+	Working Gray Plate	Gri Çalışma Plakası
+	Working Magenta Plate	Çalışan Macenta Plaka
+	Working Space	Çalışma Alanı
+	Working Spaces	Çalışma Alanları
+	Working Yellow Plate	Sarı Plaka Çalışması
+	Working: {working}	Çalışma alanı: {working}
+	Working…	Çalışıyor…
+	Workspace…	Çalışma alanı…
+	World ready	Dünya hazır
+	Wrap	Sarma
+	X11	X11
+	XOR	XOR
+cameraRaw	Yellow	Sarı
+	Yellow  ·  Blue	Sarı · Mavi
+	Yellows	Sarılar
+	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.	{set} klavye kısayol grubunuz burada kullanılıyor: {n} kısayolları varsayılanlardan farklı. Düzenle › Klavye Kısayolları bunları gösterir; Tümünü Varsayılanlara Sıfırla bu işlemi geri alır.
+	ZigZag	ZigZag
+	Zigzag	Zikzak
+	ZigZag…	ZigZag…
+	Zoom	Yakınlaştır
+	Zoom clicked point to center	Tıklanan noktayı merkeze yakınlaştır
+	Zoom resizes windows	Yakınlaştırma pencereleri yeniden boyutlandırır
+	Zoom with scroll wheel	Kaydırma tekerleği ile yakınlaştırma
+	Zoom with trackpad pinch	İzleme dörtgeni tutamıyla yakınlaştırma
+	{added}, {removed} subtracted	{added}, {removed} çıkarıldı
+	{key} to subtract	{key} çıkarmak için
+	{key}-click to set the source	{key}-kaynağı ayarlamak için tıklayın
+	{label} is writing the file and can no longer be cancelled	{label} dosyayı yazıyor ve artık iptal edilemez
+	{message} ({note})	{message} ({note})
+	{mode} Color · {bits} bit	{mode} Renkli · {bits} bit
+	{name} (Photoshop)	{name} (Photoshop)
+	{name} can't keep everything in this document	{name} bu belgedeki her şeyi koruyamaz
+	{name} options	{name} seçenekler
+	{name} Properties	{name} Özellikler
+	{name} was changed by another app after it was opened or saved here.	{name}, burada açıldıktan veya kaydedildikten sonra başka bir uygulama tarafından değiştirildi.
+@plural	{n} action|{n} actions	{n} eylem|{n} eylem
+	{n} commands are not in PhotoCraft.	{n} komutları PhotoCraft'ta değil.
+@plural	{n} layer recorded by this comp was deleted. Update the comp, or clear the warning.|{n} layers recorded by this comp were deleted. Update the comp, or clear the warning.	Bu kompozisyonun kaydettiği {n} katman silindi. Kompozisyonu güncelleyin veya uyarıyı temizleyin.|Bu kompozisyonun kaydettiği {n} katman silindi. Kompozisyonu güncelleyin veya uyarıyı temizleyin.
+@plural	{n} layer|{n} layers	{n} katman|{n} katman
+	{n} of {max} sample points	{n} / {max} örnek nokta
+@plural	{n} plane|{n} planes	{n} düzlem|{n} düzlem
+@plural	{n} preset|{n} presets	{n} ön ayar|{n} ön ayar
+@plural	{n} sample point removed|{n} sample points removed	{n} örnek nokta kaldırıldı|{n} örnek nokta kaldırıldı
+@plural	{n} sample|{n} samples	{n} örnek|{n} örnek
+@plural	{n} slice|{n} slices	{n} dilim|{n} dilim
+@plural	{n} step has no PhotoCraft equivalent yet|{n} steps have no PhotoCraft equivalent yet	{n} adımın PhotoCraft’ta henüz karşılığı yok|{n} adımın PhotoCraft’ta henüz karşılığı yok
+@plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	Photoshop karşılığı olmayan {n} adım atlandı|Photoshop karşılığı olmayan {n} adım atlandı
+	{path}: the path is not valid Unicode; rename the file and open it again.	{path}: yol geçerli bir Unicode değil; dosyayı yeniden adlandırın ve tekrar açın.
+	{set} (modified)	{set} (değiştirildi)
+	{shortcut} is reserved by the system and can't be assigned.	{shortcut} sistem tarafından ayrılmıştır ve atanamaz.
+	{size} (was {old})	{size} ({old} idi)
+@plural	{warning} (+{n} more brush preset warning)|{warning} (+{n} more brush preset warnings)	{warning} (+{n} fırça ön ayarı uyarısı daha)|{warning} (+{n} fırça ön ayarı uyarısı daha)
+@plural	{what} with {n} warning|{what} with {n} warnings	{what}, {n} uyarı ile|{what}, {n} uyarı ile
+	{w} px x {h} px ({ppi} ppi)	{w} px x {h} px ({ppi} ppi)
+	{w} {unit} x {h} {unit} ({ppi} ppi)	{w} {unit} x {h} {unit} ({ppi} ppi)
+	{zoom}%	%{zoom}
+	…and {n} more	…ve {n} daha
+	↑↓ navigate   {key} run   esc close	↑↓ gezin {key} çalıştır esc kapat
+	↑↓ navigate   ↵ run   esc close	↑↓ gezin ↵ çalıştır esc kapat

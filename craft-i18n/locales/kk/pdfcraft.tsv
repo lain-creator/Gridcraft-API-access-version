@@ -1,0 +1,2064 @@
+# Қазақша (kk) interface catalog for PdfCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	  · not fixable here	  · мұнда түзетуге болмайды
+	 (page {p})	 (бет {p})
+	 (searching… {s} of {p} pages)	 (ізделуде… {s}/{p} бет)
+	 ({n} at {dpi} dpi, the largest size they can be drawn at)	 ({n} — {dpi} dpi, сурет салынатын ең үлкен өлшем)
+	 ({s} not exported: {first})	 ({s} сурет экспортталмады, алғашқысы: {first})
+	 on page {p}	 {p}-бетте
+	 · password-protected	 · құпиясөзбен қорғалған
+	+Bin	+Bin
+	+LOC	+LOC
+	, Expires: 	, Жарамдылық мерзімі: 
+	1 difference found	1 айырмашылық табылды
+	1 file done	1 файл өңделді
+	1 file needs attention	1 файл назар аударуды қажет етеді
+	1 instance	1 сәйкестік
+	1 issue	1 мәселе
+	1 mark	1 белгі
+	1 page	1 бет
+	1 page selected	1 бет таңдалды
+	1 page selected.	1 бет таңдалды.
+	180 degrees	180 градус
+	4 x 6 in label (101.6 x 152.4 mm)	4 × 6 дюйм жапсырма (101,6 × 152,4 мм)
+	9 digit, A letter, O letter or digit, X any character	9 — сан, A — әріп, O — әріп немесе сан, X — кез келген таңба
+	; 1 page already had text	; 1 бетте мәтін бұрыннан бар еді
+	; failed: {list}	; сәтсіз: {list}
+	; {n} pages already had text	; {n} бетте мәтін бұрыннан бар еді
+	? of {n}	?/{n}
+	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} коммит, +{added} / −{deleted} жол (Δ {delta}), +{bin_added} / −{bin_deleted} бинарлы ресурс, {first} – {last}
+	`{command}` {when}	`{command}` {when}
+	a bookmark cannot be moved inside itself	бетбелгіні өз ішіне жылжытуға болмайды
+	A button	Түйме
+	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Rust тілінде жазылған, clean-room әдісімен әзірленген ашық бастапқы кодты PDF қосымшасы. MIT OR Apache-2.0.
+	A diagonal CONFIDENTIAL watermark on every page.	Әр беттегі көлбеу CONFIDENTIAL су белгісі.
+	a document must keep at least one page	құжатта кемінде бір бет болуы тиіс
+	A document needs at least one page: copy instead	Құжатқа кемінде бір бет қажет: орнына көшіріңіз
+	A form field has additional actions	Форма өрісінде қосымша әрекеттер бар
+	A link	Сілтеме
+	A script	Сценарий
+	A selected field has no widget on any page, so the fields can't be edited together.	Таңдалған өрістің ешбір бетте виджеті жоқ, сондықтан өрістерді бірге түзетуге болмайды.
+	A stream refers to an external file	Ағын сыртқы файлға сілтеме жасайды
+	A stream uses LZW compression	Ағын LZW қысуын қолданады
+	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Түйіндеме кестенің мақсаты мен құрылысын сипаттайды. Әр кестеге Summary атрибутын қосыңыз.
+	About PdfCraft	PdfCraft туралы
+	Accepted	Қабылданды
+	Accessibility Checker	Қолжетімділік тексеруіші
+	Accessibility Checker Options	Қолжетімділікті тексеру параметрлері
+	Accessibility permission flag	Қолжетімділік рұқсатының жалаушасы
+	Accessibility permission flag is set	Қолжетімділік рұқсатының жалаушасы орнатылған
+	Acrobat 3.0 and later (40-bit RC4)	Acrobat 3.0 және кейінгілері (40-бит RC4)
+	Acrobat 5.0 and later (128-bit RC4)	Acrobat 5.0 және кейінгілері (128-бит RC4)
+	Acrobat 7.0 and later (128-bit AES)	Acrobat 7.0 және кейінгілері (128-бит AES)
+	Acrobat X and later (256-bit AES)	Acrobat X және кейінгілері (256-бит AES)
+	Action name:	Әрекет атауы:
+	Action Wizard	Әрекеттер шебері
+	Action Wizard…	Әрекеттер шебері…
+	Actions list	Әрекеттер тізімі
+	Actual size	Нақты өлшем
+	Actual text	Нақты мәтін
+	Add a button	Түйме қосу
+	Add a callout	Көрсеткішті мәтін қосу
+	Add a checkbox	Құсбелгі қосу
+	Add a date field	Күн өрісін қосу
+	Add a digital signature field	Цифрлық қолтаңба өрісін қосу
+	Add a drop-down list	Ашылмалы тізім қосу
+	Add a list box	Тізім қосу
+	Add a radio button	Ауыстырып қосқыш қосу
+	Add a reply	Жауап қосу
+	Add a stamp	Мөр қосу
+	Add a sticky note	Стикер қосу
+	Add a sticky note here	Осында жабысқақ жазба қосу
+	Add a text box	Мәтін блокын қосу
+	Add a text field	Мәтін өрісін қосу
+	Add alternate text	Балама мәтін қосу
+	Add alternate text…	Балама мәтін қосу…
+	Add an Action	Әрекет қосу
+	Add an image field	Сурет өрісін қосу
+	Add arrow	Жебе қосу
+	Add at least two files	Кем дегенде екі файл қосыңыз
+	Add background	Фон қосу
+	Add background…	Фон қосу…
+	Add Bates numbering…	Bates нөмірлеуін қосу…
+	Add bookmark	Бетбелгі қосу
+	Add callout	Түсіндірме қосу
+	Add checkmark	Белгі қосу
+	Add cloud	Бұлт қосу
+	Add comment	Түсініктеме қосу
+	Add comments	Түсініктеме қосу
+	Add connected lines	Сынық сызық қосу
+	Add content	Мазмұн қосу
+	Add cross	X белгісін қосу
+	Add dot	Нүкте қосу
+	Add drawing	Сурет салу
+	Add field	Өріс қосу
+	Add file attachment	Файл тіркемесін қосу
+	Add files to combine	Біріктіруге файлдар қосу
+	Add files…	Файлдарды қосу…
+	Add folder	Қалта қосу
+	Add folder and subfolders	Қалта мен ішкі қалталарды қосу
+	Add folder and subfolders…	Қалта мен ішкі қалталарды қосу…
+	Add folder…	Қалта қосу…
+	Add footer	Төменгі колонтитулды қосу
+	Add form components	Форма компоненттерін қосу
+	Add header	Жоғарғы колонтитулды қосу
+	Add header & footer	Үстіңгі және астыңғы колонтитулдарды қосу
+	Add header & footer…	Жоғарғы және төменгі колонтитулдарды қосу…
+	Add highlight	Бояп белгілеу қосу
+	Add image	Кескін қосу
+	Add image…	Сурет қосу…
+	Add inserted text	Енгізілген мәтін қосу
+	Add line	Сызық қосу
+	Add link	Сілтеме қосу
+	Add open documents	Ашық құжаттарды қосу
+	Add or edit links	Сілтемелерді қосу немесе түзету
+	Add oval	Овал қосу
+	Add Page Numbers	Бет нөмірлерін қосу
+	Add polygon	Көпбұрыш қосу
+	Add printer marks	Баспа белгілерін қосу
+	Add rectangle	Тіктөртбұрыш қосу
+	Add redaction mark	Жасыру белгісін қосу
+	Add search index	Іздеу индексін қосу
+	Add signature	Қолтаңба қосу
+	Add squiggly underline	Толқыншақ астын сызу қосу
+	Add stamp	Мөр қосу
+	Add Step	Қадам қосу
+	Add sticky note	Жапсырма қосу
+	Add strikethrough	Арқылы сызу қосу
+	Add text	Мәтін қосу
+	Add text box	Мәтін жәшігін қосу
+	Add the choices people pick from.	Пайдаланушылар таңдайтын нұсқаларды қосыңыз.
+	Add the files to combine	Біріктірілетін файлдарды қосыңыз
+	Add the PDFs to combine	Біріктіру үшін PDF файлдарын қосыңыз
+	Add the steps this action runs, in order.	Бұл әрекет орындайтын қадамдарды ретімен қосыңыз.
+	Add to Trusted Certificates	Сенімді сертификаттарға қосу
+	Add to trusted certificates	Сенімді сертификаттарға қосу
+	Add underline	Астын сызу қосу
+	Add watermark	Су белгісін қосу
+	Add watermark…	Су белгісін қосу…
+	Add {what}	Қосу: {what}
+	Added 1 comment	1 түсініктеме қосылды
+	Added more than once	Бірнеше рет қосылған
+	Added the first {n} files in {folder}	{folder} қалтасынан алғашқы {n} файл қосылды
+	Added the first {n} PDFs in {folder}	{folder} ішіндегі алғашқы {n} PDF қосылды
+	Added {n} comments	{n} түсініктеме қосылды
+	Adding images arrives on the web with file pickers for images	Суреттерді қосу веб-нұсқада сурет файлдарын таңдау мүмкіндігімен келеді
+	Adds invisible text over each word; the page image is not changed	Әр сөздің үстіне көрінбейтін мәтін қосады; бет суреті өзгермейді
+	Advanced optimization	Кеңейтілген оңтайландыру
+	Advanced options	Кеңейтілген параметрлер
+	Advanced Options {chevron}	Кеңейтілген параметрлер {chevron}
+	Advanced search…	Кеңейтілген іздеу…
+	AI assistant	ЖИ көмекшісі
+	Algorithm	Алгоритм
+	Align fields	Өрістерді туралау
+	All annotations are tagged	Барлық белгілеулер тегтелген
+	All document contents	Құжаттың барлық мазмұны
+	All document contents except metadata	Метадеректерден басқа құжаттың барлық мазмұны
+	All form fields are tagged	Барлық форма өрістері тегтелген
+	All form fields have description	Барлық форма өрістерінде сипаттама бар
+	All multimedia objects are tagged	Барлық мультимедиа нысандары тегтелген
+	All open documents	Барлық ашық құжаттар
+	All page content is tagged	Барлық бет мазмұны тегтелген
+	All pages in document	Құжаттағы барлық беттер
+	All pages in range	Диапазондағы барлық беттер
+	All tools	Барлық құралдар
+	Allow	Рұқсат беру
+	Allow Rich Text Formatting	Бай мәтін пішімдеуге рұқсат беру
+	Allow user to enter custom text	Пайдаланушыға өз мәтінін енгізуге рұқсат беру
+	Allowed	Рұқсат етілген
+	already a PDF	бұл қазірдің өзінде PDF
+	Also recognize pages that already have text	Мәтіні бар беттерді де тану
+	Alternate Text	Балама мәтін
+	Alternate text	Балама мәтін
+	Alternate text inside an element that already has alternate text is never read. Remove the inner alternate text.	Балама мәтіні бар элементтің ішіндегі балама мәтін ешқашан оқылмайды. Ішкі балама мәтінді алып тастаңыз.
+	Alternate text must be associated with some content	Балама мәтін белгілі бір мазмұнмен байланысуы тиіс
+	Alternate text on an element that contains a link or field hides that annotation from assistive technology. Move the alternate text.	Сілтеме немесе өріс бар элементтегі балама мәтін бұл белгілеуді көмекші технологиялардан жасырады. Балама мәтінді жылжытыңыз.
+	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Бет мазмұны жоқ элементтегі балама мәтін ешқашан дауыстап оқылмайды. Оны алып тастаңыз немесе элементті мазмұнға байланыстырыңыз.
+	Alternate text should not hide annotation	Балама мәтін белгілеуді жасырмауы тиіс
+	Alternate text that will never be read	Ешқашан оқылмайтын балама мәтін
+	An action is already running	Бір әрекет қазіргі уақытта орындалуда
+	An action with this name already exists.	Осындай атаумен әрекет әлдеқашан бар.
+	An embedded file has no AFRelationship	Енгізілген файлда AFRelationship жоқ
+	An image asks to be interpolated	Кескін интерполяцияны сұрайды
+	An image has alternates or OPI information	Кескінде баламалар немесе OPI ақпараты бар
+	An open-source PDF workbench — local, private, and scriptable.	Ашық бастапқы кодты PDF жұмыс орны — жергілікті, жеке әрі скрипттерді қолдайтын.
+	and {n} more	және тағы {n}
+	Animation that flashes can cause seizures. Check scripts and media for flicker.	Жыпылықтаған анимация құрыс ұстамаларын тудыруы мүмкін. Скрипттер мен медианы жыпылықтауға тексеріңіз.
+	Annotations, form fill-in, and digital signatures	Белгілеулер, форманы толтыру және цифрлық қолтаңбалар
+	Another file dialog is still open. Finish with it first.	Басқа файл сұхбат терезесі әлі ашық тұр. Алдымен оны аяқтаңыз.
+	Any except extracting pages	Беттерді шығарып алудан басқа барлығы
+	Anyone opening the document will need this password. It's applied when you save.	Құжатты ашатын кез келген адамға осы құпиясөз қажет болады. Ол сақтау кезінде қолданылады.
+	Appear behind page	Беттің артында көріну
+	Appear on top of page	Беттің үстінде көріну
+	Appearance mode	Көрініс режимі
+	Appearance settings…	Көрініс параметрлері…
+	Applied 1 redaction mark. Save to remove the content from the file.	1 жасыру белгісі қолданылды. Мазмұнды файлдан алып тастау үшін сақтаңыз.
+	Applied {n} redaction marks. Save to remove the content from the file.	{n} жасыру белгісі қолданылды. Мазмұнды файлдан алып тастау үшін сақтаңыз.
+	Applies to 1 page	1 бетке қолданылады
+	Applies to {n} pages	{n} бетке қолданылады
+	Apply PDF standards	PDF стандарттарын қолдану
+	Apply redactions	Жасыруларды қолдану
+	Apply redactions…	Жасыруларды қолдану…
+	Apply scale	Масштабты қолдану
+	Appropriate nesting	Тиісті кірістірілу
+	April	Сәуір
+calendar date	April	Сәуір
+	Arbitrary Mask	Еркін маска
+	Archive documents	Құжаттарды мұрағаттау
+	Ask about this document	Осы құжат туралы сұрау
+	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	GitHub-тан соңғы шығарылымды сұрайды. Ештеңе автоматты түрде жүктелмейді немесе орнатылмайды.
+	Associated with content	Мазмұнмен байланысқан
+	At least one signature has problems.	Кемінде бір қолтаңбада мәселелер бар.
+	At least one signature is invalid.	Кемінде бір қолтаңба жарамсыз.
+	At most	Көп дегенде
+	Attach a file	Файлды тіркеу
+	Attach file	Файлды тіркеу
+	Attachment	Тіркеме
+	Attachments	Тіркемелер
+	Attachments Panel and Page	Тіркемелер панелі және бет
+	Audit space usage	Кеңістікті пайдалануды тексеру
+	Audit space usage…	Кеңістікті пайдалануды тексеру…
+	August	Тамыз
+calendar date	August	Тамыз
+	Auto follows the system's text size. Pages always render at the display's full resolution.	Авто жүйенің мәтін өлшемін ұстанады. Беттер әрқашан дисплейдің толық ажыратымдылығында көрсетіледі.
+	Auto portrait/landscape	Автоматты тік/жатық
+	Auto-rotate pages	Беттерді автоматты бұру
+	Auto-size text to fit redaction region	Мәтін өлшемін жасыру аймағына автоматты бейімдеу
+	Automatically tag PDF	PDF-ке тегтерді автоматты қосу
+	average	орташа
+	Back	Артқа
+	Back side only	Тек артқы жағы
+	Back to all tools	Барлық құралдарға оралу
+	Back to the document	Құжатқа оралу
+	background	фон
+	Basic constraints	Негізгі шектеулер
+	Bates numbering	Бейтс нөмірлеу
+	Before each selected page (select pages in Organize)	Таңдалған әр беттің алдында (беттерді «Реттеу» ішінде таңдаңыз)
+	Before the number	Сан алдында
+	Beveled	Қиғаш
+	Bicubic downsampling to	Бикубтық төмендету
+	Binding	Тігілуі
+	Binding:	Тігу жағы:
+	Black on white	Ақ фонда қара
+	Blank page	Бос бет
+	Booklet	Буклет
+	Booklet subset:	Буклеттің бөлігі:
+	Bookmark options	Бетбелгі параметрлері
+	Bookmarks	Бетбелгілер
+	Bookmarks are present in large documents	Үлкен құжаттарда бетбелгілер бар
+	Bookmarks Panel and Page	Бетбелгілер панелі және бет
+	Border Color:	Жиек түсі:
+	Borders and Colors	Жиектер мен түстер
+	Box	Аумақ
+	Bring your own model (off by default)	Өз моделіңізді пайдаланыңыз (әдепкіде өшірулі)
+	Browser's print dialog	Браузердің басып шығару терезесі
+	Butt	Кесілген
+	Button	Түйме
+	Button is checked by default	Түйме әдепкі бойынша таңдалады
+	Button Properties	Түйменің сипаттары
+	Button Style:	Түйме стилі:
+	Buttons with the same name and value are selected in unison	Атауы мен мәні бірдей түймелер бірге таңдалады
+	Bytes	Байт
+	Calibrate from two points	Екі нүктеден калибрлеу
+	Callout	Көрсетпе
+	Can't be read: {e}	Оқу мүмкін емес: {e}
+	Cancelled	Бас тартылды
+	Cancelling…	Бас тартылуда…
+	Case-sensitive	Регистрді ескеру
+	Center Footer Text	Ортаңғы астыңғы колонтитул мәтіні
+	Center Header Text	Ортаңғы үстіңгі колонтитул мәтіні
+	Center horizontally	Көлденең бойынша ортаға
+	Center vertically	Тік бойынша ортаға
+	Center window on screen	Терезені экран ортасына орналастыру
+	Centre	Ортаға туралау
+	Certificate authority	Сертификаттау орталығы
+	Certificate Viewer	Сертификатты көру
+	Certificates	Сертификаттар
+	Certified by {by}	Куәландырған: {by}
+	Certify	Куәландыру
+	Certify (invisible signature)	Куәландыру (көрінбейтін қолтаңба)
+	Certify (visible signature)	Куәландыру (көрінетін қолтаңба)
+	Change comment properties	Түсініктеме сипаттарын өзгерту
+	Change document properties	Құжат сипаттарын өзгерту
+	Change field properties	Өріс сипаттарын өзгерту
+	Change initial view	Бастапқы көріністі өзгерту
+	Change initials	Инициалдарды өзгерту
+	Change link properties	Сілтеме сипаттарын өзгерту
+	Change reading options	Оқу параметрлерін өзгерту
+	Change reading options…	Оқу параметрлерін өзгерту…
+	Change settings…	Параметрлерді өзгерту…
+	Change signature	Қолтаңбаны өзгерту
+	Change tag properties	Тег қасиеттерін өзгерту
+	Change the colour of line art as well as text	Мәтінмен қатар сызықтық суреттің түсін де өзгерту
+	Change {key}	Өзгерту: {key}
+	Change {what}	Өзгерту: {what}
+	Changes allowed	Өзгертулерге рұқсат етілген
+	Changing the document	Құжатты өзгерту
+	Character encoding	Таңбаларды кодтау
+	Character limit 0 means no limit. A comb of characters needs a limit.	Таңба шегі 0 деген — шексіз. Таңбалар торы шекті қажет етеді.
+	Character limit:	Таңба шегі:
+	Character spacing	Таңба аралығы
+	characters	таңба
+	Characters without spaces	Бос орынсыз таңбалар
+	Check	Тексеру белгісі
+	Check Again	Қайта тексеру
+	Check again	Қайта тексеру
+	Check box is checked by default	Құсбелгі әдепкі бойынша белгіленген
+	Check Box Properties	Құсбелгінің сипаттары
+	Check Box Style:	Құсбелгі стилі:
+	Check for accessibility	Қолжетімділікті тексеру
+	Check for accessibility…	Қолжетімділікті тексеру…
+	Check for updates…	Жаңартуларды тексеру…
+	Check spelling	Емлені тексеру
+	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Тегтер көретін оқырман оқитын ретпен оқылатынын тексеріңіз. Түзету үшін «Оқу реті» құралын немесе «Тегтер» панелін пайдаланыңыз.
+	Check the pages	Беттерді белгілеу
+	Check the pages of {name}: {why}	{name} беттерін тексеріңіз: {why}
+	CheckBox	Құсбелгі
+	Checkbox	Құсбелгі
+	Checked	Белгіленген
+	Checking for a newer version…	Жаңа нұсқа бар ма екені тексерілуде…
+	Checking Options ({on} of 32 in all categories)	Тексеру параметрлері (барлық санаттар бойынша 32-ден {on})
+	Checkmark	Дәлбелгі
+	Choose a folder for the exported files	Экспортталатын файлдар үшін қалта таңдаңыз
+	Choose a folder for the extracted pages	Шығарып алынған беттер үшін қалта таңдаңыз
+	Choose a folder for the results	Нәтижелер үшін қалта таңдаңыз
+	Choose a folder for the searchable files	Іздеуге болатын файлдар үшін қалта таңдаңыз
+	Choose a folder for the split files	Бөлінген файлдар үшін қалта таңдаңыз
+	Choose a folder on this computer to pin	Бекіту үшін осы компьютердегі бір қалтаны таңдаңыз
+	Choose a layout:	Макетті таңдаңыз:
+	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	PNG немесе JPEG суретін таңдаңыз (4 MiB-қа дейін). Мөлдірлік сақталады.
+	Choose a stamp, then click on the page to place it.	Мөрді таңдап, оны орналастыру үшін бетті шертіңіз.
+	Choose an image	Суретті таңдаңыз
+	Choose images	Кескіндерді таңдаңыз
+	Choose image…	Сурет таңдау…
+	Choose photo…	Суретті таңдау…
+	Choose the digital ID that you want to use for signing:	Қол қою үшін пайдаланғыңыз келетін цифрлық ID-ді таңдаңыз:
+	Clean Up	Тазалау
+	Clean-up	Тазалау
+	Clear all	Барлығын тазарту
+	Clear form	Форманы тазалау
+	Clear redaction marks	Жасыру белгілерін тазалау
+	Clear selection / close find	Таңдауды тазалау / іздеуді жабу
+	Click on the page to add a {tool}, or drag to set its size	{tool} қосу үшін бетке шертіңіз немесе өлшемін орнату үшін сүйреңіз
+	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Мәтін қосу үшін бетті шертіңіз; әр шерту жаңа жәшік бастайды, ✓ аяқтайды. Элементтерді жылжыту үшін сүйреңіз, өлшемін өзгерту үшін бұрышынан тартыңыз, мәтінді түзету үшін қос шертіңіз.
+	Click text or an image to edit it	Түзету үшін мәтінге немесе кескінге шертіңіз
+	Click the first point to begin.	Бастау үшін бірінші нүктені шертіңіз.
+	Click to sort, drag to move the column. Drag its edge to resize it.	Сұрыптау үшін шертіңіз, бағанды жылжыту үшін сүйреңіз. Өлшемін өзгерту үшін бағанның шетін сүйреңіз.
+	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	Шыңдарды шертіңіз. Enter немесе қос шерту периметр мен ауданды аяқтайды. Ауданды жабу үшін бірінші нүктені шертіңіз.
+	Clockwise 90 degrees	Сағат тілінің бағытымен 90 градус
+	Close all	Барлығын жабу
+	Close file	Файлды жабу
+	Close panel	Панельді жабу
+	Close Tab	Қойындыны жабу
+	Closed arrow	Жабық көрсеткі
+	Cloud	Бұлт
+	Collapse all	Барлығын жию
+	Collapse all bookmarks	Барлық бетбелгілерді жию
+	Collapse all pages	Барлық беттерді жию
+	Collapse tag	Тегті жинау
+	Color contrast	Түс контрасты
+	Color Images	Түсті кескіндер
+	Color Spaces	Түс кеңістіктері
+	Colours are remapped while rendering; the document itself never changes.	Түстер көрсету кезінде қайта белгіленеді; құжаттың өзі ешқашан өзгермейді.
+	Column select	Баған бойынша таңдау
+	Comb of	Ұяшықтар саны:
+	Comb of characters	Таңбалар торы
+	Combine files	Файлдарды біріктіру
+	Combine files…	Файлдарды біріктіру…
+	Combine the rest	Қалғанын біріктіру
+	Combined {n} files	{n} файл біріктірілді
+	Combo	Ашылатын тізім
+	Coming in milestone	Кезеңде пайда болады
+	Coming in milestone {m}. Items marked Ready work today.	{m} кезеңінде шығады. «Дайын» деп белгіленген элементтер қазір жұмыс істейді.
+	Comment and form data	Түсініктеме және форма деректері
+	Comment list	Түсініктемелер тізімі
+	Commenting	Түсініктемелер қалдыру
+	Commenting, filling in form fields, and signing existing signature fields	Түсініктеме жазу, форма өрістерін толтыру және бар қолтаңба өрістеріне қол қою
+	Comments & Forms	Түсініктемелер мен формалар
+	Comments and markups	Түсініктемелер мен белгілеулер
+	Comments only	Тек түсініктемелер
+	Comments panel	Түсініктемелер панелі
+	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Түсініктемелер, сілтемелер мен өрістер дауыстап хабарлануы үшін тег ағашында болуы тиіс. Белгілеулерді тегтеңіз.
+	Commit selected value immediately	Таңдалған мәнді бірден қолдану
+	Common Properties	Жалпы сипаттар
+	Compare Files	Файлдарды салыстыру
+	Compare files	Файлдарды салыстыру
+	Compare files…	Файлдарды салыстыру…
+	Compare this file with an older version: Compare files… in All tools.	Бұл файлды ескірек нұсқасымен салыстырыңыз: «Барлық құралдар» ішіндегі «Файлдарды салыстыру…».
+	Completed	Аяқталды
+	Compress a PDF	PDF сығу
+	Compress document structure (object streams)	Құжат құрылымын сығу (нысан ағындары)
+	Configure a Digital ID for Signing	Қол қоюға арналған цифрлық ID теңшеу
+	Configure New Digital ID	Жаңа цифрлық ID теңшеу
+	Confirm Password	Құпиясөзді растау
+	Conformance level:	Сәйкестік деңгейі:
+	Connected lines	Сынық сызық
+	Console	Консоль
+	Content copying	Мазмұнды көшіру
+	Content copying for accessibility	Мазмұнды қолжетімділік үшін көшіру
+	Content Streams	Мазмұн ағындары
+	Continuous scrolling	Үздіксіз айналдыру
+	Convert colors	Түстерді түрлендіру
+	Copied {what}	Көшірілді: {what}
+	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Көшірмелер саны, екі жақты басып шығару және түс браузердің басып шығару терезесінде таңдалады.
+	Copy Image	Суретті көшіру
+	Copy Image in Original Format	Суретті бастапқы пішімде көшіру
+	Copy or cut pages first	Алдымен беттерді көшіріңіз немесе кесіңіз
+	Copy pages	Беттерді көшіру
+	Copy selected text	Таңдалған мәтінді көшіру
+	Copy text	Мәтінді көшіру
+	Correct recognized text	Танылған мәтінді түзету
+	Could not save: {e}	Сақтау мүмкін болмады: {e}
+	Couldn't add {name}: {e}	{name} файлын қосу мүмкін болмады: {e}
+	Couldn't check for updates: {e}	Жаңартуларды тексеру мүмкін болмады: {e}
+	Couldn't combine files: {e}	Файлдарды біріктіру мүмкін болмады: {e}
+	Couldn't copy the image: {e}	Суретті көшіру мүмкін болмады: {e}
+	Couldn't create a PDF: {e}	PDF жасау мүмкін болмады: {e}
+	Couldn't download {name}: {e}	«{name}» жүктеп алынбады: {e}
+	Couldn't extract pages: {e}	Беттерді шығарып алу мүмкін болмады: {e}
+	Couldn't fit the visible content: {e}	Көрінетін мазмұнды сыйдыру мүмкін болмады: {e}
+	Couldn't follow linked PDF: {reason}	Байланысты PDF ашылмады: {reason}
+	Couldn't import the signature image: {e}	Қолтаңба суретін импорттау мүмкін болмады: {e}
+	Couldn't open revision {n}: {e}	{n} нұсқасын ашу мүмкін болмады: {e}
+	Couldn't open the printer's preferences: {e}	Принтердің параметрлерін ашу мүмкін болмады: {e}
+	Couldn't open the result: {e}	Нәтижені ашу мүмкін болмады: {e}
+	Couldn't open the signed version: {e}	Қол қойылған нұсқаны ашу мүмкін болмады: {e}
+	Couldn't optimize the file	Файлды оңтайландыру мүмкін болмады
+	Couldn't optimize the file: {e}	Файлды оңтайландыру мүмкін болмады: {e}
+	Couldn't print from the browser ({e}); downloaded {name} to print instead	Браузерден басып шығару мүмкін болмады ({e}); оның орнына басып шығару үшін {name} жүктелді
+	Couldn't read {name}: {e}	«{name}» оқылмады: {e}
+	Couldn't recover {name}: {e}	{name} файлын қалпына келтіру мүмкін болмады: {e}
+	Couldn't reload {name}: {e}	{name} қайта жүктеу мүмкін болмады: {e}
+	Couldn't save the image: {e}	Суретті сақтау мүмкін болмады: {e}
+	Couldn't save {name}: {e}	«{name}» сақталмады: {e}
+	Couldn't save: {e}	Сақтау мүмкін болмады: {e}
+	Couldn't show the file picker. Please try again.	Файл таңдау терезесін көрсету мүмкін болмады. Қайталап көріңіз.
+	Couldn't split: {e}	Бөлу мүмкін болмады: {e}
+	Couldn't summarize comments: {e}	Түсініктемелер жиынтығын жасау мүмкін болмады: {e}
+	Couldn't take the snapshot: {e}	Суретке түсіру мүмкін болмады: {e}
+	Couldn't unlock {name}: {e}	{name} құлпын ашу мүмкін болмады: {e}
+	Couldn't use the photo: {e}	Суретті пайдалану мүмкін болмады: {e}
+	Couldn't use {name}: {e}	{name} файлын пайдалану мүмкін болмады: {e}
+	Couldn't write {name}: {e}	{name} файлына жазу мүмкін болмады: {e}
+	Couldn't write {path}: {e}	{path} жолына жазу мүмкін болмады: {e}
+	Counterclockwise 90 degrees	Сағат тілінің бағытына қарсы 90 градус
+	Counting words… {n} pages read	Сөздер саналуда… {n} бет оқылды
+	Country/Region	Ел/Өңір
+	Create a new Digital ID (self-signed, saved to a password-protected file)	Жаңа цифрлық ID жасау (өз-өзіне қол қойылған, құпиясөзбен қорғалған файлға сақталады)
+	Create a PDF	PDF жасау
+	Create accessibility report	Қолжетімділік есебін жасау
+	Create Custom Stamp	Өзіндік мөр жасау
+	Create custom stamp…	Өзіндік мөр жасау…
+	Create from	Мынадан жасау
+	Create Link	Сілтеме жасау
+	Create link	Сілтеме жасау
+	Create links from URLs	URL-ден сілтемелер жасау
+	Create Link…	Сілтеме жасау…
+	Create PDF Comment Summary	Түсініктемелердің PDF қорытындысын жасау
+	Create PDF comment summary…	Түсініктемелердің PDF қорытындысын жасау…
+	Create PDF from clipboard	Алмасу буферінен PDF жасау
+	Create PDF from file…	Файлдан PDF жасау…
+	Create PDF from images	Суреттерден PDF жасау
+	Create PDF from images…	Суреттерден PDF жасау…
+	Create PDF from multiple files…	Бірнеше файлдан PDF жасау…
+	Create separate PDFs…	Бөлек PDF файлдарын жасау…
+	Create {what}	{what} жасау
+	Created 1 link	1 сілтеме жасалды
+	Created a comment summary	Түсініктемелер жиынтығы жасалды
+	Created a PDF from the first {n} files	Алғашқы {n} файлдан PDF жасалды
+	Created a PDF from {n} files	{n} файлдан PDF жасалды
+	Created a PDF from {n} files; left out: {names}	{n} файлдан PDF жасалды; қосылмағандары: {names}
+	Created {n} links	{n} сілтеме жасалды
+	Creates 1 file from {n} pages.	{n} беттен 1 файл жасалады.
+	Creates {f} files from {n} pages.	{n} беттен {f} файл жасалады.
+	Credit Cards	Несиелік карталар
+	Crop (% trimmed from each side)	Қиып алу (әр жақтан %)
+	Crop Image	Суретті қию
+	Crop page	Бетті қиып алу
+	Crop pages	Беттерді қиып алу
+key	Ctrl	Ctrl
+	Currency symbol:	Валюта таңбасы:
+	Current page ({n})	Ағымдағы бет ({n})
+	Current page only	Тек ағымдағы бет
+	Current page — type a page number or label (such as iv) and press Enter	Ағымдағы бет — бет нөмірін немесе белгісін (мысалы, iv) теріңіз де, Enter пернесін басыңыз
+	Custom font	Арнаулы қаріп
+	Custom scale:	Арнайы масштаб:
+	Custom stamps arrive on the web with file pickers for images	Пайдаланушы мөрлері веб-нұсқада сурет файлдарын таңдау мүмкіндігімен келеді
+	Custom text:	Жеке мәтін:
+	Custom:	Өзіндік:
+	Cut and stack	Кесу және үю
+	Cut Image	Суретті кесу
+	Cut marks	Кесу белгілері
+	Cut pages	Беттерді кесу
+	Cut {what}	Кесілді: {what}
+	Cuts each page to its printed area, turns it upright and fits it to the sheet without stretching. One label per sheet.	Әр бетті басылған аймағына дейін қиып, тік бұрып, созбай параққа сыйғызады. Әр параққа бір жапсырма.
+	Dark gray theme	Қою сұр тема
+	Dark theme	Күңгірт тақырып
+	Date field	Күн өрісі
+	Date: 	Күні: 
+	December	Желтоқсан
+calendar date	December	Желтоқсан
+	Decimal places:	Ондық таңба саны:
+	Decimals	Ондық таңбалар
+	Declared conformance: {shown}	Жарияланған сәйкестік: {shown}
+	Decorative figure	Декоративті сурет
+	Default page display	Әдепкі беттер көрсету
+	Default Value:	Әдепкі мәні:
+	Default workspace mode	Әдепкі жұмыс кеңістігі режимі
+	Default zoom	Әдепкі масштаб
+	Default:	Әдепкі:
+key	Delete	Delete
+	Delete bookmark	Бетбелгіні жою
+	Delete comment	Түсініктемені жою
+	Delete content	Мазмұнды жою
+	Delete document JavaScript	Құжаттың JavaScript-ін жою
+	Delete field	Өрісті жою
+	Delete image	Кескінді жою
+	Delete link	Сілтемені жою
+	Delete page	Бетті жою
+	Delete page {label}	{label} бетін жою
+	Delete pages	Беттерді жою
+	Delete pages (Delete)	Беттерді жою (Delete)
+	Delete pages after extracting	Шығарып алғаннан кейін беттерді жою
+	Delete selected fields	Таңдалған өрістерді жою
+	Delete selected pages (Organize)	Таңдалған беттерді жою (Ұйымдастыру)
+	Delete stamp	Мөрді жою
+	Delete {o}	{o} жою
+	Describe the figure	Суретті сипаттаңыз
+	Detect form fields	Форма өрістерін анықтау
+	Detected 1 form field	1 форма өрісі анықталды
+	Detected {n} form fields	{n} форма өрісі анықталды
+	Device colour is used, but there is no PDF/A output intent	Құрылғы түсі қолданылады, бірақ PDF/A шығыс профилі жоқ
+	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	DeviceCMYK қолданылады: CMYK шығыс профилі қажет (автоматты түрде қосылмайды)
+	Diagnostic details	Диагностика мәліметтері
+	Digital ID	Цифрлық ID
+	Digital ID password	Цифрлық ID құпиясөзі
+	Digital signature	Цифрлық қолтаңба
+	Digital Signature Properties	Цифрлық қолтаңбаның сипаттары
+	Digitally sign	Цифрлық түрде қол қою
+	Digitally signed by	Цифрлық қолтаңба қойған
+	Discard all comments, forms and multimedia	Барлық түсініктемелерді, формаларды және мультимедияны алып тастау
+	Discard all links, actions and JavaScript	Барлық сілтемелерді, әрекеттерді және JavaScript-ті алып тастау
+	Discard all object data (file attachments)	Барлық нысан деректерін (файл тіркемелерін) алып тастау
+	Discard alternate images	Балама кескіндерді алып тастау
+	Discard bookmarks	Бетбелгілерді алып тастау
+	Discard document information and metadata	Құжат туралы мәліметтерді және метадеректерді алып тастау
+	Discard document tags	Құжат тегтерін алып тастау
+	Discard embedded page thumbnails	Ендірілген бет миниатюраларын алып тастау
+	Discard embedded print settings	Ендірілген басып шығару параметрлерін алып тастау
+	Discard hidden layer content	Жасырын қабат мазмұнын алып тастау
+	Discard hidden text	Жасырын мәтінді алып тастау
+	Discard Objects	Нысандарды алып тастау
+	Discard private data of other applications	Басқа қосымшалардың жеке деректерін алып тастау
+	Discard this text (Esc)	Бұл мәтіннен бас тарту (Esc)
+	Discard User Data	Пайдаланушы деректерін алып тастау
+	Display theme	Көрсету темасы
+	Distinguished name	Ажырататын атау
+	Distribute fields	Өрістерді біркелкі орналастыру
+	DN: 	DN: 
+	Document actions	Құжат әрекеттері
+	Document and markups	Құжат және белгілеулер
+	Document and stamps	Құжат және мөрлер
+	Document assembly	Құжаттарды біріктіру
+	Document has appropriate color contrast	Құжатта тиісті түс контрасты бар
+	Document is not image-only PDF	Құжат тек суреттерден тұратын PDF емес
+	Document is tagged PDF	Құжат — тегтелген PDF
+	Document JavaScripts	Құжаттың JavaScript-тері
+	Document JavaScripts…	Құжат JavaScript-тері…
+	Document language	Құжат тілі
+	Document Overhead	Құжаттың қосалқы деректері
+	Document Properties	Құжат сипаттары
+	Document properties ({key})	Құжат сипаттары ({key})
+	Document properties…	Құжат сипаттары…
+	Document sanitized. Save to finish: saving rewrites the whole file.	Құжат тазартылды. Аяқтау үшін сақтаңыз: сақтау бүкіл файлды қайта жазады.
+	Document structure provides a logical reading order	Құжат құрылымы логикалық оқу ретін қамтамасыз етеді
+	Document title is showing in title bar	Құжат тақырыбы атау жолағында көрсетіледі
+	Documents and view	Құжаттар және көрініс
+	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	20 беттен асатын құжаттарда навигация үшін бетбелгілер қажет. Негізгі бөлімдерге бетбелгілер қосыңыз.
+	Don't save	Сақтамау
+	Done adding text	Мәтін қосу аяқталды
+	Downloaded {name}	«{name}» жүктеп алынды
+@plural	Downloaded {n} PDF|Downloaded {n} PDFs	{n} PDF жүктелді|{n} PDF жүктелді
+	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Тіркемелерді веб-нұсқада жүктеп алу M3.10-мен келеді ({n} байт дайын)
+	Downsample to	Ажыратымдылықты төмендету
+	DPI sets the printed page size without resampling the image.	DPI пиксельдер санын өзгертпей, басып шығарылатын беттің өлшемін орнатады.
+	Drag a rectangle around the area to copy	Көшіретін аймақтың айналасына тіктөртбұрыш сүйреңіз
+	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Бетті қиып алу үшін оған тіктөртбұрыш сүйреңіз; «Бет аумақтарын орнату» үшін бетке екі рет шертіңіз
+	Drag a rectangle to create a link; double-click a link to edit it	Сілтеме жасау үшін тіктөртбұрыш сүйреңіз; сілтемені түзету үшін оған екі рет шертіңіз
+	Drag the corners onto the document's edges, then choose Enhance page.	Бұрыштарды құжаттың жиектеріне сүйреп, содан кейін «Бетті жақсарту» таңдаңыз.
+	Drag the selection to move it. Esc clears the selection.	Таңдауды жылжыту үшін сүйреңіз. Esc таңдауды алып тастайды.
+	Drag to draw the area where the signature should appear.	Қолтаңба пайда болатын аймақты сүйреп сызыңыз.
+	Drag to reorder	Ретін өзгерту үшін сүйреңіз
+	Draw a cloud	Бұлт салу
+	Draw a line	Сызық салу
+	Draw a polygon	Көпбұрыш салу
+	Draw a rectangle	Тіктөртбұрыш салу
+	Draw an arrow	Жебе салу
+	Draw an oval	Эллипс салу
+	Draw connected lines	Байланысқан сызықтар салу
+	Draw freehand	Қолмен салу
+	Draw your {what} below.	Төменде {what} салыңыз.
+	Drawing	Сурет салу
+	Drawing scale	Сызба масштабы
+	Drawing scale changes. Use Actual size for full-scale plans.	Сызба масштабы өзгереді. Толық масштабты жоспарлар үшін Нақты өлшемді пайдаланыңыз.
+	Drop PDFs or folders here, or choose them.	PDF файлдарын немесе қалталарды осында тастаңыз не таңдаңыз.
+	Drop PDFs, images, text files or folders here, or choose them.	PDF, сурет, мәтін файлдарын немесе қалталарды осында тастаңыз не таңдаңыз.
+	Drop-down list	Ашылмалы тізім
+	Dropdown Properties	Ашылмалы тізімнің сипаттары
+	Duplicate "{name}" onto:	«{name}» көшірмесін келесіге жасау:
+	Duplicate Field	Өрістің көшірмесін жасау
+	Duplicate field	Өрістің көшірмесін жасау
+	Duplicate page	Бетті көшіру
+	Duplicate pages	Беттерді көшірмелеу
+	Dynamic XFA form laid out from its template: {pages}, {fields}.	Ұлгісі бойынша құрылған динамикалық XFA формасы: {pages}, {fields}.
+	E-Sign	Электронды қол қою
+	e.g. en-US	мысалы: kk-KZ
+	e.g. My stamps	мысалы, Менің мөрлерім
+	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Әр өріске не енгізу керектігін айтатын қалқымалы кеңес қажет. Оны «Өріс сипаттары > Жалпы > Қалқымалы кеңес» бөлімінде қосыңыз.
+	Each file holds as many of the {n} pages as fit.	Әр файлға {n} беттің сыйғаны жазылады.
+	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	Әр кескін беттер оны сызатын жерде өлшенеді; кескін нәтиже кіші болғанда ғана ауыстырылады.
+	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	Әр сурет бір рет, құжат пен бет атауымен аталады. JPEG суреттері өзгеріссіз сақталады; қалғандары PNG болып сақталады.
+	Earlier in tab order	Табуляция реті бойынша алдыңғы
+comment menu	Edit	Түзету
+	Edit a PDF	PDF түзету
+	Edit Action	Әрекетті түзету
+	Edit comment	Түсініктемені түзету
+	Edit content	Мазмұнды түзету
+	Edit document JavaScript	Құжаттың JavaScript-ін түзету
+	Edit fields	Өрістерді түзету
+	Edit image	Суретті түзету
+	Edit script of {name}	{name} скриптін түзету
+	Edit text	Мәтінді түзету
+	Edit text & images	Мәтін мен суреттерді түзету
+	Edit text…	Мәтінді түзету…
+	Email Address	Электрондық пошта мекенжайы
+	Email Addresses	Электрондық пошта адрестері
+	Embedded Files	Ендірілген файлдар
+	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	Енгізілген файлдардың өздері PDF/A файлдары болуы тиіс (басқалары үшін PDF/A-3 қолданыңыз)
+	Enable Acrobat JavaScript	Acrobat JavaScript-ті қосу
+	Enable copying of text, images, and other content	Мәтін, кескіндер және басқа да мазмұнды көшіруге рұқсат беру
+	Enable text access for screen reader devices for the visually impaired	Көру қабілеті шектеулі адамдарға арналған экраннан оқу құрылғыларына мәтінге қатынасуға рұқсат беру
+	Encrypt	Шифрлау
+	Encrypt with certificate	Сертификатпен шифрлау
+	Encryption	Шифрлау
+key	End	End
+	End entity	Соңғы субъект
+	Endpoints	Шеткі нүктелер
+	Enhance camera image	Камера суретін жақсарту
+	Enhance page	Бетті жақсарту
+	Enhance scanned file	Сканерленген файлды жақсарту
+	Enter permissions password…	Рұқсаттар құпиясөзін енгізу…
+	Enter the password that opens it	Оны ашатын құпиясөзді енгізіңіз
+	Enter the permissions password to allow combining	Біріктіруге рұқсат ету үшін рұқсаттар құпиясөзін енгізіңіз
+	Entire page	Толық бет
+	Erase drawings	Суреттерді өшіру
+key	Esc	Esc
+	Even and Odd Pages	Жұп және тақ беттер
+	Even pages	Жұп беттер
+	Even Pages Only	Тек жұп беттер
+	Every PDF in the folder	Қалтадағы барлық PDF
+	Every PDF in the folder and the folders inside it	Қалтадағы және оның ішіндегі қалталардағы барлық PDF
+	Every PDF, image and text file in the folder	Қалтадағы барлық PDF, сурет және мәтін файлдары
+	Every PDF, image and text file in the folder and the folders inside it	Қалтадағы және оның ішкі қалталарындағы барлық PDF, сурет және мәтін файлдары
+	Everything on a page must be tagged or marked as an artifact (decoration, headers, footers). Tag the untagged content.	Беттегінің бәрі тегтелген немесе артефакт (әшекей, колонтитулдар) ретінде белгіленуі тиіс. Тегтелмеген мазмұнды тегтеңіз.
+	Exclude image/OCR text	Сурет/OCR мәтінін есепке алмау
+	Exclude images smaller than	Мынадан кіші суреттерді қоспау
+	Exclude tagged code blocks	Белгіленген код блоктарын есепке алмау
+	Exclude tagged tables	Белгіленген кестелерді есепке алмау
+	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	Есептен шығару PDF тегтерін пайдаланады. Тегсіз кестелер мен код есепте қалады. Суреттерді алып тастау көрінбейтін мәтінді де алып тастайды.
+	Execute a menu item	Мәзір пунктін орындау
+	Expand all	Барлығын жаю
+	Expand all bookmarks	Барлық бетбелгілерді жаю
+	Expand all pages	Барлық беттерді жаю
+	Expand tag	Тегті жаю
+	Expand top-level bookmarks	Жоғарғы деңгей бетбелгілерін жаю
+	Explain	Түсіндіру
+	Export a PDF	PDF экспорттау
+	Export all comments to data file…	Барлық түсініктемені деректер файлына экспорттау…
+	Export All Images	Барлық суреттерді экспорттау
+	Export all images	Барлық кескіндерді экспорттау
+	Export all images…	Барлық суреттерді экспорттау…
+	Export all to data file…	Барлығын деректер файлына экспорттау…
+	Export certificate	Сертификатты экспорттау
+	Export certificate…	Сертификатты экспорттау…
+	Export comments	Түсініктемелерді экспорттау
+	Export data	Деректерді экспорттау
+	Export form data	Форма деректерін экспорттау
+	Export form data…	Форма деректерін экспорттау…
+	Export measurements	Өлшемдерді экспорттау
+	Export measurements as CSV	Өлшеулерді CSV ретінде экспорттау
+	Export stopped: {e}	Экспорт тоқтатылды: {e}
+	Export to HTML…	HTML-ге экспорттау…
+	Export to Image	Суретке экспорттау
+	Export to image…	Суретке экспорттау…
+	Export to PowerPoint…	PowerPoint-қа экспорттау…
+	Export to RTF…	RTF-ке экспорттау…
+	Export to Text	Мәтінге экспорттау
+	Export to text…	Мәтінге экспорттау…
+	Export to Word…	Word-ға экспорттау…
+	Export Value: {on}	Экспорт мәні: {on}
+	Exported 1 image	1 сурет экспортталды
+	Exported the text of 1 page	1 беттің мәтіні экспортталды
+	Exported the text of {n} pages	{n} беттің мәтіні экспортталды
+	Exported {n} images	{n} сурет экспортталды
+	Exporting… {d} of {t}	Экспортталуда… {d}/{t}
+	Extended Graphics States	Кеңейтілген графикалық күйлер
+	Extract pages	Беттерді шығарып алу
+	Extract pages as separate files	Беттерді бөлек файлдар ретінде шығарып алу
+	Extract pages to a new document	Беттерді жаңа құжатқа шығарып алу
+	Extract pages…	Беттерді шығарып алу…
+	Extracted 1 page	1 бет шығарып алынды
+	Extracted {n} pages	{n} бет шығарып алынды
+	Failed	Сәтсіз
+scroll speed	Fast	Жылдам
+	February	Ақпан
+calendar date	February	Ақпан
+	Field descriptions	Өріс сипаттамалары
+	Field is used for file selection	Өріс файл таңдауға қолданылады
+	Field list	Өрістер тізімі
+	Field names (comma-separated)	Өріс атаулары (үтірмен бөлінген)
+	Field names with + - * / and parentheses; put \\ before spaces in names.	Құрамында + - * / және жақшалар бар өріс атаулары; атаудағы бос орынның алдында \\ қойыңыз.
+	Field properties…	Өріс сипаттары…
+	Field value is in range:	Өріс мәні келесі аралықта:
+	Field value is not validated	Өріс мәні тексерілмейді
+	Field: {field} on page {p}	Өріс: {field}, {p}-бетте
+	Fields to reset (comma-separated; empty: all)	Бастапқы күйге келтірілетін өрістер (үтірмен бөлінген; бос: барлығы)
+	Figure {i} of {n}{page}	Сурет {i}, барлығы {n}{page}
+	Figures alternate text	Суреттердің балама мәтіні
+	Figures require alternate text	Суреттерге балама мәтін қажет
+	File (.p12, .pfx)	Файл (.p12, .pfx)
+	File attachments	Файл тіркемелері
+	File name	Файл атауы
+	File size	Файл өлшемі
+@id	file.word_count	Сөздер саны…
+	Files are combined from top to bottom. Leave Pages empty to take every page.	Файлдар жоғарыдан төмен қарай біріктіріледі. Барлық бетті алу үшін «Беттер» өрісін бос қалдырыңыз.
+	Files are combined in the order shown. Drag them to change it.	Файлдар көрсетілген ретпен біріктіріледі. Ретін өзгерту үшін сүйреңіз.
+	Files are combined in this order. Leave Pages empty to take every page.	Файлдар осы ретпен біріктіріледі. Барлық бетті алу үшін «Беттер» өрісін бос қалдырыңыз.
+	Files for {name}	{name} үшін файлдар
+	Files you open in PdfCraft appear here. Drop a PDF anywhere to open it.	PdfCraft-те ашқан файлдарыңыз осында көрсетіледі. PDF файлын ашу үшін оны кез келген жерге апарып тастаңыз.
+	Fill & Sign	Толтыру және қол қою
+	Fill & Sign dates	«Толтыру және қол қою» күндері
+	Fill & Sign signature	«Толтыру және қол қою» қолтаңбасы
+	Fill & Sign: add text	Толтыру және қол қою: мәтін қосу
+	Fill & Sign: change initials	Толтыру және қол қою: инициалдарды өзгерту
+	Fill & Sign: change signature	Толтыру және қол қою: қолтаңбаны өзгерту
+	Fill & Sign: checkmark	Толтыру және қол қою: құсбелгі
+	Fill & Sign: cross	Толтыру және қол қою: крест
+	Fill & Sign: date	Толтыру және қол қою: күн
+	Fill & Sign: dot	Толтыру және қол қою: нүкте
+	Fill & Sign: initials	Толтыру және қол қою: бастапқы әріптер
+	Fill & Sign: line	Толтыру және қол қою: сызық
+	Fill & Sign: remove saved initials	Толтыру және қол қою: сақталған инициалдарды алып тастау
+	Fill & Sign: remove saved signature	Толтыру және қол қою: сақталған қолтаңбаны алып тастау
+	Fill & Sign: sign	Толтыру және қол қою: қол қою
+	Fill Color:	Толтыру түсі:
+	Fill colour	Толтыру түсі
+	Fill colour:	Толтыру түсі:
+	Fill colour: none	Толтыру түсі: жоқ
+	Fill in {name}	{name} толтыру
+	Filling in form fields and signing existing signature fields	Форма өрістерін толтыру және бар қолтаңба өрістеріне қол қою
+	Filling of form fields	Форма өрістерін толтыру
+	Filter comments	Түсініктемелерді сүзгілеу
+	Find a tag	Тегті табу
+	Find options	Іздеу параметрлері
+	Find text	Мәтінді іздеу
+	Find text and redact	Мәтінді тауып жасыру
+	Find text and redact…	Мәтінді тауып, жасыру…
+	Find tools and commands	Құралдар мен командаларды іздеу
+	Find tools and commands…	Құралдар мен командаларды іздеу…
+	Find untagged content	Тегтелмеген мазмұнды табу
+	Finding document fonts…	Құжат қаріптері ізделуде…
+	Finish or discard the text being edited before selecting several objects.	Бірнеше объектіні таңдамас бұрын түзетіліп жатқан мәтінді аяқтаңыз немесе алып тастаңыз.
+	First / last page	Бірінші / соңғы бет
+	Fit Height	Биіктігіне сыйдыру
+	Fit one full page	Бір толық бетке сыйдыру
+	Fit Page	Бетке сыйдыру
+	Fit to height	Биіктігіне сыйдыру
+	Fit to page	Бетке сыйдыру
+	Fit to width	Еніне сыйдыру
+	Fit to width scrolling	Еніне сыйдыра айналдыру
+	Fit Visible	Көрінетін аймаққа сыйдыру
+	Fit visible	Көрінетін аймаққа сыйдыру
+	Fit Width	Еніне сыйдыру
+	Fix	Жөндеу
+	Fix hairlines	Жіңішке сызықтарды түзету
+	Fix reading order	Оқу ретін түзету
+	Fixed what could be fixed; 1 problem remains	Түзетуге болатынының бәрі түзетілді; 1 мәселе қалды
+	Fixed what could be fixed; {n} problems remain	Түзетуге болатынының бәрі түзетілді; {n} мәселе қалды
+	Flatten comments	Түсініктемелерді жазықтау
+	Flatten Fill & Sign when saving	Сақтау кезінде «Толтыру және қол қою» мазмұнын жазықтау
+	Flatten form fields	Форма өрістерін жазықтау
+	Flip horizontal	Жатыққа аудару
+	Flip image	Кескінді аудару
+	Flip on long edge	Ұзын жиек бойынша аудару
+	Flip on short edge	Қысқа жиек бойынша аудару
+	Flip vertical	Тікке аудару
+	Float panel	Панельді бөлек терезеге шығару
+	Folders	Қалталар
+	Font colour:	Қаріп түсі:
+	Font size 0 uses automatic sizing.	Қаріп өлшемі 0 автоматты өлшемді қолданады.
+	Font size:	Қаріп өлшемі:
+	Font: Helvetica	Қаріп: Helvetica
+	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Қаріптер таңбаларын Unicode-қа сәйкестендіруі тиіс, сонда мәтінді оқуға және көшіруге болады. Қаріптерді жөндеңіз немесе PDF-ті қайта жасаңыз.
+	for images above	мұнан асатын кескіндер үшін
+	For page sizes and margins.	Бет өлшемдері мен шеттері үшін.
+	Form data and PDF forms	Форма деректері және PDF формалары
+	Form fields	Форма өрістері
+	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Форма өрістері жазықталады: мәндері көрініп тұра береді. Сақтау бүкіл файлды қайта жазады.
+	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	Форма өрістері дауыстап хабарлануы үшін тег ағашында (Form тегтерінде) болуы тиіс. Форма өрістерін тегтеңіз.
+	Form fields only	Тек форма өрістері
+	Form fields panel	Форма өрістері панелі
+	Form fill-in and digital signatures	Форманы толтыру және цифрлық қолтаңбалар
+	Format text	Мәтінді пішімдеу
+	Forms	Формалар
+	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Формулалар мен ұқсас мәтінге жатпайтын элементтерге балама мәтін қажет. Оларға балама мәтін қосыңыз.
+	Found {n} untagged content problems.	Тегтелмеген мазмұнға қатысты {n} мәселе табылды.
+	From a PDF page or an image	PDF бетінен немесе суреттен
+	From colour	Түстен
+	From {file}	{file} файлынан
+	From:	Бастап:
+	Front side only	Тек алдыңғы жағы
+	Full screen mode	Толық экран режимі
+	Geospatial location	Геокеңістіктік орналасу
+	Get help, share feedback and follow development on Discord.	Көмек алыңыз, пікір бөлісіңіз және Discord-тағы әзірлеуді қадағалаңыз.
+	Go to a page view	Бет көрінісіне өту
+	Go to page {p}	{p}-бетке өту
+	Go to page…	Бетке өту…
+	Go to the page	Бетке өту
+	Go to this result	Осы нәтижеге өту
+	Grab bag	Әр түрлі
+	Grayscale Images	Сұр реңкті кескіндер
+	Green on black	Қара фонда жасыл
+	Greyscale	Сұр реңктер
+	H / Space (hold)	H / Space (ұстап тұру)
+	Hand (H)	Қол (H)
+	Has JavaScript actions (run in M6)	JavaScript әрекеттері бар (M6-да орындалады)
+	Header and footer	Жоғарғы және төменгі колонтитулдар
+	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Тақырып ұяшықтары (TH) тыңдаушыға әр бағанның немесе жолдың нені сақтайтынын айтады. Тақырып ұяшықтарын белгілеңіз.
+	header or footer	үстіңгі/астыңғы колонтитул
+	Headers	Тақырыптар
+	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Тақырып деңгейлері үзілмеуі тиіс (H1-ден кейін H3 келмеуі керек). Тақырыптарды қайта тегтеңіз.
+	Hidden layers	Жасырын қабаттар
+	Hide a field	Өрісті жасыру
+	Hide all comments	Барлық түсініктемелерді жасыру
+	Hide field highlights	Өрістердің бояп белгілеуін жасыру
+	Hide hover previews for highlights without comment text	Түсініктеме мәтіні жоқ белгілеулер үшін меңзер алдын ала қарауын жасыру
+	Hide layer	Қабатты жасыру
+	Hide menu bar	Мәзір жолағын жасыру
+	Hide password	Құпиясөзді жасыру
+	Hide toolbars	Құралдар тақталарын жасыру
+	Hide window controls	Терезе басқару элементтерін жасыру
+	Hides annotation	Белгілеуді жасырады
+	Highlight	Бояп белгілеу
+	Highlight fields	Өрістерді бояп белгілеу
+	Highlight Style:	Ерекшелеу стилі:
+	Highlight text	Мәтінді бояп белгілеу
+key	Home	Home
+	Home / End	Home / End
+	Horizontal reversed	Көлденең (кері ретпен)
+	HTML web page	HTML веб-беті
+	Identity	Жеке деректер
+	Image (PNG)	Кескін (PNG)
+	Image field	Кескін өрісі
+	Image-only PDF	Тек суреттерден тұратын PDF
+	Images and text	Кескіндер мен мәтін
+	Images and text (converted to PDF)	Кескіндер мен мәтін (PDF-ке түрлендірілген)
+	Import comments…	Түсініктемелерді импорттау…
+	Import data	Деректерді импорттау
+	Import form data…	Форма деректерін импорттау…
+	Import list…	Тізімді импорттау…
+	Import {name}	{name} импорттау
+	Importing data arrives on the web with file pickers for data files	Деректерді импорттау веб-нұсқада деректер файлдарын таңдау мүмкіндігімен келеді
+	In multiple files	Бірнеше файлда
+	In this file	Осы файлда
+	Includes unsaved changes	Сақталмаған өзгерістері бар
+	Incorrect password. Try again.	Құпиясөз дұрыс емес. Қайталап көріңіз.
+	Indent	Шегіністі арттыру
+	Initial View	Бастапқы көрініс
+	Initials	Бас әріптер
+	initials	инициалдар
+	Ink sensitivity	Сия сезімталдығы
+	Insert a blank page after the selection	Таңдалған беттерден кейін бос бет енгізу
+	Insert a file at the end	Файлды соңына енгізу
+	Insert a file before page {label}	Файлды {label} беттің алдына енгізу
+	Insert blank page	Бос бет енгізу
+	Insert Date	Күнді енгізу
+	Insert Page Number	Бет нөмірін енгізу
+	Insert pages	Беттерді енгізу
+	Insert pages from a file…	Файлдан беттер енгізу…
+	Insert pages from file…	Файлдан беттер енгізу…
+	Insert pages from {name}	Беттерді {name} файлынан енгізу
+	Insert pages from {name} — 1 field renamed	{name} ішінен беттерді кірістіру — 1 өріс қайта аталды
+	Insert pages from {name} — fields renamed	{name} ішінен беттерді кірістіру — өрістер қайта аталды
+	Insert text	Мәтін енгізу
+	Inserted	Енгізілген
+	Inserted text	Енгізілген мәтін
+	Inserting, deleting, and rotating pages	Беттерді енгізу, жою және бұру
+	Inset	Шегініс
+	Inspector	Инспектор
+	Installed fonts…	Орнатылған қаріптер…
+	Intended usage	Пайдалану мақсаты
+	Interface size	Интерфейс өлшемі
+	Intersections	Қиылыстар
+	Invisible Rectangle	Көрінбейтін тіктөртбұрыш
+	Irregular tables confuse cell navigation. Give every row the same number of cells (counting spans).	Біркелкі емес кестелер ұяшықтар арасындағы навигацияны шатастырады. Әр жолдағы ұяшықтар санын бірдей етіңіз (біріктіруді есептегенде).
+	is available	қолжетімді
+	is not available yet	әлі қолжетімді емес
+	Issued by	Шығарушы
+	Issued by: 	Шығарушы: 
+	Issued to	Кімге берілген
+	Issuer	Шығарушы
+	Item List	Элементтер тізімі
+	Item:	Элемент:
+	Items marked Ready work today.	«Дайын» деп белгіленген элементтер бүгін-ақ жұмыс істейді.
+	Its security settings don't allow copying pages	Оның қауіпсіздік параметрлері беттерді көшіруге рұқсат бермейді
+	January	Қаңтар
+calendar date	January	Қаңтар
+	JavaScript	JavaScript
+	JavaScript Console	JavaScript консолі
+	JavaScript console…	JavaScript консолі…
+	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript өшірулі (Параметрлер > JavaScript).
+	JavaScript, e.g. getField("total").value	JavaScript, мысалы getField("total").value
+	Join the ArtCraft community	ArtCraft қауымдастығына қосылыңыз
+	July	Шілде
+calendar date	July	Шілде
+	June	Маусым
+calendar date	June	Маусым
+	Keep source fonts	Бастапқы қаріптерді сақтау
+	Keep tool selected	Құрал таңдалып тұрсын
+	Keep tool selected: on	Құрал таңдалып тұрсын: қосулы
+	Key Algorithm	Кілт алгоритмі
+	Key usage	Кілтті пайдалану
+	Keyboard shortcuts	Пернетақта тіркесімдері
+	Keychain  ·  	Кілттер бауы  ·  
+	Labels: {preview}. Later pages keep their labels.	Белгілер: {preview}. Кейінгі беттер өз белгілерін сақтайды.
+	Landscape and Portrait Pages	Жатық және тік беттер
+	Landscape Pages	Жатық беттер
+	Landscape pages	Жатық беттер
+	Larger pages	Үлкенірек беттер
+	Later in tab order	Табуляция реті бойынша кейінгі
+	Layers Panel and Page	Қабаттар панелі және бет
+	Layout and Magnification	Орналасу және масштаб
+	Lbl and LBody	Lbl және LBody
+	Lbl and LBody must be children of LI	Lbl мен LBody LI ішінде болуы тиіс
+	Leave out files that can't be read?	Оқылмайтын файлдарды қалдырып кету керек пе?
+	Left Edge	Сол жиек
+	Left Footer Text	Сол жақ астыңғы колонтитул мәтіні
+	Left Header Text	Сол жақ үстіңгі колонтитул мәтіні
+	Left out: {names}	Қалдырылды: {names}
+	LI must be a child of L	LI L ішінде болуы тиіс
+	Light blue	Ашық көк
+	Light theme	Ашық тема
+	Limit of	Шегі:
+	Line ending	Сызық ұшы
+	Line Style:	Сызық стилі:
+	Line thickness	Сызық жуандығы
+	Line Thickness:	Сызық жуандығы:
+	Link Action	Сілтеме әрекеті
+	Link Appearance	Сілтеменің көрінісі
+	Link Properties	Сілтеменің сипаттары
+	Link Type:	Сілтеме түрі:
+	Links, actions and JavaScripts	Сілтемелер, әрекеттер және JavaScript сценарийлері
+	List box	Тізім
+	List Box Properties	Тізім жәшігінің сипаттары
+	List items	Тізім элементтері
+	List items belong in a list. Fix the list's tags.	Тізім элементтері тізімде болуы тиіс. Тізімнің тегтерін жөндеңіз.
+	List labels and bodies belong in a list item. Fix the list's tags.	Тізім белгілері мен денелері тізім элементінде болуы тиіс. Тізімнің тегтерін жөндеңіз.
+	Lists	Тізімдер
+	Load document font	Құжат қаріпін жүктеу
+	Load font…	Қаріпті жүктеу…
+	Local cross-PDF links require the desktop app	PDF файлдары арасындағы жергілікті сілтемелер үшін жұмыс үстелі қолданбасы қажет
+	Location: 	Орны: 
+	Lock comment	Түсініктемені құлыптау
+	Logical Reading Order	Логикалық оқу реті
+	Looking for PDFs…	PDF файлдары ізделуде…
+	Looking for printers…	Принтерлер ізделуде…
+	Low resolution	Төмен ажыратымдылық
+	Low Resolution (150 dpi)	Төмен ажыратымдылық (150 dpi)
+	Make accessible	Қолжетімді ету
+	Make Current Properties Default	Ағымдағы сипаттарды әдепкі етіп орнату
+	Make Properties Default	Сипаттарды әдепкі етіп орнату
+	Make properties default	Қасиеттерді әдепкі ету
+	Make scans searchable, then make them smaller.	Сканерленгендерді іздеп табуға болатындай етіп, содан кейін өлшемін кішірейтеді.
+	Manage embedded index	Ендірілген индексті басқару
+	March	Наурыз
+calendar date	March	Наурыз
+	Margins (in)	Шеттер (дюйм)
+	Mark all	Барлығын белгілеу
+	Mark as artifact	Артефакт ретінде белгілеу
+	Mark as comments	Түсініктемелер деп белгілеу
+	Mark as Confidential	Құпия деп белгілеу
+	Mark content as artifact	Мазмұнды артефакт ретінде белгілеу
+	Mark differences	Айырмашылықтарды белгілеу
+	Mark figure as decorative	Кескінді декоративті деп белгілеу
+	Mark for redaction	Жасыру үшін белгілеу
+	Mark Page Range	Беттер ауқымын белгілеу
+	Mark pages for redaction	Беттерді жасыру үшін белгілеу
+	Mark with checkmark	Белгі қою
+	Marked	Ерекшеленген
+	Markup	Белгілеу
+	Marquee zoom	Аймақты масштабтау
+	Mask:	Маска:
+	Match field sizes	Өріс өлшемдерін теңестіру
+	Match page at 100%	Бетке 100% сәйкестендіру
+	maximum	максимум
+	May	Мамыр
+calendar date	May	Мамыр
+	Measure area	Ауданды өлшеу
+	Measure distance	Қашықтықты өлшеу
+	Measure objects	Нысандарды өлшеу
+	Measure perimeter	Периметрді өлшеу
+	Measurement information	Өлшеу ақпараты
+	Measurement snapping	Өлшеуді түйістіру
+	Measuring tool	Өлшеу құралы
+	Menu	Мәзір
+	Merge data files into spreadsheet…	Деректер файлдарын электронды кестеге біріктіру…
+	Merge image fragments	Сурет фрагменттерін біріктіру
+	Merged 1 file into {path}	1 файл {path} ішіне біріктірілді
+	Merged {n} files into {path}	{n} файл {path} ішіне біріктірілді
+	Merging data files needs the desktop app	Деректер файлдарын біріктіруге жұмыс үстелі қолданбасы қажет
+	Microsoft Word (.docx)	Microsoft Word (.docx)
+	Midpoints	Орта нүктелер
+	minimum	минимум
+	Mixed	Аралас
+	Modify page	Бетті өзгерту
+	More options	Қосымша параметрлер
+	More options:	Қосымша параметрлер:
+	More ways to add files	Файлдарды қосудың басқа жолдары
+	Mouse Down	Тышқан батырмасын басу
+	Mouse Enter	Курсор кіруі
+	Mouse Exit	Курсор шығуы
+	Mouse Up	Тышқан батырмасын босату
+	Move bookmark	Бетбелгіні жылжыту
+	Move comment	Түсініктемені жылжыту
+	Move down	Төмен жылжыту
+	Move earlier	Алдыңға жылжыту
+	Move image	Кескінді жылжыту
+	Move later	Кейінге жылжыту
+	Move object	Объектіні жылжыту
+	Move objects	Объектілерді жылжыту
+	Move page	Бетті жылжыту
+	Move pages	Беттерді жылжыту
+	Move tag earlier	Тегті ертерек жылжыту
+	Move tag later	Тегті кейінірек жылжыту
+	Move to group	Топқа жылжыту
+	Move up	Жоғары жылжыту
+	Multi-line	Көпжолды
+	Multiple	Бірнеше бет
+	Multiple files	Бірнеше файл
+	Multiple selection	Көп таңдау
+	Multiple words or phrases	Бірнеше сөз немесе тіркес
+	Name on new comments	Жаңа түсініктемелердегі аты
+	Named Destinations	Атауланған мақсаттар
+	Navigation links	Навигация сілтемелері
+	Navigation links are not repetitive	Навигация сілтемелері қайталанбайды
+	Navigation tab	Навигация қойындысы
+	needs an AI provider (off by default)	ЖИ провайдерін қажет етеді (әдепкіде өшірулі)
+	Needs manual check	Қолмен тексеру қажет
+	Negative number style:	Теріс сандар стилі:
+	Nested alternate text	Кірістірілген балама мәтін
+	New Action	Жаңа әрекет
+	New Action…	Жаңа әрекет…
+	New blank PDF	Жаңа бос PDF
+	New bookmark	Жаңа бетбелгі
+	New bookmark ({key})	Жаңа бетбелгі ({key})
+	New bookmarks from structure	Құрылымнан жаңа бетбелгілер
+	New file only	Тек жаңа файл
+	New file:	Жаңа файл:
+	New file: {name}	Жаңа файл: {name}
+	New {tool} comments will look like this one	Жаңа «{tool}» түсініктемелері мынадай көрінеді
+	Next ({key})	Келесі ({key})
+	Next / previous match	Келесі / алдыңғы сәйкестік
+	Next figure	Келесі сурет
+	Next month	Келесі ай
+	Next sheet	Келесі парақ
+	Next tab	Келесі қойынды
+	Next view	Келесі көрініс
+	No actions	Әрекеттер жоқ
+	No changes allowed	Ешқандай өзгеріс рұқсат етілмейді
+	No changes to save	Сақтайтын өзгеріс жоқ
+	No check has run yet.	Тексеру әлі жүргізілген жоқ.
+	No color	Түс жоқ
+	No colour	Түсі жоқ
+	No comments match.	Сәйкес түсініктемелер жоқ.
+	No comments yet.	Әзірге түсініктемелер жоқ.
+	No contributor data was built into this copy.	Бұл көшірмеге үлес қосушылар туралы деректер ендірілмеген.
+	No differences in the text.	Мәтіндегі айырмашылық жоқ.
+	No digital IDs yet.	Әзірге цифрлық ID жоқ.
+	No documents are open	Ашық құжаттар жоқ
+	No file chosen	Файл таңдалмады
+	No fill	Толтырусыз
+	No fonts are referenced by the pages.	Беттер ешбір қаріпке сілтеме жасамайды.
+	No form fields were detected	Форма өрістері анықталмады
+	No inaccessible scripts	Қолжетімсіз скрипттер жоқ
+	No issues found	Мәселе табылмады
+	No links to remove	Жоятын сілтеме жоқ
+	No matches	Сәйкестік жоқ
+	No matching tools	Сәйкес құралдар жоқ
+	No model credits were built into this copy.	Бұл көшірмеге модельдер туралы деректер ендірілмеген.
+	No openly licensed document fonts found. Load a font file.	Ашық лицензиялы құжат қаріптері табылмады. Қаріп файлын жүктеңіз.
+	no output folder was chosen	шығыс қалтасы таңдалмады
+	No pages match those choices	Ешбір бет бұл таңдауларға сәйкес келмейді
+	No pages selected	Беттер таңдалмады
+	No PDFs found in {folder}	{folder} ішінен ешбір PDF табылмады
+	No PDFs in this folder yet	Бұл қалтада әзірге PDF файлдары жоқ
+	No PDFs, images or text files found in {folder}	{folder} қалтасынан PDF, сурет не мәтін файлдары табылмады
+	No photo chosen	Сурет таңдалмаған
+	No preview	Алдын ала қарау жоқ
+	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Принтерлер табылмады. Принтердің орнатылғанын және басып шығару кезегі қызметінің жұмыс істеп тұрғанын тексеріп, «Басып шығару» терезесін қайта ашыңыз.
+	No problems found: the document conforms to {level}.	Мәселер табылмады: құжат {level} деңгейіне сәйкес.
+	No security	Қауіпсіздік жоқ
+	No sheets	Парақтар жоқ
+	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Жақтауда қолтаңба табылмады. Жақтауды қолтаңбаның үстіне жылжытыңыз немесе сия сезімталдығын арттырыңыз.
+	No status has been set.	Күй орнатылмаған.
+	no such document	мұндай құжат жоқ
+	No unlinked web addresses were found in the text	Мәтінде сілтемесіз веб-мекенжайлар табылмады
+	No untagged content was found.	Тегтелмеген мазмұн табылмады.
+	no unused output name	бос шығыс атауы жоқ
+	none	жоқ
+	None (prefix only)	Жоқ (тек префикс)
+	None found	Ештеңе табылмады
+	None of those files can be made into a PDF; use PDFs, images or .txt files	Осы файлдардың ешбірінен PDF жасауға болмайды; PDF, суреттер немесе .txt файлдарын қолданыңыз
+	None — everything is allowed	Жоқ — бәріне рұқсат етіледі
+scroll speed	Normal	Қалыпты
+	Not allowed	Рұқсат етілмеген
+	Not now	Қазір емес
+	Not present	Жоқ
+	Note	Жазба
+	nothing in the file matches this document	файлдағы ешнәрсе бұл құжатқа сәйкес келмейді
+	Nothing to redo	Қайталауға ештеңе жоқ
+	nothing to redo	қайталауға ештеңе жоқ
+	Nothing to undo	Болдырмауға ештеңе жоқ
+	nothing to undo	болдырмауға ештеңе жоқ
+	November	Қараша
+calendar date	November	Қараша
+	Number every page in the footer.	Әр бетті төменгі колонтитулда нөмірлейді.
+	Number of pages	Беттер саны
+	Number pages	Беттерді нөмірлеу
+	Number pages…	Беттерді нөмірлеу…
+	October	Қазан
+calendar date	October	Қазан
+	Odd pages	Тақ беттер
+	Odd Pages Only	Тек тақ беттер
+	of the following fields:	келесі өрістердің:
+	of {name}	{name} ішінен
+	of {pages}	барлығы {pages}
+animation effects	Off	Өшірулі
+	Offset from centre	Ортадан ығысу
+	Old file:	Ескі файл:
+	Old file: {name}	Ескі файл: {name}
+animation effects	On	Қосулы
+	On Blur	Фокус жоғалту
+	On Focus	Фокус алу
+	on page {label}	{label} бетінде
+	On the web, open or drop an image to convert it	Веб-нұсқада түрлендіру үшін суретті ашыңыз немесе сүйреп әкеліп тастаңыз
+	One word or phrase per line	Әр жолға бір сөз немесе тіркес
+	One {f} file per page, named after the document.	Бет сайын бір {f} файлы, құжаттың атауымен аталады.
+	Only allow this if you trust the source document.	Бастапқы құжатқа сенсеңіз ғана рұқсат беріңіз.
+	Only change the colour of black text or line art	Тек қара мәтіннің немесе сызықтық суреттің түсін өзгерту
+	Only checked properties will change. Mixed means the selected fields have different values.	Тек белгіленген сипаттар өзгереді. «Аралас» дегені — таңдалған өрістердің мәндері әртүрлі деген сөз.
+	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Тек осы құжатқа сенетін болсаңыз ғана жалғастырыңыз. Адрес құжаттан ақпарат алып жүруі мүмкін, мысалы формаға енгізгендеріңіз.
+	Only the document's owner can change its security (open it with the permissions password)	Қауіпсіздікті тек құжат иесі өзгерте алады (оны рұқсаттар құпиясөзімен ашыңыз)
+	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Тек бет мазмұны өзгереді: түпнұсқа беттердегі сілтемелер, түсініктемелер, форма өрістері мен бетбелгілер сақталады.
+	Open a document first	Алдымен құжатты ашыңыз
+	Open a PDF ({key})	PDF ашу ({key})
+	Open a PDF to measure it.	Өлшеу үшін PDF құжатын ашыңыз.
+	Open a web link	Веб-сілтемені ашу
+	Open a web page	Веб-бетті ашу
+	Open accessibility report	Қолжетімділік есебін ашу
+	Open arrow	Ашық көрсеткі
+	Open email app	Email қосымшасын ашу
+	Open file	Файлды ашу
+	Open in a new tab	Жаңа қойындыда ашу
+	Open in Full Screen mode	Толық экран режимінде ашу
+	Open in Full Screen mode?	Толық экран режимінде ашу керек пе?
+	Open the file as it was saved then	Файлды сол сақтау сәтіндегі күйінде ашу
+	Open the older version first	Алдымен ескірек нұсқаны ашыңыз
+	Open this local PDF?	Осы жергілікті PDF файлын ашу керек пе?
+	Open this web page?	Бұл веб-бет ашылсын ба?
+	Open to page	Бетке ашу
+	open to see what it will include	ашып, нені қамтитынын көріңіз
+	Opened with	Мынамен ашылады
+	Opened, but its security settings don't allow combining. Enter the permissions password.	Ашылды, бірақ оның қауіпсіздік параметрлері біріктіруге рұқсат бермейді. Рұқсаттар құпиясөзін енгізіңіз.
+	Opening the browser's print dialog…	Браузердің басып шығару терезесі ашылуда…
+	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Принтер драйверінің параметрлерін ашады. Олар осы компьютерден жасалатын әр басып шығару үшін сақталады; мұнда таңдалған дана саны, екі жақты басу, сұр түс режимі мен қағаз түрі әлі де қолданылады.
+	Optimization cancelled	Оңтайландырудан бас тартылды
+	Optimization is already running	Оңтайландыру әлдеқашан орындалуда
+	Optimize	Оңтайландыру
+	Optimize PDF…	PDF оңтайландыру…
+	Optimize Scanned Documents	Сканерленген құжаттарды оңтайландыру
+	Optimize scanned documents	Сканерленген құжаттарды оңтайландыру
+	Optimize scanned documents…	Сканерленген құжаттарды оңтайландыру…
+	Optimizing… cleaning up	Оңтайландыру… тазарту
+	Optimizing… image {d} of {t}	Оңтайландыру… сурет {d} / {t}
+	Optimizing… merging identical objects	Оңтайландыру… бірдей нысандарды біріктіру
+	Optimizing… merging image fragments	Оңтайландыру… сурет фрагменттерін біріктіру
+	Optimizing… removing user data	Оңтайландыру… пайдаланушы деректерін жою
+	Optimizing… writing the copy	Оңтайландыру… көшірмені жазу
+	Optional	Міндетті емес
+	Optional: needs an AI provider you configure	Міндетті емес: сіз теңшейтін ЖИ провайдері қажет
+	Organization Name	Ұйым атауы
+	Organizational Unit	Ұйымдық бөлімше
+	Organize pages	Беттерді ұйымдастыру
+	Original: replace pages	Түпнұсқа: ауыстырылатын беттер
+	Other colour…	Басқа түс…
+	Other elements alternate text	Басқа элементтердің балама мәтіні
+	Other elements that require alternate text	Балама мәтінді қажет ететін басқа элементтер
+	Outdent	Шегіністі азайту
+	Outline colour:	Контур түсі:
+	Output appears here.	Шығыс осында пайда болады.
+	Output intent: {list}	Шығыс профилі: {list}
+	Output preview	Шығысты алдын ала көру
+	Owner password (no restrictions apply)	Иелік құпиясөзі (шектеулер қолданылмайды)
+	Page background	Бет фоны
+	Page Content	Бет мазмұны
+	Page display	Беттерді көрсету
+	Page display: {layout}	Беттерді көрсету: {layout}
+	Page does not require timed responses	Бет уақытпен шектеулі жауаптарды талап етпейді
+	Page grid	Бет торы
+	Page labels	Бет белгілері
+	Page layout	Бет орналасуы
+	Page navigation	Беттер бойынша навигация
+	Page number	Бет нөмірі
+	Page Only	Тек бет
+	Page options	Бет параметрлері
+	Page order:	Беттердің реті:
+	Page properties	Бет қасиеттері
+	Page Range	Беттер ауқымы
+	Page Range Options	Беттер ауқымының параметрлері
+	Page size	Бет өлшемі
+	Page Sizing & Handling	Бет өлшемі мен өңдеуі
+	Page thumbnails	Бет миниатюралары
+	Page transitions	Бет ауысуы
+	Page will not cause screen flicker	Бет экранның жыпылықтауын тудырмайды
+	Page {label}	Бет {label}
+	Page {p} of {n}	Бет {p}/{n}
+	pages	бет
+	Pages counted	Есептелген беттер
+	Pages from	Беттер бастап
+	Pages of {name} to combine, e.g. 1-3, 6	Біріктірілетін {name} беттері, мысалы: 1-3, 6
+	Pages Panel and Page	Беттер панелі және бет
+	Pages per file	Файлға бет саны
+	Pages per sheet:	Бір парақтағы бет саны:
+	Pages selected	Таңдалған беттер
+	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Мәтіннің суреті ғана болып табылатын беттерді дауыстап оқуға немесе іздеуге болмайды. Мәтін қабатын қосу үшін мәтінді тануыңыз (OCR).
+	Pages to Print	Басып шығарылатын беттер
+	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Сілтемелері, түсініктемелері немесе өрістері бар беттер құрылым ретімен табуляциялануы тиіс. Түзету әр беттің Tab ретін «Құжат құрылымын пайдалану» деп орнатады.
+	Pages:	Беттер:
+	Pages: {k} of {n}	Беттер: {k}, барлығы {n}
+	Paper:	Қағаз:
+	Part of	Бөлігі
+	Passed	Сәтті
+	Password protection will be applied when you save	Құпиясөзбен қорғау сақтау кезінде қолданылады
+	Password required	Құпиясөз қажет
+	Password security	Құпиясөзбен қорғау
+	Password-protected	Құпиясөзбен қорғалған
+	Paste after	Артына қою
+	Paste pages	Беттерді қою
+	Patterns	Үлгілер
+	Patterns (graphics objects)	Үлгілер (графикалық нысандар)
+	PDF Optimizer	PDF оңтайландырғышы
+	PDF or image	PDF немесе сурет
+	PDF page: {size}	PDF беті: {size}
+	PDF producer	PDF өндірушісі
+	PDF scale: {scale}%	PDF масштабы: {scale}%
+	PDF version	PDF нұсқасы
+	PDF, images and text	PDF, суреттер және мәтін
+	PDF/A…	PDF/A…
+	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft қалыпты жабылмады. Осы құжаттардың өзгерістері автосақталды:
+	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft графикалық процессорсыз сурет салуда, сондықтан баяу жұмыс істеуі мүмкін. Графикалық драйверді жаңарту көмектесуі мүмкін.
+	PdfCraft on GitHub	GitHub-тағы PdfCraft
+	PdfCraft web page	PdfCraft веб-сайты
+	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft офлайн жұмыс істейді. Провайдер қоспағаныңызша телеметрия да, тіркелгі де, бұлтта өңдеу де жоқ.
+	PdfCraft {c} is up to date.	PdfCraft {c} нұсқасы ең соңғы.
+	PdfCraft {v} is available.	PdfCraft {v} қолжетімді.
+	People may need more time to respond. Check that nothing has a time limit.	Адамдарға жауап беру үшін қосымша уақыт қажет болуы мүмкін. Уақыт шектеулері жоқ екенін тексеріңіз.
+	Permissions password	Рұқсаттар құпиясөзі
+	Permitted actions after certifying	Куәландырғаннан кейінгі рұқсат етілген әрекеттер
+	Phone Number	Телефон нөмірі
+	Phone Numbers	Телефон нөмірлері
+	Pick a tool in the quick bar, or type above.	Жылдам тақтадан құрал таңдаңыз немесе жоғарыда енгізіңіз.
+	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Суреттерге оларды сипаттайтын балама мәтін қажет немесе декоративті деп белгіленуі тиіс. Әр суретке балама мәтін қосыңыз.
+	Pictures on those pages are recognized too; words already in the page's text are not added again	Бұл беттердегі суреттер де танылады; беттің мәтінінде бұрыннан бар сөздер қайта қосылмайды
+	Pin a folder to Home	Қалтаны Басты бетке бекіту
+	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Қалтаны бекітіңіз — оның ең жаңа PDF файлдары осында көрсетіледі, мысалы, сканер немесе синхрондалатын бұлт дискісі файлдарды сақтайтын қалта.
+	Pin a folder…	Қалтаны бекіту…
+	Pin folder to Home…	Қалтаны Басты бетке бекіту…
+	Pinned folders need the desktop app	Бекітілген қалталар үшін жұмыс үстелі қосымшасы қажет
+	Pinned {folder} to Home	{folder} Басты бетке бекітілді
+	Place saved {what}	Орналастыру: сақталған {what}
+	Plain text in reading order; pages are separated by form feeds.	Оқылу ретімен қарапайым мәтін; беттер бет ауыстыру таңбасымен бөлінеді.
+	Planned	Жоспарланған
+	Planned for milestone	Кезеңге жоспарланған
+	Planned for milestone {m} — open to see what it will include	{m} кезеңіне жоспарланған — не қамтитынын көру үшін ашыңыз
+	Planned · {m}	Жоспарланған · {m}
+	Points from the page's bottom-left corner.	Беттің төменгі сол жақ бұрышынан (пункттермен).
+	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	Портативті режим өшірулі: {folder} ішіне жазу мүмкін емес ({error}). Параметрлер орнына пайдаланушы қалтаңызда сақталады.
+	Portrait Pages	Тік беттер
+	Portrait pages	Тік беттер
+	Post	Жариялау
+	PostScript / EPS	PostScript / EPS
+	PostScript XObjects aren't allowed	PostScript XObject нысандарына рұқсат етілмейді
+	Preflight	Басу алдындағы тексеру
+	Prepare a form	Форманы дайындау
+	Prepare for accessibility	Қолжетімділікке дайындау
+	Prepare for Distribution	Таратуға дайындау
+	Prepare for distribution	Таратуға дайындау
+	Prepare for distribution…	Таратуға дайындау…
+	Preparing sheet {done} of {total} for printing…	Басып шығаруға {total} парақтың {done}-сі дайындалуда…
+	Preparing {n} sheets for printing…	Басып шығаруға парақтар дайындалуда: {n}…
+	Presentation (.pptx)	Презентация (.pptx)
+	Preview unavailable: {e}	Алдын ала көру қолжетімсіз: {e}
+	Preview: page {p} of {n}	Алдын ала қарау: {n} беттің {p}-сі
+	Previous ({key})	Алдыңғы ({key})
+	Previous / next page	Алдыңғы / келесі бет
+	Previous figure	Алдыңғы сурет
+	Previous month	Алдыңғы ай
+	Previous sheet	Алдыңғы парақ
+	Previous tab	Алдыңғы қойынды
+	Previous view	Алдыңғы көрініс
+	Primary language	Негізгі тіл
+	Print ({key})	Басып шығару ({key})
+	Print as image	Сурет ретінде басып шығару
+	Print in grayscale	Сұр түспен басып шығару
+	Print page border	Бет жиегін басып шығару
+	Print production	Басып шығаруға дайындау
+	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Бір жақты басып шығарыңыз. Парақтардың ретін бұзбай, белгілер бойынша кесіңіз, содан кейін топтамаларды солдан оңға, үстінен астына үйіңіз.
+	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage немесе LastPage
+	Printer paper and scaling may differ. Check driver settings.	Принтер қағазы мен масштабы өзгеше болуы мүмкін. Драйвер параметрлерін тексеріңіз.
+	Printer properties	Принтер сипаттары
+	Printing allowed	Басып шығаруға рұқсат етілген
+	Privacy	Жекелік
+	Private data of other applications	Басқа қосымшалардың жеке деректері
+	product (x)	көбейтіндісі (x)
+	Properties…	Сипаттар…
+	Protect a PDF	PDF қорғау
+	Protect Using Password	Құпиясөз арқылы қорғау
+	Protect using password…	Құпиясөз арқылы қорғау…
+	Protect with password	Құпиясөзбен қорғау
+	Protected: the combined file won't keep its security settings	Қорғалған: біріктірілген файл өз қауіпсіздік параметрлерін сақтамайды
+	Public key	Ашық кілт
+	PushButton	Түйме
+	Radio	Радио түймесі
+	Radio button	Ауыстырғыш
+	Radio Button Properties	Радио түймесінің сипаттары
+	Re-type Password	Құпиясөзді қайта енгізіңіз
+	Read	Оқу
+	Read mode	Оқу режимі
+	Read Only	Тек оқуға арналған
+	Reading colours	Оқу түстері
+	Reason	Себеп
+	Reason: 	Себебі: 
+	Recent colours	Соңғы түстер
+	Recognize Text	Мәтінді тану
+	Recognize text	Мәтінді тану
+	Recognize text in multiple files…	Бірнеше файлда мәтінді тану…
+	Recognize Text…	Мәтінді тану…
+	Recognize text…	Мәтінді тану…
+	Recognized 1 word	1 сөз танылды
+	Recognized {n} words	{n} сөз танылды
+	Recognized {w} words in 1 file	1 файлда {w} сөз танылды
+	Recognized {w} words in {n} files	{n} файлда {w} сөз танылды
+	Recognizing text… file {d} of {t}	Мәтінді тану… файл {d}/{t}
+	Recognizing text… page {d} of {t}	Мәтінді тану… бет {d}/{t}
+	Recommended tools	Ұсынылған құралдар
+	Recover unsaved documents?	Сақталмаған құжаттарды қалпына келтіру керек пе?
+	Redact	Жасыру
+	Redact a PDF	PDF мазмұнын жасыру
+	Redact all	Барлығын жасыру
+	Redact Image	Суретті жасыру
+	Redact pages	Беттерді жасыру
+	Redact pages…	Беттерді жасыру…
+	Redact text and images	Мәтін мен суреттерді жасыру
+	Redacted area fill colour:	Жасырылған аймақтың толтыру түсі:
+	Redaction code:	Жасыру коды:
+	Redaction mark appearance	Жасыру белгісінің көрінісі
+	Redaction properties…	Жасыру сипаттары…
+	Redaction Tool Properties	Жасыру құралының сипаттары
+	Redid {label}	Қайталанды: {label}
+	Redo {action}	Қайталау: {action}
+	Reduce file size	Файл өлшемін кішірейту
+	Reduce file size…	Файл өлшемін кішірейту…
+	Regularity	Біркелкілік
+	Rejected	Қабылданбады
+	Reliable character encoding is provided	Сенімді таңбаларды кодтау қамтамасыз етілген
+	Reload documents when their files change on disk	Дискідегі файлдары өзгергенде құжаттарды қайта жүктеу
+	Remove "{name}" from this list? The file itself is not deleted.	«{name}» осы тізімнен алып тасталсын ба? Файлдың өзі жойылмайды.
+	Remove all links	Барлық сілтемелерді алып тастау
+	Remove background	Фонды алып тастау
+	Remove checkmark	Белгіні алып тастау
+	Remove Crop	Қиюды алып тастау
+	Remove from Recent	Соңғылардан алып тастау
+	Remove header & footer	Жоғарғы және төменгі колонтитулдарды алып тастау
+	Remove hidden information	Жасырын ақпаратты алып тастау
+	Remove hidden information and flatten comments and form fields, so recipients see only the pages.	Жасырын ақпаратты жойып, түсініктемелер мен форма өрістерін жазықтайды, сонда алушылар тек беттерді көреді.
+	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	Жасырын ақпаратты, метадеректерді, скрипттер мен енгізілген мазмұнды жойып, файлдарды қайта жазады.
+	Remove hidden information…	Жасырын ақпаратты алып тастау…
+	Remove invalid links and bookmarks	Жарамсыз сілтемелерді және бетбелгілерді алып тастау
+	Remove page	Бетті алып тастау
+	Remove redaction marks	Жасыру белгілерін алып тастау
+	Remove saved {what}	Алып тастау: сақталған {what}
+	Remove security	Қорғанысты алып тастау
+	Remove this leaf tag from reading order and mark its direct content as an artifact	Осы жапырақ тегін оқу ретінен алып тастап, оның тікелей мазмұнын артефакт ретінде белгілеңіз
+	Remove unreferenced named destinations	Сілтеме берілмеген атаулы межелерді алып тастау
+	Remove unused objects and merge identical ones	Пайдаланылмаған нысандарды алып тастау және ұқсастарын біріктіру
+	Remove watermark	Су белгісін алып тастау
+	Remove {name}	{name} файлын алып тастау
+	Remove {name} from Recent	{name} дегенді соңғылардан алып тастау
+	Remove {n} files	{n} файлды алып тастау
+	Remove {n} pages	{n} бетті алып тастау
+	Removed 1 hidden item. Save to remove them from the file.	1 жасырын элемент жойылды. Оны файлдан алып тастау үшін сақтаңыз.
+	Removed 1 link	1 сілтеме жойылды
+	Removed {n} hidden items. Save to remove them from the file.	{n} жасырын элемент жойылды. Оларды файлдан алып тастау үшін сақтаңыз.
+	Removed {n} links	Жойылған сілтемелер: {n}
+	Rename bookmark	Бетбелгі атауын өзгерту
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Көрсету: hayro (бастапқы) · Интерфейс: egui · Белгішелер: Lucide (ISC) · Қаріптер: Inter, JetBrains Mono, Dancing Script (OFL)
+	Reopen Closed Tab	Жабылған қойындыны қайта ашу
+	Reopen the files that were open when PdfCraft last closed	PdfCraft соңғы рет жабылғанда ашық болған файлдарды қайта ашу
+	Repair log	Жөндеу журналы
+	Repairs	Жөндеулер
+	Repeat overlay text	Үстеме мәтінді қайталау
+	Repeated navigation links should be skippable. Check links that appear on every page.	Қайталанатын навигация сілтемелерін өткізіп жіберуге болатындай болуы тиіс. Әр бетте көрінетін сілтемелерді тексеріңіз.
+	Replace document colours	Құжат түстерін ауыстыру
+	Replace image	Суретті ауыстыру
+	Replace Image…	Суретті ауыстыру…
+	Replace page	Бетті ауыстыру
+	Replace Pages	Беттерді ауыстыру
+	Replace pages	Беттерді ауыстыру
+	Replace pages…	Беттерді ауыстыру…
+	Replace text	Мәтінді ауыстыру
+	Replaced	Ауыстырылған
+	Replacement text	Ауыстыру мәтіні
+	Replacement: pages of {name}	Ауыстырғыш: {name} беттері
+	Replaces the existing one on those pages.	Осы беттерде бар элементті ауыстырады.
+	Replacing images arrives on the web with image file pickers	Суреттерді ауыстыру веб-нұсқада сурет файлдарын таңдау мүмкіндігімен келеді
+	Replacing images on page {p} arrives on the web with image pickers ({i})	{p} беттегі суреттерді ауыстыру веб-нұсқада сурет таңдау мүмкіндігімен келеді ({i})
+	Report Options	Есеп параметрлері
+	Report…	Есеп…
+	Required	Міндетті
+	Requires user to enter a password for:	Пайдаланушыдан келесі үшін құпиясөз енгізуді талап етеді:
+	Reset a form	Форманы бастапқы күйге келтіру
+	Reset columns	Бағандарды ысыру
+	Reset page size	Бет өлшемін қалпына келтіру
+	Reset panel layout	Панельдер орналасуын қалпына келтіру
+	Reset to printer defaults	Принтердің әдепкі параметрлеріне келтіру
+	Resize comment	Түсініктеме өлшемін өзгерту
+	Resize window to initial page	Терезені бастапқы бетке сай өлшемдеу
+	Restrictions	Шектеулер
+	Restrictions lifted	Шектеулер алынды
+	Retain existing	Бар тұрғанын сақтау
+	Reveal in File Explorer	Файл шолғышында көрсету
+	Reverse closed arrow	Кері жабық көрсеткі
+	Reverse open arrow	Кері ашық көрсеткі
+	Reverse pages	Беттерді кері ретпен
+	Revert changes	Өзгерістерді қайтару
+	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	«{name}» бұрын сақталған нұсқасына оралу керек пе? Осы уақыттан кейінгі өзгерістерді кейін болдырмауға болмайды.
+	Reverted to the last saved version	Соңғы сақталған нұсқаға қайтарылды
+	Review History	Қарау тарихы
+	Revisions	Нұсқалар
+	Rich Text Format (.rtf)	Бай мәтін пішімі (.rtf)
+	Right Edge	Оң жиек
+	Right Footer Text	Оң жақ астыңғы колонтитул мәтіні
+	Right Header Text	Оң жақ үстіңгі колонтитул мәтіні
+	Rotate Clockwise	Сағат тілінің бағытымен бұру
+	Rotate clockwise	Сағат тілінің бағытымен бұру
+	Rotate Counterclockwise	Сағат тілінің бағытына қарсы бұру
+	Rotate counterclockwise	Сағат тілінің бағытына қарсы бұру
+	Rotate image	Кескінді бұру
+	Rotate page	Бетті бұру
+	Rotate page {label} clockwise	{label} бетін сағат тілімен бұру
+	Rotate page {label} counterclockwise	{label} бетін сағат тіліне қарсы бұру
+	Rotate Pages	Беттерді бұру
+	Rotate pages	Беттерді бұру
+	Rotate pages clockwise	Беттерді сағат тілінің бағытымен бұру
+	Rotate pages counterclockwise	Беттерді сағат тіліне қарсы бұру
+	Rotate pages…	Беттерді бұру…
+	Rotate view	Көріністі бұру
+	Rotate view clockwise	Көріністі сағат тілінің бағытымен бұру
+	Rotate view clockwise ({key})	Көріністі сағат тілінің бағытымен бұру ({key})
+	Rotate view counterclockwise	Көріністі сағат тіліне қарсы бұру
+	Run	Орындау
+	Run a JavaScript	JavaScript орындау
+	Run form script	Форма сценарийін орындау
+	Run JavaScript	JavaScript орындау
+	Running action… file {d} of {t}	Әрекет орындалуда… файл {d}/{t}
+	Same as interface ({language})	Интерфейспен бірдей ({language})
+	Sanitize	Құпия деректерді тазарту
+	Sanitize document	Құжаттан құпия деректерді тазарту
+	Sanitize Documents	Құжаттарды тазарту
+	Sanitize document…	Құжатты тазарту…
+	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Тазарту құжаттан жасырын ақпаратты жояды: метадеректер, файл тіркемелері, түсініктемелер, форма өрістері (жазықталады), жасырын мәтін мен қабаттар, бетбелгілер, сілтемелер, әрекеттер мен сценарийлер, сондай-ақ қосымшаның жеке деректері.
+	Save & Close	Сақтау және жабу
+	Save (M4)	Сақтау (M4)
+	Save ({key})	Сақтау ({key})
+	Save anyway	Бәрібір сақтау
+	Save as PDF/A	PDF/A ретінде сақтау
+	Save as PDF/A-1b	PDF/A-1b ретінде сақтау
+	Save as PDF/A-2b	PDF/A-2b ретінде сақтау
+	Save as PDF/A-3b	PDF/A-3b ретінде сақтау
+	Save as PDF/UA	PDF/UA ретінде сақтау
+	Save as PDF/X	PDF/X ретінде сақтау
+	Save as…	Басқаша сақтау…
+	Save attachment…	Тіркемені сақтау…
+	Save changes to “{name}” before closing?	«{name}» ішіндегі өзгерістерді жабу алдында сақтау керек пе?
+	Save image	Суретті сақтау
+	Save Image As…	Суретті басқаша сақтау…
+	Save or revert changes before selecting another tag.	Басқа тегті таңдамас бұрын өзгерістерді сақтаңыз немесе қайтарыңыз.
+	Save over the changed file?	Өзгертілген файлдың үстіне сақтау керек пе?
+	Save pages	Беттерді сақтау
+	Save tag properties	Тег қасиеттерін сақтау
+	Save the accessibility report	Қолжетімділік есебін сақтау
+	Save the document afterwards: saving rewrites the whole file so no trace of the removed content stays in it.	Содан кейін құжатты сақтаңыз: сақтау бүкіл файлды қайта жазады, сондықтан жойылған мазмұнның ізі онда қалмайды.
+	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	Содан кейін құжатты сақтаңыз; сақтау бүкіл файлды қайта жазады, сондықтан жойылған ешнәрсе онда қалмайды.
+	Save the spreadsheet	Электрондық кестені сақтау
+	Save these pages as one PDF	Бұл беттерді бір PDF ретінде сақтау
+	Saved measurements	Сақталған өлшемдер
+	Saved measurements.	Өлшемдер сақталды.
+	Saved the print-ready PDF to {path}	Басып шығаруға дайын PDF {path} жолына сақталды
+	Saved {name}	«{name}» сақталды
+	Saved {place}: {before} → {after} (not smaller){detail}	{place} сақталды: {before} → {after} (кішіреймеген){detail}
+	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Сақталды {place}: {before} → {after} ({pct}%-ға кіші){detail}
+	Saved, but reopening failed: {e}	Сақталды, бірақ қайта ашу мүмкін болмады: {e}
+	Scale relative to target page	Мақсат бетіне қатысты масштаб
+	Scan	Сканерлеу
+	Scan & OCR	Сканерлеу және OCR
+	Screen flicker	Экранның жыпылықтауы
+	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Экраннан оқу құралдары дауысты құжаттың тілі бойынша таңдайды. Оны «Құжат сипаттары > Қосымша > Тіл» бөлімінде орнатыңыз.
+	Script Name:	Сценарийдің атауы:
+	Script:	Скрипт:
+	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	Сценарий арқылы жасалған мазмұн перентақта және көмекші технологиялар арқылы қолданылуға жарамды болуы тиіс. Құжаттың сценарийлерін тексеріңіз.
+	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Сценарийлер файлдар мен желіге қатынасы жоқ оқшауланған ортада орындалады. Веб-бет ашуды сұрайтын сценарий алдымен сіздің рұқсатыңызды талап етеді. JavaScript өшірілген кезде де Acrobat-тың стандартты форматтау, тексеру және есептеу функциялары жұмыс істейді.
+	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Скрипттер файлға да, желіге де қатынасы жоқ құмсалғышта орындалады. JavaScript өшірулі тұрса да, Acrobat-тың стандартты пішімдеу, тексеру және есептеу функциялары әлі де жұмыс істейді.
+	Scroll long text	Ұзын мәтінді айналдыру
+	Scroll speed (mouse wheel and arrow keys)	Айналдыру жылдамдығы (тінтуір дөңгелегі және көрсеткі пернелері)
+	Scroll tabs left	Қойындыларды солға айналдыру
+	Scroll tabs right	Қойындыларды оңға айналдыру
+	Search comments	Түсініктемелерді іздеу
+	Search tools and commands…	Құралдар мен командаларды іздеу…
+	Searchable Image (Exact)	Іздеуге болатын сурет (дәл)
+	Searching… {s} of {p} pages	Ізделуде… {s}/{p} бет
+	Searching… {s}/{p}	Ізделуде… {s}/{p}
+	Security method	Қауіпсіздік әдісі
+	Security properties	Қауіпсіздік сипаттары
+	Security properties…	Қорғаныс сипаттары…
+	Security settings	Қауіпсіздік параметрлері
+	Security settings must allow assistive technology to read the content ("Enable text access for screen reader devices"). Change the document's security to allow it.	Қауіпсіздік параметрлері көмекші технологияларға мазмұнды оқуға рұқсат беруі тиіс («Экраннан оқу құралдары үшін мәтінге қолжетімділікті қосу»). Мұны рұқсат ету үшін құжаттың қауіпсіздігін өзгертіңіз.
+	Security will be removed when you save	Сақтаған кезде қауіпсіздік алынып тасталады
+	Select (V)	Таңдау (V)
+	Select a file first	Алдымен файл таңдаңыз
+	Select a file for the stamp	Мөр үшін файл таңдаңыз
+	Select a password-protected file first	Алдымен құпиясөзбен қорғалған файлды таңдаңыз
+	Select a word	Сөзді таңдау
+	Select Action:	Әрекетті таңдаңыз:
+	Select all pages (Organize)	Барлық беттерді таңдау (Ұйымдастыру)
+	Select at most 1000 objects at a time.	Бір мезгілде ең көбі 1000 объектіні таңдауға болады.
+	Select data files to merge	Біріктіру үшін деректер файлдарын таңдаңыз
+	Select files to compare	Салыстыру үшін файлдарды таңдау
+	Select format category:	Пішім санатын таңдаңыз:
+	Select Icon	Белгішені таңдау
+	Select page {label}	{label} бетін таңдау
+	Select pages	Беттерді таңдау
+	Select the items to remove from this document.	Осы құжаттан алып тастайтын элементтерді таңдаңыз.
+	Select Trigger:	Триггер таңдаңыз:
+	Selected image files: {count}	Таңдалған сурет файлдары: {count}
+	Self-signed	Өзіне-өзі қол қойылған
+	Sending sheet {s} of {n} to {printer}…	{n} парақтың {s}-парағы {printer} құрылғысына жіберілуде…
+	Sending to {printer}…	{printer} құрылғысына жіберілуде…
+	Sent to {printer}: {msg}	{printer} принтеріне жіберілді: {msg}
+	Separate PDFs	Бөлек PDF файлдары
+	Separator style:	Бөлгіш стилі:
+	September	Қыркүйек
+calendar date	September	Қыркүйек
+	Serial number	Сериялық нөмір
+	Set Alternate Text	Балама мәтінді орнату
+	Set alternate text	Балама мәтінді орнату
+	Set bookmark destination	Бетбелгінің баратын орнын орнату
+	Set document title	Құжат тақырыбын орнату
+	Set Fields to Same Size	Өрістерді бірдей өлшемге келтіру
+	Set layer visibility	Қабаттың көрінісін орнату
+	Set measurement scale	Өлшеу масштабын орнату
+	Set Page Boxes	Бет шектерін орнату
+	Set page boxes	Бет шектерін орнату
+	Set page boxes…	Бет жәшіктерін орнату…
+	Set page transitions	Бет ауысуларын орнату
+	Set properties	Сипаттарды орнату
+	Set status	Күйді орнату
+	Set status Accepted	Күйді орнату: Қабылданды
+	Set status Cancelled	Күйді орнату: Бас тартылды
+	Set status Completed	Күйді орнату: Аяқталды
+	Set status None	Күйді орнату: Жоқ
+	Set status Rejected	Күйді орнату: Қабылданбады
+	Set status Unmarked	Күйді орнату: Белгіленбеген
+	Set tab order	Қойынды ретін орнату
+	Set the image of {name}	{name} кескінін орнату
+	Set to current page ({n})	Ағымдағы бетке орнату ({n})
+	Set to zero	Нөлге орнату
+	SHA-1 digest	SHA-1 хеші
+	SHA-256 digest	SHA-256 хеші
+	Shadings	Градиенттер
+	Shared Field Properties	Ортақ өріс сипаттары
+	Sheet {s} of {n}	Парақ {s} / {n}
+key	Shift	Shift
+	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift бұрышты 45 градусқа шектейді. Backspace шыңды алып тастайды. Escape — бас тарту.
+	Shift- or Ctrl/Command-click to select several fields.	Бірнеше өрісті таңдау үшін Shift немесе Ctrl/Command басып шертіңіз.
+	Shift-click to select several objects. Drag empty space to select an area.	Бірнеше объектіні таңдау үшін Shift басып шертіңіз. Ауданды таңдау үшін бос орынды сүйреңіз.
+	ships in milestone {m}	{m} кезеңінде шығады
+	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	Терезе батырмалары үшін қойындылар жолағының орнына қарапайым тақырып жолағын көрсету. GNOME қолданбаларға тақырып жолағын салмайды, сондықтан бұл жолақ оның тақырыбына сәйкес келмейді.
+	Show a field	Өрісті көрсету
+	Show all	Барлығын көрсету
+	Show all comments	Барлық түсініктемелерді көрсету
+	Show certificate…	Сертификатты көрсету…
+	Show cover page in two-page view	Екі беттік көріністе мұқаба бетін көрсету
+	Show layer	Қабатты көрсету
+	Show less	Азырақ көрсету
+	Show password	Құпиясөзді көрсету
+	Show Report	Есепті көрсету
+	Show the accessibility report	Қолжетімділік есебін көрсету
+	Show this dialog when the Checker starts	Тексеру басталғанда бұл терезені көрсету
+	Show {n} more	Тағы {n} көрсету
+	Shown while the pointer is over a mark.	Меңзер белгінің үстінде тұрғанда көрсетіледі.
+	Shrink oversized pages	Тым үлкен беттерді кішірейту
+	Side by side	Қатар
+	Side panels	Бүйірлік панельдер
+	Sign	Қол қою
+	Sign a sheet of white paper and take a photo of it in bright, even light (use the flash). Choose the photo or drop it here: PdfCraft finds the signature and removes the paper.	Ақ қағаз парағына қол қойып, оны жарық әрі біркелкі жарықта суретке түсіріңіз (жарқылды қосыңыз). Суретті таңдаңыз немесе осында тастаңыз: PdfCraft қолтаңбаны тауып, қағазды алып тастайды.
+	Sign Here	Осында қол қойыңыз
+	Sign this field…	Бұл өріске қол қою…
+	Sign with a Digital ID	Цифрлық ID арқылы қол қою
+	Sign yourself	Өзіңіз қол қойыңыз
+	Signature	Қолтаңба
+	signature	қолтаңба
+	Signature Details	Қолтаңба мәліметтері
+	Signature is INVALID:	Қолтаңба ЖАРАМСЫЗ:
+	Signature is valid:	Қолтаңба жарамды:
+	Signature panel	Қолтаңба панелі
+	Signature validity is UNKNOWN:	Қолтаңбаның жарамдылығы БЕЛГІСІЗ:
+	Signatures	Қолтаңбалар
+	Signatures panel	Қолтаңбалар панелі
+	Signed and all signatures are valid.	Қол қойылды, барлық қолтаңбалар жарамды.
+	Signed and saved to {path}	Қол қойылып, {path} жолына сақталды
+	Signer	Қол қоюшы
+	Signer's name	Қол қоюшының аты
+	Signing time	Қол қою уақыты
+	Simplified field notation:	Жеңілдетілген өріс жазылуы:
+	Single file	Бір файл
+	Single Page	Бір бет
+	Single page	Бір бет
+	Single Page Continuous	Бір бет, үздіксіз
+	Single word or phrase	Жалғыз сөз немесе тіркес
+	Skip Rule	Ережені өткізіп жіберу
+	Skipped	Өткізілді
+	Slash	Қиғаш сызық
+scroll speed	Slow	Баяу
+	Smaller pages	Кішірек беттер
+	Snap to drawing	Сызбаға түйістіру
+	Snapping	Түйістіру
+	Social Security Number	Әлеуметтік қамсыздандыру нөмірі
+	Social Security Numbers	Әлеуметтік сақтандыру нөмірлері
+	Solid	Тұтас
+	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	Кейбір бетбелгілер осында көрсетілмеген: панель шектеулі санды, шектеулі тереңдікке дейін ғана тізеді.
+	Some content could not be classified safely and was kept in the count.	Кейбір мазмұнды сенімді түрде жіктеу мүмкін болмады, сондықтан ол есепте қалды.
+	Some page content couldn't be read; snapping uses the rest.	Беттің кейбір мазмұнын оқу мүмкін болмады; түйістіру қалғанын қолданады.
+	Some pages contain no countable text. Scanned images need OCR first.	Кейбір беттерде санауға болатын мәтін жоқ. Сканерленген суреттерге алдымен OCR қажет.
+	Sort comments by:	Түсініктемелерді сұрыптау:
+	Sort items	Элементтерді сұрыптау
+	sorted ascending	өсу ретімен сұрыпталған
+	sorted descending	кему ретімен сұрыпталған
+key	Space	Бос орын
+	Space Audit	Кеңістікті пайдалану аудиті
+	Split document	Құжатты бөлу
+	Split document…	Құжатты бөлу…
+	Split into files…	Файлдарға бөлу…
+	Spreadsheet (.xlsx)	Электрондық кесте (.xlsx)
+	Squiggly	Толқынды
+	Squiggly underline	Толқынды астын сызу
+	Squiggly underline text	Мәтінді толқын сызықпен астын сызу
+	Stamp palette	Мөрлер палитрасы
+	Stamps	Мөрлер
+	Standard Business	Стандартты іскерлік
+	Standards	Стандарттар
+	Start	Басталуы
+action wizard	Start	Бастау
+	Start Checking	Тексеруді бастау
+	Start page number	Бастапқы бет нөмірі
+	Steps	Қадамдар
+	Sticky note	Жапсырма жазба
+	Strength: {s}	Беріктігі: {s}
+	Strikethrough text	Мәтінді сызып тастау
+	Strong	Күшті
+	Structure Info	Құрылым ақпараты
+certificate	Subject	Субъект
+	Submit a form	Форманы жіберу
+	sum (+)	қосындысы (+)
+	Summarize	Түйіндеу
+	Summarize comments	Түсініктемелерді қорытындылау
+	Summarize Options	Қорытындылау параметрлері
+	Switch light / dark theme	Ашық / қараңғы теманы ауыстыру
+	Switch to List view to change the pages it takes.	Қамтитын беттерін өзгерту үшін Тізім көрінісіне ауысыңыз.
+	Switch to two-page view first to show the cover page	Мұқабаны көрсету үшін алдымен екі беттік көрініске ауысыңыз
+	Tab order	Tab реті
+	Tab order by columns	Бағандар бойынша табуляция реті
+	Tab order by rows	Жолдар бойынша табуляция реті
+	Tab order is consistent with structure order	Tab реті құрылым ретіне сәйкес
+	Tab order: by columns	Tab реті: бағандар бойынша
+	Tab order: by document structure	Tab реті: құжат құрылымы бойынша
+	Tab order: by rows	Tab реті: жолдар бойынша
+	Tab order: move a field with its arrows.	Қойынды реті: өрісті жебелерімен жылжытыңыз.
+	Table cells belong in a row. Fix the table's tags.	Кесте ұяшықтары жолда болуы тиіс. Кестенің тегтерін жөндеңіз.
+	Table rows belong directly in a table or its head, body or foot. Fix the table's tags.	Кесте жолдары кестенің өзінде немесе оның бас, дене, аяқ бөліктерінде тікелей орналуы тиіс. Кестенің тегтерін түзетіңіз.
+	Tables must contain the same number of columns in each row and rows in each column	Кестелердің әр жолындағы бағандар саны мен әр бағанындағы жолдар саны бірдей болуы тиіс
+	Tables must have a summary	Кестелерде түйіндеме болуы тиіс
+	Tables should have headers	Кестелерде тақырыптар болуы тиіс
+	Tag form fields	Пішін өрістерін тегтеу
+	Tag type	Тег түрі
+	Tagged annotations	Тегтелген белгілеулер
+	Tagged content	Тегтелген мазмұн
+	Tagged form fields	Тегтелген форма өрістері
+	Tagged multimedia	Тегтелген мультимедиа
+	Tagged PDF	Белгіленген PDF
+	Tags	Тегтер
+	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	Тегтер құжатқа көмекші технологиялар ұстанатын логикалық құрылым береді. Құжатты тегтеңіз («PDF-ті автоматты түрде тегтеу»).
+	Tags panel	Тегтер панелі
+	Take a snapshot	Суретке түсіру
+	Text (plain)	Мәтін (қарапайым)
+	Text alignment:	Мәтін туралануы:
+	Text box	Мәтін жәшігі
+	Text Color:	Мәтін түсі:
+	Text field	Мәтін өрісі
+	Text Field Properties	Мәтін өрісінің сипаттары
+	Text in images isn't found; recognise text (OCR) first.	Суреттегі мәтін табылмайды; алдымен мәтінді тануыңыз (OCR).
+	Text is compared word by word; the differences are shown on the new file.	Мәтін сөзбе-сөз салыстырылады; айырмашылықтар жаңа файлда көрсетіледі.
+	Text language is specified	Мәтін тілі көрсетілген
+	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Мәтін нашар көретін адамдар үшін фонмен жеткілікті түрде контрасттануы тиіс. Түстерді көзбен немесе контраст құралымен тексеріңіз.
+	Text recognition is already running	Мәтінді тану қазіргі уақытта орындалуда
+	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Мәтінді тану орнатылмаған: модель файлдары жоқ. PdfCraft қайта орнатыңыз немесе PDFCRAFT_MODELS айнымалысына олар жатқан қалтаны көрсетіңіз.
+	Text to find	Ізделетін мәтін
+	Text to insert	Енгізілетін мәтін
+	Text used as a clipping path cannot be moved with this selection.	Қиып алу жолы ретінде қолданылатын мәтін бұл таңдаумен жылжытылмайды.
+	Text, marks and signatures become part of the page. Other comments stay editable.	Мәтін, белгілер мен қолтаңбалар беттің бөлігіне айналады. Басқа түсініктемелер өңделетін күйде қалады.
+	TH and TD	TH және TD
+	TH and TD must be children of TR	TH мен TD TR ішінде болуы тиіс
+	Thai and Arabic use regular fallback fonts when available.	Тай және араб тілдері қолжетімді болса, қалыпты қосалқы қаріптерді пайдаланады.
+	That didn't work: an internal error stopped it ({m}).	Болмады: ішкі қате әрекетті тоқтатты ({m}).
+	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Әрекет сәтсіз аяқталды: оны ішкі қате тоқтатты ({m}). Құжаттарыңыз өзгеріссіз.
+	The checker found 1 problem which may prevent the document from being fully accessible.	Тексеру барысында құжаттың толық қолжетімді болуына кедергі келтіруі мүмкін 1 мәселе табылды.
+	The checker found no problems in this document.	Тексеру барысында бұл құжатта ешбір мәселе табылмады.
+	The checker found {n} problems which may prevent the document from being fully accessible.	Тексеру барысында құжаттың толық қолжетімді болуына кедергі келтіруі мүмкін {n} мәселе табылды.
+	The clipboard has no image or text	Алмасу буферінде сурет те, мәтін де жоқ
+	The document changed while you were choosing a file, so nothing was changed.	Сіз файл таңдап жатқанда құжат өзгергендіктен, ешнәрсе өзгертілген жоқ.
+	The document changed while you were editing field properties.	Өріс сипаттарын түзетіп жүргенде құжат өзгерді.
+	The document has additional actions (/AA)	Құжатта қосымша әрекеттер бар (/AA)
+	The document has document-level JavaScript	Құжатта құжат деңгейіндегі JavaScript бар
+	the document has no form fields	құжатта форма өрістері жоқ
+	the document has no page tree	құжатта беттер ағашы жоқ
+	the document has no tags	құжатта тегтер жоқ
+	The document has no XMP metadata	Құжатта XMP метадеректері жоқ
+	The document is encrypted	Құжат шифрланған
+	The document is no longer open.	Құжат енді ашық емес.
+	the document is protected by a password	құжат құпиясөзбен қорғалған
+	The document now conforms to {level}; save it to keep the changes	Құжат енді {level} стандартына сай келеді; өзгерістерді сақтап қалу үшін оны сақтаңыз
+	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Құжат құпиясөзсіз ашылады; шектеулерді өзгерту үшін осы құпиясөз керек. Ол сақтау кезінде қолданылады.
+	The document was closed before it could be saved.	Құжат сақталмай тұрып жабылды.
+	The document's security settings don't allow copying text and images	Құжаттың қауіпсіздік параметрлері мәтін мен суреттерді көшіруге рұқсат бермейді
+	The document's security settings don't allow filling in form fields	Құжаттың қауіпсіздік параметрлері форма өрістерін толтыруға рұқсат бермейді
+	The document's security settings don't allow this change	Құжаттың қауіпсіздік параметрлері бұл өзгерісті рұқсат етпейді
+	The existing action will be preserved.	Қолданыстағы әрекет сақталады.
+	The field properties could not be changed.	Өріс сипаттарын өзгерту мүмкін болмады.
+	The field properties dialog is no longer open.	Өріс сипаттарының диалогы енді ашық емес.
+	The field {name} no longer exists.	{name} өрісі енді жоқ.
+	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraft жазатын қаріптер «{c}» ({code}) таңбасын сала алмайды, сондықтан ол барлық PDF қарау құралдарында ? болып көрінеді. Мәтін сақталады.
+	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Форма {u} адресіне жіберілуді сұрайды; PdfCraft форма деректерін жібермейді. Енгізген деректеріңізді сақтап қалу үшін құжатты сақтаңыз.
+	The form asks viewers to make appearances (NeedAppearances)	Форма қарау құралдарынан өріс көріністерін құруды сұрайды (NeedAppearances)
+	The image has been copied ({w} × {h} pixels)	Сурет көшірілді ({w} × {h} пиксель)
+	The image has been copied as a {ext} file	Сурет {ext} файлы ретінде көшірілді
+	the image is empty	кескін бос
+	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Кілт macOS Keychain ішінде; ол PdfCraft-ге оны пайдалануға рұқсат сұрауы мүмкін.
+	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Кілт Windows сертификаттар қоймасында; ол PdfCraft-ге оны пайдалануға рұқсат сұрауы мүмкін.
+	The Keychain's digital IDs couldn't be listed: {e}	Кілттер бауындағы цифрлық ID-лерді тізімдеу мүмкін болмады: {e}
+	The labels are in English: the signature's font can't draw them in this language.	Белгілер ағылшын тілінде: қолтаңба қаріпі оларды бұл тілде сала алмайды.
+	The linked PDF opened, but its named destination was not applied.	Байланысты PDF ашылды, бірақ оның аталған мақсаты қолданылмады.
+	The linked PDF opened, but its page destination was out of range.	Байланысты PDF ашылды, бірақ оның мақсатты беті ауқымнан тыс.
+	The newest {n} of {total} PDFs	Ең жаңа {n} PDF (барлығы {total})
+	The operation failed.	Операция сәтсіз аяқталды.
+	The page has changed; select the image again	Бет өзгерді; суретті қайта таңдаңыз
+	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Беттер шығарып алынды, бірақ жойылмады, себебі сіз қалта таңдап жатқанда құжат өзгерді.
+	the password is incorrect	құпиясөз дұрыс емес
+	The password is only used to read the file; it isn't saved.	Құпиясөз файлды оқу үшін ғана қолданылады; ол сақталмайды.
+	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF мәтін қаріптері «{c}» таңбасын ({code}) сала алмайды. Қолдау көрсетілетін мәтінді таңдаңыз.
+	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Осы басып шығаруға арналған принтер драйверінің дербес параметрлері: қағаз науасы, қағаз түрі, соңғы өңдеу және т.б.
+	The replacement file doesn't have that many pages.	Ауыстырғыш файлда соншалық бет жоқ.
+	The same password is tried on each file.	Әр файлға сол бір құпиясөз сыналады.
+	The selected area has been copied ({w} × {h} pixels)	Таңдалған аймақ көшірілді ({w} × {h} пиксель)
+	The selected fields could not be found. Select them again.	Таңдалған өрістер табылмады. Оларды қайта таңдаңыз.
+	The signature will be invisible.	Қолтаңба көрінбейтін болады.
+	The text is the same	Мәтін бірдей
+	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	мәтінді тану модельдері орнатылмаған (PdfCraft қайта орнатыңыз немесе PDFCRAFT_MODELS айнымалысына олар жатқан қалтаны көрсетіңіз)
+	The title in the metadata and the document information differ	Метадеректер мен құжат ақпаратындағы тақырыптар сәйкес келмейді
+	the title must not be empty	тақырып бос болмауы тиіс
+	The value is shown as typed.	Мән енгізілген күйінде көрсетіледі.
+	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Терезе файл атауының орнына мазмұнды тақырыпты көрсетуі тиіс. Тақырыпты орнатып, «Бастапқы көрініс > Көрсету: Құжат тақырыбы» параметрін белгілеңіз.
+	The Windows store's digital IDs couldn't be listed: {e}	Windows қоймасындағы цифрлық ID-лерді тізімдеу мүмкін болмады: {e}
+	there are no pages to print	басып шығаратын беттер жоқ
+	There are no redaction marks (mark text, areas or pages first)	Жасыру белгілері жоқ (алдымен мәтінді, аймақтарды немесе беттерді белгілеңіз)
+	There are no redaction marks to apply	Қолданатын жасыру белгілері жоқ
+	there are no redaction marks to apply	қолданатын жасыру белгілері жоқ
+	These files can't be read, so they won't be in the combined PDF:	Бұл файлдар оқылмайды, сондықтан біріктірілген PDF-ке кірмейді:
+	These objects could not be moved. Select them again and try a smaller move.	Бұл объектілерді жылжыту мүмкін болмады. Оларды қайта таңдап, кішілеу жылжытуға тырысыңыз.
+	Thick	Қалың
+	Thin	Жұқа
+	This area has too many overlapping paths; intersection snapping is limited.	Бұл аймақта бір-бірін жауып тұрған контурлар тым көп; қиылысқа түйістіру шектеулі.
+	This certificate is in your list of trusted certificates.	Бұл сертификат сіздің сенімді сертификаттар тізіміңізде бар.
+	This certificate is not trusted. Signatures made with it show an unknown identity.	Бұл сертификат сенімді емес. Онымен жасалған қолтаңбалар белгісіз тұлғаны көрсетеді.
+	This certificate is trusted through a certificate above it in the chain.	Бұл сертификат тізбектегі жоғары тұрған сертификат арқылы сенімді саналады.
+	This comment's appearance can't be changed yet.	Бұл түсініктеменің сыртқы түрін әзірге өзгертуге болмайды.
+	This compatibility level supports only plain ASCII passwords.	Бұл үйлесімділік деңгейі тек қарапайым ASCII құпиясөздерін қолдайды.
+	This dialog shows the details of a certificate and its chain.	Бұл терезе сертификат және оның тізбегі туралы мәліметтерді көрсетеді.
+	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Бұл құжат толық экран режимінде ашылуды сұрайды: бет экранды толтырады және басқа ештеңе көрсетілмейді. Шығу үшін кез келген уақытта Esc басыңыз.
+	This document can't be checked: it couldn't be read for editing	Бұл құжатты тексеруге болмайды: оны түзету үшін оқу мүмкін болмады
+	This document contains {n} interactive form fields.	Бұл құжат {n} интерактивті форма өрісін қамтиды.
+	This document has no attachments.	Бұл құжатта тіркемелер жоқ.
+	This document has no comments to flatten	Бұл құжатта жазықтауға жататын түсініктемелер жоқ
+	This document has no document-level scripts.	Бұл құжатта құжат деңгейіндегі сценарийлер жоқ.
+	This document has no editable structure tags.	Бұл құжатта өңделетін құрылымдық тегтер жоқ.
+	This document has no form fields to flatten	Бұл құжатта жазықтауға жататын форма өрістері жоқ
+	This document has no form fields you can fill in	Бұл құжатта толтыруға болатын форма өрістері жоқ
+	This document has no form fields.	Бұл құжатта форма өрістері жоқ.
+	This document has no layers.	Бұл құжатта қабаттар жоқ.
+	This document has no pages.	Бұл құжатта беттер жоқ.
+	This document has no restrictions to lift	Бұл құжатта алып тасталатын шектеулер жоқ
+	This document has no signatures.	Бұл құжатта қолтаңбалар жоқ.
+	This document has no tagged figures.	Бұл құжатта тегтелген суреттер жоқ.
+	This document has no {kind} to change	Бұл құжатта өзгертуге болатын {kind} жоқ
+	This document hasn't been checked yet.	Бұл құжат әлі тексерілмеген.
+	This document is secured. Some changes are restricted by its security settings.	Бұл құжат қорғалған. Кейбір өзгерістер оның қауіпсіздік параметрлерімен шектеулі.
+	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	бұл құжат қол қойылған: қайта жазу оның қолтаңбаларын жарамсыз етеді (орнына қосымша сақтаңыз)
+	This document is trying to open a local file:	Бұл құжат жергілікті файлды ашуға әрекеттеніп жатыр:
+	This document isn't password-protected	Бұл құжат құпиясөзбен қорғалмаған
+	This drawing exceeds the snapping limit; only the first paths are used.	Бұл сызба түйістіру шегінен асады; тек алғашқы контурлар қолданылады.
+	This field is locked. Unlock it to change its properties.	Бұл өріс құлыпталған. Сипаттарын өзгерту үшін оның құлпын ашыңыз.
+	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Бұл өрістің қаріпі «{c}» ({code}) таңбасын сала алмайды, сондықтан PdfCraft оның орнына ? көрсетеді. Мән сақталады, ал басқа PDF қарау құралдары өрісті соған қарап қайта салады.
+	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Бұл файл дискіде өзгертілді. «Қайта жүктеу» жаңа нұсқаны көрсетіп, сақталмаған өзгерістеріңізді тастайды; «Сақтау» оны осы нұсқамен алмастырады.
+	This file is already as small as it can be made ({size}). No copy was saved.	Бұл файлды одан әрі кішірейту мүмкін емес ({size}). Көшірме сақталмады.
+	this file isn't XFDF, FDF, XML or text form data	бұл файл XFDF, FDF, XML немесе мәтіндік форма деректері емес
+	This file was damaged and has been repaired. Saving keeps the repaired version.	Бұл файл зақымдалған еді және жөнделді. Сақтау кезінде жөнделген нұсқа сақталады.
+	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Бұл қалта қазір қолжетімді емес. Ол басқа жерге көшірілген, не болмаса оның дискісі мен бұлт синхроны желіден тыс болуы мүмкін.
+	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Бұл формада PdfCraft әлі оқымайтын XFA деректері де бар. Өрістерін толтыра аласыз, бірақ Acrobat орнына XFA мәндерін көрсетуі мүмкін.
+	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Бұл форманың скрипттері өшірілді, себебі олардың бірі тым ұзақ орындалды. Оларды қайта іске қосу үшін құжатты қайта ашыңыз.
+	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Бұл динамикалық XFA формасы, оны PdfCraft әлі көрсете алмайды. Көріп тұрғаныңыз — файлдың орынбасар беті.
+	This measurement needs at least {n} points.	Бұл өлшемге кемінде {n} нүкте қажет.
+	This page contains objects that cannot be selected together.	Бұл бетте бірге таңдалмайтын объектілер бар.
+	This page couldn't be displayed.\n{e}	Бұл бет көрсетіле алмады.\n{e}
+	This PDF uses the unsupported {s} action.	Бұл PDF қолдау көрсетілмейтін {s} әрекетін пайдаланады.
+	This printer offers no settings of its own.	Бұл принтердің дербес параметрлері жоқ.
+	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Бұл принтердің драйвері басқа бағдарламалардан екі жақты басып шығару баптауларын қабылдамайды, сондықтан өз баптауы қолданылады. Оны мына жерден өзгертіңіз: Сипаттар…
+	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Бұл веб-адрес әртүрлі әліпбилердің әріптерін араластырады — бұл басқа сайт атауына еліктеудің жиі кездесетін тәсілі.
+	This web address uses letters from another alphabet, which can look like familiar ones.	Бұл веб-адрес басқа әліпбидің әріптерін қолданады, олар таныс әріптер сияқты көрінуі мүмкін.
+	Tile scale:	Фрагменттердің масштабы:
+	Timed responses	Уақытпен шектеулі жауаптар
+	Timestamp	Уақыт белгісі
+	to	дейін
+	To change locked fields, also set Locked to No.	Бұғатталған өрістерді өзгерту үшін сонымен қатар «Бұғаттау» параметрін «Жоқ» етіп қойыңыз.
+	to {n}	{n} дейін
+	To:	Дейін:
+	Today: {date}	Бүгін: {date}
+	Toggle fit page / fit width	Бетке / еніне сыйдыруды ауыстыру
+	Tools panel side	Құралдар панелінің жағы
+	Tooltip:	Қалтқы:
+	Top-level bookmarks ({n})	Жоғарғы деңгейдегі бетбелгілер ({n})
+	TR must be a child of Table, THead, TBody, or TFoot	TR Table, THead, TBody немесе TFoot ішінде болуы тиіс
+	Trim the picture with its handles; Enter or Done applies	Суретті тұтқаларымен қиыңыз; Enter немесе Дайын қолданады
+	Trust	Сенім
+	Try the form as people filling it in will see it	Форманы толтырушылар көретіндей көріністе сынап көріңіз
+	Turn upside down (180°)	Төңкеру (180°)
+	Two-page view	Екі беттік көрініс
+	Two-sided:	Екі жақты:
+	Two-Up (Cover Page)	Екі бет (мұқаба бетімен)
+	Two-Up (Facing)	Екі бет (қарама-қарсы)
+	Two-Up Continuous (Cover Page)	Екі бет, үздіксіз (мұқаба бетімен)
+	Two-Up Continuous (Facing)	Екі бет, үздіксіз (қарама-қарсы)
+signature pad	Type	Теру
+	Type a password.	Құпиясөзді енгізіңіз.
+	Type Password	Құпиясөзді енгізіңіз
+	Type text	Мәтін теру
+	Type the web address.	Веб-мекенжайын енгізіңіз.
+	Type your {what}.	{what} теріңіз.
+	Unchecked	Белгіленбеген
+	Underline text	Мәтінді астын сызу
+	Undid {label}	Болдырылды: {label}
+	Unit	Өлшем бірлігі
+	Unknown author	Белгісіз автор
+	Unlock comment	Түсініктеменің құлпын ашу
+	Unlock {name}	{name} файлын блоктан шығару
+	Unlock {n} files	{n} файлды блоктан шығару
+	Unlocked {n} of {m} files	{m} файлдың {n}-і блоктан шығарылды
+	Unlocked: the combined file won't be password-protected	Блоктан шығарылды: біріктірілген файл құпиясөзбен қорғалмайды
+	Unlock…	Блоктан шығару…
+	Unpin	Бекітуді алып тастау
+	Unpin {folder}	{folder} бекітпесін алып тастау
+	Unplaced	Орналастырылмаған
+	Unsupported measurements	Қолдау көрсетілмейтін өлшемдер
+	Update background	Фонды жаңарту
+	Update background…	Фонды жаңарту…
+	Update header & footer	Үстіңгі және астыңғы колонтитулдарды жаңарту
+	Update header & footer…	Жоғарғы және төменгі колонтитулдарды жаңарту…
+	Update watermark	Су белгісін жаңарту
+	Update watermark…	Су белгісін жаңарту…
+	URL to submit to	Жіберу үшін URL
+	Use 72 DPI (one point per pixel)	72 DPI қолдану (пиксельге бір пункт)
+	Use a certificate	Сертификатты пайдалану
+	Use a Digital ID from a file	Файлдағы цифрлық ID-ді пайдалану
+	Use custom DPI	Арнайы DPI қолдану
+	Use each image's embedded DPI; use 72 DPI when it is absent.	Әр суреттің ендірілген DPI мәні қолданылады; болмағанда — 72 DPI.
+	Use Flate to encode streams that are not encoded	Кодталмаған ағындарды Flate көмегімен кодтау
+	Use guided actions	Қадамдық әрекеттерді пайдалану
+	Use image resolution	Сурет ажыратымдылығын қолдану
+	Use it when a printer skips text, shading or transparency. The print is no longer searchable text; with Print in grayscale, the pictures are grey.	Принтер мәтінді, көлеңкені немесе мөлдірлікті өткізіп жіберсе, қолданыңыз. Басылған құжат енді іздеуге болатын мәтін емес; сұр реңкпен басып шығарғанда суреттер сұр болады.
+	Use JavaScript	JavaScript-ті пайдалану
+	Use now	Дәл қазір пайдалану
+	Use overlay text	Үстеме мәтінді пайдалану
+	Use print production	Басып шығаруға дайындауды пайдалану
+	Use system setting	Жүйе параметрін пайдалану
+	Use system title bar	Жүйелік тақырып жолағын пайдалану
+	Use {what}	Қолдану: {what}
+	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	PDF макет пен масштабты талап етпегенде қолданылады. Үздіксіз айналдыру кезінде беттер арасында ешқашан түйістіру жасалмайды.
+	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	PDF файлдарын ашқанда қолданылады. Сессия үшін нақты көрсетілген іске қосу немесе басқару режимі басымдыққа ие.
+	User Interface Options	Пайдаланушы интерфейсі параметрлері
+	User password	Пайдаланушы құпиясөзі
+	Valid	Жарамды
+	Valid for 5 years, for digital signatures. Self-signed IDs are usually not trusted by others.	5 жылға жарамды, цифрлық қолтаңбалар үшін. Өз-өзіне қол қойылған ID-лерге әдетте басқалар сенбейді.
+	Valid from	Жарамдылық басталуы
+	Valid to	Жарамдылық аяқталуы
+	Validate	Тексеру
+	Validate all	Барлығын тексеру
+	Validate all signatures	Барлық қолтаңбаларды тексеру
+	Validity ends	Жарамдылық соңы
+	Validity starts	Жарамдылық басы
+	Value is not calculated	Мән есептелмейді
+	Value is the	Мән —
+	Verify	Тексеру
+	Verify to see what the document needs.	Құжатқа не қажет екенін көру үшін тексеріңіз.
+	Version {v}	Нұсқа {v}
+	Vertical reversed	Тік (кері ретпен)
+	Vertical text cannot be moved with this selection.	Тік мәтінді бұл таңдаумен жылжытуға болмайды.
+	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Видео, дыбыс және интерактивті медиа дауыстап хабарлануы үшін тегтелуі тиіс. Мультимедиа белгілеулерін тегтеңіз.
+	View less	Азырақ көру
+	View more	Көбірек көру
+	View revision {n}	{n} нұсқаны көру
+	View signed version	Қол қойылған нұсқаны көру
+	Viewing	Көру
+	Viewport	Көрініс аймағы
+	Viewport rectangle in page points (x, y, width, height)	Көрініс аймағының тіктөртбұрышы бет пункттерінде (x, y, ені, биіктігі)
+	Visible Rectangle	Көрінетін тіктөртбұрыш
+	Visual	Көрнекі
+	watermark	су белгісі
+	Weak	Әлсіз
+	Welcome to PdfCraft	PdfCraft-ге қош келдіңіз
+	What takes up the space in this file, by kind of content.	Бұл файлдағы орынды не алып жатыр, мазмұн түрі бойынша.
+	What word or phrase would you like to search for?	Қандай сөзді немесе тіркесті іздегіңіз келеді?
+	White on black	Қара фонда ақ
+	Whole words only	Тек толық сөздер
+	Window Options	Терезе параметрлері
+	Windows store  ·  	Windows қоймасы  ·  
+	Word count	Сөздер саны
+	Word counting stopped unexpectedly.	Сөздерді санау күтпеген жерден тоқтады.
+	Word count…	Сөздер саны…
+	Write this email?	Бұл email жазылсын ба?
+	Wrong password	Құпиясөз дұрыс емес
+	Wrote 1 file to {dir}	1 файл {dir} ішіне жазылды
+	Wrote {n} files to {dir}	{n} файл {dir} ішіне жазылды
+	X Object Forms	XObject формалары
+	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA формасы: өрістері мен XFA деректері өзара синхрондалып тұрады, сондықтан басқа қарау құралдары да сіз енгізген мәндерді көрсетеді.
+	Yellow on black	Қара фонда сары
+	You are about to apply 1 redaction mark. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	Сіз қазір 1 жасыру белгісін қолданасыз. Белгілердің астындағы мәтін, кескіндер мен сызбалар, сондай-ақ олармен қабаттасқан түсініктемелер мен форма өрістері мәңгілікке жойылады.
+	You are about to apply {n} redaction marks. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	Сіз қазір {n} жасыру белгісін қолданасыз. Белгілердің астындағы мәтін, кескіндер мен сызбалар, сондай-ақ олармен қабаттасқан түсініктемелер мен форма өрістері мәңгілікке жойылады.
+	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Сіз „{from}“ құжатының {rev} нұсқасын қарап отырсыз. Бұл сақталған көшірме: мұндағы өзгерістер түпнұсқаға әсер етпейді.
+	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Сіз „{from}“ құжатының қол қойылған нұсқасын ({rev} нұсқа) қарап отырсыз. Бұл сақталған көшірме: мұндағы өзгерістер түпнұсқаға әсер етпейді.
+	You can pin up to {n} folders. Unpin one first.	Ең көбі {n} қалта бекітуге болады. Алдымен біреуінің бекітпесін алып тастаңыз.
+	You have version {c}. All releases are listed at {page}.	Сізде {c} нұсқасы бар. Барлық шығарылымдар {page} бетінде көрсетілген.
+	You have version {c}. Download the new version from its release page.	Сізде {c} нұсқасы бар. Жаңа нұсқаны шығарылым бетінен жүктеп алыңыз.
+	Your name	Атыңыз
+	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy немесе yy — жыл · m немесе mm — ай · mmm немесе mmmm — ай атауы · d немесе dd — күн · ddd немесе dddd — аптаның күні. H, h, M, s және t — уақыт әріптері, оларды жеке қолдануға болмайды: әріпті сол күйінде көрсету үшін оның алдына {escape} қойыңыз.
+	ZIP	ZIP
+	Zip Code	Пошталық индекс
+	Zip Code + 4	Пошталық индекс + 4
+	Zoom in ({key})	Үлкейту ({key})
+	Zoom in / out (also pinch or {key}-scroll)	Үлкейту / кішірейту (сонымен қатар қысу немесе {key}-айналдыру)
+	Zoom out ({key})	Кішірейту ({key})
+	Zoom to page level	Бет деңгейіне масштабтау
+	{0}: {1}	{0}: {1}
+	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	{chars} таңбаларын әзірге PDF-ге жазуға болмайды: «Толтыру және қол қою» мәтіні тек Батыс Еуропа таңбаларын қолдайды. dd.mm.yyyy сияқты сандық пішімді таңдаңыз.
+	{c} of {n}{more}	{n} ішінен {c}{more}
+	{dpi} pixels/inch	{dpi} пиксель/дюйм
+	{field}: {e}	{field}: {e}
+	{file} is too large for a stamp (at most {n} MB)	{file} файлы мөр үшін тым үлкен (көп дегенде {n} МБ)
+	{folder} is already pinned to Home	{folder} қалтасы Басты бетке бұрыннан бекітілген
+	{kind} field	{kind} өрісі
+	{kind} Properties	{kind} сипаттары
+	{kind} · page {p}	{kind} · {p}-бет
+	{kind} — click to show it on the page	{kind} — бетте көрсету үшін шертіңіз
+	{k} of {n}	{k}/{n}
+	{label} (1 issue)	{label} (1 мәселе)
+	{label} ({n} issues)	{label} ({n} мәселе)
+	{label} failed: {e}	«{label}» сәтсіз аяқталды: {e}
+	{month} {day}, {y}	{day} {month} {y}
+	{month} {y}	{month} {y}
+	{msg} to {dir}	{msg} → {dir}
+	{name} (default)	{name} (әдепкі)
+	{name} can't be combined: {why}	{name} біріктіріле алмайды: {why}
+	{name} has no action	{name} әрекеті жоқ
+	{name} is read-only	{name} — тек оқуға арналған
+	{name} is too large for a word list (at most 1 MB).	{name} сөз тізімі үшін тым үлкен (ең көбі 1 МБ).
+	{name} submits the form to {url}; PdfCraft doesn't send form data. Save the document to keep your entries.	{name} форманы {url} адресіне жібереді; PdfCraft форма деректерін жібермейді. Енгізген деректеріңізді сақтап қалу үшін құжатты сақтаңыз.
+	{name} — unsaved changes	{name} — сақталмаған өзгерістер
+	{name}: choosing images arrives on the web with file pickers for images	{name}: суреттерді таңдау веб-нұсқада сурет файлдарын таңдау мүмкіндігімен келеді
+	{name}: the {other} action isn't supported yet	{name}: {other} әрекеті әлі қолдау көрсетілмейді
+	{n} contributors · {c} commits	{n} үлес қосушы · {c} коммит
+	{n} days ago	{n} күн бұрын
+	{n} differences found	{n} айырмашылық табылды
+@plural	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	{n} өріс атауы алдыңғы файлдармен қайшы келеді және қайта аталады: {list}|{n} өріс атауы алдыңғы файлдармен қайшы келеді және қайта аталады: {list}
+	{n} fields selected	{n} өріс таңдалды
+@plural	{n} field|{n} fields	{n} өріс|{n} өріс
+	{n} files done	{n} файл өңделді
+	{n} files need attention	{n} файл назар аударуды қажет етеді
+	{n} instances	{n} сәйкестік
+	{n} issues	{n} мәселе
+	{n} marks	{n} белгі
+	{n} match(es) marked for redaction.	{n} сәйкестік жасыруға белгіленді.
+	{n} measurements use an unsupported format and are left out.	{n} өлшем қолдау көрсетілмейтін пішімде; олар ескерілмейді.
+@plural	{n} object selected|{n} objects selected	{n} объект таңдалды|{n} объект таңдалды
+	{n} pages	{n} бет
+	{n} pages selected	{n} бет таңдалды
+	{n} pages selected.	{n} бет таңдалды.
+@plural	{n} page|{n} pages	{n} бет|{n} бет
+	{n} selected	Таңдалды: {n}
+	{n} tags	{n} тег
+	{n} word(s) or phrase(s)	{n} сөз немесе тіркес
+	{n} {kind}	{n} {kind}
+	{rule} - {status}	{rule} - {status}
+	{s} action	{s} әрекеті
+	{verb} as "{name}"	«{name}» ретінде {verb}
+	{verb} Background	Фонды {verb}
+	{verb} Header and Footer	Колонтитулдарды {verb}
+	{verb} Watermark	Су белгісін {verb}
+	{who} in this document tried to open an address PdfCraft won't open: {e}.	Осы құжаттағы {who} PdfCraft ашпайтын адресті ашпақ болды: {e}.
+	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	Осы құжаттағы {who} PdfCraft ашпайтын адресті ашпақ болды: {e}. Құжаттардан тек веб (http, https) және email (mailto) сілтемелері ашылады.
+	{who} in this document wants to open this address in your browser:	Осы құжаттағы {who} бұл адресті браузеріңізде ашқысы келеді:
+	{who} in this document wants to open your email app with this address:	Осы құжаттағы {who} email қосымшаңызды бұл адресмен ашқысы келеді:
+	{words} on {pages}	{pages} бетте {words} сөз
+	ΔLOC	ΔLOC
+	— (protection is applied when you save)	— (қорғау сақтау кезінде қолданылады)
+	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	«{name}» ашылғаннан немесе соңғы сақталғаннан кейін дискіде өзгертілді. Қазір сақтау сол жаңарақ нұсқаны осымен алмастырады.
+	“{name}” has security restrictions. Enter its permissions password to lift them.	«{name}» құжатында қауіпсіздік шектеулері бар. Оларды алып тастау үшін рұқсаттар құпиясөзін енгізіңіз.
+	“{name}” is protected. Enter a password to open it.	«{name}» қорғалған. Ашу үшін құпиясөзді енгізіңіз.
+	−LOC	−LOC

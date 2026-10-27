@@ -1,0 +1,14 @@
+*~
+/target
+.DS_Store
+__pycache__/
+
+# Local planning, agent context and memory: never committed.
+plan/
+plans/
+CONTEXT.md
+MEMORY.md
+memory/
+/.claude/
+CLAUDE.local.md
+.superpowers/

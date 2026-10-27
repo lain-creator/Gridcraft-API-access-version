@@ -1,0 +1,2288 @@
+# العربية (ar) interface catalog for PdfCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	  · not fixable here	  · لا يمكن إصلاحه هنا
+	 (page {p})	 (صفحة {p})
+	 (searching… {s} of {p} pages)	 (جارٍ البحث… {s} من {p} صفحات)
+	 ({n} at {dpi} dpi, the largest size they can be drawn at)	 ({n} بدقة {dpi} dpi، وهي أكبر دقة يمكن رسمها بها)
+	 ({s} not exported: {first})	 ({s} لم تُصدَّر: {first})
+	 on page {label}	 في الصفحة {label}
+	 on page {p}	 في الصفحة {p}
+	 · password-protected	 · محمي بكلمة مرور
+	+Bin	+Bin
+	+LOC	+LOC
+	, Expires: 	، تنتهي: 
+	1 difference found	عُثر على فرق واحد
+	1 file done	اكتمل ملف واحد
+	1 file needs attention	ملف واحد يحتاج إلى انتباه
+	1 instance	موضع واحد
+	1 issue	مشكلة واحدة
+	1 mark	علامة واحدة
+	1 page	صفحة واحدة
+	1 page selected	صفحة واحدة محددة
+	1 page selected.	حُددت صفحة واحدة.
+	180 degrees	180 درجة
+	4 x 6 in label (101.6 x 152.4 mm)	ملصق 4 × 6 بوصة (101.6 × 152.4 مم)
+	9 digit, A letter, O letter or digit, X any character	9 رقم، A حرف، O حرف أو رقم، X أي محرف
+	; 1 page already had text	؛ صفحة واحدة كان فيها نص بالفعل
+	; failed: {list}	؛ فشل: {list}
+	; {n} pages already had text	؛ {n} صفحات كان فيها نص بالفعل
+	? of {n}	? من {n}
+	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} طلبات سحب، {commits} إيداعات، +{added} / −{deleted} أسطر (Δ {delta})، +{bin_added} / −{bin_deleted} أصول ثنائية، {first} – {last}
+	`{command}` {when}	`{command}` {when}
+	a bookmark cannot be moved inside itself	لا يمكن نقل إشارة مرجعية إلى داخل نفسها
+	A button	زر
+	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	تطبيق PDF مفتوح المصدر مكتوب بلغة Rust بأسلوب الغرفة النظيفة. MIT OR Apache-2.0.
+	A diagonal CONFIDENTIAL watermark on every page.	علامة مائية قطرية CONFIDENTIAL على كل صفحة.
+	a document must keep at least one page	يجب أن يحتفظ المستند بصفحة واحدة على الأقل
+	A document needs at least one page: copy instead	المستند يحتاج إلى صفحة واحدة على الأقل: استخدم النسخ بدلًا من ذلك
+	A font isn't embedded	أحد الخطوط غير مدمج
+	A form field has additional actions	حقل نموذج له إجراءات إضافية
+	A link	رابط
+	A script	سكربت
+	A selected field has no widget on any page, so the fields can't be edited together.	أحد الحقول المحددة ليس له عنصر واجهة في أي صفحة، لذا لا يمكن تحرير الحقول معًا.
+	A stream refers to an external file	تدفق يشير إلى ملف خارجي
+	A stream uses LZW compression	تدفق يستخدم ضغط LZW
+	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	الملخص يصف غرض الجدول وتخطيطه. أضف سمة Summary لكل جدول.
+	A {} action isn't allowed	إجراء {} غير مسموح
+	A {} annotation has additional actions	للتعليق التوضيحي {} إجراءات إضافية
+	A {} annotation has no appearance stream	للتعليق التوضيحي {} بلا مظهر متدفق
+	A {} annotation isn't set to print, or is hidden	التعليق التوضيحي {} غير مضبوط للطباعة أو مخفي
+	About PdfCraft	حول PdfCraft
+	Accepted	مقبول
+	Accessibility Checker	مدقق إمكانية الوصول
+	Accessibility Checker Options	خيارات مدقق إمكانية الوصول
+	Accessibility permission flag	علامة إذن إمكانية الوصول
+	Accessibility permission flag is set	علامة إذن إمكانية الوصول مضبوطة
+	Accessibility Report	تقرير الوصول
+	Acrobat 3.0 and later (40-bit RC4)	Acrobat 3.0 وما بعده (RC4 40 بت)
+	Acrobat 5.0 and later (128-bit RC4)	Acrobat 5.0 وما بعده (RC4 128 بت)
+	Acrobat 7.0 and later (128-bit AES)	Acrobat 7.0 وما بعده (AES 128 بت)
+	Acrobat X and later (256-bit AES)	Acrobat X وما بعده (AES 256 بت)
+	Action name:	اسم الإجراء:
+	Action Wizard	معالج الإجراءات
+	Action Wizard…	معالج الإجراءات…
+	Actions list	قائمة الإجراءات
+	Actual size	الحجم الفعلي
+	Actual text	النص الفعلي
+	Add a button	إضافة زر
+	Add a callout	إضافة وسيلة شرح
+	Add a checkbox	إضافة خانة اختيار
+	Add a date field	إضافة حقل تاريخ
+	Add a digital signature field	إضافة حقل توقيع رقمي
+	Add a drop-down list	إضافة قائمة منسدلة
+	Add a list box	إضافة مربع قائمة
+	Add a radio button	إضافة زر اختيار
+	Add a reply	إضافة رد
+	Add a stamp	إضافة ختم
+	Add a sticky note	إضافة ملاحظة لاصقة
+	Add a sticky note here	إضافة ملاحظة لاصقة هنا
+	Add a text box	إضافة مربع نص
+	Add a text field	إضافة حقل نص
+	Add alternate text	إضافة نص بديل
+	Add alternate text…	إضافة نص بديل…
+	Add an Action	إضافة إجراء
+	Add an image field	إضافة حقل صورة
+	Add arrow	إضافة سهم
+	Add at least two files	أضف ملفين على الأقل
+	Add background	إضافة خلفية
+	Add background…	إضافة خلفية…
+	Add Bates numbering…	إضافة ترقيم بيتس…
+	Add bookmark	إضافة إشارة مرجعية
+	Add callout	إضافة وسيلة شرح
+	Add checkmark	إضافة علامة صح
+	Add cloud	إضافة سحابة
+	Add comment	إضافة تعليق
+	Add comments	إضافة تعليقات
+	Add connected lines	إضافة خطوط متصلة
+	Add content	إضافة محتوى
+	Add cross	إضافة علامة خطأ
+	Add dot	إضافة نقطة
+	Add drawing	إضافة رسم
+	Add field	إضافة حقل
+	Add file attachment	إضافة ملف مرفق
+	Add files to combine	إضافة ملفات للدمج
+	Add files…	إضافة ملفات…
+	Add folder	إضافة مجلد
+	Add folder and subfolders	إضافة مجلد ومجلداته الفرعية
+	Add folder and subfolders…	إضافة مجلد ومجلداته الفرعية…
+	Add folder…	إضافة مجلد…
+	Add footer	إضافة تذييل
+	Add form components	إضافة مكونات النموذج
+	Add header	إضافة رأس
+	Add header & footer	إضافة رأس وتذييل
+	Add header & footer…	إضافة رأس وتذييل…
+	Add highlight	إضافة تمييز
+	Add image	إضافة صورة
+	Add image…	إضافة صورة…
+	Add inserted text	إضافة نص مُدرَج
+	Add line	إضافة خط
+	Add link	إضافة رابط
+	Add open documents	إضافة المستندات المفتوحة
+	Add or edit links	إضافة روابط أو تحريرها
+	Add oval	إضافة شكل بيضاوي
+	Add Page Numbers	إضافة أرقام الصفحات
+	Add polygon	إضافة مضلع
+	Add printer marks	إضافة علامات الطابعة
+	Add rectangle	إضافة مستطيل
+	Add redaction mark	إضافة علامة حجب
+	Add search index	إضافة فهرس بحث
+	Add signature	إضافة توقيع
+	Add squiggly underline	إضافة تسطير متعرج
+	Add stamp	إضافة ختم
+	Add Step	إضافة خطوة
+	Add sticky note	إضافة ملاحظة لاصقة
+	Add strikethrough	إضافة شطب
+	Add text	إضافة نص
+	Add text box	إضافة مربع نص
+	Add the choices people pick from.	أضف الخيارات التي يختار منها الناس.
+	Add the files to combine	أضف الملفات المراد دمجها
+	Add the PDFs to combine	أضف ملفات PDF للدمج
+	Add the steps this action runs, in order.	أضف الخطوات التي ينفذها هذا الإجراء بالترتيب.
+	Add to Trusted Certificates	إضافة إلى الشهادات الموثوقة
+	Add to trusted certificates	إضافة إلى الشهادات الموثوقة
+	Add underline	إضافة تسطير
+	Add watermark	إضافة علامة مائية
+	Add watermark…	إضافة علامة مائية…
+	Add {what}	إضافة {what}
+	Added 1 comment	أُضيف تعليق واحد
+	Added more than once	أُضيف أكثر من مرة
+	Added the first {n} files in {folder}	أُضيفت أول {n} ملفات في {folder}
+	Added the first {n} PDFs in {folder}	أضيفت أول {n} ملف PDF في {folder}
+	Added {n} comments	أُضيف {n} تعليقات
+	Adding images arrives on the web with file pickers for images	إضافة الصور ستتوفر على الويب مع منتقيات ملفات الصور
+	Adds invisible text over each word; the page image is not changed	يضيف نصًا غير مرئي فوق كل كلمة؛ صورة الصفحة لا تتغير
+	Advanced optimization	تحسين متقدم
+	Advanced options	خيارات متقدمة
+	Advanced Options {chevron}	خيارات متقدمة {chevron}
+	Advanced search…	بحث متقدم…
+	AI assistant	مساعد الذكاء الاصطناعي
+	Algorithm	الخوارزمية
+	Align fields	محاذاة الحقول
+	All annotations are tagged	كل التعليقات التوضيحية موسومة
+	All document contents	كل محتويات المستند
+	All document contents except metadata	كل محتويات المستند عدا البيانات الوصفية
+	All form fields are tagged	كل حقول النموذج موسومة
+	All form fields have description	كل حقول النموذج لها وصف
+	All multimedia objects are tagged	كل كائنات الوسائط المتعددة موسومة
+	All open documents	كل المستندات المفتوحة
+	All page content is tagged	كل محتوى الصفحة موسوم
+	All pages in document	كل صفحات المستند
+	All pages in range	كل الصفحات في النطاق
+	All tools	كل الأدوات
+	Allow	السماح
+	Allow Rich Text Formatting	السماح بتنسيق النص الغني
+	Allow user to enter custom text	السماح للمستخدم بإدخال نص مخصص
+	Allowed	مسموح
+	already a PDF	ملف PDF بالفعل
+	Also recognize pages that already have text	التعرف على الصفحات التي تحتوي على نص أيضًا
+	Alternate Text	النص البديل
+	Alternate text	النص البديل
+	alternate text hides an annotation inside it	النص البديل يخفي تعليقاً توضيحياً داخله
+	Alternate text inside an element that already has alternate text is never read. Remove the inner alternate text.	النص البديل داخل عنصر له نص بديل بالفعل لا يُقرأ أبدًا. أزل النص البديل الداخلي.
+	Alternate text must be associated with some content	النص البديل يجب أن يرتبط بمحتوى ما
+	Alternate text on an element that contains a link or field hides that annotation from assistive technology. Move the alternate text.	النص البديل على عنصر يحتوي على رابط أو حقل يخفي ذلك التعليق التوضيحي عن التقنيات المساعدة. انقل النص البديل.
+	alternate text on an element with no page content	نص بديل على عنصر بلا محتوى صفحة
+	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	النص البديل على عنصر بلا محتوى في الصفحة لا يُوصَل إليه أبدًا. أزله أو اربط العنصر بمحتوى.
+	Alternate text should not hide annotation	النص البديل ينبغي ألا يخفي تعليقًا توضيحيًا
+	Alternate text that will never be read	نص بديل لن يُقرأ أبدًا
+	An action is already running	يوجد إجراء قيد التشغيل بالفعل
+	An action with this name already exists.	يوجد إجراء بهذا الاسم بالفعل.
+	An embedded file has no AFRelationship	ملف مضمَّن ليس له AFRelationship
+	An image asks to be interpolated	صورة تطلب الاستيفاء
+	An image has alternates or OPI information	صورة لها بدائل أو معلومات OPI
+	An open-source PDF workbench — local, private, and scriptable.	منضدة عمل مفتوحة المصدر لملفات PDF — محلية وخاصة وقابلة للبرمجة.
+	and {n} more	و{n} أخرى
+	Animation that flashes can cause seizures. Check scripts and media for flicker.	الحركة الوامضة قد تسبب نوبات. افحص السكربتات والوسائط بحثًا عن الوميض.
+	Annotations, form fill-in, and digital signatures	التعليقات وتعبئة النماذج والتوقيعات الرقمية
+	Another file dialog is still open. Finish with it first.	يوجد حوار ملفات آخر ما زال مفتوحًا. أنهِ العمل فيه أولًا.
+	Any except extracting pages	أي شيء عدا استخراج الصفحات
+	Anyone opening the document will need this password. It's applied when you save.	كل من يفتح المستند سيحتاج إلى كلمة المرور هذه. تُطبَّق عند الحفظ.
+	Appear behind page	الظهور خلف الصفحة
+	Appear on top of page	الظهور فوق الصفحة
+	Appearance mode	وضع المظهر
+	Appearance settings…	إعدادات المظهر…
+	Applied 1 redaction mark. Save to remove the content from the file.	طُبِّقت علامة حجب واحدة. احفظ لإزالة المحتوى من الملف.
+	Applied {n} redaction marks. Save to remove the content from the file.	طُبِّقت {n} علامات حجب. احفظ لإزالة المحتوى من الملف.
+	Applies to 1 page	يُطبَّق على صفحة واحدة
+	Applies to {n} pages	يُطبَّق على {n} صفحات
+	Apply PDF standards	تطبيق معايير PDF
+	Apply redactions	تطبيق الحجب
+	Apply redactions…	تطبيق الحجب…
+	Apply scale	تطبيق المقياس
+	Appropriate nesting	تداخل مناسب
+	April	أبريل
+calendar date	April	أبريل
+	Arbitrary Mask	قناع حر
+	Archive documents	أرشفة المستندات
+	Ask about this document	اسأل عن هذا المستند
+	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	يسأل GitHub عن أحدث إصدار. لا يُنزَّل أو يُثبَّت شيء تلقائيًا.
+	Associated with content	مرتبط بمحتوى
+	At least one signature has problems.	توقيع واحد على الأقل فيه مشكلات.
+	At least one signature is invalid.	توقيع واحد على الأقل غير صالح.
+	At most	على الأكثر
+	Attach a file	إرفاق ملف
+	Attach file	إرفاق ملف
+	Attachment	مرفق
+	Attachments	المرفقات
+	Attachments Panel and Page	لوحة المرفقات والصفحة
+	Audit space usage	تدقيق استخدام المساحة
+	Audit space usage…	تدقيق استخدام المساحة…
+	August	أغسطس
+calendar date	August	أغسطس
+	Auto follows the system's text size. Pages always render at the display's full resolution.	يتبع الوضع التلقائي حجم النص في النظام. تُعرض الصفحات دائمًا بالدقة الكاملة للشاشة.
+	Auto portrait/landscape	عمودي/أفقي تلقائيًا
+	Auto-rotate pages	تدوير الصفحات تلقائيًا
+	Auto-size text to fit redaction region	تحجيم النص تلقائيًا ليلائم منطقة الحجب
+	Automatically tag PDF	وسم PDF تلقائيًا
+	average	المتوسط
+	Back	رجوع
+	Back side only	الوجه الخلفي فقط
+	Back to all tools	العودة إلى كل الأدوات
+	Back to the document	العودة إلى المستند
+	background	خلفية
+	Basic constraints	القيود الأساسية
+certificate	Basic constraints	القيود الأساسية
+	Bates numbering	ترقيم بيتس
+	Before each selected page (select pages in Organize)	قبل كل صفحة محددة (حدد الصفحات في «تنظيم»)
+	Before the number	قبل الرقم
+	Beveled	مشطوف
+	Bicubic downsampling to	تقليل العينات بطريقة Bicubic إلى
+	Binding	التجليد
+	Binding:	التجليد:
+	Black on white	أسود على أبيض
+	Blank page	صفحة فارغة
+	Booklet	كتيّب
+	Booklet subset:	جزء الكتيّب:
+	Bookmark options	خيارات الإشارات المرجعية
+	Bookmarks	الإشارات المرجعية
+	Bookmarks are present in large documents	الإشارات المرجعية موجودة في المستندات الكبيرة
+	Bookmarks Panel and Page	لوحة الإشارات المرجعية والصفحة
+	Border Color:	لون الحد:
+	Borders and Colors	الحدود والألوان
+	Box	المربع
+	Bring your own model (off by default)	استخدم نموذجك الخاص (متوقف افتراضيًا)
+	Browser's print dialog	مربع حوار الطباعة في المتصفح
+	Butt	مستوية
+	Button	زر
+	Button is checked by default	الزر محدد افتراضيًا
+	Button Properties	خصائص الزر
+	Button Style:	نمط الزر:
+	Buttons with the same name and value are selected in unison	الأزرار ذات الاسم والقيمة نفسيهما تُحدَّد معًا
+	Bytes	بايت
+	Calibrate from two points	المعايرة من نقطتين
+	Callout	وسيلة شرح
+	Can't be read: {e}	تتعذر قراءته: {e}
+	Cancelled	ملغى
+	Cancelling…	جارٍ الإلغاء…
+	Case-sensitive	مطابقة حالة الأحرف
+	Center Footer Text	نص التذييل الأوسط
+	Center Header Text	نص الرأس الأوسط
+	Center horizontally	توسيط أفقي
+	Center vertically	توسيط عمودي
+	Center window on screen	توسيط النافذة على الشاشة
+	Centre	توسيط
+	Certificate authority	سلطة تصديق
+	Certificate Signing	توقيع الشهادات
+	Certificate Viewer	عارض الشهادات
+	Certificates	الشهادات
+	Certified by {by}	مصدَّق من {by}
+	Certify	تصديق
+	Certify (invisible signature)	تصديق (توقيع غير مرئي)
+	Certify (visible signature)	تصديق (توقيع مرئي)
+	Change Author	تغيير المؤلف
+	Change comment properties	تغيير خصائص التعليق
+	Change document properties	تغيير خصائص المستند
+	Change field properties	تغيير خصائص الحقل
+	Change initial view	تغيير العرض الأولي
+	Change initials	تغيير الأحرف الأولى
+	Change Keywords	تغيير الكلمات المفتاحية
+	Change link properties	تغيير خصائص الرابط
+	Change reading options	تغيير خيارات القراءة
+	Change reading options…	تغيير خيارات القراءة…
+	Change settings…	تغيير الإعدادات…
+	Change signature	تغيير التوقيع
+	Change Subject	تغيير الموضوع
+	Change tag properties	تغيير خصائص الوسم
+	Change the colour of line art as well as text	تغيير لون الخطوط أيضًا، وليس النص فقط
+	Change Title	تغيير العنوان
+	Change {key}	تغيير {key}
+	Change {what}	تغيير {what}
+	Changes allowed	التغييرات المسموح بها
+	Changing the document	تغيير المستند
+	Character encoding	ترميز المحارف
+	Character limit 0 means no limit. A comb of characters needs a limit.	حد المحارف 0 يعني بلا حد. خانات المحارف تحتاج إلى حد.
+	Character limit:	حد المحارف:
+	Character spacing	تباعد المحارف
+	characters	حرفًا
+	Characters without spaces	الأحرف دون مسافات
+	Check	علامة صح
+	Check Again	إعادة الفحص
+	Check again	إعادة الفحص
+	Check box is checked by default	خانة الاختيار محددة افتراضيًا
+	Check Box Properties	خصائص خانة الاختيار
+	Check Box Style:	نمط خانة الاختيار:
+	Check for accessibility	فحص إمكانية الوصول
+	Check for accessibility…	فحص إمكانية الوصول…
+	Check for updates…	التحقق من التحديثات…
+	Check spelling	تدقيق إملائي
+	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	تحقق من أن الوسوم تُقرأ بالترتيب الذي يتبعه القارئ المبصر. استخدم أداة ترتيب القراءة أو لوحة الوسوم لتصحيحه.
+	Check the pages	تحقق من الصفحات
+	Check the pages of {name}: {why}	تحقق من صفحات {name}: {why}
+	CheckBox	خانة اختيار
+	Checkbox	خانة اختيار
+	Checked	محدد
+	Checking for a newer version…	جارٍ التحقق من وجود إصدار أحدث…
+	Checking Options ({on} of 32 in all categories)	خيارات الفحص ({on} من 32 في كل الفئات)
+	Checkmark	علامة صح
+	Choose a digital ID.	اختر معرّفاً رقمياً.
+	Choose a file…	اختيار ملف…
+	Choose a folder for the exported files	اختر مجلدًا للملفات المصدَّرة
+	Choose a folder for the extracted pages	اختر مجلدًا للصفحات المستخرجة
+	Choose a folder for the results	اختر مجلدًا للنتائج
+	Choose a folder for the searchable files	اختر مجلدًا للملفات القابلة للبحث
+	Choose a folder for the split files	اختر مجلدًا للملفات المقسَّمة
+	Choose a folder on this computer to pin	اختر مجلدًا على هذا الحاسوب لتثبيته
+	Choose a folder…	اختيار مجلد…
+	Choose a layout:	اختر تخطيطًا:
+	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	اختر صورة PNG أو JPEG (حتى 4 MiB). الشفافية تُحفظ.
+	Choose a stamp, then click on the page to place it.	اختر ختمًا، ثم انقر على الصفحة لوضعه.
+	Choose an image	اختر صورة
+	Choose images	اختر صورًا
+	Choose image…	اختيار صورة…
+	Choose photo…	اختيار صورة…
+	Choose the digital ID that you want to use for signing:	اختر المعرّف الرقمي الذي تريد استخدامه للتوقيع:
+	Clean Up	تنظيف
+	Clean-up	تنظيف
+	Clear all	مسح الكل
+	Clear form	مسح النموذج
+	Clear redaction marks	مسح علامات الحجب
+	Clear selection / close find	مسح التحديد / إغلاق البحث
+	Click on the page to add a {tool}, or drag to set its size	انقر على الصفحة لإضافة {tool}، أو اسحب لتحديد حجمه
+	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	انقر على الصفحة لإضافة نص؛ كل نقرة تبدأ مربعًا جديدًا، و✓ تنهي. اسحب العناصر لنقلها، واسحب زاوية لتغيير الحجم، وانقر نقرًا مزدوجًا على النص لتحريره.
+	Click text or an image to edit it	انقر على نص أو صورة لتحريرها
+	Click the first point to begin.	انقر النقطة الأولى للبدء.
+	Click to sort, drag to move the column. Drag its edge to resize it.	انقر للفرز، واسحب لنقل العمود. اسحب حافته لتغيير حجمه.
+	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	انقر لوضع الرؤوس. Enter أو النقر المزدوج ينهي محيطًا أو مساحة. انقر النقطة الأولى لإغلاق مساحة.
+	Clockwise 90 degrees	90 درجة مع عقارب الساعة
+	Close all	إغلاق الكل
+	Close file	إغلاق الملف
+	Close panel	إغلاق اللوحة
+	Close Tab	إغلاق علامة التبويب
+	Closed arrow	سهم مغلق
+	Cloud	سحابة
+	Collapse all	طي الكل
+	Collapse all bookmarks	طي كل الإشارات المرجعية
+	Collapse all pages	طي كل الصفحات
+	Collapse tag	طي الوسم
+	Color contrast	تباين الألوان
+	Color Images	الصور الملونة
+	Color Spaces	فضاءات الألوان
+	Colours are remapped while rendering; the document itself never changes.	تُستبدل الألوان عند الرسم؛ المستند نفسه لا يتغير أبدًا.
+	Column select	تحديد عمود
+	Comb of	خانات عددها
+	Comb of characters	خانات محارف
+	Combine files	دمج الملفات
+	Combine files…	دمج الملفات…
+	Combine the rest	دمج الباقي
+	Combined {n} files	دُمج {n} ملفات
+	Combo	قائمة منسدلة
+	Coming in milestone	قادم في المرحلة
+	Coming in milestone {m}. Items marked Ready work today.	قادم في المرحلة {m}. العناصر الموسومة بـ«جاهز» تعمل اليوم.
+	Comment and form data	بيانات التعليقات والنماذج
+	Comment and review	التعليق والمراجعة
+	Comment list	قائمة التعليقات
+	Commenting	التعليق
+	Commenting, filling in form fields, and signing existing signature fields	التعليق وتعبئة حقول النموذج وتوقيع حقول التوقيع الموجودة
+	comments	تعليقات
+	Comments & Forms	التعليقات والنماذج
+	Comments and markups	التعليقات والترميزات
+	Comments only	التعليقات فقط
+	Comments panel	لوحة التعليقات
+	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	التعليقات والروابط والحقول يجب أن تكون في شجرة الوسوم كي تُعلَن. وسّم التعليقات التوضيحية.
+	Commit selected value immediately	اعتماد القيمة المحددة فورًا
+	Common Properties	الخصائص العامة
+	Compare Files	مقارنة الملفات
+	Compare files	مقارنة الملفات
+	Compare files…	مقارنة الملفات…
+	Compare this file with an older version: Compare files… in All tools.	قارن هذا الملف بنسخة أقدم: «مقارنة الملفات…» في كل الأدوات.
+	Completed	مكتمل
+	Compress a PDF	ضغط ملف PDF
+	Compress document structure (object streams)	ضغط بنية المستند (تدفقات الكائنات)
+	Configure a Digital ID for Signing	إعداد معرّف رقمي للتوقيع
+	Configure New Digital ID	إعداد معرّف رقمي جديد
+	Confirm Password	تأكيد كلمة المرور
+	Conformance level:	مستوى المطابقة:
+	Connected lines	خطوط متصلة
+	Console	وحدة التحكم
+	Content copying	نسخ المحتوى
+	Content copying for accessibility	نسخ المحتوى لإمكانية الوصول
+	Content Streams	تدفقات المحتوى
+	Continuous scrolling	تمرير متواصل
+	Convert colors	تحويل الألوان
+	Copied to clipboard	نُسخ إلى الحافظة
+	Copied {what}	تم نسخ {what}
+	Copies, two-sided printing and colour are chosen in the browser's print dialog.	يُختار عدد النسخ والطباعة على الوجهين والألوان في مربع حوار الطباعة في المتصفح.
+	Copy Image	نسخ الصورة
+	Copy Image in Original Format	نسخ الصورة بتنسيقها الأصلي
+	Copy or cut pages first	انسخ صفحات أو قصها أولًا
+	Copy pages	نسخ الصفحات
+	Copy selected text	نسخ النص المحدد
+	Copy text	نسخ النص
+	Copy to clipboard	نسخ إلى الحافظة
+	Correct recognized text	تصحيح النص المتعرَّف عليه
+	Could not save: {e}	تعذّر الحفظ: {e}
+	Couldn't add {name}: {e}	تعذّرت إضافة {name}: {e}
+	Couldn't check for updates: {e}	تعذّر التحقق من التحديثات: {e}
+	Couldn't combine files: {e}	تعذّر دمج الملفات: {e}
+	Couldn't copy the image: {e}	تعذّر نسخ الصورة: {e}
+	Couldn't create a PDF: {e}	تعذّر إنشاء ملف PDF: {e}
+	Couldn't download {name}: {e}	تعذّر تنزيل {name}: {e}
+	Couldn't extract pages: {e}	تعذّر استخراج الصفحات: {e}
+	Couldn't fit the visible content: {e}	تعذّرت ملاءمة المحتوى المرئي: {e}
+	Couldn't follow linked PDF: {reason}	تعذّر فتح ملف PDF المرتبط: {reason}
+	Couldn't import the signature image: {e}	تعذّر استيراد صورة التوقيع: {e}
+	Couldn't open revision {n}: {e}	تعذّر فتح المراجعة {n}: {e}
+	Couldn't open the printer's preferences: {e}	تعذّر فتح تفضيلات الطابعة: {e}
+	Couldn't open the result: {e}	تعذّر فتح النتيجة: {e}
+	Couldn't open the signed version: {e}	تعذّر فتح النسخة الموقعة: {e}
+	Couldn't optimize the file	تعذّر تحسين الملف
+	Couldn't optimize the file: {e}	تعذّر تحسين الملف: {e}
+	Couldn't print from the browser ({e}); downloaded {name} to print instead	تعذّرت الطباعة من المتصفح ({e})؛ نُزّل {name} لطباعته بدلًا من ذلك
+	Couldn't read {name}: {e}	تعذّرت قراءة {name}: {e}
+	Couldn't recover {name}: {e}	تعذّرت استعادة {name}: {e}
+	Couldn't reload {name}: {e}	تعذّرت إعادة تحميل {name}: {e}
+	Couldn't save the image: {e}	تعذّر حفظ الصورة: {e}
+	Couldn't save {name}: {e}	تعذّر حفظ {name}: {e}
+	Couldn't save: {e}	تعذّر الحفظ: {e}
+	Couldn't show the file picker. Please try again.	تعذّر إظهار منتقي الملفات. حاول مجددًا.
+	Couldn't split: {e}	تعذّر التقسيم: {e}
+	Couldn't summarize comments: {e}	تعذّر تلخيص التعليقات: {e}
+	Couldn't take the snapshot: {e}	تعذّر التقاط اللقطة: {e}
+	Couldn't unlock {name}: {e}	تعذّر إلغاء قفل {name}: {e}
+	Couldn't use the photo: {e}	تعذّر استخدام الصورة: {e}
+	Couldn't use {name}: {e}	تعذّر استخدام {name}: {e}
+	Couldn't write {name}: {e}	تعذّرت كتابة {name}: {e}
+	Couldn't write {path}: {e}	تعذّرت الكتابة في {path}: {e}
+	Counterclockwise 90 degrees	90 درجة عكس عقارب الساعة
+	Counting words… {n} pages read	جارٍ عد الكلمات… تمت قراءة {n} من الصفحات
+	Country/Region	البلد/المنطقة
+	Create a new Digital ID (self-signed, saved to a password-protected file)	إنشاء معرّف رقمي جديد (موقَّع ذاتيًا، يُحفظ في ملف محمي بكلمة مرور)
+	Create a PDF	إنشاء ملف PDF
+	Create accessibility report	إنشاء تقرير إمكانية الوصول
+	Create Custom Stamp	إنشاء ختم مخصص
+	Create custom stamp…	إنشاء ختم مخصص…
+	Create folder	إنشاء مجلد
+	Create from	إنشاء من
+	Create Link	إنشاء رابط
+	Create link	إنشاء رابط
+	Create links	إنشاء ارتباطات
+	Create links from URLs	إنشاء روابط من عناوين URL
+	Create Link…	إنشاء رابط…
+	Create PDF Comment Summary	إنشاء ملخص تعليقات PDF
+	Create PDF comment summary…	إنشاء ملخص تعليقات PDF…
+	Create PDF from clipboard	إنشاء PDF من الحافظة
+	Create PDF from file…	إنشاء PDF من ملف…
+	Create PDF from images	إنشاء PDF من صور
+	Create PDF from images…	إنشاء PDF من صور…
+	Create PDF from multiple files…	إنشاء PDF من عدة ملفات…
+	Create separate PDFs…	إنشاء ملفات PDF منفصلة…
+	Create {what}	إنشاء {what}
+	Created 1 link	أُنشئ رابط واحد
+	Created a comment summary	أُنشئ ملخص للتعليقات
+	Created a PDF from the first {n} files	أُنشئ ملف PDF من أول {n} ملفات
+	Created a PDF from {n} files	أُنشئ ملف PDF من {n} ملفات
+	Created a PDF from {n} files; left out: {names}	أُنشئ ملف PDF من {n} ملفات؛ استُبعد: {names}
+	Created {n} links	أُنشئ {n} روابط
+	Creates 1 file from {n} pages.	ينشئ ملفًا واحدًا من {n} صفحات.
+	Creates {f} files from {n} pages.	ينشئ {f} ملفات من {n} صفحات.
+	Creator	المنشئ
+	Credit Cards	بطاقات الائتمان
+	CRL Signing	توقيع CRL
+	Crop (% trimmed from each side)	اقتصاص (النسبة المقتطعة من كل جانب)
+	Crop Image	قص الصورة
+	Crop page	اقتصاص الصفحة
+	Crop pages	اقتصاص الصفحات
+key	Ctrl	Ctrl
+	Currency symbol:	رمز العملة:
+	Current page ({n})	الصفحة الحالية ({n})
+	Current page only	الصفحة الحالية فقط
+	Current page — type a page number or label (such as iv) and press Enter	الصفحة الحالية — اكتب رقم صفحة أو تسميتها (مثل iv) ثم اضغط Enter
+	Custom font	خط مخصص
+	Custom scale:	مقياس مخصص:
+	Custom stamps arrive on the web with file pickers for images	الأختام المخصصة ستتوفر على الويب مع منتقيات ملفات الصور
+	Custom text:	نص مخصص:
+	Custom:	مخصص:
+	Cut and stack	قص وتكديس
+	Cut and stack needs Two-sided: Off. Print single-sided sheets.	يحتاج القص والتكديس إلى «على الوجهين: إيقاف». اطبع أوراقاً أحادية الوجه.
+	Cut Image	قص الصورة
+	Cut marks	علامات القص
+	Cut pages	قص الصفحات
+	Cut {what}	تم قص {what}
+	Cuts each page to its printed area, turns it upright and fits it to the sheet without stretching. One label per sheet.	يقص كل صفحة إلى المنطقة المطبوعة، ويديرها لتصبح مستقيمة ويلائمها مع الورقة دون تمديد. ملصق واحد لكل ورقة.
+	Dark gray theme	سمة رمادية داكنة
+	Dark theme	سمة داكنة
+	Data Encipherment	تشفير البيانات
+	Date field	حقل تاريخ
+	Date: 	التاريخ: 
+	December	ديسمبر
+calendar date	December	ديسمبر
+	Decimal places:	المنازل العشرية:
+	Decimals	المنازل العشرية
+	Decipher Only	فك التشفير فقط
+	Declared conformance: {shown}	المطابقة المعلنة: {shown}
+	Decorative figure	شكل زخرفي
+	Default page display	عرض الصفحات الافتراضي
+	Default Value:	القيمة الافتراضية:
+	Default workspace mode	وضع مساحة العمل الافتراضي
+	Default zoom	التكبير الافتراضي
+	Default:	الافتراضي:
+key	Delete	Delete
+	Delete bookmark	حذف الإشارة المرجعية
+	Delete comment	حذف التعليق
+	Delete content	حذف المحتوى
+	Delete document JavaScript	حذف JavaScript المستند
+	Delete field	حذف الحقل
+	Delete image	حذف الصورة
+	Delete link	حذف الرابط
+	Delete page	حذف الصفحة
+	Delete page {label}	حذف الصفحة {label}
+	Delete pages	حذف الصفحات
+	Delete pages (Delete)	حذف الصفحات (Delete)
+	Delete pages after extracting	حذف الصفحات بعد استخراجها
+	Delete selected fields	حذف الحقول المحددة
+	Delete selected pages (Organize)	حذف الصفحات المحددة (تنظيم)
+	Delete stamp	حذف الختم
+@plural	Delete {n} field|Delete {n} fields	حذف {n} حقل|حذف {n} حقل|حذف {n} حقلين|حذف {n} حقول|حذف {n} حقلاً|حذف {n} حقل
+	Delete {o}	حذف {o}
+	Describe the figure	صِف الشكل
+	Detailed Report	تقرير مفصل
+	Detect form fields	اكتشاف حقول النموذج
+	Detected 1 form field	اكتُشف حقل نموذج واحد
+	Detected {n} form fields	اكتُشف {n} حقول نموذج
+	Device colour is used, but there is no PDF/A output intent	يُستخدم لون الجهاز، لكن لا يوجد هدف إخراج PDF/A
+	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	يُستخدم DeviceCMYK، لكن غرض إخراج PDF/A ليس ملف CMYK
+	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	يُستخدم DeviceCMYK: يحتاج إلى هدف إخراج CMYK (لا يُضاف تلقائيًا)
+	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	يُستخدم DeviceRGB، لكن غرض إخراج PDF/A ليس ملف RGB
+	Diagnostic details	تفاصيل التشخيص
+	Digital ID	معرّف رقمي
+	Digital ID password	كلمة مرور المعرّف الرقمي
+	Digital Signature	توقيع رقمي
+	Digital signature	توقيع رقمي
+	Digital Signature Properties	خصائص التوقيع الرقمي
+	Digitally sign	توقيع رقمي
+	Digitally signed by	موقع رقميا من
+	Disabled	معطّل
+	Discard all comments, forms and multimedia	تجاهل كل التعليقات والنماذج والوسائط المتعددة
+	Discard all links, actions and JavaScript	تجاهل كل الروابط والإجراءات وJavaScript
+	Discard all object data (file attachments)	تجاهل كل بيانات الكائنات (الملفات المرفقة)
+	Discard alternate images	تجاهل الصور البديلة
+	Discard bookmarks	تجاهل الإشارات المرجعية
+	Discard document information and metadata	تجاهل معلومات المستند وبياناته الوصفية
+	Discard document tags	تجاهل وسوم المستند
+	Discard embedded page thumbnails	تجاهل مصغرات الصفحات المضمَّنة
+	Discard embedded print settings	تجاهل إعدادات الطباعة المضمَّنة
+	Discard hidden layer content	تجاهل محتوى الطبقات المخفية
+	Discard hidden text	تجاهل النص المخفي
+	Discard Objects	تجاهل الكائنات
+	Discard private data of other applications	تجاهل البيانات الخاصة بالتطبيقات الأخرى
+	Discard this text (Esc)	تجاهل هذا النص (Esc)
+	Discard User Data	تجاهل بيانات المستخدم
+	Display theme	سمة العرض
+	Distinguished name	الاسم المميز
+	Distribute fields	توزيع الحقول
+	DN: 	DN: 
+	Document actions	إجراءات المستند
+	Document and markups	المستند والترميزات
+	Document and stamps	المستند والأختام
+	Document assembly	تجميع المستند
+	Document has appropriate color contrast	المستند ذو تباين ألوان مناسب
+	Document is not image-only PDF	المستند ليس PDF من صور فقط
+	Document is tagged PDF	المستند PDF موسوم
+	Document JavaScripts	سكربتات JavaScript للمستند
+	Document JavaScripts…	سكربتات JavaScript للمستند…
+	Document language	لغة المستند
+	Document Overhead	الحمل الإضافي للمستند
+	Document Properties	خصائص المستند
+	Document properties ({key})	خصائص المستند ({key})
+	Document properties (⌘D)	خصائص المستند (⌘D)
+	Document properties…	خصائص المستند…
+	Document sanitized. Save to finish: saving rewrites the whole file.	تم تنظيف المستند. احفظ للإنهاء: الحفظ يعيد كتابة الملف كله.
+	document security store	مخزن أمان المستند
+	document structure	بنية المستند
+	Document structure provides a logical reading order	بنية المستند توفر ترتيب قراءة منطقيًا
+	Document title is showing in title bar	عنوان المستند يظهر في شريط العنوان
+	Documents and view	المستندات والعرض
+	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	المستندات التي تزيد على 20 صفحة تحتاج إلى إشارات مرجعية للتنقل. أضف إشارات مرجعية للأقسام الرئيسية.
+	Don't save	عدم الحفظ
+	Done adding text	إنهاء إضافة النص
+	Downloaded {name}	تم تنزيل {name}
+@plural	Downloaded {n} PDF|Downloaded {n} PDFs	تم تنزيل {n} من ملفات PDF|تم تنزيل ملف PDF واحد ({n})|تم تنزيل ملفي PDF ({n})|تم تنزيل {n} ملفات PDF|تم تنزيل {n} ملف PDF|تم تنزيل {n} من ملفات PDF
+	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	تنزيل المرفقات على الويب سيتوفر مع M3.10 ({n} بايت جاهزة)
+	Downsample to	تقليل العينات إلى
+	DPI sets the printed page size without resampling the image.	قيمة DPI تحدد حجم الصفحة المطبوعة دون إعادة تشكيل الصورة.
+	Drag a rectangle around the area to copy	اسحب مستطيلًا حول المنطقة المراد نسخها
+	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	اسحب مستطيلًا على صفحة لاقتصاصها؛ انقر نقرًا مزدوجًا على صفحة لفتح «ضبط مربعات الصفحة»
+	Drag a rectangle to create a link; double-click a link to edit it	اسحب مستطيلًا لإنشاء رابط؛ انقر نقرًا مزدوجًا على رابط لتحريره
+	Drag the corners onto the document's edges, then choose Enhance page.	اسحب الزوايا إلى حواف المستند، ثم اختر تحسين الصفحة.
+	Drag the selection to move it. Esc clears the selection.	اسحب التحديد لنقله. يمسح Esc التحديد.
+	Drag to draw the area where the signature should appear.	اسحب لرسم المنطقة التي سيظهر فيها التوقيع.
+	Drag to reorder	اسحب لإعادة الترتيب
+	Draw a cloud	رسم سحابة
+	Draw a line	رسم خط
+	Draw a polygon	رسم مضلع
+	Draw a rectangle	رسم مستطيل
+	Draw an arrow	رسم سهم
+	Draw an oval	رسم شكل بيضاوي
+	Draw connected lines	رسم خطوط متصلة
+	Draw freehand	رسم حر
+	Draw your {what} below.	ارسم {what} أدناه.
+	Drawing	رسم
+	Drawing scale	مقياس الرسم
+	Drawing scale changes. Use Actual size for full-scale plans.	يتغير مقياس الرسم. استخدم الحجم الفعلي لطباعة المخططات بمقياسها الأصلي.
+	Drop PDFs or folders here, or choose them.	أفلت ملفات PDF أو المجلدات هنا، أو اخترها.
+	Drop PDFs, images, text files or folders here, or choose them.	أفلت ملفات PDF أو الصور أو الملفات النصية أو المجلدات هنا، أو اخترها.
+	Drop-down list	قائمة منسدلة
+	Dropdown Properties	خصائص القائمة المنسدلة
+	Duplicate "{name}" onto:	تكرار "{name}" على:
+	Duplicate Field	تكرار الحقل
+	Duplicate field	تكرار الحقل
+	Duplicate page	تكرار الصفحة
+	Duplicate pages	تكرار الصفحات
+	Dynamic XFA form laid out from its template: {pages}, {fields}.	نموذج XFA ديناميكي رُتِّب من قالبه: {pages}، {fields}.
+	E-Sign	توقيع إلكتروني
+	e.g. en-US	مثلًا en-US
+	e.g. My stamps	مثلًا: أختامي
+	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	كل حقل يحتاج إلى تلميح يوضح ما يجب إدخاله. أضف واحدًا في خصائص الحقل > عام > تلميح.
+	Each file holds as many of the {n} pages as fit.	كل ملف يحتوي على ما يتسع له من الصفحات الـ {n}.
+	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	تُقاس كل صورة حيث ترسمها الصفحات؛ ولا تُستبدل الصورة إلا إذا كانت النتيجة أصغر.
+	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	كل صورة مرة واحدة، تُسمى باسم المستند والصفحة. صور JPEG تُحفظ دون تغيير؛ والبقية بصيغة PNG.
+	Earlier in tab order	أبكر في ترتيب التنقل
+comment menu	Edit	تحرير
+	Edit a PDF	تحرير ملف PDF
+	Edit Action	تحرير الإجراء
+	Edit comment	تحرير التعليق
+	Edit content	تحرير المحتوى
+	Edit document JavaScript	تحرير JavaScript المستند
+	Edit fields	تحرير الحقول
+	Edit image	تحرير الصورة
+	Edit script of {name}	تحرير سكربت {name}
+	Edit text	تحرير النص
+	Edit text & images	تحرير النص والصور
+	Edit text…	تحرير النص…
+	Email Address	عنوان البريد الإلكتروني
+	Email Addresses	عناوين البريد الإلكتروني
+	Embedded Files	الملفات المضمَّنة
+	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	الملفات المضمَّنة يجب أن تكون هي نفسها ملفات PDF/A (استخدم PDF/A-3 لغيرها)
+	Enable Acrobat JavaScript	تفعيل Acrobat JavaScript
+	Enable copying of text, images, and other content	تفعيل نسخ النصوص والصور والمحتويات الأخرى
+	Enable text access for screen reader devices for the visually impaired	تفعيل وصول أجهزة قراءة الشاشة إلى النص لضعاف البصر
+	Enabled	ممكّن
+	Encipher Only	التشفير فقط
+	Encrypt	تشفير
+	Encrypt with certificate	تشفير بشهادة
+	Encryption	التشفير
+key	End	End
+	End entity	كيان نهائي
+	Endpoints	نقاط النهاية
+	English	إنجليزي
+	Enhance camera image	تحسين صورة الكاميرا
+	Enhance page	تحسين الصفحة
+	Enhance scanned file	تحسين الملف الممسوح ضوئيًا
+	Enter a name.	أدخل اسماً.
+	Enter a page number	أدخل رقم صفحة
+	Enter a URL	أدخل URL
+	Enter permissions password…	أدخل كلمة مرور الأذونات…
+	Enter the field names	أدخل أسماء الحقول
+	Enter the password that opens it	أدخل كلمة المرور التي تفتحه
+	Enter the permissions password to allow combining	أدخل كلمة مرور الأذونات للسماح بالدمج
+	Entire page	الصفحة كاملة
+	Erase drawings	محو الرسومات
+key	Esc	Esc
+	Even and Odd Pages	الصفحات الزوجية والفردية
+	Even pages	الصفحات الزوجية
+	Even Pages Only	الصفحات الزوجية فقط
+	Every PDF in the folder	كل ملف PDF في المجلد
+	Every PDF in the folder and the folders inside it	كل ملف PDF في المجلد والمجلدات داخله
+	Every PDF, image and text file in the folder	كل ملفات PDF والصور والملفات النصية في المجلد
+	Every PDF, image and text file in the folder and the folders inside it	كل ملفات PDF والصور والملفات النصية في المجلد والمجلدات التي بداخله
+	Everything on a page must be tagged or marked as an artifact (decoration, headers, footers). Tag the untagged content.	كل ما في الصفحة يجب أن يكون موسومًا أو معلَّمًا كعنصر زخرفي (زخارف، رؤوس، تذييلات). وسّم المحتوى غير الموسوم.
+	Exclude image/OCR text	استبعاد نص الصور والتعرف الضوئي على الحروف
+	Exclude images smaller than	استثناء الصور الأصغر من
+	Exclude tagged code blocks	استبعاد كتل التعليمات البرمجية الموسومة
+	Exclude tagged tables	استبعاد الجداول الموسومة
+	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	تعتمد الاستثناءات على وسوم PDF. تبقى الجداول والتعليمات البرمجية غير الموسومة ضمن العدد. يستبعد خيار الصور النص غير المرئي أيضًا.
+	Execute a menu item	تنفيذ عنصر قائمة
+	Expand all	توسيع الكل
+	Expand all bookmarks	توسيع كل الإشارات المرجعية
+	Expand all pages	توسيع كل الصفحات
+	Expand tag	توسيع الوسم
+	Expand top-level bookmarks	توسيع إشارات المستوى الأعلى
+	Explain	شرح
+	Export a PDF	تصدير ملف PDF
+	Export all comments to data file…	تصدير كل التعليقات إلى ملف بيانات…
+	Export All Images	تصدير كل الصور
+	Export all images	تصدير كل الصور
+	Export all images…	تصدير كل الصور…
+	Export all to data file…	تصدير الكل إلى ملف بيانات…
+	Export certificate	تصدير الشهادة
+	Export certificate…	تصدير الشهادة…
+	Export comments	تصدير التعليقات
+	Export data	تصدير البيانات
+	Export form data	تصدير بيانات النموذج
+	Export form data…	تصدير بيانات النموذج…
+	Export measurements	تصدير القياسات
+	Export measurements as CSV	تصدير القياسات بصيغة CSV
+	Export stopped: {e}	توقف التصدير: {e}
+	Export to HTML…	تصدير إلى HTML…
+	Export to Image	تصدير إلى صورة
+	Export to image…	تصدير إلى صورة…
+	Export to PowerPoint…	تصدير إلى PowerPoint…
+	Export to RTF…	تصدير إلى RTF…
+	Export to Text	تصدير إلى نص
+	Export to text…	تصدير إلى نص…
+	Export to Word…	تصدير إلى Word…
+	Export Value: {on}	قيمة التصدير: {on}
+	Exported 1 image	صُدِّرت صورة واحدة
+	Exported the text of 1 page	صُدِّر نص صفحة واحدة
+	Exported the text of {n} pages	صُدِّر نص {n} صفحات
+	Exported {n} images	صُدِّرت {n} صور
+	Exporting… {d} of {t}	جارٍ التصدير… {d} من {t}
+	Extended Graphics States	حالات الرسوم الموسَّعة
+	Extract pages	استخراج صفحات
+	Extract pages as separate files	استخراج الصفحات كملفات منفصلة
+	Extract pages to a new document	استخراج الصفحات إلى مستند جديد
+	Extract pages…	استخراج صفحات…
+	Extracted 1 page	استُخرجت صفحة واحدة
+	Extracted {n} pages	استُخرجت {n} صفحات
+	Failed	فاشل
+scroll speed	Fast	سريعة
+	February	فبراير
+calendar date	February	فبراير
+	Field "{}" on page {p} has no description (tooltip)	الحقل "{}" في الصفحة {p} بلا وصف (تلميح)
+	Field descriptions	أوصاف الحقول
+	Field is used for file selection	الحقل يُستخدم لاختيار ملف
+	Field list	قائمة الحقول
+	Field names (comma-separated)	أسماء الحقول (مفصولة بفواصل)
+	Field names with + - * / and parentheses; put \\ before spaces in names.	أسماء الحقول مع + - * / والأقواس؛ ضع \\ قبل المسافات في الأسماء.
+	Field properties…	خصائص الحقل…
+	Field value is in range:	قيمة الحقل ضمن النطاق:
+	Field value is not validated	لا يُتحقق من قيمة الحقل
+	Field: {field} on page {p}	الحقل: {field} في الصفحة {p}
+	Fields to reset (comma-separated; empty: all)	الحقول المراد إعادة ضبطها (مفصولة بفواصل؛ فارغ: الكل)
+	Figure {i} of {n}{page}	الشكل {i} من {n}{page}
+	Figures alternate text	النص البديل للأشكال
+	Figures require alternate text	الأشكال تتطلب نصًا بديلًا
+	File (.p12, .pfx)	ملف (.p12, .pfx)
+	File attachments	الملفات المرفقة
+	File name	اسم الملف
+	File size	حجم الملف
+@id	file.word_count	عدد الكلمات…
+	Filename	اسم الملف
+	Files are combined from top to bottom. Leave Pages empty to take every page.	تُدمج الملفات من الأعلى إلى الأسفل. اترك «الصفحات» فارغًا لأخذ كل الصفحات.
+	Files are combined in the order shown. Drag them to change it.	تُدمج الملفات بالترتيب المعروض. اسحبها لتغيير الترتيب.
+	Files are combined in this order. Leave Pages empty to take every page.	تُدمج الملفات بهذا الترتيب. اترك «الصفحات» فارغًا لأخذ كل الصفحات.
+	Files for {name}	ملفات {name}
+	Files you open in PdfCraft appear here. Drop a PDF anywhere to open it.	الملفات التي تفتحها في PdfCraft تظهر هنا. أفلت ملف PDF في أي مكان لفتحه.
+	Fill & Sign	تعبئة وتوقيع
+	Fill & Sign dates	تواريخ التعبئة والتوقيع
+	Fill & Sign signature	توقيع «تعبئة وتوقيع»
+	Fill & Sign: add text	تعبئة وتوقيع: إضافة نص
+	Fill & Sign: change initials	تعبئة وتوقيع: تغيير الأحرف الأولى
+	Fill & Sign: change signature	تعبئة وتوقيع: تغيير التوقيع
+	Fill & Sign: checkmark	تعبئة وتوقيع: علامة صح
+	Fill & Sign: cross	تعبئة وتوقيع: علامة خطأ
+	Fill & Sign: date	تعبئة وتوقيع: تاريخ
+	Fill & Sign: dot	تعبئة وتوقيع: نقطة
+	Fill & Sign: initials	تعبئة وتوقيع: أحرف أولى
+	Fill & Sign: line	تعبئة وتوقيع: خط
+	Fill & Sign: remove saved initials	تعبئة وتوقيع: إزالة الأحرف الأولى المحفوظة
+	Fill & Sign: remove saved signature	تعبئة وتوقيع: إزالة التوقيع المحفوظ
+	Fill & Sign: sign	تعبئة وتوقيع: توقيع
+	Fill Color:	لون التعبئة:
+	Fill colour	لون التعبئة
+	Fill colour:	لون التعبئة:
+	Fill colour: none	لون التعبئة: بلا
+	Fill in {name}	تعبئة {name}
+	Filling in form fields and signing existing signature fields	تعبئة حقول النموذج وتوقيع حقول التوقيع الموجودة
+	Filling of form fields	تعبئة حقول النموذج
+	Filter comments	تصفية التعليقات
+	Find a tag	ابحث عن وسم
+	Find options	خيارات البحث
+	Find text	البحث عن نص
+	Find text and redact	البحث عن نص وحجبه
+	Find text and redact…	البحث عن نص وحجبه…
+	Find tools and commands	البحث عن الأدوات والأوامر
+	Find tools and commands…	البحث عن الأدوات والأوامر…
+	Find untagged content	العثور على محتوى غير مُعلَّم
+	Finding document fonts…	جارٍ البحث عن خطوط المستند…
+	Finish or discard the text being edited before selecting several objects.	أكمل تحرير النص أو تجاهله قبل تحديد عدة عناصر.
+	First / last page	الصفحة الأولى / الأخيرة
+	Fit Height	ملاءمة الارتفاع
+	Fit one full page	ملاءمة صفحة كاملة واحدة
+	Fit Page	ملاءمة الصفحة
+	Fit to height	ملاءمة الارتفاع
+	Fit to page	ملاءمة الصفحة
+	Fit to width	ملاءمة العرض
+	Fit to width scrolling	تمرير بملاءمة العرض
+	Fit Visible	ملاءمة المرئي
+	Fit visible	ملاءمة المرئي
+	Fit Width	ملاءمة العرض
+	Fix	إصلاح
+	Fix hairlines	إصلاح الخطوط الرفيعة
+	Fix reading order	إصلاح ترتيب القراءة
+	Fixed what could be fixed; 1 problem remains	أُصلح ما أمكن إصلاحه؛ بقيت مشكلة واحدة
+	Fixed what could be fixed; {n} problems remain	أُصلح ما أمكن إصلاحه؛ بقيت {n} مشكلات
+	Flatten comments	تسطيح التعليقات
+	Flatten Fill & Sign	تسطيح التعبئة والتوقيع
+	Flatten Fill & Sign when saving	تسطيح التعبئة والتوقيع عند الحفظ
+	Flatten form fields	تسطيح حقول النموذج
+	Flip horizontal	قلب أفقي
+	Flip image	قلب الصورة
+	Flip on long edge	قلب على الحافة الطويلة
+	Flip on short edge	قلب على الحافة القصيرة
+	Flip vertical	قلب عمودي
+	Float panel	تعويم اللوحة
+	Folders	المجلدات
+	Font (unnamed) on page {p} doesn't map its characters to Unicode	الخط (غير المسمى) في الصفحة {p} لا يربط محارفه بيونيكود
+	Font colour:	لون الخط:
+	Font size 0 uses automatic sizing.	حجم الخط 0 يستخدم التحجيم التلقائي.
+	Font size:	حجم الخط:
+	Font {} on page {p} doesn't map its characters to Unicode	الخط {} في الصفحة {p} لا يربط محارفه بيونيكود
+	Font: Helvetica	الخط: Helvetica
+	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	يجب أن تربط الخطوط محارفها بـ Unicode كي يمكن قراءة النص ونسخه. أصلح الخطوط أو أعد إنشاء ملف PDF.
+	for images above	للصور التي تتجاوز
+	For page sizes and margins.	لأحجام الصفحات والهوامش.
+	Form data and PDF forms	بيانات النماذج ونماذج PDF
+	Form field on page {p} isn't tagged	حقل النموذج في الصفحة {p} غير موسوم
+	Form fields	حقول النموذج
+	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	حقول النموذج تُسطَّح: قيمها تبقى مرئية. الحفظ يعيد كتابة الملف كله.
+	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	حقول النموذج يجب أن تكون في شجرة الوسوم (وسوم Form) كي تُعلَن. وسّم حقول النموذج.
+	Form fields only	حقول النموذج فقط
+	Form fields panel	لوحة حقول النموذج
+	form fill	تعبئة نموذج
+	Form fill-in and digital signatures	تعبئة النماذج والتوقيعات الرقمية
+	Format text	تنسيق النص
+	Forms	النماذج
+	Formulas and similar non-text elements need alternate text. Add alternate text to them.	الصيغ الرياضية والعناصر غير النصية المماثلة تحتاج إلى نص بديل. أضف نصًا بديلًا لها.
+	Found {n} untagged content problems.	تم العثور على {n} مشكلة في محتوى غير معلَّم.
+calendar weekday	Fr	جمعة
+	From a PDF page or an image	من صفحة PDF أو صورة
+	From colour	من لون
+	From {file}	من {file}
+	From:	من:
+	Front side only	الوجه الأمامي فقط
+	Full screen mode	وضع ملء الشاشة
+	Geospatial location	الموقع الجغرافي
+	Get help, share feedback and follow development on Discord.	احصل على المساعدة وشارك ملاحظاتك وتابع التطوير على Discord.
+	Go to a page view	الانتقال إلى عرض صفحة
+	Go to page {p}	الانتقال إلى الصفحة {p}
+	Go to page…	الانتقال إلى صفحة…
+	Go to the page	الانتقال إلى الصفحة
+	Go to this result	الانتقال إلى هذه النتيجة
+	Grab bag	متفرقات
+	Grayscale Images	الصور الرمادية
+	Green on black	أخضر على أسود
+	Greyscale	تدرج رمادي
+	H / Space (hold)	H / مسافة (مع الضغط المستمر)
+	Hand (H)	يد (H)
+	Has JavaScript actions (run in M6)	له إجراءات JavaScript (تُشغَّل في M6)
+	Header and footer	رأس وتذييل
+	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	خلايا الرأس (TH) تخبر المستمعين بما يحتويه كل عمود أو صف. علّم خلايا الرأس.
+	header or footer	رأس أو تذييل
+	Headers	الرؤوس
+	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	مستويات العناوين ينبغي ألا تتخطى مستوى (H1 يتبعه H3). أعد وسم العناوين.
+	Help…	تعليمات…
+	Hidden layers	الطبقات المخفية
+	Hide a field	إخفاء حقل
+	Hide all comments	إخفاء كل التعليقات
+	Hide field highlights	إخفاء تمييز الحقول
+	Hide hover previews for highlights without comment text	إخفاء معاينات التمرير للتظليلات التي لا تحتوي على نص تعليق
+	Hide layer	إخفاء الطبقة
+	Hide menu bar	إخفاء شريط القوائم
+	Hide password	إخفاء كلمة المرور
+	Hide toolbars	إخفاء أشرطة الأدوات
+	Hide window controls	إخفاء عناصر تحكم النافذة
+	Hides annotation	يخفي تعليقًا توضيحيًا
+	Highlight	تمييز
+	Highlight fields	تمييز الحقول
+	Highlight Style:	نمط التمييز:
+	Highlight text	تمييز النص
+key	Home	Home
+	Home / End	Home / End
+	Horizontal reversed	أفقي معكوس
+	HTML web page	صفحة ويب HTML
+	H{n} follows an H{d}; headings should not skip levels	يتبع H{n} عنوان H{d}؛ لا ينبغي للعناوين تخطي المستويات
+	Identity	الهوية
+	Image (PNG)	صورة (PNG)
+	Image field	حقل صورة
+	Image-only PDF	PDF من صور فقط
+	Images and text	صور ونص
+	Images and text (converted to PDF)	صور ونص (تُحوَّل إلى PDF)
+	Import comments…	استيراد التعليقات…
+	Import data	استيراد البيانات
+	Import form data…	استيراد بيانات النموذج…
+	Import list…	استيراد قائمة…
+	Import {name}	استيراد {name}
+	Importing data arrives on the web with file pickers for data files	استيراد البيانات سيتوفر على الويب مع منتقيات ملفات البيانات
+	In multiple files	في عدة ملفات
+	In this file	في هذا الملف
+	Includes unsaved changes	يتضمن تغييرات غير محفوظة
+	Incorrect password. Try again.	كلمة المرور غير صحيحة. حاول مجددًا.
+	Indent	إزاحة للداخل
+	Information	معلومات
+	Initial View	العرض الأولي
+	Initials	أحرف أولى
+	initials	أحرف أولى
+	Ink sensitivity	حساسية الحبر
+	Insert a blank page after the selection	إدراج صفحة فارغة بعد التحديد
+	Insert a file at the end	إدراج ملف في النهاية
+	Insert a file before page {label}	إدراج ملف قبل الصفحة {label}
+	Insert blank page	إدراج صفحة فارغة
+	Insert Date	إدراج التاريخ
+	Insert Page Number	إدراج رقم الصفحة
+	Insert pages	إدراج صفحات
+	Insert pages from a file…	إدراج صفحات من ملف…
+	Insert pages from file…	إدراج صفحات من ملف…
+	Insert pages from {name}	إدراج صفحات من {name}
+	Insert pages from {name} — 1 field renamed	إدراج صفحات من {name} — تمت إعادة تسمية حقل واحد
+	Insert pages from {name} — fields renamed	إدراج صفحات من {name} — تمت إعادة تسمية حقول
+	Insert text	إدراج نص
+	Inserted	مُدرَج
+	Inserted text	نص مُدرَج
+	Inserting, deleting, and rotating pages	إدراج الصفحات وحذفها وتدويرها
+	Inset	غائر
+	Inspector	المفتش
+	Installed fonts…	الخطوط المثبتة…
+	Intended usage	الاستخدام المقصود
+certificate	Intended usage	الاستخدام المقصود
+	Interface size	حجم الواجهة
+	Intersections	التقاطعات
+	Invisible Rectangle	مستطيل غير مرئي
+	Irregular tables confuse cell navigation. Give every row the same number of cells (counting spans).	الجداول غير المنتظمة تربك التنقل بين الخلايا. اجعل لكل صف العدد نفسه من الخلايا (مع احتساب الامتدادات).
+	is available	متاح
+	is not available yet	غير متاح بعد
+	Issued by	صادرة عن
+certificate	Issued by	صادر من
+	Issued by: 	صادرة عن: 
+	Issued to	صادرة إلى
+certificate	Issued to	مُصدر إلى
+	Issuer	المُصدِر
+certificate	Issuer	المُصدر
+	Item List	قائمة العناصر
+	Item:	العنصر:
+	Items marked Ready work today.	العناصر الموسومة بـ«جاهز» تعمل اليوم.
+	its alternate text is inside another element's and will never be read	نصه البديل داخل نص عنصر آخر ولن يُقرأ أبداً
+	Its security settings don't allow copying pages	إعدادات أمانه لا تسمح بنسخ الصفحات
+	January	يناير
+calendar date	January	يناير
+	JavaScript	JavaScript
+	JavaScript Console	وحدة تحكم JavaScript
+	JavaScript console…	وحدة تحكم JavaScript…
+	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript متوقف (التفضيلات > JavaScript).
+	JavaScript, e.g. getField("total").value	JavaScript، مثلًا getField("total").value
+	Join the ArtCraft community	انضم إلى مجتمع ArtCraft
+	July	يوليو
+calendar date	July	يوليو
+	June	يونيو
+calendar date	June	يونيو
+	Keep source fonts	الاحتفاظ بالخطوط الأصلية
+	Keep tool selected	إبقاء الأداة محددة
+	Keep tool selected: on	إبقاء الأداة محددة: مفعَّل
+	Key Agreement	اتفاقية المفاتيح
+	Key Algorithm	خوارزمية المفتاح
+	Key Encipherment	تشفير المفاتيح
+	Key usage	استخدام المفتاح
+certificate	Key usage	استخدام المفتاح
+	Keyboard shortcuts	اختصارات لوحة المفاتيح
+	Keychain  ·  	سلسلة المفاتيح  ·  
+	Labels: {preview}. Later pages keep their labels.	التسميات: {preview}. الصفحات اللاحقة تحتفظ بتسمياتها.
+	Landscape and Portrait Pages	الصفحات الأفقية والعمودية
+	Landscape Pages	الصفحات الأفقية
+	Landscape pages	الصفحات الأفقية
+	Larger pages	صفحات أكبر
+	Later in tab order	أبعد في ترتيب التنقل
+	Layers Panel and Page	لوحة الطبقات والصفحة
+	Layout and Magnification	التخطيط والتكبير
+	Lbl and LBody	Lbl و LBody
+	Lbl and LBody must be children of LI	Lbl و LBody يجب أن يكونا ابنين لـ LI
+	Leave out files that can't be read?	هل تريد استبعاد الملفات التي تتعذر قراءتها؟
+	Left Edge	الحافة اليسرى
+	Left Footer Text	نص التذييل الأيسر
+	Left Header Text	نص الرأس الأيسر
+	Left out: {names}	تم استبعاد: {names}
+	LI must be a child of L	LI يجب أن يكون ابنًا لـ L
+	Light blue	أزرق فاتح
+	Light theme	سمة فاتحة
+	Limit of	حد أقصى
+	Line ending	نهاية الخط
+	Line Style:	نمط الخط:
+	Line thickness	سماكة الخط
+	Line Thickness:	سماكة الخط:
+	Link Action	إجراء الرابط
+	Link Appearance	مظهر الرابط
+	Link Properties	خصائص الرابط
+	Link Type:	نوع الرابط:
+	links	ارتباطات
+	Links, actions and JavaScripts	الروابط والإجراءات وسكربتات JavaScript
+	List box	مربع قائمة
+	List Box Properties	خصائص مربع القائمة
+	List items	عناصر القائمة
+	List items belong in a list. Fix the list's tags.	عناصر القائمة مكانها داخل قائمة. أصلح وسوم القائمة.
+	List labels and bodies belong in a list item. Fix the list's tags.	تسميات القائمة ومتونها مكانها داخل عنصر قائمة. أصلح وسوم القائمة.
+	Lists	القوائم
+	Load document font	تحميل خط المستند
+	Load font…	تحميل خط…
+	Loading…	يُحمَّل…
+	Local cross-PDF links require the desktop app	تتطلب الروابط المحلية بين ملفات PDF تطبيق سطح المكتب
+	Location: 	الموقع: 
+	Lock comment	قفل التعليق
+	Logical Reading Order	ترتيب القراءة المنطقي
+	Looking for PDFs…	جارٍ البحث عن ملفات PDF…
+	Looking for printers…	جارٍ البحث عن الطابعات…
+	Low resolution	دقة منخفضة
+	Low Resolution (150 dpi)	دقة منخفضة (150 dpi)
+	Make accessible	جعل المستند سهل الوصول
+	Make Current Properties Default	جعل الخصائص الحالية افتراضية
+	Make Properties Default	جعل الخصائص افتراضية
+	Make properties default	جعل الخصائص افتراضية
+	Make scans searchable, then make them smaller.	جعل الصفحات الممسوحة قابلة للبحث، ثم تصغير حجمها.
+	Manage embedded index	إدارة الفهرس المضمَّن
+	March	مارس
+calendar date	March	مارس
+	Margins (in)	الهوامش (بوصة)
+	Mark all	تعليم الكل
+	Mark as artifact	وضع علامة كعنصر زخرفي
+	Mark as comments	تعليم كتعليقات
+	Mark as Confidential	وسم بأنه سري
+	Mark content as artifact	وضع علامة على المحتوى كعنصر زخرفي
+	Mark differences	تعليم الفروق
+	Mark figure as decorative	تعليم الشكل كزخرفي
+	Mark for redaction	تعليم للحجب
+	Mark Page Range	تعليم نطاق صفحات
+	Mark pages for redaction	تعليم صفحات للحجب
+	Mark with checkmark	تعليم بعلامة صح
+	Marked	معلَّم
+	Markup	ترميز
+	Marquee zoom	تكبير بالتحديد
+	Mask:	القناع:
+	Match field sizes	مطابقة أحجام الحقول
+	Match page at 100%	مطابقة الورق للصفحة بنسبة 100%
+	maximum	الحد الأقصى
+	May	مايو
+calendar date	May	مايو
+	Measure area	قياس المساحة
+	Measure distance	قياس المسافة
+	Measure objects	قياس الكائنات
+	Measure perimeter	قياس المحيط
+	Measurement information	معلومات القياس
+	Measurement snapping	انجذاب القياس
+	Measuring tool	أداة القياس
+	Menu	القائمة
+	Merge data files into spreadsheet…	دمج ملفات البيانات في جدول بيانات…
+	Merge image fragments	دمج أجزاء الصور
+	Merged 1 file into {path}	دُمج ملف واحد في {path}
+	Merged {n} files into {path}	دُمج {n} ملفات في {path}
+	Merging data files needs the desktop app	دمج ملفات البيانات يتطلب تطبيق سطح المكتب
+	metadata	بيانات وصفية
+	Microsoft Word (.docx)	Microsoft Word (.docx)
+	Midpoints	نقاط المنتصف
+	minimum	الحد الأدنى
+	Mixed	متباين
+calendar weekday	Mo	إثنين
+	Modify page	تعديل الصفحة
+	More options	خيارات أخرى
+	More options:	خيارات أخرى:
+	More ways to add files	طرق أخرى لإضافة الملفات
+	Mouse Down	ضغط زر الفأرة
+	Mouse Enter	دخول الفأرة
+	Mouse Exit	خروج الفأرة
+	Mouse Up	رفع زر الفأرة
+	Move bookmark	نقل الإشارة المرجعية
+	Move comment	نقل التعليق
+	Move down	نقل لأسفل
+	Move earlier	نقل للأمام
+	Move image	نقل الصورة
+	Move later	نقل للخلف
+	Move object	نقل عنصر
+	Move objects	نقل عناصر
+	Move page	نقل الصفحة
+	Move pages	نقل الصفحات
+	Move tag earlier	نقل العلامة للأعلى
+	Move tag later	نقل العلامة للأسفل
+	Move to group	نقل إلى مجموعة
+	Move up	نقل لأعلى
+	Multi-line	متعدد الأسطر
+	Multiple	متعدد
+	Multiple files	عدة ملفات
+	Multiple selection	تحديد متعدد
+	Multiple words or phrases	كلمات أو عبارات متعددة
+	Name on new comments	الاسم على التعليقات الجديدة
+	Named Destinations	الوجهات المسماة
+	Navigation links	روابط التنقل
+	Navigation links are not repetitive	روابط التنقل غير متكررة
+	Navigation tab	تبويب التنقل
+	needs an AI provider (off by default)	يتطلب مزوّد ذكاء اصطناعي (متوقف افتراضيًا)
+	Needs manual check	يحتاج إلى فحص يدوي
+	Negative number style:	نمط الأرقام السالبة:
+	Nested alternate text	نص بديل متداخل
+	New Action	إجراء جديد
+	New Action…	إجراء جديد…
+	New blank PDF	ملف PDF فارغ جديد
+	New bookmark	إشارة مرجعية جديدة
+	New bookmark ({key})	إشارة مرجعية جديدة ({key})
+	New bookmark (⌘B)	إشارة مرجعية جديدة (⌘B)
+	New bookmarks from structure	إشارات مرجعية جديدة من البنية
+	New file only	الملف الجديد فقط
+	New file:	الملف الجديد:
+	New file: {name}	الملف الجديد: {name}
+	New {tool} comments will look like this one	تعليقات {tool} الجديدة ستبدو مثل هذا التعليق
+	Next ({key})	التالي ({key})
+	Next (⌘G)	التالي (⌘G)
+	Next / previous match	التطابق التالي / السابق
+	Next figure	الشكل التالي
+	Next month	الشهر التالي
+	Next sheet	الورقة التالية
+	Next tab	علامة التبويب التالية
+	Next view	العرض التالي
+	No actions	لا توجد إجراءات
+	no alternate text	لا نص بديل
+	No changes allowed	لا يُسمح بأي تغييرات
+	No changes to save	لا تغييرات لحفظها
+	No check has run yet.	لم يُجرَ أي تحقق بعد.
+	No color	بلا لون
+	No colour	بلا لون
+	No comments match.	لا توجد تعليقات مطابقة.
+	No comments yet.	لا توجد تعليقات بعد.
+	No contributor data was built into this copy.	لم تُضمَّن بيانات المساهمين في هذه النسخة.
+	No differences in the text.	لا فروق في النص.
+	No digital IDs yet.	لا توجد معرّفات رقمية بعد.
+	No document language is set	لم تُحدد لغة المستند
+	No documents are open	لا توجد مستندات مفتوحة
+	No file chosen	لم يُختر ملف
+	No fill	بلا تعبئة
+	No fonts are referenced by the pages.	لا خطوط تشير إليها الصفحات.
+	No form fields were detected	لم تُكتشف أي حقول نموذج
+	no header cells (TH)	لا خلايا رأس (TH)
+	No inaccessible scripts	لا توجد سكربتات يتعذر الوصول إليها
+	No issues found	لم يُعثر على مشكلات
+	No links to remove	لا توجد روابط لإزالتها
+	No matches	لا توجد تطابقات
+	No matching tools	لا توجد أدوات مطابقة
+	No model credits were built into this copy.	لم يُضمَّن ذكر النماذج في هذه النسخة.
+	No openly licensed document fonts found. Load a font file.	لم يُعثر على خطوط ذات ترخيص مفتوح. حمّل ملف خط.
+	no output folder was chosen	لم يتم اختيار مجلد للإخراج
+	No page has text: the document appears to be images of pages	لا صفحة تحوي نصاً: يبدو المستند صوراً للصفحات
+	No pages match those choices	لا صفحات تطابق هذه الاختيارات
+	No pages selected	لم تُحدد صفحات
+	No PDFs found in {folder}	لم يُعثر على ملفات PDF في {folder}
+	No PDFs in this folder yet	لا توجد ملفات PDF في هذا المجلد بعد
+	No PDFs, images or text files found in {folder}	لم يُعثر على ملفات PDF أو صور أو ملفات نصية في {folder}
+	No photo chosen	لم تُختر صورة
+	No preview	لا معاينة
+	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	لم يُعثر على أي طابعة. تحقّق من أن الطابعة مثبّتة وأن خدمة التخزين المؤقت للطباعة تعمل، ثم افتح «طباعة» مرة أخرى.
+	No problems found: the document conforms to {level}.	لم يُعثر على مشكلات: المستند مطابق لـ {level}.
+	No security	بلا أمان
+	No sheets	لا أوراق
+	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	لم يُعثر على توقيع داخل الإطار. حرّك الإطار فوق التوقيع أو ارفع حساسية الحبر.
+	No status has been set.	لم تُعيَّن أي حالة.
+	no such document	لا يوجد مستند كهذا
+	no summary	لا ملخصاً
+	No unlinked web addresses were found in the text	لم يُعثر في النص على عناوين ويب غير مرتبطة
+	No untagged content was found.	لم يتم العثور على محتوى غير معلَّم.
+	no unused output name	لا يوجد اسم ناتج غير مستخدم
+	Non-Repudiation	عدم الجحود
+	none	لا شيء
+	None (prefix only)	لا شيء (البادئة فقط)
+	None found	لم يُعثر على شيء
+	None of those files can be made into a PDF; use PDFs, images or .txt files	لا يمكن تحويل أي من هذه الملفات إلى PDF؛ استخدم ملفات PDF أو صورًا أو ملفات .txt
+	None — everything is allowed	لا شيء — كل شيء مسموح
+scroll speed	Normal	عادية
+	Not allowed	غير مسموح
+	not in a Table, THead, TBody or TFoot	ليس في Table أو THead أو TBody أو TFoot
+	not in a TR	ليس في TR
+	not in an L (list)	ليس في L (قائمة)
+	not in an LI (list item)	ليس في LI (عنصر قائمة)
+	Not now	ليس الآن
+	Not present	غير موجود
+	Note	ملاحظة
+	nothing in the file matches this document	لا شيء في الملف يطابق هذا المستند
+	Nothing to redo	لا شيء لإعادته
+	nothing to redo	لا شيء لإعادته
+	Nothing to undo	لا شيء للتراجع عنه
+	nothing to undo	لا شيء للتراجع عنه
+	November	نوفمبر
+calendar date	November	نوفمبر
+	Number every page in the footer.	ترقيم كل صفحة في التذييل.
+	Number of pages	عدد الصفحات
+	Number pages	ترقيم الصفحات
+	Number pages…	ترقيم الصفحات…
+	October	أكتوبر
+calendar date	October	أكتوبر
+	Odd pages	الصفحات الفردية
+	Odd Pages Only	الصفحات الفردية فقط
+	of	من
+	of the following fields:	للحقول التالية:
+	of {name}	من {name}
+	of {pages}	من {pages}
+animation effects	Off	معطّلة
+	Offset from centre	الإزاحة عن المركز
+	Old file:	الملف القديم:
+	Old file: {name}	الملف القديم: {name}
+animation effects	On	مفعّلة
+	On Blur	عند فقدان التركيز
+	On Focus	عند التركيز
+	on page {label}	في الصفحة {label}
+	On the web, open or drop an image to convert it	على الويب، افتح صورة أو أفلتها لتحويلها
+	One word or phrase per line	كلمة أو عبارة واحدة في كل سطر
+	One {f} file per page, named after the document.	ملف {f} واحد لكل صفحة، يُسمى باسم المستند.
+	Only allow this if you trust the source document.	لا تسمح بذلك إلا إذا كنت تثق بالمستند المصدر.
+	Only change the colour of black text or line art	تغيير لون النص الأسود والخطوط فقط
+	Only checked properties will change. Mixed means the selected fields have different values.	الخصائص المؤشَّر عليها فقط ستتغير. «متباين» يعني أن للحقول المحددة قيمًا مختلفة.
+	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	تابع فقط إن كنت تثق بهذا المستند. العنوان قد يحمل معلومات من المستند، مثل ما كتبته في نموذجه.
+	Only the document's owner can change its security (open it with the permissions password)	مالك المستند وحده يستطيع تغيير أمانه (افتحه بكلمة مرور الأذونات)
+	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	يتغير محتوى الصفحة فقط: الروابط والتعليقات وحقول النموذج والإشارات المرجعية على الصفحات الأصلية تبقى.
+	Open a document first	افتح مستندًا أولًا
+	Open a PDF ({key})	فتح ملف PDF ({key})
+	Open a PDF (⌘O)	فتح PDF‏ (⌘O)
+	Open a PDF to measure it.	افتح ملف PDF لقياسه.
+	Open a web link	فتح رابط ويب
+	Open a web page	فتح صفحة ويب
+	Open accessibility report	فتح تقرير إمكانية الوصول
+	Open arrow	سهم مفتوح
+	Open email app	فتح تطبيق البريد
+	Open file	فتح ملف
+	Open folder	فتح المجلد
+	Open in a new tab	فتح في تبويب جديد
+	Open in Full Screen mode	الفتح في وضع ملء الشاشة
+	Open in Full Screen mode?	فتح في وضع ملء الشاشة؟
+	Open the file as it was saved then	فتح الملف كما حُفظ حينها
+	Open the older version first	افتح النسخة الأقدم أولًا
+	Open this local PDF?	هل تريد فتح ملف PDF المحلي هذا؟
+	Open this web page?	هل تريد فتح صفحة الويب هذه؟
+	Open to page	الفتح على الصفحة
+	open to see what it will include	افتح لترى ما سيتضمنه
+	Opened with	فُتح بـ
+	Opened, but its security settings don't allow combining. Enter the permissions password.	فُتح، لكن إعدادات أمانه لا تسمح بالدمج. أدخل كلمة مرور الأذونات.
+	Opening the browser's print dialog…	جارٍ فتح مربع حوار الطباعة في المتصفح…
+	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	يفتح تفضيلات تعريف الطابعة. تُحفظ لكل طباعة من هذا الحاسوب؛ عدد النسخ والطباعة على الوجهين وتدرج الرمادي والورق المختارة هنا تبقى سارية.
+	Optimization cancelled	أُلغي التحسين
+	Optimization is already running	التحسين قيد التشغيل بالفعل
+	Optimize	تحسين
+	Optimize PDF…	تحسين PDF…
+	Optimize Scanned Documents	تحسين المستندات الممسوحة ضوئيًا
+	Optimize scanned documents	تحسين المستندات الممسوحة ضوئيًا
+	Optimize scanned documents…	تحسين المستندات الممسوحة ضوئيًا…
+	Optimizing… cleaning up	جارٍ التحسين… التنظيف
+	Optimizing… image {d} of {t}	جارٍ التحسين… الصورة {d} من {t}
+	Optimizing… merging identical objects	جارٍ التحسين… دمج الكائنات المتطابقة
+	Optimizing… merging image fragments	جارٍ التحسين… دمج أجزاء الصور
+	Optimizing… removing user data	جارٍ التحسين… إزالة بيانات المستخدم
+	Optimizing… writing the copy	جارٍ التحسين… كتابة النسخة
+	Optional	اختياري
+	Optional: needs an AI provider you configure	اختياري: يتطلب مزوّد ذكاء اصطناعي تضبطه أنت
+	Organization Name	اسم المؤسسة
+	Organizational Unit	الوحدة التنظيمية
+	Organize	تنظيم
+	Organize pages	تنظيم الصفحات
+	Original: replace pages	الأصل: استبدال الصفحات
+	other changes	تغييرات أخرى
+	Other colour…	لون آخر…
+	Other elements alternate text	النص البديل للعناصر الأخرى
+	Other elements that require alternate text	عناصر أخرى تتطلب نصًا بديلًا
+	Outdent	إزاحة للخارج
+	Outline colour:	لون الحد الخارجي:
+	Output appears here.	يظهر الناتج هنا.
+	Output intent: {list}	هدف الإخراج: {list}
+	Output preview	معاينة الإخراج
+	Owner password (no restrictions apply)	كلمة مرور المالك (لا تنطبق أي قيود)
+	Page background	خلفية الصفحة
+	Page Content	محتوى الصفحة
+	page content	محتوى الصفحة
+	Page display	عرض الصفحات
+	Page display: {layout}	عرض الصفحات: {layout}
+	Page does not require timed responses	الصفحة لا تتطلب استجابات مؤقتة
+	Page grid	شبكة الصفحات
+	Page labels	تسميات الصفحات
+	Page layout	تخطيط الصفحة
+	Page navigation	التنقل بين الصفحات
+	Page number	رقم الصفحة
+	Page Only	الصفحة فقط
+	Page options	خيارات الصفحة
+	Page order:	ترتيب الصفحات:
+	Page properties	خصائص الصفحة
+	Page Range	نطاق الصفحات
+	Page Range Options	خيارات نطاق الصفحات
+	Page size	حجم الصفحة
+	Page Sizing & Handling	حجم الصفحات ومعالجتها
+	Page thumbnails	مصغرات الصفحات
+	Page transitions	انتقالات الصفحات
+	Page will not cause screen flicker	الصفحة لن تسبب وميضًا في الشاشة
+	Page {label}	صفحة {label}
+	Page {n}	صفحة {n}
+	page {n} is out of range (1–{count})	الصفحة {n} خارج النطاق (1–{count})
+	Page {n} of {total}	صفحة {n} من {total}
+	Page {p} doesn't tab in structure order	الصفحة {p} لا تترتب بترتيب البنية
+	Page {p} of {n}	الصفحة {p} من {n}
+	Page {p}: {n} untagged content item	الصفحة {p}: {n} عنصر محتوى غير موسوم
+	Page {p}: {n} untagged content items	الصفحة {p}: {n} عناصر محتوى غير موسومة
+	Page {} has additional actions	للصفحة {} إجراءات إضافية
+	pages	صفحات
+	pages added or removed	صفحات أُضيفت أو حُذفت
+	Pages counted	الصفحات المحسوبة
+	Pages from	الصفحات من
+	Pages of {name} to combine, e.g. 1-3, 6	صفحات {name} المراد دمجها، مثلًا 1-3, 6
+	Pages Panel and Page	لوحة الصفحات والصفحة
+	Pages per file	صفحات لكل ملف
+	Pages per sheet:	صفحات لكل ورقة:
+	Pages selected	الصفحات المحددة
+	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	الصفحات التي ليست سوى صور لنص لا يمكن قراءتها بصوت أو البحث فيها. استخدم التعرف على النص (OCR) لإضافة طبقة نص.
+	Pages to Print	الصفحات المراد طباعتها
+	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	الصفحات التي تحتوي على روابط أو تعليقات أو حقول ينبغي أن يتبع التنقل فيها ترتيب البنية. يضبط الإصلاح ترتيب التنقل في كل صفحة على «استخدام بنية المستند».
+	Pages:	الصفحات:
+	Pages: {k} of {n}	الصفحات: {k} من {n}
+	Panel layout could not be restored: {error}	تعذرت استعادة تخطيط اللوحات: {error}
+	Panel move was not applied: {error}	لم يُطبَّق نقل اللوحة: {error}
+	Paper:	الورق:
+	Part of	جزء من
+	Passed	ناجح
+	Password protection will be applied when you save	ستُطبَّق الحماية بكلمة المرور عند الحفظ
+	Password required	كلمة المرور مطلوبة
+	Password security	أمان بكلمة مرور
+	Password-protected	محمي بكلمة مرور
+	Paste after	لصق بعد
+	Paste pages	لصق الصفحات
+	Patterns	الأنماط
+	Patterns (graphics objects)	الأنماط (كائنات رسومية)
+	PDF Optimizer	محسِّن PDF
+	PDF or image	PDF أو صورة
+	PDF page: {size}	صفحة PDF: {size}
+	PDF producer	منتِج PDF
+	PDF scale: {scale}%	مقياس PDF: {scale}%
+	PDF version	إصدار PDF
+	PDF, images and text	PDF وصور ونص
+	PDF/A…	PDF/A…
+	PdfCraft can't check this signature yet: {}.	لا يستطيع PdfCraft التحقق من هذا التوقيع بعد: {}.
+	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	لم يُغلق PdfCraft بشكل طبيعي. هذه المستندات فيها تغييرات حُفظت تلقائيًا:
+	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	يرسم PdfCraft دون معالج رسوميات، لذا قد يكون بطيئًا. تحديث تعريف بطاقة الرسوميات قد يفيد.
+	PdfCraft on GitHub	PdfCraft على GitHub
+	PdfCraft web page	صفحة PdfCraft على الويب
+	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	يعمل PdfCraft دون اتصال. لا قياس عن بُعد ولا حساب ولا معالجة سحابية إلا إذا أضفت مزوّدًا.
+	PdfCraft {c} is up to date.	PdfCraft {c} محدَّث.
+	PdfCraft {v} is available.	PdfCraft {v} متاح.
+	People may need more time to respond. Check that nothing has a time limit.	قد يحتاج الناس إلى وقت أطول للاستجابة. تحقق من أن لا شيء له مهلة زمنية.
+	Permissions password	كلمة مرور الأذونات
+	Permitted actions after certifying	الإجراءات المسموح بها بعد التصديق
+	Phone Number	رقم الهاتف
+	Phone Numbers	أرقام الهواتف
+	Pick a tool in the quick bar, or type above.	اختر أداة من الشريط السريع، أو اكتب أعلاه.
+	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	الصور تحتاج إلى نص بديل يصفها، أو يجب تعليمها كزخرفية. أضف نصًا بديلًا لكل شكل.
+	Pictures on those pages are recognized too; words already in the page's text are not added again	يُتعرَّف على الصور في هذه الصفحات أيضًا، ولا تُضاف مرة أخرى الكلمات الموجودة بالفعل في نص الصفحة
+	Pin a folder to Home	تثبيت مجلد في الصفحة الرئيسية
+	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	ثبّت مجلدًا لعرض أحدث ملفات PDF فيه هنا، مثل المجلد الذي يحفظ فيه الماسح الضوئي أو قرص سحابي مُزامَن.
+	Pin a folder…	تثبيت مجلد…
+	Pin folder to Home…	تثبيت مجلد في الصفحة الرئيسية…
+	Pinned folders need the desktop app	المجلدات المثبتة تتطلب تطبيق سطح المكتب
+	Pinned {folder} to Home	تم تثبيت {folder} في الصفحة الرئيسية
+	Place saved {what}	وضع {what} المحفوظ
+	Plain text in reading order; pages are separated by form feeds.	نص عادي بترتيب القراءة؛ تُفصل الصفحات بمحارف تغذية الصفحة.
+	Planned	مخطط له
+	Planned for milestone	مخطط له في المرحلة
+	Planned for milestone {m} — open to see what it will include	مخطط له في المرحلة {m} — افتح لترى ما سيتضمنه
+	Planned · {m}	مخطط له · {m}
+	Points from the page's bottom-left corner.	بالنقاط من الزاوية السفلية اليسرى للصفحة.
+	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	الوضع المحمول متوقف: تتعذر الكتابة في {folder} ({error}). تُحفظ الإعدادات في مجلد المستخدم بدلًا منه.
+	Portrait Pages	الصفحات العمودية
+	Portrait pages	الصفحات العمودية
+	Post	نشر
+	PostScript / EPS	PostScript / EPS
+	PostScript XObjects aren't allowed	كائنات PostScript XObject غير مسموح بها
+	Preflight	فحص ما قبل الطباعة
+	Prepare a form	تجهيز نموذج
+	Prepare for accessibility	التجهيز لإمكانية الوصول
+	Prepare for Distribution	التجهيز للتوزيع
+	Prepare for distribution	التجهيز للتوزيع
+	Prepare for distribution…	التجهيز للتوزيع…
+	Preparing sheet {done} of {total} for printing…	جارٍ تجهيز الورقة {done} من {total} للطباعة…
+	Preparing {n} sheets for printing…	جارٍ تجهيز {n} من الأوراق للطباعة…
+	Presentation (.pptx)	عرض تقديمي (.pptx)
+	Preview unavailable: {e}	المعاينة غير متاحة: {e}
+	Preview: page {p} of {n}	معاينة: صفحة {p} من {n}
+	Previous ({key})	السابق ({key})
+	Previous (⇧⌘G)	السابق (⇧⌘G)
+	Previous / next page	الصفحة السابقة / التالية
+	Previous figure	الشكل السابق
+	Previous month	الشهر السابق
+	Previous sheet	الورقة السابقة
+	Previous tab	علامة التبويب السابقة
+	Previous view	العرض السابق
+	Primary language	اللغة الأساسية
+	Print ({key})	طباعة ({key})
+	Print (⌘P)	طباعة (⌘P)
+	Print as image	الطباعة كصورة
+	Print in grayscale	طباعة بتدرج الرمادي
+	Print page border	طباعة حد الصفحة
+	Print production	إنتاج الطباعة
+	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	اطبع على وجه واحد. أبقِ الأوراق بترتيبها، وقص عند العلامات، ثم كدّس الرزم من اليسار إلى اليمين ومن الأعلى إلى الأسفل.
+	Print, NextPage, PrevPage, FirstPage or LastPage	Print أو NextPage أو PrevPage أو FirstPage أو LastPage
+	Printer paper and scaling may differ. Check driver settings.	قد يختلف ورق الطابعة ومقياس الطباعة. تحقق من إعدادات برنامج التشغيل.
+	Printer properties	خصائص الطابعة
+	Printing allowed	الطباعة المسموح بها
+	Privacy	الخصوصية
+	Private data of other applications	البيانات الخاصة بالتطبيقات الأخرى
+	Producer	المنتج
+	product (x)	حاصل الضرب (x)
+	Properties…	خصائص…
+	Protect a PDF	حماية ملف PDF
+	Protect Using Password	حماية بكلمة مرور
+	Protect using password…	حماية بكلمة مرور…
+	Protect with password	حماية بكلمة مرور
+	Protected: the combined file won't keep its security settings	محمي: الملف المدموج لن يحتفظ بإعدادات أمانه
+	Public key	المفتاح العام
+certificate	Public key	المفتاح العام
+	PushButton	زر ضغط
+	Radio	زر اختيار
+	Radio button	زر اختيار
+	Radio Button Properties	خصائص زر الاختيار
+	Re-type Password	أعد كتابة كلمة المرور
+	Read	قراءة
+	Read mode	وضع القراءة
+	Read Only	للقراءة فقط
+	Reading colours	ألوان القراءة
+	Reason	السبب
+	Reason: 	السبب: 
+	Recent colours	الألوان الأخيرة
+	Recognize Text	التعرف على النص
+	Recognize text	التعرف على النص
+	Recognize text in multiple files…	التعرف على النص في عدة ملفات…
+	Recognize Text…	التعرف على النص…
+	Recognize text…	التعرف على النص…
+	Recognized 1 word	تم التعرف على كلمة واحدة
+	Recognized {n} words	تم التعرف على {n} كلمات
+	Recognized {w} words in 1 file	تم التعرف على {w} كلمات في ملف واحد
+	Recognized {w} words in {n} files	تم التعرف على {w} كلمات في {n} ملفات
+	Recognizing text… file {d} of {t}	جارٍ التعرف على النص… الملف {d} من {t}
+	Recognizing text… page {d} of {t}	جارٍ التعرف على النص… الصفحة {d} من {t}
+	Recommended tools	أدوات مقترحة
+	Recover unsaved documents?	استعادة المستندات غير المحفوظة؟
+	Redact	حجب
+	Redact a PDF	حجب محتوى ملف PDF
+	Redact all	حجب الكل
+	Redact Image	حجب الصورة
+	Redact pages	حجب صفحات
+	Redact pages…	حجب صفحات…
+	Redact text and images	حجب النص والصور
+	Redacted area fill colour:	لون تعبئة المنطقة المحجوبة:
+	Redaction code:	رمز الحجب:
+	Redaction mark appearance	مظهر علامة الحجب
+	Redaction properties…	خصائص الحجب…
+	Redaction Tool Properties	خصائص أداة الحجب
+	Redid {label}	تمت إعادة {label}
+	Redo {action}	إعادة {action}
+	Reduce file size	تقليل حجم الملف
+	Reduce file size…	تقليل حجم الملف…
+	Regularity	الانتظام
+	Rejected	مرفوض
+	Reliable character encoding is provided	ترميز محارف موثوق متوفر
+	Reload documents when their files change on disk	إعادة تحميل المستندات عند تغيّر ملفاتها على القرص
+	Remove "{name}" from this list? The file itself is not deleted.	إزالة "{name}" من هذه القائمة؟ لن يُحذف الملف نفسه.
+	Remove all links	إزالة كل الروابط
+	Remove background	إزالة الخلفية
+	Remove checkmark	إزالة علامة الصح
+	Remove Crop	إزالة القص
+	Remove from Recent	إزالة من الأخيرة
+	Remove header & footer	إزالة الرأس والتذييل
+	Remove hidden information	إزالة المعلومات المخفية
+	Remove hidden information and flatten comments and form fields, so recipients see only the pages.	إزالة المعلومات المخفية وتسطيح التعليقات وحقول النموذج، كي لا يرى المستلمون سوى الصفحات.
+	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	إزالة المعلومات المخفية والبيانات الوصفية والسكربتات والمحتوى المضمَّن، وإعادة كتابة الملفات.
+	Remove hidden information…	إزالة المعلومات المخفية…
+	Remove invalid links and bookmarks	إزالة الروابط والإشارات المرجعية غير الصالحة
+	Remove page	إزالة الصفحة
+	Remove redaction marks	إزالة علامات الحجب
+	Remove saved {what}	إزالة {what} المحفوظ
+	Remove security	إزالة الحماية
+	Remove this leaf tag from reading order and mark its direct content as an artifact	أزل هذه العلامة من ترتيب القراءة وضع علامة على محتواها المباشر كعنصر زخرفي
+	Remove unreferenced named destinations	إزالة الوجهات المسماة غير المشار إليها
+	Remove unused objects and merge identical ones	إزالة الكائنات غير المستخدمة ودمج المتطابقة
+	Remove watermark	إزالة العلامة المائية
+	Remove {name}	إزالة {name}
+	Remove {name} from Recent	إزالة {name} من الأخيرة
+	Remove {n} files	إزالة {n} ملفات
+	Remove {n} pages	إزالة {n} صفحات
+	Removed 1 hidden item. Save to remove them from the file.	أُزيل عنصر مخفي واحد. احفظ لإزالته من الملف.
+	Removed 1 link	تمت إزالة رابط واحد
+	Removed {n} hidden items. Save to remove them from the file.	أُزيل {n} عناصر مخفية. احفظ لإزالتها من الملف.
+	Removed {n} links	الروابط التي أزيلت: {n}
+	Rename bookmark	إعادة تسمية الإشارة المرجعية
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	العرض: hayro (مبدئي) · الواجهة: egui · الأيقونات: Lucide (ISC) · الخطوط: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering…	يُعرض…
+	Reopen Closed Tab	إعادة فتح علامة التبويب المغلقة
+	Reopen the files that were open when PdfCraft last closed	إعادة فتح الملفات التي كانت مفتوحة عند آخر إغلاق لـ PdfCraft
+	Repair log	سجل الإصلاح
+	Repairs	الإصلاحات
+	Repeat overlay text	تكرار نص التراكب
+	Repeated navigation links should be skippable. Check links that appear on every page.	روابط التنقل المتكررة ينبغي أن يمكن تخطيها. افحص الروابط التي تظهر في كل صفحة.
+	Replace document colours	استبدال ألوان المستند
+	Replace image	استبدال الصورة
+	Replace Image…	استبدال الصورة…
+	Replace page	استبدال الصفحة
+	Replace Pages	استبدال الصفحات
+	Replace pages	استبدال الصفحات
+	Replace pages…	استبدال صفحات…
+	Replace text	استبدال نص
+	Replaced	مستبدَل
+	Replacement text	النص البديل
+	Replacement: pages of {name}	البديل: صفحات {name}
+	Replaces the existing one on those pages.	يستبدل الموجود على تلك الصفحات.
+	Replacing images arrives on the web with image file pickers	استبدال الصور سيتوفر على الويب مع منتقيات ملفات الصور
+	Replacing images on page {p} arrives on the web with image pickers ({i})	استبدال الصور في الصفحة {p} سيتوفر على الويب مع منتقيات الصور ({i})
+	Report created	أُنشئ التقرير
+	Report Options	خيارات التقرير
+	Report…	تقرير…
+	Required	مطلوب
+	Requires user to enter a password for:	يتطلب من المستخدم إدخال كلمة مرور من أجل:
+	Reset a form	إعادة ضبط نموذج
+	Reset columns	إعادة ضبط الأعمدة
+	Reset page size	إعادة ضبط حجم الصفحة
+	Reset panel layout	إعادة تعيين تخطيط اللوحات
+	Reset to printer defaults	إعادة الضبط إلى افتراضيات الطابعة
+	Resize comment	تغيير حجم التعليق
+	Resize window to initial page	تغيير حجم النافذة ليلائم الصفحة الأولى
+	Restrictions	القيود
+	Restrictions lifted	رُفعت القيود
+	Retain existing	الإبقاء على الحالي
+	Rev. {rev}: Certified by an unknown signer	المراجعة {rev}: معتمد من موقّع مجهول
+	Rev. {rev}: Certified by {name}	المراجعة {rev}: معتمد من {name}
+	Rev. {rev}: Signed by an unknown signer	المراجعة {rev}: موقع من موقع مجهول
+	Rev. {rev}: Signed by {name}	المراجعة {rev}: موقع من {name}
+	Reveal in File Explorer	إظهار في مستكشف الملفات
+	Reverse closed arrow	سهم مغلق معكوس
+	Reverse open arrow	سهم مفتوح معكوس
+	Reverse pages	عكس ترتيب الصفحات
+	Revert changes	التراجع عن التغييرات
+	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	هل تريد الرجوع إلى آخر نسخة محفوظة من «{name}»؟ لا يمكن التراجع بعدها عن التغييرات التي أُجريت منذ ذلك الحين.
+	Reverted to the last saved version	تم الرجوع إلى آخر نسخة محفوظة
+	Review History	سجل المراجعة
+	Revisions	المراجعات
+	Rich Text Format (.rtf)	تنسيق النص الغني (.rtf)
+	Right Edge	الحافة اليمنى
+	Right Footer Text	نص التذييل الأيمن
+	Right Header Text	نص الرأس الأيمن
+	Rotate Clockwise	تدوير مع عقارب الساعة
+	Rotate clockwise	تدوير مع عقارب الساعة
+	Rotate Counterclockwise	تدوير عكس عقارب الساعة
+	Rotate counterclockwise	تدوير عكس عقارب الساعة
+	Rotate image	تدوير الصورة
+	Rotate page	تدوير الصفحة
+	Rotate page {label} clockwise	تدوير الصفحة {label} باتجاه عقارب الساعة
+	Rotate page {label} counterclockwise	تدوير الصفحة {label} عكس اتجاه عقارب الساعة
+	Rotate Pages	تدوير الصفحات
+	Rotate pages	تدوير الصفحات
+	Rotate pages clockwise	تدوير الصفحات مع عقارب الساعة
+	Rotate pages counterclockwise	تدوير الصفحات عكس عقارب الساعة
+	Rotate pages…	تدوير الصفحات…
+	Rotate view	تدوير العرض
+	Rotate view clockwise	تدوير العرض مع عقارب الساعة
+	Rotate view clockwise ({key})	تدوير العرض مع عقارب الساعة ({key})
+	Rotate view clockwise (⇧⌘+)	تدوير العرض مع عقارب الساعة (⇧⌘+)
+	Rotate view counterclockwise	تدوير العرض عكس عقارب الساعة
+	rows have between {min} and {max} columns	للصفوف بين {min} و{max} عموداً
+	Rule Name	اسم القاعدة
+	Run	تشغيل
+	Run a JavaScript	تشغيل سكربت JavaScript
+	Run form script	تشغيل سكربت النموذج
+	Run JavaScript	تشغيل JavaScript
+	Running action… file {d} of {t}	جارٍ تشغيل الإجراء… الملف {d} من {t}
+calendar weekday	Sa	سبت
+	Same as interface ({language})	مثل الواجهة ({language})
+	Sanitize	تنظيف
+	Sanitize document	تنظيف المستند
+	Sanitize Documents	تنظيف المستندات
+	Sanitize document…	تنظيف المستند…
+	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	التنظيف يزيل المعلومات المخفية من المستند: البيانات الوصفية والملفات المرفقة والتعليقات وحقول النموذج (تُسطَّح) والنص المخفي والطبقات المخفية والإشارات المرجعية والروابط والإجراءات والسكربتات والبيانات الخاصة بالتطبيقات.
+	Save & Close	حفظ وإغلاق
+	Save (M4)	حفظ (M4)
+	Save ({key})	حفظ ({key})
+	Save anyway	الحفظ على أي حال
+	Save as PDF/A	حفظ بصيغة PDF/A
+	Save as PDF/A-1b	حفظ بصيغة PDF/A-1b
+	Save as PDF/A-2b	حفظ بصيغة PDF/A-2b
+	Save as PDF/A-3b	حفظ بصيغة PDF/A-3b
+	Save as PDF/UA	حفظ بصيغة PDF/UA
+	Save as PDF/X	حفظ بصيغة PDF/X
+	Save as {level}	حفظ كـ {level}
+	Save as…	حفظ باسم…
+	Save attachment…	حفظ المرفق…
+	Save changes to “{name}” before closing?	هل تريد حفظ التغييرات في «{name}» قبل الإغلاق؟
+	Save changes?	حفظ التغييرات؟
+	Save file	حفظ الملف
+	Save image	حفظ الصورة
+	Save Image As…	حفظ الصورة باسم…
+	Save or revert changes before selecting another tag.	احفظ التغييرات أو تراجع عنها قبل تحديد وسم آخر.
+	Save over the changed file?	الحفظ فوق الملف الذي تغيّر؟
+	Save pages	حفظ الصفحات
+	Save tag properties	حفظ خصائص الوسم
+	Save the accessibility report	حفظ تقرير إمكانية الوصول
+	Save the document afterwards: saving rewrites the whole file so no trace of the removed content stays in it.	احفظ المستند بعد ذلك: الحفظ يعيد كتابة الملف كله كي لا يبقى فيه أثر للمحتوى المُزال.
+	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	احفظ المستند بعد ذلك؛ الحفظ يعيد كتابة الملف كله كي لا يبقى فيه شيء مما أُزيل.
+	Save the spreadsheet	حفظ جدول البيانات
+	Save these pages as one PDF	حفظ هذه الصفحات كملف PDF واحد
+	Saved measurements	القياسات المحفوظة
+	Saved measurements.	حُفظت القياسات.
+	Saved the print-ready PDF to {path}	تم حفظ ملف PDF الجاهز للطباعة في {path}
+	Saved {name}	تم حفظ {name}
+	Saved {place}: {before} → {after} (not smaller){detail}	تم الحفظ {place}: {before} → {after} (ليس أصغر){detail}
+	Saved {place}: {before} → {after} ({pct}% smaller){detail}	تم الحفظ {place}: {before} → {after} (أصغر بنسبة {pct}%){detail}
+	Saved, but reopening failed: {e}	تم الحفظ، لكن فشلت إعادة الفتح: {e}
+	Scale relative to target page	المقياس نسبةً إلى الصفحة الهدف
+	Scan	مسح ضوئي
+	Scan & OCR	مسح ضوئي وتعرف على النص
+	Screen flicker	وميض الشاشة
+	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	قارئات الشاشة تختار صوتها من لغة المستند. عيّنها في خصائص المستند > خيارات متقدمة > اللغة.
+	Script Name:	اسم السكربت:
+	Script:	السكربت:
+	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	المحتوى المبرمج يجب أن يكون قابلًا للاستخدام بلوحة المفاتيح والتقنيات المساعدة. افحص سكربتات المستند.
+	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	تعمل السكربتات في بيئة معزولة دون وصول إلى الملفات أو الشبكة. السكربت الذي يطلب فتح صفحة ويب يحتاج إلى إذنك أولًا. عند إيقاف JavaScript تبقى دوال Acrobat القياسية للتنسيق والتحقق والحساب تعمل.
+	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	تعمل السكربتات في بيئة معزولة دون وصول إلى الملفات أو الشبكة. عند إيقاف JavaScript تبقى دوال Acrobat القياسية للتنسيق والتحقق والحساب تعمل.
+	Scroll long text	تمرير النص الطويل
+	Scroll speed (mouse wheel and arrow keys)	سرعة التمرير (عجلة الفأرة ومفاتيح الأسهم)
+	Scroll tabs left	تمرير التبويبات يسارًا
+	Scroll tabs right	تمرير التبويبات يمينًا
+	Search comments	البحث في التعليقات
+	Search results	نتائج البحث
+	Search tools and commands…	البحث في الأدوات والأوامر…
+	Searchable Image (Exact)	صورة قابلة للبحث (مطابقة)
+	Searching… {s} of {p} pages	جارٍ البحث… {s} من {p} صفحات
+	Searching… {s}/{p}	جارٍ البحث… {s}/{p}
+	Security method	طريقة الأمان
+	Security properties	خصائص الأمان
+	Security properties…	خصائص الأمان…
+	Security settings	إعدادات الأمان
+	Security settings must allow assistive technology to read the content ("Enable text access for screen reader devices"). Change the document's security to allow it.	يجب أن تسمح إعدادات الأمان للتقنيات المساعدة بقراءة المحتوى ("Enable text access for screen reader devices"). غيّر أمان المستند ليسمح بذلك.
+	Security will be removed when you save	سيُزال الأمان عند الحفظ
+	Select (V)	تحديد (V)
+	Select a file first	حدد ملفًا أولًا
+	Select a file for the stamp	حدد ملفًا للختم
+	Select a password-protected file first	حدد أولًا ملفًا محميًا بكلمة مرور
+	Select a word	تحديد كلمة
+	Select Action:	اختر الإجراء:
+	Select all	تحديد الكل
+	Select all pages (Organize)	تحديد كل الصفحات (تنظيم)
+	Select at most 1000 objects at a time.	حدد 1000 عنصر كحد أقصى في المرة الواحدة.
+	Select data files to merge	حدد ملفات البيانات المراد دمجها
+	Select files to compare	تحديد الملفات للمقارنة
+	Select format category:	اختر فئة التنسيق:
+	Select Icon	اختر أيقونة
+	Select page {label}	تحديد الصفحة {label}
+	Select pages	تحديد الصفحات
+	Select the items to remove from this document.	حدد العناصر المراد إزالتها من هذا المستند.
+	Select Trigger:	اختر المشغِّل:
+	Selected image files: {count}	ملفات الصور المحددة: {count}
+	Self-signed	موقَّع ذاتيًا
+certificate	Self-signed	ذاتي التوقيع
+	Sending sheet {s} of {n} to {printer}…	جارٍ إرسال الورقة {s} من {n} إلى {printer}…
+	Sending to {printer}…	جارٍ الإرسال إلى {printer}…
+	Sent to {printer}: {msg}	أُرسل إلى {printer}: {msg}
+	Separate PDFs	ملفات PDF منفصلة
+	Separator style:	نمط الفاصل:
+	September	سبتمبر
+calendar date	September	سبتمبر
+	Serial number	الرقم التسلسلي
+certificate	Serial number	الرقم التسلسلي
+	Set Alternate Text	تعيين النص البديل
+	Set alternate text	تعيين النص البديل
+	Set bookmark destination	تعيين وجهة الإشارة المرجعية
+	Set document title	تعيين عنوان المستند
+	Set Fields to Same Size	جعل الحقول بالحجم نفسه
+	Set layer visibility	ضبط ظهور الطبقة
+	Set measurement scale	ضبط مقياس القياس
+	Set Page Boxes	ضبط مربعات الصفحة
+	Set page boxes	ضبط مربعات الصفحة
+	Set page boxes…	ضبط مربعات الصفحة…
+	Set page transitions	تعيين انتقالات الصفحات
+	Set properties	ضبط الخصائص
+	Set status	تعيين الحالة
+	Set status Accepted	تعيين الحالة: مقبول
+	Set status Cancelled	تعيين الحالة: ملغى
+	Set status Completed	تعيين الحالة: مكتمل
+	Set status None	تعيين الحالة: لا شيء
+	Set status Rejected	تعيين الحالة: مرفوض
+	Set status Unmarked	تعيين الحالة: غير معلَّم
+	Set tab order	ضبط ترتيب التنقل
+	Set the image of {name}	تعيين صورة {name}
+	Set to current page ({n})	تعيين إلى الصفحة الحالية ({n})
+	Set to zero	تصفير
+	SHA-1 digest	بصمة SHA-1
+certificate	SHA-1 digest	بصمة SHA-1
+	SHA-256 digest	بصمة SHA-256
+certificate	SHA-256 digest	بصمة SHA-256
+	Shadings	التظليلات
+	Shared Field Properties	خصائص الحقول المشتركة
+	Sheet {s} of {n}	الورقة {s} من {n}
+key	Shift	Shift
+	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift يقيّد الزاوية بمضاعفات 45 درجة. Backspace يزيل رأسًا. Escape يلغي.
+	Shift- or Ctrl/Command-click to select several fields.	انقر مع Shift أو Ctrl/Command لتحديد عدة حقول.
+	Shift-click to select several objects. Drag empty space to select an area.	انقر مع الضغط على Shift لتحديد عدة عناصر. اسحب في مساحة فارغة لتحديد منطقة.
+	ships in milestone {m}	يصدر في المرحلة {m}
+	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	إظهار شريط عنوان بسيط لأزرار النافذة بدلًا من شريط الألسنة. لا يرسم GNOME أشرطة العناوين للتطبيقات، لذلك لا يتبع هذا الشريط سمته.
+	Show a field	إظهار حقل
+	Show all	إظهار الكل
+	Show all comments	إظهار كل التعليقات
+	Show certificate…	إظهار الشهادة…
+	Show cover page in two-page view	إظهار صفحة الغلاف في عرض الصفحتين
+	Show layer	إظهار الطبقة
+	Show less	عرض أقل
+	Show password	إظهار كلمة المرور
+	Show Report	إظهار التقرير
+	Show the accessibility report	إظهار تقرير إمكانية الوصول
+	Show this dialog when the Checker starts	إظهار هذا الحوار عند بدء المدقق
+	Show {n} more	عرض {n} أخرى
+	Shown while the pointer is over a mark.	يظهر أثناء وجود المؤشر فوق علامة.
+	Shrink oversized pages	تصغير الصفحات الزائدة الحجم
+	Side by side	جنبًا إلى جنب
+	Side panels	اللوحات الجانبية
+	Sign	توقيع
+	Sign a sheet of white paper and take a photo of it in bright, even light (use the flash). Choose the photo or drop it here: PdfCraft finds the signature and removes the paper.	وقّع على ورقة بيضاء والتقط لها صورة في إضاءة ساطعة ومتساوية (استخدم الفلاش). اختر الصورة أو أفلتها هنا: يعثر PdfCraft على التوقيع ويزيل الورق.
+	Sign Here	وقّع هنا
+	Sign this field…	توقيع هذا الحقل…
+	Sign with a Digital ID	التوقيع بمعرّف رقمي
+	Sign yourself	وقّع بنفسك
+	Signature	توقيع
+	signature	توقيع
+	Signature Details	تفاصيل التوقيع
+	Signature is invalid	التوقيع غير صالح
+	Signature is INVALID:	التوقيع غير صالح:
+	Signature is valid	التوقيع صالح
+	Signature is valid:	التوقيع صالح:
+	Signature panel	لوحة التوقيعات
+	Signature validity is unknown	صلاحية التوقيع مجهولة
+	Signature validity is UNKNOWN:	صلاحية التوقيع غير معروفة:
+	Signatures	التوقيعات
+	Signatures panel	لوحة التوقيعات
+	Signed and all signatures are valid.	موقَّع وكل التوقيعات صالحة.
+	Signed and saved to {path}	تم التوقيع والحفظ في {path}
+	Signer	الموقِّع
+	Signer's name	اسم الموقّع
+	Signing time	وقت التوقيع
+	Signing time is from the clock on the signer's computer.	وقت التوقيع من ساعة حاسوب الموقّع.
+	Simplified field notation:	صيغة الحقول المبسطة:
+	Single file	ملف واحد
+	Single Page	صفحة واحدة
+	Single page	صفحة واحدة
+	Single Page Continuous	صفحة واحدة متواصلة
+	Single word or phrase	كلمة أو عبارة واحدة
+	Skip Rule	تخطي القاعدة
+	Skipped	تم تخطيه
+	Slash	شرطة مائلة
+scroll speed	Slow	بطيئة
+	Smaller pages	صفحات أصغر
+	Snap to drawing	الانجذاب إلى الرسم
+	Snapping	الانجذاب
+	Social Security Number	رقم الضمان الاجتماعي
+	Social Security Numbers	أرقام الضمان الاجتماعي
+	Solid	متصل
+	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	بعض الإشارات المرجعية غير معروضة هنا: تعرض اللوحة عددًا محدودًا منها، وبعمق تداخل محدود.
+	Some content could not be classified safely and was kept in the count.	تعذر تصنيف بعض المحتوى بشكل موثوق، لذا بقي ضمن العدد.
+	Some page content couldn't be read; snapping uses the rest.	تعذّرت قراءة بعض محتوى الصفحة؛ الانجذاب يستخدم الباقي.
+	Some pages contain no countable text. Scanned images need OCR first.	لا تحتوي بعض الصفحات على نص قابل للعد. تتطلب الصور الممسوحة ضوئيًا التعرف الضوئي على الحروف أولًا.
+	Sort comments by:	فرز التعليقات حسب:
+	Sort items	فرز العناصر
+	sorted ascending	مفروز تصاعديًا
+	sorted descending	مفروز تنازليًا
+key	Space	مسافة
+	Space Audit	تدقيق المساحة
+	Split document	تقسيم المستند
+	Split document…	تقسيم المستند…
+	Split into files…	تقسيم إلى ملفات…
+	Spreadsheet (.xlsx)	جدول بيانات (.xlsx)
+	Squiggly	متعرج
+	Squiggly underline	تسطير متعرج
+	Squiggly underline text	تسطير النص بخط متعرج
+	Stamp palette	لوحة الأختام
+	Stamps	الأختام
+	Standard Business	أعمال قياسية
+	Standards	المعايير
+	Start	البداية
+action wizard	Start	بدء
+	Start Checking	بدء الفحص
+	Start page number	رقم صفحة البداية
+	Steps	الخطوات
+	Sticky note	ملاحظة لاصقة
+	Still rendering — this page is unusually complex…	لا يزال العرض جارياً — هذه الصفحة معقدة على غير العادة…
+	Strength: {s}	القوة: {s}
+	Strikethrough text	شطب النص
+	Strong	قوية
+	Structure Info	معلومات البنية
+calendar weekday	Su	أحد
+certificate	Subject	صاحب الشهادة
+	Submit a form	إرسال نموذج
+	Success	نجاح
+	sum (+)	المجموع (+)
+	Summarize	تلخيص
+	Summarize comments	تلخيص التعليقات
+	Summarize Options	خيارات التلخيص
+	Switch light / dark theme	التبديل بين السمة الفاتحة والداكنة
+	Switch to List view to change the pages it takes.	انتقل إلى عرض القائمة لتغيير الصفحات التي يأخذها.
+	Switch to two-page view first to show the cover page	انتقل أولًا إلى عرض الصفحتين لإظهار صفحة الغلاف
+	Tab order	ترتيب التنقل
+	Tab order by columns	ترتيب التنقل حسب الأعمدة
+	Tab order by rows	ترتيب التنقل حسب الصفوف
+	Tab order is consistent with structure order	ترتيب التنقل متوافق مع ترتيب البنية
+	Tab order: by columns	ترتيب التنقل: حسب الأعمدة
+	Tab order: by document structure	ترتيب التنقل: حسب بنية المستند
+	Tab order: by rows	ترتيب التنقل: حسب الصفوف
+	Tab order: move a field with its arrows.	ترتيب التنقل: انقل الحقل بأسهمه.
+	Table cells belong in a row. Fix the table's tags.	خلايا الجدول مكانها داخل صف. أصلح وسوم الجدول.
+	Table rows belong directly in a table or its head, body or foot. Fix the table's tags.	صفوف الجدول مكانها مباشرة داخل جدول أو رأسه أو متنه أو تذييله. أصلح وسوم الجدول.
+	Tables must contain the same number of columns in each row and rows in each column	الجداول يجب أن تحتوي على العدد نفسه من الأعمدة في كل صف ومن الصفوف في كل عمود
+	Tables must have a summary	الجداول يجب أن يكون لها ملخص
+	Tables should have headers	الجداول ينبغي أن تكون لها رؤوس
+	Tag form fields	وضع علامات على حقول النموذج
+	Tag type	نوع الوسم
+	Tagged annotations	التعليقات التوضيحية الموسومة
+	Tagged content	المحتوى الموسوم
+	Tagged form fields	حقول النموذج الموسومة
+	Tagged multimedia	الوسائط المتعددة الموسومة
+	Tagged PDF	PDF موسوم
+	Tags	الوسوم
+	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	الوسوم تمنح المستند بنية منطقية تتبعها التقنيات المساعدة. وسّم المستند (وسم PDF تلقائيًا).
+	Tags panel	لوحة الوسوم
+	Take a snapshot	التقاط لقطة
+	Text (plain)	نص (عادي)
+	Text alignment:	محاذاة النص:
+	Text box	مربع نص
+	Text Color:	لون النص:
+	Text field	حقل نص
+	Text Field Properties	خصائص حقل النص
+	Text in images isn't found; recognise text (OCR) first.	النص داخل الصور لا يُعثر عليه؛ استخدم التعرف على النص (OCR) أولًا.
+	Text is compared word by word; the differences are shown on the new file.	يُقارَن النص كلمة بكلمة؛ وتُعرض الفروق على الملف الجديد.
+	Text language is specified	لغة النص محددة
+	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	يجب أن يتباين النص مع خلفيته بما يكفي لضعاف البصر. افحص الألوان بالعين أو بأداة تباين.
+	Text recognition is already running	التعرف على النص قيد التشغيل بالفعل
+	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	التعرف على النص غير مثبت: ملفات نماذجه مفقودة. أعد تثبيت PdfCraft، أو اضبط PDFCRAFT_MODELS على المجلد الذي يحتويها.
+	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	التعرف على النص غير مثبت: نماذجه مفقودة (شغّل `cargo xtask models`، أو اضبط PDFCRAFT_MODELS).
+	Text to find	النص المراد البحث عنه
+	Text to insert	النص المراد إدراجه
+	Text used as a clipping path cannot be moved with this selection.	لا يمكن نقل النص المستخدم كمسار قص مع هذا التحديد.
+	Text, marks and signatures become part of the page. Other comments stay editable.	النص والعلامات والتوقيعات تصبح جزءًا من الصفحة. التعليقات الأخرى تبقى قابلة للتحرير.
+calendar weekday	Th	خميس
+	TH and TD	TH و TD
+	TH and TD must be children of TR	TH و TD يجب أن يكونا ابنين لـ TR
+	Thai and Arabic use regular fallback fonts when available.	تستخدم التايلاندية والعربية خطوطًا بديلة بالنمط العادي عند توفرها.
+	That didn't work: an internal error stopped it ({m}).	لم ينجح ذلك: أوقفه خطأ داخلي ({m}).
+	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	لم ينجح ذلك: أوقفه خطأ داخلي ({m}). مستنداتك لم تتغير.
+	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	شهادة {} لا تسمح بهذا العدد من شهادات CA تحتها (طول المسار)، لذا لا تُستخدم للضمان عن {}.
+	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	شهادة {} ليست شهادة CA يجوز لها إصدار الشهادات، لذا لا تُستخدم للضمان عن {}.
+	The certificate of {} was not valid at the time of signing, so it is not used to vouch for {}.	شهادة {} لم تكن صالحة وقت التوقيع، لذا لا تُستخدم للضمان عن {}.
+	The checker found 1 problem which may prevent the document from being fully accessible.	عثر المدقق على مشكلة واحدة قد تمنع المستند من أن يكون سهل الوصول تمامًا.
+	The checker found no problems in this document.	لم يعثر المدقق على مشكلات في هذا المستند.
+	The checker found problems which may prevent the document from being fully accessible.	وجد الفاحص مشكلات قد تمنع وصولاً كاملاً إلى المستند.
+	The checker found {n} problems which may prevent the document from being fully accessible.	عثر المدقق على {n} مشكلات قد تمنع المستند من أن يكون سهل الوصول تمامًا.
+	The clipboard has no image or text	الحافظة لا تحتوي على صورة أو نص
+	The document changed while you were choosing a file, so nothing was changed.	تغيّر المستند أثناء اختيارك ملفًا، فلم يُغيَّر شيء.
+	The document changed while you were editing field properties.	تغيّر المستند أثناء تحريرك خصائص الحقل.
+	The document has additional actions (/AA)	المستند له إجراءات إضافية (/AA)
+	The document has been altered or corrupted since the signature was applied.	عُدّل المستند أو تلف منذ تطبيق التوقيع.
+	The document has been altered or corrupted since the timestamp was applied.	عُدّل المستند أو تلف منذ تطبيق الطابع الزمني.
+	The document has been altered since this signature was applied in ways it does not permit ({}).	عُدّل المستند منذ تطبيق هذا التوقيع بطرق لا يسمح بها ({}).
+	The document has been altered since this timestamp was applied in ways it does not permit ({}).	عُدّل المستند منذ تطبيق هذا الطابع الزمني بطرق لا يسمح بها ({}).
+	The document has been modified since this signature was applied, but the changes are permitted ({}).	عُدّل المستند منذ تطبيق هذا التوقيع، لكن التغييرات مسموحة ({}).
+	The document has been modified since this timestamp was applied, but the changes are permitted ({}).	عُدّل المستند منذ تطبيق هذا الطابع الزمني، لكن التغييرات مسموحة ({}).
+	The document has document-level JavaScript	المستند فيه JavaScript على مستوى المستند
+	the document has no form fields	المستند لا يحتوي على حقول نموذج
+	the document has no page tree	المستند ليس له شجرة صفحات
+	the document has no tags	المستند لا يحتوي على وسوم
+	The document has no tags (structure tree)	لا وسوم في المستند (شجرة البنية)
+	The document has no title	لا عنوان للمستند
+	The document has no XMP metadata	المستند لا يحتوي على بيانات وصفية XMP
+	The document is encrypted	المستند مشفَّر
+	The document is no longer open.	المستند لم يعد مفتوحًا.
+	the document is protected by a password	المستند محمي بكلمة مرور
+	The document isn't marked as tagged (MarkInfo Marked)	المستند غير معلّم كموسوم (MarkInfo Marked)
+	The document isn't tagged, so none of its content is	المستند غير موسوم، لذا لا شيء من محتواه موسوم
+	The document now conforms to {level}; save it to keep the changes	المستند مطابق الآن لـ {level}؛ احفظه للاحتفاظ بالتغييرات
+	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	يُفتح المستند دون كلمة مرور؛ كلمة المرور هذه لازمة لتغيير القيود. تُطبَّق عند الحفظ.
+	The document was closed before it could be saved.	أُغلق المستند قبل أن يمكن حفظه.
+	The document's embedded revocation information shows that the signer's certificate has not been revoked.	تُظهر معلومات الإلغاء المدمجة في المستند أن شهادة الموقّع لم تُلغَ.
+	The document's security settings don't allow copying text and images	إعدادات أمان المستند لا تسمح بنسخ النصوص والصور
+	The document's security settings don't allow filling in form fields	إعدادات أمان المستند لا تسمح بتعبئة حقول النموذج
+	The document's security settings don't allow this change	إعدادات أمان المستند لا تسمح بهذا التغيير
+	The ECDSA signature is not in canonical DER (trailing bytes, padding or a missing sign byte); it was read anyway.	توقيع ECDSA ليس بصيغة DER القياسية (بايتات زائدة أو حشو أو بايت إشارة ناقص)؛ قُرئ مع ذلك.
+	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	توقيع ECDSA هو قيمتا r وs الخام بدلاً من متتابعة DER؛ قُرئ مع ذلك.
+	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	رمز الطابع الزمني المدمج صالح وسلطته موثوقة؛ الوقت الموثوق هو {}.
+	The existing action will be preserved.	سيتم الاحتفاظ بالإجراء الحالي.
+	The field properties could not be changed.	تعذّر تغيير خصائص الحقل.
+	The field properties dialog is no longer open.	حوار خصائص الحقل لم يعد مفتوحًا.
+	The field {name} no longer exists.	الحقل {name} لم يعد موجودًا.
+	the first heading is an H{n}; headings should not skip levels	العنوان الأول H{n}؛ لا ينبغي للعناوين تخطي المستويات
+	The font {} isn't embedded	الخط {} غير مدمج
+	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	الخطوط التي يكتب بها PdfCraft لا تستطيع رسم «{c}» ({code})، لذا يظهر بشكل ? في كل برامج عرض PDF. النص محفوظ.
+	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	النموذج يطلب إرساله إلى {u}؛ PdfCraft لا يرسل بيانات النماذج. احفظ المستند للاحتفاظ بما أدخلته.
+	The form asks viewers to make appearances (NeedAppearances)	النموذج يطلب من العارضات إنشاء المظاهر (NeedAppearances)
+	The image has been copied ({w} × {h} pixels)	نُسخت الصورة ({w} × {h} بكسل)
+	The image has been copied as a {ext} file	نُسخت الصورة كملف {ext}
+	the image is empty	الصورة فارغة
+	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	المفتاح موجود في سلسلة مفاتيح macOS، وقد تطلب الإذن لـ PdfCraft باستخدامه.
+	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	المفتاح موجود في مخزن شهادات Windows، وقد يطلب الإذن لـ PdfCraft باستخدامه.
+	The Keychain's digital IDs couldn't be listed: {e}	تعذّر سرد المعرّفات الرقمية في سلسلة المفاتيح: {e}
+	The labels are in English: the signature's font can't draw them in this language.	التسميات بالإنجليزية: لا يستطيع خط التوقيع رسمها بهذه اللغة.
+	The linked PDF opened, but its named destination was not applied.	فُتح ملف PDF المرتبط، لكن لم تُطبَّق وجهته المسماة.
+	The linked PDF opened, but its page destination was out of range.	فُتح ملف PDF المرتبط، لكن وجهة الصفحة خارج النطاق.
+	The metadata doesn't identify the file as {}	البيانات الوصفية لا تحدد الملف كـ {}
+	The newest {n} of {total} PDFs	أحدث {n} من أصل {total} ملف PDF
+	The operation failed.	فشلت العملية.
+	The page has changed; select the image again	تغيّرت الصفحة؛ حدّد الصورة مرة أخرى
+	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	استُخرجت الصفحات لكنها لم تُحذف، لأن المستند تغيّر أثناء اختيارك مجلدًا.
+	the password is incorrect	كلمة المرور غير صحيحة
+	The password is incorrect.	كلمة المرور غير صحيحة.
+	The password is only used to read the file; it isn't saved.	تُستخدم كلمة المرور لقراءة الملف فقط؛ ولا تُحفظ.
+	The password must have at least 6 characters.	يجب أن تحوي كلمة المرور 6 محارف على الأقل.
+	The passwords do not match.	كلمتا المرور غير متطابقتين.
+	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	لا تستطيع خطوط نص PDF عرض «{c}» ({code}). اختر نصًا مدعومًا.
+	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	إعدادات تعريف الطابعة الخاصة بهذه الطباعة: درج الورق ونوع الورق والتشطيب وغيرها.
+	The replacement file doesn't have that many pages.	الملف البديل لا يحتوي على هذا العدد من الصفحات.
+	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	قيمة توقيع RSA ليست بطول معامل المفتاح (بايتات صفرية بادئة حُذفت أو أُضيفت)؛ قُرئ مع ذلك.
+	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	لا يحوي DigestInfo لتوقيع RSA معلمة NULL (كذلك تكتبها الموقّعات القديمة)؛ قُرئ مع ذلك.
+	The same password is tried on each file.	تُجرَّب كلمة المرور نفسها على كل ملف.
+	The security settings don't allow screen readers to read the text	إعدادات الأمان لا تسمح لقارئات الشاشة بقراءة النص
+	The selected area has been copied ({w} × {h} pixels)	نُسخت المنطقة المحددة ({w} × {h} بكسل)
+	The selected fields could not be found. Select them again.	تعذّر العثور على الحقول المحددة. حددها من جديد.
+	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	خوارزمية التوقيع وخوارزمية الهضم في SignerInfo تسمّيان هضمين مختلفين؛ صُنع التوقيع بخوارزمية SignerInfo.
+	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	يحمل التوقيع طابعاً زمنياً غير موثق ({}): سلطة الطابع الزمني ليست في قائمة شهاداتك الموثوقة، لذا يُستخدم وقت التوقيع الذي زعمه الموقّع بدلاً منه.
+	The signature contents are not hexadecimal.	محتويات التوقيع ليست سداسية عشرية.
+	The signature could not be checked ({}).	تعذر التحقق من التوقيع ({}).
+	The signature could not be read ({}).	تعذرت قراءة التوقيع ({}).
+	The signature could not be verified ({}).	تعذر التثبت من التوقيع ({}).
+	The signature has no valid byte range.	لا نطاق بايتات صالحاً للتوقيع.
+	The signature includes an embedded timestamp.	يتضمن التوقيع طابعاً زمنياً مدمجاً.
+	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	التوقيع مرمّز BER (أطوال غير محددة) لا DER؛ قُرئ بتساهل.
+	The signature uses the legacy adbe.x509.rsa_sha1 format.	يستخدم التوقيع تنسيق adbe.x509.rsa_sha1 القديم.
+	The signature value does not match the signer's certificate: the signature is corrupt.	قيمة التوقيع لا تطابق شهادة الموقّع: التوقيع تالف.
+	The signature will be invisible.	سيكون التوقيع غير مرئي.
+	The signature's byte range does not exclude exactly its contents.	نطاق بايتات التوقيع لا يستبعد محتوياته بالضبط.
+	The signature's byte range does not match the file.	نطاق بايتات التوقيع لا يطابق الملف.
+	The signature's timestamp token could not be verified ({}).	تعذر تثبت رمز الطابع الزمني للتوقيع ({}).
+	The signature's timestamp token does not cover the signature value.	رمز الطابع الزمني للتوقيع لا يغطي قيمة التوقيع.
+	The signed content is a constructed (segmented) OCTET STRING, as BER allows; it was read anyway.	المحتوى الموقّع OCTET STRING مركّب (مقسم) كما يسمح BER؛ قُرئ مع ذلك.
+	the signed version could not be read	تعذرت قراءة النسخة الموقعة
+	The signer's certificate does not allow digital signatures (its key usage has neither digital signature nor non-repudiation).	شهادة الموقّع لا تسمح بالتواقيع الرقمية (استخدام مفتاحها لا يضم توقيعاً رقمياً ولا عدم جحود).
+	The signer's certificate has been revoked ({}).	أُلغيت شهادة الموقّع ({}).
+	The signer's certificate has critical extensions PdfCraft does not recognize ({}).	لشهادة الموقّع امتدادات حرجة لا يتعرّف عليها PdfCraft ({}).
+	The signer's certificate is not in the signature.	شهادة الموقّع ليست في التوقيع.
+	The signer's certificate is not issued for signing documents (its extended key usage has no document-signing purpose).	شهادة الموقّع لم تُصدر لتوقيع المستندات (استخدامها الممتد للمفتاح لا يضم غرض توقيع مستندات).
+	The signer's certificate was not valid at the time of signing.	شهادة الموقّع لم تكن صالحة وقت التوقيع.
+	The signer's identity is unknown because it has not been included in your list of trusted certificates and none of its parent certificates are trusted certificates.	هوية الموقّع مجهولة لأنها ليست في قائمة شهاداتك الموثوقة ولا أي من شهاداتها الأم موثوقة.
+	The signer's identity is valid.	هوية الموقّع صحيحة.
+	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	الخطوط القياسية لا تستطيع رسم «{c}» ({code}). حاليًا يمكن إضافة محارف أوروبا الغربية فقط كنص.
+	The text is the same	النص متطابق
+	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	نماذج التعرف على النص غير مثبتة (أعد تثبيت PdfCraft، أو اضبط PDFCRAFT_MODELS على المجلد الذي يحتويها)
+	The timestamp authority's certificate was not valid at the time of timestamping.	شهادة سلطة الطابع الزمني لم تكن صالحة وقت التوقيت.
+	The timestamp contents are not hexadecimal.	محتويات الطابع الزمني ليست سداسية عشرية.
+	The timestamp has no valid byte range.	لا نطاق بايتات صالحاً للطابع الزمني.
+	The timestamp token could not be read ({}).	تعذرت قراءة رمز الطابع الزمني ({}).
+	The timestamp token is valid and its authority is trusted.	رمز الطابع الزمني صالح وسلطته موثوقة.
+	The timestamp token is valid, but the timestamp authority is not in your list of trusted certificates.	رمز الطابع الزمني صالح، لكن سلطة الطابع الزمني ليست في قائمة شهاداتك الموثوقة.
+	The timestamp's byte range does not exclude exactly its contents.	نطاق بايتات الطابع الزمني لا يستبعد محتوياته بالضبط.
+	The timestamp's byte range does not match the file.	نطاق بايتات الطابع الزمني لا يطابق الملف.
+	The title in the metadata and the document information differ	العنوان في البيانات الوصفية يختلف عنه في معلومات المستند
+	the title must not be empty	يجب ألا يكون العنوان فارغًا
+	The value is shown as typed.	تُعرض القيمة كما كُتبت.
+	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	ينبغي أن تعرض النافذة عنوانًا ذا معنى لا اسم الملف. عيّن عنوانًا واختر العرض الأولي > إظهار: عنوان المستند.
+	The window shows the file name, not the title (Initial View > Show)	تُظهر النافذة اسم الملف لا العنوان (العرض الأولي > إظهار)
+	The Windows store's digital IDs couldn't be listed: {e}	تعذّر سرد المعرّفات الرقمية في مخزن Windows: {e}
+	there are no pages to print	لا توجد صفحات للطباعة
+	There are no redaction marks (mark text, areas or pages first)	لا توجد علامات حجب (علّم نصًا أو مناطق أو صفحات أولًا)
+	There are no redaction marks to apply	لا توجد علامات حجب لتطبيقها
+	there are no redaction marks to apply	لا توجد علامات حجب لتطبيقها
+	There is no folder to save the digital ID in.	لا مجلد لحفظ المعرّف الرقمي فيه.
+	These files can't be read, so they won't be in the combined PDF:	تتعذر قراءة هذه الملفات، لذا لن تكون في ملف PDF المدمج:
+	These objects could not be moved. Select them again and try a smaller move.	تعذر نقل هذه العناصر. حددها مجددًا وحاول نقلها بمسافة أقل.
+	Thick	سميك
+	Thin	رفيع
+	This area has too many overlapping paths; intersection snapping is limited.	هذه المنطقة فيها مسارات متداخلة كثيرة جدًا؛ الانجذاب إلى التقاطعات محدود.
+	This certificate is in your list of trusted certificates.	هذه الشهادة موجودة في قائمة شهاداتك الموثوقة.
+	This certificate is not trusted. Signatures made with it show an unknown identity.	هذه الشهادة غير موثوقة. التوقيعات المنشأة بها تظهر بهوية غير معروفة.
+	This certificate is trusted through a certificate above it in the chain.	هذه الشهادة موثوقة عبر شهادة أعلى منها في السلسلة.
+	This comment's appearance can't be changed yet.	لا يمكن تغيير مظهر هذا التعليق بعد.
+	This compatibility level supports only plain ASCII passwords.	مستوى التوافق هذا يدعم كلمات مرور ASCII البسيطة فقط.
+	This dialog shows the details of a certificate and its chain.	يعرض هذا الحوار تفاصيل شهادة وسلسلتها.
+	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	يطلب هذا المستند أن يُفتح في وضع ملء الشاشة: تملأ الصفحة الشاشة ولا يظهر شيء آخر. اضغط Esc في أي وقت للخروج منه.
+	This document can't be checked: it couldn't be read for editing	لا يمكن فحص هذا المستند: تعذّرت قراءته للتحرير
+	This document contains {n} interactive form fields.	هذا المستند يحتوي على {n} حقول نموذج تفاعلية.
+	This document has no attachments.	هذا المستند لا يحتوي على مرفقات.
+	This document has no comments to flatten	هذا المستند لا يحتوي على تعليقات لتسطيحها
+	This document has no document-level scripts.	هذا المستند لا يحتوي على سكربتات على مستوى المستند.
+	This document has no editable structure tags.	لا يحتوي هذا المستند على وسوم بنيوية قابلة للتحرير.
+	This document has no form fields to flatten	هذا المستند لا يحتوي على حقول نموذج لتسطيحها
+	This document has no form fields you can fill in	هذا المستند لا يحتوي على حقول نموذج يمكنك تعبئتها
+	This document has no form fields.	هذا المستند لا يحتوي على حقول نموذج.
+	This document has no layers.	هذا المستند لا يحتوي على طبقات.
+	This document has no pages.	هذا المستند لا يحتوي على صفحات.
+	This document has no restrictions to lift	لا توجد في هذا المستند قيود لرفعها
+	This document has no signatures.	هذا المستند لا يحتوي على توقيعات.
+	This document has no tagged figures.	هذا المستند لا يحتوي على أشكال موسومة.
+	This document has no {kind} to change	هذا المستند لا يحتوي على {kind} لتغييره
+	This document has not been modified since this signature was applied.	لم يُعدَّل المستند منذ تطبيق هذا التوقيع.
+	This document has not been modified since this timestamp was applied.	لم يُعدَّل المستند منذ تطبيق هذا الطابع الزمني.
+	This document hasn't been checked yet.	لم يُفحص هذا المستند بعد.
+	This document is secured. Some changes are restricted by its security settings.	هذا المستند مؤمَّن. بعض التغييرات مقيدة بإعدادات أمانه.
+	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	هذا المستند موقَّع: إعادة كتابته ستبطل توقيعاته (احفظه حفظًا تزايديًا بدلًا من ذلك)
+	This document is trying to open a local file:	يحاول هذا المستند فتح ملف محلي:
+	This document isn't password-protected	هذا المستند غير محمي بكلمة مرور
+	This drawing exceeds the snapping limit; only the first paths are used.	هذا الرسم يتجاوز حد الانجذاب؛ تُستخدم المسارات الأولى فقط.
+	This field is locked. Unlock it to change its properties.	هذا الحقل مقفل. ألغِ قفله لتغيير خصائصه.
+	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	خط هذا الحقل لا يستطيع رسم «{c}» ({code})، لذا يعرض PdfCraft علامة ? مكانه. القيمة محفوظة، وتعيد برامج عرض PDF الأخرى رسم الحقل منها.
+	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	تغيّر هذا الملف على القرص. «إعادة التحميل» تعرض النسخة الجديدة وتُسقط تغييراتك غير المحفوظة؛ و«حفظ» يستبدلها بهذه النسخة.
+	This file is already as small as it can be made ({size}). No copy was saved.	هذا الملف صغير بالفعل قدر الإمكان ({size}). لم تُحفظ أي نسخة.
+	this file isn't XFDF, FDF, XML or text form data	هذا الملف ليس بيانات نموذج بصيغة XFDF أو FDF أو XML أو نص
+	This file was damaged and has been repaired. Saving keeps the repaired version.	هذا الملف كان تالفًا وأُصلح. الحفظ يُبقي النسخة المُصلَحة.
+	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	هذا المجلد غير متاح الآن. ربما نُقل، أو أن قرصه أو مزامنته السحابية غير متصلة.
+	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	هذا النموذج يحتوي أيضًا على بيانات XFA، لا يقرؤها PdfCraft بعد. يمكنك تعبئة حقوله، لكن Acrobat قد يعرض قيم XFA بدلًا منها.
+	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	سكربتات هذا النموذج متوقفة لأن أحدها استغرق وقتًا طويلًا جدًا. أعد فتح المستند لتشغيلها من جديد.
+	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	هذا نموذج XFA ديناميكي، لا يستطيع PdfCraft عرضه بعد. ما تراه هو الصفحة البديلة للملف.
+	This measurement needs at least {n} points.	هذا القياس يحتاج إلى {n} نقاط على الأقل.
+	This page contains objects that cannot be selected together.	تحتوي هذه الصفحة على عناصر لا يمكن تحديدها معًا.
+	This page couldn't be displayed.\n{e}	تعذّر عرض هذه الصفحة.\n{e}
+	This PDF uses the unsupported {s} action.	يستخدم هذا الملف إجراء {s} غير مدعوم.
+	This printer offers no settings of its own.	هذه الطابعة لا تقدم إعدادات خاصة بها.
+	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	لا يقبل برنامج تشغيل هذه الطابعة إعدادات الطباعة على الوجهين من البرامج الأخرى، لذا يُطبَّق إعداده الخاص. غيّره من خصائص…
+	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	يستخدم هذا التوقيع RIPEMD-160، خوارزمية هضم قديمة بطول 160 بت لم تعد موصى بها للتواقيع. لا يزال يصح، لكن لا ينبغي الاعتماد عليه.
+	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	يستخدم هذا التوقيع SHA-1، خوارزمية هضم ضعيفة: أُثبتت تصادمات فيها. لا يزال يصح لأن مستندات كثيرة وقّعت قبل سنوات تستخدمه، لكن لا ينبغي الاعتماد عليه.
+	This web address mixes letters from different alphabets, a common way to imitate another site's name.	عنوان الويب هذا يخلط حروفًا من أبجديات مختلفة، وهي طريقة شائعة لانتحال اسم موقع آخر.
+	This web address uses letters from another alphabet, which can look like familiar ones.	عنوان الويب هذا يستخدم حروفًا من أبجدية أخرى قد تشبه الحروف المألوفة.
+	Tile scale:	مقياس التجانب:
+	Timed responses	الاستجابات المؤقتة
+	Timestamp	ختم زمني
+	to	إلى
+	To change locked fields, also set Locked to No.	لتغيير الحقول المقفلة، اضبط أيضًا «مقفل» على «لا».
+	to {n}	إلى {n}
+	To:	إلى:
+	Today: {date}	اليوم: {date}
+	Toggle fit page / fit width	التبديل بين ملاءمة الصفحة وملاءمة العرض
+	Tools panel side	جانب لوحة الأدوات
+	Tooltip:	تلميح:
+	Top-level bookmarks ({n})	إشارات المستوى الأعلى ({n})
+	TR must be a child of Table, THead, TBody, or TFoot	TR يجب أن يكون ابنًا لـ Table أو THead أو TBody أو TFoot
+	Trim the picture with its handles; Enter or Done applies	قص الصورة بمقابضها؛ يطبّق Enter أو تم
+	Trust	الثقة
+	Try the form as people filling it in will see it	جرّب النموذج كما سيراه من يملؤه
+calendar weekday	Tu	ثلاثاء
+	Turn upside down (180°)	اقلب رأسًا على عقب (180°)
+	Two-page view	عرض صفحتين
+	Two-sided:	على الوجهين:
+	Two-Up (Cover Page)	صفحتان (صفحة غلاف)
+	Two-Up (Facing)	صفحتان (متقابلتان)
+	Two-Up Continuous (Cover Page)	صفحتان متواصلتان (صفحة غلاف)
+	Two-Up Continuous (Facing)	صفحتان متواصلتان (متقابلتان)
+signature pad	Type	كتابة
+	Type a password.	اكتب كلمة مرور.
+	Type Password	اكتب كلمة المرور
+	Type text	اكتب نصًا
+	Type the web address.	اكتب عنوان الويب.
+	Type your {what}.	اكتب {what}.
+	Unchecked	غير محدد
+	Underline text	تسطير النص
+	Undid {label}	تم التراجع عن {label}
+	Unit	الوحدة
+	Unknown author	مؤلف غير معروف
+	Unlock comment	إلغاء قفل التعليق
+	Unlock {name}	إلغاء قفل {name}
+	Unlock {n} files	إلغاء قفل {n} ملفات
+	Unlocked {n} of {m} files	أُلغي قفل {n} من {m} ملفات
+	Unlocked: the combined file won't be password-protected	أُلغي القفل: الملف المدموج لن يكون محميًا بكلمة مرور
+	Unlock…	إلغاء القفل…
+	Unpin	إلغاء التثبيت
+	Unpin {folder}	إلغاء تثبيت {folder}
+	Unplaced	غير موضوع
+	Unsigned signature field	حقل توقيع غير موقع
+	Unsigned signature field: {name}	حقل توقيع غير موقع: {name}
+	Unsupported measurements	قياسات غير مدعومة
+	Update background	تحديث الخلفية
+	Update background…	تحديث الخلفية…
+	Update header & footer	تحديث الرأس والتذييل
+	Update header & footer…	تحديث الرأس والتذييل…
+	Update watermark	تحديث العلامة المائية
+	Update watermark…	تحديث العلامة المائية…
+	URL to submit to	عنوان URL للإرسال إليه
+	Use 72 DPI (one point per pixel)	استخدام 72 DPI (نقطة واحدة لكل بكسل)
+	Use a certificate	استخدام شهادة
+	Use a Digital ID from a file	استخدام معرّف رقمي من ملف
+	Use custom DPI	استخدام DPI مخصص
+	Use each image's embedded DPI; use 72 DPI when it is absent.	استخدام DPI المضمَّن في كل صورة؛ واستخدام 72 DPI عند غيابه.
+	Use Flate to encode streams that are not encoded	استخدام Flate لترميز التدفقات غير المرمَّزة
+	Use guided actions	استخدام الإجراءات الموجَّهة
+	Use image resolution	استخدام دقة الصورة
+	Use it when a printer skips text, shading or transparency. The print is no longer searchable text; with Print in grayscale, the pictures are grey.	استخدمه عندما تتجاهل الطابعة النص أو التظليل أو الشفافية. لا تعود المطبوعة نصًا قابلًا للبحث؛ ومع الطباعة بتدرج الرمادي تكون الصور رمادية.
+	Use JavaScript	استخدام JavaScript
+	Use now	استخدم الآن
+	Use overlay text	استخدام نص تراكب
+	Use print production	استخدام إنتاج الطباعة
+	Use system setting	استخدام إعداد النظام
+	Use system title bar	استخدام شريط عنوان النظام
+	Use {what}	استخدام {what}
+	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	يُستخدم عندما لا يطلب ملف PDF تخطيطًا أو تكبيرًا. التمرير المتواصل لا يقفز بين الصفحات أبدًا.
+	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	يُستخدم عند فتح ملفات PDF. وضع التشغيل أو التحكم المحدد صراحةً له الأولوية خلال الجلسة.
+	User Interface Options	خيارات واجهة المستخدم
+	User password	كلمة مرور المستخدم
+	Valid	صالح
+	Valid for 5 years, for digital signatures. Self-signed IDs are usually not trusted by others.	صالح لمدة 5 سنوات، للتوقيعات الرقمية. المعرّفات الموقعة ذاتيًا لا يثق بها الآخرون عادةً.
+	Valid from	صالحة من
+certificate	Valid from	صالح من
+	Valid to	صالحة حتى
+certificate	Valid to	صالح إلى
+	Validate	التحقق
+	Validate all	التحقق من الكل
+	Validate all signatures	التحقق من كل التوقيعات
+	Validity ends	نهاية الصلاحية
+certificate	Validity ends	تنتهي الصلاحية
+	Validity starts	بداية الصلاحية
+certificate	Validity starts	تبدأ الصلاحية
+	Value is not calculated	القيمة غير محسوبة
+	Value is the	القيمة هي
+	Verify	تحقق
+	Verify to see what the document needs.	تحقّق لترى ما يحتاجه المستند.
+certificate	Version	الإصدار
+	Version {v}	الإصدار {v}
+	Vertical reversed	عمودي معكوس
+	Vertical text cannot be moved with this selection.	لا يمكن نقل النص العمودي مع هذا التحديد.
+	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	الفيديو والصوت والوسائط الغنية يجب أن تكون موسومة كي تُعلَن. وسّم تعليقات الوسائط المتعددة.
+	View less	عرض أقل
+	View more	عرض المزيد
+	View revision {n}	عرض المراجعة {n}
+	View signed version	عرض النسخة الموقعة
+	Viewing	العرض
+	Viewport	منفذ العرض
+	Viewport rectangle in page points (x, y, width, height)	مستطيل منفذ العرض بنقاط الصفحة (x, y, العرض, الارتفاع)
+	Visible Rectangle	مستطيل مرئي
+	Visual	بصري
+	watermark	علامة مائية
+calendar weekday	We	أربعاء
+	Weak	ضعيفة
+	Welcome to PdfCraft	مرحبًا بك في PdfCraft
+	What takes up the space in this file, by kind of content.	ما الذي يشغل المساحة في هذا الملف، حسب نوع المحتوى.
+	What word or phrase would you like to search for?	ما الكلمة أو العبارة التي تريد البحث عنها؟
+	White on black	أبيض على أسود
+	Whole words only	كلمات كاملة فقط
+	Window Options	خيارات النافذة
+	Windows store  ·  	مخزن Windows  ·  
+	Word count	عدد الكلمات
+	Word counting stopped unexpectedly.	توقف عد الكلمات بشكل غير متوقع.
+	Word count…	عدد الكلمات…
+	Write this email?	هل تريد كتابة هذا البريد؟
+	Wrong password	كلمة مرور خاطئة
+	Wrote 1 file to {dir}	كُتب ملف واحد في {dir}
+	Wrote {n} files to {dir}	كُتب {n} ملفات في {dir}
+	X Object Forms	نماذج X Object
+	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	نموذج XFA: حقوله وبيانات XFA فيه تبقى متطابقة، فتعرض العارضات الأخرى ما تعبئه.
+	Yellow on black	أصفر على أسود
+	You are about to apply 1 redaction mark. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	أنت على وشك تطبيق علامة حجب واحدة. النصوص والصور والرسومات تحت العلامات، والتعليقات وحقول النموذج المتداخلة معها، تُزال نهائيًا.
+	You are about to apply {n} redaction marks. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	أنت على وشك تطبيق {n} علامات حجب. النصوص والصور والرسومات تحت العلامات، والتعليقات وحقول النموذج المتداخلة معها، تُزال نهائيًا.
+	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	أنت تعرض المراجعة {rev} من “{from}”. هذه لقطة: التغييرات هنا لن تؤثر على الأصل.
+	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	أنت تعرض النسخة الموقعة من “{from}” (المراجعة {rev}). هذه لقطة: التغييرات هنا لن تؤثر على الأصل.
+	You can pin up to {n} folders. Unpin one first.	يمكنك تثبيت {n} مجلدات كحد أقصى. ألغِ تثبيت أحدها أولًا.
+	You have version {c}. All releases are listed at {page}.	لديك الإصدار {c}. كل الإصدارات مدرجة في {page}.
+	You have version {c}. Download the new version from its release page.	لديك الإصدار {c}. نزّل الإصدار الجديد من صفحة إصداره.
+	Your name	اسمك
+	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy أو yy السنة · m أو mm الشهر · mmm أو mmmm اسم الشهر · d أو dd اليوم · ddd أو dddd يوم الأسبوع. H و h و M و s و t أحرف الوقت ولا يمكن استخدامها وحدها: ضع {escape} قبل الحرف لإظهاره كما هو.
+	ZIP	ZIP
+	Zip Code	الرمز البريدي
+	Zip Code + 4	الرمز البريدي + 4
+	Zoom in ({key})	تكبير ({key})
+	Zoom in (⌘+)	تكبير (⌘+)
+	Zoom in / out (also pinch or {key}-scroll)	تكبير / تصغير (أيضًا بالقرص أو التمرير مع {key})
+	Zoom in / out (also pinch or ⌘-scroll)	تكبير / تصغير (أيضاً قرص أو ⌘-تمرير)
+	Zoom out ({key})	تصغير ({key})
+	Zoom out (⌘−)	تصغير (⌘−)
+	Zoom to page level	تكبير بمستوى الصفحة
+	{0}: {1}	{0}: {1}
+	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	{chars} لا يمكن كتابتها في ملف PDF بعد: نص التعبئة والتوقيع يقتصر على أوروبا الغربية. اختر تنسيقًا رقميًا مثل dd.mm.yyyy.
+	{c} of {n}{more}	{c} من {n}{more}
+	{dpi} pixels/inch	{dpi} بكسل/بوصة
+	{field}: {e}	{field}: {e}
+	{file} is too large for a stamp (at most {n} MB)	{file} أكبر من أن يكون ختمًا ({n} ميغابايت على الأكثر)
+	{folder} is already pinned to Home	{folder} مثبت بالفعل في الصفحة الرئيسية
+	{kind} field	حقل {kind}
+	{kind} Properties	خصائص {kind}
+	{kind} · page {p}	{kind} · صفحة {p}
+	{kind} — click to show it on the page	{kind} — انقر لإظهاره على الصفحة
+	{k} of {n}	{k} من {n}
+	{label} (1 issue)	{label} (مشكلة واحدة)
+	{label} ({n} issues)	{label} ({n} مشكلات)
+	{label} failed: {e}	فشل {label}: {e}
+	{month} {day}, {y}	{day} {month} {y}
+	{month} {y}	{month} {y}
+	{msg} to {dir}	{msg} إلى {dir}
+	{name} (default)	{name} (الافتراضية)
+	{name} can't be combined: {why}	لا يمكن دمج {name}: {why}
+	{name} has no action	{name} ليس له إجراء
+	{name} is read-only	{name} للقراءة فقط
+	{name} is too large for a word list (at most 1 MB).	{name} أكبر من أن يكون قائمة كلمات (1 ميغابايت على الأكثر).
+	{name} submits the form to {url}; PdfCraft doesn't send form data. Save the document to keep your entries.	{name} يرسل النموذج إلى {url}؛ PdfCraft لا يرسل بيانات النماذج. احفظ المستند للاحتفاظ بما أدخلته.
+	{name} — unsaved changes	{name} — تغييرات غير محفوظة
+	{name}: choosing images arrives on the web with file pickers for images	{name}: اختيار الصور سيتوفر على الويب مع منتقيات ملفات الصور
+	{name}: the {other} action isn't supported yet	{name}: الإجراء {other} غير مدعوم بعد
+@plural	{n} byte|{n} bytes	{n} بايت|{n} بايت|{n} بايتان|{n} بايتات|{n} بايتاً|{n} بايت
+@plural	{n} comment|{n} comments	{n} تعليق|{n} تعليق|{n} تعليقان|{n} تعليقات|{n} تعليقاً|{n} تعليق
+	{n} contributors · {c} commits	{n} مساهمين · {c} إيداعات
+	{n} days ago	قبل {n} أيام
+	{n} differences found	عُثر على {n} فروق
+@plural	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	يتعارض {n} من أسماء الحقول مع الملفات السابقة وسيتم تغيير أسمائها: {list}|يتعارض اسم {n} حقل مع الملفات السابقة وسيتم تغيير اسمه: {list}|يتعارض اسما {n} حقل مع الملفات السابقة وسيتم تغيير اسميهما: {list}|تتعارض أسماء {n} حقول مع الملفات السابقة وسيتم تغيير أسمائها: {list}|يتعارض {n} اسم حقل مع الملفات السابقة وسيتم تغيير أسمائها: {list}|يتعارض {n} من أسماء الحقول مع الملفات السابقة وسيتم تغيير أسمائها: {list}
+	{n} fields selected	{n} حقول محددة
+@plural	{n} field|{n} fields	{n} حقل|{n} حقل|{n} حقلان|{n} حقول|{n} حقلًا|{n} حقل
+	{n} files done	اكتمل {n} ملفات
+	{n} files need attention	{n} ملفات تحتاج إلى انتباه
+@plural	{n} file|{n} files	{n} ملف|{n} ملف|{n} ملفان|{n} ملفات|{n} ملفاً|{n} ملف
+@plural	{n} image optimized|{n} images optimized	{n} صورة محسّنة|{n} صورة محسّنة|{n} صورتان محسّنتان|{n} صور محسّنة|{n} صورة محسّنة|{n} صورة محسّنة
+	{n} instances	{n} مواضع
+	{n} issues	{n} مشكلات
+@plural	{n} item discarded|{n} items discarded	{n} عنصر مهمل|{n} عنصر مهمل|{n} عنصران مهملان|{n} عناصر مهملة|{n} عنصراً مهملًا|{n} عنصر مهمل
+	{n} marks	{n} علامات
+	{n} match(es) marked for redaction.	عُلِّم {n} تطابق للحجب.
+	{n} measurements use an unsupported format and are left out.	{n} قياسات تستخدم صيغة غير مدعومة واستُبعدت.
+@plural	{n} object selected|{n} objects selected	تم تحديد {n} عنصر|تم تحديد {n} عنصر|تم تحديد {n} عنصرين|تم تحديد {n} عناصر|تم تحديد {n} عنصرًا|تم تحديد {n} عنصر
+	{n} pages	{n} صفحات
+	{n} pages and no bookmarks	{n} صفحات ولا إشارات مرجعية
+	{n} pages selected	{n} صفحات محددة
+	{n} pages selected.	حُددت {n} صفحات.
+@plural	{n} page|{n} pages	{n} صفحة|{n} صفحة|{n} صفحتان|{n} صفحات|{n} صفحة|{n} صفحة
+@plural	{n} pixel|{n} pixels	{n} بكسل|{n} بكسل|{n} بكسلان|{n} بكسلات|{n} بكسلاً|{n} بكسل
+@plural	{n} result|{n} results	{n} نتيجة|{n} نتيجة|{n} نتيجتان|{n} نتائج|{n} نتيجةً|{n} نتيجة
+	{n} selected	{n} محددة
+	{n} tags	{n} وسوم
+	{n} word(s) or phrase(s)	{n} كلمة أو عبارة
+	{n} {kind}	{n} {kind}
+	{page} is not a page number or label	{page} ليس رقم صفحة أو تسمية
+	{rule} - {status}	{rule} - {status}
+	{s} action	إجراء {s}
+	{ty} element on page {p}: {what}	عنصر {ty} في الصفحة {p}: {what}
+	{ty} element: {what}	عنصر {ty}: {what}
+	{verb} as "{name}"	{verb} باسم "{name}"
+	{verb} Background	{verb} الخلفية
+	{verb} Header and Footer	{verb} الرأس والتذييل
+	{verb} Watermark	{verb} العلامة المائية
+	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} في هذا المستند حاول فتح عنوان لن يفتحه PdfCraft: {e}.
+	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} في هذا المستند حاول فتح عنوان لن يفتحه PdfCraft: {e}. روابط الويب (http, https) والبريد (mailto) وحدها تُفتح من المستندات.
+	{who} in this document wants to open this address in your browser:	{who} في هذا المستند يريد فتح هذا العنوان في متصفحك:
+	{who} in this document wants to open your email app with this address:	{who} في هذا المستند يريد فتح تطبيق بريدك بهذا العنوان:
+	{who}, certificate issued by an unknown issuer.	{who}، شهادة صادرة من مُصدر مجهول.
+	{who}, certificate issued by {issuer}.	{who}، شهادة صادرة من {issuer}.
+	{words} on {pages}	{words} في {pages}
+	{} annotation on page {p} isn't tagged	التعليق التوضيحي {} في الصفحة {p} غير موسوم
+	{} annotations aren't allowed	التعليقات التوضيحية {} غير مسموحة
+	ΔLOC	ΔLOC
+	— (protection is applied when you save)	— (تُطبَّق الحماية عند الحفظ)
+	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	تغيّر «{name}» على القرص بعد فتحه أو حفظه آخر مرة. الحفظ الآن يستبدل تلك النسخة الأحدث بهذه.
+	“{name}” has security restrictions. Enter its permissions password to lift them.	«{name}» عليه قيود أمان. أدخل كلمة مرور الأذونات الخاصة به لرفعها.
+	“{name}” is protected. Enter a password to open it.	«{name}» محمي. أدخل كلمة مرور لفتحه.
+	… and {n} more	… و{n} أخرى
+	−LOC	−LOC

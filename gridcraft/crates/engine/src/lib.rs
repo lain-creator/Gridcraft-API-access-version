@@ -410,6 +410,9 @@ pub enum UiRequest {
 /// Commands call it while they run, so a front end must not run commands while holding a lock
 /// the measure takes (egui's: see `theme::cell_text_width` in the UI crate).
 pub type TextWidth = Arc<dyn Fn(&str, &model::Font, bool) -> f32 + Send + Sync>;
+/// Frontend row-height measurement in model pixels, including rich runs. `None` means fonts
+/// are not ready; engine-only clients continue to use the bounded approximation.
+pub type TextHeight = Arc<dyn Fn(&model::Cell, &model::Font, Option<f32>) -> Option<f32> + Send + Sync>;
 
 #[derive(Default)]
 pub struct Session {
@@ -462,6 +465,7 @@ pub struct Session {
     /// Measures cell text for AutoFit Column Width. Without it (CLI, MCP) AutoFit uses
     /// [`cmd::format::approx_text_width`].
     pub text_width: Option<TextWidth>,
+    pub text_height: Option<TextHeight>,
 }
 
 impl Session {

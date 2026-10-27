@@ -111,6 +111,7 @@ pub struct Out {
     defaults: BTreeMap<String, String>,
     pub dxfs: Vec<Style>,
     pub sst: Sst,
+    pub phonetics: HashMap<String, PhoneticString>,
     pub images: u32,
     pub charts: u32,
     /// The workbook's file name, which a PivotChart's link to its PivotTable names in brackets.
@@ -219,6 +220,7 @@ pub fn write_xlsx_named(wb: &Workbook, kind: XlsxKind, book_name: Option<&str>) 
     }
     check_sheet_names(wb)?;
     let mut out = Out {
+        phonetics: wb.phonetics.iter().map(|p| (p.text.clone(), p.clone())).collect(),
         parts: vec![],
         overrides: vec![],
         defaults: BTreeMap::new(),

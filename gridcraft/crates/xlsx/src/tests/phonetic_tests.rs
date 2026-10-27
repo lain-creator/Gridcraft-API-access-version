@@ -33,7 +33,7 @@ fn part(bytes: &[u8], name: &str) -> String {
 }
 
 fn text_cell(sheet: &mut gridcraft_model::Sheet, a: &str, text: &str) {
-    sheet.cells.set(at(a), Cell { value: Value::text(text), formula: None, style: StyleId::DEFAULT });
+    sheet.cells.set(at(a), Cell { value: Value::text(text), formula: None, style: StyleId::DEFAULT, ..Default::default() });
 }
 
 #[test]
@@ -164,7 +164,7 @@ fn phonetic_data_never_used_by_a_cell_is_not_written() {
 }
 
 #[test]
-fn comments_and_inline_strings_still_ignore_phonetic_runs() {
+fn inline_phonetics_are_preserved_but_never_become_display_text_or_comment_content() {
     let body = r#"<sheetData><row r="1"><c r="A1" t="inlineStr"><is><r><t>inline</t></r><rPh sb="0" eb="6"><t>インライン</t></rPh><phoneticPr fontId="1"/></is></c></row></sheetData>"#;
     let sheet_rels = r#"<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/comments" Target="../comments1.xml"/></Relationships>"#;
     let comments = r#"<comments xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><authors><author>Ann</author></authors><commentList><comment ref="A1" authorId="0"><text><r><rPr><b/></rPr><t>Ann:</t></r><r><t>メモ</t></r><rPh sb="0" eb="2"><t>メモ</t></rPh><phoneticPr fontId="1"/></text></comment></commentList></comments>"#;
@@ -173,6 +173,9 @@ fn comments_and_inline_strings_still_ignore_phonetic_runs() {
     let sheet = wb.sheet(0).unwrap();
     assert_eq!(sheet.value(at("A1")), Value::text("inline"));
     assert_eq!(sheet.comments.get(&at("A1")).map(|c| c.text.as_str()), Some("メモ"));
-    // Neither path has a shared string table entry to key phonetic data by.
-    assert!(wb.phonetics.is_empty());
+    // Inline hints are preserved by base text as shared-string hints are. Comment hints still
+    // do not become workbook cell hints, or visible text.
+    assert_eq!(wb.phonetics.len(), 1);
+    assert_eq!(wb.phonetics[0].text, "inline");
+    assert_eq!(wb.phonetics[0].runs[0].text, "インライン");
 }

@@ -341,8 +341,9 @@ pub struct Ctx<'a> {
 }
 
 pub(crate) fn edit<R>(s: &mut Session, f: impl FnOnce(&mut Ctx) -> Result<R>) -> Result<R> {
+    let measure = s.text_height.clone();
     let d = s.doc_mut()?;
-    commit(d, |cx| {
+    commit_with_measure(d, measure.as_ref(), |cx| {
         let r = f(cx)?;
         crate::tables::sync_headers(cx);
         Ok(r)
@@ -350,6 +351,10 @@ pub(crate) fn edit<R>(s: &mut Session, f: impl FnOnce(&mut Ctx) -> Result<R>) ->
 }
 
 pub(crate) fn commit<R>(d: &mut DocState, f: impl FnOnce(&mut Ctx) -> Result<R>) -> Result<R> {
+    commit_with_measure(d, None, f)
+}
+
+fn commit_with_measure<R>(d: &mut DocState, measure: Option<&crate::TextHeight>, f: impl FnOnce(&mut Ctx) -> Result<R>) -> Result<R> {
     // `GRIDCRAFT_PROFILE` timing. Read the clock only when profiling, and never on wasm: there
     // `Instant::now` traps (`RuntimeError: unreachable`), which broke every edit in the web app.
     #[allow(clippy::disallowed_methods)]
@@ -381,7 +386,7 @@ pub(crate) fn commit<R>(d: &mut DocState, f: impl FnOnce(&mut Ctx) -> Result<R>)
     fit_rows.sort_unstable();
     fit_rows.dedup();
     for (si, row) in fit_rows {
-        auto_row_height(&mut wb, si, row);
+        auto_row_height_with(&mut wb, si, row, measure);
     }
     if let Some(t0) = t0 {
         eprintln!("commit: + rows {:?}", t0.elapsed());
@@ -527,6 +532,10 @@ fn wrapped_line_count(line: &str, width: f32, size: f32, bold: bool) -> f32 {
 /// Line breaks in a cell's text count only when the cell wraps, as in Excel: with Wrap Text off
 /// a multi-line value shows on one line and AutoFit gives a one-line row.
 pub fn auto_row_height(wb: &mut Workbook, si: usize, row: u32) {
+    auto_row_height_with(wb, si, row, None);
+}
+
+pub fn auto_row_height_with(wb: &mut Workbook, si: usize, row: u32, measure: Option<&crate::TextHeight>) {
     let Some(sh) = wb.sheet(si) else { return };
     if sh.rows.get(&row).is_some_and(|i| i.custom) {
         return;
@@ -535,9 +544,9 @@ pub fn auto_row_height(wb: &mut Workbook, si: usize, row: u32) {
     // Fast path: rows of default-size, unwrapped content keep the default height.
     let plain = sh.cells.row(row, 0, gridcraft_core::MAX_COLS - 1).all(|(_, cell)| {
         let st = wb.styles.get(cell.style);
-        st.font.size <= gridcraft_model::DEFAULT_FONT_SIZE && !st.align.wrap
+        st.font.size <= gridcraft_model::DEFAULT_FONT_SIZE && !st.align.wrap && cell.rich_text.is_empty()
     });
-    if plain {
+    if plain && measure.is_none() {
         if sh.rows.get(&row).is_some_and(|i| i.size.is_some())
             && let Some(shm) = wb.sheet_mut(si)
             && let Some(e) = shm.rows.get_mut(&row)
@@ -565,7 +574,20 @@ pub fn auto_row_height(wb: &mut Workbook, si: usize, row: u32) {
             continue;
         }
         let st = wb.styles.get(cell.style);
-        let size = st.font.size;
+        if let Some(measure) = measure {
+            let width = st.align.wrap.then(|| {
+                let width = merged.map_or_else(|| sh.col_width(c), |m| (m.start.col..=m.end.col).map(|col| sh.col_width(col)).sum::<f32>());
+                (width - 5.0 - st.align.indent as f32 * 9.0).max(1.0)
+            });
+            if let Some(height) = measure(cell, &st.font, width).filter(|h| h.is_finite() && *h > 0.0) {
+                need = need.max((height + if st.align.wrap { 3.0 } else { 1.0 }).ceil().min(546.0));
+                continue;
+            }
+        }
+        let size = cell
+            .rich_runs()
+            .map(|runs| runs.iter().map(|r| r.font.size.unwrap_or(st.font.size)).fold(st.font.size, f32::max))
+            .unwrap_or(st.font.size);
         // Scaled from an 11pt row's height, not the sheet's default: a sheet whose default
         // already fits a bigger font (21pt rows for 16pt text) would otherwise scale it twice.
         let line = (size * 1.8).round().max(gridcraft_model::DEFAULT_ROW_HEIGHT * size / gridcraft_model::DEFAULT_FONT_SIZE);

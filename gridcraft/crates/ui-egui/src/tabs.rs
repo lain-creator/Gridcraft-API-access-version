@@ -335,6 +335,11 @@ pub fn status_bar(app: &mut SheetApp, ui: &mut Ui) {
                     gridcraft_engine::Mode::Point => "Point",
                 };
                 text(ui, egui::RichText::new(app.ui.language.tr(mode)).font(theme::ui_font(12.5)).color(t.text_dim));
+                if !app.font_replacements.is_empty() {
+                    ui.add_space(12.0);
+                    ui.label(egui::RichText::new(format!("字体替换：{}", app.font_replacements.len())).font(theme::ui_font(12.5)).color(t.text_dim))
+                        .on_hover_text(format!("仅替换显示字体，保存时保留原字体名称。\n{}", app.font_replacements.join("\n")));
+                }
                 if let Some(d) = app.session.active() {
                     if d.wb.vba_project.is_some() {
                         ui.add_space(12.0);

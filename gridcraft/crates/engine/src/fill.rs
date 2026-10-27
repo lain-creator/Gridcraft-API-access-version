@@ -587,7 +587,7 @@ pub fn series(cx: &mut Ctx, sheet: usize, r: RangeRef, rows: bool, kind: &str, s
                 break;
             }
             let c = if rows { CellRef::new(lane, r.start.col + i) } else { CellRef::new(r.start.row + i, lane) };
-            writes.push((c, Cell { value: Value::number(round15(v)), formula: None, style }));
+            writes.push((c, Cell { value: Value::number(round15(v)), formula: None, style, ..Default::default() }));
         }
     }
     let sh = cx.sheet_mut(sheet)?;
@@ -646,7 +646,7 @@ pub fn flash_fill(cx: &mut Ctx, sheet: usize, at: CellRef) -> Result<usize> {
     }
     let sh = cx.sheet_mut(sheet)?;
     for (c, out) in &writes {
-        sh.set_cell(*c, Cell { value: Value::text(out.as_str()), formula: None, style });
+        sh.set_cell(*c, Cell { value: Value::text(out.as_str()), formula: None, style, ..Default::default() });
     }
     for (c, _) in writes {
         cx.touch(sheet, c);

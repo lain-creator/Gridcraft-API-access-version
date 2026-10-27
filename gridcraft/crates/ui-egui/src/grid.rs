@@ -1026,8 +1026,10 @@ pub(crate) fn cell_text_y(valign: VAlign, rect: Rect, gh: f32, z: f32) -> f32 {
 /// raises the text and clips its top even when the row has enough room for all its ink.
 /// Keep the galley's own line spacing and horizontal advances; only translate its origin.
 fn cell_galley_y(valign: VAlign, rect: Rect, galley: &egui::Galley, z: f32, wrapped: bool) -> f32 {
-    let ink = galley.mesh_bounds;
-    let bounds = if ink.is_finite() && ink.height() > 0.0 { ink } else { galley.rect };
+    // Use a stable font line box: centering each string's visible ink makes ABC/gy/中文
+    // acquire different baselines in neighbouring cells. Fallback metrics and measured row
+    // heights handle CJK clipping without moving the baseline according to the text's letters.
+    let bounds = galley.rect;
     let y = if wrapped { wrapped_cell_text_y(valign, rect, bounds.height(), z) } else { cell_text_y(valign, rect, bounds.height(), z) };
     y - bounds.top()
 }
@@ -1288,7 +1290,7 @@ pub(crate) fn paint_quadrant(
         // Rotated text wraps along its own direction (below), not across the column width.
         if !rotated && (st.align.wrap || st.align.h == HAlign::Justify) {
             let wrap_w = (rect.width() - 2.0 * pad - indent).max(4.0);
-            let mut job = egui::text::LayoutJob::simple(text.clone(), font.clone(), color, wrap_w);
+            let mut job = crate::cell_text::job(sh.cell(c), &text, &st.font, z, color, wrap_w, true, &wb.theme);
             job.halign = match halign {
                 HAlign::Center | HAlign::CenterAcross => egui::Align::Center,
                 HAlign::Right => egui::Align::RIGHT,
@@ -1315,7 +1317,8 @@ pub(crate) fn paint_quadrant(
             .flatten();
         let shrunk = small.is_some();
         let font = small.unwrap_or(font);
-        let mut galley = p.layout_no_wrap(first_line.clone(), font.clone(), color);
+        let rich_scale = z * font.size / size.max(1.0);
+        let mut galley = p.layout_job(crate::cell_text::job(sh.cell(c), &first_line, &st.font, rich_scale, color, f32::INFINITY, false, &wb.theme));
         let mut w = galley.size().x;
         // Numbers and dates never overflow: they show #### when too narrow.
         let hashed = !shrunk && (numeric || matches!(v, Value::Number(_))) && w > avail_w - 2.0 * pad && st.align.h != HAlign::Fill;
@@ -4313,7 +4316,7 @@ mod tests {
     }
 
     #[test]
-    fn fallback_glyphs_are_centred_and_not_clipped_when_their_ink_fits() {
+    fn fallback_glyphs_use_a_stable_line_box_for_vertical_alignment() {
         let _guard = crate::fonts::TEST_LOCK.lock().unwrap_or_else(|e| e.into_inner());
         let ctx = egui::Context::default();
         ctx.set_fonts(theme::font_definitions_for_language(crate::i18n::Language::Zh));
@@ -4324,21 +4327,21 @@ mod tests {
                 for text in ["你去哪里", "数据Data", "11", "English gyp", "中文\nEnglish"] {
                     let galley = ctx.fonts_mut(|f| f.layout_no_wrap(text.into(), font.clone(), Color32::BLACK));
                     // Enough space for the ink, including fallback ascenders above logical y=0.
-                    let rect = Rect::from_min_size(pos2(30.0, 50.0), vec2(400.0, galley.mesh_bounds.height() + 8.0 * z));
+                    let rect = Rect::from_min_size(pos2(30.0, 50.0), vec2(400.0, galley.rect.union(galley.mesh_bounds).height() + 20.0 * z));
                     for wrapped in [false, true] {
                         let y = cell_galley_y(VAlign::Center, rect, &galley, z, wrapped);
                         let painted = galley.mesh_bounds.translate(vec2(0.0, y));
-                        assert!((painted.center().y - rect.center().y).abs() < 0.01, "{text}: {painted:?} / {rect:?}");
+                        assert!((galley.rect.center().y + y - rect.center().y).abs() < 0.01, "{text}: {painted:?} / {rect:?}");
                         assert!(painted.top() > rect.top() && painted.bottom() < rect.bottom(), "{text} was clipped");
                         let top = cell_galley_y(VAlign::Top, rect, &galley, z, wrapped);
                         let bottom = cell_galley_y(VAlign::Bottom, rect, &galley, z, wrapped);
                         assert!(top < y && y < bottom, "the three alignments stay distinct");
                     }
-                    // Explicit, small row heights still clip; Middle must centre the full ink,
+                    // Explicit, small row heights still clip; Middle must centre the line box,
                     // rather than clamping its origin to the top and losing the alignment.
                     let small = Rect::from_min_size(rect.min, vec2(400.0, 8.0 * z));
                     let y = cell_galley_y(VAlign::Center, small, &galley, z, false);
-                    assert!((galley.mesh_bounds.center().y + y - small.center().y).abs() < 0.01);
+                    assert!((galley.rect.center().y + y - small.center().y).abs() < 0.01);
                 }
                 let blank = ctx.fonts_mut(|f| f.layout_no_wrap("   ".into(), font, Color32::BLACK));
                 assert!(cell_galley_y(VAlign::Center, Rect::from_min_size(Pos2::ZERO, vec2(200.0, 40.0)), &blank, z, false).is_finite());

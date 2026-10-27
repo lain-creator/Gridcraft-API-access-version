@@ -1,0 +1,316 @@
+# Українська (uk) interface catalog for FilmCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	About	About
+	About FilmCraft	Про FilmCraft
+	Add Audio Submix Track	Додати доріжку підміксу аудіо
+	Add Caption at Playhead	Додати субтитр у позиції курсора відтворення
+	Add Chapter Marker…	Додати маркер розділу…
+	Add Edit	Додати розріз
+	Add Edit to All Tracks	Додати розріз на всіх доріжках
+	Add Flash Cue Marker…	Додати маркер сигналу Flash…
+	Add Frame Hold	Додати стоп-кадр
+	Add Guide…	Додати напрямну…
+	Add Marker	Додати маркер
+	Add New Caption Track…	Додати нову доріжку субтитрів…
+	Add Range Marker	Додати маркер діапазону
+	Add Range Marker to In and Out	Додати маркер діапазону між початковою та кінцевою позначками
+	Add Tracks…	Додати доріжки…
+	Adjustment Layer…	Коригувальний шар…
+	Advanced	Advanced
+	Align to Video Frame	Вирівняти за відеокадром
+	Align to Video Frame as Group	Вирівняти за відеокадром як групу
+	All Panels	Усі панелі
+	Appearance…	Вигляд…
+	Apply Audio Transition	Застосувати аудіоперехід
+	Apply Default Transitions to Selection	Застосувати типові переходи до виділення
+	Apply Video Transition	Застосувати відеоперехід
+	Assembly	Компонування
+	Attach Proxies…	Приєднати проксі…
+	Audio Channels…	Аудіоканали…
+	Audio Clip Mixer	Мікшер аудіокліпів
+	Audio Gain…	Підсилення аудіо…
+	Audio Hardware…	Аудіообладнання…
+	Audio In	Початок аудіо
+	Audio Meters	Індикатори рівня аудіо
+	Audio Options	Параметри аудіо
+	Audio Out	Кінець аудіо
+	Audio Track Mixer	Мікшер аудіодоріжок
+	Audio Waveform	Осцилограма аудіо
+	Auto	Auto
+	Auto Save…	Автозбереження…
+	Automate to Sequence…	Автоматично розмістити в секвенції…
+	Bars and Tone…	Кольорові смуги й тон…
+	Baseline	Baseline
+	Bin	Контейнер
+	Bin From Selection	Контейнер із виділення
+	Binary assets added	Binary assets added
+	Black Video…	Чорне відео…
+	Bottom	Низ
+	Breakout to Mono	Розділити на моноканали
+	Captions	Субтитри
+	Captions and Graphics	Субтитри й графіка
+	Captions…	Субтитри…
+	Caribbean	Карибський
+	Center Horizontally	По центру горизонтально
+	Center Vertically	По центру вертикально
+	Cerulean	Лазурний
+	Clear	Видалити
+	Clear In	Прибрати початкову позначку
+	Clear In and Out	Прибрати початкову та кінцеву позначки
+	Clear Markers	Видалити маркери
+	Clear Out	Прибрати кінцеву позначку
+	Clear Selected Marker	Видалити вибраний маркер
+	Clip	Кліп
+	Close All Other Projects	Закрити всі інші проєкти
+	Close All Projects	Закрити всі проєкти
+	Close Gap	Прибрати проміжок
+	Close Project	Закрити проєкт
+	Color Management…	Керування кольором…
+	Color Matte…	Кольорова підкладка…
+	Comparison View	Режим порівняння
+	Composite Video	Композитне відео
+	Consolidate Duplicates	Об’єднати дублікати
+	Copy Paste Includes Sequence Markers	Копіювати й вставляти разом із маркерами секвенції
+	Create Captions from Transcript…	Створити субтитри з транскрипції…
+	Create Multi-Camera Source Sequence…	Створити вихідну мультикамерну секвенцію…
+	Create Proxies…	Створити проксі…
+	Custom	Custom
+	Darkest	Найтемніший
+	Delete Render Files	Видалити файли рендерингу
+	Delete Render Files In to Out	Видалити файли рендерингу між початковою та кінцевою позначками
+	Delete Tracks…	Видалити доріжки…
+	Delete Transcript	Видалити транскрипцію
+	Demo Footage	Демонстраційні матеріали
+	Demo Project	Демонстраційний проєкт
+	Deselect All	Зняти все виділення
+	Detach Proxies	Від’єднати проксі
+	Display Mode	Режим відображення
+	Display name	Display name
+	Distribute Horizontally	Розподілити горизонтально
+	Distribute Space Horizontally	Рівні проміжки по горизонталі
+	Distribute Space Vertically	Рівні проміжки по вертикалі
+	Distribute Vertically	Розподілити вертикально
+	Dock Panel	Dock Panel
+	Dynamic Audio Waveforms	Динамічні осцилограми аудіо
+	Edit Offline…	Редагувати автономно…
+	Edit Subclip…	Редагувати підкліп…
+	Editing	Монтаж
+	Effect Controls	Керування ефектами
+	Enable Remix	Увімкнути ремікс
+	Essential Graphics	Основна графіка
+	Essential Sound	Основний звук
+	Events	Події
+	Export	Експорт
+	Export As Motion Graphics Template…	Експортувати як шаблон анімаційної графіки…
+	Exported {path}	Exported {path}
+	Extract	Вилучити зі зсувом
+	Extract Audio	Видобути аудіо
+	Field Options…	Параметри полів…
+	File…	Файл…
+	Fill frame	Заповнити кадр
+	FilmCraft Help…	Довідка FilmCraft…
+	FilmCraft on getartcraft.com	FilmCraft на getartcraft.com
+	FilmCraft on GitHub	FilmCraft на GitHub
+	Fit to frame	Умістити в кадр
+	Forest	Лісовий
+	Frame Blending	Змішування кадрів
+	Frame Hold Options…	Параметри стоп-кадру…
+	Frame Sampling	Вибірка кадрів
+	From Bin	Із контейнера
+	From file…	Із файлу…
+	From Source Monitor	Із монітора джерела
+	From Source Monitor, Match Frame	Із монітора джерела, відповідний кадр
+	Generate Audio Waveform	Створити осцилограму аудіо
+	Get Media File Properties for	Показати властивості медіафайлу для
+	Glow Brightness	Glow Brightness
+	Go to Gap	Перейти до проміжку
+	Go to In	Перейти до початкової позначки
+	Go to Next Caption Segment	Перейти до наступного сегмента субтитрів
+	Go to Next Marker	Перейти до наступного маркера
+	Go to Out	Перейти до кінцевої позначки
+	Go to Previous Caption Segment	Перейти до попереднього сегмента субтитрів
+	Go to Previous Marker	Перейти до попереднього маркера
+	Go to Split	Перейти до розділеної позначки
+	Graphics and Titles	Графіка й титри
+	Graphics…	Графіка…
+	Guide Templates	Шаблони напрямних
+	Hard	Hard
+	Hide All Caption Tracks	Приховати всі доріжки субтитрів
+	High Quality Playback	Відтворення у високій якості
+	Home	Home
+	Import From	Імпортувати з
+	Import from Media Browser	Імпортувати з медіабраузера
+	Import Image Sequence…	Імпортувати послідовність зображень…
+	Ingest Settings…	Налаштування завантаження медіа…
+	Insert Frame Hold Segment	Вставити сегмент стоп-кадру
+	Install Motion Graphics Template…	Установити шаблон анімаційної графіки…
+	Interpret Footage…	Інтерпретувати матеріал…
+	Justify	Justify
+	Labels	Labels
+	Labels…	Мітки…
+	Lavender	Лавандовий
+	Learning	Навчання
+	Lift	Вилучити без зсуву
+	Line delta	Line delta
+	Lines +/−	Lines +/−
+	Lines added	Lines added
+	Lines deleted	Lines deleted
+	Link	Зв’язати
+	Link Media…	Прив’язати медіа…
+	Linked Selection	Пов’язане виділення
+	Lumetri Color	Колір Lumetri
+	Lumetri Scopes	Відеоскопи Lumetri
+	Make Offline…	Зробити автономним…
+	Make Subclip…	Створити підкліп…
+	Make Subsequence	Створити підсеквенцію
+	Manage Guides…	Керувати напрямними…
+	Mark Clip	Позначити кліп
+	Mark In	Установити початкову позначку
+	Mark Out	Установити кінцеву позначку
+	Mark Selection	Позначити виділення
+	Mark Split	Установити розділену позначку
+	Markers	Маркери
+	Match Frame	Знайти відповідний кадр
+	Media Analysis & Transcription…	Аналіз медіа й транскрибування…
+	Media Browser	Медіабраузер
+	Media Cache…	Медіакеш…
+	Media…	Медіа…
+	Memory…	Пам’ять…
+	Merge Clips…	Об’єднати кліпи…
+	Merged PRs	Merged PRs
+	Motion Graphics Template…	Шаблон анімаційної графіки…
+	Multi-Camera	Мультикамера
+	Multi-Camera View	Мультикамерний режим
+	Name	Name
+	Name (A–Z)	Name (A–Z)
+	Nest…	Вкласти в секвенцію…
+	New Project Panel	Нова панель проєкту
+	Next in Sequence	Наступний у секвенції
+	Next in Track	Наступний на доріжці
+	Normalize Mix Track…	Нормалізувати доріжку міксу…
+	Offline File…	Автономний файл…
+	Open Project…	Відкрити проєкт…
+	Optical Flow	Оптичний потік
+	Overwrite	Перезаписати
+	Paste Attributes…	Вставити атрибути…
+	Paste Insert	Вставити зі зсувом
+	Paused Resolution	Роздільність під час паузи
+	Playback Resolution	Роздільність відтворення
+	Playback…	Відтворення…
+	Plugins…	Плагіни…
+	Previous in Sequence	Попередній у секвенції
+	Previous in Track	Попередній на доріжці
+	Program	Програма
+	Progress	Перебіг
+	Project	Проєкт
+	Project Manager…	Менеджер проєкту…
+	Project Notes	Нотатки проєкту
+	Project Settings	Налаштування проєкту
+	Project…	Проєкт…
+	Purple	Пурпуровий
+	Ratio	Ratio
+	Reconnect Full Resolution Media…	Повторно під’єднати медіа повної роздільності…
+	Recover	Recover
+	Recover Unsaved Changes…	Відновити незбережені зміни…
+	Reference Monitor	Еталонний монітор
+	Remix	Ремікс
+	Remix Properties…	Властивості реміксу…
+	Remove	Remove
+	Remove Attributes…	Видалити атрибути…
+	Remove Filler Words	Видалити слова-паразити
+	Remove Pauses	Видалити паузи
+	Remove Unused	Видалити невикористане
+	Render Audio	Рендерити аудіо
+	Render Effects In to Out	Рендерити ефекти між початковою та кінцевою позначками
+	Render In to Out	Рендерити між початковою та кінцевою позначками
+	Render Selection	Рендерити виділення
+	Replace Fonts in Projects…	Замінити шрифти в проєктах…
+	Replace With Clip	Замінити кліпом
+	Reset All Parameters	Скинути всі параметри
+	Reset Duration	Скинути тривалість
+	Reset to Saved Layout	Відновити збережене компонування
+	Restore Captions from Source Clip	Відновити субтитри з вихідного кліпу
+	Reveal Log Files…	Показати файли журналу…
+	Reverse Match Frame	Знайти відповідний кадр у секвенції
+	Revert Remix	Скасувати ремікс
+	Review	Перегляд
+	Ripple Delete	Видалити зі зсувом
+	Ripple Delete Head Frame	Видалити початок зі зсувом
+	Ripple Sequence Markers	Зсувати маркери секвенції
+	Rose	Рожевий
+	Safe Margins	Безпечні поля
+	Save All	Зберегти все
+	Save Guides as Template…	Зберегти напрямні як шаблон…
+	Scale to Frame Size	Масштабувати до розміру кадру
+	Scene Edit Detection…	Виявлення монтажних склейок…
+	Search Bin	Пошуковий контейнер
+	Select	Вибрати
+	Select All	Виділити все
+	Select All Matching	Виділити всі відповідні
+	Select Label Group	Виділити групу міток
+	Select Next Graphic	Вибрати наступний графічний елемент
+	Select Next Layer	Вибрати наступний шар
+	Select Previous Graphic	Вибрати попередній графічний елемент
+	Select Previous Layer	Вибрати попередній шар
+	Selection as FilmCraft Project…	Виділення як проєкт FilmCraft…
+	Selection Follows Playhead	Виділення слідує за курсором відтворення
+	Selection…	Виділення…
+	Sequence	Секвенція
+	Sequence From Clip	Секвенція з кліпу
+	Sequence Settings…	Налаштування секвенції…
+	Sequence…	Секвенція…
+	Show	Show
+	Show Active Caption Tracks Only	Показати лише активні доріжки субтитрів
+	Show All Caption Tracks	Показати всі доріжки субтитрів
+	Show All Marker Colors	Показати всі кольори маркерів
+	Show Through Edits	Показати розрізи без зміни кадру
+	Simplify Sequence…	Спростити секвенцію…
+	Snap in Program Monitor	Прив’язка в моніторі програми
+	Snap in Timeline	Прив’язка на часовій шкалі
+	Soft	Soft
+	Source Settings…	Налаштування джерела…
+	Speed/Duration…	Швидкість/тривалість…
+	Split	Split
+	Standard	Standard
+	Stroke Color	Stroke Color
+	Synchronize…	Синхронізувати…
+	System Compatibility Report…	Звіт про сумісність системи…
+	Tan	Світло-коричневий
+	Teal	Бірюзовий
+	Time Interpolation	Часова інтерполяція
+	Timecode…	Таймкод…
+	Timeline	Часова шкала
+	Timeline…	Часова шкала…
+	Title	Title
+	To	To
+	Toggle Proxies	Перемкнути проксі
+	Tools	Інструменти
+	Top	Верх
+	Transcribe Sequence…	Транскрибувати секвенцію…
+	Transcribe…	Транскрибувати…
+	Transcript	Транскрипція
+	Transparent Video…	Прозоре відео…
+	Trim Edit	Підрізати склейку
+	Trim…	Підрізання…
+	Universal Counting Leader…	Універсальний зворотний відлік…
+	Update Metadata…	Оновити метадані…
+	Upgrade Caption to Graphic	Перетворити субтитр на графіку
+	Upgrade to Source Graphic	Перетворити на вихідну графіку
+	Vertical Text	Вертикальний текст
+	Video and Audio Waveform Split	Розділений вигляд відео й осцилограми аудіо
+	Video In	Початок відео
+	Video Options	Параметри відео
+	Video Out	Кінець відео
+	View	Вигляд
+	Zoom to Sequence	Умістити секвенцію

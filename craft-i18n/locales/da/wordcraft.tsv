@@ -1,0 +1,2444 @@
+# Dansk (da) interface catalog for WordCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	(All)	(Alle)
+	(Custom)	(Tilpasset)
+	(no style)	(ingen stil)
+	(no suggestions)	(ingen forslag)
+	(none)	(ingen)
+	(normal text)	(normal tekst)
+	(not matched)	(ikke fundet)
+	(picture or object)	(billede eller objekt)
+	0 or More Characters	0 eller flere tegn
+	1. Formatting restrictions	1. Formateringsbegrænsninger
+	1.5 Line Spacing	1,5 Linjeafstand
+	1/4 Em Space	1/4 em-mellemrum
+	1×2 Empty Matrix	Tom matrix 1×2
+	1×3 Empty Matrix	Tom matrix 1×3
+	2. Editing restrictions	2. Redigeringsbegrænsninger
+	2×1 Empty Matrix	Tom matrix 2×1
+	2×2 Determinant	Determinant 2×2
+	2×2 Empty Matrix	Tom matrix 2×2
+	2×2 Identity Matrix	Identitetsmatrix 2×2
+	2×2 Identity Matrix (sparse)	Identitetsmatrix 2×2 (tyndt besat)
+	2×2 Matrix in Brackets	2×2-matrix i kantede parenteser
+	2×2 Matrix in Double Bars	2×2-matrix i dobbelte lodstreger
+	2×2 Matrix in Parentheses	2×2-matrix i runde parenteser
+	2×3 Empty Matrix	Tom matrix 2×3
+	3-D	3-D
+	3. Start enforcement	3. Start håndhævelse
+	3×1 Empty Matrix	Tom matrix 3×1
+	3×2 Empty Matrix	Tom matrix 3×2
+	3×3 Empty Matrix	Tom matrix 3×3
+	3×3 Identity Matrix	Identitetsmatrix 3×3
+	3×3 Identity Matrix (sparse)	Identitetsmatrix 3×3 (tyndt besat)
+	<< Less	<< Mindre
+	<< Remove	<< Fjern
+	a drawing canvas can't be ungrouped	grupperingen af et tegnelærred kan ikke ophæves
+	a drawing canvas can't go inside a text box	et tegnelærred kan ikke placeres i et tekstfelt
+	A file dialog is already open.	En fildialogboks er allerede åben.
+	A free, open-source word processor written from scratch in Rust.\nPart of the Crafting Apps from the ArtCraft team.	En gratis open source-tekstbehandler skrevet fra bunden i Rust.\nEn del af Crafting Apps fra ArtCraft-teamet.
+	a group holding Word ink can't be ungrouped yet	en gruppe med Word-blæk kan endnu ikke opdeles
+	A mail merge field	Et fletfelt
+	A numbered sequence (figures, tables…)	En nummereret rækkefølge (figurer, tabeller…)
+	A password is required to open this document.	Der skal indtastes en adgangskode for at åbne dette dokument.
+	A table of contents	En indholdsfortegnelse
+	A xor B	A xor B
+	A, B, C, …	A, B, C, …
+	a, b, c, …	a, b, c, …
+	AaBbCcDd	AaBbCcDd
+	AaBbYyZz	AaBbYyZz
+	About WordCraft	Om WordCraft
+	Above Chart	Over diagram
+	Above the item	Over elementet
+	Absolute value cases	Tilfælde for absolut værdi
+	Accent	Accent
+	Accent Gradient	Accentfarve med gradient
+	Accent with Reflection	Accentfarve med refleksion
+	Accent {n}	Accentfarve {n}
+	Accents	Akcenter
+	Accept	Acceptér
+	Accept All Changes	Acceptér alle ændringer
+	Accept This Change	Acceptér denne ændring
+	Accessed on	Besøgt den
+	Accessibility	Tilgængelighed
+	Accessibility Pane	Tilgængelighedspanel
+	Account	Konto
+	Acute	Akut
+	Add	Tilføj
+	Add >>	Tilføj >>
+	Add a comment	Tilføj en kommentar
+	Add a Table	Tilføj en tabel
+	Add at least one field.	Tilføj mindst ét felt.
+	Add Chart Element	Tilføj diagramelement
+	Add Condition	Tilføj betingelse
+	Add Field	Tilføj felt
+	Add Font…	Tilføj skrifttype…
+	Add line numbering	Tilføj linjenummerering
+	Add New Source…	Tilføj ny kilde…
+	Add Object to Selection	Føj objekt til markering
+	Add Pen	Tilføj pen
+	Add Row	Tilføj række
+	Add Series	Tilføj serie
+	Add Shape	Tilføj figur
+	Add Space Before Paragraph	Tilføj mellemrum før afsnit
+	Add space between Asian and Latin text	Tilføj mellemrum mellem asiatisk og latinisk tekst
+	Add space between Asian text and numbers	Tilføj mellemrum mellem asiatisk tekst og tal
+	Add tab stop at:	Tilføj tabulatorstop ved:
+	Add Text	Tilføj tekst
+	Add the chapter number	Tilføj kapitelnummeret
+	Add to Dictionary	Tilføj til ordbog
+	Add to Document	Føj til dokumentet
+	Add to Quick Access Toolbar	Føj til værktøjslinjen Hurtig adgang
+	Add to Style Gallery	Tilføj til stilgalleri
+	Add whether it is above or below	Tilføj, om det er ovenfor eller nedenunder
+	Add/Edit\nBibliography	Tilføj/redigér\nbibliografi
+	Add/Edit\nCitation	Tilføj/redigér\ncitat
+	Add\nNote	Tilføj\nnote
+	Add\nPen	Tilføj\npen
+	Add\nShape	Tilføj\nfigur
+	Added Fonts	Tilføjede skrifttyper
+	Address	Adresse
+	Address Block	Adresseblok
+	Address labels	Adressetiketter
+	Address:	Adresse:
+	Address\nBlock	Adresse\nblok
+	Adjust	Justér
+	Advanced Find	Avanceret søgning
+	Advanced Find…	Avanceret søgning…
+	After:	Efter:
+	Agents	Agenter
+	Align	Justering
+	Align Bottom Center	Justér nederst i midten
+	Align Bottom Left	Justér nederst til venstre
+	Align Bottom Right	Justér nederst til højre
+	Align Center	Justér i midten
+	Align Center Left	Justér midt til venstre
+	Align Center Right	Justér midt til højre
+	Align Left	Venstrejustér
+	Align Right	Højrejustér
+	Align Text	Justér tekst
+	Align Top Center	Justér øverst i midten
+	Align Top Left	Justér øverst til venstre
+	Align Top Right	Justér øverst til højre
+	Aligned at:	Justeret ved:
+	Alignment	Justering
+	All	Alle
+	All - Linear	Alle – lineære
+	All - Professional	Alle – professionelle
+	All Borders	Alle kanter
+	All Caps	Alle store bogstaver
+	All caps	Alle store bogstaver
+	All Commands	Alle kommandoer
+	All files	Alle filer
+	All Levels	Alle niveauer
+	All Markup	Alle markeringer
+	All pages	Alle sider
+	All pages in the range	Alle sider i området
+	All symbol sets	Alle symbolmængder
+	All system fonts are already available.	Alle systemskrifttyper er allerede tilgængelige.
+	Allow hanging punctuation	Tillad hængende tegnsætning
+	Allow Latin text to wrap in the middle of a word	Tillad, at latinisk tekst brydes midt i et ord
+	Allow line breaks	Tillad linjeskift
+	Allow row to break across pages	Tillad, at rækker kan brydes på tværs af sider
+	Alphabetical	Alfabetisk
+	Alt Text	Alternativ tekst
+	Alt text	Alternativ tekst
+	Alt Text Pane	Alternativtekst-rude
+	Alt:	Alt:
+	Alt\nText	Alternativ\ntekst
+	And	Og
+	Angle Brackets	Vinkelparenteser
+	Angle Brackets with Separator	Vinkelparenteser med adskiller
+	Angle Brackets with Two Separators	Vinkelparenteser med to adskillere
+	Animate the caret (it glides and fades)	Animér markøren (den glider og falmer)
+	Animation	Animation
+	Animation effects:	Animationseffekter:
+	Annotation Reference	Annotationshenvisning
+	Annotation Subject	Annotationsemne
+	Annotation Text	Annotationstekst
+	Another file	Anden fil
+	Any Character	Vilkårligt tegn
+	Any Digit	Vilkårligt ciffer
+	Any Letter	Vilkærligt bogstav
+	Anyone can open this document. Encrypt it with a password to keep it private.	Alle kan åbne dette dokument. Krypter det med en adgangskode for at holde det privat.
+	Anyone who opens the document will need this password.	Alle, der åbner dokumentet, skal bruge denne adgangskode.
+	Apply as you type	Anvend under indtastning
+	Apply Asian line-breaking rules (kinsoku)	Anvend asiatiske regler for linjeskift (kinsoku)
+	Apply formatting to:	Anvend formatering på:
+	Apply Style	Anvend stil
+	Apply Styles	Anvend stile
+	Apply to:	Anvend på:
+	Arabic	Arabisk
+	Arch Down	Bue ned
+	Arch Up	Bue op
+	Area	Område
+	Arrange	Arranger
+	Arrange\nAll	Arranger\nalle
+	Arrows	Pile
+	Artistic Effects	Kunstneriske effekter
+	As Recommended	Som anbefalet
+	As you type	Under indtastning
+	ASAP	SNARST
+	Ascending	Stigende
+	Asian text font:	Skrifttype til asiatisk tekst:
+	Asian Typography	Asiatisk typografi
+	At least	Mindst
+	At least {n}	Mindst {n}
+	Atelier	Atelier
+	Atmosphere	Atmosfære
+	Attach Template	Vedhæft skabelon
+	Attach…	Vedhæft…
+	Author	Forfatter
+	Auto ({percent}%)	Auto ({percent}%)
+	AutoCorrect	AutoCorrect
+	AutoCorrect Options	Indstillinger for AutoCorrect
+	AutoFit	Tilpas automatisk
+	AutoFit Column by Double-Clicking	Tilpas kolonne automatisk ved at dobbeltklikke
+	AutoFit Contents	Tilpas automatisk indhold
+	AutoFit Window	Tilpas automatisk til vindue
+	AutoFormat As You Type	Autoformat under indtastning
+	Automatic ({language})	Automatisk ({language})
+	Automatic ({region})	Automatisk ({region})
+	Automatic bulleted lists	Automatiske punktlister
+	Automatic follows your system's language. Menus and commands change; your documents don't.	Automatisk følger dit systems sprog. Menuer og kommandoer ændrer sig; dine dokumenter gør ikke.
+	Automatic numbered lists	Automatiske nummererede lister
+	Automatic Table 1 (3 levels)	Automatisk tabel 1 (3 niveauer)
+	Automatic Table 2 (2 levels)	Automatisk tabel 2 (2 niveauer)
+	Automatically hyphenate document	Orddel dokumentet automatisk
+	Automatically Update Document Styles	Opdatér dokumentstile automatisk
+	Automatically update document styles	Opdatér dokumentstile automatisk
+	AutoSave	AutoSave
+	AutoSave documents you have saved in WordCraft	Gem automatisk dokumenter, du har gemt i WordCraft
+	AutoSave failed: {error}. Save the document to turn AutoSave back on.	AutoSave mislykkedes: {error}. Gem dokumentet for at slå AutoSave til igen.
+	AutoSave isn't available in the browser: it can't write to your files. Save downloads a copy.	AutoSave er ikke tilgængelig i browseren: den kan ikke skrive til dine filer. Gem henter en kopi ned.
+	AutoSave only keeps .docx, .odt and .rtf files; {name} can't keep all formatting. Save as .docx to turn on AutoSave.	AutoSave gemmer kun .docx-, .odt- og .rtf-filer; {name} kan ikke gemme al formatering. Gem som .docx for at aktivere AutoSave.
+	AutoSave saves every change to the file (needs a saved document)	AutoSave gemmer alle ændringer i filen (kræver et gemt dokument)
+	AutoSave writes your changes to the file a moment after you stop typing.	AutoSave gemmer dine ændringer i filen et øjeblik, efter at du holder op med at skrive.
+	AutoText	AutoText
+	Balloons	Taleballoner
+	Banded Columns	Stribede kolonner
+	Banded Rows	Stribede rækker
+	Bar	Streg
+	Base text:	Grundtekst:
+	Based on: {style}	Baseret på: {style}
+	Baseline Dots	Prikker på basislinjen
+	Basic Cycle	Grundlæggende cyklus
+	Basic List	Grundlæggende liste
+	Basic Math	Grundlæggende matematik
+	Basic Matrix	Grundlæggende matrix
+	Basic Process	Grundlæggende proces
+	Basic Pyramid	Grundlæggende pyramide
+	Basic Radial	Grundlæggende radial
+	Basic Venn	Grundlæggende Venn
+	Bayes' rule	Bayes' sætning
+	Before:	Før:
+	Beginning of Word	Begyndelse af ord
+	Behind Text	Bag tekst
+	Below text	Under tekst
+	Below the item	Under elementet
+	Between	Mellem
+	Bibliography	Bibliografi
+	Binary assets added	Binære ressourcer tilføjet
+	Binary assets removed	Binære ressourcer fjernet
+	Binomial Coefficient	Binomialkoefficient
+	Binomial Coefficient (angle)	Binomialkoefficient (vinkelparenteser)
+	Binomial Coefficient with Angle Brackets	Binomialkoefficient med vinkelparenteser
+	Binomial expansion of (x+a)ⁿ	Binomialudvikling af (x+a)ⁿ
+	Blank	Tom
+	Blank (Three Columns)	Tom (tre kolonner)
+	Blank document	Tomt dokument
+	Blank Page	Tom side
+	Block\nAuthors	Blokér\nforfattere
+	Blue:	Blå:
+	Body Text	Brødtekst
+	Body text in a short paragraph to show spacing.	Brødtekst i et kort afsnit for at vise afstand.
+	Book	Bog
+	Book Title	Bogtitel
+	Book title	Bogtitel
+	Bookmark	Bogmærke
+	Bookmark name:	Bogmærkenavn:
+	Border lines	Kantlinjer
+	Border Painter	Kantværktøj
+	Border\nPainter	Kant-\nværktøj
+	Borders	Kanter
+	Borders and Shading	Kanter og skygge
+	Borders and Shading…	Kanter og skygge…
+	Both Sides	Begge sider
+	Bottom Border	Nederste kant
+	Bottom Left Cell	Nederste venstre celle
+	Bottom Margin	Nederste sidekant
+	Bottom of Page	Nederst på siden
+	Bottom Right Cell	Nederste højre celle
+	Bottom:	Nederst:
+	Box	Boks
+	Boxed Formula	Indrammet formel
+	Boxed Formula (example)	Indrammet formel (eksempel)
+	Boxed Formulas	Indrammede formler
+	Braces	Krøllede parenteser
+	Braces with Separator	Krøllede parenteser med adskiller
+	Bracket	Parentes
+	Brackets	Kantede parenteser
+	Brackets with Separators	Kantede parenteser med adskillere
+	Break Link	Ophæv forbindelse
+	Breaks	Skift
+	Breve	Breve
+	Browse in WordCraft…	Gennemse i WordCraft…
+	Browse…	Gennemse…
+	Building Block Gallery Content Control	Indholdskontrol til byggeblokgalleri
+	Built-In	Indbygget
+	Built-in style	Indbygget stil
+	Built-in styles can't be deleted.	Indbyggede stile kan ikke slettes.
+	Bullet	Punkt
+	Bullet Library	Punktbibliotek
+	Bullets	Punktnumre
+	By author	Efter forfatter
+	Calendar	Kalender
+	Can't be deleted	Kan ikke slettes
+	can't split at the first row	kan ikke opdele ved den første række
+	Cancel	Annuller
+	Canvas Member	Lærredselement
+	Capitalize Each Word	Sæt initialer i hvert ord
+	Capitalize first letter of sentences	Skriv første bogstav i sætninger med stort
+	Capitalize first letter of table cells	Skriv første bogstav i tabelceller med stort
+	Capitalize names of days	Skriv navne på dage med stort
+	Capitalize the first word of a sentence	Sæt stort bogstav i starten af en sætning
+	Caption	Billedtekst
+	Caption Numbering	Nummerering af billedtekster
+	Caption text	Billedtekst
+	Caption:	Billedtekst:
+	Captions	Billedtekster
+	Caret Character	Markørtegn
+	Case changes	Ændring af skrivetype
+	Cases (Three Conditions)	Tilfælde (tre betingelser)
+	Cases (Two Conditions)	Tilfælde (to betingelser)
+	Cases and Stacks	Tilfælde og stablinger
+	Categories	Kategorier
+	Categories:	Kategorier:
+	Category	Kategori
+	Category {n}	Kategori {n}
+	Ceiling	Loft
+	Cell	Celle
+	Cell Margins	Cellemargener
+	Cell Size	Celleformat
+	Cell\nMargins	Celle\nmargener
+	Center	Centrer
+	Centered	Centreret
+	Centered as Group	Centreret som gruppe
+	Change	Skift
+	Change Case	Skift store/små bogstaver
+	Change Chart Type	Skift diagramtype
+	Change Colors	Skift farver
+	Change in y over change in x	Ændring i y i forhold til ændring i x
+	Change Layout	Skift layout
+	Change List Level	Skift listeniveau
+	Change Password…	Skift adgangskode…
+	Change Picture	Skift billede
+	Change Picture…	Skift billede…
+	Change Shape	Skift figur
+	Change Structure	Skift struktur
+	Change to Display	Skift til visning
+	Change to Inline	Skift til integreret
+	Change to Level 1	Skift til niveau 1
+	Change to Level 2	Skift til niveau 2
+	Change to Level 3	Skift til niveau 3
+	Change to Level 4	Skift til niveau 4
+	Change to Level 5	Skift til niveau 5
+	Change to Level 6	Skift til niveau 6
+	Change to Level 7	Skift til niveau 7
+	Change to Level 8	Skift til niveau 8
+	Change to Level 9	Skift til niveau 9
+	Change\nChart Type	Skift\ndiagramtype
+	Change\nColors	Skift\nfarver
+	Changed lines:	Ændrede linjer:
+	Changes	Ændringer
+	Chapter in a book	Kapitel i en bog
+	Chapters begin at:	Kapitler begynder ved:
+	Character Border	Tegnramme
+	Character code:	Tegnkode:
+	Character in Range	Tegn i området
+	Character level	Tegnniveau
+	Character Position	Tegnposition
+	Character Scale	Tegnskalering
+	Character Shading	Tegnskygge
+	Character Spacing	Tegnafstand
+	Character spacing	Tegnafstand
+	Character style	Tegnstil
+	Characters	Tegn
+	Characters (no spaces)	Tegn (uden mellemrum)
+	Characters (with spaces)	Tegn (med mellemrum)
+	Characters per line:	Tegn pr. linje:
+	Chart	Diagram
+	Chart Design	Diagramdesign
+	Chart Layouts	Diagramlayouts
+	Chart Title	Diagramtitel
+	charts and diagrams can't be moved or resized yet	diagrammer og grafer kan endnu ikke flyttes eller have ændret størrelse
+	Check	Hake
+	Check Accessibility	Kontrollér tilgængelighed
+	Check Box Content Control	Indholdskontrol til afkrydsningsfelt
+	Check Compatibility	Kontrollér kompatibilitet
+	Check for Errors	Søg efter fejl
+	Check Spelling as You Type	Kontrollér stavning under skrivning
+	Check spelling as you type	Kontrollér stavning under indtastning
+	Check\nAccessibility	Kontrollér\ntilgængelighed
+	Checked styles are allowed:	Tilladte stile:
+	Checked symbol	Afkrydset symbol
+	Chevron Down	Pil ned
+	Chevron Up	Pil op
+	Chinese (Simplified)	Kinesisk (forenklet)
+	Chinese (Traditional)	Kinesisk (traditionelt)
+	Choose a command	Vælg en kommando
+	Choose a shortcut	Vælg en genvej
+	Choose List Item	Vælg listeelement
+	Choose the sheet that holds the recipients.	Vælg det ark, der indeholder modtagerne.
+	Circle area from its radius	Cirkelareal ud fra radius
+	Circled Dot	Prik i cirkel
+	Circled Plus	Plus i cirkel
+	Circled Times	Gangetegn i cirkel
+	Citation Style	Citatformat
+	Citations	Citater
+	Citations & Bibliography	Citater og bibliografi
+	City	By
+	Clear	Ryd
+	Clear All Formatting	Ryd al formatering
+	Clear Character Formatting	Ryd tegnformatering
+	Clear Character Style	Ryd tegnstil
+	Clear Formatting Level	Ryd formateringsniveau
+	Clear Paragraph Formatting	Ryd afsnitsformatering
+	Click a border between two cells to merge them. Esc stops.	Klik på en kant mellem to celler for at flette dem. Esc afbryder.
+	Click an item to paste it.	Klik på et element for at sætte det ind.
+	Click level to modify:	Klik på det niveau, du vil ændre:
+	Click the empty text box the text should continue in (Esc cancels)	Klik på den tomme tekstboks, hvor teksten skal fortsætte (Esc annullerer)
+	Click to switch back to inserting	Klik for at gå tilbage til indsættelse
+	Clipboard	Udklipsholder
+	Clipboard Contents	Udklipsholderens indhold
+	Clipboard Items	Elementer i udklipsholder
+	Clipboard Pane	Udklipsholderrude
+	Close Equation	Luk formel
+	Close Header and Footer	Luk sidehoved og sidefod
+	Close Outline View	Luk dispositionsvisning
+	Close Outline\nView	Luk\ndispositionsvisning
+	Clustered Bar	Samlet søjle
+	Clustered Column	Samlet kolonne
+	Col #:	Kol. nr.:
+	Collapse	Skjul
+	Collapse Selection	Skjul markering
+	Collate copies	Sortér kopier
+	Collect entries from:	Indsaml poster fra:
+	Colon Equal	Kolon med lighedstegn
+	Color model:	Farvemodel:
+	Color only	Kun farve
+	Color: {color}	Farve: {color}
+	Colorful	Farverig
+	Column	Kolonne
+	Column Break	Kolonneskift
+	Column Selection	Kolonnevalg
+	Column width	Kolonnebredde
+	Column {n}	Kolonne {n}
+	Column:	Kolonne:
+	Columns	Kolonner
+	Combine	Flet
+	Combine Documents	Sammensæt dokumenter
+	Combo Box Content Control	Indholdskontrol til kombinationsfelt
+	Commands	Kommandoer
+	Commands:	Kommandoer:
+	Comment	Kommentar
+	Comments	Kommentarer
+	Comments beside each page and tracked changes in PDFs, prints and images; a comment list at the end of web pages, Markdown and text.	Kommentarer ved siden af hver side og sporede ændringer i PDF'er, udskrifter og billeder; en liste med kommentarer i slutningen af websider, Markdown og tekst.
+	Comments Pane	Kommentarrude
+	Common Accent Objects	Almindelige akcentobjekter
+	Common Brackets	Almindelige parenteser
+	Common Fractions	Almindelige brøker
+	Common Functions	Almindelige funktioner
+	Common Large Operators	Almindelige store operatorer
+	Common Operator Structures	Almindelige operatorstrukturer
+	Common Operators	Almindelige operatorer
+	Common Radicals	Almindelige rødder
+	Common Subscripts and Superscripts	Almindelige indekser og hævede indekser
+	Communication	Kommunikation
+	Community\nDiscord	Fællesskab\nDiscord
+	Compact	Kompakt
+	Company	Virksomhed
+	Compare	Sammenlign
+	Compare Documents	Sammenlign dokumenter
+	Compare to	Sammenlign med
+	Compared: {changes} changes	Sammenlignet: {changes} ændringer
+	Comparing with another file needs the desktop app.	Sammenligning med en anden fil kræver computerappen.
+	Comparison	Sammenligning
+	Comparison settings	Sammenligningsindstillinger
+	Compress Pictures	Komprimér billeder
+	Compress punctuation at the start of a line	Komprimér tegnsætning ved starten af en linje
+	Conference	Konference
+	Conference paper	Konferencepaper
+	CONFIDENTIAL	FORTROLIG
+	Confirm password:	Bekræft adgangskode:
+	Connect Shapes	Forbind figurer
+	Container Title	Beholdertitel
+	Contains	Indeholder
+	Content Control at Selection	Indholdskontrolelement ved markering
+	Content Control Properties	Indholdskontrolgens egenskaber
+	Contents can't be edited	Indholdet kan ikke redigeres
+	Context	Kontekst
+	Continuous	Kontinuerlig
+	Continuous numbering	Fortsat nummerering
+	Contour Integral	Konturintegral
+	Contour Integral with Limits	Konturintegral med grænser
+	Contour Integral with Stacked Limits	Konturintegral med grænser over og under
+	Contour Integrals	Konturintegraler
+	Contributors	Bidragydere
+	Controls	Kontrolelementer
+	Conversions	Konverteringer
+	Convert between built-up and linear form	Konvertér mellem professionel og lineær form
+	Convert Notes	Konvertér noter
+	Convert Text to Table	Konvertér tekst til tabel
+	Convert Text to Table…	Konvertér tekst til tabel…
+	Convert to Shapes	Konvertér til figurer
+	Convert to Text	Konvertér til tekst
+	Copies	Kopier
+	Coproduct	Koprodukt
+	Coproduct with Limits	Koprodukt med grænser
+	Coproduct with Lower Limit	Koprodukt med nedre grænse
+	Coproduct with Subscript-Superscript Limits	Koprodukt med grænser i sub- og superskript
+	Copy Formatting	Kopiér formatering
+	Copy of the text a bookmark marks	Kopi af den tekst, et bogmærke markerer
+	Copy Styles	Kopiér stile
+	Copy to	Kopiér til
+	Copyright Sign	Copyright-symbol
+	Correct accidental usage of cAPS LOCK key	Ret uvedkommende brug af cAPS LOCK-tasten
+	Correct TWo INitial CApitals	Rettelse af to store begyndelsesbogstaver
+	Corrections	Rettelser
+	Cosecant Function	Cosecansfunktion
+	Cosine 2x	Cosinus 2x
+	Cosine Function	Cosinusfunktion
+	Cotangent Function	Cotangensfunktion
+	Couldn't download {name}: {error}	Kunne ikke hente {name}: {error}
+	Couldn't make WordCraft the default: {error}	Kunne ikke gøre WordCraft til standardprogram: {error}
+	Couldn't open {path}: {error}	Kunne ikke åbne {path}: {error}
+	Count by:	Tæl efter:
+	Count words in text boxes and notes	Tæl ord i tekstfelter og noter
+	Country	Land
+	Courtesy Title	Høflighedsbetegnelse
+	Cover Page	Forside
+	Craft	Craft
+	Create a Style	Opret en stil
+	Create an interactive outline of your document.\n\nIt's a great way to keep track of where you are or quickly move your content around.\n\nTo get started, go to the Home tab and apply Heading styles to the headings in your document.	Opret en interaktiv disposition af dit dokument.\n\nDet er en fin måde at holde styr på, hvor du er, eller hurtigt at flytte rundt på indholdet.\n\nFor at komme i gang skal du gå til fanen Start og anvende Overskrift-stile på overskrifterne i dit dokument.
+	Create Graphic	Opret grafik
+	Create Link	Opret forbindelse
+	Create New Style	Opret ny stil
+	Create Source	Opret kilde
+	Croatian	Kroatisk
+	Cross-reference	Krydshenvisning
+	Cross-reference:	Krydshenvisning:
+	Cube Root	Kubikrod
+	Current	Nuværende
+	Current - Linear	Nuværende – lineære
+	Current - Professional	Nuværende – professionelle
+	Current page	Nuværende side
+	Current Position	Nuværende placering
+	Current record	Aktuel post
+	Current style: {style}	Nuværende stil: {style}
+	Curved Arrow Connector	Krum pilforbindelse
+	Curved Connector	Krum forbindelse
+	Custom dictionary	Brugerdefineret ordbog
+	Custom Margins…	Brugerdefinerede sidekanter…
+	Custom mark:	Tilpasset mærke:
+	Custom range	Brugerdefineret område
+	Custom size	Brugerdefineret størrelse
+	Custom Table of Contents…	Brugerdefineret indholdsfortegnelse…
+	Custom Watermark	Brugerdefineret vandmærke
+	Custom Watermark…	Brugerdefineret vandmærke…
+	Customize	Tilpas
+	Customize Keyboard	Tilpas tastatur
+	Customize Quick Access Toolbar	Tilpas værktøjslinjen Hurtig adgang
+	Customize Quick Access Toolbar…	Tilpas værktøjslinjen Hurtig adgang…
+	Customize Ribbon	Tilpas bånd
+	Customize the Ribbon…	Tilpas båndet…
+	Cycle	Cyklus
+	Czech	Tjekisk
+	Danish	Dansk
+	Dark	Mørkt
+	Dark Mode	Mørk tilstand
+	Dark page (white text on black)	Mørk side (hvid tekst på sort)
+	Dark with Shadow	Mørk med skygge
+	Darkroom	Mørkekammer
+	Data	Data
+	Data Labels	Datalabels
+	Date & Time	Dato og klokkeslæt
+	Date and Time	Dato og klokkeslæt
+	Date format	Datoformat
+	Date formats:	Datoformater:
+	Date Picker Content Control	Indholdskontrolelement: Datovælger
+	Day	Dag
+	Decimal	Decimal
+	Decorative objects only add visual interest: screen readers skip them.	Dekorative objekter giver kun visuel interesse: skærmlæsere springer dem over.
+	Decrease Font Size	Formindr skriftstørrelse
+	Decrease Indent	Formindr indrykning
+	Default Paragraph Font	Skrifttype til standardafsnit
+	Default tab stops:	Standardtabulatorstop:
+	Define New Bullet	Definer nyt punktnummer
+	Define New Multilevel List	Definer ny flerniveauliste
+	Define New Multilevel List…	Definer ny flerniveauliste…
+	Define New Number Format	Definer nyt talformat
+	Deflate	Komprimér
+	Delete Back in Equation	Slet tilbage i formel
+	Delete Bookmark	Slet bogmærke
+	Delete Cells	Slet celler
+	Delete Clipboard Item	Slet element i udklipsholder
+	Delete Columns	Slet kolonner
+	Delete Comment	Slet kommentar
+	Delete in Equation	Slet i formel
+	Delete Label	Slet etiket
+	Delete Next Word	Slet næste ord
+	Delete Previous Word	Slet forrige ord
+	Delete Rows	Slet rækker
+	Delete Selected Ink	Slet valgt håndskrift
+	Delete Style	Slet stil
+	Delete Table	Slet tabel
+	Delete Table Style	Slet tabelstil
+	Deleted	Slettet
+	Deletions:	Sletninger:
+	Delivery address:	Leveringsadresse:
+	Delta Equal To	Delta er lig med
+	Delta over arrow	Delta over pil
+	Demote	Sænk
+	Demote to Body Text	Sænk til brødtekst
+	Derivative as a limit	Den afledte som en grænseværdi
+	Descending	Faldende
+	Describe what this object shows, for people who can't see it.	Beskriv, hvad dette objekt viser, for personer, der ikke kan se det.
+	Describe what this table shows, for people who can't see it.	Beskriv, hvad denne tabel viser, for personer, der ikke kan se den.
+	Design	Design
+	Design Mode	Designtilstand
+	Detach Template	Frigør skabelon
+	Detect language automatically	Registrer sprog automatisk
+	Developer	Udvikler
+	development build	udviklingsversion
+	Diagonal	Diagonal
+	Diagonal Dots	Diagonale prikker
+	Diamond	Rombediamond
+	Dictate	Diktér
+	Dictionaries	Ordbøger
+	Dictionaries folder:	Ordbogsmappe:
+	Different First Page	Forskellige første side
+	Different Odd & Even Pages	Forskellige ulige og lige sider
+	Differential	Differentiale
+	Differential theta	Differentiale theta
+	Differential x	Differentiale x
+	Differential y	Differentiale y
+	Differentials	Differentialer
+	Direct formatting	Direkte formatering
+	Directory	Mappe
+	Discord community	Discord-fællesskab
+	Display	Vis
+	Display for Review	Vis til gennemsyn
+	Display text	Vis tekst
+	Distribute Columns	Fordel kolonner jævnt
+	Distribute letters	Fordel bogstaver
+	Distribute Rows	Fordel rækker jævnt
+	Distribute spacing	Fordel afstand
+	Distributed	Fordelt
+	Do Not Check Spelling or Grammar	Kontrollér ikke stavning eller grammatik
+	Do not check spelling or grammar	Kontrollér ikke stavning eller grammatik
+	DO NOT COPY	IKKE TIL KOPIERING
+	Do Not Show in TOC	Vis ikke i indholdsfortegnelse
+	Do you want to save changes to {name}?	Vil du gemme ændringer i {name}?
+	Document End	Dokumentets slutning
+	Document Formatting	Dokumentformatering
+	Document Grid	Dokumentgitter
+	Document Information	Dokumentoplysninger
+	Document name	Dokumentnavn
+	Document Property	Dokumentegenskab
+	Document Start	Dokumentets begyndelse
+	Document template:	Dokumentskabelon:
+	Document Text	Dokumenttekst
+	Document Title	Dokumenttitel
+	Document1	Dokument1
+	Document\nPreferences	Dokument\nindstillinger
+	Documents	Dokumenter
+	Documents you open will show up here.	Dokumenter, du åbner, vises her.
+	Does not contain	Indeholder ikke
+	DOI	DOI
+	Don't add space between paragraphs of the same style	Tilføj ikke mellemrum mellem afsnit i samme stil
+	Don't capitalize after:	Brug ikke store bogstaver efter:
+	Don't hyphenate	Ingen orddeling
+	Don't read Zotero, Mendeley or EndNote citations and bibliographies	Læs ikke citater og bibliografier fra Zotero, Mendeley eller EndNote
+	Dot	Prik over tegn
+	Dot dash	Prikstreg
+	Dot-dash	Prikstreg
+	Dotted	Prikket
+	Double	Dobbelt
+	Double Bar	Dobbeltstreg over tegn
+	Double Closing Quote	Dobbelt lukket anførselstegn
+	Double Dot	Dobbeltprik over tegn
+	Double Integral	Dobbeltintegral
+	Double Integral with Limits	Dobbeltintegral med grænser
+	Double Integral with Stacked Limits	Dobbeltintegral med grænser over og under
+	Double Left Arrow with Text Above	Dobbelt venstrepil med tekst ovenfor
+	Double Left Arrow with Text Below	Dobbelt venstrepil med tekst nedenfor
+	Double Left Right Arrow with Text Above	Dobbelt venstre-højre-pil med tekst ovenfor
+	Double Left Right Arrow with Text Below	Dobbelt venstre-højre-pil med tekst nedenfor
+	Double Opening Quote	Dobbelt åbent anførselstegn
+	Double Right Arrow with Text Above	Dobbelt højrepil med tekst ovenfor
+	Double Right Arrow with Text Below	Dobbelt højrepil med tekst nedenfor
+	Double Spacing	Dobbelt linjeafstand
+	Double Square Brackets	Dobbelte kantede parenteser
+	Double Strikethrough	Dobbelt gennemstrege
+	Double strikethrough	Dobbelt gennemstreget
+	Double summation	Dobbeltsum
+	Double Underline	Dobbelt understreget
+	Double Vertical Bars	Dobbeltlodrette streger
+	Doughnut	Donut
+	Down	Ned
+	DRAFT	KLADDE
+	Draft	Kladde
+	Drag a rectangle to draw a table, or a line across cells to split them. Esc stops.	Træk et rektangel for at tegne en tabel, eller en linje gennem celler for at opdele dem. Esc afbryder.
+	Draw Ink	Tegn med blæk
+	Draw Table	Tegn tabel
+	Draw\nTable	Tegn\nTabel
+	Drawing Canvas	Lærred
+	Drawing Tools	Tegneværktøjer
+	Drawing\nCanvas	Tegne\nlærred
+	Drop Cap	Stort begyndelsesbogstav
+	Drop cap	Store forbogstav
+	drop caps can't go in a table	et initial kan ikke placeres i en tabel
+	Drop-Down List Content Control	Indholdskontrolelement: Rulleliste
+	Drops all formatting and pastes plain text.	Fjerner al formatering og sætter ren tekst ind.
+	E-mail Messages	E-mailbeskeder
+	Edit Comment	Redigér kommentar
+	Edit Data	Redigér data
+	Edit Document	Rediger dokument
+	Edit Equation	Redigér formel
+	Edit Field Code	Rediger feltkode
+	Edit Field…	Rediger felt…
+	Edit Footer	Redigér sidefod
+	Edit Header	Redigér sidehoved
+	Edit Individual Documents…	Rediger enkelte dokumenter…
+	Edit Items	Redigér elementer
+	Edit Recipient List	Redigér modtagerliste
+	Edit Source	Rediger kilde
+	Edit\nData	Redigér\ndata
+	Edit\nRecipient List	Redigér\nmodtagerliste
+	Edited	Redigeret
+	Editing	Redigering
+	Editing header/footer	Redigerer sidehoved/sidefod
+	Editing in this document is restricted.	Redigering i dette dokument er begrænset.
+	Editing — edit the document directly	Redigering — redigér dokumentet direkte
+	Edition	Udgave
+	Editor	Redaktør
+	Edit…	Rediger…
+	Elbow Arrow Connector	Vinklet pilforbindelse
+	Elbow Connector	Vinklet forbindelse
+	Ellipsis	Ellipse
+	Emboss	Præg
+	Emphasis	Fremhævning
+	Empty Matrices	Tomme matricer
+	Enclose Characters	Omslut tegn
+	Enclosure	Omslutning
+	Encrypt with Password	Krypter med adgangskode
+	Encrypt with Password…	Krypter med adgangskode…
+	End of document	Slut på dokumentet
+	End of section	Slut på sektionen
+	End of Word	Slut på ord
+	Endnote Reference	Slutnotehenvisning
+	Endnote Text	Slutnotetekst
+	Endnotes	Slutnoter
+	Endnotes to footnotes	Slutnoter til fodnoter
+	English (United Kingdom)	Engelsk (Storbritannien)
+	English (United States)	Engelsk (USA)
+	Engrave	Ritse ind
+	Enlarge symbol	Forstør symbol
+	Enter a number.	Angiv et tal.
+	Enter formatting for number:	Angiv formatering for nummer:
+	Enter in Equation	Enter i formel
+	Enter page number:	Angiv sidetal:
+	Entry marked.	Element markeret.
+	Envelope #10	Konvolut #10
+	Envelope Address	Konvolutadresse
+	Envelope Return	Returadresse på konvolut
+	Envelope size:	Kuvertstørrelse:
+	Envelopes	Kuverter
+	Equal by Definition	Lig med definition
+	Equal column width	Lige kolonnebredde
+	Equal Equal	Dobbelt lighedstegn
+	Equal to	Er lig med
+	Equals:	Lig med:
+	Equation	Formel
+	Equation Gallery	Formelgalleri
+	Equation Info	Formeloplysninger
+	Equation Number	Formelnummer
+	Equation Options	Formelindstillinger
+	Erase Ink	Slet blæk
+	Errors ({n})	Fejl ({n})
+	Estonian	Estisk
+	Euler's identity	Eulers identitet
+	Even Banded Columns	Lige stribede kolonner
+	Even Banded Rows	Lige stribede rækker
+	Even Page	Lige side
+	Even pages only	Kun lige sider
+	Every change is recorded as a tracked change.	Alle ændringer registreres som en sporet ændring.
+	Every command is available to scripts and AI agents: run `wordcraft-cli mcp` for an MCP server, or start the app with `--control <port>` for the JSON control channel.	Alle kommandoer er tilgængelige for scripts og AI-agenter: kør `wordcraft-cli mcp` for en MCP-server, eller start appen med `--control <port>` for JSON-kanalen.
+	Every field needs a name.	Alle felter skal have et navn.
+	Everyone	Alle
+	Exactly	Nøjagtigt
+	Exactly {n}	Nøjagtigt {n}
+	Example: {sample}	Eksempel: {sample}
+	Exceptions (optional)	Undtagelser (valgfri)
+	Exceptions…	Undtagelser…
+	Existing File or Web Page	Eksisterende fil eller webside
+	Expand or Collapse Heading	Udvid eller skjul overskrift
+	Exponential	Eksponentialfunktion
+	Exponential series	Eksponentiel række
+	Export a copy to share (PDF, Word document)	Eksportér en kopi til deling (PDF, Word-dokument)
+	Export Page as PNG	Eksportér side som PNG
+	Exported {path}	Eksporteret {path}
+	Expression	Udtryk
+	Extend Selection	Udvid markering
+	Extend Selection by Units	Udvid markering efter enheder
+	Extra space	Ekstra mellemrum
+	Field	Felt
+	Field code:	Feltkode:
+	Field Codes	Feltkoder
+	Field codes:	Feltkoder:
+	Field name	Feltnavn
+	Field name:	Feltnavn:
+	Field names must be different.	Feltnavne skal være forskellige.
+	Field names:	Feltnavne:
+	Field properties	Feltegenskaber
+	Field:	Felt:
+	Fields	Felter
+	Fields:	Felter:
+	Field…	Felt…
+	Figure	Figur
+	File name:	Filnavn:
+	Fill color:	Udfyldningsfarve:
+	Filling in forms	Udfyldning af formularer
+	Film	Film
+	Filter and Sort	Filtrér og sortér
+	Filter Recipients	Filtrér modtagere
+	Find	Søg
+	Find and Replace	Søg og erstat
+	Find Next	Søg næste
+	Find Next Editable Region	Find næste redigerbare område
+	Find Previous	Søg forrige
+	Find Recipient	Find modtager
+	Find What Expression	Find efter udtryk
+	Find What Text	Find efter tekst
+	Find what:	Find:
+	Find:	Find:
+	Finding printers…	Søger efter printere…
+	Finish	Færdig
+	Finish & Merge	Færdigér og flet
+	Finish &\nMerge	Færdigér og\nflet
+	Finished	Afsluttet
+	Finnish	Finsk
+	First Column	Første kolonne
+	First line	Første linje
+	First line:	Første linje:
+	First Name	Fornavn
+	First Record	Første post
+	First row of data contains column headers	Første række data indeholder kolonneoverskrifter
+	Fix Position on Page	Fastgør placering på siden
+	Fixed Column Width	Fast kolonnebredde
+	Flip Horizontal	Vend vandret
+	Flip Vertical	Vend lodret
+	Floor	Gulv
+	Focus	Fokus
+	Follow number with:	Efter nummer:
+	Font Color	Skriftfarve
+	Font color	Skriftfarve
+	Font color:	Skriftfarve:
+	Font Dialog	Skrifttype-dialog
+	Font: {font}	Skrifttype: {font}
+	Font…	Skrifttype…
+	Footer	Sidefod
+	Footnote and Endnote	Fodnote og slutnote
+	Footnote Reference	Fodnotehenvisning
+	Footnote Text	Fodnotetekst
+	Footnotes	Fodnoter
+	Footnotes and endnotes	Fodnoter og slutnoter
+	Footnotes to endnotes	Fodnoter til slutnoter
+	For which item:	For hvilket element:
+	Format Page Numbers	Formatér sidetal
+	Format Page Numbers…	Formatér sidetal…
+	Format Painter	Formateringsmaler
+	Format Shape Pane	Format Shape Pane
+	Formatted	Formateret
+	Formatted Text	Formateret tekst
+	Formatting	Formatering
+	Formatting at Selection	Formatering af markering
+	Formatting exceptions	Formateringsundtagelser
+	Formatting marks	Formattegn
+	Formatting, case changes, white space and tables are compared; the other settings are kept for later.	Formatering, ændringer af store og små bogstaver, mellemrum og tabeller sammenlignes; de øvrige indstillinger gemmes til senere.
+	Formula	Formel
+	Formula:	Formel:
+	Forward	Fremad
+	Fraction	Brøk
+	Fractions (1/2) as fraction characters (½)	Brøker (1/2) som brøksymboler (½)
+	French (France)	Fransk (Frankrig)
+	From text:	Fra tekst:
+	from Unicode (hex)	fra Unicode (hex)
+	From:	Fra:
+	Full page of the same label	Hele siden med den samme etiket
+	Full Screen	Fuld skærm
+	Full Screen View	Full Screen View
+	Full\nScreen	Fuld\nskærm
+	Function	Funktion
+	Functions	Funktioner
+	Gallery	Galleri
+	Geometry	Geometri
+	German (Germany)	Tysk (Tyskland)
+	getartcraft.com/apps/wordcraft	getartcraft.com/apps/wordcraft
+	Glow	Glød
+	Glow Colors	Glødfarver
+	Go Back	Gå tilbage
+	Go To	Gå til
+	Go to	Gå til
+	Go To (⌘⌥G)	Gå til (⌘⌥G)
+	Go to Record	Gå til post
+	Go to what:	Gå til hvad:
+	Go To…	Gå til…
+	Good afternoon	God eftermiddag
+	Good evening	God aften
+	Good morning	Godmorgen
+	Grab bag	Blandet
+	Grave	Grave
+	Greater than	Større end
+	Greater than or equal	Større end eller lig med
+	Greek	Græsk
+	Greek Letters	Græske bogstaver
+	Green:	Grøn:
+	Greeting Line	Hilseslinje
+	Greeting\nLine	Hilses\nlinje
+	Grid Table 1 Light	Gittertabel 1 lys
+	Grid Table 4 – Blue	Gittertabel 4 – Blå
+	Grid Table 4 – Green	Gittertabel 4 – Grøn
+	Grid Table 4 – Orange	Gittertabel 4 – Orange
+	Grid Table 4 – Purple	Gittertabel 4 – Lilla
+	Gridlines	Gitterlinjer
+	Group	Grupper
+	Grouping Character Above	Grupperingstegn over
+	Grouping Character Below	Grupperingstegn under
+	Grow Font 1 Point	Forøg skriftstørrelse med 1 punkt
+	H:	H:
+	Hanging Indent	Hængende indrykning
+	Hat	Hat
+	Header	Sidehoved
+	Header & Footer	Sidehoved og sidefod
+	Header Row	Overskriftsrække
+	Header row	Overskriftsrække
+	Header/Footer Position	Placering af sidehoved/sidefod
+	Headers and footers	Sidehoved og sidefod
+	Heading	Overskrift
+	Heading 1	Overskrift 1
+	Heading 2	Overskrift 2
+	Heading 3	Overskrift 3
+	Heading styles (levels 1–{n})	Overskriftsstile (niveau 1–{n})
+	Heading text	Overskriftstekst
+	Heading {n}	Overskrift {n}
+	Headings	Overskrifter
+	Heart	Hjerte
+	Hebrew	Hebraisk
+	Hex:	Hex:
+	Hidden	Skjult
+	Hidden bookmarks	Skjulte bogmærker
+	Hidden text	Skjult tekst
+	Hide Codes	Skjul koder
+	Hide from style lists	Skjul i stilelister
+	Hide Ink	Skjul blæk
+	Hide White Space	Skjul mellemrum
+	Hide\nInk	Skjul\nblæk
+	Hierarchy	Hierarki
+	Highlight	Fremhævning
+	Highlight Merge Fields	Fremhæv fletfelter
+	Highlight\nMerge Fields	Fremhæv\nfletfelter
+	Highlighter	Tekstmarkering
+	Home	Start
+	Home folder	Hjemmappe
+	Horizontal Line	Vandret linje
+	How many pages the whole document has	Antal sider i hele dokumentet
+	How many pages this section has	Antal sider i denne sektion
+	How many words the document holds	Antal ord i dokumentet
+	HTML Format	HTML-format
+	Hue:	Nuance:
+	Hunspell .aff and .dic files here (pl_PL, pt_BR, it_IT, hr_HR, tr_TR) are used before the system's.	Hunspell .aff- og .dic-filer her (pl_PL, pt_BR, it_IT, hr_HR, tr_TR) bruges før systemets.
+	Hyperbolic Cosecant Function	Hyperbolsk cosecansfunktion
+	Hyperbolic Cosine Function	Hyperbolsk cosinusfunktion
+	Hyperbolic Cotangent Function	Hyperbolsk cotangensfunktion
+	Hyperbolic Functions	Hyperbolske funktioner
+	Hyperbolic Secant Function	Hyperbolsk secansfunktion
+	Hyperbolic Sine Function	Hyperbolsk sinusfunktion
+	Hyperbolic Tangent Function	Hyperbolsk tangensfunktion
+	Hyperlink	Hyperlink
+	Hyphenate at:	Orddel ved:
+	Hyphenate words in CAPS	Orddel ord med store bogstaver
+	Hyphenation Options…	Indstillinger for orddeling…
+	Hyphenation zone:	Orddelingszone:
+	Hyphens (--) as dashes (—)	Bindestreger (--) som tankestreger (—)
+	Hypotenuse	Hypotenuse
+	I, II, III, …	I, II, III, …
+	i, ii, iii, …	i, ii, iii, …
+	Icon Color	Ikonfarve
+	Icons	Ikoner
+	Identity Matrices	Identitetsmatricer
+	If…Then…Else	Hvis…Så…Ellers
+	If…Then…Else…	Hvis…Så…Ellers…
+	Ignore All	Ignorer alle
+	Ignore punctuation characters	Ignorer tegnsætningstegn
+	Ignore web and file addresses	Ignorer web- og filadresser
+	Ignore white-space characters	Ignorer mellemrumstegn
+	Ignore words in capitals	Ignorer ord med store bogstaver
+	Ignore words with numbers	Ignorer ord med tal
+	Illustrations	Illustrationer
+	Immersive	Fordybelse
+	Immersive Reader	Fordybelseslæser
+	Immersive\nReader	Fordybelses\nlæser
+	In Default apps, choose WordCraft for the document types you want it to open.	I Standardapps vælger du WordCraft for de dokumenttyper, du vil have den til at åbne.
+	In equations, typing a name after a backslash replaces it with its symbol.	I formler erstattes et navn, der skrives efter en omvendt skråstreg, med dets symbol.
+	In Front of Text	Foran tekst
+	In Line with Text	På linje med tekst
+	In the margin	I margenen
+	Include level number from:	Inkludér nummer på niveau fra:
+	Include page numbers	Inkludér sidetal
+	Increase Indent	Forøg indrykning
+	Indent	Indrykning
+	Indent from left:	Indrykning fra venstre:
+	Indentation	Indrykning
+	Indented	Med indrykning
+	Indents	Indrykninger
+	Indents and Spacing	Indrykninger og afstand
+	Index	Indeks
+	Index and Tables	Indeks og tabeller
+	Index Heading	Indeksoverskrift
+	Index {n}	Indeks {n}
+	Inflate	Udvid
+	Initials:	Initialer:
+	Ink	Blæk
+	Ink Replay	Afspil håndskrift
+	Ink to Shape	Håndskrift til figur
+	Ink to\nMath	Håndskrift\ntil formel
+	Ink to\nShape	Håndskrift\ntil figur
+	Ink\nReplay	Gentag\nhåndskrift
+	Inline	Integreret
+	Input Format	Indtastningsformat
+	Insert a new equation (Alt+=)	Indsæt en ny formel (Alt+=)
+	Insert Above	Indsæt ovenfor
+	Insert Below	Indsæt nedenfor
+	Insert Caption	Indsæt billedtekst
+	Insert Caption…	Indsæt billedtekst…
+	Insert Chart	Indsæt diagram
+	Insert Citation	Indsæt citat
+	Insert Columns to the Left	Indsæt kolonner til venstre
+	Insert Columns to the Right	Indsæt kolonner til højre
+	Insert Date Field	Indsæt datofelt
+	Insert Endnote	Indsæt slutnote
+	Insert Footnote	Indsæt fodnote
+	Insert Hyperlink	Indsæt hyperlink
+	Insert Index	Indsæt indeks
+	Insert Left	Indsæt til venstre
+	Insert Merge Field	Indsæt fletfelt
+	Insert Merge\nField	Indsæt flet\nfelt
+	Insert New Equation	Indsæt ny formel
+	Insert one text or another, depending on a field's value.	Indsæt den ene eller den anden tekst, afhængigt af et felts værdi.
+	Insert Page Field	Indsæt sidefelt
+	Insert reference to:	Indsæt reference til:
+	Insert Right	Indsæt til højre
+	Insert Row or Column by Clicking	Indsæt række eller kolonne ved at klikke
+	Insert Rows Above	Indsæt rækker ovenfor
+	Insert Rows Below	Indsæt rækker nedenfor
+	Insert Shapes	Indsæt figurer
+	Insert SmartArt	Indsæt SmartArt
+	Insert Spike	Indsæt klippekartotek
+	Insert Structure	Indsæt struktur
+	Insert Symbol	Indsæt symbol
+	Insert Table	Indsæt tabel
+	Insert Table of Authorities	Indsæt tabel over retskilder
+	Insert Table of Figures	Indsæt tabel over figurer
+	Insert Table…	Indsæt tabel…
+	Insert Time Field	Indsæt tidsfelt
+	Insert\nAbove	Indsæt\novenfor
+	Insert\nCaption	Indsæt\nbilledtekst
+	Insert\nCitation	Indsæt\ncitat
+	Insert\nFootnote	Indsæt\nfodnote
+	Insertions and Deletions	Indsættelser og sletninger
+	Insertions:	Indsættelser:
+	Inside Borders	Indvendige kanter
+	Inside Horizontal Border	Vandret indre kant
+	Inside Vertical Border	Lodret indre kant
+	Inside:	Indeni:
+	Inspect Document	Kontrollér dokument
+	Inspect Styles at Selection	Kontrollér stile ved markering
+	Institution	Institution
+	Integral	Integral
+	Integral of e^(−x²)	Integral af e^(−x²)
+	Integral with Limits	Integral med grænser
+	Integral with Stacked Limits	Integral med grænser over og under
+	Integrals	Integraler
+	Intense Emphasis	Kraftig fremhævning
+	Intense Quote	Kraftigt citat
+	Intense Reference	Kraftig henvisning
+	Interface	Brugerflade
+	Interface language	Brugerfladesprog
+	Interface language:	Grænsefladesprog:
+	Interface size:	Grænsefladestørrelse:
+	Interface Theme	Grænsefladetema
+	Interface theme:	Grænsefladetema:
+	Interface\nTheme	Grænseflade\ntema
+	Internet addresses as links	Internetadresser som links
+	Intersection	Snitmængde
+	Intersection with Limits	Snitmængde med grænser
+	Intersection with Lower Limit	Snitmængde med nedre grænse
+	Intersection with Subscript-Superscript Limits	Snitmængde med grænser i sub- og superskript
+	Inverse Cosecant Function	Inverse cosecansfunktion
+	Inverse Cosine Function	Inverse cosinusfunktion
+	Inverse Cotangent Function	Inverse cotangensfunktion
+	Inverse Functions	Inverse funktioner
+	Inverse Hyperbolic Cosecant Function	Omvendt hyperbolsk cosecansfunktion
+	Inverse Hyperbolic Cosine Function	Omvendt hyperbolsk cosinusfunktion
+	Inverse Hyperbolic Cotangent Function	Omvendt hyperbolsk cotangensfunktion
+	Inverse Hyperbolic Functions	Inverse hyperbolske funktioner
+	Inverse Hyperbolic Secant Function	Omvendt hyperbolsk secansfunktion
+	Inverse Hyperbolic Sine Function	Omvendt hyperbolsk sinusfunktion
+	Inverse Hyperbolic Tangent Function	Omvendt hyperbolsk tangensfunktion
+	Inverse Secant Function	Inverse secansfunktion
+	Inverse Sine Function	Inverse sinusfunktion
+	Inverse Tangent Function	Inverse tangensfunktion
+	Ionosphere	Ionosfære
+	Is blank	Er tom
+	Is not blank	Er ikke tom
+	Issue	Hæfte
+	Join the ArtCraft community on Discord	Deltag i ArtCraft-fællesskabet på Discord
+	Join us on Discord: discord.gg/artcraft	Følg os på Discord: discord.gg/artcraft
+	Journal	Tidsskrift
+	Justification of a display equation	Justering af en displayformel
+	Justified	Justeret
+	Keep Lines Together	Hold linjer sammen
+	Keep lines together	Hold linjer sammen
+	Keep Text Only	Behold kun tekst
+	Keep the password somewhere safe: without it nobody, WordCraft included, can open the document. Leave both boxes empty to remove the password.	Opbevar adgangskoden et sikkert sted: uden den kan ingen, heller ikke WordCraft, åbne dokumentet. Lad begge felter være tomme for at fjerne adgangskoden.
+	Keep with Next	Hold sammen med næste
+	Keep with next	Hold sammen med næste
+	Keeps the fonts and formatting of the copied text.	Bevarer skrifttyper og formatering af den kopierede tekst.
+	Keyboard shortcuts:	Tastaturgenveje:
+	Keys for this command:	Taster til denne kommando:
+	Keywords	Nøgleord
+	Korean	Koreansk
+	Label changes with:	Mærk ændringer med:
+	Label:	Etiket:
+	Labels	Etiketter
+	Language Preferences…	Sprogpræferencer…
+	Large\nOperator	Stor\noperator
+	Largest Only	Kun største
+	Lasso Select	Lassomarkering
+	Last Column	Sidste kolonne
+	Last commit	Seneste commit
+	Last Name	Efternavn
+	Last Record	Sidste post
+	Last, First; Last, First	Efternavn, Fornavn; Efternavn, Fornavn
+	Latin text font:	Skrifttype for latinsk tekst:
+	Layout Summary	Layoutoversigt
+	Layouts	Layouts
+	Leader	Udfyldningstegn
+	Leave a recipient out of the merge when a field has this value.	Spring en modtager over i serielbrevet, når et felt har denne værdi.
+	Leave Equation	Forlad formel
+	Leave out the date and time of comments and tracked changes when saving	Udelad dato og klokkeslæt for kommentarer og registrerede ændringer, når der gemmes
+	Leave the equation (Esc)	Forlad formlen (Esc)
+	leave the equation first	forlad først formlen
+	Leave the label out of the caption	Lad etiketten være uden for billedteksten
+	Left Arrow with Text Above	Venstrepil med tekst ovenfor
+	Left Arrow with Text Below	Venstrepil med tekst nedenfor
+	Left Border	Venstre kant
+	Left border	Venstre kant
+	Left Bracket Twice	Venstre kantet parentes to gange
+	Left indent	Venstre indrykning
+	Left Margin	Venstre sidekant
+	Left Only	Kun venstre
+	Left Right Arrow Above	Venstre-højre-pil over
+	Left Right Arrow with Text Above	Venstre-højre-pil med tekst ovenfor
+	Left Right Arrow with Text Below	Venstre-højre-pil med tekst nedenfor
+	Left Subscript-Superscript	Venstre sub- og superskript
+	Left-to-right	Venstre til højre
+	Left-to-Right Text Direction	Tekstretning fra venstre til højre
+	Leftwards Arrow Above	Venstrevendt pil over
+	Leftwards Harpoon Above	Venstrevendt harpon over
+	Legal style numbering	Juridisk nummerering
+	Legend	Forklaring
+	Less than	Mindre end
+	Less than or equal	Mindre end eller lig med
+	Letter headings	Bogstavsoverskrifter
+	Letter-Like Symbols	Bogstavlignende symboler
+	Letters	Breve
+	Level 1	Niveau 1
+	Level 2	Niveau 2
+	Level 3	Niveau 3
+	Level 4	Niveau 4
+	Level 5	Niveau 5
+	Level 6	Niveau 6
+	Level 7	Niveau 7
+	Level 8	Niveau 8
+	Level 9	Niveau 9
+	Level {n}	Niveau {n}
+	Levels:	Niveauer:
+	Light with Outline	Lys med kontur
+	Limit	Grænse
+	Limit and\nLog	Grænse og\nlog
+	Limit consecutive hyphens to:	Begræns antal på hinanden følgende orddelinger til:
+	Limit Example	Grænseeksempel
+	Limit formatting to a selection of styles	Begræns formatering til bestemte stile
+	Line and Page Breaks	Linje- og sideskift
+	Line and Paragraph Spacing	Afstand mellem linjer og afsnit
+	Line between	Linje mellem
+	Line Break	Linjeskift
+	Line breaking	Linjeskift
+	Line delta	Linjedelta
+	Line End	Linjeslut
+	Line Number	Linjenummer
+	Line Numbering Options…	Indstillinger for linjenummerering…
+	Line Numbers	Linjenumre
+	Line Spacing	Linjeafstand
+	Line spacing	Linjeafstand
+	Line Spacing Options…	Indstillinger for linjeafstand…
+	Line spacing:	Linjeafstand:
+	Line Start	Linjestart
+	Linear Fraction	Lineær brøk
+	Lines added	Tilføjede linjer
+	Lines and characters	Linjer og tegn
+	Lines deleted	Slettede linjer
+	Lines only	Kun linjer
+	Lines per page:	Linjer pr. side:
+	Link entries to their headings	Knyt elementer til deres overskrifter
+	Link level to style:	Tilknyt niveau til stil:
+	Link to Previous	Opret forbindelse til forrige
+	Link to:	Link til:
+	Linked style (paragraph and character)	Tilknyttet stil (afsnit og tegn)
+	Links and References	Links og referencer
+	Link…	Hyperlink…
+	List	Liste
+	List Definition	Listedefinition
+	List entries	Listeelementer
+	List Paragraph	Listeparagraf
+	List Table 3 – Blue	Listetabel 3 – Blå
+	List Table 3 – Green	Listetabel 3 – Grøn
+	List Table 3 – Orange	Listetabel 3 – Orange
+	List Table 3 – Purple	Listetabel 3 – Lilla
+	Load System Installed Fonts…	Indlæs systeminstallerede skrifttyper…
+	Loaded {count} system fonts.	Der blev indlæst {count} systemskrifttyper.
+	Local font access is not supported by your browser.	Din browser understøtter ikke adgang til lokale skrifttyper.
+	Local font access was denied.	Adgang til lokale skrifttyper blev nægtet.
+	Location: {path}	Placering: {path}
+	Lock Fields	Lås felter
+	Logarithm	Logaritme
+	Logarithm with Base	Logaritme med grundtal
+	Logical AND	Logisk OG
+	Logical AND with Limits	Logisk OG med grænser
+	Logical OR	Logisk ELLER
+	Logical OR with Limits	Logisk ELLER med grænser
+	Lum:	Lysstyrke:
+	Macros	Makroer
+	Made from the author and year when empty	Uddannes af forfatter og år, når feltet er tomt
+	Magazine or newspaper article	Artikel i magasin eller avis
+	Mail Merge	Serielbrev
+	Mailings	Post
+	Main entry:	Hovedelement:
+	Make WordCraft the default for Word documents…	Gør WordCraft til standardprogram for Word-dokumenter…
+	Makes the ribbon, menus and dialogs larger or smaller. Auto follows your system's display scaling; 100% is one screen pixel per point. Document zoom is separate.	Gør båndet, menuerne og dialogboksene større eller mindre. Auto følger systemets skærmskalering; 100% er én skærmpixel pr. punkt. Dokumentzoom er separat.
+	Manage Sources	Administrer kilder
+	Manage Styles	Administrer stile
+	Manage Styles…	Administrer stile…
+	Manual Hyphenation	Manuel orddeling
+	Manual hyphenation is complete.	Manuel orddeling er fuldført.
+	Manual Line Break	Manuelt linjeskift
+	Manual Page Break	Manuelt sideskift
+	Manual…	Manuelt…
+	Many pages	Mange sider
+	Margins	Sidekanter
+	Mark	Markér
+	Mark All	Markér alle
+	Mark as decorative	Markér som dekorativ
+	Mark Citation	Markér citat
+	Mark Entry	Markér post
+	Mark Entry…	Markér element…
+	Mark grammar errors as you type	Markér grammatikfejl, mens du skriver
+	Mark Index Entry	Markér indekselement
+	Mark selected text as:	Markér valgt tekst som:
+	Mark\nCitation	Markér\ncitat
+	Mark\nEntry	Markér\npost
+	Markdown (*.md)	Markdown (*.md)
+	Match case	Match store/små bogstaver
+	Match Fields	Match felter
+	Match prefix	Match præfiks
+	Match suffix	Match suffiks
+	Math AutoCorrect	Automatisk rettelse af formler
+	Matrices with Brackets	Matricer med parenteser
+	Matrix	Matrix
+	Maximum Example	Maksimumeksempel
+	Measured By	Målt af
+	Measurement units:	Måleenheder:
+	Medium	Mellem
+	Merge Cells	Flet celler
+	Merge Formatting	Flet formatering
+	Merge Record #	Fletningspost #
+	Merged PRs	Fletede PR'er
+	Mesosphere	Mesosfære
+	Middle	Midt
+	Midline Dots	Prikker på midtlinjen
+	Minus Equal	Minus med lighedstegn
+	Mirror indents	Spejl indrykninger
+	Mirror margins	Spejlede margener
+	Mirrored	Spejlet
+	MIT OR Apache-2.0. Copyright (c) 2026 ArtCraft Team and the WordCraft contributors.	MIT OR Apache-2.0. Copyright (c) 2026 ArtCraft Team og WordCraft-bidragsyderne.
+	Moderate	Moderat
+	Modify Style	Rediger stil
+	Modify Table Style	Redigér tabelstil
+	Modify Table Style…	Redigér tabelstil…
+	Modify…	Rediger…
+	Mon	Man
+	Month	Måned
+	More >>	Mere >>
+	More Colors…	Flere farver…
+	More Columns…	Flere kolonner…
+	More Commands…	Flere kommandoer…
+	More Paper Sizes…	Flere papirstørrelser…
+	More Symbols…	Flere symboler…
+	More templates →	Flere skabeloner →
+	Move in Equation	Flyt i formel
+	Move or Resize	Flyt eller ændr størrelse
+	Move Paragraph Down	Flyt afsnit ned
+	Move Paragraph Up	Flyt afsnit op
+	Move Past Citation	Flyt forbi citat
+	Move Past\nCitation	Flyt forbi\ncitat
+	Move Selected Ink	Flyt valgt håndskrift
+	Move Table by Dragging	Flyt tabel ved at trække
+	Move with Text	Flyt med teksten
+	Moved from	Flyttet fra
+	Moved objects snap to the page's edges and centre, the margins and other objects. Hold Alt to move freely.	Flyttede objekter fastgøres til sidens kanter og midten, margenerne og andre objekter. Hold Alt nede for at flytte frit.
+	Moved to	Flyttet til
+	Moves	Flytninger
+	Multilevel List	Liste med flere niveauer
+	Multilevel List Library	Listebibliotek med flere niveauer
+	Multiple Pages	Flere sider
+	My list has	Min liste har
+	Name of the file this document is saved as	Navnet på den fil, dokumentet er gemt som
+	Narrow	Smal
+	Narrow  {size} all	Smal  {size} på alle sider
+	Natural Logarithm	Naturlig logaritme
+	Nature	Natur
+	Navigation	Navigation
+	Navigation Pane	Navigationsrude
+	Negated Relations	Negerede relationer
+	New Comment	Ny kommentar
+	New comments and tracked changes are recorded under this name and these initials.	Nye kommentarer og sporede ændringer registreres under dette navn og disse initialer.
+	New Document	Nyt dokument
+	New document	Nyt dokument
+	New Drawing Canvas	Nyt lærred
+	New Entry	Ny post
+	New from Template	Ny fra skabelon
+	New Label	Ny etiket
+	New Label…	Ny etiket…
+	New Paragraph	Nyt afsnit
+	New shortcut:	Ny genvej:
+	New Style…	Ny stil…
+	New Tab	Nyt faneblad
+	New Table Style	Ny tabelstil
+	New Table Style…	Ny tabelstil…
+	New word	Nyt ord
+	New\nComment	Ny\nkommentar
+	New\nWindow	Nyt\nvindue
+	Next Change	Næste ændring
+	Next Comment	Næste kommentar
+	Next Field	Næste felt
+	Next Footnote	Næste fodnote
+	Next Record	Næste post
+	Next Section	Næste sektion
+	Next Sentence	Næste sætning
+	Next sentence	Næste sætning
+	No	Nej
+	No accessibility issues found.	Ingen tilgængelighedsproblemer fundet.
+	No Border	Ingen kant
+	No changes (read only)	Ingen ændringer (skrivebeskyttet)
+	No Color	Ingen farve
+	No contributor data was built into this copy.	Denne kopi indeholder ingen data om bidragydere.
+	No document is open. Create a document or open one first.	Der er ikke åbnet noget dokument. Opret et dokument, eller åbn et først.
+	no equation at the caret	der er ingen formel ved markøren
+	No errors found: every merge field is in the recipient list.	Ingen fejl fundet: alle fletningsfelter findes i modtagerlisten.
+	No Fill	Ingen udfyldning
+	No Glow	Ingen glød
+	No grid	Intet gitter
+	No header row	Ingen overskriftsrække
+	No icons match your search.	Ingen ikoner matcher din søgning.
+	No limit	Ingen grænse
+	No Markup	Ingen markeringer
+	No model credits were built into this copy.	Denne kopi indeholder ingen oplysninger om modeller.
+	No Outline	Ingen kontur
+	No Paragraph Space	Ingen afstand mellem afsnit
+	No printers found. Configure a system printer or export a PDF.	Der blev ikke fundet nogen printere. Konfigurér en systemprinter, eller eksportér en PDF.
+	No Reflection	Ingen reflektion
+	No Shadow	Ingen skygge
+	No Soft Edges	Ingen bløde kanter
+	No sources yet.	Ingen kilder endnu.
+	No Spacing	Uden afstand
+	No spelling dictionary for {language} is installed, so it isn't checked. WordCraft looks for the Hunspell dictionary {name} in the WORDCRAFT_DICTIONARIES folder and in the usual system locations.	Der er ikke installeret nogen staveordbog til {language}, så den bliver ikke kontrolleret. WordCraft leder efter Hunspell-ordbogen {name} i mappen WORDCRAFT_DICTIONARIES og på de sædvanlige systemplaceringer.
+	No templates match your search.	Ingen skabeloner matcher din søgning.
+	No Transform	Ingen transformation
+	No words yet. Add to Dictionary on a misspelled word puts it here.	Ingen ord endnu. Tilføj til ordbog på et ord med fejl, så lægges det her ind.
+	No-Width Non Break	Nullbredde uden brud
+	No-Width Optional Break	Nullbredde med valgfrit brud
+	Nonbreaking Hyphen	Ikke-brydende bindestreg
+	Nonbreaking Space	Ikke-brydende mellemrum
+	Normal  {size} all	Normal  {size} på alle sider
+	Normal Indent	Normal med indrykning
+	Normal probability density	Normalfordelingens tæthedsfunktion
+	Normal speed	Normal hastighed
+	Normal Style	Normal stil
+	Normal Table	Normaltabel
+	Normal Text	Normal tekst
+	Normal Word Document	Almindeligt Word-dokument
+	North	Nord
+	Norwegian (Bokmål)	Norsk (bokmål)
+	Not	Ikke
+	Not available right now	Ikke tilgængelig i øjeblikket
+	not editing an equation	du redigerer ikke en formel
+	Not equal to	Er ikke lig med
+	Not linked: click a text box	Ikke forbundet: klik på en tekstboks
+	Not saved	Ikke gemt
+	Not saved yet	Ikke gemt endnu
+	Not set: the system's usual places	Ikke angivet: systemets sædvanlige placeringer
+	Not used by any command	Bruges ikke af nogen kommando
+	Not {name}	Ikke {name}
+	Nothing	Intet
+	Nothing collected yet. Items you copy or cut appear here.	Intet indsamlet endnu. Elementer, du kopierer eller klipper, vises her.
+	nothing is selected	intet er markeret
+	Now used by {command}	Bruges nu af {command}
+	Nudge	Skub
+	Num Occurrences	Antal forekomster
+	Number	Nummer
+	Number alignment:	Nummerjustering:
+	Number format	Nummerformat
+	Number of columns:	Antal kolonner:
+	Number of rows:	Antal rækker:
+	Number of the page the field sits on	Nummeret på den side, feltet står på
+	Number of the section the field sits in	Nummeret på den sektion, feltet står i
+	Number only, without the label's words	Kun nummeret, uden etikettens ord
+	Number style for this level:	Nummerstil for dette niveau:
+	Number the equation; the number sits at the right margin (or type # then the number)	Nummerér formlen; tallet placeres i højre margen (eller skriv # og derefter tallet)
+	Numbering	Nummerering
+	Numbering:	Nummerering:
+	Numbering…	Nummerering…
+	Numerals	Tal
+	Numerals:	Tal:
+	n×n Identity Matrix	Identitetsmatrix n×n
+	n×n Matrix	Matrix n×n
+	Odd Banded Columns	Ulige stribede kolonner
+	Odd Banded Rows	Ulige stribede rækker
+	Odd Page	Ulige side
+	Odd pages only	Kun ulige sider
+	Office	Kontor
+	Office 2003 Default	Office 2003-standard
+	Offset (pt):	Forskydning (pt):
+	Offset: Bottom	Forskydning: Bund
+	Offset: Bottom Left	Forskydning: Bund til venstre
+	Offset: Bottom Right	Forskydning: Bund til højre
+	Offset: Center	Forskydning: Center
+	Offset: Left	Forskydning: Venstre
+	Offset: Right	Forskydning: Højre
+	Offset: Top	Forskydning: Top
+	Offset: Top Left	Forskydning: Top til venstre
+	Offset: Top Right	Forskydning: Top til højre
+	On	Til
+	On: the caret glides to its new place when you type or use the arrow keys, and its blink fades. Off: it jumps and blinks on and off.	Til: markøren glider hen til sin nye placering, når du skriver eller bruger piletasterne, og dens blink toner ud. Fra: den hopper og blinker tydeligt.
+	On: WordCraft opens on File › Home, with a blank document, the templates and your recent documents. Off: it opens a blank document.	Til: WordCraft åbner på Filer › Start med et tomt dokument, skabeloner og dine seneste dokumenter. Fra: Der åbnes et tomt dokument.
+	One	En
+	One half	En halv
+	One label per recipient	Én etiket pr. modtager
+	One line per item. Enter adds an item.	Én linje pr. element. Enter tilføjer et element.
+	One Page	Én side
+	One-sided	Ensidet
+	Only allow this kind of editing:	Tillad kun denne type redigering:
+	Only comments can be added, except in regions marked editable.	Der kan kun tilføjes kommentarer, undtagen i områder, der er markeret til redigering.
+	Only for the selected text	Kun for den markerede tekst
+	Only form fields can be filled in.	Der kan kun udfyldes formularfelter.
+	only in Outline view	kun i oversigtsvisning
+	Only the allowed styles can be applied.	Der kan kun anvendes tilladte stile.
+	Only web (http, https) and email (mailto) links can be followed	Kun weblinks (http, https) og e-mail-links (mailto) kan følges
+	Open a document first	Åbn først et dokument
+	Open a file with WordCraft's own browser when the system file dialog doesn't appear.	Åbn en fil i WordCrafts egen filbrowser, når systemets filedialog ikke vises.
+	OpenDocument Text (*.odt)	OpenDocument-tekst (*.odt)
+	Opening print dialog…	Åbner udskrivningsdialog…
+	Opens .docx, .doc, .rtf and .odt files and Word templates with WordCraft from now on.	Åbner .docx-, .doc-, .rtf- og .odt-filer samt Word-skabeloner med WordCraft fra nu af.
+	Opens Settings › Default apps, where you choose WordCraft for .docx and the other document types.	Åbner Indstillinger › Standardapps, hvor du vælger WordCraft til .docx og de andre dokumenttyper.
+	Operator	Operator
+	Operator Structures	Operatorstrukturer
+	Operators	Operatorer
+	Optional Hyphen	Valgfri bindestreg
+	Or	Eller
+	Or save a copy in another format:	Eller gem en kopi i et andet format:
+	Ordinals (1st) as superscript	Ordinaltal (1st) som hævet skrift
+	Organizer	Organisator
+	Organizer…	Organisator…
+	Orientation	Retning
+	Original document	Originaldokument
+	Other Large Operators	Andre store operatorer
+	Other styles and their TOC level:	Andre stile og deres niveau i indholdsfortegnelsen:
+	Otherwise insert:	Indsæt ellers:
+	Outline	Disposition
+	Outline Level	Dispositionsniveau
+	Outline level	Outlineniveau
+	Outline levels	Dispositionsniveauer
+	Outline State	Dispositionstilstand
+	Outline Tools	Dispositionsværktøjer
+	Outlining	Disposition
+	Outside border	Ydre kant
+	Outside Borders	Ydre kanter
+	Outside:	Udenfor:
+	Outward Brackets	Udadvendte kantede parenteser
+	Overbar	Overstreg
+	Overbars and Underbars	Overstreger og understreger
+	Overbrace	Overklamme
+	Overtype	Overskrivning
+	Overtype (typing replaces the characters after the caret)	Overskrivning (det indtastede erstatter tegnene efter markøren)
+	Page Background	Sidebaggrund
+	Page Border	Sideramme
+	Page Borders	Siderammer
+	Page Break	Sideskift
+	Page Break Before	Sideskift før
+	Page break before	Sideskift før
+	Page Breaks	Sideskift
+	Page Color	Sidefarve
+	Page display	Sidevisning
+	Page Down	Side ned
+	Page image (*.png)	Sidebillede (*.png)
+	Page Movement	Sidebevægelse
+	Page Number	Sidetal
+	Page number style	Stil for sidetal
+	Page numbers at the right margin	Sidetal ved højre sidekant
+	Page on which a bookmarked passage falls	Siden, hvor det bogmærkede afsnit ligger
+	Page Setup	Sideopsætning
+	Page title	Sidetitel
+	Page Up	Side op
+	Page Width	Sidebredde
+	Page width	Sidebredde
+	Page X of Y	Side X af Y
+	Page {page}	Side {page}
+	Page {page} of {pages}	Side {page} af {pages}
+	Page\nBorders	Side\nrammer
+	Page\nColor	Side\nfarve
+	Page\nNumber	Side\ntal
+	Pages like 1-3, 5	Sider som 1-3, 5
+	Pages of bookmark:	Sider i bogmærke:
+	Paper	Papir
+	Paper size:	Papirstørrelse:
+	Paragraph Character	Afsnitssymbol
+	Paragraph Details	Afsnitsdetaljer
+	Paragraph Down	Afsnit ned
+	Paragraph Mark	Afsnitsmærke
+	Paragraph marks	Afsnitsmærker
+	Paragraph Settings	Afsnitsindstillinger
+	Paragraph Spacing	Afstand mellem afsnit
+	Paragraph style	Afsnitstil
+	Paragraph Up	Afsnit op
+	Paragraphs	Afsnit
+	Paragraph…	Afsnit…
+	Parentheses	Runde parenteser
+	Parentheses with Separator	Runde parenteser med skilletegn
+	Partial Differential	Partiel differentiale
+	Password:	Adgangskode:
+	Paste	Sæt ind
+	Paste (⌘V)	Sæt ind (⌘V)
+	Paste All	Sæt alle ind
+	Paste as:	Sæt ind som:
+	Paste Clipboard Item	Sæt element fra udklipsholder ind
+	Paste Formatting	Sæt formatering ind
+	Paste function:	Indsæt funktion:
+	Paste Special	Sæt ind specielt
+	Paste Special…	Sæt ind specielt…
+	Paste: Keep Text Only	Sæt ind: Behold kun tekst
+	Paste: Merge Formatting	Sæt ind: Flet formatering
+	Pastes the clipboard's picture.	Sætter billedet fra udklipsholderen ind.
+	Pause	Pause
+	Paused	Sat på pause
+	PDF document (*.pdf)	PDF-dokument (*.pdf)
+	Pens	Penne
+	People	Personer
+	Periodical	Periodisk skrift
+	Personal Templates	Personal Templates
+	Personalize	Tilpas
+	Phonetic Guide	Fonetisk vejledning
+	Pi Over 2	Pi over 2
+	Picas	Picas
+	Pick a custom group (New Group makes one)	Vælg en tilpasset gruppe (Ny gruppe opretter en)
+	Pick a field from the list	Vælg et felt på listen
+	Picture	Billede
+	Picture Border	Billedramme
+	Picture Content Control	Indholdskontrolelement: Billede
+	Picture Format	Billedformat
+	Picture Styles	Billedstile
+	Pictures	Billeder
+	Pie	Cirkeldiagram
+	Place in This Document	Sted i dette dokument
+	Placeholder text	Pladsholdertekst
+	Plain Table 1	Enkel tabel 1
+	Plain text (*.txt)	Almindelig tekst (*.txt)
+	Plain Text Content Control	Indholdskontrolelement: Almindelig tekst
+	Play	Afspil
+	Play/Pause	Afspil/pause
+	Plus Equal	Plus med lighedstegn
+	Points	Punkt
+	Polish	Polsk
+	Portuguese (Brazil)	Portugisisk (Brasilien)
+	Portuguese (Portugal)	Portugisisk (Portugal)
+	Position	Position
+	Position:	Position:
+	Possible spelling mistake	Mulig stavefejl
+	Postal Code	Postnummer
+	Power series of (1+x)ⁿ	Potensrække for (1+x)ⁿ
+	Preferred width:	Ønsket bredde:
+	Preserve formatting during updates	Bevar formatering under opdateringer
+	Press a key combination	Tryk på en tastekombination
+	Preview Results	Forhåndsvis resultater
+	Preview\nResults	Forhåndsvis\nresultater
+	Previous 1 or More	Forrige 1 eller flere
+	Previous Change	Forrige ændring
+	Previous Comment	Forrige kommentar
+	Previous Field	Forrige felt
+	Previous Record	Forrige post
+	Previous Section	Forrige sektion
+	Previous Sentence	Forrige sætning
+	Previous sentence	Forrige sætning
+	Print Documents	Udskriv dokumenter
+	Print Documents…	Udskriv dokumenter…
+	Print failed: the printing worker stopped.	Udskrivning mislykkedes: udskriftsprocessen stoppede.
+	Print failed: {error}	Udskrivning mislykkedes: {error}
+	Print job submitted.	Udskriftsjob sendt.
+	Print job submitted: {receipt}	Udskriftsjob sendt: {receipt}
+	Print Layout	Udskriftslayout
+	Print Markup	Udskriv kommentarer og rettelser
+	Print settings	Udskriftsindstillinger
+	Print the page color	Udskriv sidens farve
+	Print to PDF	Udskriv til PDF
+	Print\nLayout	Udskrifts\nlayout
+	Printer default	Printerstandard
+	Printer discovery failed.	Søgning efter printere mislykkedes.
+	Printing	Udskrivning
+	Privacy for this document	Beskyttelse af personlige oplysninger for dette dokument
+	Privacy Options	Indstillinger for beskyttelse af personlige oplysninger
+	Privacy Settings	Privatlivsindstillinger
+	Process	Proces
+	Product	Produkt
+	Product of A	Produkt af A
+	Product with Limits	Produkt med grænser
+	Product with Lower Limit	Produkt med nedre grænse
+	Product with Subscript-Superscript Limits	Produkt med grænser i sub- og superskript
+	Products and Coproducts	Produkter og koprodukter
+	Professional	Professionel
+	Promote	Hæv
+	Promote to Heading 1	Hæv til Overskrift 1
+	Proofing	Korrekturlæsning
+	Proofing Issues	Korrekturlæsningsproblemer
+	Proofing language	Sprog til stave- og grammatikontrol
+	Protect	Beskyt
+	Protect Document	Beskyt dokument
+	pt	pt
+	Publisher	Udgiver
+	Put the caret in a content control first.	Sæt først markøren i et indholdskontrolelement.
+	Put the default commands back on the Quick Access Toolbar?	Læg standardkommandoerne tilbage på værktøjslinjen Hurtig adgang?
+	Pyramid	Pyramide
+	Quadratic Root	Andengradsrod
+	Quick Access Toolbar	Værktøjslinjen Hurtig adgang
+	Quick Parts	Hurtige dele
+	Quick Tables	Hurtige tabeller
+	Quote	Citat
+	Radical	Radikal
+	Radical with Degree	Rod med gradtal
+	Radicals	Rødder
+	Raised/lowered	Hævet/sænket
+	Read Aloud	Læs højt
+	Read Aloud Status	Status for oplæsning
+	Read Mode	Læsetilstand
+	Read\nAloud	Læs\nhøjt
+	Read\nMode	Læse\ntilstand
+	Reading	Læsning
+	Reading Column Width	Læsekolonnens bredde
+	Reading Highlight	Fremhævning ved læsning
+	Reading Line Spacing	Linjeafstand til læsning
+	Reading Mode	Læsetilstand
+	Reading Speed	Læsehastighed
+	Reading Text Size	Tekststørrelse til læsning
+	Reads the clipboard's rich text and keeps its formatting.	Læser rich text fra udklipsholderen og bevarer formateringen.
+	Reads the clipboard's web content and keeps its formatting.	Læser webindhold fra udklipsholderen og bevarer formateringen.
+	Real name	Rigligt navn
+	Recent documents to show:	Seneste dokumenter, der vises:
+	Recently used symbols:	Senest brugte symboler:
+	Recipient List	Modtagerliste
+	Recipient lists	Modtagerlister
+	Recipients: {count}	Modtagere: {count}
+	Recolor a one-color picture, such as an icon	Genfarv en ensfarvet figur, f.eks. et ikon
+	Recolor Selected Ink	Skift farve på valgt håndskrift
+	Record Macro	Optag makro
+	Recover	Gendan
+	Recover Unsaved Documents	Gendan usikrede dokumenter
+	Red:	Rød:
+	Redo	Gentag
+	Reduce Hanging Indent	Reducer hængende indrykning
+	Reference type:	Referencetype:
+	References	Referencer
+	Reflection	Reflektion
+	Refresh printers	Opdater printere
+	Region:	Område:
+	Registered	Registreret
+	Registered Sign	Symbol for registreret varemærke
+	Regular expressions	Regulære udtryk
+	Reject	Afvis
+	Reject All Changes	Afvis alle ændringer
+	Reject Change	Afvis ændring
+	Relationship	Relation
+	Relaxed	Afslappet
+	Remove Added Font	Fjern tilføjet skrifttype
+	Remove Background	Fjern baggrund
+	Remove condition	Fjern betingelse
+	Remove Content Control	Fjern indholdskontrolelement
+	Remove every custom shortcut and restore the built-in keys?	Fjern alle tilpassede genveje og genopret de indbyggede taster?
+	Remove every custom tab and group and show all tabs again?	Fjern alle tilpassede faneblader og grupper, og vis alle faneblader igen?
+	Remove field	Fjern felt
+	Remove Footer	Fjern sidefod
+	Remove from Quick Access Toolbar	Fjern fra værktøjslinjen Hurtig adgang
+	Remove Header	Fjern sidehoved
+	Remove Hyperlink	Fjern hyperlink
+	Remove my name from comments, changes and file properties when saving	Fjern mit navn fra kommentarer, ændringer og filegenskaber, når der gemmes
+	Remove Password	Fjern adgangskode
+	Remove Pen	Fjern pen
+	Remove recipient	Fjern modtager
+	Remove row	Fjern række
+	Remove series	Fjern serie
+	Remove Space After Paragraph	Fjern afstand efter afsnit
+	Remove Table of Contents	Fjern indholdsfortegnelse
+	Remove the control once edited	Fjern kontrolelementet efter redigering
+	Remove the space before the punctuation	Fjern mellemrummet før tegnsætningen
+	Remove Watermark	Fjern vandmærke
+	Rename Document	Omdøb dokument
+	Rename Style	Omdøb stil
+	Rename…	Omdøb…
+	Reopen	Åbn igen
+	Repeat as header row on each page	Gentag som sidehovedsrække på hver side
+	Repeat Header Rows	Gentag overskriftsrækker
+	Repeating Section Content Control	Indholdskontrolelement: Gentaget afsnit
+	Replace All	Erstat alle
+	Replace as you type	Erstat under indtastning
+	Replace Document Text	Erstat dokumenttekst
+	Replace text as you type	Erstat tekst under indtastning
+	Replace with:	Erstat med:
+	Replace:	Erstat:
+	Replay	Afspil igen
+	Reply	Svar
+	Report	Rapport
+	Research	Forskning
+	Researcher	Forsker
+	Researcher needs an online service; WordCraft keeps your documents offline.	Researcher kræver en onlinetjeneste; WordCraft holder dine dokumenter offline.
+	Reset All…	Nulstil alle…
+	Reset Character Formatting	Nulstil tegnformatering
+	Reset Crop	Nulstil beskæring
+	Reset Graphic	Nulstil grafik
+	Reset Paragraph Formatting	Nulstil afsnitsformatering
+	Reset Picture	Nulstil billede
+	Reset to Normal	Nulstil til Normal
+	Reset\nGraphic	Nulstil\ngrafik
+	Reset…	Nulstil…
+	Resize Table by Dragging	Tilpas tabelstørrelse ved at trække
+	Resolve	Løs
+	Resolved	Løst
+	Restart at 1	Genstart ved 1
+	Restart Each Page	Genstart på hver side
+	Restart Each Section	Genstart i hver sektion
+	Restart list after:	Genstart listen efter:
+	Restrict Editing	Begræns redigering
+	Restrict\nEditing	Begræns\nredigering
+	Result	Resultat
+	Results	Resultater
+	Return address labels	Returadresseetiketter
+	Return address:	Returadresse:
+	Reverse the order	Vend rækkefølgen
+	Review	Gennemse
+	Reviewing	Gennemser
+	Reviewing Pane	Gennemserude
+	Reviewing — edits become suggestions	Gennemser — ændringer bliver forslag
+	Revised document	Revideret dokument
+	Rewind	Spol tilbage
+	Ribbon	Bånd
+	Ribbon and Quick Access Toolbar:	Bånd og værktøjslinjen Hurtig adgang:
+	Ribbon tabs	Båndfaneblader
+	Rich Text Content Control	Indholdskontrolelement: Formateret tekst
+	Rich Text Format (*.rtf)	Rich Text Format (*.rtf)
+	Rich Text Format (RTF)	Rich Text Format (RTF)
+	Right (vertical)	Højre (lodret)
+	Right Arrow with Text Above	Højrepil med tekst ovenfor
+	Right Arrow with Text Below	Højrepil med tekst nedenfor
+	Right Border	Højre kant
+	Right border	Højre kant
+	Right Bracket Twice	Højre kantet parentes to gange
+	Right indent	Højre indrykning
+	Right Margin	Højre sidekant
+	Right Only	Kun højre
+	Right-to-left	Højre til venstre
+	Right-to-Left Section	Sektion fra højre mod venstre
+	Right-to-Left Table	Tabel fra højre mod venstre
+	Right-to-Left Text Direction	Tekstretning fra højre til venstre
+	Rightwards Arrow Above	Højrevendt pil over
+	Rightwards Harpoon Above	Højrevendt harpon over
+	Roots of ax²+bx+c	Rødder i ax²+bx+c
+	Rotate	Roter
+	Rotate all text 270°	Roter al tekst 270°
+	Rotate all text 90°	Roter al tekst 90°
+	Rotate Left 90°	Roter 90° til venstre
+	Rotate Right 90°	Roter 90° til højre
+	Row	Række
+	Row:	Række:
+	Rows & Columns	Rækker og kolonner
+	Ruby text:	Rubi-tekst:
+	Ruler	Lineal
+	Rules	Regler
+	Run-in	På linje med
+	Russian	Russisk
+	Résumé	CV
+	SAMPLE	PRØVE
+	Sat:	Mætning:
+	Save a copy in another format. Printing goes through a PDF you can print from any viewer.	Gem en kopi i et andet format. Udskrivning sker via en PDF, som du kan udskrive fra enhvisningsprogram.
+	Save documents	Gem dokumenter
+	Save the document to turn on AutoSave	Gem dokumentet for at aktivere AutoSave
+	Save the document to turn on AutoSave (a file you have only opened isn't rewritten until you save it)	Gem dokumentet for at aktivere AutoSave (en fil, du kun har åbnet, overskrives ikke, før du gemmer den)
+	Save these pages as PDF…	Gem disse sider som PDF…
+	Saving {name} was cancelled, so it is still open and nothing was lost.	Gemning af {name} blev annulleret, så dokumentet er stadig åbent, og intet er gået tabt.
+	Scale	Skalering
+	Scale Drawing	Skaler tegning
+	Scatter	Punktdiagram
+	Script	Indeks
+	Scripts	Skriftformer
+	Scroll ribbon left	Rul båndet til venstre
+	Scroll ribbon right	Rul båndet til højre
+	Search Commands	Søg kommandoer
+	Search commands and help	Søg i kommandoer og hjælp
+	Search document	Søg i dokument
+	Search for templates	Søg efter skabeloner
+	Search icons	Søg i ikoner
+	Search Options	Søgeindstillinger
+	Secant Function	Secansfunktion
+	Section Break	Afsnitsskift
+	Section Breaks	Sektionsskift
+	Section Character	Afsnitstegn
+	Section direction:	Sektionsretning:
+	Section Mark	Sektionsmærke
+	Section Properties	Sektionsegenskaber
+	Sections	Sektioner
+	See	Se
+	select a chart first	markér først et diagram
+	select a connector first	markér først en forbindelse
+	select a drawing canvas first	markér først et tegnelærred
+	select a floating picture or shape first	markér først et flydende billede eller en flydende figur
+	select a group first	markér først en gruppe
+	select a picture first	markér først et billede
+	select a picture or shape first	markér først et billede eller en figur
+	Select a picture, shape, chart or table to describe it.	Vælg et billede, en figur, et diagram eller en tabel for at beskrive den.
+	Select a printer	Vælg en printer
+	select a shape first	markér først en figur
+	select a SmartArt graphic first	markér først en SmartArt-grafik
+	select a text box first	markér først et tekstfelt
+	select a text box linked to another first	markér først et tekstfelt, der er sammenkædet med et andet
+	Select Cell	Markér celle
+	Select Column	Vælg kolonne
+	Select Heading and Content	Vælg overskrift og indhold
+	Select Line	Markér linje
+	Select Paragraph	Markér afsnit
+	Select Range	Markér område
+	Select Recipients	Vælg modtagere
+	select recipients first	vælg først modtagere
+	Select recipients first to choose from their fields.	Vælg modtagere først for at vælge blandt deres felter.
+	Select recipients first to match their fields.	Vælg modtagere først for at matche deres felter.
+	Select Row	Markér række
+	Select Sentence	Markér sætning
+	Select Table	Markér tabel
+	Select Table Cells by Clicking	Vælg tabelceller ved at klikke
+	Select Text	Markér tekst
+	Select Text with Similar Formatting	Markér tekst med lignende formatering
+	Select text, then tick who can still edit it.	Vælg teksten, og markér derefter, hvem der stadig må redigere den.
+	select two or more cells to merge	markér to eller flere celler, der skal flettes
+	select two or more pictures or shapes first (Shift+click)	markér først to eller flere billeder eller figurer (Skift+klik)
+	Select Word	Markér ord
+	Select\nRecipients	Vælg\nmodtagere
+	Selected Fields	Valgte felter
+	Selected pages	Valgte sider
+	Selection Pane	Markeringsrude
+	Send Backward	Send bagud
+	Send the document straight to the system print dialog, or save a copy in another format below.	Send dokumentet direkte til systemets udskrivningsdialog, eller gem en kopi i et andet format nedenfor.
+	Sentence	Sætning
+	Sentence case.	Første bogstav i sætning med stort.
+	Separator:	Skilletegn:
+	Sequence name:	Sekvensnavn:
+	Serbian (Cyrillic)	Serbisk (cyrillisk)
+	Serbian (Latin)	Serbisk (latinsk)
+	Series name	Serienavn
+	Series {n}	Serie {n}
+	Set	Angiv
+	Set As Default	Angiv som standard
+	Set Caret	Sæt indsættelsespunkt
+	Set Character Formatting	Angiv tegnformatering
+	Set Date	Angiv dato
+	Set Equation	Angiv formel
+	Set Numbering Value	Angiv nummereringsværdi
+	Set Paragraph Formatting	Angiv afsnitsformatering
+	Set Proofing Language…	Angiv korrektursprog…
+	Setting:	Indstilling:
+	Shading	Skygge
+	Shadow	Skygge
+	Shadow, glow and soft edges	Skygge, glød og bløde kanter
+	Shape Effects	Figureffekter
+	Shape Fill	Figurfyldning
+	Shape Format	Figurformat
+	Shape Outline	Figurkontur
+	Shape Styles	Figurstile
+	Shapes	Figurer
+	Share	Del
+	Shift+Tab	Shift+Tab
+	Shipping labels	Forsendelsesetiketter
+	Shortcut key:	Genvejstast:
+	Show alignment guides when moving pictures and shapes	Vis justeringslinjer, når billeder og figurer flyttes
+	Show all formatting marks	Vis alle formateringstegn
+	Show All Levels	Vis alle niveauer
+	Show all revisions inline	Vis alle revisioner i teksten
+	Show changes at:	Vis ændringer i niveau:
+	Show changes in:	Vis ændringer i:
+	Show Comments	Vis kommentarer
+	Show documents with their colours inverted, like View › Switch Modes. Saving, printing and PDFs are unchanged.	Vis dokumenter med omvendte farver, som Visning › Skift tilstand. Gem, udskrivning og PDF’er er uændrede.
+	Show every bibliography field	Vis alle bibliografifelter
+	Show First Line Only	Vis kun første linje
+	Show in the Styles gallery	Vis i stilgalleriet
+	Show its list number	Vis dets listenummer
+	Show its number relative to this field	Vis dets nummer i forhold til dette felt
+	Show its number with all higher levels	Vis dets nummer med alle overordnede niveauer
+	Show KeyTips (Alt or F10)	Vis nøgletip (Alt eller F10)
+	Show Level	Vis niveau
+	Show Level 1	Vis niveau 1
+	Show Level 2	Vis niveau 2
+	Show Level 3	Vis niveau 3
+	Show Level 4	Vis niveau 4
+	Show Level 5	Vis niveau 5
+	Show Level 6	Vis niveau 6
+	Show Level 7	Vis niveau 7
+	Show Level 8	Vis niveau 8
+	Show Level 9	Vis niveau 9
+	Show Markup	Vis markeringer
+	Show Notes	Vis noter
+	Show only comments and formatting in balloons	Vis kun kommentarer og formatering i balloner
+	Show or Hide Style	Vis eller skjul stil
+	Show revisions in balloons	Vis revisioner i balloner
+	Show rulers	Vis linealer
+	Show Text Formatting	Vis tekstformatering
+	Show the community button in the title bar	Vis fællesskabsknappen på titellinjen
+	Show the equation in the line of text	Vis formlen i tekstlinjen
+	Show the equation on a line of its own	Vis formlen på en linje for sig
+	Show the mini toolbar when text is selected	Vis miniværktøjslinjen, når tekst markeres
+	Show the Start screen when WordCraft starts	Vis startskærmen, når WordCraft starter
+	Show/Hide ¶	Vis/skjul ¶
+	Show\nComments	Vis\nkommentarer
+	Showing the first {count} items.	Viser de første {count} elementer.
+	Shows a tree: each item below the item it belongs to.	Viser et træ: hvert element placeres under det element, det hører til.
+	Shows items around a central idea: the first item is the centre.	Viser elementer omkring en central idé: det første element er centrum.
+	Shows items of equal weight as blocks in rows.	Viser elementer med samme vægt som blokke i rækker.
+	Shows overlapping ideas as overlapping circles.	Viser overlappende idéer som overlappende cirkler.
+	Shows parts of a whole as quadrants.	Viser delene af en helhed som kvadranter.
+	Shows parts that build on each other, largest at the bottom.	Viser dele, der bygger oven på hinanden, den største nederst.
+	Shows steps in order, left to right, with arrows between them.	Viser trin i rækkefølge fra venstre til højre med pile mellem dem.
+	Shows steps that repeat, around a circle.	Viser trin, der gentages, i en cirkel.
+	Shrink Font 1 Point	Formindsk skrift med 1 punkt
+	Shrink text	Formindsk tekst
+	Side to Side	Side om side
+	Side\nto Side	Side\nom side
+	Sides of a right triangle	Sider i en retvinklet trekant
+	Signature Line	Signaturlinje
+	Sine and cosine series of f(x)	Sinus- og cosinusrække for f(x)
+	Sine Function	Sinusfunktion
+	Sine theta	Sinus theta
+	Single	Enkelt
+	Single Brackets	Enkeltstående parenteser
+	Single Closing Quote	Enkelt lukkende anførselstegn
+	Single label	Enkelt etiket
+	Single Left Angle	Enkelt venstre vinkeltegn
+	Single Left Bar	Enkelt venstre lodret streg
+	Single Left Brace	Enkelt venstre krøllet parentes
+	Single Left Bracket	Enkelt venstre kantet parentes
+	Single Left Parenthesis	Enkelt venstre rund parentes
+	Single Opening Quote	Enkelt åbnende anførselstegn
+	Single Right Brace	Enkelt højre krøllet parentes
+	Single Right Bracket	Enkelt højre kantet parentes
+	Single Right Parenthesis	Enkelt højre rund parentes
+	Single Spacing	Enkelt linjeafstand
+	Site name	Webstedsnavn
+	Size (pt):	Størrelse (pt):
+	Size and Crop…	Størrelse og beskæring…
+	Sketchbook	Skitsebog
+	Skewed Fraction	Skrå brøk
+	Skip citations & bibliography	Spring citater og bibliografi over
+	Skip Citations and Bibliography	Spring citater og bibliografi over
+	Skip Record If	Spring post over, hvis
+	Skip Record If…	Spring post over, hvis…
+	Slant Down	Hældning ned
+	Slant Up	Hældning op
+	Small Caps	Små kapitaler
+	Small caps	Små kapitaler
+	Small change	Lille ændring
+	Smart quotes instead of straight quotes	Smarte anførselstegn i stedet for lige anførselstegn
+	SmartArt	SmartArt
+	SmartArt Design	SmartArt-design
+	SmartArt Styles	SmartArt-stile
+	Smooth scrolling and zooming, and menus and buttons that fade in. Off shows every change at once.	Glat rulning og zoom, og menuer og knapper, der toner ind. Fra viser alle ændringer på én gang.
+	Soft Edges	Bløde kanter
+	Soft Glow	Blød glød
+	Solid Accent	Massiv accent
+	Sort by	Sortér efter
+	Sort by:	Sortér efter:
+	Sort order:	Sorteringsrækkefølge:
+	Sort Recipients	Sortér modtagere
+	Source code: github.com/storytold/wordcraft	Kildekode: github.com/storytold/wordcraft
+	Source Manager	Kildehåndtering
+	Source type:	Kildetype:
+	Sources in this document:	Kilder i dette dokument:
+	South	Syd
+	Space	Mellemrum
+	Space after	Mellemrum efter
+	Space after: {pt} pt	Afstand efter: {pt} pt
+	Space before	Mellemrum før
+	Space before/after:	Mellemrum før/efter:
+	Space before: {pt} pt	Afstand før: {pt} pt
+	Spacing	Afstand
+	Spacing (pt):	Afstand (pt):
+	Spacing:	Afstand:
+	Spanish (Mexico)	Spansk (Mexico)
+	Spanish (Spain)	Spansk (Spanien)
+	Sparse Matrices	Tyndt besatte matricer
+	Special	Særlige
+	Special Characters	Specialtegn
+	Specify height:	Angiv højde:
+	Speech	Tale
+	Speed	Hastighed
+	Spelling	Stavning
+	Spelling & Grammar	Stavekontrol og grammatik
+	Spelling &\nGrammar	Stavekontrol og\ngrammatik
+	Spelling and grammar are checked in {language}.	Sprog til stave- og grammatikkontrol: {language}.
+	Spelling Suggestions	Staveforslag
+	Spike	Klippekartotek
+	Split	Opdel
+	Split Cells	Opdel celler
+	Split Table	Opdel tabel
+	Spreadsheet Table	Regnearkstabel
+	Square	Kvadrat
+	Square Root	Kvadratrod
+	Square Root with Degree	Kvadratrod med gradtal
+	Square Union	Kvadratisk foreningsmængde
+	Stack Object	Stablet objekt
+	Stack Object (Three)	Stablet objekt (tre)
+	Stacked Bar	Stablet søjlediagram
+	Stacked Column	Stablet kolonnediagram
+	Stacked Fraction	Stablet brøk
+	Stacked, no bar	Stablet uden streg
+	Standard	Standard
+	Standard Colors	Standardfarver
+	Start Enforcing Protection	Begynd at håndhæve beskyttelse
+	Start Mail Merge	Start serielbrev
+	Start Mail\nMerge	Start\nserielbrev
+	Start-up	Opstart
+	State	Delstat
+	Statistics	Statistik
+	Status Bar	Statuslinje
+	Stop Protection	Stop beskyttelse
+	Stop Reading	Stop læsningen
+	Stopped	Stoppet
+	Straight Arrow Connector	Lige pilforbindelse
+	Straight Connector	Lige forbindelse
+	Stroke {n} of {total}	Streg {n} af {total}
+	Strong	Fed
+	Structure Actions	Strukturhandlinger
+	Structures	Strukturer
+	Studio	Studio
+	Studio cover	Studioomslag
+	Studio handbook (sample)	Studiohåndbog (eksempel)
+	Style	Stil
+	Style based on:	Stil baseret på:
+	Style Inspector	Stilinspektør
+	Style name:	Typografinavn:
+	Style Set	Stilsæt
+	Style:	Stil:
+	Style: {style}	Stil: {style}
+	Styles	Stile
+	Styles Pane	Stilrude
+	Styles:	Stile:
+	Subentry:	Underelement:
+	Subject	Emne
+	Submit print job	Send udskriftsjob
+	Submitting print job…	Sender udskriftsjob…
+	Subscript-Superscript	Sub- og superskript
+	Subscripts and Superscripts	Indekser og hævede indekser
+	Subset:	Delsæt:
+	Subtitle	Undertitel
+	Subtle Emphasis	Diskret fremhævning
+	Subtle Reference	Diskret henvisning
+	Suggested	Foreslået
+	Sum	Sum
+	Sum of cosines	Sum af cosinusser
+	Sum or difference of sines	Sum eller difference af sinusser
+	Summation	Sum
+	Summation from 0 to n	Sum fra 0 til n
+	Summation over binomials	Sum over binomialer
+	Summation with Limits	Sum med grænser
+	Summation with Lower Limit	Sum med nedre grænse
+	Summation with Subscript Limit	Sum med grænse i indeks
+	Summation with Subscript-Superscript Limits	Sum med grænser i sub- og superskript
+	Summations	Summer
+	Suppress line numbers	Skjul linjenumre
+	Surface Integral	Fladeintegral
+	Surface Integral with Limits	Fladeintegral med grænser
+	Surface Integral with Stacked Limits	Fladeintegral med grænser over og under
+	Swap footnotes and endnotes	Byt fodnoter og slutnoter
+	Swedish	Svensk
+	Switch Modes	Skift tilstand
+	Switch\nModes	Skift\ntilstand
+	Synonyms	Synonymer
+	System	System
+	Tab Character	Tabulator
+	Tab character	Tabulator
+	Tab characters	Tabulatorer
+	Tab leader:	Udfyldningstegn for tabulator:
+	Tab stop position:	Tabulatorposition:
+	Tab stops to be cleared:	Tabulatorer, der skal fjernes:
+	Table Column Width	Tabelkolonnebredde
+	Table Design	Tabeldesign
+	Table direction:	Tabelretning:
+	Table Grid	Tabelgitter
+	Table Layout	Tabelayout
+	Table of Authorities	Tabel over juridiske kilder
+	Table of Contents	Indholdsfortegnelse
+	Table of Contents Options	Indstillinger for indholdsfortegnelse
+	Table of Contents Styles	Stile for indholdsfortegnelse
+	Table of Figures	Afbildningstabel
+	Table of\nContents	Indholds-\nfortegnelse
+	Table Properties	Tabelegenskaber
+	Table Properties…	Tabelegenskaber…
+	Table Row Height	Tabelrækkehøjde
+	Table style	Tabelstil
+	Table Style Options	Indstillinger for tabelstil
+	Table Styles	Tabelstile
+	Tables	Tabeller
+	Tabs…	Tabulatorer…
+	Tabular List	Tabellarisk liste
+	Tag	Tag
+	Take the last match on the page	Tag den sidste forekomst på siden
+	Tangent formula	Tangentformel
+	Tangent Function	Tangensfunktion
+	TC entry fields	TC-elementfelter
+	Technology	Teknologi
+	Templates and Add-ins	Skabeloner og tilføjelsesprogrammer
+	Text Box	Tekstboks
+	Text boxes	Tekstfelter
+	text boxes can't go inside a text box	tekstfelter kan ikke placeres i et tekstfelt
+	Text Direction	Tekstretning
+	Text Effects	Teksteffekter
+	Text Effects and Typography	Teksteffekter og typografi
+	Text Fill	Tekstfyld
+	Text from File	Tekst fra fil
+	Text Highlight Color	Farve til tekstmarkering
+	Text indent at:	Tekstindrykning ved:
+	Text of the nearest paragraph with a given style (running headers)	Tekst fra det nærmeste afsnit med en bestemt typografi (løbende sidehoveder)
+	Text Outline	Tekstkontur
+	Text over Colon Equal	Tekst over kolon med lighedstegn
+	Text over Equal	Tekst over lighedstegn
+	Text Pane	Tekstfelt
+	Text size	Tekststørrelse
+	Text snaps to characters	Tekst låses til tegn
+	Text to display:	Tekst, der skal vises:
+	Text Wrapping	Tekstombrydning
+	Text\nBox	Tekst-\nboks
+	Text\nDirection	Tekst-\nretning
+	That format doesn't keep everything, so the document is still open. Save it as a Word document (.docx) to go on.	Det format bevarer ikke alt, så dokumentet er stadig åbent. Gem det som et Word-dokument (.docx) for at fortsætte.
+	That password isn't right. Check it (passwords are case-sensitive) and try again.	Adgangskoden er ikke korrekt. Kontrollér den (adgangskoder skelner mellem store og små bogstaver), og prøv igen.
+	The clipboard is empty.	Udklipsholderen er tom.
+	the Clipboard pane is empty	udklipsholderruden er tom
+	the cursor isn't in a table	markøren står ikke i en tabel
+	The date it is today	Dagens dato
+	The document has no bookmarks yet.	Dokumentet har endnu ingen bogmærker.
+	the document is protected	dokumentet er beskyttet
+	The document is read only, except for regions marked editable.	Dokumentet er skrivebeskyttet, undtagen områder, der er markeret som redigerbare.
+	The document will be saved with a password. Save it to protect it.	Dokumentet gemmes med en adgangskode. Gem det for at beskytte det.
+	The document you are editing keeps the names and dates; only the saved file leaves them out.	Det dokument, du redigerer, bevarer navnene og datoerne; det er kun den gemte fil, der udelader dem.
+	The margins don't fit on a page this size; make the margins smaller first.	Margenerne passer ikke på en side i denne størrelse; gør margenerne mindre først.
+	The new style takes the formatting of the current paragraph.	Den nye stil bruger formateringen af det aktuelle afsnit.
+	the paragraph is empty	afsnittet er tomt
+	the paragraph starts with a space	afsnittet starter med et mellemrum
+	The password is optional; without it anyone can stop the protection.	Adgangskoden er valgfri; uden den kan alle slå beskyttelsen fra.
+	The password is removed. Save the document to keep the change.	Adgangskoden er fjernet. Gem dokumentet for at beholde ændringen.
+	The passwords don't match.	Adgangskoderne er ikke ens.
+	The printer, two-sided printing and pages per sheet are chosen in that dialog.	Printer, dobbeltsidet udskrivning og sider pr. ark vælges i denne dialog.
+	The recipient-list field that fills each part of an address block and greeting line.	Modtagerlistefeltet, der udfylder hver del af en adresseblok og en hilseslinje.
+	The spelling and grammar check is complete.	Kontrollen af stavning og grammatik er fuldført.
+	the Spike is empty	klippekartoteket er tomt
+	The system file dialog isn't available, so WordCraft shows its own. To get the system dialog, install a file chooser portal (such as xdg-desktop-portal-gtk) or zenity.	Systemets fildialog er ikke tilgængelig, så WordCraft viser sin egen. Få systemets dialog ved at installere en filvælgerportal (f.eks. xdg-desktop-portal-gtk) eller zenity.
+	The text at the insertion point is marked Do not check spelling or grammar.	Teksten ved indsætningspunktet er markeret: Kontrollér ikke stavning eller grammatik.
+	The time right now	Det aktuelle klokkeslæt
+	Theme Colors	Temafarver
+	Theme Fonts	Temaskrifttyper
+	Theme List	Temapliste
+	Themes	Temaer
+	Then by	Derefter efter
+	Then insert:	Indsæt derefter:
+	there is no ink to replay	der er intet blæk at afspille igen
+	there is nothing to undo	der er intet at fortryde
+	there's no citation after the caret	der er intet citat efter markøren
+	Thesaurus	Synonymsordbog
+	These marks show even when Show/Hide ¶ is off.	Disse tegn vises, selv når Vis/skjul ¶ er slået fra.
+	These merge fields aren't in the recipient list:	Disse fletningsfelter findes ikke i modtagerlisten:
+	These settings will be used for new documents.	Disse indstillinger bruges til nye dokumenter.
+	Thick	Tyk
+	Thickness	Tykkelse
+	this chart was made in another program: WordCraft shows it but can't edit it	dette diagram er lavet i et andet program: WordCraft viser det, men kan ikke redigere det
+	This document	Dette dokument
+	This field has no options.	Dette felt har ingen indstillinger.
+	This folder can't be read: {error}	Denne mappe kan ikke læses: {error}
+	This font has no characters to show.	Denne skrifttype har ingen tegn at vise.
+	this item is already at the top level	dette element er allerede på øverste niveau
+	This page	Denne side
+	This password type isn't supported.	Denne type adgangskode understøttes ikke.
+	This point forward	Fra dette punkt
+	This section	Denne sektion
+	this SmartArt was made in another program: WordCraft shows it but can't edit it	denne SmartArt er lavet i et andet program: WordCraft viser den, men kan ikke redigere den
+	this text box is already linked: break the link first	dette tekstfelt er allerede sammenkædet: fjern først sammenkædningen
+	Three	Tre
+	Through	Igennem
+	Tight	Tæt
+	Tilde	Tilde
+	Tips ({n})	Tips ({n})
+	Title	Titel
+preview	Title	Titel
+	Title Bar	Titellinje
+	Title from the document properties	Titel fra dokumentegenskaberne
+	Title:	Titel:
+	To open Word documents with WordCraft by default: select one in Finder, choose File › Get Info, pick WordCraft under Open with, then click Change All.	For at åbne Word-dokumenter med WordCraft som standard: vælg et i Finder, vælg Filer › Hent oplysninger, vælg WordCraft under Åbn med, og klik derefter på Skift alle.
+	To:	Til:
+	TOA Heading	TOA-overskrift
+	TOC Heading	Overskrift for indholdsfortegnelse
+	TOC {n}	Indholdsfortegnelse {n}
+	Today	I dag
+	tOGGLE cASE	sKIFT STORE/SMÅ BOGSTAVER
+	Toggle Check Box	Slå afkrydsningsfelt til/fra
+	Toggle Field Codes	Slå feltkoder til/fra
+	Toggle Unicode Character	Slå Unicode-tegn til/fra
+	Top	Top
+	Top and Bottom	Top og bund
+	Top Border	Øvre kant
+	Top Left Cell	Øverste venstre celle
+	Top Margin	Øvre sidekant
+	Top of Page	Øverst på siden
+	Top Right Cell	Øverste højre celle
+	Total	I alt
+	Total Row	Sumrække
+	Track Changes	Følg ændringer
+	Track Changes Options	Indstillinger for Følg ændringer
+	Track Changes: On	Følg ændringer: Til
+	Track formatting	Følg formatering
+	Track\nChanges	Følg\nændringer
+	Track\nChanges ✓	Følg\nændringer ✓
+	Tracked changes	Sporede ændringer
+	Trademark	Varemærke
+	Trademark Sign	Symbol for varemærke
+	Translate	Oversæt
+	Transport	Transport
+	Triangle Down	Trekant ned
+	Triangle Up	Trekant op
+	Trigonometric Functions	Trigonometriske funktioner
+	Triple	Tredobbelt
+	Triple Dot	Tre prikker over tegn
+	Triple Integral	Tredobbeltintegral
+	Triple Integral with Limits	Tredobbeltintegral med grænser
+	Triple Integral with Stacked Limits	Tredobbeltintegral med grænser over og under
+	Trust Center	Center for sikkerhed og beskyttelse
+	Tue	Tir
+	Turkish	Tyrkisk
+	Two	To
+	Two-sided printing	Tosidet udskrivning
+	Two-sided: long edge	Tosidet: langsiden
+	Two-sided: short edge	Tosidet: tværsiden
+	Type	Type
+	Type +2 or -1 to move from the page you are on.	Skriv +2 eller -1 for at flytte dig fra den side, du er på.
+	Type a command, e.g. "insert table"	Skriv en kommando, f.eks. »indsæt tabel«
+	Type a New List…	Skriv en ny liste…
+	Type at least one recipient.	Skriv mindst én modtager.
+	Type Character Code	Angiv tegnkode
+	Type equations in LaTeX	Skriv formler i LaTeX
+	Type equations in the linear format (UnicodeMath)	Skriv formler i det lineære format (UnicodeMath)
+	Type in Equation	Skriv i formel
+	Type normal (non-math) text in the equation	Skriv almindelig (ikke-matematisk) tekst i formlen
+	Type Text	Skriv tekst
+	Type the categories down the side and a column of values per series.	Indtast kategorierne ned langs siden og en kolonne med værdier for hver serie.
+	Type the field's name and its switches, for example PAGE \\* roman.	Skriv feltets navn og dets parametre, for eksempel PAGE \\* roman.
+	Type the password to stop the protection.	Indtast adgangskoden for at slå beskyttelsen fra.
+	Type the recipients, or load them from a file.	Skriv modtagerne, eller indlæs dem fra en fil.
+	Typing	Skrivning
+	Typing replaces selected text	Skrivning erstatter markeret tekst
+	Ukrainian	Ukrainsk
+	Unchecked symbol	Ikke-afkrydset symbol
+	Underbar	Understreg
+	Underbrace	Underklamme
+	Underline Color	Underline Color
+	Underline color	Understregningsfarve
+	Underline Words Only	Understreg kun ord
+	Undo 1 Action	Fortryd 1 handling
+	Undo Actions	Fortryd handlinger
+	Undo History	Fortrydningshistorik
+	Undo {action}	Fortryd {action}
+	Undo {n} Actions	Fortryd handlinger: {n}
+	Unformatted Text	Uformateret tekst
+	Ungroup	Fjern gruppering
+	Union	Foreningsmængde
+	Union of intersections	Forening af snitmængder
+	Union with Limits	Foreningsmængde med grænser
+	Union with Lower Limit	Foreningsmængde med nedre grænse
+	Union with Plus	Foreningsmængde med plus
+	Union with Subscript-Superscript Limits	Foreningsmængde med grænser i sub- og superskript
+	Unions and Intersections	Foreninger og fællesmængder
+	Unlink Fields	Fjern feltforbindelse
+	Unlink\nCitations	Fjern\ncitater
+	Unlock Fields	Lås felter op
+	Up	Op
+	Up Diagonal Dots	Diagonale prikker opad
+	Up one level	Op ét niveau
+	Update Field	Opdatér felt
+	Update fields before printing	Opdatér felter før udskrivning
+	Update Index	Opdatér indeks
+	Update Style to Match Selection	Opdatér stil efter markeringen
+	Update Styles from Template	Opdatér stile fra skabelon
+	Update Table	Opdatér tabel
+	Update Table of Figures	Opdatér figurliste
+	Update to Match	Opdatér efter
+	Update to Match Selection	Opdatér efter markeringen
+	UPPERCASE	Store bogstaver
+	URGENT	HASTENDE
+	URL	URL
+	Use "a" before a consonant sound	Brug „a” før en konsonant
+	Use "an" before a vowel sound	Brug „an” før en vokal
+	Use an Existing List…	Brug en eksisterende liste…
+	Use system setting	Brug systemets indstilling
+	Use the browser's full screen (F11)	Brug browserens fuldskærm (F11)
+	Use the Insert key to switch overtype on and off	Brug Insert-tasten til at slå overskrivning til og fra
+	Use wildcards	Brug jokertegn
+	User Name	Brugernavn
+	User name:	Brugernavn:
+	Value	Værdi
+	Vector A	Vektor A
+	Vector AB	Vektor AB
+	Version History	Versionshistorik
+	Version {version} ({build})	Version {version} ({build})
+	Vertical Alignment	Vertikal justering
+	Vertical alignment:	Lodret justering:
+	Vertical Bars	Lodrette streger
+	Vertical Dots	Lodrette prikker
+	View	Visning
+	View Alt Text…	Vis alternativ tekst…
+	View Gridlines	Vis gitterlinjer
+	View State	Visningstilstand
+	Views	Visninger
+	Visual effects	Visuelle effekter
+	Voice	Stemme
+	Volume	Bind
+	Volume Integral	Volumenintegral
+	Volume Integral with Limits	Volumenintegral med grænser
+	Volume Integral with Stacked Limits	Volumenintegral med grænser over og under
+	W:	B:
+	Waiting for the save to finish…	Venter på, at gemningen er færdig…
+	Waiting for Zotero…	Venter på Zotero…
+	Warm Gradient with Outline	Varm gradient med kontur
+	Warnings ({n})	Advarsler ({n})
+	Watermark	Vandmærke
+	Wave	Bølge
+	Weather	Vejr
+	Web Layout	Weblayout
+	Web page (*.html)	Webside (*.html)
+	Web\nLayout	Web\nlayout
+	Website	Websted
+	Wed	Ons
+	West	Vest
+	When this document was first created	Da dokumentet først blev oprettet
+	When this document was most recently printed	Da dokumentet sidst blev udskrevet
+	When this document was most recently saved	Da dokumentet sidst blev gemt
+	White Space	Mellemrum
+	White space	Mellemrum
+	Who the document properties name as author	Hvem dokumentegenskaberne angiver som forfatter
+	Whole document	Hele dokumentet
+	Whole page	Hele siden
+	Whole Table	Hele tabellen
+	Whole words	Hele ord
+	Wide	Bred
+	Widow/Orphan Control	Kontrol af enlige linjer
+	Widow/Orphan control	Kontrol af enlige linjer
+	Width and spacing	Bredde og afstand
+	Wildcards (regex)	Jokertegn (regulære udtryk)
+	With:	Med:
+	Word 2003 XML Document (*.xml)	Word 2003 XML-dokument (*.xml)
+	Word Count	Ordantal
+	Word document	Word-dokument
+	Word document (*.docx)	Word-dokument (*.docx)
+	Word Left	Ord til venstre
+	Word level	Ordniveau
+	Word Right	Ord til højre
+	Word XML Document (*.xml)	Word XML-dokument (*.xml)
+	WordArt	WordArt
+	WordArt Styles	WordArt-stile
+	WordCraft	WordCraft
+	WordCraft is now the default app for Word documents.	WordCraft er nu standardprogram for Word-dokumenter.
+	Words	Ord
+	Words only	Kun ord
+	Wrap Text	Ombryd tekst
+	Wrap Text Sides	Sider for tekstindpakning
+	Wrap\nText	Ombryd\ntekst
+	Write & Insert Fields	Skriv og indsæt felter
+	Write a reply	Skriv et svar
+	x bar	x med streg
+	Year	År
+	Yes	Ja
+	Yields	Giver
+	Your system doesn't report an animation setting, so animation effects stay on.	Dit system rapporterer ikke en animationsindstilling, så animationseffekter forbliver slået til.
+	Your system has animation effects turned off.	Dit system har animationseffekter slået fra.
+	Your system has animation effects turned on.	Dit system har animationseffekter slået til.
+	Zotero	Zotero
+	Zotero: cancelled	Zotero: annulleret
+	Zotero: done	Zotero: færdig
+	{cols}×{rows} Table	{cols}×{rows} tabel
+	{contributors} contributors · {commits} commits	Bidragsydere: {contributors} · commits: {commits}
+	{count} items highlighted	Fremhævede elementer: {count}
+	{count} of {total} pages will print	{count} af {total} sider udskrives
+	{count} of {total} recipients will be merged.	{count} af {total} modtagere bliver flettet.
+	{group} settings	Indstillinger for {group}
+	{key}+Click to follow link	{key}+klik for at følge linket
+	{kind}, {columns} × {rows}, {size} ({paper})	{kind}, {columns} × {rows}, {size} ({paper})
+	{language} (no dictionary)	{language} (ingen ordbog)
+	{language} is now the document's default language.	{language} er nu dokumentets standardsprog.
+	{language}: no dictionary found	{language}: ingen ordbog fundet
+	{language}: WordCraft doesn't check spelling or grammar in this language yet.	{language}: WordCraft kontrollerer endnu ikke stavning eller grammatik på dette sprog.
+	{language}: {file}	{language}: {file}
+	{name}   {height} × {width} in	{name}   {height} × {width} tommer
+	{name}   {height} × {width} mm	{name}   {height} × {width} mm
+	{name} already exists. Choose Save again to replace it.	{name} findes allerede. Vælg Gem igen for at erstatte den.
+	{name} is protected with a password.	{name} er beskyttet med en adgangskode.
+	{name} wasn't found.	{name} blev ikke fundet.
+	{n} entries marked.	Markerede elementer: {n}.
+	{n} lines	Linjer: {n}
+	{n} pt	{n} pt
+	{selected} of {words} words	Valgt: {selected} af {words}
+	{size} pt	{size} pt
+	{width} × {height} mm	{width} × {height} mm
+	{words} words	Ord: {words}
+	“{text}” ({row}, {series}) isn't a number.	„{text}” ({row}, {series}) er ikke et tal.
+	✓ None	✓ Ingen
+	➕ New comment	➕ Ny kommentar
+	📂  Browse…	📂  Gennemse…

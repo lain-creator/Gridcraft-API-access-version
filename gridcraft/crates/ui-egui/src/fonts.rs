@@ -219,7 +219,44 @@ pub fn scan_done() -> bool {
 /// The faces of one installed family, by any of its names, regular-weight first (the order roles
 /// pick from).
 pub fn faces_of(family: &str) -> Vec<Face> {
-    catalog_now().map(|cat| faces_named(cat, family)).unwrap_or_default()
+    catalog_now().map(|cat| resolved_faces(cat, family)).unwrap_or_default()
+}
+
+/// Design-aware substitutions, never a change to the font name saved in the workbook.
+/// In particular a missing Song/Mincho serif must not become a Gothic sans face.
+pub fn substitutes(family: &str) -> &'static [&'static str] {
+    match family.trim().trim_start_matches('@').to_ascii_lowercase().as_str() {
+        "宋体" | "新宋体" | "simsun" | "nsimsun" | "simsun-extb" => {
+            &["SimSun", "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC"]
+        }
+        "黑体" | "simhei" => &["SimHei", "Heiti SC", "STHeiti", "Hiragino Sans GB", "Noto Sans CJK SC"],
+        "微软雅黑" | "microsoft yahei" | "microsoft yahei ui" => &["Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC"],
+        "等线" | "dengxian" => &["DengXian", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC"],
+        "楷体" | "楷体_gb2312" | "kaiti" | "kaiti_gb2312" => &["KaiTi", "Kaiti SC", "STKaiti", "Songti SC", "Noto Serif CJK SC"],
+        "仿宋" | "仿宋_gb2312" | "fangsong" | "fangsong_gb2312" => &["FangSong", "STFangsong", "Songti SC", "Noto Serif CJK SC"],
+        "calibri" => &["Carlito", "Arial", "Liberation Sans"],
+        "cambria" => &["Caladea", "Times New Roman", "Liberation Serif"],
+        "arial" => &["Liberation Sans", "Helvetica", "Arimo"],
+        "times new roman" => &["Liberation Serif", "Times", "Tinos"],
+        _ => &[],
+    }
+}
+
+fn resolved_faces(cat: &[Face], family: &str) -> Vec<Face> {
+    let direct = faces_named(cat, family);
+    if !direct.is_empty() {
+        return direct;
+    }
+    substitutes(family).iter().map(|name| faces_named(cat, name)).find(|v| !v.is_empty()).unwrap_or_default()
+}
+
+/// A user-visible replacement report. The catalog must have finished before this is called.
+pub fn replacement(family: &str) -> Option<String> {
+    let cat = catalog_now()?;
+    if !faces_named(cat, family).is_empty() {
+        return None;
+    }
+    Some(resolved_faces(cat, family).first().map(|f| f.family.clone()).unwrap_or_else(|| "系统后备字体".into()))
 }
 
 /// The faces in `cat` that go by `wanted`. When two families claim one name the winner is fixed,
@@ -255,7 +292,7 @@ fn installed_in(cat: &[Face], names: &[String]) -> Vec<String> {
     let mut out: Vec<String> = Vec::new();
     let mut seen: HashSet<&str> = HashSet::new();
     for wanted in names {
-        if seen.insert(wanted.as_str()) && cat.iter().any(|f| f.answers_to(wanted)) {
+        if seen.insert(wanted.as_str()) && !resolved_faces(cat, wanted).is_empty() {
             out.push(wanted.clone());
         }
     }
@@ -587,6 +624,18 @@ mod tests {
         let used: Vec<String> = ["맑은 고딕", "Malgun Gothic", "Not Installed", "맑은 고딕", "malgun gothic"].map(String::from).to_vec();
         assert_eq!(installed_in(&cat, &used), ["Malgun Gothic", "malgun gothic", "맑은 고딕"]);
         assert!(installed_in(&[], &used).is_empty());
+    }
+
+    #[test]
+    fn missing_chinese_faces_use_design_matched_substitutes_but_exact_fonts_win() {
+        let cat = [face("Songti SC", &["Songti SC"], "songti.ttc", 400.0), face("PingFang SC", &["PingFang SC"], "pingfang.ttc", 400.0)];
+        assert_eq!(resolved_faces(&cat, "宋体")[0].family, "Songti SC");
+        assert_eq!(resolved_faces(&cat, "SimSun")[0].family, "Songti SC");
+        assert_eq!(resolved_faces(&cat, "微软雅黑")[0].family, "PingFang SC");
+        assert_eq!(installed_in(&cat, &["宋体".into()]), ["宋体"]);
+        let exact = face("SimSun", &["SimSun", "宋体"], "simsun.ttc", 400.0);
+        let cat = [cat[0].clone(), exact];
+        assert_eq!(resolved_faces(&cat, "宋体")[0].family, "SimSun");
     }
 
     #[cfg(not(target_arch = "wasm32"))]

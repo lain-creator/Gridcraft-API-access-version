@@ -1,0 +1,1208 @@
+# 繁體中文 (zh-hant) interface catalog for every Crafting App.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	% of all commits	佔全部提交的百分比
+	(Custom)	(自訂)
+	(none)	（無）
+	1 file	1 個檔案
+	16 bit	16 位元
+	24 bits/pixel	24 位元/像素
+	32 bits/pixel	32 位元/像素
+	8 bit	8 位元
+	About	關於
+	Absolute	絕對
+	Absolute Colorimetric	絕對色度
+	Accented Edges	強調邊緣
+	Accessibility	無障礙支援
+	Accurate	精確
+	Actions	動作
+	Activate Panel	啟用面板
+	Active	目前使用
+	Actual Size	實際尺寸
+	Adaptive	適應性
+	Add	新增
+	Add a comment	新增註解
+	Add Guide	新增參考線
+	Add to Dictionary	加入字典
+	Add to favorites	加入最愛
+	Add to Swatches	新增至色票
+	Adjust	調整
+	Adjustments	調整
+	Advanced	進階
+	Align	對齊
+	Align center	置中對齊
+	Align Left	靠左對齊
+	Align left	靠左對齊
+	Align Right	靠右對齊
+	Align right	靠右對齊
+	Align Text	對齊文字
+	Align to Selection	對齊選取範圍
+	Alignment	對齊
+	Alignment:	對齊：
+	All	全部
+	All Caps	全部大寫
+	All Categories	所有類別
+	All files	所有檔案
+	All Layers	所有圖層
+	All pages	所有頁面
+	All Slices	所有切片
+	Alt	Alt
+	Always	一律
+	Amount	數量
+	Amount:	數量：
+	Angle	角度
+	Angle:	角度：
+	Angular	角度
+	Animation	動畫
+	Animation effects	動畫效果
+	Anti-Alias	消除鋸齒
+	Anti-alias	消除鋸齒
+	Any	任何
+	Appearance	外觀
+	Appearance Settings…	外觀設定…
+	Application	應用程式
+	Apply	套用
+	Apply Character Style	套用字元樣式
+	Apply Data Set	套用資料集
+	Apply to:	套用至：
+	Arc	弧形
+	Area	面積
+	Arrange	排列順序
+	Arrow	箭頭
+	Arrows	箭頭
+	Artboard	工作區域
+	Artboards	工作區域
+	ArtCraft	ArtCraft
+	ArtCraft Website	ArtCraft 網站
+	ArtCraft website	ArtCraft 網站
+	Artistic	藝術效果
+	Ascending	遞增
+	Aspect Ratio	長寬比
+	Assign	指定
+	Assign Profile…	指定描述檔…
+	Author	作者
+	Author:	作者：
+	Auto	自動
+	Auto ({percent}%)	自動 ({percent}%)
+	Auto Color	自動顏色
+	Automate	自動
+	Automatic	自動
+	Automatically	自動
+	Available	可使用
+	Average	平均
+	Background	背景
+	Background Color	背景色
+	Background Contents	背景內容
+	Backspace	Backspace
+	Balance	平衡
+	Bar	豎線
+	Baseline	基線
+	Baseline Shift	基線位移
+	Basic	基本
+	Basic Latin	基本拉丁文
+	Batch	批次
+	Batch…	批次處理…
+	Bend:	彎曲：
+	Bicubic	雙三次
+	Binary assets added	新增的二進位資產
+	Binary assets removed	移除的二進位資產
+	Bitmap	點陣圖
+	Black	黑色
+	Black & White	黑白
+	Black and white	黑白
+	Black Intensity	黑色強度
+	Blacks	黑色
+	Blend Mode	混合模式
+	Blending Mode	混合模式
+	Block	區塊
+	Blocks	塊狀
+	Blue	藍色
+	Blur	模糊
+	Blur Angle	模糊角度
+	Bold	粗體
+	Border Thickness	邊框粗細
+	Borders	框線
+	Both	兩者
+	Both sides	雙面
+	Bottom	下
+	Bottom Left	左下
+	Bottom Right	右下
+	Bottom:	下：
+	Break Link	中斷連結
+	Brick	磚塊
+	Brightness	亮度
+	Bring Forward	前移
+	Bring to Front	移至最前
+	Browse…	瀏覽…
+	Brush Strokes	筆刷筆畫
+	Brushes	筆刷
+	Bullet	項目符號
+	Burlap	粗麻布
+	Calculate	計算
+	Cancel	取消
+	Canvas	畫布
+	Caption	標號
+	Cascade	重疊顯示
+	Category:	類別：
+	Cell Size	單元大小
+	Center	置中
+	Centered	置中
+	Centimeters	公分
+	Chamfer	倒角
+	Change	變更
+	Change All	全部變更
+	Change Case	變更大小寫
+	Change Panel Layout	變更面板配置
+	Channel	色版
+	Channel Mixer	色版混合器
+	Channels	色版
+	Character	字元
+	Character Styles	字元樣式
+	Characters	字元數
+	Check for updates	檢驗更新
+	Check Spelling…	拼字檢查…
+	Choose…	選擇…
+	Circle	圓形
+	City	城市
+	Clarity	清晰度
+	Classic	經典
+	Clear	清除
+	Clear All	全部清除
+	Clear Guides	清除參考線
+	Clear History	清除步驟記錄
+	Clear Recent Files	清除最近檔案
+	Clipboard	剪貼簿
+	Clipping Mask	剪裁遮色片
+	Close	關閉
+	Close (Esc)	關閉 (Esc)
+	Close All	全部關閉
+	Close Panel	關閉面板
+	Cmd	Cmd
+	CMYK Color	CMYK 色彩
+	CMYK:	CMYK：
+	Coarse Dots	粗點
+	Collapse	摺疊
+	Collate	逐份列印
+	Color	色彩
+	Color Balance	色彩平衡
+	Color Burn	加深顏色
+	Color Dodge	加亮顏色
+	Color Management	色彩管理
+	Color Mode	色彩模式
+	Color Picker	顏色選擇器
+	Color Settings	色彩設定
+	Color Settings…	色彩設定…
+	Color Space	色彩空間
+	Color Swatches	色票
+	Color Table	色彩表
+	Color:	顏色：
+	Colorize	上色
+	Colors	顏色
+	Colors:	顏色：
+	Color…	顏色…
+	Colour	顏色
+	Column width	欄寬
+	Columns	欄
+	Columns:	欄數：
+	Combine	合併
+	Command	指令
+	Commands:	命令：
+	Comment	註解
+	Comments	註解
+	Commits	提交次數
+	Community	社群
+	Company	公司
+	Compare	比較
+	Comparison	比較
+	Compatibility	相容性
+	Compression	壓縮
+	Cone	錐形
+	Contains	包含
+	Continue	繼續
+	Contrast	對比
+	Contributors	貢獻者
+	Convert	轉換
+	Convert to Shape	轉換為形狀
+	Convert to sRGB	轉換為 sRGB
+	Copies	份數
+	Copies:	份數：
+	Copy	複製
+	Copyright	版權
+	Corner	角點
+	Corners	轉角
+	Correction	校正
+	Couldn't open {name}: {e}	無法開啟{name}：{e}
+	Country	國家/地區
+	Crack Brightness	裂紋亮度
+	Crack Depth	裂紋深度
+	Crack Spacing	裂紋間距
+	Create	建立
+	Create Clipping Mask	建立剪裁遮色片
+	Crop	裁切
+	Cross	叉號
+	Crosshatch	交叉影線
+	Crystallize	結晶化
+	Crystallize…	結晶化…
+	Ctrl	Ctrl
+	Current	目前
+	Current page	目前頁
+	Curvature	曲率
+	Curve	曲線
+	Curves	曲線
+	Curves…	曲線…
+	Custom	自訂
+	Customize…	自訂…
+	Cut	剪下
+	Cyan	青色
+	Dark	深色
+	Dark Gray	深灰色
+	Dark gray	深灰
+	Dark Strokes	深色筆觸
+	Dark Theme	深色主題
+	Darken	變暗
+	Darkness	暗度
+	Dashed	虛線
+	Data	資料
+	Data Sets	資料集
+	Date	日期
+	Date and Time	日期和時間
+	Date format	日期格式
+	Dates	日期
+	De-Interlace	反交錯
+	Decrease Font Size	縮小字體大小
+	Default	預設
+	Delete	刪除
+	Delete Brush	刪除筆刷
+	Delete Group	刪除群組
+	Delete Layer	刪除圖層
+	Delete Style	刪除樣式
+	Delete Workspace	刪除工作區
+	Deleted	刪除
+	Depth	深度
+	Desaturate	去除飽和度
+	Descending	遞減
+	Description	描述
+	Description:	描述：
+	Deselect	取消選取
+	Deselect All	全部取消選取
+	Destination	目的地
+	Destination:	目的地：
+	Details	詳細資訊
+	Diagonal	對角線
+	Diameter:	直徑：
+	Diamond	菱形
+	Difference	差異化
+	Diffuse Glow	擴散光暈
+	Diffusion	擴散
+	Digits	數字
+	Dimensions	尺寸
+	Direct Selection Tool	直接選取工具
+	Direction	方向
+	Direction Balance	方向平衡
+	Direction:	方向：
+	Discard	捨棄
+	Discord	Discord
+	Discretionary Ligatures	任意連字
+	Dismiss	關閉
+	Display	顯示
+	Display name	顯示名稱
+	Distance	距離
+	Distort	扭曲
+	Distortion	扭曲
+	Distribute	均分
+	Divide	分割
+	Dock Panel	停駐面板
+	Document	文件
+	Document Title	文件標題
+	Documents	文件
+	Don't Save	不儲存
+	Done	完成
+	Dot	圓點
+	Dots	點
+	Dotted	點線
+	Double-click	按兩下
+	Down	下
+	Download	下載
+	Draft	草稿
+	Draw	繪製
+	Drop Shadow	製作陰影
+	Drop Shadow…	陰影…
+	Duplicate	製作複本
+	Duplicate Layer	製作圖層複本
+	Duplicate…	複製…
+	Duplication	複製
+	Dutch	荷蘭文
+	Dynamic	動態
+	Edge	邊緣
+	Edge Brightness	邊緣亮度
+	Edge Intensity	邊緣強度
+	Edge Only	僅邊緣
+	Edge Simplicity	邊緣簡化度
+	Edge Thickness	邊緣厚度
+	Edge Width	邊緣寬度
+	Edit	編輯
+	Edit Contents	編輯內容
+	Edit Original	編輯原稿
+	Edit Toolbar	編輯工具列
+	Editing	編輯
+	Edit…	編輯…
+	Effect	效果
+	Effects	效果
+	Eliminate	消除
+	Ellipse	橢圓形
+	Ellipse Tool	橢圓工具
+	Ellipsis	刪節號
+	Em Dash	長破折號
+	Em Space	全形空格
+	Embed	嵌入
+	Emboss	浮雕
+	En Dash	短破折號
+	En Space	半形空格
+	Endpoint	端點
+	Enlarged	放大
+	Enter	Enter
+	Entire Font	整個字體
+	Envelope DL	DL 信封
+	Erase	擦除
+	Eraser	橡皮擦
+	Eraser Tool	橡皮擦工具
+	Error	錯誤
+	Even Fields	偶數圖場
+	Even pages only	僅偶數頁
+	Exact	精確
+	Example: {sample}	範例：{sample}
+	Exclusion	排除
+	Exit	結束
+	Expand	展開
+	Export	匯出
+	Export As	匯出為
+	Export As…	匯出為…
+	Export PDF	匯出 PDF
+	Export to	匯出為
+	Exported to {path}	已匯出到{path}
+	Exported {path}	已匯出 {path}
+	Export…	匯出…
+	Exposure	曝光度
+	Expression	運算式
+	Extract	擷取
+	Eyedropper	滴管
+	Eyedropper Tool	滴管工具
+	Favorites	我的最愛
+	Feather	羽化
+	Field	欄位
+	Field properties	欄位內容
+	Fields	欄位
+	Fields:	欄位：
+	File	檔案
+	File Handling	檔案處理
+	File Info…	檔案資訊…
+	File Name	檔案名
+	Files	檔案
+	Fill	填滿
+	Fill:	填色：
+	Filter	篩選
+	Find	尋找
+	Find and Replace	尋找及取代
+	Find Next	尋找下一個
+	Find:	尋找：
+	Find…	尋找…
+	Fine Dots	細點
+	Finish	完成
+	First	首次提交
+	First commit	首次提交
+	Fit	符合
+	Fit in View	符合檢視
+	Fixed	固定
+	Flatten	平面化
+	Flip	翻轉
+	Flip Horizontal	水平翻轉
+	Flip Vertical	垂直翻轉
+	Focus	專注
+	Folder	資料夾
+	Font	字型
+	Font Size	字體大小
+	Font size	字體大小
+	Font Size:	字體大小：
+	Font:	字型：
+	Fonts	字型
+	Format	格式
+	Format:	格式：
+	Fractions	分數
+	Free	自由
+	Free Transform	任意變形
+	French	法文
+	Frequency	頻率
+	From	從
+	Frosted	磨砂
+	Full	完全
+	Full Screen	全螢幕
+	Full Screen Mode	全螢幕模式
+	Functions	功能
+	Gamma	Gamma
+	Gamma Correction	Gamma 校正
+	Gamut Warning	色域警告
+	Gaussian Blur	高斯模糊
+	Gaussian Blur…	高斯模糊…
+	General	一般
+	General…	一般…
+	Generate	產生
+	German	德文
+	GitHub	GitHub
+	Glass	玻璃
+	Global	全域
+	Glow	光暈
+	Glow Brightness	光暈亮度
+	Glow Size	光暈大小
+	Glyphs	字符
+	Good	良好
+	Gradient	漸層
+	Gradient Tool	漸層工具
+	Gradients	漸層
+	Grain	顆粒
+	Grain Type	顆粒類型
+	Graininess	顆粒
+	Grainy Dots	顆粒點
+	Graphic	圖形
+	Graphics	圖形
+	Gray	灰色
+	Gray Gamma 2.2	灰階 Gamma 2.2
+	Grayscale	灰階
+	Green	綠色
+	Grid	格點
+	Grid Size:	格點大小：
+	Grid view	格狀檢視
+	Gridline every	格線間隔
+	Group	群組
+	Group with	群組至
+	Groups	群組
+	Grout Width	縫隙寬度
+	Guides	參考線
+	Halftone Pattern	半色調圖樣
+	Hand Tool	手形工具
+	Hard	強
+	Hard Light	實光
+	Hard Mix	實色疊印混合
+	Headings	標題
+	Heart	心形
+	Height	高度
+	Height:	高：
+	Help	說明
+	Hidden	已隱藏
+	Hidden text	隱藏文字
+	Hide	隱藏
+	Hide All	全部隱藏
+	Hide Grid	隱藏格點
+	Hide Others	隱藏其他
+	High	高
+	High Resolution	高解析度
+	High resolution	高解析度
+	Highlight Area	亮部範圍
+	Highlights	亮部
+	Hindi	印地數字
+	Histogram	色階分佈圖
+	History	步驟記錄
+	Hollow	空心
+	Home	首頁
+	Horizontal	水平
+	Horizontal scale	水平縮放
+	Horizontally	水平
+	Hue	色相
+	Hue Shift	色相偏移
+	Hue/Saturation…	色相/飽和度…
+	Hyphenation	連字號
+	Icon	圖示
+	Ignore	略過
+	Ignore All	全部略過
+	Image	影像
+	Image Size	影像尺寸
+	Images	影像
+	Import	匯入
+	Import…	匯入…
+	Inches	英吋
+	Increase Font Size	放大字體大小
+	Index	索引
+	Inflate	膨脹
+	Info	資訊
+	Inner Glow…	內光暈…
+	Input:	輸入：
+	Insert	插入
+	Inside	內側
+	Inspect Document	檢查文件
+	Install Plug-in	安裝增效模組
+	Install Plug-in…	安裝增效模組…
+	Intensity	強度
+	Interface	介面
+	Interface Language	介面語言
+	Interface language	介面語言
+	Interface Theme	介面主題
+	Interlaced	交錯
+	Interpolation	內插
+	Intersect	交集
+	Intersection	交點
+	Invert	反轉
+	Invert Mask	反轉遮色片
+	Isolate	隔離
+	Italian	義大利文
+	Italic	斜體
+	Japanese	日文
+	Join	連接
+	Join our Discord	加入我們的 Discord
+	Join the ArtCraft Discord	加入 ArtCraft Discord
+	Join the ArtCraft Discord…	加入 ArtCraft Discord…
+	Join us on Discord	加入我們的 Discord
+	just now	剛剛
+	Justification	對齊設定
+	Justify	兩端對齊
+	Keep:	保留：
+	Kerning	字距微調
+	Keyboard Shortcuts	鍵盤快速鍵
+	Keyboard Shortcuts…	鍵盤快速鍵…
+	Keywords	關鍵字
+	Kind	類型
+	Korean	韓文
+	Lab	Lab
+	Label	標籤
+	Labels	標籤
+	Landscape	橫向
+	Language	語言
+	Language Options	語言選項
+@id	language.name	繁體中文
+	Language:	語言：
+	Large	大
+	Lasso	套索
+	Lasso Tool	套索工具
+	Last	最近提交
+	Last commit	最近提交
+	Later	稍後
+	Layer	圖層
+	Layers	圖層
+	Layout	版面配置
+	Layout:	版面配置：
+	Leading	行距
+	Left	左
+	Left Diagonal	左對角線
+	Left to Right	由左至右
+	Left:	左：
+	Legal	Legal
+	Length:	長度：
+	Less	較少
+	Letter	Letter
+	Level	層級
+	Levels	色階數
+	Levels…	色階…
+	Libraries	資料庫
+	Library	資料庫
+	Light	淺色
+	Light Blue	淺藍色
+	Light Direction	光源方向
+	Light Gray	淺灰色
+	Light gray	淺灰
+	Light Intensity	光源強度
+	Light Theme	淺色主題
+	Lighten	變亮
+	Lighter Color	顏色變亮
+	Lighting	照明
+	Lightness	亮度
+	Line	直線
+	Line delta	行數增減
+	Line spacing	行距
+	Linear	線性
+	Linear Burn	線性加深
+	Linear Gradient	線性漸層
+	Linear Light	線性光源
+	Lines	直線
+	Lines +/−	行數 +/−
+	Lines added	新增行數
+	Lines deleted	刪除行數
+	Link	連結
+	Links	連結
+	List	清單
+	List View	清單檢視
+	List view	清單檢視
+	Location	位置
+	Location:	位置：
+	Lock	鎖定
+	Lock Guides	鎖定參考線
+	Lock Slices	鎖定切片
+	Locked	已鎖定
+	Long Lines	長線
+	Long Strokes	長筆畫
+	Low	低
+	lowercase	全部小寫
+	Luminance	明亮度
+	Luminosity	明度
+	Magenta	洋紅色
+	Magic Wand Tool	魔術棒工具
+	Magnification	縮放
+	Margins	邊距
+	Mask	遮色片
+	Matte	邊緣色
+	Maximize	最大化
+	Maximum	最大
+	Measure	測量
+	Median	中和
+	Medium	中等
+	Medium Dots	中等點
+	Medium Gray	中灰色
+	Medium Lines	中等線
+	Merge	合併
+	Merge Cells	合併儲存格
+	Merge Layers	合併圖層
+	Merged PRs	已合併的 PR
+	Mesh	網格
+	Message:	訊息：
+	Metadata	中繼資料
+	Method	方法
+	Method:	方法：
+	Mezzotint	網線銅版
+	Mezzotint…	網線銅版…
+	Middle	中間
+	Midpoint	中點
+	Midtones	中間調
+	Millimeters	公釐
+	Minimize	最小化
+	Minimum	最小值
+	Mirror	鏡射
+	Missing	遺失
+	Mobile	行動裝置
+	Mode	模式
+	Mode:	模式：
+	Model	模型
+	Models	模型
+	Modern	現代
+	Modified	已修改
+	Modify	修改
+	Monitor RGB	顯示器 RGB
+	Mono	單色
+	Monochrome	單色
+	More	更多
+	Mosaic Tiles	馬賽克拼貼
+	Motion	動態
+	Move	移動
+	Move Down	下移
+	Move Panel	移動面板
+	Move Up	上移
+	Multiply	色彩增值
+	Name	名稱
+	Name (A–Z)	名稱（A–Z）
+	Name:	名稱：
+	Navigation	導覽
+	Navigator	導覽器
+	Neon Glow	霓虹光
+	Never	永不
+	New	新增
+	New Document	新增文件
+	New document	新文件
+	New from Template	從範本新增
+	New Group	新增群組
+	New Guide	新增參考線
+	New Layer	新增圖層
+	New Layer…	新增圖層…
+	New Style…	新增樣式…
+	New Swatch…	新增色票…
+	New Window	新增視窗
+	New Workspace	新增工作區
+	New Workspace…	新增工作區…
+	New…	新增…
+	Next	下一個
+	Next Appearance Mode	下一個外觀模式
+	Next Change	下一個變更
+	Next Page	下一頁
+	Next page	下一頁
+	No	否
+	No Color	無顏色
+	No Dither	無遞色
+	No Document	無文件
+	No document	無文件
+	No document open	沒有開啟的文件
+	No limit	無限制
+	No matches.	沒有相符項目。
+	No matching commands	沒有相符的指令
+	No recent files	沒有最近的檔案
+	No results	沒有結果
+	No Selection	未選取
+	No selection	未選取
+	Noise	雜訊
+	Nonbreaking Space	不斷行空格
+	None	無
+	Normal	正常
+	NTSC Colors	NTSC 色彩
+	Number	數量
+	Object	物件
+	Odd Fields	奇數圖場
+	Odd pages only	僅奇數頁
+	Off	關
+	Offset	位移
+	Offset:	位移：
+	OK	確定
+	Omit	略過
+	On	開
+	Only Web Colors	僅限網頁色彩
+	Opacity	不透明度
+	Opacity:	不透明度：
+	Open	開啟
+	Open link	開啟連結
+	Open Recent	最近開啟的檔案
+	OpenType	OpenType
+	Open…	開啟…
+	Optimized	最佳化
+	Options	選項
+	Options…	選項…
+	Orange	橙色
+	Ordinals	序數字
+	Orientation	方向
+	Orientation:	方向：
+	Original	原始
+	Other	其他
+	Outer Glow…	外光暈…
+	Outline	外框
+	Output	輸出
+	Output:	輸出：
+	Outside	外側
+	Oval	橢圓
+	Overlap:	重疊：
+	Overlay	覆蓋
+	Package…	封裝…
+	Page	頁面
+	Page {page} of {pages}	第 {page} 頁，共 {pages} 頁
+	Pages	頁面
+	Painting	繪畫
+	Panel menu	面板選單
+	Panel Options…	面板選項…
+	Panels	面板
+	Paper	紙張
+	Paragraph	段落
+	Paragraph Styles	段落樣式
+	Password	密碼
+	Paste	貼上
+	Paste Special	特殊貼上
+	Patchwork	拼綴圖
+	Path	路徑
+	Path:	路徑：
+	Paths	路徑
+	Pattern	圖樣
+	Pattern Type	圖樣類型
+	Pause	暫停
+	Pen	筆型
+	Pen Tool	筆型工具
+	Pencil	鉛筆
+	Pencil Tool	鉛筆工具
+	Percent	百分比
+	Percentage	百分比
+	Performance	效能
+	Perimeter	周長
+	Perspective	透視
+	Photo	相片
+	Picas	派卡
+	Pin Light	小光源
+	Pink	粉紅色
+	Pixelate	像素化
+	Pixels	像素
+	Play	播放
+	Plug-ins	增效模組
+	Pointillize	點描
+	Pointillize…	點描…
+	Points	點
+	Polygon	多邊形
+	Polygon Tool	多邊形工具
+	Polyline	多段線
+	Portrait	縱向
+	Portuguese	葡萄牙文
+	Position	位置
+	Position:	位置：
+	Postcard	明信片
+	Poster	海報
+	Poster Edges	海報邊緣
+	Posterization	海報化
+	Posterize	色調分離
+	Preferences	偏好設定
+	Preferences…	偏好設定…
+	Prefix	字首
+	Preserve Luminosity	保留明度
+	Preset	預設集
+	Preset:	預設集：
+	Presets	預設集
+	Presets:	預設集：
+	Press keys…	按下按鍵…
+	Pressure	壓力
+	Preview	預覽
+	Previous	上一個
+	Previous Change	上一個變更
+	Previous Page	上一頁
+	Previous page	上一頁
+	Print	列印
+	Printer	印表機
+	Printer:	印表機：
+	Printing	列印
+	Print…	列印…
+	Progressive	漸進式
+	Proof Setup	校樣設定
+	Properties	內容
+	Protect	保護
+	PRs	PR
+	Punctuation	標點符號
+	Purple	紫色
+	Pyramid	金字塔圖
+	Quality	品質
+	Quick Actions	快速動作
+	Radial	放射狀
+	Radial Blur	放射狀模糊
+	Radial Blur…	放射狀模糊…
+	Radial Gradient	放射狀漸層
+	Radius	半徑
+	Radius:	半徑：
+	Random	隨機
+	Range	範圍
+	Range:	範圍：
+	Rasterize	點陣化
+	Ratio	比例
+	Rays	射線
+	Ready	就緒
+	Real name	真實姓名
+	Recent	最近使用
+	Recent Colors	最近使用的顏色
+	Recent Files	最近使用的檔案
+	Recover	恢復
+	Rectangle	矩形
+	Rectangle Tool	矩形工具
+	Rectangular	矩形
+	Red	紅色
+	Redo	重做
+	Refine	調整
+	Reflected	反射
+	Refresh	重新整理
+	Regular	標準
+	Relative	相對
+	Relative Colorimetric	相對色度
+	Relaxed	寬鬆
+	Relief	浮雕
+	Reload	重新載入
+	Remove	刪除
+	Remove Background	移除背景
+	Remove from favorites	從最愛移除
+	Rename	重新命名
+	Rename Group…	重新命名群組…
+	Rename Style	重新命名樣式
+	Rename…	重新命名…
+	Repeat	重複
+	Replace	取代
+	Replace:	取代:
+	Reply	回覆
+	Report	報告
+	Report an Issue…	回報問題…
+	Reselect	重新選取
+	Reset	重設
+	Reset Preferences	重設偏好設定
+	Reset…	重設…
+	Resize panel window	調整面板視窗大小
+	Resize panels	調整面板大小
+	Resolution	解析度
+	Resolution:	解析度：
+	Restore	還原
+	Result	結果
+	Reveal in Finder	在 Finder 中顯示
+	Reverse	反向
+	Reverse the order	反轉順序
+	Revert	回復
+	Review	審閱
+	RGB Color	RGB 色彩
+	RGB:	RGB：
+	Right	右
+	Right Diagonal	右對角線
+	Right:	右：
+	Rotate	旋轉
+	Rotate:	旋轉：
+	Rotation	旋轉
+	Rotation:	旋轉：
+	Rounded Rectangle	圓角矩形
+	Roundness	圓度
+	Roundness:	圓度：
+	Rows	列
+	Ruler	尺規
+	Rulers	尺標
+	Rulers & Grids	尺標與格點
+	Russian	俄文
+	Sandstone	砂岩
+	Saturation	飽和度
+	Save	儲存
+	Save a Copy	儲存拷貝
+	Save a Copy…	儲存拷貝…
+	Save As	另存新檔
+	Save as PDF	儲存為 PDF
+	Save as Template	另存範本
+	Save as Template…	另存範本…
+	Save As…	另存新檔…
+	Save Preset…	儲存預設集…
+	Save Selection	儲存選取範圍
+	Save Selection…	儲存選取範圍…
+	Saved	已儲存
+	Save…	儲存…
+	Scale	縮放
+	Scale:	縮放比例：
+	Scaling	縮放
+	Scratch Disks	暫存磁碟
+	Scratch Disks…	暫存磁碟…
+	Screen	濾色
+	Screen Mode	螢幕模式
+	Scripts	指令碼
+	Search	搜尋
+	Security	安全性
+	Segments	分段數
+	Select	選取
+	Select All	全選
+	Select Objects	選取物件
+	Select:	選取：
+	Selected pages	選取的頁面
+	Selection	所選內容
+	Selection Tool	選取工具
+	Selective	選擇性
+	Send Backward	後移
+	Send to Back	移至最後
+	Sensitivity	靈敏度
+	Sent to {printer}	已傳送至 {printer}
+	Services	服務
+	Set	設定
+	Set as Default	設為預設
+	Set:	組合：
+	Settings	設定
+	Settings…	設定…
+	Shadow	陰影
+	Shadows	陰影
+	Shape	形狀
+	Shape Effects	形狀效果
+	Shape:	形狀：
+	Shapes	形狀
+	Share	共用
+	Sharpen	銳利化
+	Sharpness	銳利度
+	Shift	Shift
+	Short Lines	短線
+	Short Strokes	短筆畫
+	Shortcut	快速鍵
+	Shortcuts	快速鍵
+	Show	顯示
+	Show All	全部顯示
+	Show Grid	顯示格點
+	Show Guides	顯示參考線
+	Show in Folder	在資料夾中顯示
+	Show Mask	顯示遮色片
+	Show Mesh	顯示網格
+	Show Rulers	顯示尺標
+	Show rulers	顯示尺標
+	Show Tool Tips	顯示工具提示
+	Show:	顯示：
+	Sides:	邊數：
+	Simplify	簡化
+	Size	尺寸
+	Size:	大小：
+	Sketch	素描
+	Skew	傾斜
+	Slice	切片
+	Slice Options	切片選項
+	Slice Options…	切片選項…
+	Slice Tool	切片工具
+	Slices	切片
+	Small	小
+	Small Caps	小型大寫
+	Smart Blur	智慧型模糊
+	Smart Blur…	智慧型模糊…
+	Smart Guides	智慧型參考線
+	Smart quotes	智慧型引號
+	Smoothness	平滑度
+	Snap to Grid	靠齊格點
+	Soft	弱
+	Soft Light	柔光
+	Soften	柔化
+	Softness	柔和度
+	Solarize	曝光過度
+	Sort	排序
+	Sort by	排序方式
+	Source	來源
+	Source code on GitHub	GitHub 上的原始碼
+	Spaces	空格
+	Spacing	間距
+	Spacing:	間距：
+	Spanish	西班牙文
+	Spatter	噴濺
+	Special	特殊
+	Speckle	斑點
+	Speed	速度
+	Spelling	拼字
+	Split	分割
+	Spot Color	特別色
+	Spray Radius	噴灑半徑
+	Square	正方形
+	Square Size	方塊大小
+	Stacked	堆疊
+	Stained Glass	彩色玻璃
+	Stamp	印章
+	Standard	標準
+	Standard Ligatures	標準連字
+	Star	星形
+	Start at:	起始編號：
+	Statistics	統計資料
+	Status	狀態
+	Status Bar	狀態列
+	Stippled	點刻
+	Stop	停止
+	Strength	力度
+	Strikethrough	刪除線
+	Stroke	筆畫
+	Stroke Color	筆畫顏色
+	Stroke Length	筆觸長度
+	Stroke Options	筆畫選項
+	Stroke:	筆畫：
+	Studio	Studio
+	Style	樣式
+	Style:	樣式：
+	Styles	樣式
+	Stylize	風格化
+	Subdivisions	細分
+	Subject	主題
+	Subscript	下標
+	Subset	子集
+	Subtract	減去
+	Sumi-e	水墨畫
+	Summary	摘要
+	Superscript	上標
+	Swatches	色票
+	Symbol	符號
+	Symbols	符號
+	Sync with system	與系統同步
+	System	系統
+	Tab	定位字元
+	Table	表格
+	Table style	表格樣式
+	Tables	表格
+	Tabloid	Tabloid
+	Tabs	定位點
+	Taper	錐化
+	Target	目標
+	Target:	目標：
+	Temperature	色溫
+	Templates	範本
+	Text	文字
+	Text color	文字顏色
+	Text:	文字：
+	Texture	紋理
+	The passwords don't match.	兩次輸入的密碼不一致。
+	Theme	主題
+	Thickness	粗細
+	This document has no bookmarks.	本文件沒有書籤。
+	Threshold	臨界值
+	Thumbnails	縮圖
+	Tile	並排顯示
+	Tile Size	拼貼大小
+	Time	時間
+	Timeline	時間軸
+	Tint	色調
+	Title	標題
+	Tolerance	容許度
+	Tolerance:	容許度：
+	Tool	工具
+	Toolbars	工具列
+	Tools	工具
+	Top	上
+	Top Left	左上
+	Top Right	右上
+	Top:	上：
+	Total	總計
+	Total:	總計：
+	Tracking	字距
+	Transform	變形
+	Translate	翻譯
+	Transparency	透明度
+	Transparent	透明
+	Trap…	補漏白…
+	Triangle	三角形
+	Twirl	旋轉扭曲
+	Twist	扭轉
+	Type	型別
+	Type Tool	文字工具
+	Type:	類型：
+	Typewriter	打字機
+	Type…	文字…
+	Typing	輸入文字
+	Underline	底線
+	Undo	復原
+	Undo {action}	復原{action}
+	Ungroup	解散群組
+	Uniform	等比例
+	Units	單位
+	Unknown	未知
+	Unlock	解除鎖定
+	Unsaved changes	未儲存的變更
+	Unsharp Mask	反銳利化遮罩
+	Untitled	未命名
+	Up	上移
+	Update	更新
+	UPPERCASE	全部大寫
+	Use Default	使用預設值
+	Username	使用者名稱
+	Value	值
+	Value:	值：
+	Variables	變數
+	Version	版本
+	Version {version}	版本 {version}
+	Vertical	垂直
+	Vertical Alignment	垂直對齊方式
+	Vertical Type Tool	垂直文字工具
+	Vertically	垂直
+	Very High	極高
+	Vibrance	自然飽和度
+	Video	視訊
+	View	檢視
+	Violet	紫羅蘭色
+	Visibility	可見性
+	Vivid Light	強烈光源
+	Voice	語音
+	W:	寬：
+	Warnings	警告
+	Warp	彎曲
+	Watermark	浮水印
+	Wave	波浪線
+	Wave…	波形…
+	Web	網頁
+	Website	網站
+	Weight	粗細
+	Wet	濕度
+	White	白色
+	White Intensity	白色強度
+	Whites	白色
+	Width	寬度
+	Width and Height	寬度與高度
+	Width:	寬：
+	Window	視窗
+	Windows	Windows
+	Words	詞數
+	Working CMYK	使用中的 CMYK
+	Workspace	工作區
+	Yellow	黃色
+	Yes	是
+	yesterday	昨天
+	Your changes will be lost if you don't save them.	若不儲存，您的變更將會遺失。
+	Zoom	縮放
+	Zoom In	放大顯示
+	Zoom in	放大
+	Zoom Out	縮小顯示
+	Zoom out	縮小
+	Zoom Tool	縮放工具
+@plural	{n} commit|{n} commits	{n} 次提交
+	{n} files	{n} 個檔案
+	{n} h ago	{n} 小時前
+@plural	{n} item|{n} items	{n} 個項目
+@plural	{n} Layer|{n} Layers	{n} 個圖層
+	{n} min ago	{n} 分鐘前
+@plural	{n} step|{n} steps	{n} 個步驟
+	−Bin	移除二進位
+	● Recording	● 錄製中

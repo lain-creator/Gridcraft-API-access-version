@@ -1,0 +1,2042 @@
+# 繁體中文 (zh-hant) interface catalog for PdfCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	  · not fixable here	 · 此處無法修復
+	 (page {p})	（第 {p} 頁）
+	 (searching… {s} of {p} pages)	（正在搜尋… {s}/{p} 頁）
+	 ({n} at {dpi} dpi, the largest size they can be drawn at)	（{n} 張以可繪製的最大尺寸 {dpi} dpi 匯出）
+	 ({s} not exported: {first})	（{s} 個未匯出：{first}）
+	 on page {p}	（第 {p} 頁）
+	 · password-protected	 · 受密碼保護
+	+Bin	新增二進位
+	+LOC	新增行
+	, Expires: 	，有效期至：
+	1 difference found	發現 1 處差異
+	1 file done	1 個檔案已完成
+	1 file needs attention	1 個檔案需要處理
+	1 instance	1 個匹配
+	1 issue	1 個問題
+	1 mark	1 個標記
+	1 page	1 頁
+	1 page selected	已選取 1 頁
+	1 page selected.	已選擇 1 頁。
+	180 degrees	180 度
+	4 x 6 in label (101.6 x 152.4 mm)	4 × 6 英吋標籤 (101.6 × 152.4 公釐)
+	9 digit, A letter, O letter or digit, X any character	9 表示數字，A 表示字母，O 表示字母或數字，X 表示任意字元
+	; 1 page already had text	；1 頁已有文字
+	; failed: {list}	；失敗：{list}
+	; {n} pages already had text	；{n} 頁已有文字
+	? of {n}	?/{n}
+	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}：{prs} 個 PR、{commits} 次提交、+{added} / −{deleted} 行（Δ {delta}）、+{bin_added} / −{bin_deleted} 個二進位資產，{first} – {last}
+	`{command}` {when}	`{command}` {when}
+	a bookmark cannot be moved inside itself	無法將書籤移至其自身內部
+	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	用 Rust 從零編寫的開源 PDF 應用。MIT OR Apache-2.0 許可。
+	A diagonal CONFIDENTIAL watermark on every page.	每頁上的對角線 CONFIDENTIAL 浮水印。
+	a document must keep at least one page	文件至少必須保留一頁
+	A document needs at least one page: copy instead	文件至少需要保留一頁，請改用複製
+	A form field has additional actions	表單欄位具有額外動作
+	A selected field has no widget on any page, so the fields can't be edited together.	某個所選欄位在任何頁面上都沒有控制項，因此無法一起編輯這些欄位。
+	A stream refers to an external file	串流參照了外部檔案
+	A stream uses LZW compression	串流使用了 LZW 壓縮
+	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	摘要描述表格的用途和佈局。請為每個表格新增 Summary 屬性。
+	About PdfCraft	關於 PdfCraft
+	Accepted	已接受
+	Accessibility Checker	無障礙偵測工具
+	Accessibility Checker Options	無障礙檢驗器選項
+	Accessibility permission flag	無障礙許可標誌
+	Accessibility permission flag is set	已設定無障礙許可標誌
+	Acrobat 3.0 and later (40-bit RC4)	Acrobat 3.0 及更高版本（40 位 RC4）
+	Acrobat 5.0 and later (128-bit RC4)	Acrobat 5.0 及更高版本（128 位 RC4）
+	Acrobat 7.0 and later (128-bit AES)	Acrobat 7.0 及更高版本（128 位 AES）
+	Acrobat X and later (256-bit AES)	Acrobat X 及更高版本（256 位 AES）
+	Action name:	操作名稱：
+	Action Wizard	動作精靈
+	Action Wizard…	動作精靈…
+	Actions	操作
+	Actions list	動作清單
+	Active	使用中
+	Actual Size	實際大小
+	Actual size	實際大小
+	Actual text	實際文字
+	Add a button	新增按鈕
+	Add a callout	新增註解框
+	Add a checkbox	新增核取方塊
+	Add a date field	新增日期欄位
+	Add a digital signature field	新增數位簽章欄位
+	Add a drop-down list	新增下拉式清單
+	Add a list box	新增清單方塊
+	Add a radio button	新增選項按鈕
+	Add a reply	新增回復
+	Add a stamp	新增印章
+	Add a sticky note	新增便利貼註解
+	Add a sticky note here	在此處新增附註
+	Add a text box	新增文字方塊
+	Add a text field	新增文字欄位
+	Add alternate text	新增替代文字
+	Add alternate text…	新增替代文字…
+	Add an Action	新增操作
+	Add an image field	新增圖片欄位
+	Add arrow	新增箭頭
+	Add at least two files	至少新增兩個檔案
+	Add background	新增背景
+	Add background…	新增背景…
+	Add Bates numbering…	新增 Bates 編號…
+	Add bookmark	新增書籤
+	Add callout	新增引線註解
+	Add checkmark	新增勾選記號
+	Add cloud	新增雲形
+	Add comment	新增註解
+	Add comments	新增註解
+	Add connected lines	新增連續線段
+	Add content	新增內容
+	Add cross	新增叉號
+	Add dot	新增圓點
+	Add drawing	新增繪圖
+	Add field	新增欄位
+	Add file attachment	新增附件
+	Add files to combine	新增要合併的檔案
+	Add files…	新增檔案…
+	Add folder	新增資料夾
+	Add folder and subfolders	新增資料夾及子資料夾
+	Add folder and subfolders…	新增資料夾及子資料夾…
+	Add folder…	新增資料夾…
+	Add footer	新增頁尾
+	Add form components	新增表單元件
+	Add header	新增頁首
+	Add header & footer	新增頁首與頁尾
+	Add header & footer…	新增頁首與頁尾…
+	Add highlight	新增螢光標示
+	Add image	新增圖片
+	Add image…	新增圖片…
+	Add inserted text	新增插入文字標記
+	Add line	新增線條
+	Add link	新增連結
+	Add open documents	新增已開啟的文件
+	Add or edit links	新增或編輯連結
+	Add oval	新增橢圓形
+	Add Page Numbers	新增頁碼
+	Add polygon	新增多邊形
+	Add printer marks	新增印刷標記
+	Add rectangle	新增長方形
+	Add redaction mark	新增遮蔽標記
+	Add search index	新增搜尋索引
+	Add signature	新增簽名
+	Add squiggly underline	新增波浪底線
+	Add stamp	新增印章
+	Add Step	新增步驟
+	Add sticky note	新增便利貼註解
+	Add strikethrough	新增刪除線
+	Add text	新增文字
+	Add text box	新增文字方塊
+	Add the choices people pick from.	新增供人選擇的選項。
+	Add the files to combine	新增要合併的檔案
+	Add the steps this action runs, in order.	按順序新增此操作執行的步驟。
+	Add to Trusted Certificates	新增到受信任的憑證
+	Add to trusted certificates	新增到受信任的憑證
+	Add underline	新增底線
+	Add watermark	新增浮水印
+	Add watermark…	新增浮水印…
+	Added 1 comment	已新增 1 條註解
+	Added more than once	重複新增
+	Added the first {n} files in {folder}	已新增 {folder} 中的前 {n} 個檔案
+	Added {n} comments	已新增 {n} 條註解
+	Adding images arrives on the web with file pickers for images	Web 端新增圖片將使用圖片檔案選擇器
+	Adds invisible text over each word; the page image is not changed	在每個詞上新增不可見文字；頁面圖片保持不變
+	Advanced optimization	進階最佳化
+	Advanced options	進階選項
+	Advanced Options {chevron}	進階選項 {chevron}
+	Advanced search…	進階搜尋…
+	AI assistant	AI 助理
+	Algorithm	演算法
+	Align left	左對齊
+	Align right	右對齊
+	All annotations are tagged	所有註解都已標記
+	All document contents	所有文件內容
+	All document contents except metadata	除中繼資料外的所有文件內容
+	All form fields are tagged	所有表單欄位都已標記
+	All form fields have description	所有表單欄位都有描述
+	All multimedia objects are tagged	所有多媒體物件都已標記
+	All open documents	所有已開啟的文件
+	All page content is tagged	所有頁面內容都已標記
+	All pages in document	文件中的所有頁面
+	All pages in range	範圍內的所有頁面
+	All tools	所有工具
+	Allow	允許
+	Allow Rich Text Formatting	允許富文字格式
+	Allow user to enter custom text	允許使用者輸入自訂文字
+	Allowed	允許
+	already a PDF	已經是 PDF
+	Also recognize pages that already have text	同時辨識已有文字的頁面
+	Alternate Text	替代文字
+	Alternate text	替代文字
+	Alternate text inside an element that already has alternate text is never read. Remove the inner alternate text.	已有替代文字的元素內部的替代文字永遠不會被朗讀。請刪除內部替代文字。
+	Alternate text must be associated with some content	替代文字必須與某些內容關聯
+	Alternate text on an element that contains a link or field hides that annotation from assistive technology. Move the alternate text.	包含連結或欄位的元素上的替代文字會向輔助技術隱藏該註解。請移動替代文字。
+	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	沒有頁面內容的元素上的替代文字永遠無法到達。請刪除它或將元素附加到內容。
+	Alternate text should not hide annotation	替代文字不應隱藏註解
+	Alternate text that will never be read	永遠不會被朗讀的替代文字
+	An action is already running	已有操作正在執行
+	An action with this name already exists.	已存在同名的操作。
+	An embedded file has no AFRelationship	嵌入的檔案沒有 AFRelationship
+	An image asks to be interpolated	圖片要求使用插值處理
+	An image has alternates or OPI information	圖片具有替代圖片或 OPI 資訊
+	An open-source PDF workbench — local, private, and scriptable.	開源 PDF 工作台，在本機處理、保護隱私，並支援指令碼。
+	and {n} more	以及另外 {n} 個
+	Animation that flashes can cause seizures. Check scripts and media for flicker.	閃爍的動畫可能導致癲癇發作。請檢驗指令碼和媒體是否存在閃爍。
+	Annotations, form fill-in, and digital signatures	註解、填寫表單和數位簽章
+	Any except extracting pages	除提取頁面外的任何操作
+	Anyone opening the document will need this password. It's applied when you save.	開啟文件的任何人都需要此密碼。儲存時套用。
+	Appear behind page	顯示在頁面後面
+	Appear on top of page	顯示在頁面上層
+	Appearance mode	外觀模式
+	Appearance settings…	外觀設定…
+	Applied 1 redaction mark. Save to remove the content from the file.	已套用 1 個遮蔽內容標記。儲存以從檔案中刪除內容。
+	Applied {n} redaction marks. Save to remove the content from the file.	已套用 {n} 個遮蔽內容標記。儲存以從檔案中刪除內容。
+	Applies to 1 page	套用於 1 頁
+	Applies to {n} pages	套用於 {n} 頁
+	Apply PDF standards	套用 PDF 標準
+	Apply redactions	套用遮蔽內容
+	Apply redactions…	套用遮蔽…
+	Apply scale	套用比例
+	Appropriate nesting	適當的巢狀
+	April	四月
+	Arbitrary Mask	任意掩碼
+	Archive documents	封存文件
+	Ask about this document	詢問此文件
+	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	向 GitHub 搜尋最新版本。不會自動下載或安裝任何內容。
+	Associated with content	與內容關聯
+	At least one signature has problems.	至少一個簽名存在問題。
+	At least one signature is invalid.	至少一個簽名無效。
+	At most	至多
+	Attach a file	附加檔案
+	Attach file	附加檔案
+	Attachment	附件
+	Attachments	附件
+	Attachments Panel and Page	附件面板和頁面
+	Audit space usage	分析空間使用量
+	Audit space usage…	審計空間使用情況…
+	August	八月
+	Auto follows the system's text size. Pages always render at the display's full resolution.	「自動」會跟隨系統的文字大小。頁面一律以螢幕的完整解析度呈現。
+	Auto portrait/landscape	自動縱向/橫向
+	Auto-rotate pages	自動旋轉頁面
+	Auto-size text to fit redaction region	自動調整文字大小以適應遮蔽內容區域
+	Automatically tag PDF	自動標記 PDF
+	average	平均值
+	Back	返回
+	Back side only	僅背面
+	Back to all tools	返回所有工具
+	Back to the document	返回文件
+	background	背景
+	Bates numbering	Bates 編號
+	Before each selected page (select pages in Organize)	在每個選定頁面之前拆分（在組織頁面中選擇）
+	Before the number	在數字之前
+	Beveled	斜面
+	Bicubic downsampling to	雙三次降取樣至
+	Binding	裝訂
+	Binding:	裝訂：
+	Black on white	白底黑字
+	Blank page	空白頁面
+	Booklet	小冊子
+	Booklet subset:	小冊子子集：
+	Bookmark options	書籤選項
+	Bookmarks	書籤
+	Bookmarks are present in large documents	大文件中有書籤
+	Bookmarks Panel and Page	書籤面板和頁面
+	Border Color:	邊框顏色：
+	Borders and Colors	邊框和顏色
+	Box	框
+	Bring your own model (off by default)	使用自己的模型（預設關閉）
+	Browser's print dialog	瀏覽器的列印對話方塊
+	Butt	平頭
+	Button	按鈕
+	Button is checked by default	預設選取按鈕
+	Button Properties	按鈕屬性
+	Button Style:	按鈕樣式：
+	Buttons with the same name and value are selected in unison	同名同值的按鈕一起選取
+	Bytes	位元組
+	Calibrate from two points	使用兩點校準
+	Callout	標註
+	Can't be read: {e}	無法讀取：{e}
+	Cancelled	已取消
+	Cancelling…	正在取消…
+	Case-sensitive	區分大小寫
+	Center Footer Text	置中頁尾文字
+	Center Header Text	置中頁首文字
+	Center horizontally	水平置中
+	Center vertically	垂直置中
+	Center window on screen	在螢幕上置中視窗
+	Centre	置中
+	Certificate Viewer	憑證檢視器
+	Certificates	憑證
+	Certified by {by}	認證方{by}
+	Certify	認證
+	Certify (invisible signature)	認證（不可見簽章）
+	Certify (visible signature)	認證（可見簽章）
+	Change comment properties	變更註解內容
+	Change field properties	變更欄位內容
+	Change initial view	變更初始檢視
+	Change initials	變更姓名縮寫
+	Change link properties	變更連結內容
+	Change reading options	變更閱讀選項
+	Change reading options…	變更閱讀選項…
+	Change settings…	更改設定…
+	Change signature	變更簽名
+	Change tag properties	變更標籤屬性
+	Change the colour of line art as well as text	除文字外，也變更線條圖的色彩
+	Change {key}	變更{key}
+	Change {what}	變更{what}
+	Changes allowed	允許的更改
+	Changing the document	更改文件
+	Character encoding	字元編碼
+	Character limit 0 means no limit. A comb of characters needs a limit.	字元數限制為 0 表示無限制。分格字元必須設定字元數限制。
+	Character limit:	字元數限制：
+	Character spacing	字元間距
+	characters	個字元
+	Characters without spaces	不含空白的字元數
+	Check	勾選記號
+	Check Again	重新檢驗
+	Check again	重新檢驗
+	Check box is checked by default	預設選取核取方塊
+	Check Box Properties	核取方塊屬性
+	Check Box Style:	核取方塊樣式：
+	Check for accessibility	偵測無障礙支援
+	Check for accessibility…	偵測無障礙支援…
+	Check for updates…	尋找更新…
+	Check spelling	檢驗拼字
+	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	檢驗標記的閱讀順序是否與明眼讀者一致。使用閱讀順序工具或標記面板進行更正。
+	Check the pages	請檢查頁碼
+	Check the pages of {name}: {why}	請檢查 {name} 的頁碼：{why}
+	CheckBox	核取方塊
+	Checkbox	核取方塊
+	Checked	已勾選
+	Checking for a newer version…	正在檢驗新版本…
+	Checking Options ({on} of 32 in all categories)	檢驗選項（所有類別共 32 項，已選 {on} 項）
+	Checkmark	勾選記號
+	Choose a folder for the exported files	選擇匯出檔案的資料夾
+	Choose a folder for the extracted pages	選擇提取頁面的資料夾
+	Choose a folder for the results	選擇結果資料夾
+	Choose a folder for the searchable files	選擇可搜尋檔案的資料夾
+	Choose a folder for the split files	選擇拆分檔案的資料夾
+	Choose a folder on this computer to pin	請選擇這部電腦上要釘選的資料夾
+	Choose a layout:	選擇佈局：
+	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	選擇 PNG 或 JPEG 圖像（最大 4 MiB）。透明度會保留。
+	Choose a stamp, then click on the page to place it.	選擇戳記，然後按一下頁面放置。
+	Choose an image	選擇圖片
+	Choose images	選取圖片
+	Choose image…	選擇圖片…
+	Choose photo…	選擇相片…
+	Choose the digital ID that you want to use for signing:	選擇要用於簽名的數位 ID：
+	Clean Up	清理
+	Clean-up	清理
+	Clear all	全部清除
+	Clear form	清除表單
+	Clear Recent Files	清除最近的檔案
+	Clear redaction marks	清除遮蔽標記
+	Clear selection / close find	清除選取／關閉尋找
+	Click on the page to add a {tool}, or drag to set its size	按一下頁面新增{tool}，或拖動設定其大小
+	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	按一下頁面新增文字；每次按一下開始一個新文字框，✓ 完成。拖動專案以移動，拖動角落以調整大小，按兩下文字進行編輯。
+	Click text or an image to edit it	按一下文字或圖片進行編輯
+	Click the first point to begin.	按一下起點以開始。
+	Click to sort, drag to move the column. Drag its edge to resize it.	按一下以排序，拖曳以移動欄。拖曳欄邊緣可調整寬度。
+	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	按一下頂點。按 Enter 或按兩下以完成周長或面積測量。按一下起點以封閉區域。
+	Clockwise 90 degrees	順時針 90 度
+	Close all	全部關閉
+	Close file	關閉檔案
+	Close panel	關閉面板
+	Close Tab	關閉分頁
+	Closed arrow	閉合箭頭
+	Cloud	雲形
+	Collapse all	全部摺疊
+	Collapse all bookmarks	摺疊所有書籤
+	Collapse all pages	摺疊所有頁面
+	Collapse tag	收合標籤
+	Color contrast	顏色對比度
+	Color Images	彩色圖片
+	Color Spaces	顏色空間
+	Colours are remapped while rendering; the document itself never changes.	色彩僅在顯示時重新對應；文件本身不會變更。
+	Column select	欄選取
+	Comb of	梳狀（每格一字元），共
+	Comb of characters	字元梳
+	Combine files	合併檔案
+	Combine files…	合併檔案…
+	Combine the rest	合併其餘檔案
+	Combined {n} files	已合併{n}個檔案
+	Combo	下拉選單
+	Coming in milestone	將於里程碑
+	Coming in milestone {m}. Items marked Ready work today.	{m} 里程碑推出。標記為就緒的專案現已可用。
+	Comment	Comment
+	Comment and form data	註解和表單資料
+	Comment list	註解清單
+	Commenting	註解
+	Commenting, filling in form fields, and signing existing signature fields	註解、填寫表單欄位並簽署現有簽名欄位
+	Comments & Forms	註解和表單
+	Comments and markups	註解和標記
+	Comments only	僅註解
+	Comments panel	註解面板
+	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	註解、連結和欄位必須位於標記樹中才能被播報。請標記註解。
+	Commit selected value immediately	立即提交所選值
+	Common Properties	一般屬性
+	Compare Files	比較檔案
+	Compare files	比較檔案
+	Compare files…	比較檔案…
+	Compare this file with an older version: Compare files… in All tools.	將此檔案與舊版本比較：在所有工具中使用「比較檔案…」。
+	Completed	已完成
+	Compress a PDF	壓縮 PDF
+	Compress document structure (object streams)	壓縮文件結構（物件流）
+	Configure a Digital ID for Signing	設定簽署用的數位 ID
+	Configure New Digital ID	配置新數位 ID
+	Confirm Password	確認密碼
+	Conformance level:	一致性級別：
+	Connected lines	連線線
+	Console	主控台
+	Content copying	內容複製
+	Content copying for accessibility	為無障礙複製內容
+	Content Streams	內容流
+	Continuous scrolling	連續捲動
+	Convert colors	轉換色彩
+	Copied {what}	已複製{what}
+	Copies, two-sided printing and colour are chosen in the browser's print dialog.	份數、雙面列印和色彩在瀏覽器的列印對話方塊中選擇。
+	Copy Image	複製圖片
+	Copy Image in Original Format	以原始格式複製圖片
+	Copy or cut pages first	請先複製或剪下頁面
+	Copy pages	複製頁面
+	Copy selected text	複製所選文字
+	Copy text	複製文字
+	Correct recognized text	修正辨識文字
+	Could not save: {e}	無法儲存：{e}
+	Couldn't add {name}: {e}	無法新增{name}：{e}
+	Couldn't check for updates: {e}	無法檢驗更新：{e}
+	Couldn't combine files: {e}	無法合併檔案：{e}
+	Couldn't copy the image: {e}	無法複製圖片：{e}
+	Couldn't create a PDF: {e}	無法建立 PDF：{e}
+	Couldn't download {name}: {e}	無法下載{name}：{e}
+	Couldn't extract pages: {e}	無法提取頁面：{e}
+	Couldn't fit the visible content: {e}	無法適應可見內容：{e}
+	Couldn't follow linked PDF: {reason}	無法開啟連結的 PDF：{reason}
+	Couldn't import the signature image: {e}	無法匯入簽名圖像：{e}
+	Couldn't open revision {n}: {e}	無法開啟修訂版本{n}：{e}
+	Couldn't open the printer's preferences: {e}	無法開啟印表機喜好設定：{e}
+	Couldn't open the result: {e}	無法開啟結果：{e}
+	Couldn't open the signed version: {e}	無法開啟已簽名版本：{e}
+	Couldn't optimize the file	無法最佳化檔案
+	Couldn't optimize the file: {e}	無法最佳化檔案：{e}
+	Couldn't print from the browser ({e}); downloaded {name} to print instead	無法從瀏覽器列印（{e}）；已改為下載 {name} 以供列印
+	Couldn't read {name}: {e}	無法讀取{name}：{e}
+	Couldn't recover {name}: {e}	無法恢復{name}：{e}
+	Couldn't reload {name}: {e}	無法重新載入{name}：{e}
+	Couldn't save the image: {e}	無法儲存圖片：{e}
+	Couldn't save {name}: {e}	無法儲存{name}：{e}
+	Couldn't save: {e}	無法儲存：{e}
+	Couldn't split: {e}	無法拆分：{e}
+	Couldn't summarize comments: {e}	無法彙總註解：{e}
+	Couldn't take the snapshot: {e}	無法拍攝快照：{e}
+	Couldn't unlock {name}: {e}	無法解鎖 {name}：{e}
+	Couldn't use the photo: {e}	無法使用此相片：{e}
+	Couldn't use {name}: {e}	無法使用{name}：{e}
+	Couldn't write {name}: {e}	無法寫入{name}：{e}
+	Couldn't write {path}: {e}	無法寫入{path}：{e}
+	Counterclockwise 90 degrees	逆時針 90 度
+	Counting words… {n} pages read	正在統計字詞… 已讀取{n}頁
+	Country/Region	國家/地區
+	Create a new Digital ID (self-signed, saved to a password-protected file)	建立新數位 ID（自簽名，儲存到受密碼保護的檔案）
+	Create a PDF	建立 PDF
+	Create accessibility report	建立無障礙報告
+	Create Custom Stamp	建立自訂戳記
+	Create custom stamp…	建立自訂戳記…
+	Create from	建立來源
+	Create Link	建立連結
+	Create link	建立連結
+	Create links from URLs	從網址建立連結
+	Create Link…	建立連結…
+	Create PDF Comment Summary	建立 PDF 註解摘要
+	Create PDF comment summary…	建立 PDF 註解摘要…
+	Create PDF from clipboard	從剪貼簿建立 PDF
+	Create PDF from file…	從檔案建立 PDF…
+	Create PDF from images	從圖片建立 PDF
+	Create PDF from images…	從圖片建立 PDF…
+	Create PDF from multiple files…	從多個檔案建立 PDF…
+	Create separate PDFs…	建立個別 PDF…
+	Create {what}	建立{what}
+	Created 1 link	已建立 1 個連結
+	Created a comment summary	已建立註解摘要
+	Created a PDF from the first {n} files	已從前 {n} 個檔案建立 PDF
+	Created a PDF from {n} files	已從 {n} 個檔案建立 PDF
+	Created a PDF from {n} files; left out: {names}	已從 {n} 個檔案建立 PDF；已略過：{names}
+	Created {n} links	已建立{n}個連結
+	Creates 1 file from {n} pages.	從 {n} 頁建立 1 個檔案。
+	Creates {f} files from {n} pages.	從 {n} 頁建立 {f} 個檔案。
+	Credit Cards	信用卡
+	Crop (% trimmed from each side)	裁切（從每條邊修剪的百分比）
+	Crop Image	裁切影像
+	Crop page	裁切頁面
+	Crop pages	裁切頁面
+key	Ctrl	Ctrl
+	Currency symbol:	貨幣符號：
+	Current page ({n})	目前頁（第 {n} 頁）
+	Current page only	僅目前頁面
+	Current page — type a page number or label (such as iv) and press Enter	目前頁面：輸入頁碼或頁面標籤（例如 iv），再按 Enter
+	Custom font	自訂字型
+	Custom scale:	自訂比例：
+	Custom stamps arrive on the web with file pickers for images	Web 端自訂戳記將使用圖片檔案選擇器
+	Custom text:	自訂文字：
+	Custom:	自訂：
+	Cut and stack	裁切後疊放
+	Cut Image	剪下圖片
+	Cut marks	裁切標記
+	Cut pages	剪下頁面
+	Cut {what}	已剪下{what}
+	Cuts each page to its printed area, turns it upright and fits it to the sheet without stretching. One label per sheet.	將每頁裁切至其列印區域，轉正後不拉伸地符合紙張。每張紙一個標籤。
+	Dark gray	深灰色
+	Dark gray theme	深灰色主題
+	Dark theme	深色主題
+	Date field	日期欄位
+	Date: 	日期：
+	December	十二月
+	Decimal places:	小數位數：
+	Decimals	小數位數
+	Declared conformance: {shown}	宣告的一致性：{shown}
+	Decorative figure	裝飾性圖形
+	Default page display	預設頁面顯示
+	Default Value:	預設值：
+	Default workspace mode	預設工作區模式
+	Default zoom	預設縮放
+	Default:	預設值：
+key	Delete	Delete
+	Delete bookmark	刪除書籤
+	Delete comment	刪除註解
+	Delete content	刪除內容
+	Delete document JavaScript	刪除文件 JavaScript
+	Delete field	刪除欄位
+	Delete image	刪除圖片
+	Delete link	刪除連結
+	Delete page	刪除頁面
+	Delete page {label}	刪除頁面 {label}
+	Delete pages	刪除頁面
+	Delete pages (Delete)	刪除頁面 (Delete)
+	Delete pages after extracting	提取後刪除頁面
+	Delete selected fields	刪除選取的欄位
+	Delete selected pages (Organize)	刪除所選頁面（整理頁面）
+	Delete stamp	刪除戳記
+	Delete {o}	刪除 {o}
+	Describe the figure	描述該圖形
+	Details	詳情
+	Detect form fields	偵測表單欄位
+	Detected 1 form field	偵測到 1 個表單欄位
+	Detected {n} form fields	偵測到 {n} 個表單欄位
+	Device colour is used, but there is no PDF/A output intent	使用了裝置色彩，但沒有 PDF/A 輸出目的
+	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	使用了 DeviceCMYK：需要 CMYK 輸出目的，目前無法自動新增
+	Diagnostic details	診斷詳細資訊
+	Digital ID	數位 ID
+	Digital ID password	數位 ID 密碼
+	Digital signature	數位簽章
+	Digital Signature Properties	數位簽章屬性
+	Digitally sign	數位簽署
+	Digitally signed by	數位簽署者
+	Discard	放棄
+	Discard all comments, forms and multimedia	捨棄所有註解、表單和多媒體
+	Discard all links, actions and JavaScript	捨棄所有連結、動作和 JavaScript
+	Discard all object data (file attachments)	捨棄所有物件資料（檔案附件）
+	Discard alternate images	捨棄備用圖片
+	Discard bookmarks	捨棄書籤
+	Discard document information and metadata	捨棄文件資訊和中繼資料
+	Discard document tags	捨棄文件標記
+	Discard embedded page thumbnails	捨棄嵌入的頁面縮圖
+	Discard embedded print settings	捨棄嵌入的列印設定
+	Discard hidden layer content	捨棄隱藏圖層內容
+	Discard hidden text	捨棄隱藏文字
+	Discard Objects	捨棄物件
+	Discard private data of other applications	捨棄其他應用程式的私有資料
+	Discard this text (Esc)	捨棄此文字（Esc）
+	Discard User Data	捨棄使用者資料
+	Display theme	顯示主題
+	Distinguished name	可分辨名稱
+	Distribute	分佈
+	DN: 	DN：
+	Document actions	文件動作
+	Document and markups	文件和標記
+	Document and stamps	文件和戳記
+	Document assembly	文件組裝
+	Document has appropriate color contrast	文件顏色對比度合適
+	Document is not image-only PDF	文件不是純圖片 PDF
+	Document is tagged PDF	文件是標記的 PDF
+	Document JavaScripts	文件 JavaScript
+	Document JavaScripts…	文件 JavaScript…
+	Document language	文件語言
+	Document Overhead	文件開銷
+	Document Properties	文件內容
+	Document properties ({key})	文件內容（{key}）
+	Document properties…	文件內容…
+	Document sanitized. Save to finish: saving rewrites the whole file.	文件已清理。儲存以完成：儲存將重寫整個檔案。
+	Document structure provides a logical reading order	文件結構提供邏輯閱讀順序
+	Document title is showing in title bar	標題列中顯示文件標題
+	Documents and view	文件與檢視
+	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	超過 20 頁的文件需要書籤以便導覽。請為主要章節新增書籤。
+	Don't save	不儲存
+	Done adding text	完成新增文字
+	Double-click	滑鼠按兩下
+	Downloaded {name}	已下載{name}
+@plural	Downloaded {n} PDF|Downloaded {n} PDFs	已下載 {n} 個 PDF
+	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web 端附件下載將於 M3.10 到來（{n} 位元組已就緒）
+	Downsample to	降取樣至
+	DPI sets the printed page size without resampling the image.	DPI 決定列印時的頁面大小，不會重新取樣圖片。
+	Drag a rectangle around the area to copy	拖動框選要複製的區域
+	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	拖動頁面上的矩形進行裁切；按兩下頁面可設定頁面框
+	Drag a rectangle to create a link; double-click a link to edit it	拖動矩形建立連結；按兩下連結進行編輯
+	Drag the corners onto the document's edges, then choose Enhance page.	將四個角拖曳到文件邊緣，然後選擇「增強頁面」。
+	Drag the selection to move it. Esc clears the selection.	拖曳選取範圍即可移動。按 Esc 清除選取。
+	Drag to draw the area where the signature should appear.	拖動繪製簽名應顯示的區域。
+	Drag to reorder	拖曳以重新排序
+	Draw a cloud	繪製雲形
+	Draw a line	繪製直線
+	Draw a polygon	繪製多邊形
+	Draw a rectangle	繪製矩形
+	Draw an arrow	繪製箭頭
+	Draw an oval	繪製橢圓
+	Draw connected lines	繪製連接線
+	Draw freehand	手繪
+	Draw your {what} below.	在下方繪製您的{what}。
+	Drawing	繪圖
+	Drawing scale	圖面比例
+	Drawing scale changes. Use Actual size for full-scale plans.	圖面比例會改變。如需原尺寸的圖面，請使用「實際大小」。
+	Drop PDFs, images, text files or folders here, or choose them.	將 PDF、圖片、文字檔案或資料夾拖放到此處，或選取它們。
+	Drop-down list	下拉式清單
+	Dropdown Properties	下拉選單屬性
+	Duplicate "{name}" onto:	將「{name}」複製到：
+	Duplicate Field	複製欄位
+	Duplicate field	複製欄位
+	Duplicate page	複製頁面
+	Duplicate pages	複製頁面
+	Duplicate…	重複…
+	Dynamic XFA form laid out from its template: {pages}, {fields}.	依範本排版的動態 XFA 表單：{pages}、{fields}。
+	E-Sign	電子簽署
+	e.g. en-US	例如 en-US
+	e.g. My stamps	例如：我的戳記
+	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	每個欄位都需要說明輸入內容的提示。在「欄位屬性」>「一般」>「提示」中新增。
+	Each file holds as many of the {n} pages as fit.	每個檔案容納 {n} 頁中儘量多的頁面。
+	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	按頁面繪製位置測量每個圖片；僅在結果更小時替換圖片。
+	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	每個圖片一次，以文件和頁面命名。JPEG 圖片原樣儲存，其他為 PNG。
+	Earlier in tab order	在 Tab 順序中前移
+	Edit a PDF	編輯 PDF
+	Edit Action	編輯操作
+	Edit comment	編輯註解
+	Edit content	編輯內容
+	Edit document JavaScript	編輯文件 JavaScript
+	Edit fields	編輯欄位
+	Edit image	編輯圖片
+	Edit script of {name}	編輯 {name} 的指令碼
+	Edit text	編輯文字
+	Edit text & images	編輯文字與圖片
+	Edit text…	編輯文字…
+	Email Address	電子郵件地址
+	Email Addresses	電子郵件地址
+	Embedded Files	嵌入檔案
+	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	嵌入的檔案本身必須符合 PDF/A；其他檔案請使用 PDF/A-3
+	Enable Acrobat JavaScript	啟用 Acrobat JavaScript
+	Enable copying of text, images, and other content	允許複製文字、圖片和其他內容
+	Enable text access for screen reader devices for the visually impaired	允許螢幕閱讀器裝置存取文字以幫助視障人士
+	Encrypt	加密
+	Encrypt with certificate	使用憑證加密
+	Encryption	加密
+key	End	End
+	Endpoints	端點
+	Enhance camera image	增強相機影像
+	Enhance page	增強頁面
+	Enhance scanned file	增強掃描檔案
+	Enter permissions password…	輸入許可權密碼…
+	Enter the password that opens it	輸入開啟該檔案的密碼
+	Enter the permissions password to allow combining	輸入權限密碼以允許合併
+	Entire page	整個頁面
+	Erase drawings	擦除繪圖
+key	Esc	Esc
+	Even and Odd Pages	奇偶頁
+	Even pages	偶數頁
+	Even Pages Only	僅偶數頁
+	Every PDF, image and text file in the folder	資料夾中的所有 PDF、圖片和文字檔案
+	Every PDF, image and text file in the folder and the folders inside it	資料夾及其子資料夾中的所有 PDF、圖片和文字檔案
+	Everything on a page must be tagged or marked as an artifact (decoration, headers, footers). Tag the untagged content.	頁面上的所有內容都必須標記或標為 artifact（裝飾、頁首、頁尾）。請標記未標記的內容。
+	Exclude image/OCR text	排除影像/OCR文字
+	Exclude images smaller than	排除小於以下尺寸的圖片
+	Exclude tagged code blocks	排除帶標籤的程式碼區塊
+	Exclude tagged tables	排除帶標籤的表格
+	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	排除規則使用PDF標籤。沒有標籤的表格和程式碼仍計入統計。排除影像時也會排除不可見文字。
+	Execute a menu item	執行選單項
+	Expand all	全部展開
+	Expand all bookmarks	展開所有書籤
+	Expand all pages	展開所有頁面
+	Expand tag	展開標籤
+	Expand top-level bookmarks	展開頂層書籤
+	Explain	解釋
+	Export a PDF	匯出 PDF
+	Export all comments to data file…	將所有註解匯出為資料檔…
+	Export All Images	匯出所有圖片
+	Export all images	匯出所有圖片
+	Export all images…	匯出所有圖片…
+	Export all to data file…	全部匯出到資料檔案…
+	Export certificate	匯出憑證
+	Export certificate…	匯出憑證…
+	Export comments	匯出註解
+	Export data	匯出資料
+	Export form data	匯出表單資料
+	Export form data…	匯出表單資料…
+	Export measurements	匯出測量結果
+	Export measurements as CSV	將測量結果匯出為 CSV
+	Export stopped: {e}	匯出中止：{e}
+	Export to HTML…	匯出為 HTML…
+	Export to Image	匯出為圖片
+	Export to image…	匯出為圖片…
+	Export to PowerPoint…	匯出為 PowerPoint…
+	Export to RTF…	匯出為 RTF…
+	Export to Text	匯出為文字
+	Export to text…	匯出為文字…
+	Export to Word…	匯出為 Word…
+	Export Value: {on}	匯出值：{on}
+	Exported 1 image	已匯出 1 張圖片
+	Exported the text of 1 page	已匯出 1 頁的文字
+	Exported the text of {n} pages	已匯出{n}頁的文字
+	Exported {n} images	已匯出{n}張圖片
+	Exporting… {d} of {t}	正在匯出…第{d}個，共{t}個
+	Extended Graphics States	擴充套件圖形狀態
+	Extract pages	擷取頁面
+	Extract pages as separate files	將頁面提取為單獨檔案
+	Extract pages to a new document	將頁面提取到新文件
+	Extract pages…	擷取頁面…
+	Extracted 1 page	已提取 1 頁
+	Extracted {n} pages	已提取{n}頁
+	Failed	未通過
+scroll speed	Fast	快
+	February	二月
+	Field descriptions	欄位描述
+	Field is used for file selection	欄位用於檔案選擇
+	Field list	欄位清單
+	Field names (comma-separated)	欄位名（逗號分隔）
+	Field names with + - * / and parentheses; put \\ before spaces in names.	欄位名支援 + - * / 和括號；名稱中的空格前加 \\。
+	Field properties…	欄位內容…
+	Field value is in range:	欄位值在範圍內：
+	Field value is not validated	不驗證欄位值
+	Field: {field} on page {p}	欄位：{field}，第 {p} 頁
+	Fields to reset (comma-separated; empty: all)	要重設的欄位（逗號分隔；為空表示全部）
+	Figure {i} of {n}{page}	圖形 {i}/{n}{page}
+	Figures alternate text	圖形替代文字
+	Figures require alternate text	圖形需要替代文字
+	File (.p12, .pfx)	檔案 (.p12, .pfx)
+	File attachments	檔案附件
+	File name	檔案名稱
+	File size	檔案大小
+@id	file.word_count	字詞統計…
+	Files are combined from top to bottom. Leave Pages empty to take every page.	檔案將按從上到下的順序合併。頁碼留空表示取全部頁面。
+	Files are combined in the order shown. Drag them to change it.	檔案將按顯示的順序合併。拖曳可變更順序。
+	Files for {name}	{name} 的檔案
+	Files you open in PdfCraft appear here. Drop a PDF anywhere to open it.	在 PdfCraft 開啟過的檔案會顯示在這裡。將 PDF 拖曳至視窗即可開啟。
+	Fill	填寫
+	Fill & Sign	填寫與簽署
+	Fill & Sign dates	填寫與簽署的日期
+	Fill & Sign signature	填寫與簽署中的簽名
+	Fill & Sign: add text	填寫與簽署：新增文字
+	Fill & Sign: change initials	填寫與簽署：變更姓名縮寫
+	Fill & Sign: change signature	填寫與簽署：變更簽名
+	Fill & Sign: checkmark	填寫與簽署：勾選記號
+	Fill & Sign: cross	填寫與簽署：叉號
+	Fill & Sign: date	填寫與簽署：日期
+	Fill & Sign: dot	填寫與簽署：圓點
+	Fill & Sign: initials	填寫與簽署：姓名縮寫
+	Fill & Sign: line	填寫與簽署：直線
+	Fill & Sign: remove saved initials	填寫與簽署：刪除已儲存的姓名縮寫
+	Fill & Sign: remove saved signature	填寫與簽署：刪除已儲存的簽名
+	Fill & Sign: sign	填寫與簽署：簽名
+	Fill Color:	填充顏色：
+	Fill colour	填充顏色
+	Fill colour:	填滿色彩:
+	Fill colour: none	填充顏色：無
+	Fill in {name}	填寫 {name}
+	Filling in form fields and signing existing signature fields	填寫表單欄位並簽署現有簽名欄位
+	Filling of form fields	填寫表單欄位
+	Filter comments	篩選註解
+	Find a tag	尋找標籤
+	Find options	尋找選項
+	Find text	尋找文字
+	Find text and redact	尋找並遮蔽文字
+	Find text and redact…	尋找並遮蔽文字…
+	Find tools and commands	尋找工具與指令
+	Find tools and commands…	尋找工具與指令…
+	Find untagged content	尋找未標記的內容
+	Finding document fonts…	正在尋找文件字型…
+	Finish or discard the text being edited before selecting several objects.	請先完成或放棄正在編輯的文字，再選取多個物件。
+	First / last page	第一頁／最後一頁
+	Fit	適合
+	Fit Height	適合高度
+	Fit one full page	單頁完整顯示
+	Fit Page	適合頁面
+	Fit to height	符合高度
+	Fit to page	適合頁面
+	Fit to width	符合寬度
+	Fit to width scrolling	符合寬度連續捲動
+	Fit Visible	適合可見區域
+	Fit visible	符合可見範圍
+	Fit Width	適合寬度
+	Fix	修復
+	Fix hairlines	修正極細線
+	Fix reading order	修正閱讀順序
+	Fixed what could be fixed; 1 problem remains	已修復能修復的問題；還剩 1 個問題
+	Fixed what could be fixed; {n} problems remain	已修復能修復的問題；還剩{n}個問題
+	Flatten comments	平面化註解
+	Flatten Fill & Sign when saving	儲存時將填寫與簽署內容平面化
+	Flatten form fields	平面化表單欄位
+	Flip horizontal	水平翻轉
+	Flip image	翻轉圖片
+	Flip on long edge	沿長邊翻轉
+	Flip on short edge	沿短邊翻轉
+	Flip vertical	垂直翻轉
+	Float panel	浮動面板
+	Folders	資料夾
+	Font colour:	字型顏色：
+	Font size	字號
+	Font size 0 uses automatic sizing.	字型大小為 0 時自動調整大小。
+	Font Size:	字型大小：
+	Font size:	字型大小：
+	Font: Helvetica	字型：Helvetica
+	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	字型必須將其字元對映到 Unicode，以便讀取和複製文字。請修復字型或重新生成 PDF。
+	for images above	（高於此解析度的圖片）
+	For page sizes and margins.	用於頁面尺寸和邊距。
+	Form data and PDF forms	表單資料和 PDF 表單
+	Form fields	表單欄位
+	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	表單欄位將被平面化：其值保持可見。儲存將重寫整個檔案。
+	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	表單欄位必須位於標記樹（表單標記）中才能被播報。請標記表單欄位。
+	Form fields only	僅表單欄位
+	Form fields panel	表單欄位面板
+	Form fill-in and digital signatures	填寫表單和數位簽章
+	Format text	設定文字格式
+	Forms	表單
+	Formulas and similar non-text elements need alternate text. Add alternate text to them.	公式及類似非文字元素需要替代文字。請為它們新增替代文字。
+	Found {n} untagged content problems.	發現 {n} 個未標記內容問題。
+	From a PDF page or an image	來自 PDF 頁面或圖片
+	From colour	使用顏色
+	From {file}	來自 {file}
+	From:	從：
+	Front side only	僅正面
+	Full screen mode	全螢幕模式
+	Geospatial location	地理位置
+	Get help, share feedback and follow development on Discord.	在 Discord 取得協助、提供意見並追蹤開發進度。
+	Go to a page view	轉到頁面檢視
+	Go to page {p}	移至第 {p} 頁
+	Go to page…	轉到頁面…
+	Go to the page	轉到該頁面
+	Go to this result	轉到此結果
+	Grab bag	精簡
+	Grayscale Images	灰度圖片
+	Green on black	黑底綠字
+	Greyscale	灰階
+	Hand (H)	抓手 (H)
+	Has JavaScript actions (run in M6)	含 JavaScript 動作（M6 執行）
+	Header and footer	頁首與頁尾
+	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	表頭儲存格（TH）讓聽者知道每欄或每列的內容。請標記表頭儲存格。
+	header or footer	頁首或頁尾
+	Headers	表頭
+	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	標題級別不應跳躍（H1 後面不應直接跟 H3）。請重新標記標題。
+	Hidden layers	隱藏圖層
+	Hide a field	隱藏欄位
+	Hide all comments	隱藏所有註解
+	Hide field highlights	隱藏欄位醒目提示
+	Hide hover previews for highlights without comment text	隱藏沒有註解文字的螢光標示的停留預覽
+	Hide layer	隱藏圖層
+	Hide menu bar	隱藏選單欄
+	Hide password	隱藏密碼
+	Hide toolbars	隱藏工具列
+	Hide window controls	隱藏視窗控制元件
+	Hides annotation	隱藏註解
+	Highlight	突出顯示
+	Highlight fields	醒目提示欄位
+	Highlight Style:	醒目提示樣式：
+	Highlight text	醒目提示文字
+key	Home	Home
+	Horizontal reversed	水平反轉
+	Horizontally	水平分佈
+	HTML web page	HTML 網頁
+	Identity	個人資訊
+	Image	圖片
+	Image (PNG)	圖片（PNG）
+	Image field	圖片欄位
+	Image-only PDF	純圖片 PDF
+	Images	圖片
+	Images and text	圖片與文字
+	Images and text (converted to PDF)	圖片與文字（轉換為 PDF）
+	Import comments…	匯入註解…
+	Import data	匯入資料
+	Import form data…	匯入表單資料…
+	Import list…	匯入清單…
+	Import {name}	匯入 {name}
+	Importing data arrives on the web with file pickers for data files	Web 端匯入資料將使用資料檔案選擇器
+	In multiple files	在多個檔案中
+	In this file	在此檔案中
+	Includes unsaved changes	包含未儲存的變更
+	Incorrect password. Try again.	密碼不正確，請重試。
+	Indent	縮排
+	Initial View	初始檢視
+	Initials	姓名縮寫
+	initials	姓名首字母
+	Ink sensitivity	墨跡靈敏度
+	Insert a blank page after the selection	在所選內容後插入空白頁
+	Insert a file at the end	在結尾插入檔案
+	Insert a file before page {label}	在第 {label} 頁之前插入檔案
+	Insert blank page	插入空白頁面
+	Insert Date	插入日期
+	Insert Page Number	插入頁碼
+	Insert pages	插入頁面
+	Insert pages from a file…	從檔案插入頁面…
+	Insert pages from file…	從檔案插入頁面…
+	Insert pages from {name}	從 {name} 插入頁面
+	Insert pages from {name} — 1 field renamed	從 {name} 插入頁面 — 已重新命名 1 個欄位
+	Insert pages from {name} — fields renamed	從 {name} 插入頁面 — 已重新命名欄位
+	Insert text	插入文字
+	Inserted	插入
+	Inserting, deleting, and rotating pages	插入、刪除和旋轉頁面
+	Inset	嵌入
+	Inspector	檢查器
+	Installed fonts…	已安裝的字型…
+	Intended usage	預期用途
+	Interface size	介面大小
+	Intersections	交點
+	Invisible Rectangle	不可見矩形
+	Irregular tables confuse cell navigation. Give every row the same number of cells (counting spans).	不規則的表格會妨礙儲存格導覽。請讓每一列具有相同數量的儲存格，並計入合併儲存格。
+	is available	可用
+	is not available yet	暫不可用
+	Issued by	頒發者
+	Issued by: 	頒發者：
+	Issued to	頒發給
+	Issuer	頒發者
+	Item List	項目清單
+	Item:	項目：
+	Items marked Ready work today.	標示為「可使用」的項目現已可用。
+	Its security settings don't allow copying pages	其安全性設定不允許複製頁面
+	January	一月
+	JavaScript	JavaScript
+	JavaScript Console	JavaScript 主控台
+	JavaScript console…	JavaScript 主控台…
+	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript 已關閉（偏好設定 → JavaScript）。
+	JavaScript, e.g. getField("total").value	JavaScript，例如 getField("total").value
+	Join our Discord	加入 Discord 社群
+	Join the ArtCraft community	加入 ArtCraft 社群
+	July	七月
+	June	六月
+	Keep source fonts	保留原始字型
+	Keep tool selected	保持工具選取
+	Keep tool selected: on	保持工具選取：開
+	Key Algorithm	金鑰演算法
+	Key usage	金鑰用途
+	Keyboard shortcuts	鍵盤快速鍵
+	Keychain  ·  	鑰匙串 · 
+	Labels: {preview}. Later pages keep their labels.	標籤：{preview}。後續頁面保留其標籤。
+	Landscape and Portrait Pages	橫向和縱向頁面
+	Landscape Pages	橫向頁面
+	Landscape pages	橫向頁面
+	Larger pages	放大頁面
+	Later in tab order	在 Tab 順序中後移
+	Layers Panel and Page	圖層和頁面
+	Layout and Magnification	佈局和縮放
+	Lbl and LBody	Lbl 和 LBody
+	Lbl and LBody must be children of LI	Lbl 和 LBody 必須是 LI 的子級
+	Leave out files that can't be read?	要排除無法讀取的檔案嗎？
+	Left Edge	左邊緣
+	Left Footer Text	左頁尾文字
+	Left Header Text	左頁首文字
+	Left out: {names}	已略過：{names}
+	LI must be a child of L	LI 必須是 L 的子級
+	Light blue	淺藍色
+	Light gray	淺灰色
+	Light theme	淺色主題
+	Limit of	限制為
+	Line ending	線條端點
+	Line Style:	線條樣式：
+	Line thickness	線條粗細
+	Line Thickness:	線條粗細：
+	Link Action	連結動作
+	Link Appearance	連結外觀
+	Link Properties	連結屬性
+	Link Type:	連結型別：
+	Links, actions and JavaScripts	連結、動作和 JavaScript
+	List box	清單方塊
+	List Box Properties	清單方塊屬性
+	List items	清單項
+	List items belong in a list. Fix the list's tags.	清單項應位於清單內。請修復清單標記。
+	List labels and bodies belong in a list item. Fix the list's tags.	清單標籤和正文應位於清單項內。請修復清單標記。
+	Lists	清單
+	Load document font	載入文件字型
+	Load font…	載入字型…
+	Local cross-PDF links require the desktop app	PDF 之間的本機連結需要桌面應用程式
+	Location: 	位置：
+	Lock comment	鎖定註解
+	Logical Reading Order	邏輯閱讀順序
+	Looking for PDFs…	正在尋找 PDF…
+	Looking for printers…	正在尋找印表機…
+	Low resolution	低解析度
+	Low Resolution (150 dpi)	低解析度（150 dpi）
+	Make accessible	建立無障礙支援
+	Make Current Properties Default	將目前屬性設為預設
+	Make Properties Default	將屬性設為預設
+	Make properties default	將內容設為預設
+	Make scans searchable, then make them smaller.	使掃描件可搜尋，然後將其變小。
+	Manage embedded index	管理內嵌索引
+	March	三月
+	Mark all	全部標記
+	Mark as artifact	標記為成品
+	Mark as comments	標記為註解
+	Mark as Confidential	標為機密
+	Mark content as artifact	將內容標記為成品
+	Mark figure as decorative	將圖片標記為裝飾用途
+	Mark Page Range	標記頁面範圍
+	Mark with checkmark	新增勾選標記
+	Marked	已標記
+	Markup	標記
+	Marquee zoom	選取範圍縮放
+	Mask:	掩碼：
+	Match page at 100%	以 100% 符合頁面
+	Maximum	最高
+	maximum	最大值
+	May	五月
+	Measure area	測量面積
+	Measure distance	測量距離
+	Measure objects	測量物件
+	Measure perimeter	測量周長
+	Measurement information	測量資訊
+	Measurement snapping	測量吸附
+	Measuring tool	測量工具
+	Menu	選單
+	Merge data files into spreadsheet…	將資料檔合併為試算表…
+	Merge image fragments	合併影像片段
+	Merged 1 file into {path}	已將 1 個檔案合併到{path}
+	Merged {n} files into {path}	已將{n}個檔案合併到{path}
+	Merging data files needs the desktop app	合併資料檔案需要桌面端應用
+	Microsoft Word (.docx)	Microsoft Word（.docx）
+	Midpoints	中點
+	Minimum	最低
+	minimum	最小值
+	Mixed	混合
+	Modified	修改時間
+	Modify page	修改頁面
+	More options	更多選項
+	More options:	更多選項：
+	More ways to add files	更多新增檔案的方式
+	Mouse Down	滑鼠按下
+	Mouse Enter	滑鼠進入
+	Mouse Exit	滑鼠離開
+	Mouse Up	滑鼠鬆開
+	Move bookmark	移動書籤
+	Move comment	移動註解
+	Move down	下移
+	Move earlier	前移
+	Move image	移動圖片
+	Move later	後移
+	Move object	移動物件
+	Move objects	移動多個物件
+	Move page	移動頁面
+	Move pages	移動頁面
+	Move tag earlier	將標記前移
+	Move tag later	將標記後移
+	Move to group	移至群組
+	Move up	上移
+	Multi-line	多行
+	Multiple	多頁
+	Multiple files	多個檔案
+	Multiple selection	多選
+	Multiple words or phrases	多個單字或片語
+	Name on new comments	新註解的作者名稱
+	Named Destinations	命名目標
+	Navigation links	導覽連結
+	Navigation links are not repetitive	導覽連結不重複
+	Navigation tab	導覽索引標籤
+	needs an AI provider (off by default)	需要 AI 服務提供者（預設關閉）
+	Needs manual check	需要人工檢驗
+	Negative number style:	負數樣式：
+	Nested alternate text	巢狀替代文字
+	New Action	新建操作
+	New Action…	新建操作…
+	New blank PDF	新增空白 PDF
+	New bookmark	新增書籤
+	New bookmark ({key})	新建書籤 ({key})
+	New bookmarks from structure	從結構新增書籤
+	New file only	僅新檔案
+	New file:	新檔案：
+	New file: {name}	新檔案：{name}
+	New {tool} comments will look like this one	新的{tool}註解將採用此外觀
+	Next ({key})	下一個 ({key})
+	Next / previous match	下一個／上一個符合項目
+	Next figure	下一個圖形
+	Next month	下個月
+	Next sheet	下一張
+	Next tab	下一個分頁
+	Next view	下一個檢視
+	No actions	無操作
+	No changes allowed	不允許任何更改
+	No changes to save	沒有要儲存的變更
+	No check has run yet.	尚未執行檢驗。
+	No color	無顏色
+	No colour	無顏色
+	No comments match.	沒有匹配的註解。
+	No comments yet.	尚無註解。
+	No contributor data was built into this copy.	此版本未內建貢獻者資料。
+	No differences in the text.	文字沒有差異。
+	No digital IDs yet.	尚無數位 ID。
+	No documents are open	沒有開啟的文件
+	No file chosen	未選擇檔案
+	No fill	無填充
+	No fonts are referenced by the pages.	頁面未引用任何字型。
+	No form fields were detected	未偵測到表單欄位
+	No inaccessible scripts	沒有妨礙無障礙操作的指令碼
+	No issues found	未發現問題
+	No links to remove	沒有可移除的連結
+	No matches	無匹配
+	No matches.	無匹配。
+	No matching tools	找不到符合的工具
+	No model credits were built into this copy.	此版本未內建模型致謝資料。
+	No openly licensed document fonts found. Load a font file.	找不到開放授權的文件字型。請載入字型檔。
+	no output folder was chosen	未選擇輸出資料夾
+	No pages match those choices	所選條件沒有匹配的頁面
+	No pages selected	未選取任何頁面
+	No PDFs in this folder yet	此資料夾中還沒有 PDF
+	No PDFs, images or text files found in {folder}	在 {folder} 中找不到 PDF、圖片或文字檔案
+	No photo chosen	未選擇相片
+	No preview	無預覽
+	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	找不到印表機。請確認印表機已安裝、列印多工緩衝處理器正在執行，然後重新開啟「列印」。
+	No problems found: the document conforms to {level}.	未發現問題：文件符合 {level}。
+	No security	無安全性
+	No sheets	無紙張
+	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	框內找不到簽名。請將框移到簽名上，或提高墨跡靈敏度。
+	No status has been set.	尚未設定狀態。
+	no such document	找不到此文件
+	No unlinked web addresses were found in the text	文字中未發現未連結的網址
+	No untagged content was found.	找不到未標記的內容。
+	no unused output name	沒有可用的輸出檔名
+	none	無
+	None (prefix only)	無（僅字首）
+	None found	未發現
+	None of those files can be made into a PDF; use PDFs, images or .txt files	這些檔案都無法轉換為 PDF；請使用 PDF、圖片或 .txt 檔案
+	None — everything is allowed	無 — 允許一切操作
+scroll speed	Normal	正常
+	Not allowed	不允許
+	Not now	暫時不要
+	Not present	不存在
+	Note	附註
+	nothing in the file matches this document	檔案中沒有與此文件相符的資料
+	Nothing to redo	沒有可重做的操作
+	nothing to redo	沒有可重做的操作
+	Nothing to undo	沒有可復原的操作
+	nothing to undo	沒有可復原的操作
+	November	十一月
+	Number	數字
+	Number every page in the footer.	在頁尾為每頁編號。
+	Number of pages	頁數
+	Number pages	頁面編號
+	Number pages…	編訂頁碼…
+	October	十月
+	Odd pages	奇數頁
+	Odd Pages Only	僅奇數頁
+	of the following fields:	以下欄位的：
+	of {name}	共 {name} 個
+	of {pages}	共 {pages} 頁
+animation effects	Off	關
+	Offset from centre	距中心的位移
+	Old file:	舊檔案：
+	Old file: {name}	舊檔案：{name}
+animation effects	On	開
+	On Blur	失去焦點
+	On Focus	獲得焦點
+	on page {label}	第 {label} 頁
+	On the web, open or drop an image to convert it	在 Web 端，開啟或拖入圖片進行轉換
+	One word or phrase per line	每行一個單字或片語
+	One {f} file per page, named after the document.	每頁一個 {f} 檔案，以文件命名。
+	Only allow this if you trust the source document.	只有在您信任來源文件時，才允許此操作。
+	Only change the colour of black text or line art	僅變更黑色文字或線條圖的色彩
+	Only checked properties will change. Mixed means the selected fields have different values.	只會變更勾選的屬性。「混合」表示所選欄位的值不同。
+	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	請僅在信任此文件時繼續。網址可能夾帶文件中的資訊，例如您在表單中輸入的內容。
+	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	僅更改頁面內容：原頁面的連結、註解、表單欄位和書籤保留。
+	Opacity:	不透明度:
+	Open a document first	請先開啟文件
+	Open a PDF ({key})	開啟 PDF（{key}）
+	Open a PDF to measure it.	開啟 PDF 以進行測量。
+	Open a web link	開啟網頁連結
+	Open a web page	開啟網頁
+	Open accessibility report	開啟無障礙報告
+	Open arrow	開口箭頭
+	Open email app	開啟電子郵件應用程式
+	Open file	開啟檔案
+	Open in a new tab	在新索引標籤中開啟
+	Open in Full Screen mode	以全螢幕模式開啟
+	Open in Full Screen mode?	要以全螢幕模式開啟嗎？
+	Open Recent	開啟最近的檔案
+	Open the file as it was saved then	開啟當時儲存的檔案
+	Open the older version first	請先開啟舊版本
+	Open this local PDF?	要開啟此本機 PDF 嗎？
+	Open this web page?	要開啟此網頁嗎？
+	Open to page	開啟到頁面
+	open to see what it will include	開啟以檢視預計功能
+	Opened with	開啟方式
+	Opened, but its security settings don't allow combining. Enter the permissions password.	已開啟，但其安全性設定不允許合併。請輸入權限密碼。
+	Opening the browser's print dialog…	正在開啟瀏覽器的列印對話方塊…
+	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	開啟印表機驅動程式的喜好設定。這些設定會儲存並用於此電腦的所有列印；此處選擇的份數、雙面、灰階和紙張仍然適用。
+	Optimization cancelled	已取消最佳化
+	Optimization is already running	最佳化已在執行
+	Optimize	最佳化
+	Optimize PDF…	最佳化 PDF…
+	Optimize Scanned Documents	最佳化掃描文件
+	Optimize scanned documents	最佳化掃描文件
+	Optimize scanned documents…	最佳化掃描文件…
+	Optimizing… cleaning up	正在最佳化…清理
+	Optimizing… image {d} of {t}	正在最佳化…第{d}張圖片，共{t}張
+	Optimizing… merging identical objects	正在最佳化…合併相同物件
+	Optimizing… merging image fragments	正在最佳化… 正在合併影像片段
+	Optimizing… removing user data	正在最佳化…移除使用者資料
+	Optimizing… writing the copy	正在最佳化…寫入副本
+	Optional	可選
+	Optional: needs an AI provider you configure	選用功能：需要您設定 AI 服務供應商
+	Organization Name	組織名稱
+	Organizational Unit	組織單位
+	Organize pages	整理頁面
+	Original: replace pages	原文件：替換頁面
+	Other colour…	其他顏色…
+	Other elements alternate text	其他元素替代文字
+	Other elements that require alternate text	需要替代文字的其他元素
+	Outdent	減少縮排
+	Outline	輪廓
+	Outline colour:	輪廓色彩:
+	Output appears here.	輸出顯示在此處。
+	Output intent: {list}	輸出意圖：{list}
+	Output preview	輸出預覽
+	Owner password (no restrictions apply)	所有者密碼（無限制）
+	Page background	頁面背景
+	Page Content	頁面內容
+	Page display	頁面顯示
+	Page display: {layout}	頁面顯示：{layout}
+	Page does not require timed responses	頁面不需要限時回應
+	Page grid	頁面格狀檢視
+	Page labels	頁面標籤
+	Page layout	頁面佈局
+	Page navigation	頁面導覽
+	Page number	頁碼
+	Page Only	僅頁面
+	Page options	頁面選項
+	Page order:	頁面順序：
+	Page properties	頁面屬性
+	Page Range	頁面範圍
+	Page Range Options	頁面範圍選項
+	Page size	頁面大小
+	Page Sizing & Handling	頁面大小和處理
+	Page thumbnails	頁面縮圖
+	Page transitions	頁面轉場
+	Page will not cause screen flicker	頁面不會導致螢幕閃爍
+	Page {label}	第 {label} 頁
+	Page {p} of {n}	第 {p} 頁，共 {n} 頁
+	pages	頁
+	Pages counted	已統計頁數
+	Pages from	頁面範圍從
+	Pages of {name} to combine, e.g. 1-3, 6	要合併的{name}的頁面，例如 1-3、6
+	Pages Panel and Page	頁面面板和頁面
+	Pages per file	每檔案頁數
+	Pages per sheet:	每張紙頁數：
+	Pages selected	選取的頁面
+	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	僅為文字圖片的頁面無法朗讀或搜尋。請辨識文字（OCR）以新增文字層。
+	Pages to Print	要列印的頁面
+	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	包含連結、註解或欄位的頁面應按結構順序 Tab。修復操作將每頁的 Tab 順序設為「使用文件結構」。
+	Pages:	頁面：
+	Pages: {k} of {n}	頁面：{k}/{n}
+	Paper:	紙張：
+	Part of	隸屬於
+	Passed	通過
+	Password protection will be applied when you save	儲存時將套用密碼保護
+	Password required	需要密碼
+	Password security	密碼安全性
+	Password-protected	受密碼保護
+	Paste after	在後面貼上
+	Paste pages	貼上頁面
+	Pattern	模式
+	Patterns	模式
+	Patterns (graphics objects)	圖案
+	PDF Optimizer	PDF 最佳化器
+	PDF or image	PDF 或圖片
+	PDF page: {size}	PDF 頁面：{size}
+	PDF producer	PDF 生成器
+	PDF scale: {scale}%	PDF 比例：{scale}%
+	PDF version	PDF 版本
+	PDF, images and text	PDF、圖片和文字
+	PDF/A…	PDF/A…
+	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft 未正常關閉。以下文件的更改已自動儲存：
+	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft 正在不使用圖形處理器的情況下繪製，因此可能較慢。更新顯示卡驅動程式可能會有幫助。
+	PdfCraft on GitHub	GitHub 上的 PdfCraft
+	PdfCraft web page	PdfCraft 網頁
+	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft 可離線使用，不收集遙測資料，也不需要帳號。只有在您新增服務供應商後，才會使用雲端處理。
+	PdfCraft {c} is up to date.	PdfCraft {c} 已是最新。
+	PdfCraft {v} is available.	PdfCraft {v} 可用。
+	People may need more time to respond. Check that nothing has a time limit.	人們可能需要更多時間來回應。請檢驗確認沒有時間限制。
+	Permissions password	許可權密碼
+	Permitted actions after certifying	認證後允許的操作
+	Phone Number	電話號碼
+	Phone Numbers	電話號碼
+	Pick a tool in the quick bar, or type above.	在快捷欄中選擇工具，或在上方輸入。
+	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	圖片需要描述性的替代文字，或標為裝飾性。請為每個圖形新增替代文字。
+	Pictures on those pages are recognized too; words already in the page's text are not added again	這些頁面上的圖片也會被辨識；頁面文字中已有的字詞不會重複加入
+	Pin a folder to Home	將資料夾釘選到首頁
+	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	釘選資料夾後，即可在此列出其中最新的 PDF，例如掃描器或同步雲端硬碟儲存檔案的位置。
+	Pin a folder…	釘選資料夾…
+	Pin folder to Home…	將資料夾釘選到首頁…
+	Pink	粉色
+	Pinned folders need the desktop app	釘選資料夾需要桌面版應用程式
+	Pinned {folder} to Home	已將 {folder} 釘選到首頁
+	Plain text in reading order; pages are separated by form feeds.	按閱讀順序的純文字；頁面之間用換頁符分隔。
+	Planned	規劃中
+	Planned for milestone	預計於里程碑
+	Planned for milestone {m} — open to see what it will include	計劃於 {m} 里程碑——開啟檢視將包含的內容
+	Planned · {m}	計劃中 · {m}
+	Points from the page's bottom-left corner.	從頁面左下角算起的點數。
+	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	可攜模式已關閉：無法寫入{folder}（{error}）。設定改為儲存在你的使用者資料夾中。
+	Portrait Pages	縱向頁面
+	Portrait pages	縱向頁面
+	Post	張貼
+	PostScript / EPS	PostScript / EPS
+	PostScript XObjects aren't allowed	不允許 PostScript XObject
+	Preflight	印前偵測
+	Prepare a form	準備表單
+	Prepare for accessibility	準備無障礙支援
+	Prepare for Distribution	準備分發
+	Prepare for distribution	準備發佈
+	Prepare for distribution…	準備發佈…
+	Preparing sheet {done} of {total} for printing…	正在準備列印第 {done} 張，共 {total} 張…
+	Preparing {n} sheets for printing…	正在準備 {n} 張紙以供列印…
+	Presentation (.pptx)	簡報（.pptx）
+	Preview unavailable: {e}	無法預覽：{e}
+	Preview: page {p} of {n}	預覽：第 {p} 頁，共 {n} 頁
+	Previous ({key})	上一個 ({key})
+	Previous / next page	上一頁／下一頁
+	Previous figure	上一個圖形
+	Previous month	上個月
+	Previous sheet	上一張
+	Previous tab	上一個分頁
+	Previous view	上一個檢視
+	Primary language	主要語言
+	Print ({key})	列印（{key}）
+	Print as image	以影像列印
+	Print in grayscale	灰度列印
+	Print page border	列印頁面邊框
+	Print production	印刷製作
+	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	請單面列印。保持紙張順序，沿裁切標記裁切，再依由左至右、由上至下的順序疊放各疊紙張。
+	Print, NextPage, PrevPage, FirstPage or LastPage	Print、NextPage、PrevPage、FirstPage 或 LastPage
+	Printer paper and scaling may differ. Check driver settings.	印表機的紙張與縮放可能不同，請檢查驅動程式設定。
+	Printer properties	印表機內容
+	Printer:	列印機：
+	Printing allowed	允許列印
+	Privacy	隱私
+	Private data of other applications	其他應用程式的私有資料
+	product (x)	求積 (x)
+	Properties…	屬性…
+	Protect a PDF	保護 PDF
+	Protect Using Password	使用密碼保護
+	Protect using password…	使用密碼保護…
+	Protect with password	使用密碼保護
+	Protected: the combined file won't keep its security settings	受保護：合併後的檔案不會保留其安全性設定
+	Public key	公鑰
+	PushButton	按鈕
+	Radio	選項按鈕
+	Radio button	選項按鈕
+	Radio Button Properties	選項按鈕屬性
+	Re-type Password	重新輸入密碼
+	Read	閱讀
+	Read mode	閱讀模式
+	Read Only	唯讀
+	Reading colours	閱讀色彩
+	Ready	可使用
+	Reason	原因
+	Reason: 	原因：
+	Recent colours	最近使用的顏色
+	Recognize Text	辨識文字
+	Recognize text	辨識文字
+	Recognize text in multiple files…	辨識多個檔案中的文字…
+	Recognize Text…	辨識文字…
+	Recognize text…	辨識文字…
+	Recognized 1 word	辨識了 1 個單詞
+	Recognized {n} words	辨識了{n}個單詞
+	Recognized {w} words in 1 file	在 1 個檔案中辨識了{w}個單詞
+	Recognized {w} words in {n} files	在{n}個檔案中辨識了{w}個單詞
+	Recognizing text… file {d} of {t}	正在辨識文字…第{d}個檔案，共{t}個
+	Recognizing text… page {d} of {t}	正在辨識文字…第{d}頁，共{t}頁
+	Recommended tools	推薦工具
+	Recover unsaved documents?	要恢復未儲存的文件嗎？
+	Redact	遮蔽
+	Redact a PDF	遮蔽 PDF
+	Redact all	全部遮蔽
+	Redact Image	遮蔽圖片
+	Redact pages	遮蔽頁面
+	Redact pages…	遮蔽頁面…
+	Redact text and images	遮蔽文字與圖片
+	Redacted area fill colour:	遮蔽內容區域填充顏色：
+	Redaction code:	遮蔽代碼：
+	Redaction mark appearance	塗黑標記外觀
+	Redaction properties…	遮蔽內容設定…
+	Redaction Tool Properties	遮蔽內容工具屬性
+	Redid {label}	已重做{label}
+	Reduce file size	縮小檔案大小
+	Reduce file size…	縮小檔案大小…
+	Regularity	規則性
+	Rejected	已拒絕
+	Reliable character encoding is provided	提供了可靠的字元編碼
+	Reload documents when their files change on disk	檔案在磁碟上變更時重新載入對應的文件
+	Remove "{name}" from this list? The file itself is not deleted.	從此清單中移除「{name}」？檔案本身不會被刪除。
+	Remove all links	移除所有連結
+	Remove background	移除背景
+	Remove checkmark	刪除勾選標記
+	Remove Crop	移除裁切
+	Remove from Recent	從最近的檔案中移除
+	Remove header & footer	移除頁首與頁尾
+	Remove hidden information	移除隱藏資訊
+	Remove hidden information and flatten comments and form fields, so recipients see only the pages.	刪除隱藏資訊並平面化註解和表單欄位，使收件者僅看到頁面。
+	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	刪除隱藏資訊、中繼資料、指令碼和嵌入內容，並重寫檔案。
+	Remove hidden information…	移除隱藏資訊…
+	Remove invalid links and bookmarks	刪除無效連結和書籤
+	Remove page	刪除頁面
+	Remove redaction marks	移除遮蔽標記
+	Remove security	移除安全性設定
+	Remove this leaf tag from reading order and mark its direct content as an artifact	從閱讀順序中移除此葉標記，並將其直接內容標記為成品
+	Remove unreferenced named destinations	刪除未引用的命名目標
+	Remove unused objects and merge identical ones	刪除未使用的物件併合並相同的物件
+	Remove watermark	移除浮水印
+	Remove {name}	刪除{name}
+	Remove {name} from Recent	從最近的檔案中移除{name}
+	Remove {n} files	刪除 {n} 個檔案
+	Remove {n} pages	刪除 {n} 頁
+	Removed 1 hidden item. Save to remove them from the file.	已刪除 1 個隱藏項。儲存以從檔案中刪除它們。
+	Removed 1 link	已移除 1 個連結
+	Removed {n} hidden items. Save to remove them from the file.	已刪除 {n} 個隱藏項。儲存以從檔案中刪除它們。
+	Removed {n} links	已移除 {n} 個連結
+	Rename bookmark	重新命名書籤
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	算繪：hayro（初期實作） · 介面：egui · 圖示：Lucide（ISC） · 字型：Inter、JetBrains Mono、Dancing Script（OFL）
+	Reopen Closed Tab	重新開啟已關閉的分頁
+	Reopen the files that were open when PdfCraft last closed	重新開啟上次關閉 PdfCraft 時開啟的檔案
+	Repair log	修復日誌
+	Repairs	修復記錄
+	Repeat overlay text	重複覆蓋文字
+	Repeated navigation links should be skippable. Check links that appear on every page.	重複的導覽連結應可跳過。請檢驗出現在每一頁上的連結。
+	Replace document colours	取代文件色彩
+	Replace image	替換圖片
+	Replace Image…	替換圖片…
+	Replace page	取代頁面
+	Replace Pages	替換頁面
+	Replace pages	取代頁面
+	Replace pages…	取代頁面…
+	Replace text	取代文字
+	Replaced	替換
+	Replacement text	替換文字
+	Replacement: pages of {name}	替換檔案：{name} 的頁面
+	Replaces the existing one on those pages.	替換這些頁面上的現有內容。
+	Replacing images arrives on the web with image file pickers	Web 端替換圖片將使用圖片檔案選擇器
+	Replacing images on page {p} arrives on the web with image pickers ({i})	在 Web 端替換第{p}頁的圖片將使用圖片選擇器（{i}）
+	Report Options	報告選項
+	Report…	報告…
+	Required	必填
+	Requires user to enter a password for:	需要使用者輸入密碼，用於：
+	Reset a form	重設表單
+	Reset columns	重設欄
+	Reset page size	重設頁面大小
+	Reset panel layout	重設面板配置
+	Reset to printer defaults	還原印表機預設值
+	Resize comment	調整註解大小
+	Resize window to initial page	調整視窗大小以適合初始頁面
+	Restrictions	限制
+	Restrictions lifted	已解除限制
+	Retain existing	保留現有
+	Reveal in File Explorer	在檔案總管中顯示
+	Reverse closed arrow	反向閉合箭頭
+	Reverse open arrow	反向開口箭頭
+	Reverse pages	逆序頁面
+	Revert	回復至上次儲存
+	Revert changes	還原變更
+	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	還原到「{name}」的上次儲存版本？此後的更改將無法復原。
+	Reverted to the last saved version	已還原到上次儲存的版本
+	Review History	審閱歷史
+	Revisions	修訂
+	Rich Text Format (.rtf)	RTF 格式（.rtf）
+	Right Edge	右邊緣
+	Right Footer Text	右頁尾文字
+	Right Header Text	右頁首文字
+	Rotate Clockwise	順時針旋轉
+	Rotate clockwise	順時針旋轉
+	Rotate Counterclockwise	逆時針旋轉
+	Rotate counterclockwise	逆時針旋轉
+	Rotate image	旋轉圖片
+	Rotate page	旋轉頁面
+	Rotate page {label} clockwise	順時針旋轉頁面 {label}
+	Rotate page {label} counterclockwise	逆時針旋轉頁面 {label}
+	Rotate Pages	旋轉頁面
+	Rotate pages	旋轉頁面
+	Rotate pages clockwise	順時針旋轉頁面
+	Rotate pages counterclockwise	逆時針旋轉頁面
+	Rotate pages…	旋轉頁面…
+	Rotate view	旋轉檢視
+	Rotate view clockwise	順時針旋轉檢視
+	Rotate view clockwise ({key})	順時針旋轉檢視（{key}）
+	Rotate view counterclockwise	逆時針旋轉檢視
+	Run	執行
+	Run a JavaScript	執行 JavaScript
+	Run JavaScript	執行 JavaScript
+	Running action… file {d} of {t}	正在執行操作…第{d}個檔案，共{t}個
+	Same as interface ({language})	與介面相同（{language}）
+	Sanitize	清理
+	Sanitize document	清理文件
+	Sanitize Documents	清理文件
+	Sanitize document…	清理文件…
+	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	清理將刪除文件中的隱藏資訊：中繼資料、檔案附件、註解、表單欄位（平面化）、隱藏文字和圖層、書籤、連結、動作和指令碼，以及私有應用程式資料。
+	Save & Close	儲存並關閉
+	Save ({key})	儲存（{key}）
+	Save anyway	仍要儲存
+	Save as PDF	另存新檔為 PDF
+	Save as PDF/A	另存新檔為 PDF/A
+	Save as PDF/A-1b	另存新檔為 PDF/A-1b
+	Save as PDF/A-2b	另存新檔為 PDF/A-2b
+	Save as PDF/A-3b	另存新檔為 PDF/A-3b
+	Save as PDF/UA	另存新檔為 PDF/UA
+	Save as PDF/X	另存新檔為 PDF/X
+	Save as…	另存新檔…
+	Save attachment…	儲存附件…
+	Save changes to “{name}” before closing?	在關閉前儲存對「{name}」的更改？
+	Save image	儲存圖片
+	Save Image As…	圖片另存新檔…
+	Save or revert changes before selecting another tag.	選取其他標籤前，請儲存或還原變更。
+	Save over the changed file?	覆寫已變更的檔案？
+	Save pages	儲存頁面
+	Save tag properties	儲存標籤屬性
+	Save the accessibility report	儲存無障礙報告
+	Save the document afterwards: saving rewrites the whole file so no trace of the removed content stays in it.	之後請儲存文件：儲存將重寫整個檔案，使刪除的內容不留痕跡。
+	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	之後請儲存文件；儲存將重寫整個檔案，使刪除的內容不殘留。
+	Save the spreadsheet	儲存電子表格
+	Save these pages as one PDF	將這些頁面儲存為一個 PDF
+	Saved measurements	已儲存的測量
+	Saved measurements.	已儲存測量結果。
+	Saved the print-ready PDF to {path}	列印就緒的 PDF 已儲存到{path}
+	Saved {name}	已儲存{name}
+	Saved {place}: {before} → {after} (not smaller){detail}	已儲存{place}：{before} → {after}（未縮小）{detail}
+	Saved {place}: {before} → {after} ({pct}% smaller){detail}	已儲存{place}：{before} → {after}（縮小了{pct}%）{detail}
+	Saved, but reopening failed: {e}	已儲存，但重新開啟失敗：{e}
+	Scale relative to target page	相對於目標頁面的縮放
+	Scan	掃描
+	Scan & OCR	掃描與 OCR
+	Screen flicker	螢幕閃爍
+	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	螢幕閱讀器根據文件語言選擇語音。請在「文件屬性」>「進階」>「語言」中設定。
+	Script Name:	指令碼名稱：
+	Script:	指令碼：
+	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	指令碼在沙箱中執行，無法存取檔案或網路。指令碼要開啟網頁時，需要先經過您的允許。關閉 JavaScript 後，Acrobat 的標準格式、驗證和計算函式仍可運作。
+	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	指令碼在沙箱中執行，無法存取檔案或網路。關閉 JavaScript 後，Acrobat 的標準格式、驗證與計算函式仍可使用。
+	Scroll long text	捲動長文字
+	Scroll speed (mouse wheel and arrow keys)	捲動速度（滑鼠滾輪與方向鍵）
+	Scroll tabs left	向左捲動索引標籤
+	Scroll tabs right	向右捲動索引標籤
+	Search comments	搜尋註解
+	Search tools and commands…	搜尋工具與指令…
+	Searchable Image (Exact)	可搜尋圖片（精確）
+	Searching… {s} of {p} pages	正在搜尋… {s}/{p} 頁
+	Searching… {s}/{p}	正在搜尋… {s}/{p}
+	Security	安全
+	Security method	安全方法
+	Security properties	安全性內容
+	Security properties…	安全性內容…
+	Security settings	安全設定
+	Security settings must allow assistive technology to read the content ("Enable text access for screen reader devices"). Change the document's security to allow it.	安全設定必須允許輔助技術讀取內容（「允許螢幕閱讀器裝置存取文字」）。請更改文件安全設定以允許。
+	Security will be removed when you save	儲存時將刪除安全性設定
+	Select (V)	選擇 (V)
+	Select a file first	請先選取一個檔案
+	Select a file for the stamp	選取戳記檔案
+	Select a password-protected file first	請先選取一個受密碼保護的檔案
+	Select a word	選取一個詞
+	Select Action:	選擇操作：
+	Select all pages (Organize)	選取所有頁面（整理頁面）
+	Select at most 1000 objects at a time.	一次最多選取 1000 個物件。
+	Select data files to merge	選擇要合併的資料檔案
+	Select files to compare	選取要比較的檔案
+	Select format category:	選擇格式類別：
+	Select Icon	選取圖示
+	Select page {label}	選取頁面 {label}
+	Select pages	選擇頁面
+	Select the items to remove from this document.	選擇要從本文件中刪除的專案。
+	Select Trigger:	選擇觸發器：
+	Selected image files: {count}	已選取的圖片檔案：{count}
+	Self-signed	自簽名
+	Sending sheet {s} of {n} to {printer}…	正在將第 {s} 張（共 {n} 張）傳送到{printer}…
+	Sending to {printer}…	正在傳送到{printer}…
+	Sent to {printer}	已傳送到{printer}
+	Sent to {printer}: {msg}	已傳送到{printer}：{msg}
+	Separate PDFs	個別 PDF
+	Separator style:	分隔符樣式：
+	September	九月
+	Serial number	序列號
+	Set Alternate Text	設定替代文字
+	Set alternate text	設定替代文字
+	Set bookmark destination	設定書籤目的地
+	Set document title	設定文件標題
+	Set Fields to Same Size	將欄位設為相同大小
+	Set layer visibility	設定圖層可見性
+	Set measurement scale	設定測量比例
+	Set Page Boxes	設定頁面框
+	Set page boxes	設定頁面方框
+	Set page boxes…	設定頁面方框…
+	Set page transitions	設定換頁效果
+	Set properties	設定內容
+	Set status	設定狀態
+	Set status Accepted	設定為已接受
+	Set status Cancelled	設定為已取消
+	Set status Completed	設定為已完成
+	Set status None	清除狀態
+	Set status Rejected	設定為已拒絕
+	Set status Unmarked	設定為未標記
+	Set tab order	設定 Tab 順序
+	Set the image of {name}	設定 {name} 的圖片
+	Set to current page ({n})	設為目前頁（第 {n} 頁）
+	Set to zero	置零
+	Shadings	著色
+	Shared Field Properties	共用欄位屬性
+	Sheet {s} of {n}	第 {s} 張，共 {n} 張
+key	Shift	Shift
+	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift 限制為 45 度角。Backspace 移除頂點。Escape 取消。
+	Shift- or Ctrl/Command-click to select several fields.	按住 Shift 或 Ctrl/Command 點按可選取多個欄位。
+	Shift-click to select several objects. Drag empty space to select an area.	按住 Shift 點選可選取多個物件。拖曳空白區域可框選。
+	ships in milestone {m}	將於 {m} 里程碑推出
+	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	以簡單的標題列顯示視窗按鈕，而不是在分頁列中。GNOME 不為應用程式繪製標題列，因此此標題列不會跟隨其佈景主題。
+	Show a field	顯示欄位
+	Show all	全部顯示
+	Show all comments	顯示所有註解
+	Show certificate…	顯示憑證…
+	Show cover page in two-page view	在雙頁檢視中顯示封面
+	Show layer	顯示圖層
+	Show less	顯示較少
+	Show password	顯示密碼
+	Show Report	顯示報告
+	Show the accessibility report	顯示無障礙報告
+	Show this dialog when the Checker starts	啟動檢驗器時顯示此對話方塊
+	Show {n} more	再顯示 {n} 個
+	Shown while the pointer is over a mark.	指標位於標記上方時顯示。
+	Shrink oversized pages	縮小過大的頁面
+	Side by side	並排
+	Side panels	側邊面板
+	Sign	簽名
+	Sign a sheet of white paper and take a photo of it in bright, even light (use the flash). Choose the photo or drop it here: PdfCraft finds the signature and removes the paper.	在白紙上簽名，並在明亮、均勻的光線下拍照（使用閃光燈）。選擇相片或將其拖放到此處：PdfCraft 會找到簽名並去除紙張背景。
+	Sign Here	簽名處
+	Sign this field…	簽署此欄位…
+	Sign with a Digital ID	使用數位 ID 簽署
+	Sign yourself	自行簽署
+	Signature	簽名
+	signature	簽名
+	Signature Details	簽名詳細資訊
+	Signature is INVALID:	簽名無效：
+	Signature is valid:	簽名有效：
+	Signature panel	簽名面板
+	Signature validity is UNKNOWN:	簽名有效性未知：
+	Signatures	簽章
+	Signatures panel	簽章面板
+	Signed and all signatures are valid.	已簽名，所有簽名均有效。
+	Signed and saved to {path}	已簽名並儲存到{path}
+	Signer	簽署者
+	Signer's name	簽署者姓名
+	Signing time	簽署時間
+	Simplified field notation:	簡化欄位表示法：
+	Single file	單一檔案
+	Single Page	單頁
+	Single page	單頁
+	Single Page Continuous	單頁連續
+	Single word or phrase	單個詞或短語
+	Skip Rule	跳過規則
+	Skipped	已跳過
+	Slash	斜線
+scroll speed	Slow	慢
+	Smaller pages	縮小頁面
+	Snap to drawing	吸附至圖面
+	Snapping	吸附
+	Social Security Number	社會安全號碼
+	Social Security Numbers	社會安全號碼
+	Solid	實線
+	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	此處未顯示部分書籤：面板列出的書籤數量和巢狀深度有限。
+	Some content could not be classified safely and was kept in the count.	部分內容無法可靠分類，已保留在統計中。
+	Some page content couldn't be read; snapping uses the rest.	部分頁面內容無法讀取；將對其餘內容進行貼齊。
+	Some pages contain no countable text. Scanned images need OCR first.	部分頁面沒有可統計的文字。掃描影像需要先進行OCR辨識。
+	Sort comments by:	註解排序依據：
+	Sort items	排序項目
+	sorted ascending	遞增排序
+	sorted descending	遞減排序
+key	Space	空格
+	Space Audit	空間審計
+	Split document	拆分文件
+	Split document…	分割文件…
+	Split into files…	拆分為多個檔案…
+	Spreadsheet (.xlsx)	試算表（.xlsx）
+	Squiggly underline	波浪底線
+	Squiggly underline text	文字加上波浪底線
+	Stamp palette	印章選擇工具
+	Stamps	印章
+	Standard Business	標準業務
+	Standards	標準
+	Start	開始
+	Start Checking	開始檢驗
+	Start page number	起始頁碼
+	Steps	步驟
+	Sticky note	便利貼註解
+	Strength: {s}	強度：{s}
+	Strikethrough text	文字加上刪除線
+	Strong	強
+	Structure Info	結構資訊
+	Submit a form	送出表單
+	sum (+)	求和 (+)
+	Summarize	摘要
+	Summarize comments	建立註解摘要
+	Summarize Options	彙總選項
+	Switch light / dark theme	切換淺色／深色主題
+	Switch to List view to change the pages it takes.	切換到清單檢視以變更要使用的頁面。
+	Switch to two-page view first to show the cover page	請先切換到雙頁檢視，才能顯示封面
+	Tab order	Tab 順序
+	Tab order by columns	依欄設定 Tab 順序
+	Tab order by rows	依列設定 Tab 順序
+	Tab order is consistent with structure order	Tab 順序與結構順序一致
+	Tab order: by columns	Tab 順序：依欄
+	Tab order: by document structure	Tab 順序：依文件結構
+	Tab order: by rows	Tab 順序：依列
+	Tab order: move a field with its arrows.	Tab 順序：用箭頭移動欄位。
+	Table cells belong in a row. Fix the table's tags.	表格儲存格應位於列內。請修正表格標記。
+	Table rows belong directly in a table or its head, body or foot. Fix the table's tags.	表格列應直接位於表格或其表頭、主體、表尾內。請修正表格標記。
+	Tables must contain the same number of columns in each row and rows in each column	表格每列的欄數必須相同，每欄的列數也必須相同
+	Tables must have a summary	表格必須有摘要
+	Tables should have headers	表格應有表頭
+	Tag form fields	標記表單欄位
+	Tag type	標籤類型
+	Tagged annotations	標記的註解
+	Tagged content	標記的內容
+	Tagged form fields	標記的表單欄位
+	Tagged multimedia	標記的多媒體
+	Tagged PDF	標記的 PDF
+	Tags	標籤
+	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	標記為文件提供輔助技術遵循的邏輯結構。請標記文件（自動標記 PDF）。
+	Tags panel	標籤面板
+	Take a snapshot	擷取快照
+	Text (plain)	純文字
+	Text alignment:	文字對齊：
+	Text box	文字方塊
+	Text Color:	文字顏色：
+	Text field	文字欄位
+	Text Field Properties	文字欄位屬性
+	Text in images isn't found; recognise text (OCR) first.	圖片中的文字無法找到；請先識別文字（OCR）。
+	Text is compared word by word; the differences are shown on the new file.	逐詞比較文字；差異顯示在新檔案上。
+	Text language is specified	已指定文字語言
+	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	文字與背景的對比度必須足夠，以便低視力人士閱讀。請目視或使用對比度工具檢驗顏色。
+	Text recognition is already running	文字識別已在執行
+	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	未安裝文字辨識：缺少模型檔案。請重新安裝 PdfCraft，或將 PDFCRAFT_MODELS 設定為包含這些檔案的資料夾。
+	Text to find	要尋找的文字
+	Text to insert	要插入的文字
+	Text used as a clipping path cannot be moved with this selection.	無法隨此選取範圍移動用作裁切路徑的文字。
+	Text, marks and signatures become part of the page. Other comments stay editable.	文字、標記和簽名會成為頁面的一部分。其他註解仍可編輯。
+	TH and TD	TH 和 TD
+	TH and TD must be children of TR	TH 和 TD 必須是 TR 的子級
+	Thai and Arabic use regular fallback fonts when available.	泰語和阿拉伯語使用可用的一般樣式備用字型。
+	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	出錯了：內部錯誤中斷了操作（{m}）。文件未更改。
+	The checker found 1 problem which may prevent the document from being fully accessible.	檢驗器發現 1 個問題，可能導致文件無法完全無障礙。
+	The checker found no problems in this document.	檢驗器在本文件中未發現問題。
+	The checker found {n} problems which may prevent the document from being fully accessible.	檢驗器發現 {n} 個問題，可能導致文件無法完全無障礙。
+	The clipboard has no image or text	剪貼簿沒有圖片或文字
+	The document changed while you were editing field properties.	編輯欄位屬性時文件已變更。
+	The document has additional actions (/AA)	此文件具有額外動作（/AA）
+	The document has document-level JavaScript	此文件具有文件層級的 JavaScript
+	the document has no form fields	此文件沒有表單欄位
+	the document has no page tree	此文件沒有頁面樹
+	the document has no tags	此文件沒有標籤
+	The document has no XMP metadata	此文件沒有 XMP 中繼資料
+	The document is encrypted	此文件已加密
+	The document is no longer open.	文件已不再開啟。
+	the document is protected by a password	此文件受密碼保護
+	The document now conforms to {level}; save it to keep the changes	文件現已符合{level}；儲存以保留更改
+	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	開啟文件無需密碼；更改限制需要此密碼。儲存時套用。
+	The document's security settings don't allow copying text and images	文件安全設定不允許複製文字和圖片
+	The document's security settings don't allow filling in form fields	文件安全設定不允許填寫表單欄位
+	The document's security settings don't allow this change	文件安全設定不允許此更改
+	The existing action will be preserved.	將保留現有動作。
+	The field properties could not be changed.	無法變更欄位屬性。
+	The field properties dialog is no longer open.	欄位屬性對話方塊已不再開啟。
+	The field {name} no longer exists.	欄位 {name} 已不存在。
+	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraft 寫入時使用的字型無法顯示「{c}」（{code}），因此它在所有 PDF 閱讀器中都會顯示為 ?。文字已儲存。
+	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	該表單請求送出到{u}；PdfCraft 不傳送表單資料。請儲存文件以保留填寫內容。
+	The form asks viewers to make appearances (NeedAppearances)	此表單要求檢視器產生外觀（NeedAppearances）
+	The image has been copied ({w} × {h} pixels)	圖片已複製（{w} × {h} 畫素）
+	The image has been copied as a {ext} file	圖片已複製為 {ext} 檔案
+	the image is empty	圖片是空的
+	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	金鑰位於 macOS 鑰匙串中，系統可能會詢問是否允許 PdfCraft 使用它。
+	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	金鑰位於 Windows 憑證存放區中，系統可能會詢問是否允許 PdfCraft 使用它。
+	The Keychain's digital IDs couldn't be listed: {e}	無法列出鑰匙串中的數位 ID：{e}
+	The labels are in English: the signature's font can't draw them in this language.	簽名使用的字型無法顯示此語言的標籤，因此標籤以英文顯示。
+	The linked PDF opened, but its named destination was not applied.	已開啟連結的 PDF，但未套用其命名目的地。
+	The linked PDF opened, but its page destination was out of range.	已開啟連結的 PDF，但其頁面目的地超出範圍。
+	The newest {n} of {total} PDFs	共 {total} 個 PDF 中最新的 {n} 個
+	The operation failed.	操作失敗。
+	The page has changed; select the image again	頁面已變更；請重新選取圖片
+	the password is incorrect	密碼不正確
+	The password is only used to read the file; it isn't saved.	密碼僅用於讀取檔案，不會被儲存。
+	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF 文字字型無法顯示「{c}」（{code}）。請選擇支援的文字。
+	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次列印的印表機驅動程式專屬設定：紙匣、紙張類型、裝訂整理等。
+	The replacement file doesn't have that many pages.	替換檔案沒有那麼多頁面。
+	The same password is tried on each file.	將對每個檔案嘗試同一密碼。
+	The selected area has been copied ({w} × {h} pixels)	所選區域已複製（{w} × {h} 畫素）
+	The selected fields could not be found. Select them again.	找不到所選欄位。請重新選取。
+	The signature will be invisible.	簽名將不可見。
+	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	標準字型無法顯示「{c}」（{code}）。目前只能新增西歐字元作為文字。
+	The text is the same	文字相同
+	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	尚未安裝文字辨識模型（請重新安裝 PdfCraft，或將 PDFCRAFT_MODELS 設定為包含這些模型的資料夾）
+	The title in the metadata and the document information differ	中繼資料與文件資訊中的標題不同
+	the title must not be empty	標題不可空白
+	The value is shown as typed.	按輸入顯示值。
+	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	視窗應顯示有意義的標題而非檔案名。請設定標題，並在「初始檢視」>「顯示」中選擇「文件標題」。
+	there are no pages to print	沒有可列印的頁面
+	There are no redaction marks (mark text, areas or pages first)	沒有遮蔽內容標記（請先標記文字、區域或頁面）
+	There are no redaction marks to apply	沒有可套用的遮蔽內容標記
+	there are no redaction marks to apply	沒有可套用的遮蔽標記
+	These files can't be read, so they won't be in the combined PDF:	這些檔案無法讀取，因此不會包含在合併後的 PDF 中：
+	These objects could not be moved. Select them again and try a smaller move.	無法移動這些物件。請重新選取並嘗試較小的移動距離。
+	Thick	粗
+	Thin	細
+	This area has too many overlapping paths; intersection snapping is limited.	此區域有太多重疊路徑；交點吸附受到限制。
+	This certificate is in your list of trusted certificates.	此憑證位於受信任憑證清單中。
+	This certificate is not trusted. Signatures made with it show an unknown identity.	此憑證不受信任。使用它製作的簽名顯示未知身份。
+	This certificate is trusted through a certificate above it in the chain.	此憑證透過鏈中上方的憑證受到信任。
+	This comment's appearance can't be changed yet.	此註解的外觀尚無法更改。
+	This compatibility level supports only plain ASCII passwords.	此相容性級別僅支援純 ASCII 密碼。
+	This dialog shows the details of a certificate and its chain.	此對話方塊顯示憑證及其鏈的詳細資訊。
+	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	這份文件要求以全螢幕模式開啟：頁面佔滿整個螢幕，不顯示其他東西。隨時按 Esc 即可離開。
+	This document can't be checked: it couldn't be read for editing	無法檢驗本文件：無法讀取進行編輯
+	This document contains {n} interactive form fields.	本文件包含 {n} 個互動式表單欄位。
+	This document has no attachments.	本文件沒有附件。
+	This document has no comments to flatten	本文件沒有可平面化的註解
+	This document has no document-level scripts.	本文件沒有文件級指令碼。
+	This document has no editable structure tags.	此文件沒有可編輯的結構標籤。
+	This document has no form fields to flatten	本文件沒有可平面化的表單欄位
+	This document has no form fields you can fill in	本文件沒有可填寫的表單欄位
+	This document has no form fields.	本文件沒有表單欄位。
+	This document has no layers.	本文件沒有圖層。
+	This document has no pages.	本文件沒有頁面。
+	This document has no restrictions to lift	此文件沒有可解除的限制
+	This document has no signatures.	本文件沒有簽名。
+	This document has no tagged figures.	本文件沒有帶標記的圖形。
+	This document has no {kind} to change	本文件沒有可更改的{kind}
+	This document hasn't been checked yet.	本文件尚未檢驗。
+	This document is secured. Some changes are restricted by its security settings.	本文件已加密。其安全設定限制了部分更改。
+	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	此文件已簽署：重寫檔案會使簽章失效，請改用增量儲存
+	This document is trying to open a local file:	此文件正嘗試開啟本機檔案：
+	This document isn't password-protected	本文件未受密碼保護
+	This drawing exceeds the snapping limit; only the first paths are used.	此圖面超過吸附上限；僅使用最前面的路徑。
+	This field is locked. Unlock it to change its properties.	此欄位已鎖定。解鎖後可更改其屬性。
+	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	此欄位的字型無法顯示「{c}」（{code}），PdfCraft 會在該處顯示 ?。值已儲存，其他 PDF 閱讀器會依據該值重新繪製此欄位。
+	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	此檔案已在磁碟上變更。「重新載入」會顯示新版本並捨棄未儲存的變更；「儲存」則會以此版本取代它。
+	This file is already as small as it can be made ({size}). No copy was saved.	此檔案已經是最小的了（{size}）。未儲存副本。
+	this file isn't XFDF, FDF, XML or text form data	此檔案不是 XFDF、FDF、XML 或純文字表單資料
+	This file was damaged and has been repaired. Saving keeps the repaired version.	此檔案已損壞並已修復。儲存將保留修復後的版本。
+	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	此資料夾目前無法使用。它可能已被移動，或其所在磁碟或雲端同步處於離線狀態。
+	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	此表單還包含 XFA 資料，PdfCraft 暫不讀取。您可以填寫欄位，但 Acrobat 可能顯示 XFA 值。
+	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	此表單的指令碼已關閉，因為其中一個指令碼執行時間過長。重新開啟文件即可再次執行。
+	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	這是動態 XFA 表單，PdfCraft 暫無法顯示。您看到的是檔案的佔位頁面。
+	This measurement needs at least {n} points.	此測量至少需要 {n} 個點。
+	This page contains objects that cannot be selected together.	此頁面包含無法一起選取的物件。
+	This page couldn't be displayed.\n{e}	無法顯示此頁面。\n{e}
+	This PDF uses the unsupported {s} action.	此 PDF 使用了不支援的 {s} 動作。
+	This printer offers no settings of its own.	此印表機沒有專屬設定。
+	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	此印表機的驅動程式不接受其他程式的雙面列印設定，因此使用其自身設定。變更位置：屬性…
+	This web address mixes letters from different alphabets, a common way to imitate another site's name.	這個網址混用了不同字母系統的字母，這是仿冒其他網站名稱的常見手法。
+	This web address uses letters from another alphabet, which can look like familiar ones.	這個網址使用了其他字母系統的字母，看起來可能和常見字母很像。
+	Tile scale:	平鋪比例：
+	Timed responses	限時回應
+	Timestamp	時間戳記
+	to	到
+	To change locked fields, also set Locked to No.	若要變更鎖定的欄位，也須將「鎖定」設為「否」。
+	to {n}	到 {n}
+	To:	至：
+	Today: {date}	今天：{date}
+	Toggle fit page / fit width	切換符合頁面／符合寬度
+	Tools panel side	工具面板位置
+	Tooltip:	提示：
+	Top-level bookmarks ({n})	頂層書籤（{n} 個）
+	TR must be a child of Table, THead, TBody, or TFoot	TR 必須是 Table、THead、TBody 或 TFoot 的子級
+	Trim the picture with its handles; Enter or Done applies	用控點裁切圖片;按 Enter 或「完成」套用
+	Trust	信任
+	Try the form as people filling it in will see it	以填寫者的角度試用表單
+	Turn upside down (180°)	上下顛倒 (180°)
+	Two-page view	雙頁檢視
+	Two-sided:	雙面：
+	Two-Up (Cover Page)	雙頁（封面頁）
+	Two-Up (Facing)	雙頁（對頁）
+	Two-Up Continuous (Cover Page)	雙頁連續（封面頁）
+	Two-Up Continuous (Facing)	雙頁連續（對頁）
+	Type a password.	請輸入密碼。
+	Type Password	輸入密碼
+	Type text	輸入文字
+	Type the web address.	輸入網址。
+	Type your {what}.	輸入您的{what}。
+	Unchecked	未勾選
+	Underline text	文字加上底線
+	Undid {label}	已復原{label}
+	Unit	單位
+	Unknown author	未知作者
+	Unlock comment	解鎖註解
+	Unlock {name}	解除鎖定 {name}
+	Unlock {n} files	解除鎖定 {n} 個檔案
+	Unlocked {n} of {m} files	已解除鎖定 {m} 個檔案中的 {n} 個
+	Unlocked: the combined file won't be password-protected	已解除鎖定：合併後的檔案將不受密碼保護
+	Unlock…	解除鎖定…
+	Unpin	取消釘選
+	Unpin {folder}	取消釘選 {folder}
+	Unplaced	未放置
+	Unsupported measurements	不支援的測量
+	Update background	更新背景
+	Update background…	更新背景…
+	Update header & footer	更新頁首與頁尾
+	Update header & footer…	更新頁首與頁尾…
+	Update watermark	更新浮水印
+	Update watermark…	更新浮水印…
+	URL to submit to	要送出到的 URL
+	Use 72 DPI (one point per pixel)	使用 72 DPI（每個像素一點）
+	Use a certificate	使用憑證
+	Use a Digital ID from a file	使用檔案中的數位 ID
+	Use custom DPI	使用自訂 DPI
+	Use each image's embedded DPI; use 72 DPI when it is absent.	使用每張圖片內嵌的 DPI；沒有時使用 72 DPI。
+	Use Flate to encode streams that are not encoded	使用 Flate 編碼未編碼的流
+	Use guided actions	使用引導動作
+	Use image resolution	使用圖片解析度
+	Use it when a printer skips text, shading or transparency. The print is no longer searchable text; with Print in grayscale, the pictures are grey.	當印表機漏印文字、漸層或透明效果時使用。列印結果不再是可搜尋的文字；搭配灰階列印時影像為灰色。
+	Use JavaScript	使用 JavaScript
+	Use now	立即使用
+	Use overlay text	使用覆蓋文字
+	Use print production	使用印刷製作工具
+	Use system setting	使用系統設定
+	Use system title bar	使用系統標題列
+	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	在 PDF 未指定版面配置或縮放時使用。連續捲動不會在頁面之間自動對齊。
+	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	開啟 PDF 時使用。若啟動時或透過控制通道明確指定了模式，則本次工作階段以該模式為準。
+	User Interface Options	使用者介面選項
+	User password	使用者密碼
+	Valid	有效期
+	Valid for 5 years, for digital signatures. Self-signed IDs are usually not trusted by others.	有效期 5 年，用於數位簽章。自簽名 ID 通常不受他人信任。
+	Valid from	有效期自
+	Valid to	有效期至
+	Validate	驗證
+	Validate all	全部驗證
+	Validate all signatures	驗證所有簽章
+	Validity ends	有效期結束
+	Validity starts	有效期開始
+	Value is not calculated	不計算值
+	Value is the	值為
+	Verify	驗證
+	Verify to see what the document needs.	驗證以檢視文件需要什麼。
+	Version {v}	版本{v}
+	Vertical reversed	垂直反轉
+	Vertical text cannot be moved with this selection.	無法隨此選取範圍移動直排文字。
+	Vertically	垂直分佈
+	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	影片、聲音和富媒體必須標記才能被播報。請標記多媒體註解。
+	View less	顯示較少
+	View more	顯示更多
+	View revision {n}	檢視修訂版本{n}
+	View signed version	檢視已簽名版本
+	Viewing	檢視
+	Viewport	視埠
+	Viewport rectangle in page points (x, y, width, height)	以頁面點數指定視埠矩形（x、y、寬度、高度）
+	Visible Rectangle	可見矩形
+	Visual	視覺
+	watermark	浮水印
+	Weak	弱
+	Welcome to PdfCraft	歡迎使用 PdfCraft
+	What takes up the space in this file, by kind of content.	此檔案的空間被哪些內容佔用，依內容類型列出。
+	What word or phrase would you like to search for?	您想搜尋哪個詞或短語？
+	White on black	黑底白字
+	Whole words only	僅全字匹配
+	Window Options	視窗選項
+	Windows store  ·  	Windows 憑證存放區 · 
+	Word count	字詞統計
+	Word counting stopped unexpectedly.	字詞統計意外停止。
+	Word count…	字詞統計…
+	Write this email?	要撰寫這封電子郵件嗎？
+	Wrong password	密碼錯誤
+	Wrote 1 file to {dir}	已將 1 個檔案寫入{dir}
+	Wrote {n} files to {dir}	已將{n}個檔案寫入{dir}
+	X Object Forms	XObject 表單
+	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA 表單：欄位與 XFA 資料會保持同步，因此其他檢視器也會顯示您填寫的內容。
+	Yellow on black	黑底黃字
+	You are about to apply 1 redaction mark. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	即將套用 1 個遮蔽內容標記。標記下的文字、圖片和繪圖，以及與其重疊的註解和表單欄位，將被永久刪除。
+	You are about to apply {n} redaction marks. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	即將套用 {n} 個遮蔽內容標記。標記下的文字、圖片和繪圖，以及與其重疊的註解和表單欄位，將被永久刪除。
+	You can pin up to {n} folders. Unpin one first.	最多可釘選 {n} 個資料夾。請先取消釘選一個。
+	You have version {c}. All releases are listed at {page}.	目前版本為 {c}。所有版本列在 {page}。
+	You have version {c}. Download the new version from its release page.	目前版本為 {c}。請從其釋出頁面下載新版本。
+	Your changes will be lost if you don't save them.	如果不儲存，更改將會丟失。
+	Your name	您的姓名
+	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy 或 yy 年 · m 或 mm 月 · mmm 或 mmmm 月份名稱 · d 或 dd 日 · ddd 或 dddd 星期。H、h、M、s 和 t 是時間字母，不能單獨使用：在字母前加上 {escape} 即可照原樣顯示。
+	ZIP	ZIP
+	Zip Code	郵政編碼
+	Zip Code + 4	郵政編碼 + 4
+	Zoom in ({key})	放大（{key}）
+	Zoom in / out (also pinch or {key}-scroll)	放大／縮小（也可用雙指縮放或 {key} 加捲動）
+	Zoom out ({key})	縮小（{key}）
+	Zoom to page level	符合頁面大小
+	{0}: {1}	{0}：{1}
+	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	暫時無法將 {chars} 寫入 PDF：填寫與簽署的文字僅支援西歐字元。請選擇數字格式，例如 dd.mm.yyyy。
+	{c} of {n}{more}	{c} / {n}{more}
+	{dpi} pixels/inch	每英吋 {dpi} 像素
+	{field}: {e}	{field}：{e}
+	{file} is too large for a stamp (at most {n} MB)	{file} 對於戳記來說太大了（最大 {n} MB）
+	{folder} is already pinned to Home	{folder} 已釘選到首頁
+	{kind} field	{kind} 欄位
+	{kind} Properties	{kind} 屬性
+	{kind} · page {p}	{kind} · 第 {p} 頁
+	{kind} — click to show it on the page	{kind} —— 按一下以在頁面上顯示
+	{k} of {n}	{k}/{n}
+	{label} (1 issue)	{label}（1 個問題）
+	{label} ({n} issues)	{label}（{n} 個問題）
+	{label} failed: {e}	{label}失敗：{e}
+	{month} {day}, {y}	{month}{day}日，{y}年
+	{month} {y}	{y} 年 {month}
+	{msg} to {dir}	{msg}到{dir}
+	{name} (default)	{name}（預設）
+	{name} can't be combined: {why}	無法合併 {name}：{why}
+	{name} has no action	{name}沒有動作
+	{name} is read-only	{name} 為唯讀
+	{name} is too large for a word list (at most 1 MB).	{name} 太大，無法用作單字清單（最多 1 MB）。
+	{name} submits the form to {url}; PdfCraft doesn't send form data. Save the document to keep your entries.	{name} 將表單送出到{url}；PdfCraft 不傳送表單資料。請儲存文件以保留填寫內容。
+	{name} — unsaved changes	{name} — 尚未儲存變更
+	{name}: choosing images arrives on the web with file pickers for images	{name}：在 Web 端選擇圖片將使用圖片檔案選擇器
+	{name}: the {other} action isn't supported yet	{name}：{other} 動作暫不受支援
+	{n} contributors · {c} commits	{n} 位貢獻者 · {c} 次提交
+	{n} days ago	{n} 天前
+	{n} differences found	發現 {n} 處差異
+@plural	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	{n} 個欄位名稱與先前的檔案衝突，將被重新命名: {list}
+	{n} fields selected	已選取 {n} 個欄位
+@plural	{n} field|{n} fields	{n} 個欄位
+	{n} files done	{n} 個檔案已完成
+	{n} files need attention	{n} 個檔案需要處理
+	{n} instances	{n} 個匹配
+	{n} issues	{n} 個問題
+	{n} marks	{n} 個標記
+	{n} match(es) marked for redaction.	已標記 {n} 個匹配以待遮蔽內容。
+	{n} measurements use an unsupported format and are left out.	{n} 個測量使用了不支援的格式，已被排除。
+@plural	{n} object selected|{n} objects selected	已選取 {n} 個物件
+	{n} pages	{n} 頁
+	{n} pages selected	已選取 {n} 頁
+	{n} pages selected.	已選擇 {n} 頁。
+@plural	{n} page|{n} pages	{n} 頁
+	{n} selected	已選取 {n} 個
+	{n} tags	{n} 個標籤
+	{n} word(s) or phrase(s)	{n} 個單字或片語
+	{n} {kind}	{n} {kind}
+	{rule} - {status}	{rule} - {status}
+	{s} action	{s} 動作
+	{verb} as "{name}"	{verb}為「{name}」
+	{verb} Background	{verb}背景
+	{verb} Header and Footer	{verb}頁首和頁尾
+	{verb} Watermark	{verb}浮水印
+	{who} in this document wants to open this address in your browser:	此文件中的{who}想在瀏覽器中開啟這個網址：
+	{who} in this document wants to open your email app with this address:	此文件中的{who}想用這個地址開啟您的電子郵件應用程式：
+	{words} on {pages}	在{pages}{words}
+	ΔLOC	行數增減
+	— (protection is applied when you save)	—（儲存時套用保護）
+	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	「{name}」在開啟或上次儲存後已在磁碟上變更。現在儲存會以此版本取代那個較新的版本。
+	“{name}” has security restrictions. Enter its permissions password to lift them.	「{name}」有安全限制。請輸入其許可權密碼以解除限制。
+	“{name}” is protected. Enter a password to open it.	「{name}」受保護。請輸入密碼以開啟。
+	−LOC	刪除行

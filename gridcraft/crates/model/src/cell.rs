@@ -7,6 +7,60 @@ use gridcraft_formula::Expr;
 use serde::{Deserialize, Serialize};
 
 use crate::style::StyleId;
+use crate::{Color, Font, Underline, VertAlign};
+
+/// Only the properties explicitly stated by an XLSX rich-text run. Missing properties inherit
+/// the cell font, so a bold-only run must not accidentally reset a 16pt Chinese cell to Calibri.
+#[derive(Clone, Debug, Default, PartialEq, Serialize, Deserialize)]
+pub struct RunFont {
+    pub name: Option<String>,
+    pub size: Option<f32>,
+    pub bold: Option<bool>,
+    pub italic: Option<bool>,
+    pub underline: Option<Underline>,
+    pub strike: Option<bool>,
+    pub color: Option<Color>,
+    pub vert: Option<VertAlign>,
+    pub charset: Option<u8>,
+    pub family: Option<u8>,
+}
+
+impl RunFont {
+    /// Apply only properties changed by a whole-cell font command; keep unrelated inheritance.
+    pub fn update(&mut self, before: &Font, after: &Font) {
+        macro_rules! property {
+            ($($p:ident),*) => {$(if before.$p != after.$p {self.$p = Some(after.$p.clone());})*};
+        }
+        property!(name, size, bold, italic, underline, strike, color, vert);
+        if before.charset != after.charset {
+            self.charset = after.charset;
+        }
+        if before.family != after.family {
+            self.family = after.family;
+        }
+    }
+
+    pub fn resolve(&self, base: &Font) -> Font {
+        Font {
+            name: self.name.clone().unwrap_or_else(|| base.name.clone()),
+            size: self.size.unwrap_or(base.size),
+            bold: self.bold.unwrap_or(base.bold),
+            italic: self.italic.unwrap_or(base.italic),
+            underline: self.underline.unwrap_or(base.underline),
+            strike: self.strike.unwrap_or(base.strike),
+            color: self.color.unwrap_or(base.color),
+            vert: self.vert.unwrap_or(base.vert),
+            charset: self.charset.or(base.charset),
+            family: self.family.or(base.family),
+        }
+    }
+}
+
+#[derive(Clone, Debug, Default, PartialEq, Serialize, Deserialize)]
+pub struct RichTextRun {
+    pub text: String,
+    pub font: RunFont,
+}
 
 /// A parsed formula. `text` is the canonical formula text without the leading `=`.
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
@@ -64,14 +118,26 @@ pub struct Cell {
     pub value: Value,
     pub formula: Option<Arc<Formula>>,
     pub style: StyleId,
+    /// Character formatting travels with the cell through copy, sort, structural edits and undo.
+    /// Plain/older JSON has no entry. Stale runs are never applied to newly replaced text.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub rich_text: Vec<RichTextRun>,
 }
 
 impl Cell {
     pub fn value(v: Value) -> Cell {
-        Cell { value: v, formula: None, style: StyleId::DEFAULT }
+        Cell { value: v, ..Default::default() }
     }
     pub fn formula(f: Formula) -> Cell {
-        Cell { value: Value::Empty, formula: Some(Arc::new(f)), style: StyleId::DEFAULT }
+        Cell { formula: Some(Arc::new(f)), ..Default::default() }
+    }
+    pub fn rich_runs(&self) -> Option<&[RichTextRun]> {
+        let Value::Text(text) = &self.value else { return None };
+        if self.formula.is_some() || self.rich_text.is_empty() {
+            return None;
+        }
+        let same = self.rich_text.iter().flat_map(|r| r.text.chars()).eq(text.chars());
+        same.then_some(self.rich_text.as_slice())
     }
     /// No value, no formula and the default style: storing it is pointless.
     pub fn is_blank(&self) -> bool {

@@ -443,6 +443,28 @@ pub fn editor_widget(app: &mut SheetApp, ui: &mut egui::Ui, id: egui::Id, font: 
     }
     let synced = mine && !dialog_open && (ed.request_focus || ed.sync_caret);
     let edit = if multiline || ed.text.contains('\n') { TextEdit::multiline(&mut ed.text) } else { TextEdit::singleline(&mut ed.text) };
+    let edit = if on_sheet {
+        let alignment = app.session.active().and_then(|d| d.wb.sheet(ed.sheet).map(|sh| d.wb.styles.get(sh.style_id(ed.cell)).align));
+        let align = alignment
+            .map(|a| {
+                use gridcraft_engine::model::{HAlign, VAlign};
+                let h = match a.h {
+                    HAlign::Center | HAlign::CenterAcross => egui::Align::Center,
+                    HAlign::Right => egui::Align::RIGHT,
+                    _ => egui::Align::LEFT,
+                };
+                let v = match a.v {
+                    VAlign::Top => egui::Align::TOP,
+                    VAlign::Bottom => egui::Align::BOTTOM,
+                    _ => egui::Align::Center,
+                };
+                egui::Align2([h, v])
+            })
+            .unwrap_or(egui::Align2::LEFT_CENTER);
+        edit.horizontal_align(align.x()).vertical_align(align.y())
+    } else {
+        edit
+    };
     let edit = edit.interactive(!dialog_open);
     let caret_index = ed.caret;
     // The in-cell editor grows with its text and never scrolls, so the field keeps its whole width

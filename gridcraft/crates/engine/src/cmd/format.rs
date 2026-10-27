@@ -230,6 +230,20 @@ fn with(p: &Json, key: &str, v: Json) -> Json {
 }
 
 /// Applies `f` to the style of every targeted cell (whole rows/columns set the line format too).
+fn apply_run_fonts(cx: &mut Ctx<'_>, sheet: usize, at: CellRef, st: StyleId, f: &impl Fn(&mut Style)) -> Result<()> {
+    let Some(mut cell) = cx.wb.sheet(sheet).and_then(|sh| sh.cells.get(at)).filter(|c| c.rich_runs().is_some()).cloned() else { return Ok(()) };
+    let base = cx.wb.styles.get(st).clone();
+    for run in &mut cell.rich_text {
+        let before = run.font.resolve(&base.font);
+        let mut styled = base.clone();
+        styled.font = before.clone();
+        f(&mut styled);
+        run.font.update(&before, &styled.font);
+    }
+    cx.sheet_mut(sheet)?.set_cell(at, cell);
+    Ok(())
+}
+
 pub(crate) fn apply_style(s: &mut Session, p: &Json, f: impl Fn(&mut Style)) -> Result<Json> {
     let sheet = target_sheet(s, p)?;
     let ranges = target_ranges(s, p)?;
@@ -275,6 +289,7 @@ pub(crate) fn apply_style(s: &mut Session, p: &Json, f: impl Fn(&mut Style)) -> 
                 for (c, st) in &cells {
                     let new = *cache.entry(*st).or_insert_with(|| cx.wb.styles.derive(*st, &f));
                     guard_flags!(*st, new);
+                    apply_run_fonts(cx, sheet, *c, *st, &f)?;
                     cx.sheet_mut(sheet)?.set_style(*c, new);
                 }
                 // Formatting touched these cells: re-fit their rows (Excel auto-fits).
@@ -290,6 +305,7 @@ pub(crate) fn apply_style(s: &mut Session, p: &Json, f: impl Fn(&mut Style)) -> 
             for c in r.iter() {
                 let st = cx.wb.sheet(sheet).map(|sh| sh.style_id(c)).unwrap_or_default();
                 let new = *cache.entry(st).or_insert_with(|| cx.wb.styles.derive(st, &f));
+                apply_run_fonts(cx, sheet, c, st, &f)?;
                 if new != st {
                     guard_flags!(st, new);
                     cx.sheet_mut(sheet)?.set_style(c, new);

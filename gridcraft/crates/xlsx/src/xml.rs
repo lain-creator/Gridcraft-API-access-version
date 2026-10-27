@@ -446,6 +446,12 @@ pub fn t_el(s: &str) -> String {
 /// all dropped still keeps its settings.
 pub fn si_body(text: &str, phonetic: Option<&PhoneticString>) -> String {
     let mut s = t_el(text);
+    s.push_str(&phonetic_body(text, phonetic));
+    s
+}
+
+pub fn phonetic_body(text: &str, phonetic: Option<&PhoneticString>) -> String {
+    let mut s = String::new();
     let Some(p) = phonetic else { return s };
     // The model is public and restored from GridCraft JSON too, so the reader's checks are not the
     // only way data gets here: validate again and write only what the schema allows (§18.4.6: an

@@ -750,6 +750,19 @@ fn write_cell(
         s.push_str("</c>");
         return;
     }
+    if ov.is_none()
+        && extra.is_none()
+        && let Some(runs) = cell.and_then(Cell::rich_runs)
+    {
+        let text = cell.map(|c| c.value.display()).unwrap_or_default();
+        let _ = write!(
+            s,
+            " t=\"inlineStr\"><is>{}{}</is></c>",
+            crate::rich_text::write(runs),
+            crate::xml::phonetic_body(&text, out.phonetics.get(&text))
+        );
+        return;
+    }
     match &value {
         Value::Empty | Value::Array(_) => s.push_str("/>"),
         Value::Number(n) => {

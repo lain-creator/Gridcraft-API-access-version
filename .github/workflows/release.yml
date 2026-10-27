@@ -54,10 +54,10 @@ jobs:
       - name: Add source and checksums
         shell: bash
         run: |
-          git archive --format=zip --prefix=GridCraft-API-source/ HEAD --output dist/GridCraft-0.12.1-api.20261027.1-source.zip
+          git archive --format=zip --prefix=GridCraft-API-source/ HEAD --output "dist/GridCraft-${GITHUB_REF_NAME#v}-source.zip"
           (cd dist && sha256sum *.zip > SHA256SUMS.txt && sha256sum -c SHA256SUMS.txt)
       - name: Publish release without overwriting existing assets
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" --verify-tag --title "GridCraft API Edition 0.12.1 · 中英文对齐修复" --notes-file RELEASE-NOTES.md dist/*.zip dist/*.sha256 dist/SHA256SUMS.txt
+          gh release create "$GITHUB_REF_NAME" --verify-tag --title "GridCraft API Edition · 字体保真与 XLS 支持" --notes-file RELEASE-NOTES.md dist/*.zip dist/*.sha256 dist/SHA256SUMS.txt

@@ -2,9 +2,19 @@
 
 在 GridCraft v0.12.1 上增加可配置的第三方 API 翻译和选区问答。这是定制版本，不是 Storytold 的官方发行版。
 
-本仓库保留先前的中文界面、XLS 转换、图片显示与剪贴板图片修复。主要源码在 `gridcraft/`，本地开源依赖在相邻的 `craft-libs/`。
+本仓库保留先前的中文界面、XLS 转换、图片显示与剪贴板图片修复。GridCraft 源码在 `gridcraft/`，本地依赖在 `craft-libs/`。WordCraft 中文修复版在 `wordcraft/`，翻译目录在 `craft-i18n/`，使用独立 Release 和安装包，保留原翻译服务，并非自定义 API 版。
 
-2026-10-27 对齐修复：按钮文字自动水平、垂直居中；单行输入框的文字与光标垂直居中；按实际字体度量校正中日韩回退字体的显示位置。多行输入仍从顶部开始，不修改工作簿的字号、单元格对齐、行高或原文件。详细验证见 `gridcraft/docs/local-chrome-alignment.md`。
+2026-10-27 保真更新：按中文字体设计选择替代并提示；保留单元格分段字体/字号/颜色；自动行高使用真实显示字体测量，自定义行高和原单元格对齐不强制改变。详见 `gridcraft/docs/local-document-fidelity.md`。
+
+## XLS 支持（Mac / Win64）
+
+先安装 [官方 LibreOffice](https://www.libreoffice.org/download/download-libreoffice/) 到系统默认位置，然后在 GridCraft 直接打开 `.xls`，本机转换后打开，不上传或改变原文件。编辑后另存 `.xlsx`，不支持 `.xls` 写回。找不到转换器会明确提示，不静默改用丢失格式的读取。宏不执行，宏及部分旧对象不保证保留。LibreOffice 不随包提供。
+
+## WordCraft 中文版
+
+在 Releases 选择 WordCraft 独立发行版，改进中文字体替代和 DOCX 图片负裁剪读写/边缘拉伸，保留中英翻译及选区取值修复。下载 `WordCraft-…-macos-arm64.zip` 或 `WordCraft-…-win64.zip`。
+
+构建：设 `CRAFT_I18N_DIR` 为本仓库 `craft-i18n/` 绝对路径、`CRAFT_I18N_REQUIRED=1`，在 `wordcraft/` 运行 `cargo build --locked --release -p wordcraft`。Cargo 获取公开固定版 craft-libs。打包使用 `scripts/package.py --app wordcraft`。
 
 ## 使用
 

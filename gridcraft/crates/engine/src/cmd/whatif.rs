@@ -201,7 +201,7 @@ impl Trial {
         for (si, c, v) in sets {
             if let Some(sh) = wb.sheet_mut(*si) {
                 let style = sh.style_id(*c);
-                sh.set_cell(*c, Cell { value: v.clone(), formula: None, style });
+                sh.set_cell(*c, Cell { value: v.clone(), formula: None, style, ..Default::default() });
                 keys.push((*si, *c));
             }
         }
@@ -330,7 +330,7 @@ fn goal_seek(s: &mut Session, p: &Json) -> Result<Json> {
     edit(s, |cx| {
         let sh = cx.sheet_mut(csi)?;
         let style = sh.style_id(chg);
-        sh.set_cell(chg, Cell { value: Value::number(r.x), formula: None, style });
+        sh.set_cell(chg, Cell { value: Value::number(r.x), formula: None, style, ..Default::default() });
         cx.touch(csi, chg);
         Ok(())
     })?;
@@ -493,7 +493,7 @@ fn scenario_show(s: &mut Session, p: &Json) -> Result<Json> {
             let cell = match v.as_f64() {
                 Some(n) => {
                     let style = cx.wb.sheet(si).map(|sh| sh.style_id(*c)).unwrap_or_default();
-                    Some(Cell { value: Value::Number(n), formula: None, style })
+                    Some(Cell { value: Value::Number(n), formula: None, style, ..Default::default() })
                 }
                 None => super::edit::input_to_cell(&super::edit::json_to_input(v), si, *c, &mut cx.wb)?,
             };
@@ -578,7 +578,7 @@ fn scenario_summary(s: &mut Session, p: &Json) -> Result<Json> {
         let bold = cx.wb.styles.derive(StyleId::DEFAULT, |st| st.font.bold = true);
         let mut sheet = Sheet::new(name.clone());
         let put = |sheet: &mut Sheet, row: u32, col: u32, v: Value, style: StyleId| {
-            sheet.set_cell(CellRef::new(row, col), Cell { value: v, formula: None, style });
+            sheet.set_cell(CellRef::new(row, col), Cell { value: v, formula: None, style, ..Default::default() });
         };
         put(&mut sheet, 1, 1, Value::text("Scenario Summary"), bold);
         put(&mut sheet, 2, 2, Value::text("Current Values:"), bold);
@@ -701,7 +701,7 @@ fn data_table(s: &mut Session, p: &Json) -> Result<Json> {
         for (c, v) in out {
             let sh = cx.sheet_mut(si)?;
             let style = sh.style_id(c);
-            sh.set_cell(c, Cell { value: v, formula: None, style });
+            sh.set_cell(c, Cell { value: v, formula: None, style, ..Default::default() });
             cx.touch(si, c);
         }
         Ok(())
@@ -895,7 +895,7 @@ fn advanced_filter(s: &mut Session, p: &Json) -> Result<Json> {
                     // The full output footprint was checked above.
                     let to = CellRef::new(dest.row + i as u32, dest.col + c - list.start.col);
                     let style = sh.style_id(src);
-                    (to, Cell { value: sh.value(src), formula: None, style })
+                    (to, Cell { value: sh.value(src), formula: None, style, ..Default::default() })
                 })
             })
             .collect();
@@ -1122,7 +1122,7 @@ fn consolidate(s: &mut Session, p: &Json) -> Result<Json> {
             if v.is_empty() && style == StyleId::DEFAULT {
                 sh.remove_cell(c);
             } else {
-                sh.set_cell(c, Cell { value: v, formula: None, style });
+                sh.set_cell(c, Cell { value: v, formula: None, style, ..Default::default() });
             }
             cx.touch(dsi, c);
         }

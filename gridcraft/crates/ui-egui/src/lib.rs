@@ -10,6 +10,7 @@ pub mod ai;
 pub mod backstage;
 mod border_preview;
 mod cell_pictures;
+pub mod cell_text;
 pub mod chartview;
 pub mod code_editor;
 pub mod control;
@@ -285,6 +286,7 @@ pub struct SheetApp {
     fonts_set: bool,
     /// Workbook fonts bound into the current font set; a change rebinds (installed fonts only).
     fonts_bound: Vec<String>,
+    font_replacements: Vec<String>,
     /// The (doc uid, revision) `fonts_bound` was computed for, so the style table is walked only
     /// when the workbook changes.
     fonts_seen: (u64, u64),
@@ -355,6 +357,7 @@ impl SheetApp {
             fonts_ready: false,
             fonts_set: false,
             fonts_bound: Vec::new(),
+            font_replacements: Vec::new(),
             fonts_seen: (0, 0),
             fonts_rebind: false,
             fonts_han: None,
@@ -394,6 +397,9 @@ impl SheetApp {
         let mut names: Vec<String> = Vec::new();
         if let Some(d) = self.session.active() {
             names.extend(d.wb.styles.iter().map(|(_, s)| s.font.name.clone()));
+            names.extend(
+                d.wb.sheets.iter().flat_map(|sh| sh.cells.iter()).flat_map(|(_, cell)| cell.rich_text.iter().filter_map(|r| r.font.name.clone())),
+            );
             names.push(d.wb.theme.major_font.clone());
             names.push(d.wb.theme.minor_font.clone());
             // Text boxes and shapes name their own typefaces.
@@ -1271,6 +1277,10 @@ impl SheetApp {
             let ctx = ctx.clone();
             self.session.text_width = Some(std::sync::Arc::new(move |text, font, exact| theme::cell_text_width(&ctx, text, font, exact)));
         }
+        if self.session.text_height.is_none() {
+            let ctx = ctx.clone();
+            self.session.text_height = Some(std::sync::Arc::new(move |cell, font, width| cell_text::height(&ctx, cell, font, width)));
+        }
         // A keytip control request lives one frame: the ribbon consumes it during `ui`, and
         // anything that never reached a control (collapsed ribbon, tab switch) is dropped.
         self.ui.keytip_invoke = None;
@@ -1297,6 +1307,10 @@ impl SheetApp {
         } else if self.fonts_rebind {
             // A font-set change made last frame is active now.
             self.fonts_rebind = false;
+            let measure = self.session.text_height.clone();
+            if let Some(d) = self.session.active_mut() {
+                gridcraft_engine::io::fit_imported_rows(std::sync::Arc::make_mut(&mut d.wb), measure.as_ref());
+            }
         } else if fonts::scan_done() {
             // Bind the workbook's installed fonts once the background scan has finished. Adding
             // fonts re-applies the font set, which egui activates at the next pass, so skip this
@@ -1304,6 +1318,10 @@ impl SheetApp {
             let seen = self.session.active().map(|d| (d.uid, d.revision)).unwrap_or((0, 0));
             if seen != self.fonts_seen {
                 let used = self.used_fonts();
+                self.font_replacements =
+                    used.iter().filter_map(|name| fonts::replacement(name).map(|replacement| format!("{name} → {replacement}"))).collect();
+                self.font_replacements.sort();
+                self.font_replacements.dedup();
                 self.fonts_seen = seen;
                 if used != self.fonts_bound {
                     ctx.set_fonts(theme::font_definitions_with(self.ui.language, &used));

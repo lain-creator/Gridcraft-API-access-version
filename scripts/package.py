@@ -3,40 +3,48 @@ from pathlib import Path
 import argparse, hashlib, os, plistlib, shutil, subprocess, tempfile, zipfile
 
 parser=argparse.ArgumentParser()
+parser.add_argument('--app',choices=['gridcraft','wordcraft'],default='gridcraft')
 parser.add_argument('--platform',choices=['macos-arm64','win64'],required=True)
 parser.add_argument('--binary',type=Path,required=True)
 parser.add_argument('--output',type=Path,required=True)
-parser.add_argument('--version',default='0.12.1-api.20261027.1')
-parser.add_argument('--patch-label',default='20261027.4 Centered bilingual controls and CJK fallback metrics')
+parser.add_argument('--version')
+parser.add_argument('--patch-label',default='20261027.5 Document font fidelity and image crop compatibility')
 args=parser.parse_args()
 root=Path(__file__).resolve().parents[1]
-source=root/'gridcraft'
+source=root/args.app
+name='GridCraft' if args.app=='gridcraft' else 'WordCraft'
+short_version='0.12.1' if args.app=='gridcraft' else '0.11.0'
 out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
-version=args.version
+version=args.version or ('0.12.1-api.20261027.2' if args.app=='gridcraft' else '0.11.0-wordcraft.20261027.1')
 if not version or any(c not in '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-' for c in version):
     raise SystemExit('Invalid package version')
-archive=out/f'GridCraft-{version}-{args.platform}.zip'
+archive=out/f'{name}-{version}-{args.platform}.zip'
 if not args.binary.is_file():raise SystemExit('The compiled binary does not exist')
 
 with tempfile.TemporaryDirectory(prefix='gridcraft-api-package-') as temp:
     temp=Path(temp)
     if args.platform=='macos-arm64':
-        bundle=temp/'GridCraft.app';binary=bundle/'Contents/MacOS/GridCraft';resource=bundle/'Contents/Resources'
+        bundle=temp/f'{name}.app';binary=bundle/f'Contents/MacOS/{name}';resource=bundle/'Contents/Resources'
         binary.parent.mkdir(parents=True);resource.mkdir()
         shutil.copyfile(args.binary,binary);os.chmod(binary,0o755)
-        template=(source/'packaging/macos/Info.plist.in').read_text().replace('@SHORT_VERSION@','0.12.1').replace('@VERSION@',version).replace('@BUILD_SHA@','api-20261027')
-        info=plistlib.loads(template.encode());info['GridCraftLocalPatch']=args.patch_label
+        template=(source/'packaging/macos/Info.plist.in').read_text().replace('@SHORT_VERSION@',short_version).replace('@VERSION@',version).replace('@BUILD_SHA@','local-20261027.2')
+        info=plistlib.loads(template.encode());info[name+'LocalPatch']=args.patch_label
         (bundle/'Contents/Info.plist').write_bytes(plistlib.dumps(info));(bundle/'Contents/PkgInfo').write_bytes(b'APPL????')
-        shutil.copyfile(source/'assets/app-icon/gridcraft.icns',resource/'GridCraft.icns')
+        shutil.copyfile(source/f'assets/app-icon/{args.app}.icns',resource/f'{name}.icns')
         destination=resource
     else:
-        bundle=temp/f'GridCraft-{version}-Win64';bundle.mkdir();shutil.copy2(args.binary,bundle/'GridCraft.exe');destination=bundle
-    for name in ['LICENSE-MIT','LICENSE-APACHE','NOTICE','ATTRIBUTION.md']:
-        shutil.copy2(source/name,destination/name)
-        shutil.copy2(root/'craft-libs'/name,destination/('craft-libs-'+name))
+        bundle=temp/f'{name}-{version}-Win64';bundle.mkdir();shutil.copy2(args.binary,bundle/f'{name}.exe');destination=bundle
+    for filename in ['LICENSE-MIT','LICENSE-APACHE','NOTICE','ATTRIBUTION.md']:
+        shutil.copy2(source/filename,destination/filename)
+        shutil.copy2(root/'craft-libs'/filename,destination/('craft-libs-'+filename))
     shutil.copy2(root/'README.md',destination/'使用说明.md')
-    for name in ['LICENSE-MIT','LICENSE-APACHE']:
-        shutil.copy2(source/'vendor/egui'/name,destination/('egui-'+name))
+    if args.app=='gridcraft':
+        for filename in ['LICENSE-MIT','LICENSE-APACHE']:
+            shutil.copy2(source/'vendor/egui'/filename,destination/('egui-'+filename))
+    else:
+        for filename in ['LICENSE-MIT','LICENSE-APACHE','ATTRIBUTION.md']:
+            shutil.copy2(root/'craft-i18n'/filename,destination/('craft-i18n-'+filename))
+        shutil.copytree(root/'third-party/wordcraft-craft-libs-1774443',destination/'wordcraft-craft-libs-1774443')
     for path in (source/'docs').glob('local-*.md'):shutil.copy2(path,destination/path.name)
     for path in (source/'assets/fonts').glob('OFL-*.txt'):shutil.copy2(path,destination/path.name)
     if args.platform=='macos-arm64':

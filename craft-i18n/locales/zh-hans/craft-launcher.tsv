@@ -1,0 +1,290 @@
+# 简体中文 (zh-hans) interface catalog for ArtCraft Launcher.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	A new version is available. Would you like to relaunch with the updated version?	有新版本可用。是否使用更新后的版本重新启动？
+	All releases	所有版本
+	App	应用
+column	App	应用
+	App details	应用详情
+@id	app.download	下载 {os} 版
+@id	app.github	GitHub 仓库
+@id	app.install	安装
+@id	app.notes	更新说明
+@id	app.open	打开
+@id	app.reinstall	重新安装
+@id	app.releases	所有版本
+@id	app.reveal	在访达中显示
+@id	app.uninstall	卸载…
+@id	app.update	更新至 {v}
+@id	app.website	网站
+@id	appearance.theme	外观
+	Apps are placed inside this folder.	应用会放置在此文件夹内。
+	Apps on this computer	此电脑上的应用
+	Apps you can install	可安装的应用
+	Apps you hid	你隐藏的应用
+month	Apr	4月
+	Arch package (.pkg.tar.zst)	Arch 软件包 (.pkg.tar.zst)
+	ArtCraft Launcher	ArtCraft Launcher
+	ArtCraft Launcher {version}	ArtCraft Launcher {version}
+	ArtCraft Launcher {version} is available.	ArtCraft Launcher {version} 已可更新。
+@plural	ArtCraft Launcher · {n} update available|ArtCraft Launcher · {n} updates available	ArtCraft Launcher · 有 {n} 个可用更新
+	ArtCraft on GitHub	ArtCraft 的 GitHub 主页
+	ArtCraft on {name}	ArtCraft 的 {name} 主页
+month	Aug	8月
+	Auto	跟随系统
+	Automatically download and install updates	自动下载并安装更新
+	Available to install	可安装
+	Cancel download	取消下载
+	Cancel update	取消更新
+	Checked {ago}	上次检查：{ago}
+	Checked {ago} · using {sources}	上次检查：{ago} · 来源：{sources}
+	Checking for updates…	正在检查更新…
+	Checking…	正在检查…
+	Classic apps	经典应用
+	Click to enlarge	点击放大
+	Click to reverse the order	点击切换排序方向
+	Click to sort by this column	点击按此列排序
+	Close (Esc)	关闭（Esc）
+	Coming soon	即将推出
+cadcraft	Computer-aided design and drafting	计算机辅助设计与制图
+	Couldn't change the login item: {e}	无法更改登录启动项：{e}
+	Couldn't check for updates: {f}	无法检查更新：{f}
+@msg	couldn't move {path} to Trash ({reason}). Remove it in Finder instead.	无法将 {path} 移到废纸篓（{reason}）。请在 Finder 中移除。
+@msg	couldn't use install folder {path}: {reason}	无法使用安装文件夹 {path}：{reason}
+	Craft App Suite	Craft App Suite
+	Custom folders use AppImage on Linux.	在 Linux 上，自定义文件夹使用 AppImage。
+@msg	custom install folders aren't supported on this system	此系统不支持自定义安装文件夹
+	Debian package (.deb)	Debian 软件包 (.deb)
+month	Dec	12月
+	Default install folder	默认安装文件夹
+	Discard download	丢弃下载
+	Disk image (.dmg)	磁盘映像 (.dmg)
+	Dismiss	忽略
+	Download again	重新下载
+	Download cancelled	下载已取消
+@msg	Download cancelled	下载已取消
+	Download for {os}	下载 {os} 版
+	Download paused	下载已暂停
+	Downloading	正在下载
+	Downloading {done} of {total}	正在下载 {done} / {total}
+	Downloading…	正在下载…
+	Downloads for {platform}	下载平台：{platform}
+	Downloads the new version, replaces this one and opens it again	下载新版本，替换当前版本并重新打开
+	Enlarge picture	放大图片
+	Every Craft app	所有 Craft 应用
+	Features	功能特性
+month	Feb	2月
+@id	filter.all	全部
+@id	filter.installed	已安装
+@id	filter.notinstalled	未安装
+@id	filter.updates	更新
+	Flatpak bundle	Flatpak 包
+	Full changelog	完整更新日志
+	GitHub limit hit; back in {min} min	已达 GitHub 限额；{min} 分钟后恢复
+	GitHub repository	GitHub 仓库
+	GitHub's hourly limit was reached; full details return in {min} min	已达到 GitHub 每小时请求上限；{min} 分钟后可获取完整信息
+@id	help.discord	Discord
+@id	help.github	GitHub
+@id	help.website	网站
+	Hidden Apps	已隐藏的应用
+	Hide App	隐藏应用
+photocraft	Image editing	图像编辑
+	Include pre-releases (betas and release candidates)	包含预发布版本（测试版和候选版）
+	Install	安装
+	Install cancelled	安装已取消
+	Install cancelled. The download is kept for the next try.	安装已取消。已下载的文件会保留，供下次使用。
+	Install folder	安装文件夹
+	Install new apps as	新应用安装格式
+	Installed	已安装
+column	Installed	已安装版本
+filter	Installed	已安装
+	installed	已安装
+	Installed apps with a newer version	有新版本的已安装应用
+	Installed version	已安装版本
+	Installed · latest {latest}	已安装 · 最新 {latest}
+	Installed · up to date	已安装 · 已是最新
+	Installer (.msi)	安装程序 (.msi)
+	Installing for {platform}	安装平台：{platform}
+	Installing on Linux	Linux 安装设置
+	Installing on Windows	Windows 安装设置
+	Installing, then restarting…	正在安装，完成后重启…
+	Installing…	正在安装…
+figcraft	Interface design and prototyping	界面设计与原型制作
+month	Jan	1月
+	Join the ArtCraft community on Discord	加入 Discord 上的 ArtCraft 社区
+	Join the ArtCraft Discord	加入 ArtCraft Discord 社区
+	Join the Discord	加入 Discord
+month	Jul	7月
+month	Jun	6月
+	Keep running in the tray when the window is closed	关闭窗口后继续在系统托盘中运行
+	Latest	最新
+column	Latest	最新版本
+	Latest release	最新发布
+	Latest version	最新版本
+	Launcher	Launcher
+@id	launcher.dismiss	忽略
+@id	launcher.download	下载
+@id	launcher.notes	更新内容
+@id	launcher.update	更新并重启
+	Learn more	了解更多
+	link	链接
+@id	linux.preferred_kind	新应用安装格式
+	Loading ArtCraft Launcher…	正在加载 ArtCraft Launcher…
+	Loading pictures…	正在加载图片…
+month	Mar	3月
+	Match system	跟随系统
+month	May	5月
+effectcraft	Motion graphics and visual effects	动态图形与视觉特效
+	NEW	新
+	New	新
+	New apps	新应用
+	New installs use this folder. Updates stay in their current location.	新安装的应用使用此文件夹。更新时保留当前位置。
+	Newest release	发布日期
+	Next picture (→)	下一张（→）
+	No apps match	没有匹配的应用
+	No downloads for this system	此系统暂无可用下载
+	No notes were published with this release.	此版本未提供更新说明。
+	No release published yet	尚未发布版本
+	Not available here	此平台不可用
+	Not checked yet	尚未检查
+	Not installed	未安装
+	Notify me when an installed app has an update	已安装应用有更新时通知我
+month	Nov	11月
+month	Oct	10月
+	Offline	离线
+	Only when I ask	仅手动检查
+	Open ArtCraft Launcher to update.	打开 ArtCraft Launcher 进行更新。
+	Open on GitHub	在 GitHub 上打开
+	Open Source Tools for Creatives, Makers, and Builders	为创作者和开发者打造的开源工具
+designcraft	Page layout and publishing	页面排版与出版
+	Pause download	暂停下载
+lightcraft	Photo library and raw development	照片管理与 RAW 处理
+	Pictures couldn't be loaded. Reopen this page to try again.	无法加载图片。重新打开此页面可重试。
+	Platforms	平台
+	Portable (.zip)	便携版 (.zip)
+deckcraft	Presentations and slide shows	演示文稿与幻灯片
+	Previous picture (←)	上一张（←）
+	Questions, ideas and news from the ArtCraft team	与 ArtCraft 团队交流问题、想法和动态
+	Quit ArtCraft Launcher	退出 ArtCraft Launcher
+pdfcraft	Reading, organizing and protecting PDFs	PDF 阅读、整理和保护
+	Reconnecting…	正在重新连接…
+soundcraft	Recording, editing and mixing audio	音频录制、编辑与混音
+	Reinstall	重新安装
+	Release notes	更新说明
+	Released	发布日期
+column	Released	发布日期
+	Released {date}	发布于 {date}
+	Releases	版本发布
+	Removing…	正在卸载…
+	Replace what's there?	替换现有内容？
+	Restore	还原
+	Resume download	继续下载
+	Retry install	重试安装
+	Retry update to {version}	重试更新至 {version}
+	RPM package (.rpm)	RPM 软件包 (.rpm)
+	Running in the background	后台运行
+	Search apps	搜索应用
+month	Sep	9月
+@id	settings.open	设置
+@id	settings.quit	退出 ArtCraft Launcher
+	Show apps as a table	以表格显示应用
+	Show apps as cards	以卡片显示应用
+	Show ArtCraft Launcher	显示 ArtCraft Launcher
+	Show in Explorer	在资源管理器中显示
+	Show in Files	在文件管理器中显示
+	Show in Finder	在访达中显示
+	Show the window on the current desktop	在当前桌面显示窗口
+@id	sort.installed	已安装版本
+@id	sort.latest	最新版本
+@id	sort.name	名称
+@id	sort.released	发布日期
+@id	sort.status	状态
+@id	sort.suite	默认顺序
+gridcraft	Spreadsheets and data	电子表格与数据处理
+	Start ArtCraft Launcher when I log in	登录时启动 ArtCraft Launcher
+	Stop waiting; the update can be started again later	停止等待；稍后可重新开始更新
+	Suite order	默认顺序
+	System default	系统默认
+	System package (recommended)	系统软件包（推荐）
+	Tarball (.tar.gz)	压缩包 (.tar.gz)
+	The app will be moved to the Trash. Your documents and settings stay.	应用将移到废纸篓。你的文档和设置会保留。
+	The app will be removed. Your documents and settings stay.	应用将被卸载。你的文档和设置会保留。
+	The download is still here. It's checked again, then installed.	已下载的文件仍在。会先重新校验，然后安装。
+	The system manages install locations here.	此环境中的安装位置由系统管理。
+	These notes weren't fetched (GitHub's request limit was reached). They're on the release page.	未能获取更新说明（已达到 GitHub 请求上限）。可前往版本发布页面查看。
+@msg	this release has no AppImage for a custom install folder	此版本没有可用于自定义安装文件夹的 AppImage
+@id	tray.close_to_tray	关闭窗口后继续在系统托盘中运行
+@id	tray.login_item	登录时启动 ArtCraft Launcher
+@id	tray.show_on_current_desktop	在当前桌面显示窗口
+	Unhide App	取消隐藏应用
+	Uninstall	卸载
+	Uninstall cancelled	卸载已取消
+	Uninstall {name}?	卸载 {name}？
+	Uninstall…	卸载…
+	Update 1 app	更新 1 个应用
+	Update all ({count})	全部更新（{count}）
+	Update and restart	更新并重启
+	Update available	有可用更新
+	Update cancelled	更新已取消
+	Update paused	更新已暂停
+	Update to {v}	更新至 {v}
+@id	update.check	检查更新
+@id	update.check_auto	自动检查更新
+@id	update.notify	已安装应用有更新时通知我
+@id	update.prereleases	包含预发布版本（测试版和候选版）
+	Updates always use the format an app was installed with.	更新时始终使用应用原来的安装格式。
+	Updating…	正在更新…
+	Use default	使用默认
+vectorcraft	Vector illustration	矢量插画
+	Verifying checksum…	正在验证校验和…
+	Verifying…	正在校验…
+	Version {latest}	版本 {latest}
+	Version {version} installed	已安装版本 {version}
+filmcraft	Video editing, color and sound	视频剪辑、调色和声音处理
+@id	view.grid	网格
+@id	view.table	表格
+	Visit getartcraft.com	访问 getartcraft.com
+	Waiting for another app…	正在等待其他应用…
+	Waiting for other installs…	正在等待其他安装…
+	What's new	更新内容
+	When on, opening the launcher from the menu bar brings its window to the desktop you're on. When off, macOS switches you to the desktop the window was on.	开启后，从菜单栏打开启动器时，窗口会显示在当前桌面。关闭后，macOS 会切换到窗口原来所在的桌面。
+	Windows will remove it like any installed program. Your documents and settings stay.	Windows 将按常规方式卸载此应用。你的文档和设置会保留。
+wordcraft	Writing and document design	写作与文档设计
+	Your system's package manager will remove it, and may ask for your password. Your documents and settings stay.	系统软件包管理器将卸载此应用，可能需要输入密码。你的文档和设置会保留。
+	{a} and {b}	{a} 和 {b}
+	{count} updates are available	有 {count} 个可用更新
+	{done} downloaded	已下载 {done}
+	{done} of {total}	{done} / {total}
+	{done} of {total} downloaded	已下载 {done} / {total}
+	{installed} installed · latest {latest}	已安装 {installed} · 最新 {latest}
+	{month} {day}, {year}	{year}年{month}{day}日
+	{name} details	{name} 详情
+	{name} icon	{name} 图标
+@msg	{name} installed: {version}	{name} 已安装：{version}
+@msg	{name} installed: {version} (this release publishes no checksum, so only its size was checked)	{name} 已安装：{version}（此版本未发布校验和，因此只检查了文件大小）
+@msg	{name} is running. Quit it, then try again.	{name} 正在运行。请先退出，然后重试。
+@msg	{name} updated to {version}	{name} 已更新至 {version}
+@msg	{name} updated to {version} (this release publishes no checksum, so only its size was checked)	{name} 已更新至 {version}（此版本未发布校验和，因此只检查了文件大小）
+@msg	{name} was removed	{name} 已卸载
+	{name} {version}	{name} {version}
+	{name} {v} is available	{name} {v} 已可更新
+@plural	{n} app|{n} apps	{n} 个应用
+@plural	{n} day ago|{n} days ago	{n} 天前
+@plural	{n} h ago|{n} h ago	{n} 小时前
+@plural	{n} min ago|{n} min ago	{n} 分钟前
+@msg	{path} already exists and wasn't installed by ArtCraft Launcher	{path} 已存在，且并非由 ArtCraft Launcher 安装
+	{path} already exists. Installing {name} will overwrite it.	{path} 已存在。安装 {name} 将覆盖它。
+	{version} installed → {latest} released	已安装 {version} → 最新 {latest}
+	⊞  Grid	⊞  网格
+	☰  Table	☰  表格
+	🔍  Search apps	🔍  搜索应用

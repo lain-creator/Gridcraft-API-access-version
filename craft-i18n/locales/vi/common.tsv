@@ -1,0 +1,1264 @@
+# Tiếng Việt (vi) interface catalog for every Crafting App.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	% of all commits	% tổng số commit
+	(Custom)	(Tự tạo)
+	(none)	(không có)
+	1 file	1 tệp
+	16 bit	16-bit
+	24 bits/pixel	24 bit/pixel
+	32 bits/pixel	32 bit/pixel
+	8 bit	8-bit
+	About	Giới thiệu
+	Absolute	Tuyệt đối
+	Absolute Colorimetric	Đo màu tuyệt đối
+	Accented Edges	Cạnh nhấn mạnh
+	Accessibility	Trợ năng
+	Accurate	Chính xác
+	Actions	Hành động
+	Activate Panel	Kích hoạt bảng
+	Active	Đang dùng
+	Actual Size	Kích thước thực
+	Adaptive	Thích ứng
+	Add	Thêm
+	Add a comment	Thêm bình luận
+	Add Guide	Thêm đường căn
+	Add to Dictionary	Thêm vào từ điển
+	Add to favorites	Thêm vào mục yêu thích
+	Add to Swatches	Thêm vào mẫu màu
+	Adjust	Điều chỉnh
+	Adjustments	Điều chỉnh
+	Advanced	Nâng cao
+	Align	Căn chỉnh
+	Align center	Căn giữa
+	Align Left	Căn trái
+	Align left	Căn trái
+	Align Right	Căn phải
+	Align right	Căn phải
+	Align Text	Căn chữ
+	Align to Selection	Căn theo vùng chọn
+	Alignment	Căn chỉnh
+	Alignment:	Căn lề:
+	All	Tất cả
+	All Caps	Viết hoa toàn bộ
+	All Categories	Tất cả danh mục
+	All files	Tất cả tệp
+	All Layers	Mọi lớp
+	All pages	Tất cả các trang
+	All Slices	Mọi lát cắt
+	Alpha	Alpha
+	Alt	Alt
+	Always	Luôn luôn
+	Amount	Mức độ
+	Amount:	Mức độ:
+	Angle	Góc
+	Angle:	Góc:
+	Angular	Góc
+	Animation	Hiệu ứng động
+	Animation effects	Hiệu ứng hoạt họa
+	Anti-Alias	Khử răng cưa
+	Anti-alias	Khử răng cưa
+	Any	Bất kỳ
+	Appearance	Diện mạo
+theme	Appearance	Giao diện
+	Appearance Settings…	Cài đặt giao diện…
+	Application	Ứng dụng
+	Apply	Áp dụng
+	Apply Character Style	Áp dụng kiểu ký tự
+	Apply Data Set	Áp dụng tập dữ liệu
+	Apply to:	Áp dụng cho:
+	Arc	Cung
+	Area	Diện tích
+	Arrange	Sắp xếp
+	Arrow	Mũi tên
+	Arrows	Mũi tên
+	Artboard	Bảng vẽ
+	Artboards	Các bảng vẽ
+	ArtCraft	ArtCraft
+	ArtCraft Website	Trang web ArtCraft
+	ArtCraft website	Trang web ArtCraft
+	Artistic	Nghệ thuật
+	Ascending	Tăng dần
+	Aspect Ratio	Tỷ lệ khung hình
+	Assign	Gán
+	Assign Profile…	Gán hồ sơ màu…
+	Author	Tác giả
+	Author:	Tác giả:
+	Auto	Tự động
+	Auto ({percent}%)	Tự động ({percent}%)
+	Auto Color	Màu tự động
+	Automate	Tự động hóa
+	Automatic	Tự động
+	Automatically	Tự động
+	Available	Có sẵn
+	Average	Trung bình
+	Background	Nền
+	Background Color	Màu nền
+	Background Contents	Nội dung nền
+	Backspace	Backspace
+	Balance	Cân bằng
+	Bar	Vạch dọc
+	Baseline	Đường cơ sở
+	Baseline Shift	Dịch chuyển đường cơ sở
+	Basic	Cơ bản
+	Basic Latin	Latin cơ bản
+	Batch	Hàng loạt
+	Batch…	Hàng loạt…
+	Bend:	Uốn cong:
+	Bicubic	Bicubic
+	Binary assets added	Tài nguyên nhị phân đã thêm
+	Binary assets removed	Tài nguyên nhị phân đã xóa
+	Bitmap	Bitmap
+	Black	Đen
+	Black & White	Đen & Trắng
+	Black and white	Đen trắng
+	Black Intensity	Cường độ đen
+	Blacks	Điểm đen
+	Blend Mode	Chế độ hòa trộn
+	Blending Mode	Chế độ hòa trộn
+	Block	Khối
+	Blocks	Khối
+	Blue	Xanh dương
+	Blur	Mờ
+	Blur Angle	Góc làm mờ
+	Bold	Đậm
+	Border	Viền
+	Border Thickness	Độ dày viền
+	Borders	Đường viền
+	Both	Cả hai
+	Both sides	Cả hai mặt
+	Bottom	Dưới cùng
+	Bottom Left	Dưới trái
+	Bottom Right	Dưới phải
+	Bottom:	Dưới:
+	Break Link	Ngắt liên kết
+	Brick	Gạch
+	Brightness	Độ sáng
+	Bring Forward	Đưa lên trước
+	Bring to Front	Đưa lên trên cùng
+	Browse	Duyệt
+	Browse…	Duyệt…
+	Brush Size	Cỡ cọ
+	Brush Strokes	Nét cọ
+	Brushes	Cọ
+	Bulge	Phồng
+	Bullet	Dấu đầu dòng
+	Burlap	Vải thô
+	Calculate	Tính toán
+	Cancel	Hủy
+	Canvas	Vùng vẽ
+	Caption	Chú thích
+	Cascade	Xếp tầng
+	Category	Thể loại
+	Category:	Danh mục:
+	Cell Size	Kích thước ô
+	Center	Giữa
+	Center X	Tâm X
+	Center Y	Tâm Y
+	Centered	Căn giữa
+	Centimeters	Centimet
+	Chamfer	Vát góc
+	Change	Thay đổi
+	Change All	Thay đổi tất cả
+	Change Case	Thay đổi kiểu chữ
+	Change Panel Layout	Thay đổi bố cục bảng
+	Channel	Kênh
+	Channel Mixer	Bộ trộn kênh
+	Channels	Kênh
+	Character	Ký tự
+	Character Styles	Các kiểu ký tự
+	Characters	Ký tự
+	Check for updates	Kiểm tra bản cập nhật
+	Check Spelling…	Kiểm tra chính tả…
+	Choose…	Chọn…
+	Circle	Hình tròn
+	City	Thành phố
+	Clarity	Độ rõ
+	Classic	Cổ điển
+	Clear	Xóa
+	Clear All	Xóa tất cả
+	Clear Guides	Xóa đường căn
+	Clear History	Xóa lịch sử
+	Clear Recent Files	Xóa tệp gần đây
+	Clipboard	Bảng tạm
+	Clipping Mask	Mặt nạ cắt
+	Clone	Nhân bản
+	Close	Đóng
+	Close (Esc)	Đóng (Esc)
+	Close All	Đóng tất cả
+	Close Panel	Đóng bảng
+	Cmd	Cmd
+	CMYK Color	Màu CMYK
+	CMYK:	CMYK:
+	Coarse Dots	Chấm thô
+	Collapse	Thu gọn
+	Collate	Đối chiếu
+	Color	Màu
+	Color Balance	Cân bằng màu
+	Color Burn	Đốt màu
+	Color Dodge	Tránh màu
+	Color Management	Quản lý màu
+	Color Mode	Chế độ màu
+	Color Picker	Bộ chọn màu
+	Color Settings	Cài đặt màu
+	Color Settings…	Cài đặt màu…
+	Color Space	Không gian màu
+	Color Swatches	Mẫu màu
+	Color Table	Bảng màu
+	Color:	Màu:
+	Colorize	Tô màu
+	Colors	Màu
+	Colors:	Màu sắc:
+	Color…	Màu…
+	Colour	Màu
+	Column width	Độ rộng cột
+	Columns	Cột
+	Columns:	Cột:
+	Combine	Kết hợp
+	Command	Lệnh
+	Commands:	Lệnh:
+	Comment	Bình luận
+	Comments	Bình luận
+	Commits	Commit
+	Community	Cộng đồng
+	Company	Công ty
+	Compare	So sánh
+	Comparison	Phép so sánh
+	Compatibility	Tương thích
+	Compression	Nén
+	Cone	Hình nón
+	Contains	Chứa
+	Continue	Tiếp tục
+	Contrast	Tương phản
+	Contributors	Người đóng góp
+	Convert	Chuyển đổi
+	Convert to Shape	Chuyển thành hình dạng
+	Convert to sRGB	Chuyển sang sRGB
+	Copies	Số bản
+	Copies:	Bản sao:
+	Copy	Sao chép
+	Copyright	Bản quyền
+	Copyrighted	Được bảo vệ bản quyền
+	Corner	Góc
+	Corners	Các góc
+	Correction	Hiệu chỉnh
+	Couldn't open {name}: {e}	Không thể mở {name}: {e}
+@msg	Couldn't open {name}: {e}	Không thể mở {name}: {e}
+	Country	Quốc gia
+	Crack Brightness	Độ sáng vết nứt
+	Crack Depth	Độ sâu vết nứt
+	Crack Spacing	Khoảng cách vết nứt
+	Create	Tạo
+	Create Clipping Mask	Tạo mặt nạ cắt
+	Crop	Cắt xén
+	Cross	Chữ thập
+	Crosshatch	Lưới đan
+	Crystallize	Kết tinh
+	Crystallize…	Kết tinh…
+	Ctrl	Ctrl
+	Current	Hiện tại
+	Current page	Trang hiện tại
+	Curvature	Độ cong
+	Curve	Đường cong
+	Curves	Đường cong
+	Curves…	Đường cong…
+	Custom	Tùy chỉnh
+	Customize…	Tùy chỉnh…
+	Cut	Cắt
+	Cyan	Xanh lơ
+	Dark	Tối
+	Dark Gray	Xám đậm
+	Dark gray	Xám đậm
+	Dark Strokes	Nét tối
+	Dark Theme	Giao diện tối
+	Darken	Làm tối
+	Darkness	Độ tối
+	Dashed	Nét đứt
+	Data	Dữ liệu
+	Data Sets	Tập dữ liệu
+	Date	Ngày
+	Date and Time	Ngày và giờ
+	Date format	Định dạng ngày
+	Dates	Ngày tháng
+	De-Interlace	Khử xen kẽ
+	Decrease Font Size	Giảm cỡ chữ
+	Default	Mặc định
+	Delete	Xóa
+	Delete Brush	Xóa cọ
+	Delete Group	Xóa nhóm
+	Delete Layer	Xóa lớp
+	Delete Style	Xóa kiểu
+	Delete Workspace	Xóa không gian làm việc
+	Deleted	Đã xóa
+	Depth	Độ sâu
+	Desaturate	Khử bão hòa
+	Descending	Giảm dần
+	Description	Mô tả
+	Description:	Mô tả:
+	Deselect	Bỏ chọn
+	Deselect All	Bỏ chọn tất cả
+	Destination	Đích
+	Destination:	Đích đến:
+	Details	Chi tiết
+	Diagonal	Đường chéo
+	Diameter:	Đường kính:
+	Diamond	Hình thoi
+	Difference	Hiệu
+	Diffuse Glow	Ánh sáng khuếch tán
+	Diffusion	Khuếch tán
+	Digits	Chữ số
+	Dimensions	Kích thước
+	Direct Selection Tool	Công cụ Chọn trực tiếp
+	Direction	Hướng
+	Direction Balance	Cân bằng hướng
+	Direction:	Hướng:
+	Discard	Loại bỏ
+	Discord	Discord
+	Discretionary Ligatures	Chữ ghép tùy chọn
+	Dismiss	Đóng
+	Display	Hiển thị
+	Display name	Tên hiển thị
+	Distance	Khoảng cách
+	Distort	Làm méo
+	Distortion	Biến dạng
+	Distribute	Phân bố
+	Divide	Chia
+	Dock Panel	Neo bảng
+	Document	Tài liệu
+	Document Title	Tiêu đề tài liệu
+	Documents	Tài liệu
+	Don't Save	Không lưu
+	Done	Xong
+	Dot	Dấu chấm
+	Dots	Chấm
+	Dotted	Chấm
+	Double-click	Bấm đúp
+	Down	Xuống
+	Download	Tải xuống
+	Draft	Nháp
+	Draw	Vẽ
+	Drop Shadow	Đổ bóng
+	Drop Shadow…	Đổ bóng…
+	Duplicate	Nhân bản
+	Duplicate Layer	Nhân bản lớp
+	Duplicate…	Nhân bản…
+	Duplication	Nhân bản
+	Duration	Thời lượng
+	Dutch	Tiếng Hà Lan
+	Dynamic	Động
+	Dynamics	Động lực
+	Edge	Cạnh
+	Edge Brightness	Độ sáng cạnh
+	Edge Intensity	Cường độ cạnh
+	Edge Only	Chỉ cạnh
+	Edge Simplicity	Độ đơn giản của cạnh
+	Edge Thickness	Độ dày cạnh
+	Edge Width	Độ rộng cạnh
+	Edit	Chỉnh sửa
+	Edit Contents	Chỉnh sửa nội dung
+	Edit Original	Chỉnh sửa bản gốc
+	Edit Toolbar	Chỉnh sửa thanh công cụ
+	Editing	Chỉnh sửa
+	Edit…	Chỉnh sửa…
+	Effect	Hiệu ứng
+	Effects	Hiệu ứng
+	Elevation	Cao độ
+	Eliminate	Loại bỏ
+	Ellipse	Hình elip
+	Ellipse Tool	Công cụ Hình elip
+	Ellipsis	Dấu chấm lửng
+	Em Dash	Gạch ngang dài
+	Em Space	Khoảng trắng em
+	Embed	Nhúng
+	Emboss	Dập nổi
+	En Dash	Gạch ngang ngắn
+	En Space	Khoảng trắng en
+	Endpoint	Điểm cuối
+	Enlarged	Phóng to
+	Enter	Enter
+	Entire Font	Toàn bộ phông
+	Envelope DL	Phong bì DL
+	Erase	Tẩy
+	Eraser	Cục tẩy
+	Eraser Tool	Công cụ Cục tẩy
+	Error	Lỗi
+	Even Fields	Trường chẵn
+	Even pages only	Chỉ các trang chẵn
+	Exact	Chính xác
+	Example: {sample}	Ví dụ: {sample}
+	Exclusion	Loại trừ
+	Exit	Thoát
+	Expand	Mở rộng
+	Export	Xuất
+	Export As	Xuất thành
+	Export As…	Xuất thành…
+	Export PDF	Xuất PDF
+	Export to	Xuất ra
+	Exported to {path}	Đã xuất ra {path}
+	Exported {path}	Đã xuất {path}
+	Export…	Xuất…
+	Exposure	Phơi sáng
+	Expression	Biểu thức
+	Extract	Trích xuất
+	Eyedropper	Ống hút màu
+	Eyedropper Tool	Công cụ Ống hút màu
+	Faded Film	Phim phai
+	Fast	Nhanh
+	Favorites	Yêu thích
+	Feather	Làm mềm cạnh
+	Field	Trường
+	Field properties	Thuộc tính trường
+	Fields	Các trường
+	Fields:	Các trường:
+	File	Tệp
+	File Handling	Xử lý tệp
+	File Info…	Thông tin tệp…
+	File Name	Tên tệp
+	Files	Tệp
+	Fill	Tô
+	Fill:	Tô:
+	Filter	Bộ lọc
+	Find	Tìm
+	Find and Replace	Tìm và Thay thế
+	Find Next	Tìm tiếp
+	Find:	Tìm:
+	Find…	Tìm…
+	Fine Dots	Chấm mịn
+	Finish	Hoàn tất
+	First	Đầu tiên
+	First commit	Commit đầu tiên
+	Fit	Vừa khớp
+	Fit in View	Vừa trong vùng xem
+	Fixed	Cố định
+	Flash	Đèn flash
+	Flatten	Làm phẳng
+	Flip	Lật
+	Flip Horizontal	Lật ngang
+	Flip Vertical	Lật dọc
+	Focus	Lấy nét
+	Folder	Thư mục
+	Font	Phông chữ
+	Font Size	Cỡ chữ
+	Font size	Cỡ chữ
+	Font Size:	Cỡ chữ:
+	Font:	Phông chữ:
+	Fonts	Phông chữ
+	Format	Định dạng
+	Format:	Định dạng:
+	Fractions	Phân số
+	Frame	Khung
+	Free	Tự do
+	Free Transform	Biến đổi tự do
+	French	Tiếng Pháp
+	Frequency	Tần số
+	From	Từ
+	Frosted	Sương mờ
+	Full	Toàn phần
+	Full Screen	Toàn màn hình
+	Full Screen Mode	Chế độ toàn màn hình
+	Functions	Hàm
+	Gamma	Gamma
+	Gamma Correction	Hiệu chỉnh gamma
+	Gamut Warning	Cảnh báo ngoài dải màu
+	Gaussian Blur	Mờ Gaussian
+	Gaussian Blur…	Làm mờ Gaussian…
+	General	Chung
+	General…	Chung…
+	Generate	Tạo
+	Geometry	Hình học
+	German	Tiếng Đức
+	GitHub	GitHub
+	Glass	Kính
+	Global	Toàn cục
+	Glow	Ánh sáng
+	Glow Brightness	Độ sáng của ánh sáng
+	Glow Size	Kích thước ánh sáng
+	Glyphs	Glyph
+	Good	Tốt
+	Gradient	Chuyển sắc
+	Gradient Tool	Công cụ Chuyển sắc
+	Gradients	Chuyển sắc
+	Grain	Hạt
+	Grain Type	Loại hạt
+	Graininess	Độ hạt
+	Grainy Dots	Chấm hạt
+	Graphic	Đồ họa
+	Graphics	Đồ họa
+	Gray	Xám
+	Gray Gamma 2.2	Gray Gamma 2.2
+	Grayscale	Thang xám
+	Green	Xanh lá
+	Grid	Lưới
+	Grid Size:	Kích thước lưới:
+	Grid view	Dạng lưới
+	Gridline every	Đường lưới mỗi
+	Group	Nhóm
+	Group with	Nhóm với
+	Groups	Nhóm
+	Grout Width	Chiều rộng mạch vữa
+	Guides	Đường căn
+	Halftone Pattern	Mẫu bán sắc
+	Hand	Tay
+	Hand Tool	Công cụ Bàn tay
+	Hard	Cứng
+	Hard Light	Ánh sáng mạnh
+	Hard Mix	Trộn cứng
+	Headings	Đề mục
+	Heart	Trái tim
+	Height	Chiều cao
+	Height:	Chiều cao:
+	Help	Trợ giúp
+	Hexagon	Lục giác
+	Hidden	Đã ẩn
+	Hidden text	Văn bản ẩn
+	Hide	Ẩn
+	Hide All	Ẩn tất cả
+	Hide Grid	Ẩn lưới
+	Hide Others	Ẩn các mục khác
+	High	Cao
+	High Pass	Lọc cao tần
+	High Resolution	Độ phân giải cao
+	High resolution	Độ phân giải cao
+	Highlight Area	Vùng tô sáng
+	Highlights	Vùng sáng
+	Hindi	Hindi
+	Histogram	Histogram
+	History	Lịch sử
+	Hollow	Rỗng
+	Home	Trang chủ
+	Horizontal	Ngang
+	Horizontal scale	Tỷ lệ ngang
+	Horizontally	Theo chiều ngang
+	Hue	Sắc độ
+	Hue Shift	Dịch chuyển sắc độ
+	Hue/Saturation…	Sắc độ/Độ bão hòa…
+	Hyphenation	Gạch nối từ
+	Icon	Biểu tượng
+	Ignore	Bỏ qua
+	Ignore All	Bỏ qua tất cả
+	Image	Hình ảnh
+	Image Size	Kích thước ảnh
+	Images	Hình ảnh
+	Import	Nhập
+	Import…	Nhập…
+	Inches	Inch
+	Increase Font Size	Tăng cỡ chữ
+	Index	Chỉ mục
+	Inflate	Phồng to
+	Info	Thông tin
+	Inner Glow…	Phát sáng trong…
+	Input:	Đầu vào:
+	Insert	Chèn
+	Inside	Bên trong
+	Inspect Document	Kiểm tra tài liệu
+	Install Plug-in	Cài đặt plug-in
+	Install Plug-in…	Cài đặt plug-in…
+	Intensity	Cường độ
+	Interface	Giao diện
+	Interface Language	Ngôn ngữ giao diện
+	Interface language	Ngôn ngữ giao diện
+	Interface Theme	Chủ đề giao diện
+	Interlaced	Xen kẽ
+	Interpolation	Nội suy
+	Intersect	Giao nhau
+	Intersection	Giao điểm
+	Invert	Đảo màu
+	Invert Mask	Đảo ngược mặt nạ
+	Isolate	Tách biệt
+	Italian	Tiếng Ý
+	Italic	Nghiêng
+	Japanese	Tiếng Nhật
+	Join	Nối
+	Join our Discord	Tham gia Discord của chúng tôi
+	Join the ArtCraft Discord	Tham gia Discord của ArtCraft
+	Join the ArtCraft Discord…	Tham gia Discord ArtCraft…
+	Join us on Discord	Tham gia Discord
+	just now	vừa xong
+	Justification	Căn đều
+	Justify	Căn đều
+	Keep:	Giữ:
+	Kerning	Điều chỉnh khoảng cách chữ
+	Keyboard Shortcuts	Phím tắt
+	Keyboard Shortcuts…	Phím tắt…
+	Keywords	Từ khóa
+	Kind	Loại
+	Korean	Tiếng Hàn
+	Lab	Lab
+	Label	Nhãn
+	Labels	Nhãn
+	Landscape	Ngang
+	Language	Ngôn ngữ
+	Language Options	Tùy chọn ngôn ngữ
+@id	language.name	Tiếng Việt
+	Language:	Ngôn ngữ:
+	Large	Lớn
+	Lasso	Dây mềm
+	Lasso Tool	Công cụ Lasso
+	Last	Cuối cùng
+	Last commit	Commit cuối cùng
+	Later	Để sau
+	Layer	Lớp
+	Layers	Các lớp
+	Layout	Bố cục
+	Layout:	Bố cục:
+	Leading	Giãn dòng
+	Left	Trái
+	Left Diagonal	Chéo trái
+	Left to Right	Trái sang phải
+	Left:	Trái:
+	Legal	Khổ pháp lý
+	Length	Chiều dài
+	Length:	Độ dài:
+	Lens Flare	Ánh sáng loé ống kính
+	Less	Ít hơn
+	Letter	Thư
+	Level	Cân ngang
+	Level 1	Cấp 1
+	Level 2	Cấp 2
+	Level 3	Cấp 3
+	Level 4	Cấp 4
+	Levels	Số mức
+	Levels…	Mức độ…
+	Libraries	Thư viện
+	Library	Thư viện
+	Light	Sáng
+	Light Blue	Xanh lam nhạt
+	Light Direction	Hướng ánh sáng
+	Light Gray	Xám nhạt
+	Light gray	Xám nhạt
+	Light Intensity	Cường độ ánh sáng
+	Light Theme	Giao diện sáng
+	Light Type	Loại ánh sáng
+	Lighten	Làm sáng
+	Lighter Color	Màu sáng hơn
+	Lighting	Chiếu sáng
+	Lighting Effects	Hiệu ứng ánh sáng
+	Lightness	Độ sáng
+	Line	Đường thẳng
+	Line delta	Chênh lệch dòng
+	Line spacing	Giãn dòng
+	Linear	Tuyến tính
+	Linear Burn	Đốt tuyến tính
+	Linear Gradient	Chuyển sắc tuyến tính
+	Linear Light	Ánh sáng tuyến tính
+	Lines	Đường thẳng
+	Lines +/−	Dòng +/−
+	Lines added	Dòng thêm
+	Lines deleted	Dòng xóa
+	Link	Liên kết
+	Links	Liên kết
+	List	Danh sách
+	List View	Chế độ danh sách
+	List view	Dạng danh sách
+	Location	Vị trí
+	Location:	Vị trí:
+	Lock	Khóa
+	Lock Guides	Khóa đường căn
+	Lock Slices	Khóa lát cắt
+	Locked	Đã khóa
+	Long Lines	Nét dài
+	Long Strokes	Nét vẽ dài
+	Low	Thấp
+	lowercase	chữ thường
+	Luminance	Độ sáng
+	Luminosity	Độ chói
+	Magenta	Đỏ hồng
+	Magic Wand Tool	Công cụ Đũa thần
+	Magnification	Độ phóng đại
+	Margins	Lề
+	Mask	Mặt nạ
+	Matte	Nền mờ
+	Maximize	Phóng to
+	Maximum	Tối đa
+	Measure	Đo
+	Median	Trung vị
+	Medium	Vừa
+	Medium Dots	Chấm vừa
+	Medium Gray	Xám vừa
+	Medium Lines	Nét vừa
+	Merge	Hợp nhất
+	Merge Cells	Gộp ô
+	Merge Layers	Hợp nhất lớp
+	Merged PRs	PR đã gộp
+	Mesh	Lưới
+	Message:	Thông điệp:
+	Metadata	Siêu dữ liệu
+	Method	Phương pháp
+	Method:	Phương pháp:
+	Mezzotint	Mezzotint
+	Mezzotint…	Mezzotint…
+	Middle	Giữa
+	Midpoint	Điểm giữa
+	Midtones	Tông trung gian
+	Millimeters	Milimét
+	Minimize	Thu nhỏ
+	Minimum	Tối thiểu
+	Mirror	Gương
+	Missing	Thiếu
+	Mobile	Di động
+	Mode	Chế độ
+	Mode:	Chế độ:
+	Model	Mô hình
+	Models	Mô hình
+	Modern	Hiện đại
+	Modified	Đã sửa đổi
+	Modify	Sửa đổi
+	Monitor RGB	RGB màn hình
+	Mono	Đơn sắc
+	Monochrome	Đơn sắc
+	More	Thêm
+	Mosaic	Khảm
+	Mosaic Tiles	Gạch mosaic
+	Motion	Chuyển động
+	Move	Di chuyển
+	Move Down	Di chuyển xuống
+	Move Panel	Di chuyển bảng
+	Move Up	Di chuyển lên
+	Multiply	Nhân
+	Name	Tên
+	Name (A–Z)	Tên (A–Z)
+	Name:	Tên:
+	Navigation	Điều hướng
+	Navigator	Bộ dẫn hướng
+	Neon Glow	Ánh neon
+	Never	Không bao giờ
+	New	Mới
+	New Document	Tài liệu mới
+	New document	Tài liệu mới
+	New from Template	Mới từ mẫu
+	New Group	Nhóm mới
+	New Guide	Đường căn mới
+	New Layer	Lớp mới
+	New Layer…	Lớp mới…
+	New Style…	Kiểu mới…
+	New Swatch…	Mẫu màu mới…
+	New Window	Cửa sổ mới
+	New Workspace	Không gian làm việc mới
+	New Workspace…	Không gian làm việc mới…
+	New…	Mới…
+	Next	Tiếp theo
+	Next Appearance Mode	Chế độ giao diện tiếp theo
+	Next Change	Thay đổi tiếp theo
+	Next Page	Trang tiếp theo
+	Next page	Trang tiếp theo
+	No	Không
+	No Color	Không màu
+	No Dither	Không hòa sắc
+	No Document	Không có tài liệu
+	No document	Không có tài liệu
+	No document open	Không có tài liệu nào đang mở
+	No limit	Không giới hạn
+	No matches.	Không có kết quả.
+	No matching commands	Không tìm thấy lệnh
+	No recent files	Không có tệp gần đây
+	No results	Không có kết quả
+	No Selection	Không có vùng chọn
+	No selection	Không có vùng chọn
+	Noise	Nhiễu
+	Nonbreaking Space	Khoảng trắng không ngắt
+	None	Không có
+	Normal	Thường
+	NTSC Colors	Màu NTSC
+	Number	Số
+	Object	Đối tượng
+	Octagon	Bát giác
+	Odd Fields	Trường lẻ
+	Odd pages only	Chỉ các trang lẻ
+	Off	Tắt
+	Offset	Độ lệch
+	Offset:	Độ lệch:
+	OK	OK
+	Omit	Bỏ qua
+	On	Bật
+	Only Web Colors	Chỉ màu web
+	Opacity	Độ mờ
+	Opacity:	Độ mờ:
+	Open	Mở
+	Open link	Mở liên kết
+	Open Recent	Mở gần đây
+	OpenType	OpenType
+	Open…	Mở…
+	Optimized	Đã tối ưu
+	Options	Tùy chọn
+	Options…	Tùy chọn…
+	Orange	Cam
+	Ordinals	Số thứ tự
+	Orientation	Hướng
+	Orientation:	Hướng:
+	Original	Bản gốc
+	Other	Khác
+	Outer Glow…	Phát sáng ngoài…
+	Outline	Đường bao
+	Output	Đầu ra
+	Output:	Đầu ra:
+	Outside	Bên ngoài
+	Oval	Hình bầu dục
+	Overlap:	Chồng lấp:
+	Overlay	Phủ lên
+	Package…	Gói…
+	Page	Trang
+	Page {page} of {pages}	Trang {page} trên {pages}
+	Pages	Trang
+	Painting	Vẽ
+	Panel menu	Menu bảng
+	Panel Options…	Tùy chọn bảng…
+	Panels	Bảng
+	Paper	Giấy
+	Paragraph	Đoạn văn
+	Paragraph Styles	Kiểu đoạn văn
+	Password	Mật khẩu
+	Paste	Dán
+	Paste Special	Dán đặc biệt
+	Patchwork	Patchwork
+	Path	Đường dẫn
+	Path:	Đường dẫn:
+	Paths	Đường dẫn
+	Pattern	Họa tiết
+	Pattern Type	Loại mẫu
+	Pause	Tạm dừng
+	Pen	Bút
+	Pen Tool	Công cụ Bút
+	Pencil	Bút chì
+	Pencil Tool	Công cụ Bút chì
+	Pentagon	Ngũ giác
+	Percent	Phần trăm
+	Percentage	Phần trăm
+	Performance	Hiệu suất
+	Perimeter	Chu vi
+	Perspective	Phối cảnh
+	Photo	Ảnh
+	Photocopy	Bản sao photocopy
+	Picas	Pica
+	Pin Light	Ánh sáng ghim
+	Pink	Hồng
+	Pixel	Pixel
+	Pixelate	Pixel hóa
+	Pixels	Pixel
+	Play	Phát
+	Plug-ins	Plug-in
+	Point	Điểm
+	Pointillize	Hiệu ứng chấm
+	Pointillize…	Hiệu ứng chấm…
+	Points	Điểm
+	Polygon	Đa giác
+	Polygon Tool	Công cụ Đa giác
+	Polyline	Đa tuyến
+	Portrait	Dọc
+	Portuguese	Tiếng Bồ Đào Nha
+	Position	Vị trí
+	Position:	Vị trí:
+	Postcard	Bưu thiếp
+	Poster	Áp phích
+	Poster Edges	Viền áp phích
+	Posterization	Áp phích hóa
+	Posterize	Poster hóa
+	Preferences	Tùy chọn
+	Preferences…	Tùy chọn…
+	Prefix	Tiền tố
+	Preserve	Giữ hồ sơ nhúng
+	Preserve Luminosity	Giữ độ sáng
+	Preset	Thiết lập sẵn
+	Preset Manager	Quản lý thiết lập sẵn
+	Preset:	Thiết lập sẵn:
+	Presets	Thiết lập sẵn
+	Presets:	Thiết lập sẵn:
+	Press keys…	Nhấn phím…
+	Pressure	Áp lực
+	Preview	Xem trước
+	Previous	Trước
+	Previous Change	Thay đổi trước đó
+	Previous Page	Trang trước
+	Previous page	Trang trước
+	Print	In
+	Printer	Máy in
+	Printer:	Máy in:
+	Printing	In ấn
+	Print…	In…
+	Profile	Hồ sơ
+	Progressive	Lũy tiến
+	Proof Setup	Thiết lập thử nghiệm
+	Properties	Thuộc tính
+	Protect	Bảo vệ
+	PRs	PR
+	Public Domain	Miền công cộng
+	Punctuation	Dấu câu
+	Purple	Tím
+	Pyramid	Kim tự tháp
+	Quality	Chất lượng
+	Quick Actions	Hành động nhanh
+	Radial	Hướng tâm
+	Radial Blur	Mờ hướng tâm
+	Radial Blur…	Mờ hướng tâm…
+	Radial Gradient	Chuyển sắc hướng tâm
+	Radius	Bán kính
+	Radius:	Bán kính:
+	Random	Ngẫu nhiên
+	Range	Phạm vi
+	Range:	Phạm vi:
+	Rasterize	Raster hóa
+	Ratio	Tỷ lệ
+	Rays	Tia sáng
+	Ready	Sẵn sàng
+	Real name	Tên thật
+	Recent	Gần đây
+	Recent Colors	Màu gần đây
+	Recent Files	Các tệp gần đây
+	Recover	Khôi phục
+	Rectangle	Hình chữ nhật
+	Rectangle Tool	Công cụ Hình chữ nhật
+	Rectangular	Chữ nhật
+	Red	Đỏ
+	Redo	Làm lại
+	Reduce Noise	Giảm nhiễu
+	Refine	Tinh chỉnh
+	Reflected	Phản chiếu
+	Refresh	Làm mới
+	Regular	Thường
+	Relative	Tương đối
+	Relative Colorimetric	Đo màu tương đối
+	Relaxed	Giãn rộng
+	Relief	Nổi
+	Reload	Tải lại
+	Remove	Gỡ bỏ
+	Remove Background	Gỡ bỏ nền
+	Remove from favorites	Xóa khỏi mục yêu thích
+	Rename	Đổi tên
+	Rename Group…	Đổi tên nhóm…
+	Rename Style	Đổi tên kiểu
+	Rename…	Đổi tên…
+	Repeat	Lặp lại
+	Replace	Thay thế
+	Replace:	Thay thế:
+	Reply	Trả lời
+	Report	Báo cáo
+	Report an Issue…	Báo cáo vấn đề…
+	Reselect	Chọn lại
+	Reset	Đặt lại
+	Reset Preferences	Đặt lại tùy chọn
+	Reset…	Đặt lại…
+	Resize panel window	Đổi kích thước cửa sổ bảng
+	Resize panels	Đổi kích thước các bảng
+	Resolution	Độ phân giải
+	Resolution:	Độ phân giải:
+	Restore	Khôi phục
+	Result	Kết quả
+	Reveal in Finder	Hiện trong Finder
+	Reverse	Đảo thứ tự
+	Reverse the order	Đảo ngược thứ tự
+	Revert	Hoàn nguyên
+	Review	Duyệt
+	RGB	RGB
+	RGB Color	Màu RGB
+	RGB:	RGB:
+	Right	Phải
+	Right Diagonal	Chéo phải
+	Right:	Phải:
+	Rotate	Xoay
+	Rotate:	Xoay:
+	Rotation	Xoay
+	Rotation:	Xoay:
+	Rounded Rectangle	Hình chữ nhật bo góc
+	Roundness	Độ tròn
+	Roundness:	Độ tròn:
+	Rows	Hàng
+	Ruler	Thước
+	Rulers	Thước
+	Rulers & Grids	Thước & Lưới
+	Russian	Tiếng Nga
+	Sandstone	Đá sa thạch
+	Saturation	Độ bão hòa
+	Save	Lưu
+	Save a Copy	Lưu bản sao
+	Save a Copy…	Lưu bản sao…
+	Save As	Lưu thành
+	Save as PDF	Lưu dưới dạng PDF
+	Save as Template	Lưu thành mẫu
+	Save as Template…	Lưu thành mẫu…
+	Save As…	Lưu thành…
+	Save Preset…	Lưu thiết lập sẵn…
+	Save Selection	Lưu vùng chọn
+	Save Selection…	Lưu vùng chọn…
+	Saved	Đã lưu
+	Save…	Lưu…
+	Scale	Tỷ lệ
+	Scale:	Tỷ lệ:
+	Scaling	Chia tỷ lệ
+	Scratch Disks	Đĩa tạm
+	Scratch Disks…	Đĩa tạm…
+	Screen	Màn hình
+	Screen Mode	Chế độ màn hình
+	Scripts	Script
+	Search	Tìm
+	Security	Bảo mật
+	Segments	Đoạn
+	Select	Chọn
+	Select All	Chọn tất cả
+	Select Objects	Chọn đối tượng
+	Select:	Chọn:
+	Selected pages	Các trang đã chọn
+	Selection	Vùng chọn
+	Selection Tool	Công cụ Chọn
+	Selective	Chọn lọc
+	Send Backward	Đưa ra sau
+	Send to Back	Đưa xuống dưới cùng
+	Sensitivity	Độ nhạy
+	Sent to {printer}	Đã gửi tới {printer}
+	Services	Dịch vụ
+	Set	Đặt
+	Set as Default	Đặt làm mặc định
+	Set:	Bộ:
+	Settings	Cài đặt
+	Settings…	Cài đặt…
+	Shadow	Bóng
+	Shadows	Vùng tối
+	Shape	Hình dạng
+	Shape Effects	Hiệu ứng hình dạng
+	Shape:	Hình dạng:
+	Shapes	Hình dạng
+	Share	Chia sẻ
+	Sharpen	Làm sắc nét
+	Sharpness	Độ sắc nét
+	Shift	Shift
+	Short Lines	Nét ngắn
+	Short Strokes	Nét vẽ ngắn
+	Shortcut	Phím tắt
+	Shortcuts	Phím tắt
+	Show	Hiện
+	Show All	Hiện tất cả
+	Show Grid	Hiện lưới
+	Show Guides	Hiện đường căn
+	Show in Folder	Hiện trong thư mục
+	Show Mask	Hiện mặt nạ
+	Show Mesh	Hiện lưới
+	Show Rulers	Hiện thước
+	Show rulers	Hiện thước
+	Show Tool Tips	Hiện chú thích công cụ
+	Show:	Hiện:
+	Sides:	Các cạnh:
+	Simplify	Đơn giản hóa
+	Size	Kích thước
+	Size:	Kích thước:
+	Sketch	Phác thảo
+	Skew	Nghiêng lệch
+	Slice	Lát cắt
+	Slice Options	Tùy chọn lát cắt
+	Slice Options…	Tùy chọn lát cắt…
+	Slice Tool	Công cụ Lát cắt
+	Slices	Lát cắt
+	Small	Nhỏ
+	Small Caps	Chữ hoa nhỏ
+	Smart Blur	Mờ thông minh
+	Smart Blur…	Mờ thông minh…
+	Smart Guides	Đường căn thông minh
+	Smart quotes	Dấu ngoặc kép thông minh
+	Smoothness	Độ mịn
+	Snap to Grid	Hút vào lưới
+	Soft	Mềm
+	Soft Light	Ánh sáng mềm
+	Soften	Làm mềm
+	Softness	Độ mềm
+	Solarize	Solar hóa
+	Sort	Sắp xếp
+	Sort by	Sắp xếp theo
+	Source	Nguồn
+	Source code on GitHub	Mã nguồn trên GitHub
+	Spaces	Khoảng trắng
+	Spacing	Khoảng cách
+	Spacing:	Khoảng cách:
+	Spanish	Tiếng Tây Ban Nha
+	Spatter	Bắn tung tóe
+	Special	Đặc biệt
+	Speckle	Đốm
+	Speed	Tốc độ
+	Spelling	Chính tả
+	Spherize	Cầu hoá
+	Split	Tách
+	Spot Color	Màu đặc biệt
+	Spray Radius	Bán kính phun
+	Square	Hình vuông
+	Square Size	Kích thước ô vuông
+	sRGB IEC61966-2.1	sRGB IEC61966-2.1
+	Stacked	Xếp chồng
+	Stained Glass	Kính màu
+	Stamp	Con dấu
+	Standard	Tiêu chuẩn
+	Standard Ligatures	Chữ ghép chuẩn
+	Star	Ngôi sao
+	Start at:	Bắt đầu từ:
+	Statistics	Thống kê
+	Status	Trạng thái
+	Status Bar	Thanh trạng thái
+	Stippled	Chấm li ti
+	Stop	Dừng
+	Strength	Cường độ
+	Stretch	Kéo giãn
+	Strikethrough	Gạch ngang
+	Stroke	Nét
+	Stroke Color	Màu nét
+	Stroke Length	Độ dài nét
+	Stroke Options	Tùy chọn nét
+	Stroke:	Nét:
+	Studio	Studio
+	Style	Kiểu
+	Style:	Kiểu:
+	Styles	Kiểu
+	Stylize	Tạo kiểu dáng
+	Subdivisions	Phân chia
+	Subject	Chủ đề
+	Subscript	Chỉ số dưới
+	Subset	Tập con
+	Subtitle	Tiêu đề phụ
+	Subtract	Trừ
+	Sumi-e	Sumi-e
+	Summary	Tóm tắt
+	Superscript	Chỉ số trên
+	Swatches	Mẫu màu
+	Symbol	Ký hiệu
+	Symbols	Ký hiệu
+	Sync with system	Đồng bộ với hệ thống
+	System	Hệ thống
+	Tab	Tab
+	Table	Bảng
+	Table style	Kiểu bảng
+	Tables	Bảng
+	Tabloid	Khổ báo
+	Tabs	Tab
+	Taper	Thu dần
+	Target	Mục tiêu
+	Target:	Mục tiêu:
+	Temperature	Nhiệt độ màu
+	Templates	Mẫu
+	Text	Văn bản
+	Text color	Màu chữ
+	Text:	Văn bản:
+	Texture	Kết cấu
+	The passwords don't match.	Các mật khẩu không khớp.
+	Theme	Chủ đề
+	Thickness	Độ dày
+	This document has no bookmarks.	Tài liệu này không có dấu trang.
+	Threshold	Ngưỡng
+	Thumbnails	Hình thu nhỏ
+	Tile	Ô
+	Tile Size	Kích thước gạch
+	Tilt	Độ nghiêng
+	Time	Thời gian
+	Timeline	Dòng thời gian
+	Tint	Tông màu
+	Tint Color	Màu nhuộm
+	Title	Tiêu đề
+	To	Đến
+	Tolerance	Dung sai
+	Tolerance:	Dung sai:
+	Tool	Công cụ
+	Toolbars	Thanh công cụ
+	Tools	Công cụ
+	Top	Trên
+	Top Left	Trên trái
+	Top Right	Trên phải
+	Top:	Trên:
+	Total	Tổng
+	Total:	Tổng:
+	Tracking	Giãn chữ
+	Transform	Biến đổi
+	Translate	Dịch
+	Transparency	Độ trong suốt
+	Transparent	Trong suốt
+	Trap…	Chồng màu…
+	Triangle	Tam giác
+	Turbulent	Rối
+	Twirl	Xoáy
+	Twist	Xoắn
+	Type	Loại
+	Type Tool	Công cụ Chữ
+	Type:	Loại:
+	Typewriter	Máy đánh chữ
+	Type…	Chữ…
+	Typing	Nhập chữ
+	Underline	Gạch chân
+	Undo	Hoàn tác
+	Undo {action}	Hoàn tác {action}
+	Ungroup	Bỏ nhóm
+	Uniform	Đồng đều
+	Union	Phép hợp
+	Units	Đơn vị
+	Unknown	Không rõ
+	Unlock	Mở khóa
+	Unsaved changes	Thay đổi chưa lưu
+	Unsharp Mask	Tăng độ sắc nét
+	Untitled	Chưa đặt tên
+	Up	Lên
+	Update	Cập nhật
+	UPPERCASE	CHỮ HOA
+	Use Default	Dùng mặc định
+	Username	Tên người dùng
+	Value	Giá trị
+	Value:	Giá trị:
+	Variables	Biến số
+	Version	Phiên bản
+	Version {version}	Phiên bản {version}
+	Vertical	Dọc
+	Vertical Alignment	Căn dọc
+	Vertical Type Tool	Công cụ Chữ dọc
+	Vertically	Theo chiều dọc
+	Very High	Rất cao
+	Vibrance	Độ sống động
+	Video	Video
+	View	Xem
+	Violet	Tím
+	Visibility	Hiển thị
+	Vivid Light	Ánh sáng rực rỡ
+	Voice	Giọng nói
+	W:	W:
+	Warning	Cảnh báo
+	Warnings	Cảnh báo
+	Warp	Biến dạng
+	Watermark	Hình mờ
+	Wave	Sóng
+	Wave…	Sóng…
+	Web	Web
+	Website	Trang web
+	Weight	Độ dày
+	Wet	Ướt
+	White	Trắng
+	White Intensity	Cường độ trắng
+	White Is High	Trắng là cao
+	Whites	Điểm trắng
+	Width	Chiều rộng
+	Width and Height	Chiều rộng và chiều cao
+	Width:	Chiều rộng:
+	Window	Cửa sổ
+	Windows	Windows
+	Words	Từ
+	Working CMYK	CMYK làm việc
+	Workspace	Không gian làm việc
+	X	X
+	Y	Y
+	Yellow	Vàng
+	Yes	Có
+	yesterday	hôm qua
+	Your changes will be lost if you don't save them.	Các thay đổi sẽ bị mất nếu bạn không lưu.
+	Zoom	Thu phóng
+	Zoom In	Phóng to
+	Zoom in	Phóng to
+	Zoom Out	Thu nhỏ
+	Zoom out	Thu nhỏ
+	Zoom Tool	Công cụ thu phóng
+@plural	{n} commit|{n} commits	{n} commit
+	{n} files	{n} tệp
+	{n} h ago	{n} giờ trước
+@plural	{n} item|{n} items	{n} mục
+@plural	{n} Layer|{n} Layers	{n} lớp
+	{n} min ago	{n} phút trước
+@plural	{n} step|{n} steps	{n} bước
+	−Bin	−Bin
+	● Recording	● Đang ghi

@@ -285,4 +285,6 @@ Ranked; estimates in Opus 5.5 agent-hours. Detail and the full beta-gate list in
 
 ### Local update — 2026-10-27
 
+Document fidelity: CJK substitutions/report, rich runs across XLSX I/O, stable line alignment and measured automatic rows; desktop XLS via isolated local LibreOffice. See [scope](docs/local-document-fidelity.md). Readiness unchanged.
+
 Rebased the local Chinese translation integration onto the stable 0.12.1 release. Preserved original text, added response-to-source ID validation and numeric/model checks. See [local translation notes](docs/local-pcbtool-translation.md) for scope and limitations.

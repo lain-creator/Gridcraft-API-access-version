@@ -1,0 +1,2095 @@
+# Ελληνικά (el) interface catalog for PdfCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	  · not fixable here	  · δεν διορθώνεται εδώ
+	 (page {p})	 (σελίδα {p})
+	 (searching… {s} of {p} pages)	 (αναζήτηση… {s} από {p} σελίδες)
+	 ({n} at {dpi} dpi, the largest size they can be drawn at)	 ({n} στα {dpi} dpi, το μεγαλύτερο μέγεθος στο οποίο μπορούν να αποδοθούν)
+	 ({s} not exported: {first})	 ({s} δεν εξήχθησαν: {first})
+	 on page {label}	 στη σελίδα {label}
+	 on page {p}	 στη σελίδα {p}
+	 · password-protected	 · προστατευμένο με κωδικό
+	+Bin	+Δυαδ.
+	+LOC	+Γραμμές
+	, Expires: 	, Λήξη: 
+	1 difference found	Βρέθηκε 1 διαφορά
+	1 file done	Ολοκληρώθηκε 1 αρχείο
+	1 file needs attention	1 αρχείο χρειάζεται έλεγχο
+	1 instance	1 εμφάνιση
+	1 issue	1 πρόβλημα
+	1 mark	1 επισήμανση
+	1 page	1 σελίδα
+	1 page selected	Επιλέχθηκε 1 σελίδα
+	1 page selected.	Επιλέχθηκε 1 σελίδα.
+	180 degrees	180 μοίρες
+	4 x 6 in label (101.6 x 152.4 mm)	Ετικέτα 4 × 6 in (101,6 × 152,4 mm)
+	9 digit, A letter, O letter or digit, X any character	9 ψηφίο, A γράμμα, O γράμμα ή ψηφίο, X οποιοσδήποτε χαρακτήρας
+	; 1 page already had text	· 1 σελίδα περιείχε ήδη κείμενο
+	; failed: {list}	· αποτυχία: {list}
+	; {n} pages already had text	· {n} σελίδες περιείχαν ήδη κείμενο
+	? of {n}	? από {n}
+	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} αιτήματα συγχώνευσης, {commits} καταχωρίσεις, +{added} / −{deleted} γραμμές (Δ {delta}), +{bin_added} / −{bin_deleted} δυαδικά στοιχεία, {first} – {last}
+	`{command}` {when}	`{command}` {when}
+	a bookmark cannot be moved inside itself	ένας σελιδοδείκτης δεν μπορεί να μετακινηθεί μέσα στον εαυτό του
+	A button	Ένα κουμπί
+	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Μια εφαρμογή PDF ανοικτού κώδικα, αναπτυγμένη ανεξάρτητα σε Rust. Άδεια MIT ή Apache-2.0.
+	A diagonal CONFIDENTIAL watermark on every page.	Προσθέτει διαγώνιο υδατογράφημα «ΕΜΠΙΣΤΕΥΤΙΚΟ» σε κάθε σελίδα.
+	a document must keep at least one page	το έγγραφο πρέπει να διατηρεί τουλάχιστον μία σελίδα
+	A document needs at least one page: copy instead	Ένα έγγραφο πρέπει να έχει τουλάχιστον μία σελίδα: χρησιμοποιήστε αντιγραφή
+	A form field has additional actions	Ένα πεδίο φόρμας περιέχει πρόσθετες ενέργειες
+	A link	Ένας σύνδεσμος
+	A script	Μια δέσμη ενεργειών
+	A selected field has no widget on any page, so the fields can't be edited together.	Ένα επιλεγμένο πεδίο δεν διαθέτει στοιχείο ελέγχου σε καμία σελίδα, επομένως τα πεδία δεν μπορούν να επεξεργαστούν μαζί.
+	A stream refers to an external file	Μια ροή παραπέμπει σε εξωτερικό αρχείο
+	A stream uses LZW compression	Μια ροή χρησιμοποιεί συμπίεση LZW
+	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Η σύνοψη περιγράφει τον σκοπό και τη διάταξη του πίνακα. Προσθέστε ιδιότητα «Σύνοψη» σε κάθε πίνακα.
+	About PdfCraft	Σχετικά με το PdfCraft
+	Accepted	Αποδεκτό
+	Accessibility Checker	Έλεγχος προσβασιμότητας
+	Accessibility Checker Options	Επιλογές ελέγχου προσβασιμότητας
+	Accessibility permission flag	Σήμανση άδειας προσβασιμότητας
+	Accessibility permission flag is set	Η άδεια προσβασιμότητας είναι ενεργοποιημένη
+	Acrobat 3.0 and later (40-bit RC4)	Acrobat 3.0 και νεότερες εκδόσεις (RC4 40 bit)
+	Acrobat 5.0 and later (128-bit RC4)	Acrobat 5.0 και νεότερες εκδόσεις (RC4 128 bit)
+	Acrobat 7.0 and later (128-bit AES)	Acrobat 7.0 και νεότερες εκδόσεις (AES 128 bit)
+	Acrobat X and later (256-bit AES)	Acrobat X και νεότερες εκδόσεις (AES 256 bit)
+	Action name:	Όνομα ενέργειας:
+	Action Wizard	Οδηγός ενεργειών
+	Action Wizard…	Οδηγός ενεργειών…
+	Actions list	Λίστα ενεργειών
+	Actual size	Πραγματικό μέγεθος
+	Actual text	Πραγματικό κείμενο
+	Add a button	Προσθήκη κουμπιού
+	Add a callout	Προσθήκη επεξηγηματικού πλαισίου
+	Add a checkbox	Προσθήκη πλαισίου ελέγχου
+	Add a date field	Προσθήκη πεδίου ημερομηνίας
+	Add a digital signature field	Προσθήκη πεδίου ψηφιακής υπογραφής
+	Add a drop-down list	Προσθήκη αναπτυσσόμενης λίστας
+	Add a list box	Προσθήκη πλαισίου λίστας
+	Add a radio button	Προσθήκη κουμπιού επιλογής
+	Add a reply	Προσθήκη απάντησης
+	Add a stamp	Προσθήκη σφραγίδας
+	Add a sticky note	Προσθήκη αυτοκόλλητης σημείωσης
+	Add a sticky note here	Προσθήκη σημείωσης εδώ
+	Add a text box	Προσθήκη πλαισίου κειμένου
+	Add a text field	Προσθήκη πεδίου κειμένου
+	Add alternate text	Προσθήκη εναλλακτικού κειμένου
+	Add alternate text…	Προσθήκη εναλλακτικού κειμένου…
+	Add an Action	Προσθήκη ενέργειας
+	Add an image field	Προσθήκη πεδίου εικόνας
+	Add arrow	Προσθήκη βέλους
+	Add at least two files	Προσθέστε τουλάχιστον δύο αρχεία
+	Add background	Προσθήκη φόντου
+	Add background…	Προσθήκη φόντου…
+	Add Bates numbering…	Προσθήκη αρίθμησης Bates…
+	Add bookmark	Προσθήκη σελιδοδείκτη
+	Add callout	Προσθήκη πλαισίου επεξήγησης
+	Add checkmark	Προσθήκη σημαδιού επιλογής
+	Add cloud	Προσθήκη σύννεφου
+	Add comment	Προσθήκη σχολίου
+	Add comments	Προσθήκη σχολίων
+	Add connected lines	Προσθήκη συνδεδεμένων γραμμών
+	Add content	Προσθήκη περιεχομένου
+	Add cross	Προσθήκη σταυρού
+	Add dot	Προσθήκη τελείας
+	Add drawing	Προσθήκη σχεδίου
+	Add field	Προσθήκη πεδίου
+	Add file attachment	Προσθήκη συνημμένου αρχείου
+	Add files to combine	Προσθήκη αρχείων για συνδυασμό
+	Add files…	Προσθήκη αρχείων…
+	Add folder	Προσθήκη φακέλου
+	Add folder and subfolders	Προσθήκη φακέλου και υποφακέλων
+	Add folder and subfolders…	Προσθήκη φακέλου και υποφακέλων…
+	Add folder…	Προσθήκη φακέλου…
+	Add footer	Προσθήκη υποσέλιδου
+	Add form components	Προσθήκη στοιχείων φόρμας
+	Add header	Προσθήκη κεφαλίδας
+	Add header & footer	Προσθήκη κεφαλίδας και υποσέλιδου
+	Add header & footer…	Προσθήκη κεφαλίδας και υποσέλιδου…
+	Add highlight	Προσθήκη επισήμανσης
+	Add image	Προσθήκη εικόνας
+	Add image…	Προσθήκη εικόνας…
+	Add inserted text	Προσθήκη εισαγόμενου κειμένου
+	Add line	Προσθήκη γραμμής
+	Add link	Προσθήκη συνδέσμου
+	Add open documents	Προσθήκη ανοικτών εγγράφων
+	Add or edit links	Προσθήκη ή επεξεργασία συνδέσμων
+	Add oval	Προσθήκη έλλειψης
+	Add Page Numbers	Προσθήκη αρίθμησης σελίδων
+	Add polygon	Προσθήκη πολυγώνου
+	Add printer marks	Προσθήκη σημαδιών εκτύπωσης
+	Add rectangle	Προσθήκη ορθογωνίου
+	Add redaction mark	Προσθήκη σήμανσης απόκρυψης
+	Add search index	Προσθήκη ευρετηρίου αναζήτησης
+	Add signature	Προσθήκη υπογραφής
+	Add squiggly underline	Προσθήκη κυματιστής υπογράμμισης
+	Add stamp	Προσθήκη σφραγίδας
+	Add Step	Προσθήκη βήματος
+	Add sticky note	Προσθήκη αυτοκόλλητης σημείωσης
+	Add strikethrough	Προσθήκη διακριτής διαγραφής
+	Add text	Προσθήκη κειμένου
+	Add text box	Προσθήκη πλαισίου κειμένου
+	Add the choices people pick from.	Προσθέστε τις διαθέσιμες επιλογές για τους χρήστες.
+	Add the files to combine	Προσθέστε τα αρχεία προς συνδυασμό
+	Add the PDFs to combine	Προσθέστε τα PDF που θέλετε να συνδυάσετε
+	Add the steps this action runs, in order.	Προσθέστε με τη σειρά τα βήματα που εκτελεί αυτή η ενέργεια.
+	Add to Trusted Certificates	Προσθήκη στα αξιόπιστα πιστοποιητικά
+	Add to trusted certificates	Προσθήκη στα αξιόπιστα πιστοποιητικά
+	Add underline	Προσθήκη υπογράμμισης
+	Add watermark	Προσθήκη υδατογραφήματος
+	Add watermark…	Προσθήκη υδατογραφήματος…
+	Add {what}	Προσθήκη {what}
+	Added 1 comment	Προστέθηκε 1 σχόλιο
+	Added more than once	Προστέθηκε περισσότερες από μία φορές
+	Added the first {n} files in {folder}	Προστέθηκαν τα πρώτα {n} αρχεία από το {folder}
+	Added the first {n} PDFs in {folder}	Προστέθηκαν τα πρώτα {n} PDF του φακέλου {folder}
+	Added {n} comments	Προστέθηκαν {n} σχόλια
+	Adding images arrives on the web with file pickers for images	Η προσθήκη εικόνων θα διατεθεί στη διαδικτυακή έκδοση με επιλογή αρχείων εικόνας
+	Adds invisible text over each word; the page image is not changed	Προσθέτει αόρατο κείμενο πάνω από κάθε λέξη, χωρίς να αλλάζει την εικόνα της σελίδας
+	Advanced optimization	Σύνθετη βελτιστοποίηση
+	Advanced options	Σύνθετες επιλογές
+	Advanced Options {chevron}	Σύνθετες επιλογές {chevron}
+	Advanced search…	Σύνθετη αναζήτηση…
+	AI assistant	Βοηθός τεχνητής νοημοσύνης
+	Algorithm	Αλγόριθμος
+	Align fields	Στοίχιση πεδίων
+	All annotations are tagged	Όλα τα σχόλια έχουν ετικέτες δομής
+	All document contents	Όλο το περιεχόμενο του εγγράφου
+	All document contents except metadata	Όλο το περιεχόμενο του εγγράφου εκτός από τα μεταδεδομένα
+	All form fields are tagged	Όλα τα πεδία φόρμας έχουν ετικέτες δομής
+	All form fields have description	Όλα τα πεδία φόρμας έχουν περιγραφή
+	All multimedia objects are tagged	Όλα τα αντικείμενα πολυμέσων έχουν ετικέτες δομής
+	All open documents	Όλα τα ανοικτά έγγραφα
+	All page content is tagged	Όλο το περιεχόμενο των σελίδων έχει ετικέτες δομής
+	All pages in document	Όλες οι σελίδες του εγγράφου
+	All pages in range	Όλες οι σελίδες του εύρους
+	All tools	Όλα τα εργαλεία
+	Allow	Να επιτραπεί
+	Allow Rich Text Formatting	Να επιτρέπεται μορφοποίηση εμπλουτισμένου κειμένου
+	Allow user to enter custom text	Να επιτρέπεται η εισαγωγή προσαρμοσμένου κειμένου
+	Allowed	Επιτρέπεται
+	already a PDF	είναι ήδη PDF
+	Also recognize pages that already have text	Αναγνώριση και σελίδων που έχουν ήδη κείμενο
+	Alternate Text	Εναλλακτικό κείμενο
+	Alternate text	Εναλλακτικό κείμενο
+	Alternate text inside an element that already has alternate text is never read. Remove the inner alternate text.	Το εναλλακτικό κείμενο μέσα σε στοιχείο που διαθέτει ήδη εναλλακτικό κείμενο δεν αναγιγνώσκεται. Αφαιρέστε το εσωτερικό.
+	Alternate text must be associated with some content	Το εναλλακτικό κείμενο πρέπει να συνδέεται με περιεχόμενο
+	Alternate text on an element that contains a link or field hides that annotation from assistive technology. Move the alternate text.	Το εναλλακτικό κείμενο σε στοιχείο που περιέχει σύνδεσμο ή πεδίο αποκρύπτει αυτό το στοιχείο από τις βοηθητικές τεχνολογίες. Μετακινήστε το εναλλακτικό κείμενο.
+	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Το εναλλακτικό κείμενο στοιχείου χωρίς περιεχόμενο σελίδας δεν είναι προσβάσιμο. Αφαιρέστε το ή συνδέστε το στοιχείο με περιεχόμενο.
+	Alternate text should not hide annotation	Το εναλλακτικό κείμενο δεν πρέπει να αποκρύπτει σχόλια
+	Alternate text that will never be read	Εναλλακτικό κείμενο που δεν θα αναγνωστεί ποτέ
+	An action is already running	Μια ενέργεια εκτελείται ήδη
+	An action with this name already exists.	Υπάρχει ήδη ενέργεια με αυτό το όνομα.
+	An embedded file has no AFRelationship	Ένα ενσωματωμένο αρχείο δεν έχει ορισμένο AFRelationship
+	An image asks to be interpolated	Μια εικόνα απαιτεί παρεμβολή
+	An image has alternates or OPI information	Μια εικόνα περιέχει εναλλακτικές εκδόσεις ή πληροφορίες OPI
+	An open-source PDF workbench — local, private, and scriptable.	Ένα εργαλείο PDF ανοιχτού κώδικα — τοπικό, ιδιωτικό και αυτοματοποιήσιμο.
+	and {n} more	και {n} ακόμη
+	Animation that flashes can cause seizures. Check scripts and media for flicker.	Οι κινούμενες εικόνες με έντονο αναβόσβημα μπορεί να προκαλέσουν επιληπτικές κρίσεις. Ελέγξτε τα σενάρια και τα πολυμέσα για τρεμόπαιγμα.
+	Annotations, form fill-in, and digital signatures	Σημειώσεις, συμπλήρωση φορμών και ψηφιακές υπογραφές
+	Another file dialog is still open. Finish with it first.	Ένα άλλο παράθυρο επιλογής αρχείου παραμένει ανοιχτό. Ολοκληρώστε πρώτα τη διαδικασία εκεί.
+	Any except extracting pages	Όλες εκτός από την εξαγωγή σελίδων
+	Anyone opening the document will need this password. It's applied when you save.	Όποιος ανοίγει το έγγραφο θα χρειάζεται αυτόν τον κωδικό. Η προστασία εφαρμόζεται κατά την αποθήκευση.
+	Appear behind page	Εμφάνιση πίσω από τη σελίδα
+	Appear on top of page	Εμφάνιση πάνω από τη σελίδα
+	Appearance mode	Λειτουργία εμφάνισης
+	Appearance settings…	Ρυθμίσεις εμφάνισης…
+	Applied 1 redaction mark. Save to remove the content from the file.	Εφαρμόστηκε 1 επισήμανση απόκρυψης. Αποθηκεύστε για να αφαιρεθεί το περιεχόμενο από το αρχείο.
+	Applied {n} redaction marks. Save to remove the content from the file.	Εφαρμόστηκαν {n} επισημάνσεις απόκρυψης. Αποθηκεύστε για να αφαιρεθεί το περιεχόμενο από το αρχείο.
+	Applies to 1 page	Εφαρμόζεται σε 1 σελίδα
+	Applies to {n} pages	Εφαρμόζεται σε {n} σελίδες
+	Apply PDF standards	Εφαρμογή προτύπων PDF
+	Apply redactions	Εφαρμογή οριστικών αποκρύψεων
+	Apply redactions…	Εφαρμογή οριστικών αποκρύψεων…
+	Apply scale	Εφαρμογή κλίμακας
+	Appropriate nesting	Σωστή εμφώλευση
+	April	Απρίλιος
+calendar date	April	Απρίλιος
+	Arbitrary Mask	Προσαρμοσμένη μάσκα
+	Archive documents	Αρχειοθέτηση εγγράφων
+	Ask about this document	Ερώτηση σχετικά με αυτό το έγγραφο
+	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Αναζητά την τελευταία έκδοση στο GitHub. Δεν γίνεται αυτόματα λήψη ή εγκατάσταση.
+	Associated with content	Συσχέτιση με περιεχόμενο
+	At least one signature has problems.	Τουλάχιστον μία υπογραφή παρουσιάζει προβλήματα.
+	At least one signature is invalid.	Τουλάχιστον μία υπογραφή είναι μη έγκυρη.
+	At most	Το πολύ
+	Attach a file	Επισύναψη αρχείου
+	Attach file	Επισύναψη αρχείου
+	Attachment	Συνημμένο
+	Attachments	Συνημμένα
+	Attachments Panel and Page	Πίνακας συνημμένων και σελίδα
+	Audit space usage	Ανάλυση χρήσης χώρου
+	Audit space usage…	Έλεγχος χρήσης χώρου…
+	August	Αύγουστος
+calendar date	August	Αύγουστος
+	Auto follows the system's text size. Pages always render at the display's full resolution.	Η αυτόματη ρύθμιση ακολουθεί το μέγεθος κειμένου του συστήματος. Οι σελίδες αποδίδονται πάντα στην πλήρη ανάλυση της οθόνης.
+	Auto portrait/landscape	Αυτόματα κατακόρυφος/οριζόντιος
+	Auto-rotate pages	Αυτόματη περιστροφή σελίδων
+	Auto-size text to fit redaction region	Αυτόματη προσαρμογή μεγέθους κειμένου στην περιοχή απόκρυψης
+	Automatically tag PDF	Αυτόματη προσθήκη ετικετών δομής PDF
+	average	μέσος όρος
+	Back	Πίσω
+	Back side only	Μόνο η πίσω όψη
+	Back to all tools	Επιστροφή σε όλα τα εργαλεία
+	Back to the document	Επιστροφή στο έγγραφο
+	background	φόντο
+	Basic constraints	Βασικοί περιορισμοί
+	Bates numbering	Αρίθμηση Bates
+	Before each selected page (select pages in Organize)	Πριν από κάθε επιλεγμένη σελίδα (επιλέξτε σελίδες στην Οργάνωση)
+	Before the number	Πριν από τον αριθμό
+	Beveled	Λοξότμητο
+	Bicubic downsampling to	Δικυβική μείωση ανάλυσης σε
+	Binary assets removed	Δυαδικά στοιχεία που αφαιρέθηκαν
+	Binding	Βιβλιοδεσία
+	Binding:	Βιβλιοδεσία:
+	Black on white	Μαύρο σε λευκό
+	Blank page	Κενή σελίδα
+	Booklet	Φυλλάδιο
+	Booklet subset:	Επιλογή όψεων φυλλαδίου:
+	Bookmark options	Επιλογές σελιδοδεικτών
+	Bookmarks	Σελιδοδείκτες
+	Bookmarks are present in large documents	Υπάρχουν σελιδοδείκτες σε μεγάλα έγγραφα
+	Bookmarks Panel and Page	Πίνακας σελιδοδεικτών και σελίδα
+	Border Color:	Χρώμα περιγράμματος:
+	Borders and Colors	Περιγράμματα και χρώματα
+	Both sides	Και οι δύο όψεις
+	Box	Πλαίσιο
+	Bring your own model (off by default)	Χρήση δικού σας μοντέλου (απενεργοποιημένο από προεπιλογή)
+	Browser's print dialog	Παράθυρο εκτύπωσης του προγράμματος περιήγησης
+	Butt	Επίπεδο άκρο
+	Button	Κουμπί
+	Button is checked by default	Το κουμπί είναι προεπιλεγμένο
+	Button Properties	Ιδιότητες κουμπιού
+	Button Style:	Στυλ κουμπιού:
+	Buttons with the same name and value are selected in unison	Τα κουμπιά με ίδιο όνομα και τιμή επιλέγονται μαζί
+	Bytes	Byte
+	Calibrate from two points	Βαθμονόμηση με δύο σημεία
+	Callout	Πλαίσιο επεξήγησης
+	Can't be read: {e}	Δεν είναι δυνατή η ανάγνωση: {e}
+	Cancelled	Ακυρώθηκε
+	Cancelling…	Ακύρωση…
+	Case-sensitive	Διάκριση πεζών/κεφαλαίων
+	Center Footer Text	Κείμενο κεντρικού υποσέλιδου
+	Center Header Text	Κείμενο κεντρικής κεφαλίδας
+	Center horizontally	Οριζόντιο κεντράρισμα
+	Center vertically	Κατακόρυφο κεντράρισμα
+	Center window on screen	Κεντράρισμα παραθύρου στην οθόνη
+	Centre	Κεντράρισμα
+	Certificate authority	Αρχή πιστοποίησης
+	Certificate Viewer	Προβολή πιστοποιητικού
+	Certificates	Πιστοποιητικά
+	Certified by {by}	Πιστοποιήθηκε από {by}
+	Certify	Πιστοποίηση
+	Certify (invisible signature)	Πιστοποίηση (αόρατη υπογραφή)
+	Certify (visible signature)	Πιστοποίηση (ορατή υπογραφή)
+	Change comment properties	Αλλαγή ιδιοτήτων σχολίου
+	Change document properties	Αλλαγή ιδιοτήτων εγγράφου
+	Change field properties	Αλλαγή ιδιοτήτων πεδίου
+	Change initial view	Αλλαγή αρχικής προβολής
+	Change initials	Αλλαγή μονογραφής
+	Change link properties	Αλλαγή ιδιοτήτων συνδέσμου
+	Change reading options	Αλλαγή επιλογών ανάγνωσης
+	Change reading options…	Αλλαγή επιλογών ανάγνωσης…
+	Change settings…	Αλλαγή ρυθμίσεων…
+	Change signature	Αλλαγή υπογραφής
+	Change tag properties	Αλλαγή ιδιοτήτων ετικέτας
+	Change the colour of line art as well as text	Αλλαγή χρώματος και στα γραμμικά σχέδια, όχι μόνο στο κείμενο
+	Change {key}	Αλλαγή {key}
+	Change {what}	Αλλαγή {what}
+	Changes allowed	Επιτρεπόμενες αλλαγές
+	Changing the document	Τροποποίηση εγγράφου
+	Character encoding	Κωδικοποίηση χαρακτήρων
+	Character limit 0 means no limit. A comb of characters needs a limit.	Το όριο 0 σημαίνει απεριόριστους χαρακτήρες. Η διάταξη χαρακτήρων σε χωριστά πλαίσια απαιτεί όριο.
+	Character limit:	Όριο χαρακτήρων:
+	Character spacing	Απόσταση χαρακτήρων
+	characters	χαρακτήρες
+	Characters without spaces	Χαρακτήρες χωρίς κενά
+	Check	Σημάδι επιλογής
+	Check Again	Επανέλεγχος
+	Check again	Επανέλεγχος
+	Check box is checked by default	Το πλαίσιο ελέγχου είναι προεπιλεγμένο
+	Check Box Properties	Ιδιότητες πλαισίου ελέγχου
+	Check Box Style:	Στυλ πλαισίου ελέγχου:
+	Check for accessibility	Έλεγχος προσβασιμότητας
+	Check for accessibility…	Έλεγχος προσβασιμότητας…
+	Check for updates…	Έλεγχος για ενημερώσεις…
+	Check spelling	Ορθογραφικός έλεγχος
+	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Ελέγξτε ότι οι ετικέτες ακολουθούν τη σειρά ανάγνωσης ενός βλέποντος χρήστη. Χρησιμοποιήστε το εργαλείο «Σειρά ανάγνωσης» ή τον πίνακα «Ετικέτες» για διόρθωση.
+	Check the pages	Έλεγχος σελίδων
+	Check the pages of {name}: {why}	Ελέγξτε τις σελίδες του {name}: {why}
+	CheckBox	Πλαίσιο ελέγχου
+	Checkbox	Πλαίσιο ελέγχου
+	Checked	Επιλεγμένο
+	Checking for a newer version…	Έλεγχος για νεότερη έκδοση…
+	Checking Options ({on} of 32 in all categories)	Επιλογές ελέγχου ({on} από 32 σε όλες τις κατηγορίες)
+	Checkmark	Σημάδι επιλογής
+	Choose a folder for the exported files	Επιλέξτε φάκελο για τα εξαγόμενα αρχεία
+	Choose a folder for the extracted pages	Επιλέξτε φάκελο για τις εξαγόμενες σελίδες
+	Choose a folder for the results	Επιλέξτε φάκελο για τα αποτελέσματα
+	Choose a folder for the searchable files	Επιλέξτε φάκελο για τα αρχεία με δυνατότητα αναζήτησης
+	Choose a folder for the split files	Επιλέξτε φάκελο για τα διαχωρισμένα αρχεία
+	Choose a folder on this computer to pin	Επιλέξτε έναν φάκελο από αυτόν τον υπολογιστή για καρφίτσωμα
+	Choose a layout:	Επιλέξτε διάταξη:
+	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Επιλέξτε εικόνα PNG ή JPEG (έως 4 MiB). Η διαφάνεια διατηρείται.
+	Choose a stamp, then click on the page to place it.	Επιλέξτε μια σφραγίδα και έπειτα κάντε κλικ στη σελίδα για να την τοποθετήσετε.
+	Choose an image	Επιλογή εικόνας
+	Choose images	Επιλέξτε εικόνες
+	Choose image…	Επιλογή εικόνας…
+	Choose photo…	Επιλογή φωτογραφίας…
+	Choose the digital ID that you want to use for signing:	Επιλέξτε την ψηφιακή ταυτότητα με την οποία θέλετε να υπογράψετε:
+	Clean Up	Εκκαθάριση
+	Clean-up	Καθαρισμός
+	Clear all	Εκκαθάριση όλων
+	Clear form	Εκκαθάριση φόρμας
+	Clear redaction marks	Απαλοιφή επισημάνσεων απόκρυψης
+	Clear selection / close find	Κατάργηση επιλογής / κλείσιμο αναζήτησης
+	Click on the page to add a {tool}, or drag to set its size	Κάντε κλικ στη σελίδα για προσθήκη {tool} ή σύρετε για να ορίσετε το μέγεθος
+	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Κάντε κλικ στη σελίδα για να προσθέσετε κείμενο· κάθε κλικ δημιουργεί νέο πλαίσιο και το ✓ ολοκληρώνει την εισαγωγή. Σύρετε τα στοιχεία για μετακίνηση, μια γωνία για αλλαγή μεγέθους ή κάντε διπλό κλικ στο κείμενο για επεξεργασία.
+	Click text or an image to edit it	Κάντε κλικ σε κείμενο ή εικόνα για επεξεργασία
+	Click the first point to begin.	Κάντε κλικ στο πρώτο σημείο για να ξεκινήσετε.
+	Click to sort, drag to move the column. Drag its edge to resize it.	Κάντε κλικ για ταξινόμηση ή σύρετε τη στήλη για μετακίνηση. Σύρετε το άκρο της για αλλαγή πλάτους.
+	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	Κάντε κλικ στις κορυφές. Με Enter ή διπλό κλικ ολοκληρώνεται η περίμετρος ή το εμβαδόν. Κάντε κλικ στο πρώτο σημείο για να κλείσετε την περιοχή.
+	Clockwise 90 degrees	90 μοίρες δεξιόστροφα
+	Close all	Κλείσιμο όλων
+	Close file	Κλείσιμο αρχείου
+	Close panel	Κλείσιμο πίνακα
+	Close Tab	Κλείσιμο καρτέλας
+	Closed arrow	Κλειστή αιχμή βέλους
+	Cloud	Σύννεφο
+	Collapse all	Σύμπτυξη όλων
+	Collapse all bookmarks	Σύμπτυξη όλων των σελιδοδεικτών
+	Collapse all pages	Σύμπτυξη όλων των σελίδων
+	Collapse tag	Σύμπτυξη ετικέτας
+	Collate	Συρραφή αντιγράφων
+	Color contrast	Αντίθεση χρωμάτων
+	Color Images	Έγχρωμες εικόνες
+	Color Spaces	Χρωματικοί χώροι
+	Colours are remapped while rendering; the document itself never changes.	Τα χρώματα αντιστοιχίζονται εκ νέου κατά την απόδοση· το ίδιο το έγγραφο δεν αλλάζει ποτέ.
+	Column select	Επιλογή στήλης
+	Comb of	Διαχωρισμός σε θέσεις
+	Comb of characters	Χαρακτήρες σε χωριστά πλαίσια
+	Combine files	Συνδυασμός αρχείων
+	Combine files…	Συνένωση αρχείων…
+	Combine the rest	Συνδυασμός των υπολοίπων
+	Combined {n} files	Συνδυάστηκαν {n} αρχεία
+	Combo	Αναπτυσσόμενη λίστα
+	Coming in milestone	Θα διατεθεί στο ορόσημο
+	Coming in milestone {m}. Items marked Ready work today.	Αναμένεται στο ορόσημο {m}. Τα στοιχεία με ένδειξη «Έτοιμο» λειτουργούν ήδη.
+	Comment and form data	Δεδομένα σχολίων και φόρμας
+	Comment list	Λίστα σχολίων
+	Commenting	Προσθήκη σχολίων
+	Commenting, filling in form fields, and signing existing signature fields	Προσθήκη σχολίων, συμπλήρωση πεδίων φόρμας και υπογραφή υπαρχόντων πεδίων υπογραφής
+	Comments & Forms	Σχόλια και φόρμες
+	Comments and markups	Σχόλια και επισημάνσεις
+	Comments only	Μόνο σχόλια
+	Comments panel	Πίνακας σχολίων
+	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Τα σχόλια, οι σύνδεσμοι και τα πεδία πρέπει να περιλαμβάνονται στο δέντρο ετικετών για να αναγγέλλονται. Προσθέστε τους ετικέτες.
+	Commit selected value immediately	Άμεση καταχώριση της επιλεγμένης τιμής
+	Common Properties	Κοινές ιδιότητες
+	Compare Files	Σύγκριση αρχείων
+	Compare files	Σύγκριση αρχείων
+	Compare files…	Σύγκριση αρχείων…
+	Compare this file with an older version: Compare files… in All tools.	Συγκρίνετε αυτό το αρχείο με παλαιότερη έκδοση: «Σύγκριση αρχείων…» στα «Όλα τα εργαλεία».
+	Completed	Ολοκληρώθηκε
+	Compress a PDF	Συμπίεση PDF
+	Compress document structure (object streams)	Συμπίεση δομής εγγράφου (ροές αντικειμένων)
+	Configure a Digital ID for Signing	Ρύθμιση ψηφιακής ταυτότητας για υπογραφή
+	Configure New Digital ID	Ρύθμιση νέας ψηφιακής ταυτότητας
+	Confirm Password	Επιβεβαίωση κωδικού πρόσβασης
+	Conformance level:	Επίπεδο συμμόρφωσης:
+	Connected lines	Συνδεδεμένες γραμμές
+	Console	Κονσόλα
+	Content copying	Αντιγραφή περιεχομένου
+	Content copying for accessibility	Αντιγραφή περιεχομένου για προσβασιμότητα
+	Content Streams	Ροές περιεχομένου
+	Continuous scrolling	Συνεχής κύλιση
+	Convert colors	Μετατροπή χρωμάτων
+	Copied {what}	Αντιγράφηκε: {what}
+	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Τα αντίγραφα, η εκτύπωση διπλής όψης και το χρώμα επιλέγονται στο παράθυρο εκτύπωσης του προγράμματος περιήγησης.
+	Copy or cut pages first	Αντιγράψτε ή αποκόψτε πρώτα σελίδες
+	Copy pages	Αντιγραφή σελίδων
+	Copy selected text	Αντιγραφή επιλεγμένου κειμένου
+	Copy text	Αντιγραφή κειμένου
+	Correct recognized text	Διόρθωση αναγνωρισμένου κειμένου
+	Could not save: {e}	Δεν ήταν δυνατή η αποθήκευση: {e}
+	Couldn't add {name}: {e}	Δεν ήταν δυνατή η προσθήκη του {name}: {e}
+	Couldn't check for updates: {e}	Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις: {e}
+	Couldn't combine files: {e}	Δεν ήταν δυνατός ο συνδυασμός αρχείων: {e}
+	Couldn't create a PDF: {e}	Δεν ήταν δυνατή η δημιουργία PDF: {e}
+	Couldn't download {name}: {e}	Δεν ήταν δυνατή η λήψη του {name}: {e}
+	Couldn't extract pages: {e}	Δεν ήταν δυνατή η εξαγωγή σελίδων: {e}
+	Couldn't fit the visible content: {e}	Δεν ήταν δυνατή η προσαρμογή του ορατού περιεχομένου: {e}
+	Couldn't follow linked PDF: {reason}	Δεν ήταν δυνατό να ανοίξει το συνδεδεμένο PDF: {reason}
+	Couldn't import the signature image: {e}	Δεν ήταν δυνατή η εισαγωγή της εικόνας υπογραφής: {e}
+	Couldn't open revision {n}: {e}	Δεν ήταν δυνατό το άνοιγμα της αναθεώρησης {n}: {e}
+	Couldn't open the printer's preferences: {e}	Δεν ήταν δυνατό το άνοιγμα των προτιμήσεων του εκτυπωτή: {e}
+	Couldn't open the result: {e}	Δεν ήταν δυνατό το άνοιγμα του αποτελέσματος: {e}
+	Couldn't open the signed version: {e}	Δεν ήταν δυνατό το άνοιγμα της υπογεγραμμένης έκδοσης: {e}
+	Couldn't optimize the file	Δεν ήταν δυνατή η βελτιστοποίηση του αρχείου
+	Couldn't optimize the file: {e}	Δεν ήταν δυνατή η βελτιστοποίηση του αρχείου: {e}
+	Couldn't print from the browser ({e}); downloaded {name} to print instead	Δεν ήταν δυνατή η εκτύπωση από το πρόγραμμα περιήγησης ({e}); έγινε λήψη του {name} για εκτύπωση
+	Couldn't read {name}: {e}	Δεν ήταν δυνατή η ανάγνωση του {name}: {e}
+	Couldn't recover {name}: {e}	Δεν ήταν δυνατή η ανάκτηση του {name}: {e}
+	Couldn't reload {name}: {e}	Δεν ήταν δυνατή η επαναφόρτωση του {name}: {e}
+	Couldn't save the image: {e}	Δεν ήταν δυνατή η αποθήκευση της εικόνας: {e}
+	Couldn't save {name}: {e}	Δεν ήταν δυνατή η αποθήκευση του {name}: {e}
+	Couldn't save: {e}	Δεν ήταν δυνατή η αποθήκευση: {e}
+	Couldn't show the file picker. Please try again.	Δεν ήταν δυνατή η εμφάνιση του παραθύρου επιλογής αρχείου. Δοκιμάστε ξανά.
+	Couldn't split: {e}	Δεν ήταν δυνατός ο διαχωρισμός: {e}
+	Couldn't summarize comments: {e}	Δεν ήταν δυνατή η σύνοψη σχολίων: {e}
+	Couldn't take the snapshot: {e}	Δεν ήταν δυνατή η λήψη στιγμιότυπου: {e}
+	Couldn't unlock {name}: {e}	Δεν ήταν δυνατό το ξεκλείδωμα του {name}: {e}
+	Couldn't use the photo: {e}	Δεν ήταν δυνατή η χρήση της φωτογραφίας: {e}
+	Couldn't use {name}: {e}	Δεν ήταν δυνατή η χρήση του {name}: {e}
+	Couldn't write {name}: {e}	Δεν ήταν δυνατή η εγγραφή του {name}: {e}
+	Couldn't write {path}: {e}	Δεν ήταν δυνατή η εγγραφή στο {path}: {e}
+	Counterclockwise 90 degrees	90 μοίρες αριστερόστροφα
+	Counting words… {n} pages read	Καταμέτρηση λέξεων… αναγνώστηκαν {n} σελίδες
+	Country/Region	Χώρα/Περιοχή
+	Create a new Digital ID (self-signed, saved to a password-protected file)	Δημιουργία νέας ψηφιακής ταυτότητας (αυτοϋπογεγραμμένης, αποθηκευμένης σε αρχείο με κωδικό πρόσβασης)
+	Create a PDF	Δημιουργία PDF
+	Create accessibility report	Δημιουργία αναφοράς προσβασιμότητας
+	Create Custom Stamp	Δημιουργία προσαρμοσμένης σφραγίδας
+	Create custom stamp…	Δημιουργία προσαρμοσμένης σφραγίδας…
+	Create from	Δημιουργία από
+	Create Link	Δημιουργία συνδέσμου
+	Create link	Δημιουργία συνδέσμου
+	Create links from URLs	Δημιουργία συνδέσμων από URL
+	Create Link…	Δημιουργία συνδέσμου…
+	Create PDF Comment Summary	Δημιουργία σύνοψης σχολίων PDF
+	Create PDF comment summary…	Δημιουργία σύνοψης σχολίων σε PDF…
+	Create PDF from clipboard	Δημιουργία PDF από το πρόχειρο
+	Create PDF from file…	Δημιουργία PDF από αρχείο…
+	Create PDF from images	Δημιουργία PDF από εικόνες
+	Create PDF from images…	Δημιουργία PDF από εικόνες…
+	Create PDF from multiple files…	Δημιουργία PDF από πολλά αρχεία…
+	Create separate PDFs…	Δημιουργία ξεχωριστών PDF…
+	Create {what}	Δημιουργία {what}
+	Created 1 link	Δημιουργήθηκε 1 σύνδεσμος
+	Created a comment summary	Δημιουργήθηκε σύνοψη σχολίων
+	Created a PDF from the first {n} files	Δημιουργήθηκε PDF από τα πρώτα {n} αρχεία
+	Created a PDF from {n} files	Δημιουργήθηκε PDF από {n} αρχεία
+	Created a PDF from {n} files; left out: {names}	Δημιουργήθηκε PDF από {n} αρχεία· παραλείφθηκαν: {names}
+	Created {n} links	Δημιουργήθηκαν {n} σύνδεσμοι
+	Creates 1 file from {n} pages.	Δημιουργεί 1 αρχείο από {n} σελίδες.
+	Creates {f} files from {n} pages.	Δημιουργεί {f} αρχεία από {n} σελίδες.
+	Creator	Δημιουργός
+	Credit Cards	Πιστωτικές κάρτες
+	Crop (% trimmed from each side)	Περικοπή (% αφαίρεσης από κάθε πλευρά)
+	Crop Image	Περικοπή εικόνας
+	Crop page	Περικοπή σελίδας
+	Crop pages	Περικοπή σελίδων
+key	Ctrl	Ctrl
+	Currency symbol:	Σύμβολο νομίσματος:
+	Current page ({n})	Τρέχουσα σελίδα ({n})
+	Current page only	Μόνο η τρέχουσα σελίδα
+	Current page — type a page number or label (such as iv) and press Enter	Τρέχουσα σελίδα — πληκτρολογήστε αριθμό ή ετικέτα σελίδας (π.χ. iv) και πατήστε Enter
+	Custom font	Προσαρμοσμένη γραμματοσειρά
+	Custom scale:	Προσαρμοσμένη κλίμακα:
+	Custom stamps arrive on the web with file pickers for images	Οι προσαρμοσμένες σφραγίδες θα διατεθούν στη διαδικτυακή έκδοση με επιλογή αρχείων εικόνας
+	Custom text:	Προσαρμοσμένο κείμενο:
+	Custom:	Προσαρμοσμένο:
+	Cut and stack	Κοπή και στοίβαξη
+	Cut Image	Αποκοπή εικόνας
+	Cut marks	Σημάδια κοπής
+	Cut pages	Αποκοπή σελίδων
+	Cut {what}	Αποκόπηκε: {what}
+	Cuts each page to its printed area, turns it upright and fits it to the sheet without stretching. One label per sheet.	Περικόπτει κάθε σελίδα στην τυπωμένη περιοχή της, την ισιώνει και την προσαρμόζει στο φύλλο χωρίς παραμόρφωση. Μία ετικέτα ανά φύλλο.
+	Dark gray theme	Σκούρο γκρι θέμα
+	Dark theme	Σκούρο θέμα
+	Date field	Πεδίο ημερομηνίας
+	Date: 	Ημερομηνία: 
+	December	Δεκέμβριος
+calendar date	December	Δεκέμβριος
+	Decimal places:	Δεκαδικά ψηφία:
+	Decimals	Δεκαδικά ψηφία
+	Declared conformance: {shown}	Δηλωμένη συμμόρφωση: {shown}
+	Decorative figure	Διακοσμητική εικόνα
+	Default page display	Προεπιλεγμένη εμφάνιση σελίδων
+	Default Value:	Προεπιλεγμένη τιμή:
+	Default workspace mode	Προεπιλεγμένη λειτουργία χώρου εργασίας
+	Default zoom	Προεπιλεγμένη μεγέθυνση
+	Default:	Προεπιλογή:
+key	Delete	Διαγραφή
+	Delete bookmark	Διαγραφή σελιδοδείκτη
+	Delete comment	Διαγραφή σχολίου
+	Delete content	Διαγραφή περιεχομένου
+	Delete document JavaScript	Διαγραφή JavaScript εγγράφου
+	Delete field	Διαγραφή πεδίου
+	Delete image	Διαγραφή εικόνας
+	Delete link	Διαγραφή συνδέσμου
+	Delete page	Διαγραφή σελίδας
+	Delete page {label}	Διαγραφή σελίδας {label}
+	Delete pages	Διαγραφή σελίδων
+	Delete pages (Delete)	Διαγραφή σελίδων (Delete)
+	Delete pages after extracting	Διαγραφή σελίδων μετά την εξαγωγή
+	Delete selected fields	Διαγραφή επιλεγμένων πεδίων
+	Delete selected pages (Organize)	Διαγραφή επιλεγμένων σελίδων (Οργάνωση)
+	Delete stamp	Διαγραφή σφραγίδας
+	Delete {o}	Διαγραφή {o}
+	Describe the figure	Περιγράψτε την εικόνα
+	Detect form fields	Εντοπισμός πεδίων φόρμας
+	Detected 1 form field	Εντοπίστηκε 1 πεδίο φόρμας
+	Detected {n} form fields	Εντοπίστηκαν {n} πεδία φόρμας
+	Device colour is used, but there is no PDF/A output intent	Χρησιμοποιείται χρώμα συσκευής, αλλά δεν έχει οριστεί προφίλ εξόδου PDF/A
+	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Χρησιμοποιείται DeviceCMYK: απαιτείται προφίλ εξόδου CMYK (δεν προστίθεται αυτόματα)
+	Diagnostic details	Διαγνωστικές λεπτομέρειες
+	Digital ID	Ψηφιακή ταυτότητα
+	Digital ID password	Κωδικός πρόσβασης ψηφιακής ταυτότητας
+	Digital signature	Ψηφιακή υπογραφή
+	Digital Signature Properties	Ιδιότητες ψηφιακής υπογραφής
+	Digitally sign	Ψηφιακή υπογραφή
+	Digitally signed by	Ψηφιακή υπογραφή από
+	Discard all comments, forms and multimedia	Αφαίρεση όλων των σχολίων, φορμών και πολυμέσων
+	Discard all links, actions and JavaScript	Αφαίρεση όλων των συνδέσμων, ενεργειών και σεναρίων JavaScript
+	Discard all object data (file attachments)	Αφαίρεση όλων των δεδομένων αντικειμένων (συνημμένα αρχεία)
+	Discard alternate images	Αφαίρεση εναλλακτικών εικόνων
+	Discard bookmarks	Αφαίρεση σελιδοδεικτών
+	Discard document information and metadata	Αφαίρεση πληροφοριών και μεταδεδομένων εγγράφου
+	Discard document tags	Αφαίρεση ετικετών δομής εγγράφου
+	Discard embedded page thumbnails	Αφαίρεση ενσωματωμένων μικρογραφιών σελίδων
+	Discard embedded print settings	Αφαίρεση ενσωματωμένων ρυθμίσεων εκτύπωσης
+	Discard hidden layer content	Αφαίρεση περιεχομένου κρυφών επιπέδων
+	Discard hidden text	Αφαίρεση κρυφού κειμένου
+	Discard Objects	Αφαίρεση αντικειμένων
+	Discard private data of other applications	Αφαίρεση ιδιωτικών δεδομένων άλλων εφαρμογών
+	Discard this text (Esc)	Απόρριψη αυτού του κειμένου (Esc)
+	Discard User Data	Αφαίρεση δεδομένων χρήστη
+	Dismiss	Κλείσιμο ειδοποίησης
+	Display theme	Θέμα εμφάνισης
+	Distinguished name	Διακεκριμένο όνομα
+	Distribute fields	Ισοκατανομή πεδίων
+	DN: 	DN: 
+	Document actions	Ενέργειες εγγράφου
+	Document and markups	Έγγραφο και επισημάνσεις
+	Document and stamps	Έγγραφο και σφραγίδες
+	Document assembly	Σύνθεση εγγράφου
+	Document has appropriate color contrast	Το έγγραφο έχει κατάλληλη χρωματική αντίθεση
+	Document is not image-only PDF	Το PDF δεν αποτελείται αποκλειστικά από εικόνες
+	Document is tagged PDF	Το έγγραφο είναι PDF με ετικέτες δομής
+	Document JavaScripts	Σενάρια JavaScript εγγράφου
+	Document JavaScripts…	Σενάρια JavaScript εγγράφου…
+	Document language	Γλώσσα εγγράφου
+	Document Overhead	Επιπλέον δεδομένα εγγράφου
+	Document Properties	Ιδιότητες εγγράφου
+	Document properties ({key})	Ιδιότητες εγγράφου ({key})
+	Document properties (⌘D)	Ιδιότητες εγγράφου (⌘D)
+	Document properties…	Ιδιότητες εγγράφου…
+	Document sanitized. Save to finish: saving rewrites the whole file.	Το έγγραφο εκκαθαρίστηκε. Αποθηκεύστε για ολοκλήρωση: η αποθήκευση επανεγγράφει ολόκληρο το αρχείο.
+	Document structure provides a logical reading order	Η δομή του εγγράφου ορίζει λογική σειρά ανάγνωσης
+	Document title is showing in title bar	Ο τίτλος του εγγράφου εμφανίζεται στη γραμμή τίτλου
+	Documents and view	Έγγραφα και προβολή
+	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Τα έγγραφα με περισσότερες από 20 σελίδες χρειάζονται σελιδοδείκτες για πλοήγηση. Προσθέστε σελιδοδείκτες στις κύριες ενότητες.
+	Don't save	Να μην αποθηκευτεί
+	Done adding text	Τέλος προσθήκης κειμένου
+	Downloaded {name}	Έγινε λήψη του {name}
+@plural	Downloaded {n} PDF|Downloaded {n} PDFs	Λήφθηκε {n} PDF|Λήφθηκαν {n} PDF
+	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Η λήψη συνημμένων στη διαδικτυακή έκδοση θα διατεθεί με το M3.10 ({n} byte έτοιμα)
+	Downsample to	Μείωση ανάλυσης σε
+	DPI sets the printed page size without resampling the image.	Η τιμή DPI καθορίζει το μέγεθος της εκτυπωμένης σελίδας χωρίς επαναδειγματοληψία της εικόνας.
+	Drag a rectangle around the area to copy	Σύρετε για να ορίσετε την ορθογώνια περιοχή αντιγραφής
+	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Σύρετε για να ορίσετε περιοχή περικοπής· κάντε διπλό κλικ στη σελίδα για τις επιλογές πλαισίων σελίδας
+	Drag a rectangle to create a link; double-click a link to edit it	Σύρετε για να ορίσετε ορθογώνια περιοχή συνδέσμου· κάντε διπλό κλικ σε σύνδεσμο για επεξεργασία
+	Drag the corners onto the document's edges, then choose Enhance page.	Σύρετε τις γωνίες στις άκρες του εγγράφου και επιλέξτε Βελτίωση σελίδας.
+	Drag the selection to move it. Esc clears the selection.	Σύρετε την επιλογή για να τη μετακινήσετε. Το Esc καταργεί την επιλογή.
+	Drag to draw the area where the signature should appear.	Σύρετε για να σχεδιάσετε την περιοχή εμφάνισης της υπογραφής.
+	Drag to reorder	Σύρετε για αλλαγή σειράς
+	Draw a cloud	Σχεδίαση σύννεφου
+	Draw a line	Σχεδίαση γραμμής
+	Draw a polygon	Σχεδίαση πολυγώνου
+	Draw a rectangle	Σχεδίαση ορθογωνίου
+	Draw an arrow	Σχεδίαση βέλους
+	Draw an oval	Σχεδίαση έλλειψης
+	Draw connected lines	Σχεδίαση συνδεδεμένων γραμμών
+	Draw freehand	Σχεδίαση με ελεύθερο χέρι
+	Draw your {what} below.	Σχεδιάστε {what} παρακάτω.
+	Drawing	Σχεδίαση
+	Drawing scale	Κλίμακα σχεδίου
+	Drawing scale changes. Use Actual size for full-scale plans.	Η κλίμακα του σχεδίου αλλάζει. Για σχέδια σε πλήρη κλίμακα χρησιμοποιήστε το Πραγματικό μέγεθος.
+	Drop PDFs or folders here, or choose them.	Σύρετε εδώ PDF ή φακέλους ή επιλέξτε τα.
+	Drop PDFs, images, text files or folders here, or choose them.	Σύρετε εδώ PDF, εικόνες, αρχεία κειμένου ή φακέλους, ή επιλέξτε τα.
+	Drop-down list	Αναπτυσσόμενη λίστα
+	Dropdown Properties	Ιδιότητες αναπτυσσόμενης λίστας
+	Duplicate "{name}" onto:	Αντιγραφή του «{name}» σε:
+	Duplicate Field	Δημιουργία αντιγράφου πεδίου
+	Duplicate field	Δημιουργία αντιγράφου πεδίου
+	Duplicate page	Διπλασιασμός σελίδας
+	Duplicate pages	Δημιουργία αντιγράφων σελίδων
+	Dynamic XFA form laid out from its template: {pages}, {fields}.	Δυναμική φόρμα XFA με διάταξη από το πρότυπό της: {pages}, {fields}.
+	E-Sign	Ηλεκτρονική υπογραφή
+	e.g. en-US	π.χ. el-GR
+	e.g. My stamps	π.χ. Οι σφραγίδες μου
+	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Κάθε πεδίο χρειάζεται επεξηγηματικό κείμενο που αναφέρει τι πρέπει να συμπληρωθεί. Προσθέστε το στις Ιδιότητες πεδίου > Γενικά > Συμβουλή εργαλείου.
+	Each file holds as many of the {n} pages as fit.	Κάθε αρχείο περιέχει όσες από τις {n} σελίδες χωρούν.
+	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	Κάθε εικόνα μετριέται στο μέγεθος που προβάλλεται στις σελίδες και αντικαθίσταται μόνο εάν το αποτέλεσμα είναι μικρότερο.
+	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	Κάθε εικόνα εξάγεται μία φορά με όνομα βάσει του εγγράφου και της σελίδας. Οι εικόνες JPEG αποθηκεύονται χωρίς αλλαγές, οι υπόλοιπες ως PNG.
+	Earlier in tab order	Νωρίτερα στη σειρά μετακίνησης με Tab
+comment menu	Edit	Επεξεργασία
+	Edit a PDF	Επεξεργασία PDF
+	Edit Action	Επεξεργασία ενέργειας
+	Edit comment	Επεξεργασία σχολίου
+	Edit content	Επεξεργασία περιεχομένου
+	Edit document JavaScript	Επεξεργασία JavaScript εγγράφου
+	Edit fields	Επεξεργασία πεδίων
+	Edit image	Επεξεργασία εικόνας
+	Edit script of {name}	Επεξεργασία δέσμης ενεργειών του {name}
+	Edit text	Επεξεργασία κειμένου
+	Edit text & images	Επεξεργασία κειμένου και εικόνων
+	Edit text…	Επεξεργασία κειμένου…
+	Email Address	Διεύθυνση email
+	Email Addresses	Διευθύνσεις email
+	Embedded Files	Ενσωματωμένα αρχεία
+	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	Τα ενσωματωμένα αρχεία πρέπει να είναι επίσης PDF/A (για άλλους τύπους χρησιμοποιήστε PDF/A-3)
+	Enable Acrobat JavaScript	Ενεργοποίηση Acrobat JavaScript
+	Enable copying of text, images, and other content	Να επιτρέπεται η αντιγραφή κειμένου, εικόνων και άλλου περιεχομένου
+	Enable text access for screen reader devices for the visually impaired	Να επιτρέπεται η πρόσβαση στο κείμενο από προγράμματα ανάγνωσης οθόνης για άτομα με προβλήματα όρασης
+	Encrypt	Κρυπτογράφηση
+	Encrypt with certificate	Κρυπτογράφηση με πιστοποιητικό
+	Encryption	Κρυπτογράφηση
+key	End	Τέλος
+	End entity	Τελική οντότητα
+	Endpoints	Τελικά σημεία
+	Enhance camera image	Βελτίωση εικόνας κάμερας
+	Enhance page	Βελτίωση σελίδας
+	Enhance scanned file	Βελτίωση σαρωμένου αρχείου
+	Enter permissions password…	Εισαγωγή κωδικού δικαιωμάτων…
+	Enter the password that opens it	Εισαγάγετε τον κωδικό πρόσβασης για το άνοιγμά του
+	Enter the permissions password to allow combining	Εισαγάγετε τον κωδικό δικαιωμάτων για να επιτραπεί ο συνδυασμός
+	Entire page	Ολόκληρη η σελίδα
+	Erase	Σβήσιμο
+	Erase drawings	Σβήσιμο σχεδίων
+key	Esc	Esc
+	Even and Odd Pages	Ζυγές και μονές σελίδες
+	Even pages	Ζυγές σελίδες
+	Even Pages Only	Μόνο ζυγές σελίδες
+	Every PDF in the folder	Όλα τα PDF του φακέλου
+	Every PDF in the folder and the folders inside it	Όλα τα PDF του φακέλου και των υποφακέλων του
+	Every PDF, image and text file in the folder	Όλα τα PDF, οι εικόνες και τα αρχεία κειμένου του φακέλου
+	Every PDF, image and text file in the folder and the folders inside it	Όλα τα PDF, οι εικόνες και τα αρχεία κειμένου του φακέλου και των υποφακέλων του
+	Everything on a page must be tagged or marked as an artifact (decoration, headers, footers). Tag the untagged content.	Κάθε στοιχείο της σελίδας πρέπει να έχει ετικέτα δομής ή να επισημαίνεται ως διακοσμητικό (όπως κεφαλίδες και υποσέλιδα). Προσθέστε ετικέτες στο περιεχόμενο που δεν έχει.
+	Exclude image/OCR text	Εξαίρεση κειμένου εικόνων/OCR
+	Exclude images smaller than	Εξαίρεση εικόνων μικρότερων από
+	Exclude tagged code blocks	Εξαίρεση μπλοκ κώδικα με ετικέτες
+	Exclude tagged tables	Εξαίρεση πινάκων με ετικέτες
+	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	Οι εξαιρέσεις χρησιμοποιούν ετικέτες PDF. Οι πίνακες και ο κώδικας χωρίς ετικέτες παραμένουν στην καταμέτρηση. Η εξαίρεση εικόνων αφαιρεί και το αόρατο κείμενο.
+	Execute a menu item	Εκτέλεση εντολής μενού
+	Expand	Ανάπτυξη
+	Expand all	Ανάπτυξη όλων
+	Expand all bookmarks	Ανάπτυξη όλων των σελιδοδεικτών
+	Expand all pages	Ανάπτυξη όλων των σελίδων
+	Expand tag	Ανάπτυξη ετικέτας
+	Expand top-level bookmarks	Ανάπτυξη σελιδοδεικτών πρώτου επιπέδου
+	Explain	Επεξήγηση
+	Export a PDF	Εξαγωγή PDF
+	Export all comments to data file…	Εξαγωγή όλων των σχολίων σε αρχείο δεδομένων…
+	Export All Images	Εξαγωγή όλων των εικόνων
+	Export all images	Εξαγωγή όλων των εικόνων
+	Export all images…	Εξαγωγή όλων των εικόνων…
+	Export all to data file…	Εξαγωγή όλων σε αρχείο δεδομένων…
+	Export certificate	Εξαγωγή πιστοποιητικού
+	Export certificate…	Εξαγωγή πιστοποιητικού…
+	Export comments	Εξαγωγή σχολίων
+	Export data	Εξαγωγή δεδομένων
+	Export form data	Εξαγωγή δεδομένων φόρμας
+	Export form data…	Εξαγωγή δεδομένων φόρμας…
+	Export measurements	Εξαγωγή μετρήσεων
+	Export measurements as CSV	Εξαγωγή μετρήσεων ως CSV
+	Export stopped: {e}	Η εξαγωγή διακόπηκε: {e}
+	Export to HTML…	Εξαγωγή σε HTML…
+	Export to Image	Εξαγωγή σε εικόνα
+	Export to image…	Εξαγωγή σε εικόνα…
+	Export to PowerPoint…	Εξαγωγή σε PowerPoint…
+	Export to RTF…	Εξαγωγή σε RTF…
+	Export to Text	Εξαγωγή σε κείμενο
+	Export to text…	Εξαγωγή σε κείμενο…
+	Export to Word…	Εξαγωγή σε Word…
+	Export Value: {on}	Τιμή εξαγωγής: {on}
+	Exported 1 image	Εξήχθη 1 εικόνα
+	Exported the text of 1 page	Εξήχθη το κείμενο 1 σελίδας
+	Exported the text of {n} pages	Εξήχθη το κείμενο {n} σελίδων
+	Exported {n} images	Εξήχθησαν {n} εικόνες
+	Exporting… {d} of {t}	Εξαγωγή… {d} από {t}
+	Extended Graphics States	Εκτεταμένες καταστάσεις γραφικών
+	Extract pages	Εξαγωγή σελίδων
+	Extract pages as separate files	Εξαγωγή σελίδων ως χωριστά αρχεία
+	Extract pages to a new document	Εξαγωγή σελίδων σε νέο έγγραφο
+	Extract pages…	Εξαγωγή σελίδων…
+	Extracted 1 page	Εξήχθη 1 σελίδα
+	Extracted {n} pages	Εξήχθησαν {n} σελίδες
+	Failed	Αποτυχία
+scroll speed	Fast	Γρήγορη
+	February	Φεβρουάριος
+calendar date	February	Φεβρουάριος
+	Field descriptions	Περιγραφές πεδίων
+	Field is used for file selection	Το πεδίο χρησιμοποιείται για επιλογή αρχείου
+	Field list	Λίστα πεδίων
+	Field names (comma-separated)	Ονόματα πεδίων (χωρισμένα με κόμματα)
+	Field names with + - * / and parentheses; put \\ before spaces in names.	Ονόματα πεδίων με + - * / και παρενθέσεις· προσθέστε \\ πριν από τα κενά των ονομάτων.
+	Field properties…	Ιδιότητες πεδίου…
+	Field value is in range:	Η τιμή του πεδίου βρίσκεται στο εύρος:
+	Field value is not validated	Η τιμή του πεδίου δεν επικυρώνεται
+	Field: {field} on page {p}	Πεδίο: {field} στη σελίδα {p}
+	Fields to reset (comma-separated; empty: all)	Πεδία προς επαναφορά (χωρισμένα με κόμματα· κενό: όλα)
+	Figure {i} of {n}{page}	Εικόνα {i} από {n}{page}
+	Figures alternate text	Εναλλακτικό κείμενο εικόνων
+	Figures require alternate text	Οι εικόνες απαιτούν εναλλακτικό κείμενο
+	File (.p12, .pfx)	Αρχείο (.p12, .pfx)
+	File attachments	Συνημμένα αρχεία
+	File name	Όνομα αρχείου
+	File size	Μέγεθος αρχείου
+@id	file.word_count	Καταμέτρηση λέξεων…
+	Files are combined from top to bottom. Leave Pages empty to take every page.	Τα αρχεία συνδυάζονται από πάνω προς τα κάτω. Αφήστε κενό το πεδίο Σελίδες για να συμπεριληφθούν όλες.
+	Files are combined in the order shown. Drag them to change it.	Τα αρχεία συνδυάζονται με τη σειρά εμφάνισης. Σύρετέ τα για να την αλλάξετε.
+	Files are combined in this order. Leave Pages empty to take every page.	Τα αρχεία συνδυάζονται με αυτή τη σειρά. Αφήστε κενό το πεδίο «Σελίδες» για να συμπεριληφθούν όλες.
+	Files for {name}	Αρχεία για το {name}
+	Files you open in PdfCraft appear here. Drop a PDF anywhere to open it.	Τα αρχεία που ανοίγετε στο PdfCraft εμφανίζονται εδώ. Σύρετε ένα PDF οπουδήποτε για να το ανοίξετε.
+	Fill	Συμπλήρωση
+	Fill & Sign	Συμπλήρωση και υπογραφή
+	Fill & Sign dates	Ημερομηνίες συμπλήρωσης και υπογραφής
+	Fill & Sign signature	Υπογραφή από το εργαλείο «Συμπλήρωση και υπογραφή»
+	Fill & Sign: add text	Συμπλήρωση και υπογραφή: προσθήκη κειμένου
+	Fill & Sign: change initials	Συμπλήρωση και υπογραφή: αλλαγή μονογραφής
+	Fill & Sign: change signature	Συμπλήρωση και υπογραφή: αλλαγή υπογραφής
+	Fill & Sign: checkmark	Συμπλήρωση και υπογραφή: σημάδι επιλογής
+	Fill & Sign: cross	Συμπλήρωση και υπογραφή: σταυρός
+	Fill & Sign: date	Συμπλήρωση και υπογραφή: ημερομηνία
+	Fill & Sign: dot	Συμπλήρωση και υπογραφή: τελεία
+	Fill & Sign: initials	Συμπλήρωση και υπογραφή: μονογραφή
+	Fill & Sign: line	Συμπλήρωση και υπογραφή: γραμμή
+	Fill & Sign: remove saved initials	Συμπλήρωση και υπογραφή: αφαίρεση αποθηκευμένης μονογραφής
+	Fill & Sign: remove saved signature	Συμπλήρωση και υπογραφή: αφαίρεση αποθηκευμένης υπογραφής
+	Fill & Sign: sign	Συμπλήρωση και υπογραφή: υπογραφή
+	Fill Color:	Χρώμα γεμίσματος:
+	Fill colour	Χρώμα γεμίσματος
+	Fill colour:	Χρώμα γεμίσματος:
+	Fill colour: none	Χρώμα γεμίσματος: κανένα
+	Fill in {name}	Συμπλήρωση του {name}
+	Filling in form fields and signing existing signature fields	Συμπλήρωση πεδίων φόρμας και υπογραφή υπαρχόντων πεδίων υπογραφής
+	Filling of form fields	Συμπλήρωση πεδίων φόρμας
+	Filter comments	Φιλτράρισμα σχολίων
+	Find a tag	Εύρεση ετικέτας
+	Find options	Επιλογές αναζήτησης
+	Find text	Εύρεση κειμένου
+	Find text and redact	Εύρεση και απόκρυψη κειμένου
+	Find text and redact…	Εύρεση και οριστική απόκρυψη κειμένου…
+	Find tools and commands	Αναζήτηση εργαλείων και εντολών
+	Find tools and commands…	Αναζήτηση εργαλείων και εντολών…
+	Find untagged content	Εύρεση μη επισημασμένου περιεχομένου
+	Finding document fonts…	Αναζήτηση γραμματοσειρών εγγράφου…
+	Finish or discard the text being edited before selecting several objects.	Ολοκληρώστε ή απορρίψτε την επεξεργασία κειμένου προτού επιλέξετε πολλά αντικείμενα.
+	First / last page	Πρώτη / τελευταία σελίδα
+	Fit Height	Προσαρμογή στο ύψος
+	Fit one full page	Προσαρμογή ολόκληρης σελίδας
+	Fit Page	Προσαρμογή σελίδας
+	Fit to height	Προσαρμογή στο ύψος
+	Fit to page	Προσαρμογή στη σελίδα
+	Fit to width	Προσαρμογή στο πλάτος
+	Fit to width scrolling	Κύλιση με προσαρμογή στο πλάτος
+	Fit Visible	Προσαρμογή στο ορατό περιεχόμενο
+	Fit visible	Προσαρμογή στο ορατό τμήμα
+	Fit Width	Προσαρμογή στο πλάτος
+	Fix	Διόρθωση
+	Fix hairlines	Διόρθωση πολύ λεπτών γραμμών
+	Fix reading order	Διόρθωση σειράς ανάγνωσης
+	Fixed what could be fixed; 1 problem remains	Διορθώθηκαν όσα προβλήματα ήταν δυνατό· απομένει 1 πρόβλημα
+	Fixed what could be fixed; {n} problems remain	Διορθώθηκαν όσα προβλήματα ήταν δυνατό· απομένουν {n} προβλήματα
+	Flatten	Ενσωμάτωση στο περιεχόμενο
+	Flatten comments	Ενσωμάτωση σχολίων στο περιεχόμενο
+	Flatten Fill & Sign when saving	Ενσωμάτωση συμπληρώσεων και υπογραφών κατά την αποθήκευση
+	Flatten form fields	Ενσωμάτωση πεδίων φόρμας στο περιεχόμενο
+	Flip horizontal	Οριζόντια αναστροφή
+	Flip image	Αναστροφή εικόνας
+	Flip on long edge	Αναστροφή στη μεγάλη πλευρά
+	Flip on short edge	Αναστροφή στη μικρή πλευρά
+	Flip vertical	Κατακόρυφη αναστροφή
+	Float panel	Αποσύνδεση πλαισίου
+	Folders	Φάκελοι
+	Font colour:	Χρώμα γραμματοσειράς:
+	Font size 0 uses automatic sizing.	Το μέγεθος γραμματοσειράς 0 ενεργοποιεί την αυτόματη προσαρμογή.
+	Font size:	Μέγεθος γραμματοσειράς:
+	Font: Helvetica	Γραμματοσειρά: Helvetica
+	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Οι γραμματοσειρές πρέπει να αντιστοιχίζουν τους χαρακτήρες τους σε Unicode, ώστε το κείμενο να διαβάζεται και να αντιγράφεται. Διορθώστε τις γραμματοσειρές ή δημιουργήστε ξανά το PDF.
+	for images above	για εικόνες πάνω από
+	For page sizes and margins.	Για μεγέθη σελίδων και περιθώρια.
+	Form data and PDF forms	Δεδομένα φόρμας και φόρμες PDF
+	Form fields	Πεδία φόρμας
+	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Τα πεδία φόρμας ενσωματώνονται στο περιεχόμενο και οι τιμές τους παραμένουν ορατές. Η αποθήκευση επανεγγράφει ολόκληρο το αρχείο.
+	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	Τα πεδία φόρμας πρέπει να υπάρχουν στο δέντρο ετικετών (ετικέτες Form), για να αναγγέλλονται. Προσθέστε ετικέτες στα πεδία.
+	Form fields only	Μόνο πεδία φόρμας
+	Form fields panel	Πίνακας πεδίων φόρμας
+	Form fill-in and digital signatures	Συμπλήρωση φορμών και ψηφιακές υπογραφές
+	Format text	Μορφοποίηση κειμένου
+	Forms	Φόρμες
+	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Οι τύποι και παρόμοια μη κειμενικά στοιχεία χρειάζονται εναλλακτικό κείμενο. Προσθέστε το σε αυτά.
+	Found {n} untagged content problems.	Βρέθηκαν {n} προβλήματα μη επισημασμένου περιεχομένου.
+	From a PDF page or an image	Από σελίδα PDF ή εικόνα
+	From colour	Από χρώμα
+	From {file}	Από το {file}
+	From:	Από:
+	Front side only	Μόνο η μπροστινή όψη
+	Full screen mode	Λειτουργία πλήρους οθόνης
+	Geospatial location	Γεωχωρική θέση
+	Get help, share feedback and follow development on Discord.	Βρείτε βοήθεια, μοιραστείτε σχόλια και παρακολουθήστε την ανάπτυξη στο Discord.
+	Go to a page view	Μετάβαση σε προβολή σελίδας
+	Go to page {p}	Μετάβαση στη σελίδα {p}
+	Go to page…	Μετάβαση στη σελίδα…
+	Go to the page	Μετάβαση στη σελίδα
+	Go to this result	Μετάβαση σε αυτό το αποτέλεσμα
+	Grab bag	Διάφορα
+	Gray	Γκρι
+	Grayscale Images	Εικόνες σε κλίμακα του γκρι
+	Green on black	Πράσινο σε μαύρο
+	Greyscale	Κλίμακα του γκρι
+	H / Space (hold)	H / Διάστημα (κρατήστε πατημένο)
+	Hand (H)	Χέρι (H)
+	Has JavaScript actions (run in M6)	Περιέχει ενέργειες JavaScript (εκτελούνται στο M6)
+	Header and footer	Κεφαλίδα και υποσέλιδο
+	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Τα κελιά κεφαλίδων (TH) ενημερώνουν για το περιεχόμενο κάθε στήλης ή γραμμής. Επισημάνετε τα κελιά κεφαλίδας.
+	header or footer	κεφαλίδα ή υποσέλιδο
+	Headers	Κεφαλίδες
+	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Τα επίπεδα επικεφαλίδων δεν πρέπει να παραλείπονται (π.χ. H1 ακολουθούμενο από H3). Διορθώστε τις ετικέτες των επικεφαλίδων.
+	Hidden layers	Κρυφά επίπεδα
+	Hide a field	Απόκρυψη πεδίου
+	Hide all comments	Απόκρυψη όλων των σχολίων
+	Hide field highlights	Απόκρυψη επισήμανσης πεδίων
+	Hide hover previews for highlights without comment text	Απόκρυψη προεπισκοπήσεων κατά την αιώρηση για επισημάνσεις χωρίς κείμενο σχολίου
+	Hide layer	Απόκρυψη επιπέδου
+	Hide menu bar	Απόκρυψη γραμμής μενού
+	Hide password	Απόκρυψη κωδικού πρόσβασης
+	Hide toolbars	Απόκρυψη γραμμών εργαλείων
+	Hide window controls	Απόκρυψη στοιχείων ελέγχου παραθύρου
+	Hides annotation	Απόκρυψη σχολίου
+	Highlight	Επισήμανση
+	Highlight fields	Επισήμανση πεδίων
+	Highlight Style:	Στυλ επισήμανσης:
+	Highlight text	Επισήμανση κειμένου
+key	Home	Αρχή
+	Home / End	Home / End
+	Horizontal reversed	Οριζόντια αντίστροφα
+	HTML web page	Ιστοσελίδα HTML
+	Identity	Ταυτότητα
+	Image (PNG)	Εικόνα (PNG)
+	Image field	Πεδίο εικόνας
+	Image-only PDF	PDF μόνο με εικόνες
+	Images and text	Εικόνες και κείμενο
+	Images and text (converted to PDF)	Εικόνες και κείμενο (μετατροπή σε PDF)
+	Import comments…	Εισαγωγή σχολίων…
+	Import data	Εισαγωγή δεδομένων
+	Import form data…	Εισαγωγή δεδομένων φόρμας…
+	Import list…	Εισαγωγή λίστας…
+	Import {name}	Εισαγωγή του {name}
+	Importing data arrives on the web with file pickers for data files	Η εισαγωγή δεδομένων θα διατεθεί στη διαδικτυακή έκδοση με επιλογή αρχείων δεδομένων
+	In multiple files	Σε πολλά αρχεία
+	In this file	Σε αυτό το αρχείο
+	Includes unsaved changes	Περιλαμβάνει μη αποθηκευμένες αλλαγές
+	Incorrect password. Try again.	Λανθασμένος κωδικός πρόσβασης. Δοκιμάστε ξανά.
+	Indent	Αύξηση εσοχής
+	Initial View	Αρχική προβολή
+	Initials	Μονογραφή
+	initials	μονογραφή
+	Ink sensitivity	Ευαισθησία μελανιού
+	Insert a blank page after the selection	Εισαγωγή κενής σελίδας μετά την επιλογή
+	Insert a file at the end	Εισαγωγή αρχείου στο τέλος
+	Insert a file before page {label}	Εισαγωγή αρχείου πριν από τη σελίδα {label}
+	Insert blank page	Εισαγωγή κενής σελίδας
+	Insert Date	Εισαγωγή ημερομηνίας
+	Insert Page Number	Εισαγωγή αριθμού σελίδας
+	Insert pages	Εισαγωγή σελίδων
+	Insert pages from a file…	Εισαγωγή σελίδων από αρχείο…
+	Insert pages from file…	Εισαγωγή σελίδων από αρχείο…
+	Insert pages from {name}	Εισαγωγή σελίδων από {name}
+	Insert pages from {name} — 1 field renamed	Εισαγωγή σελίδων από {name} — μετονομάστηκε 1 πεδίο
+	Insert pages from {name} — fields renamed	Εισαγωγή σελίδων από {name} — μετονομάστηκαν πεδία
+	Insert text	Εισαγωγή κειμένου
+	Inserted	Προστέθηκε
+	Inserted text	Εισαχθέν κείμενο
+	Inserting, deleting, and rotating pages	Εισαγωγή, διαγραφή και περιστροφή σελίδων
+	Inset	Εσοχή
+	Inspector	Επιθεωρητής
+	Installed fonts…	Εγκατεστημένες γραμματοσειρές…
+	Intended usage	Προβλεπόμενη χρήση
+	Interface size	Μέγεθος περιβάλλοντος
+	Intersections	Τομές
+	Invisible Rectangle	Αόρατο ορθογώνιο
+	Irregular tables confuse cell navigation. Give every row the same number of cells (counting spans).	Οι ανομοιόμορφοι πίνακες δυσκολεύουν την πλοήγηση στα κελιά. Δώστε σε κάθε γραμμή ίδιο πλήθος κελιών, συνυπολογίζοντας τα συγχωνευμένα.
+	is available	είναι διαθέσιμο
+	is not available yet	δεν είναι ακόμη διαθέσιμο
+	Issued by	Εκδόθηκε από
+	Issued by: 	Εκδότης: 
+	Issued to	Εκδόθηκε για
+	Issuer	Εκδότης
+	Item List	Λίστα στοιχείων
+	Item:	Στοιχείο:
+	Items marked Ready work today.	Τα στοιχεία με την ένδειξη «Έτοιμο» λειτουργούν ήδη.
+	Its security settings don't allow copying pages	Οι ρυθμίσεις ασφαλείας του δεν επιτρέπουν την αντιγραφή σελίδων
+	January	Ιανουάριος
+calendar date	January	Ιανουάριος
+	JavaScript	JavaScript
+	JavaScript Console	Κονσόλα JavaScript
+	JavaScript console…	Κονσόλα JavaScript…
+	JavaScript is turned off (Preferences ▸ JavaScript).	Η JavaScript είναι απενεργοποιημένη (Προτιμήσεις > JavaScript).
+	JavaScript, e.g. getField("total").value	JavaScript, π.χ. getField("total").value
+	Join the ArtCraft community	Γίνετε μέλος της κοινότητας ArtCraft
+	July	Ιούλιος
+calendar date	July	Ιούλιος
+	June	Ιούνιος
+calendar date	June	Ιούνιος
+	Keep source fonts	Διατήρηση αρχικών γραμματοσειρών
+	Keep tool selected	Διατήρηση επιλεγμένου εργαλείου
+	Keep tool selected: on	Διατήρηση επιλεγμένου εργαλείου: ενεργή
+	Key Algorithm	Αλγόριθμος κλειδιού
+	Key usage	Χρήση κλειδιού
+	Keyboard shortcuts	Συντομεύσεις πληκτρολογίου
+	Keychain  ·  	Κλειδοθήκη  ·  
+	Labels: {preview}. Later pages keep their labels.	Ετικέτες: {preview}. Οι επόμενες σελίδες διατηρούν τις ετικέτες τους.
+	Landscape and Portrait Pages	Οριζόντιες και κατακόρυφες σελίδες
+	Landscape Pages	Οριζόντιες σελίδες
+	Landscape pages	Οριζόντιες σελίδες
+	Larger pages	Μεγαλύτερες σελίδες
+	Later in tab order	Αργότερα στη σειρά μετακίνησης με Tab
+	Layers Panel and Page	Πίνακας επιπέδων και σελίδα
+	Layout and Magnification	Διάταξη και μεγέθυνση
+	Lbl and LBody	Lbl και LBody
+	Lbl and LBody must be children of LI	Τα Lbl και LBody πρέπει να είναι θυγατρικά στοιχεία του LI
+	Leave out files that can't be read?	Να παραλειφθούν τα αρχεία που δεν διαβάζονται;
+	Left Edge	Αριστερή πλευρά
+	Left Footer Text	Κείμενο αριστερού υποσέλιδου
+	Left Header Text	Κείμενο αριστερής κεφαλίδας
+	Left out: {names}	Παραλείφθηκαν: {names}
+	LI must be a child of L	Το LI πρέπει να είναι θυγατρικό στοιχείο του L
+	Light blue	Ανοιχτό μπλε
+	Light theme	Φωτεινό θέμα
+	Limit of	Όριο
+	Line delta	Μεταβολή γραμμών
+	Line ending	Τέλος γραμμής
+	Line Style:	Στυλ γραμμής:
+	Line thickness	Πάχος γραμμής
+	Line Thickness:	Πάχος γραμμής:
+	Link Action	Ενέργεια συνδέσμου
+	Link Appearance	Εμφάνιση συνδέσμου
+	Link Properties	Ιδιότητες συνδέσμου
+	Link Type:	Τύπος συνδέσμου:
+	Links, actions and JavaScripts	Σύνδεσμοι, ενέργειες και σενάρια JavaScript
+	List box	Πλαίσιο λίστας
+	List Box Properties	Ιδιότητες πλαισίου λίστας
+	List items	Στοιχεία λίστας
+	List items belong in a list. Fix the list's tags.	Τα στοιχεία λίστας πρέπει να ανήκουν σε λίστα. Διορθώστε τις ετικέτες της λίστας.
+	List labels and bodies belong in a list item. Fix the list's tags.	Οι ετικέτες και τα σώματα λίστας πρέπει να ανήκουν σε στοιχείο λίστας. Διορθώστε τις ετικέτες δομής της.
+	Lists	Λίστες
+	Load document font	Φόρτωση γραμματοσειράς εγγράφου
+	Load font…	Φόρτωση γραμματοσειράς…
+	Local cross-PDF links require the desktop app	Οι τοπικοί σύνδεσμοι μεταξύ PDF απαιτούν την εφαρμογή υπολογιστή
+	Location: 	Τοποθεσία: 
+	Lock comment	Κλείδωμα σχολίου
+	Logical Reading Order	Λογική σειρά ανάγνωσης
+	Looking for PDFs…	Αναζήτηση αρχείων PDF…
+	Looking for printers…	Αναζήτηση εκτυπωτών…
+	Low resolution	Χαμηλή ανάλυση
+	Low Resolution (150 dpi)	Χαμηλή ανάλυση (150 dpi)
+	Make accessible	Βελτίωση προσβασιμότητας
+	Make Current Properties Default	Ορισμός τρεχουσών ιδιοτήτων ως προεπιλογών
+	Make Properties Default	Ορισμός ιδιοτήτων ως προεπιλογών
+	Make properties default	Ορισμός ιδιοτήτων ως προεπιλογή
+	Make scans searchable, then make them smaller.	Κάνει τις σαρώσεις αναζητήσιμες και στη συνέχεια μειώνει το μέγεθός τους.
+	Manage embedded index	Διαχείριση ενσωματωμένου ευρετηρίου
+	March	Μάρτιος
+calendar date	March	Μάρτιος
+	Margins (in)	Περιθώρια (ίντσες)
+	Mark all	Σήμανση όλων
+	Mark as artifact	Σήμανση ως τεχνούργημα
+	Mark as comments	Επισήμανση ως σχόλια
+	Mark as Confidential	Σήμανση ως εμπιστευτικού
+	Mark content as artifact	Σήμανση περιεχομένου ως τεχνούργημα
+	Mark differences	Επισήμανση διαφορών
+	Mark figure as decorative	Σήμανση σχήματος ως διακοσμητικού
+	Mark for redaction	Σήμανση για οριστική απόκρυψη
+	Mark Page Range	Επισήμανση εύρους σελίδων
+	Mark pages for redaction	Σήμανση σελίδων για οριστική απόκρυψη
+	Mark with checkmark	Σήμανση με σημάδι επιλογής
+	Marked	Επισημασμένο
+	Markup	Σημειώσεις επισήμανσης
+	Marquee zoom	Μεγέθυνση επιλεγμένης περιοχής
+	Mask:	Μάσκα:
+	Match field sizes	Εξίσωση μεγεθών πεδίων
+	Match page at 100%	Προσαρμογή σελίδας στο 100%
+	Maximum	Μέγιστη
+	maximum	μέγιστο
+	May	Μάιος
+calendar date	May	Μάιος
+	Measure area	Μέτρηση εμβαδού
+	Measure distance	Μέτρηση απόστασης
+	Measure objects	Μέτρηση αντικειμένων
+	Measure perimeter	Μέτρηση περιμέτρου
+	Measurement information	Πληροφορίες μέτρησης
+	Measurement snapping	Προσκόλληση κατά τη μέτρηση
+	Measuring tool	Εργαλείο μέτρησης
+	Menu	Μενού
+	Merge data files into spreadsheet…	Συγχώνευση αρχείων δεδομένων σε υπολογιστικό φύλλο…
+	Merge image fragments	Συγχώνευση τμημάτων εικόνας
+	Merged 1 file into {path}	Συγχωνεύτηκε 1 αρχείο στο {path}
+	Merged {n} files into {path}	Συγχωνεύτηκαν {n} αρχεία στο {path}
+	Merging data files needs the desktop app	Η συγχώνευση αρχείων δεδομένων απαιτεί την εφαρμογή υπολογιστή
+	Microsoft Word (.docx)	Microsoft Word (.docx)
+	Midpoint	Μέσο τμήματος
+	Midpoints	Μέσα τμημάτων
+	Minimum	Ελάχιστη
+	minimum	ελάχιστο
+	Mixed	Μεικτές τιμές
+	Mobile	Κινητό
+	Modify page	Τροποποίηση σελίδας
+	More options	Περισσότερες επιλογές
+	More options:	Περισσότερες επιλογές:
+	More ways to add files	Περισσότεροι τρόποι προσθήκης αρχείων
+	Mouse Down	Πάτημα κουμπιού ποντικιού
+	Mouse Enter	Είσοδος δείκτη ποντικιού
+	Mouse Exit	Έξοδος δείκτη ποντικιού
+	Mouse Up	Απελευθέρωση κουμπιού ποντικιού
+	Move bookmark	Μετακίνηση σελιδοδείκτη
+	Move comment	Μετακίνηση σχολίου
+	Move down	Μετακίνηση κάτω
+	Move earlier	Μετακίνηση προς τα προηγούμενα
+	Move image	Μετακίνηση εικόνας
+	Move later	Μετακίνηση προς τα επόμενα
+	Move object	Μετακίνηση αντικειμένου
+	Move objects	Μετακίνηση αντικειμένων
+	Move page	Μετακίνηση σελίδας
+	Move pages	Μετακίνηση σελίδων
+	Move tag earlier	Μετακίνηση ετικέτας νωρίτερα
+	Move tag later	Μετακίνηση ετικέτας αργότερα
+	Move to group	Μετακίνηση σε ομάδα
+	Move up	Μετακίνηση πάνω
+	Multi-line	Πολλές γραμμές
+	Multiple	Πολλαπλές σελίδες
+	Multiple files	Πολλά αρχεία
+	Multiple selection	Πολλαπλή επιλογή
+	Multiple words or phrases	Πολλές λέξεις ή φράσεις
+	Name on new comments	Όνομα στα νέα σχόλια
+	Named Destinations	Ονομασμένοι προορισμοί
+	Navigation links	Σύνδεσμοι πλοήγησης
+	Navigation links are not repetitive	Οι σύνδεσμοι πλοήγησης δεν επαναλαμβάνονται
+	Navigation tab	Καρτέλα πλοήγησης
+	needs an AI provider (off by default)	απαιτεί πάροχο ΤΝ (απενεργοποιημένο από προεπιλογή)
+	Needs manual check	Απαιτείται χειροκίνητος έλεγχος
+	Negative number style:	Μορφή αρνητικών αριθμών:
+	Nested alternate text	Ένθετο εναλλακτικό κείμενο
+	New Action	Νέα ενέργεια
+	New Action…	Νέα ενέργεια…
+	New blank PDF	Νέο κενό PDF
+	New bookmark	Νέος σελιδοδείκτης
+	New bookmark ({key})	Νέος σελιδοδείκτης ({key})
+	New bookmark (⌘B)	Νέος σελιδοδείκτης (⌘B)
+	New bookmarks from structure	Νέοι σελιδοδείκτες από τη δομή
+	New file only	Μόνο το νέο αρχείο
+	New file:	Νέο αρχείο:
+	New file: {name}	Νέο αρχείο: {name}
+	New {tool} comments will look like this one	Τα νέα σχόλια του εργαλείου {tool} θα έχουν αυτή την εμφάνιση
+	Next ({key})	Επόμενο ({key})
+	Next (⌘G)	Επόμενο (⌘G)
+	Next / previous match	Επόμενο / προηγούμενο αποτέλεσμα
+	Next figure	Επόμενη εικόνα
+	Next month	Επόμενος μήνας
+	Next sheet	Επόμενο φύλλο
+	Next tab	Επόμενη καρτέλα
+	Next view	Επόμενη προβολή
+	No actions	Καμία ενέργεια
+	No changes allowed	Δεν επιτρέπονται αλλαγές
+	No changes to save	Δεν υπάρχουν αλλαγές προς αποθήκευση
+	No check has run yet.	Δεν έχει πραγματοποιηθεί ακόμη έλεγχος.
+	No color	Χωρίς χρώμα
+	No colour	Χωρίς χρώμα
+	No comments match.	Δεν βρέθηκαν σχόλια που να ταιριάζουν.
+	No comments yet.	Δεν υπάρχουν ακόμη σχόλια.
+	No contributor data was built into this copy.	Αυτή η έκδοση δεν περιλαμβάνει δεδομένα συντελεστών.
+	No differences in the text.	Δεν εντοπίστηκαν διαφορές στο κείμενο.
+	No digital IDs yet.	Δεν υπάρχουν ακόμη ψηφιακές ταυτότητες.
+	No documents are open	Δεν υπάρχουν ανοικτά έγγραφα
+	No file chosen	Δεν έχει επιλεγεί αρχείο
+	No fill	Χωρίς γέμισμα
+	No fonts are referenced by the pages.	Οι σελίδες δεν αναφέρονται σε γραμματοσειρές.
+	No form fields were detected	Δεν εντοπίστηκαν πεδία φόρμας
+	No inaccessible scripts	Δεν υπάρχουν μη προσβάσιμα σενάρια εντολών
+	No issues found	Δεν εντοπίστηκαν προβλήματα
+	No links to remove	Δεν υπάρχουν σύνδεσμοι για κατάργηση
+	No matches	Δεν βρέθηκαν αντιστοιχίες
+	No matches.	Δεν βρέθηκαν αντιστοιχίες.
+	No matching tools	Δεν βρέθηκαν εργαλεία
+	No model credits were built into this copy.	Αυτή η έκδοση δεν περιλαμβάνει πληροφορίες αναγνώρισης συνεισφορών μοντέλων.
+	No openly licensed document fonts found. Load a font file.	Δεν βρέθηκαν γραμματοσειρές εγγράφου με ανοιχτή άδεια. Φορτώστε ένα αρχείο γραμματοσειράς.
+	no output folder was chosen	δεν επιλέχθηκε φάκελος εξόδου
+	No pages match those choices	Καμία σελίδα δεν αντιστοιχεί σε αυτές τις επιλογές
+	No pages selected	Δεν επιλέχθηκαν σελίδες
+	No PDFs found in {folder}	Δεν βρέθηκαν PDF στον φάκελο {folder}
+	No PDFs in this folder yet	Δεν υπάρχουν ακόμη PDF σε αυτόν τον φάκελο
+	No PDFs, images or text files found in {folder}	Δεν βρέθηκαν PDF, εικόνες ή αρχεία κειμένου στο {folder}
+	No photo chosen	Δεν επιλέχθηκε φωτογραφία
+	No preview	Δεν υπάρχει προεπισκόπηση
+	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Δεν βρέθηκαν εκτυπωτές. Ελέγξτε ότι ο εκτυπωτής είναι εγκατεστημένος και ότι η ουρά εκτύπωσης εκτελείται και, στη συνέχεια, ανοίξτε ξανά την Εκτύπωση.
+	No problems found: the document conforms to {level}.	Δεν εντοπίστηκαν προβλήματα: το έγγραφο συμμορφώνεται με το επίπεδο {level}.
+	No security	Χωρίς προστασία
+	No sheets	Δεν υπάρχουν φύλλα
+	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Δεν βρέθηκε υπογραφή στο πλαίσιο. Μετακινήστε το πλαίσιο πάνω από την υπογραφή ή αυξήστε την ευαισθησία μελανιού.
+	No status has been set.	Δεν έχει οριστεί κατάσταση.
+	no such document	δεν υπάρχει τέτοιο έγγραφο
+	No unlinked web addresses were found in the text	Δεν βρέθηκαν διευθύνσεις ιστού χωρίς σύνδεσμο στο κείμενο
+	No untagged content was found.	Δεν βρέθηκε μη επισημασμένο περιεχόμενο.
+	no unused output name	δεν υπάρχει διαθέσιμο όνομα εξόδου
+	none	κανένα
+	None (prefix only)	Κανένα (μόνο πρόθεμα)
+	None found	Δεν βρέθηκε κανένα
+	None of those files can be made into a PDF; use PDFs, images or .txt files	Κανένα από αυτά τα αρχεία δεν μπορεί να μετατραπεί σε PDF· χρησιμοποιήστε PDF, εικόνες ή αρχεία .txt
+	None — everything is allowed	Κανένας — επιτρέπονται τα πάντα
+scroll speed	Normal	Κανονική
+	Not allowed	Δεν επιτρέπεται
+	Not now	Όχι τώρα
+	Not present	Δεν υπάρχει
+	Note	Σημείωση
+	nothing in the file matches this document	κανένα στοιχείο του αρχείου δεν αντιστοιχεί στο έγγραφο
+	Nothing to redo	Δεν υπάρχει ενέργεια για επανάληψη
+	nothing to redo	δεν υπάρχει ενέργεια προς επανάληψη
+	Nothing to undo	Δεν υπάρχει ενέργεια για αναίρεση
+	nothing to undo	δεν υπάρχει ενέργεια προς αναίρεση
+	November	Νοέμβριος
+calendar date	November	Νοέμβριος
+	Number	Αριθμός
+	Number every page in the footer.	Προσθέτει αριθμό σε κάθε σελίδα, στο υποσέλιδο.
+	Number of pages	Αριθμός σελίδων
+	Number pages	Αρίθμηση σελίδων
+	Number pages…	Αρίθμηση σελίδων…
+	October	Οκτώβριος
+calendar date	October	Οκτώβριος
+	Odd pages	Μονές σελίδες
+	Odd Pages Only	Μόνο μονές σελίδες
+	of the following fields:	των παρακάτω πεδίων:
+	of {name}	του {name}
+	of {pages}	από {pages}
+animation effects	Off	Ανενεργά
+	Offset from centre	Μετατόπιση από το κέντρο
+	Old file:	Παλαιό αρχείο:
+	Old file: {name}	Παλιό αρχείο: {name}
+animation effects	On	Ενεργά
+	On Blur	Κατά την απώλεια εστίασης
+	On Focus	Κατά την εστίαση
+	on page {label}	 στη σελίδα {label}
+	On the web, open or drop an image to convert it	Στη διαδικτυακή έκδοση, ανοίξτε ή σύρετε μια εικόνα για μετατροπή
+	One word or phrase per line	Μία λέξη ή φράση ανά γραμμή
+	One {f} file per page, named after the document.	Ένα αρχείο {f} ανά σελίδα, με όνομα βάσει του εγγράφου.
+	Only allow this if you trust the source document.	Επιτρέψτε το μόνο αν εμπιστεύεστε το έγγραφο προέλευσης.
+	Only change the colour of black text or line art	Αλλαγή χρώματος μόνο για μαύρο κείμενο ή γραμμικά σχέδια
+	Only checked properties will change. Mixed means the selected fields have different values.	Θα αλλάξουν μόνο οι επιλεγμένες ιδιότητες. Η ένδειξη «Μεικτές τιμές» σημαίνει ότι τα επιλεγμένα πεδία έχουν διαφορετικές τιμές.
+	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Συνεχίστε μόνο αν εμπιστεύεστε αυτό το έγγραφο. Μια διεύθυνση μπορεί να μεταφέρει πληροφορίες από το έγγραφο, όπως όσα πληκτρολογήσατε στη φόρμα του.
+	Only the document's owner can change its security (open it with the permissions password)	Μόνο ο κάτοχος μπορεί να αλλάξει την προστασία (ανοίξτε το με τον κωδικό δικαιωμάτων)
+	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Αλλάζει μόνο το περιεχόμενο των σελίδων: οι σύνδεσμοι, τα σχόλια, τα πεδία φόρμας και οι σελιδοδείκτες των αρχικών σελίδων διατηρούνται.
+	Open a document first	Ανοίξτε πρώτα ένα έγγραφο
+	Open a PDF ({key})	Άνοιγμα PDF ({key})
+	Open a PDF (⌘O)	Άνοιγμα PDF (⌘O)
+	Open a PDF to measure it.	Ανοίξτε ένα PDF για να πραγματοποιήσετε μετρήσεις.
+	Open a web link	Άνοιγμα συνδέσμου ιστού
+	Open a web page	Άνοιγμα ιστοσελίδας
+	Open accessibility report	Άνοιγμα αναφοράς προσβασιμότητας
+	Open arrow	Ανοιχτή αιχμή βέλους
+	Open email app	Άνοιγμα εφαρμογής ηλεκτρονικού ταχυδρομείου
+	Open file	Άνοιγμα αρχείου
+	Open in a new tab	Άνοιγμα σε νέα καρτέλα
+	Open in Full Screen mode	Άνοιγμα σε πλήρη οθόνη
+	Open in Full Screen mode?	Άνοιγμα σε λειτουργία πλήρους οθόνης;
+	Open Recent	Άνοιγμα πρόσφατων
+	Open the file as it was saved then	Άνοιγμα του αρχείου όπως είχε αποθηκευτεί τότε
+	Open the older version first	Ανοίξτε πρώτα την παλαιότερη έκδοση
+	Open this local PDF?	Να ανοίξει αυτό το τοπικό PDF;
+	Open this web page?	Άνοιγμα αυτής της ιστοσελίδας;
+	Open to page	Άνοιγμα στη σελίδα
+	open to see what it will include	ανοίξτε για να δείτε τι θα περιλαμβάνει
+	Opened with	Άνοιγμα με
+	Opened, but its security settings don't allow combining. Enter the permissions password.	Το αρχείο άνοιξε, αλλά οι ρυθμίσεις ασφαλείας δεν επιτρέπουν τον συνδυασμό. Εισαγάγετε τον κωδικό δικαιωμάτων.
+	Opening the browser's print dialog…	Άνοιγμα του παραθύρου εκτύπωσης του προγράμματος περιήγησης…
+	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Ανοίγει τις προτιμήσεις του προγράμματος οδήγησης εκτυπωτή. Αποθηκεύονται για κάθε εκτύπωση από αυτόν τον υπολογιστή· οι επιλογές αντιγράφων, εκτύπωσης διπλής όψης, κλίμακας του γκρι και χαρτιού εξακολουθούν να ισχύουν.
+	Optimization cancelled	Η βελτιστοποίηση ακυρώθηκε
+	Optimization is already running	Η βελτιστοποίηση εκτελείται ήδη
+	Optimize	Βελτιστοποίηση
+	Optimize PDF…	Βελτιστοποίηση PDF…
+	Optimize Scanned Documents	Βελτιστοποίηση σαρωμένων εγγράφων
+	Optimize scanned documents	Βελτιστοποίηση σαρωμένων εγγράφων
+	Optimize scanned documents…	Βελτιστοποίηση σαρωμένων εγγράφων…
+	Optimizing… cleaning up	Βελτιστοποίηση… εκκαθάριση
+	Optimizing… image {d} of {t}	Βελτιστοποίηση… εικόνα {d} από {t}
+	Optimizing… merging identical objects	Βελτιστοποίηση… συγχώνευση πανομοιότυπων αντικειμένων
+	Optimizing… merging image fragments	Βελτιστοποίηση… συγχώνευση τμημάτων εικόνας
+	Optimizing… removing user data	Βελτιστοποίηση… αφαίρεση δεδομένων χρήστη
+	Optimizing… writing the copy	Βελτιστοποίηση… εγγραφή αντιγράφου
+	Optional	Προαιρετικό
+	Optional: needs an AI provider you configure	Προαιρετικό: απαιτεί πάροχο τεχνητής νοημοσύνης που θα ρυθμίσετε
+	Organization Name	Επωνυμία οργανισμού
+	Organizational Unit	Οργανωτική μονάδα
+	Organize pages	Οργάνωση σελίδων
+	Original: replace pages	Αρχικό: αντικατάσταση σελίδων
+	Other colour…	Άλλο χρώμα…
+	Other elements alternate text	Εναλλακτικό κείμενο άλλων στοιχείων
+	Other elements that require alternate text	Άλλα στοιχεία που απαιτούν εναλλακτικό κείμενο
+	Outdent	Μείωση εσοχής
+	Outline colour:	Χρώμα περιγράμματος:
+	Output appears here.	Η έξοδος εμφανίζεται εδώ.
+	Output intent: {list}	Προφίλ χρωματικής εξόδου: {list}
+	Output preview	Προεπισκόπηση εξόδου
+	Owner password (no restrictions apply)	Κωδικός κατόχου (χωρίς περιορισμούς)
+	Page background	Φόντο σελίδας
+	Page Content	Περιεχόμενο σελίδας
+	Page display	Εμφάνιση σελίδων
+	Page display: {layout}	Εμφάνιση σελίδων: {layout}
+	Page does not require timed responses	Η σελίδα δεν απαιτεί απαντήσεις μέσα σε χρονικό όριο
+	Page grid	Πλέγμα σελίδων
+	Page labels	Ετικέτες σελίδων
+	Page layout	Διάταξη σελίδας
+	Page navigation	Πλοήγηση σελίδων
+	Page number	Αριθμός σελίδας
+	Page Only	Μόνο σελίδα
+	Page options	Επιλογές σελίδας
+	Page order:	Σειρά σελίδων:
+	Page properties	Ιδιότητες σελίδας
+	Page Range	Εύρος σελίδων
+	Page Range Options	Επιλογές περιοχής σελίδων
+	Page size	Μέγεθος σελίδας
+	Page Sizing & Handling	Μέγεθος και διαχείριση σελίδων
+	Page thumbnails	Μικρογραφίες σελίδων
+	Page transitions	Μεταβάσεις σελίδων
+	Page will not cause screen flicker	Η σελίδα δεν προκαλεί τρεμόπαιγμα οθόνης
+	Page {label}	Σελίδα {label}
+	Page {p} of {n}	Σελίδα {p} από {n}
+	pages	σελίδες
+	Pages counted	Σελίδες που καταμετρήθηκαν
+	Pages from	Σελίδες από
+	Pages of {name} to combine, e.g. 1-3, 6	Σελίδες του {name} για συνδυασμό, π.χ. 1-3, 6
+	Pages Panel and Page	Πίνακας σελίδων και σελίδα
+	Pages per file	Σελίδες ανά αρχείο
+	Pages per sheet:	Σελίδες ανά φύλλο:
+	Pages selected	Επιλεγμένες σελίδες
+	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Οι σελίδες που περιέχουν μόνο εικόνες κειμένου δεν μπορούν να αναγνωστούν φωναχτά ή να αναζητηθούν. Χρησιμοποιήστε αναγνώριση κειμένου (OCR) για να προσθέσετε επίπεδο κειμένου.
+	Pages to Print	Σελίδες προς εκτύπωση
+	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Στις σελίδες με συνδέσμους, σχόλια ή πεδία, το πλήκτρο Tab πρέπει να ακολουθεί τη σειρά της δομής. Η διόρθωση ορίζει τη σειρά σε «Χρήση δομής εγγράφου».
+	Pages:	Σελίδες:
+	Pages: {k} of {n}	Σελίδες: {k} από {n}
+	Paper:	Χαρτί:
+	Part of	Μέρος του
+	Passed	Επιτυχής έλεγχος
+	Password protection will be applied when you save	Η προστασία με κωδικό θα εφαρμοστεί κατά την αποθήκευση
+	Password required	Απαιτείται κωδικός πρόσβασης
+	Password security	Προστασία με κωδικό πρόσβασης
+	Password-protected	Προστατευμένο με κωδικό πρόσβασης
+	Paste after	Επικόλληση μετά
+	Paste pages	Επικόλληση σελίδων
+	Patterns	Μοτίβα
+	Patterns (graphics objects)	Μοτίβα (γραφικά αντικείμενα)
+	PDF Optimizer	Βελτιστοποίηση PDF
+	PDF or image	PDF ή εικόνα
+	PDF page: {size}	Σελίδα PDF: {size}
+	PDF producer	Πρόγραμμα παραγωγής PDF
+	PDF scale: {scale}%	Κλίμακα PDF: {scale}%
+	PDF version	Έκδοση PDF
+	PDF, images and text	PDF, εικόνες και κείμενο
+	PDF/A…	PDF/A…
+	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	Το PdfCraft δεν τερματίστηκε κανονικά. Στα παρακάτω έγγραφα αποθηκεύτηκαν αυτόματα αλλαγές:
+	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	Το PdfCraft αποδίδει τα γραφικά χωρίς επιτάχυνση από επεξεργαστή γραφικών και ενδέχεται να είναι αργό. Μια ενημέρωση του προγράμματος οδήγησης γραφικών ίσως βοηθήσει.
+	PdfCraft on GitHub	PdfCraft στο GitHub
+	PdfCraft web page	Ιστότοπος του PdfCraft
+	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	Το PdfCraft λειτουργεί χωρίς σύνδεση στο διαδίκτυο. Χωρίς τηλεμετρία, λογαριασμό ή επεξεργασία στο νέφος, εκτός αν προσθέσετε εσείς υπηρεσία.
+	PdfCraft {c} is up to date.	Το PdfCraft {c} είναι ενημερωμένο.
+	PdfCraft {v} is available.	Η έκδοση {v} του PdfCraft είναι διαθέσιμη.
+	People may need more time to respond. Check that nothing has a time limit.	Οι χρήστες μπορεί να χρειάζονται περισσότερο χρόνο για να απαντήσουν. Βεβαιωθείτε ότι δεν υπάρχει χρονικό όριο.
+	Permissions password	Κωδικός δικαιωμάτων
+	Permitted actions after certifying	Επιτρεπόμενες ενέργειες μετά την πιστοποίηση
+	Phone Number	Αριθμός τηλεφώνου
+	Phone Numbers	Αριθμοί τηλεφώνου
+	Pick a tool in the quick bar, or type above.	Επιλέξτε εργαλείο από τη γραμμή γρήγορης πρόσβασης ή πληκτρολογήστε παραπάνω.
+	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Οι εικόνες χρειάζονται περιγραφικό εναλλακτικό κείμενο ή πρέπει να επισημανθούν ως διακοσμητικές. Προσθέστε εναλλακτικό κείμενο σε κάθε εικόνα.
+	Pictures on those pages are recognized too; words already in the page's text are not added again	Αναγνωρίζονται και οι εικόνες αυτών των σελίδων· οι λέξεις που υπάρχουν ήδη στο κείμενο της σελίδας δεν προστίθενται ξανά
+	Pin a folder to Home	Καρφίτσωμα φακέλου στην αρχική
+	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Καρφιτσώστε έναν φάκελο για να εμφανίζονται εδώ τα νεότερα PDF του, όπως εκείνα που αποθηκεύει ο σαρωτής σας ή ένας συγχρονισμένος φάκελος στο νέφος.
+	Pin a folder…	Καρφίτσωμα φακέλου…
+	Pin folder to Home…	Καρφίτσωμα φακέλου στην αρχική…
+	Pinned folders need the desktop app	Οι καρφιτσωμένοι φάκελοι απαιτούν την εφαρμογή υπολογιστή
+	Pinned {folder} to Home	Ο φάκελος {folder} καρφιτσώθηκε στην αρχική
+	Place saved {what}	Τοποθέτηση αποθηκευμένου στοιχείου: {what}
+	Plain text in reading order; pages are separated by form feeds.	Απλό κείμενο με τη σειρά ανάγνωσης· οι σελίδες χωρίζονται με χαρακτήρες αλλαγής σελίδας.
+	Planned	Προγραμματισμένο
+	Planned for milestone	Προγραμματισμένο για ορόσημο
+	Planned for milestone {m} — open to see what it will include	Προγραμματισμένο για το ορόσημο {m} — ανοίξτε για να δείτε τι θα περιλαμβάνει
+	Planned · {m}	Προγραμματισμένο · {m}
+	Points from the page's bottom-left corner.	Σημεία από την κάτω αριστερή γωνία της σελίδας.
+	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	Η φορητή λειτουργία απενεργοποιήθηκε: δεν είναι δυνατή η εγγραφή στο {folder} ({error}). Οι ρυθμίσεις αποθηκεύονται στον φάκελο χρήστη.
+	Portrait Pages	Κατακόρυφες σελίδες
+	Portrait pages	Κατακόρυφες σελίδες
+	Post	Δημοσίευση
+	PostScript / EPS	PostScript / EPS
+	PostScript XObjects aren't allowed	Δεν επιτρέπονται αντικείμενα XObject PostScript
+	Preflight	Προέλεγχος
+	Prepare a form	Προετοιμασία φόρμας
+	Prepare for accessibility	Προετοιμασία για προσβασιμότητα
+	Prepare for Distribution	Προετοιμασία για διανομή
+	Prepare for distribution	Προετοιμασία για διανομή
+	Prepare for distribution…	Προετοιμασία για διανομή…
+	Preparing sheet {done} of {total} for printing…	Προετοιμασία φύλλου {done} από {total} για εκτύπωση…
+	Preparing {n} sheets for printing…	Προετοιμασία {n} φύλλων για εκτύπωση…
+	Presentation (.pptx)	Παρουσίαση (.pptx)
+	Preview unavailable: {e}	Η προεπισκόπηση δεν είναι διαθέσιμη: {e}
+	Preview: page {p} of {n}	Προεπισκόπηση: σελίδα {p} από {n}
+	Previous ({key})	Προηγούμενο ({key})
+	Previous (⇧⌘G)	Προηγούμενο (⇧⌘G)
+	Previous / next page	Προηγούμενη / επόμενη σελίδα
+	Previous figure	Προηγούμενη εικόνα
+	Previous month	Προηγούμενος μήνας
+	Previous sheet	Προηγούμενο φύλλο
+	Previous tab	Προηγούμενη καρτέλα
+	Previous view	Προηγούμενη προβολή
+	Primary language	Κύρια γλώσσα
+	Print ({key})	Εκτύπωση ({key})
+	Print (⌘P)	Εκτύπωση (⌘P)
+	Print as image	Εκτύπωση ως εικόνα
+	Print in grayscale	Εκτύπωση σε αποχρώσεις του γκρι
+	Print page border	Εκτύπωση περιγράμματος σελίδας
+	Print production	Προεκτύπωση
+	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Εκτυπώστε στη μία όψη. Κρατήστε τα φύλλα με τη σωστή σειρά, κόψτε στις ενδείξεις και στοιβάξτε τις ομάδες από αριστερά προς τα δεξιά και από πάνω προς τα κάτω.
+	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage ή LastPage
+	Printer paper and scaling may differ. Check driver settings.	Το χαρτί και η κλίμακα του εκτυπωτή μπορεί να διαφέρουν. Ελέγξτε τις ρυθμίσεις του προγράμματος οδήγησης.
+	Printer properties	Ιδιότητες εκτυπωτή
+	Printing allowed	Επιτρέπεται η εκτύπωση
+	Privacy	Απόρρητο
+	Private data of other applications	Ιδιωτικά δεδομένα άλλων εφαρμογών
+	Producer	Παραγωγός
+	product (x)	γινόμενο (x)
+	Properties…	Ιδιότητες…
+	Protect a PDF	Προστασία PDF
+	Protect Using Password	Προστασία με κωδικό πρόσβασης
+	Protect using password…	Προστασία με κωδικό πρόσβασης…
+	Protect with password	Προστασία με κωδικό πρόσβασης
+	Protected: the combined file won't keep its security settings	Προστατευμένο: το συνδυασμένο αρχείο δεν θα διατηρήσει τις ρυθμίσεις ασφαλείας του
+	Public key	Δημόσιο κλειδί
+	PushButton	Κουμπί εντολής
+	Radio	Κουμπί επιλογής
+	Radio button	Κουμπί επιλογής
+	Radio Button Properties	Ιδιότητες κουμπιού επιλογής
+	Re-type Password	Πληκτρολογήστε ξανά τον κωδικό πρόσβασης
+	Read	Ανάγνωση
+	Read mode	Λειτουργία ανάγνωσης
+	Read Only	Μόνο για ανάγνωση
+	Reading colours	Χρώματα ανάγνωσης
+	Reason	Αιτία
+	Reason: 	Αιτία: 
+	Recent colours	Πρόσφατα χρώματα
+	Recognize Text	Αναγνώριση κειμένου
+	Recognize text	Αναγνώριση κειμένου
+	Recognize text in multiple files…	Αναγνώριση κειμένου σε πολλά αρχεία…
+	Recognize Text…	Αναγνώριση κειμένου…
+	Recognize text…	Αναγνώριση κειμένου…
+	Recognized 1 word	Αναγνωρίστηκε 1 λέξη
+	Recognized {n} words	Αναγνωρίστηκαν {n} λέξεις
+	Recognized {w} words in 1 file	Αναγνωρίστηκαν {w} λέξεις σε 1 αρχείο
+	Recognized {w} words in {n} files	Αναγνωρίστηκαν {w} λέξεις σε {n} αρχεία
+	Recognizing text… file {d} of {t}	Αναγνώριση κειμένου… αρχείο {d} από {t}
+	Recognizing text… page {d} of {t}	Αναγνώριση κειμένου… σελίδα {d} από {t}
+	Recommended tools	Προτεινόμενα εργαλεία
+	Recover unsaved documents?	Ανάκτηση μη αποθηκευμένων εγγράφων;
+	Redact	Απόκρυψη ευαίσθητου περιεχομένου
+	Redact a PDF	Απόκρυψη ευαίσθητου περιεχομένου PDF
+	Redact all	Απόκρυψη όλων των ευαίσθητων στοιχείων
+	Redact Image	Απόκρυψη ευαίσθητου περιεχομένου εικόνας
+	Redact pages	Απόκρυψη περιεχομένου σελίδων
+	Redact pages…	Οριστική απόκρυψη σελίδων…
+	Redact text and images	Οριστική απόκρυψη κειμένου και εικόνων
+	Redacted area fill colour:	Χρώμα γεμίσματος περιοχής απόκρυψης:
+	Redaction code:	Κωδικός απόκρυψης:
+	Redaction mark appearance	Εμφάνιση σήμανσης απαλοιφής
+	Redaction properties…	Ιδιότητες οριστικής απόκρυψης…
+	Redaction Tool Properties	Ιδιότητες εργαλείου απόκρυψης
+	Redid {label}	Επαναλήφθηκε: {label}
+	Redo {action}	Επανάληψη ενέργειας: {action}
+	Reduce file size	Μείωση μεγέθους αρχείου
+	Reduce file size…	Μείωση μεγέθους αρχείου…
+	Regularity	Ομοιομορφία
+	Rejected	Απορρίφθηκε
+	Reliable character encoding is provided	Παρέχεται αξιόπιστη κωδικοποίηση χαρακτήρων
+	Reload documents when their files change on disk	Επαναφόρτωση εγγράφων όταν αλλάζουν τα αρχεία τους στον δίσκο
+	Remove "{name}" from this list? The file itself is not deleted.	Αφαίρεση του «{name}» από αυτή τη λίστα; Το ίδιο το αρχείο δεν διαγράφεται.
+	Remove all links	Αφαίρεση όλων των συνδέσμων
+	Remove background	Αφαίρεση φόντου
+	Remove checkmark	Αφαίρεση σημαδιού επιλογής
+	Remove Crop	Κατάργηση περικοπής
+	Remove from Recent	Αφαίρεση από τα πρόσφατα
+	Remove header & footer	Αφαίρεση κεφαλίδας και υποσέλιδου
+	Remove hidden information	Αφαίρεση κρυφών πληροφοριών
+	Remove hidden information and flatten comments and form fields, so recipients see only the pages.	Αφαιρεί κρυφές πληροφορίες και ενσωματώνει οριστικά σχόλια και πεδία φορμών, ώστε οι παραλήπτες να βλέπουν μόνο τις σελίδες.
+	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	Αφαιρεί κρυφές πληροφορίες, μεταδεδομένα, δέσμες ενεργειών και ενσωματωμένο περιεχόμενο και δημιουργεί εκ νέου τα αρχεία.
+	Remove hidden information…	Αφαίρεση κρυφών πληροφοριών…
+	Remove invalid links and bookmarks	Αφαίρεση μη έγκυρων συνδέσμων και σελιδοδεικτών
+	Remove page	Αφαίρεση σελίδας
+	Remove redaction marks	Αφαίρεση σημάνσεων απόκρυψης
+	Remove saved {what}	Αφαίρεση αποθηκευμένου στοιχείου: {what}
+	Remove security	Κατάργηση προστασίας
+	Remove this leaf tag from reading order and mark its direct content as an artifact	Αφαιρέστε αυτήν την ετικέτα φύλλου από τη σειρά ανάγνωσης και σημειώστε το άμεσο περιεχόμενό της ως τεχνούργημα
+	Remove unreferenced named destinations	Αφαίρεση ονομασμένων προορισμών χωρίς αναφορές
+	Remove unused objects and merge identical ones	Αφαίρεση αχρησιμοποίητων αντικειμένων και συγχώνευση πανομοιότυπων
+	Remove watermark	Αφαίρεση υδατογραφήματος
+	Remove {name}	Αφαίρεση του {name}
+	Remove {name} from Recent	Αφαίρεση του {name} από τα πρόσφατα
+	Remove {n} files	Αφαίρεση {n} αρχείων
+	Remove {n} pages	Αφαίρεση {n} σελίδων
+	Removed 1 hidden item. Save to remove them from the file.	Αφαιρέθηκε 1 κρυφό στοιχείο. Αποθηκεύστε για να αφαιρεθεί από το αρχείο.
+	Removed 1 link	Καταργήθηκε 1 σύνδεσμος
+	Removed {n} hidden items. Save to remove them from the file.	Αφαιρέθηκαν {n} κρυφά στοιχεία. Αποθηκεύστε για να αφαιρεθούν από το αρχείο.
+	Removed {n} links	Σύνδεσμοι που καταργήθηκαν: {n}
+	Rename bookmark	Μετονομασία σελιδοδείκτη
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Απόδοση: hayro (bootstrap) · Περιβάλλον: egui · Εικονίδια: Lucide (ISC) · Γραμματοσειρές: Inter, JetBrains Mono, Dancing Script (OFL)
+	Reopen Closed Tab	Επαναφορά κλειστής καρτέλας
+	Reopen the files that were open when PdfCraft last closed	Εκ νέου άνοιγμα των αρχείων που ήταν ανοιχτά κατά τον τελευταίο τερματισμό του PdfCraft
+	Repair log	Αρχείο καταγραφής επιδιορθώσεων
+	Repairs	Επιδιορθώσεις
+	Repeat overlay text	Επανάληψη κειμένου επικάλυψης
+	Repeated navigation links should be skippable. Check links that appear on every page.	Οι επαναλαμβανόμενοι σύνδεσμοι πλοήγησης πρέπει να μπορούν να παραλειφθούν. Ελέγξτε τους συνδέσμους που εμφανίζονται σε κάθε σελίδα.
+	Replace document colours	Αντικατάσταση χρωμάτων εγγράφου
+	Replace image	Αντικατάσταση εικόνας
+	Replace Image…	Αντικατάσταση εικόνας…
+	Replace page	Αντικατάσταση σελίδας
+	Replace Pages	Αντικατάσταση σελίδων
+	Replace pages	Αντικατάσταση σελίδων
+	Replace pages…	Αντικατάσταση σελίδων…
+	Replace text	Αντικατάσταση κειμένου
+	Replaced	Αντικαταστάθηκε
+	Replacement text	Κείμενο αντικατάστασης
+	Replacement: pages of {name}	Αντικατάσταση: σελίδες του {name}
+	Replaces the existing one on those pages.	Αντικαθιστά το υπάρχον στοιχείο στις συγκεκριμένες σελίδες.
+	Replacing images arrives on the web with image file pickers	Η αντικατάσταση εικόνων θα διατεθεί στη διαδικτυακή έκδοση με επιλογή αρχείων εικόνας
+	Replacing images on page {p} arrives on the web with image pickers ({i})	Η αντικατάσταση εικόνων στη σελίδα {p} θα διατεθεί στη διαδικτυακή έκδοση με επιλογή εικόνων ({i})
+	Report Options	Επιλογές αναφοράς
+	Report…	Αναφορά…
+	Required	Υποχρεωτικό
+	Requires user to enter a password for:	Απαίτηση εισαγωγής κωδικού πρόσβασης για:
+	Reset a form	Επαναφορά φόρμας
+	Reset columns	Επαναφορά στηλών
+	Reset page size	Επαναφορά μεγέθους σελίδας
+	Reset panel layout	Επαναφορά διάταξης πλαισίων
+	Reset to printer defaults	Επαναφορά προεπιλογών εκτυπωτή
+	Resize comment	Αλλαγή μεγέθους σχολίου
+	Resize panel window	Αλλαγή μεγέθους παραθύρου πλαισίου
+	Resize panels	Αλλαγή μεγέθους πλαισίων
+	Resize window to initial page	Προσαρμογή μεγέθους παραθύρου στην αρχική σελίδα
+	Restrictions	Περιορισμοί
+	Restrictions lifted	Οι περιορισμοί άρθηκαν
+	Retain existing	Διατήρηση υπάρχουσας
+	Reveal in File Explorer	Εμφάνιση στη διαχείριση αρχείων
+	Reverse closed arrow	Αντίστροφη κλειστή αιχμή βέλους
+	Reverse open arrow	Αντίστροφη ανοιχτή αιχμή βέλους
+	Reverse pages	Αντιστροφή σειράς σελίδων
+	Revert	Επαναφορά στην αποθηκευμένη έκδοση
+	Revert changes	Αναίρεση αλλαγών
+	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Επαναφορά της τελευταίας αποθηκευμένης έκδοσης του «{name}»; Οι μεταγενέστερες αλλαγές δεν θα μπορούν να αναιρεθούν.
+	Reverted to the last saved version	Έγινε επαναφορά στην τελευταία αποθηκευμένη έκδοση
+	Review History	Ιστορικό ελέγχου
+	Revisions	Αναθεωρήσεις
+	Rich Text Format (.rtf)	Μορφή εμπλουτισμένου κειμένου (.rtf)
+	Right Edge	Δεξιά πλευρά
+	Right Footer Text	Κείμενο δεξιού υποσέλιδου
+	Right Header Text	Κείμενο δεξιάς κεφαλίδας
+	Rotate Clockwise	Περιστροφή δεξιόστροφα
+	Rotate clockwise	Δεξιόστροφη περιστροφή
+	Rotate Counterclockwise	Περιστροφή αριστερόστροφα
+	Rotate counterclockwise	Αριστερόστροφη περιστροφή
+	Rotate image	Περιστροφή εικόνας
+	Rotate page	Περιστροφή σελίδας
+	Rotate page {label} clockwise	Περιστροφή σελίδας {label} δεξιόστροφα
+	Rotate page {label} counterclockwise	Περιστροφή σελίδας {label} αριστερόστροφα
+	Rotate Pages	Περιστροφή σελίδων
+	Rotate pages	Περιστροφή σελίδων
+	Rotate pages clockwise	Δεξιόστροφη περιστροφή σελίδων
+	Rotate pages counterclockwise	Αριστερόστροφη περιστροφή σελίδων
+	Rotate pages…	Περιστροφή σελίδων…
+	Rotate view	Περιστροφή προβολής
+	Rotate view clockwise	Περιστροφή προβολής δεξιόστροφα
+	Rotate view clockwise ({key})	Περιστροφή προβολής δεξιόστροφα ({key})
+	Rotate view clockwise (⇧⌘+)	Δεξιόστροφη περιστροφή προβολής (⇧⌘+)
+	Rotate view counterclockwise	Περιστροφή προβολής αριστερόστροφα
+	Run	Εκτέλεση
+	Run a JavaScript	Εκτέλεση JavaScript
+	Run form script	Εκτέλεση δέσμης ενεργειών φόρμας
+	Run JavaScript	Εκτέλεση JavaScript
+	Running action… file {d} of {t}	Εκτέλεση ενέργειας… αρχείο {d} από {t}
+	Same as interface ({language})	Ίδια με τη γλώσσα περιβάλλοντος ({language})
+	Sanitize	Εκκαθάριση ευαίσθητων δεδομένων
+	Sanitize document	Εκκαθάριση κρυφών δεδομένων εγγράφου
+	Sanitize Documents	Αφαίρεση ευαίσθητων δεδομένων από έγγραφα
+	Sanitize document…	Εκκαθάριση εγγράφου…
+	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Η εκκαθάριση αφαιρεί κρυφές πληροφορίες από το έγγραφο: μεταδεδομένα, συνημμένα, σχόλια, πεδία φόρμας (με ενσωμάτωση στο περιεχόμενο), κρυφό κείμενο και επίπεδα, σελιδοδείκτες, συνδέσμους, ενέργειες, σενάρια και ιδιωτικά δεδομένα εφαρμογών.
+	Save & Close	Αποθήκευση και κλείσιμο
+	Save (M4)	Αποθήκευση (M4)
+	Save ({key})	Αποθήκευση ({key})
+	Save anyway	Αποθήκευση ούτως ή άλλως
+	Save as PDF/A	Αποθήκευση ως PDF/A
+	Save as PDF/A-1b	Αποθήκευση ως PDF/A-1b
+	Save as PDF/A-2b	Αποθήκευση ως PDF/A-2b
+	Save as PDF/A-3b	Αποθήκευση ως PDF/A-3b
+	Save as PDF/UA	Αποθήκευση ως PDF/UA
+	Save as PDF/X	Αποθήκευση ως PDF/X
+	Save as…	Αποθήκευση ως…
+	Save attachment…	Αποθήκευση συνημμένου…
+	Save changes to “{name}” before closing?	Αποθήκευση αλλαγών στο «{name}» πριν από το κλείσιμο;
+	Save image	Αποθήκευση εικόνας
+	Save Image As…	Αποθήκευση εικόνας ως…
+	Save or revert changes before selecting another tag.	Αποθηκεύστε ή αναιρέστε τις αλλαγές πριν επιλέξετε άλλη ετικέτα.
+	Save over the changed file?	Αποθήκευση πάνω στο αλλαγμένο αρχείο;
+	Save pages	Αποθήκευση σελίδων
+	Save tag properties	Αποθήκευση ιδιοτήτων ετικέτας
+	Save the accessibility report	Αποθήκευση αναφοράς προσβασιμότητας
+	Save the document afterwards: saving rewrites the whole file so no trace of the removed content stays in it.	Αποθηκεύστε έπειτα το έγγραφο: η αποθήκευση επανεγγράφει ολόκληρο το αρχείο, ώστε να μη μείνει κανένα ίχνος του περιεχομένου που αφαιρέθηκε.
+	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	Αποθηκεύστε έπειτα το έγγραφο. Η αποθήκευση επανεγγράφει ολόκληρο το αρχείο, ώστε να μη διατηρηθεί τίποτα από όσα αφαιρέθηκαν.
+	Save the spreadsheet	Αποθήκευση υπολογιστικού φύλλου
+	Save these pages as one PDF	Αποθήκευση αυτών των σελίδων σε ένα PDF
+	Saved measurements	Αποθηκευμένες μετρήσεις
+	Saved measurements.	Οι μετρήσεις αποθηκεύτηκαν.
+	Saved the print-ready PDF to {path}	Το PDF για εκτύπωση αποθηκεύτηκε στο {path}
+	Saved {name}	Αποθηκεύτηκε το {name}
+	Saved {place}: {before} → {after} (not smaller){detail}	Αποθηκεύτηκε στο {place}: {before} → {after} (χωρίς μείωση μεγέθους){detail}
+	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Αποθηκεύτηκε στο {place}: {before} → {after} ({pct}% μικρότερο){detail}
+	Saved, but reopening failed: {e}	Αποθηκεύτηκε, αλλά το εκ νέου άνοιγμα απέτυχε: {e}
+	Scale relative to target page	Κλίμακα ως προς τη σελίδα προορισμού
+	Scan	Σάρωση
+	Scan & OCR	Σάρωση και OCR
+	Screen flicker	Τρεμόπαιγμα οθόνης
+	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Τα προγράμματα ανάγνωσης οθόνης επιλέγουν φωνή σύμφωνα με τη γλώσσα του εγγράφου. Ορίστε την στις Ιδιότητες εγγράφου > Για προχωρημένους > Γλώσσα.
+	Script Name:	Όνομα σεναρίου:
+	Script:	Σενάριο εντολών:
+	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	Το περιεχόμενο που ελέγχεται από δέσμες ενεργειών πρέπει να είναι προσβάσιμο με πληκτρολόγιο και υποστηρικτικές τεχνολογίες. Ελέγξτε τις δέσμες ενεργειών του εγγράφου.
+	Scripts	Σενάρια εντολών
+	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Οι δέσμες ενεργειών εκτελούνται σε απομονωμένο περιβάλλον χωρίς πρόσβαση σε αρχεία ή δίκτυο. Για το άνοιγμα ιστοσελίδας απαιτείται πρώτα η άδειά σας. Ακόμη και με απενεργοποιημένη τη JavaScript, οι τυπικές συναρτήσεις μορφοποίησης, επικύρωσης και υπολογισμού του Acrobat εξακολουθούν να λειτουργούν.
+	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Τα σενάρια εκτελούνται σε απομονωμένο περιβάλλον χωρίς πρόσβαση σε αρχεία ή δίκτυο. Με απενεργοποιημένη τη JavaScript, οι τυπικές λειτουργίες μορφοποίησης, επικύρωσης και υπολογισμού του Acrobat εξακολουθούν να λειτουργούν.
+	Scroll long text	Κύλιση μεγάλου κειμένου
+	Scroll speed (mouse wheel and arrow keys)	Ταχύτητα κύλισης (τροχός ποντικιού και πλήκτρα βέλους)
+	Scroll tabs left	Κύλιση καρτελών προς τα αριστερά
+	Scroll tabs right	Κύλιση καρτελών προς τα δεξιά
+	Search comments	Αναζήτηση σχολίων
+	Search tools and commands…	Αναζήτηση εργαλείων και εντολών…
+	Searchable Image (Exact)	Αναζητήσιμη εικόνα (ακριβής)
+	Searching… {s} of {p} pages	Αναζήτηση… {s} από {p} σελίδες
+	Searching… {s}/{p}	Αναζήτηση… {s}/{p}
+	Security method	Μέθοδος ασφάλειας
+	Security properties	Ιδιότητες ασφάλειας
+	Security properties…	Ιδιότητες ασφάλειας…
+	Security settings	Ρυθμίσεις ασφαλείας
+	Security settings must allow assistive technology to read the content ("Enable text access for screen reader devices"). Change the document's security to allow it.	Οι ρυθμίσεις ασφαλείας πρέπει να επιτρέπουν την ανάγνωση από βοηθητικές τεχνολογίες («Ενεργοποίηση πρόσβασης στο κείμενο για προγράμματα ανάγνωσης οθόνης»). Αλλάξτε τις ρυθμίσεις ασφαλείας του εγγράφου.
+	Security will be removed when you save	Η προστασία θα αφαιρεθεί κατά την αποθήκευση
+	Select (V)	Επιλογή (V)
+	Select a file first	Επιλέξτε πρώτα αρχείο
+	Select a file for the stamp	Επιλέξτε αρχείο για τη σφραγίδα
+	Select a password-protected file first	Επιλέξτε πρώτα αρχείο προστατευμένο με κωδικό πρόσβασης
+	Select a word	Επιλογή λέξης
+	Select Action:	Επιλέξτε ενέργεια:
+	Select all pages (Organize)	Επιλογή όλων των σελίδων (Οργάνωση)
+	Select at most 1000 objects at a time.	Επιλέξτε έως 1.000 αντικείμενα κάθε φορά.
+	Select data files to merge	Επιλέξτε αρχεία δεδομένων για συγχώνευση
+	Select files to compare	Επιλογή αρχείων για σύγκριση
+	Select format category:	Επιλέξτε κατηγορία μορφής:
+	Select Icon	Επιλογή εικονιδίου
+	Select page {label}	Επιλογή σελίδας {label}
+	Select pages	Επιλογή σελίδων
+	Select the items to remove from this document.	Επιλέξτε τα στοιχεία που θα αφαιρεθούν από αυτό το έγγραφο.
+	Select Trigger:	Επιλέξτε συμβάν ενεργοποίησης:
+	Selected image files: {count}	Επιλεγμένα αρχεία εικόνας: {count}
+	Self-signed	Αυτοϋπογεγραμμένο
+	Sending sheet {s} of {n} to {printer}…	Αποστολή φύλλου {s} από {n} στον {printer}…
+	Sending to {printer}…	Αποστολή στον {printer}…
+	Sent to {printer}	Στάλθηκε στον εκτυπωτή {printer}
+	Sent to {printer}: {msg}	Στάλθηκε στον εκτυπωτή {printer}: {msg}
+	Separate PDFs	Ξεχωριστά PDF
+	Separator style:	Μορφή διαχωριστικών:
+	September	Σεπτέμβριος
+calendar date	September	Σεπτέμβριος
+	Serial number	Σειριακός αριθμός
+	Set Alternate Text	Ορισμός εναλλακτικού κειμένου
+	Set alternate text	Ορισμός εναλλακτικού κειμένου
+	Set bookmark destination	Ορισμός προορισμού σελιδοδείκτη
+	Set document title	Ορισμός τίτλου εγγράφου
+	Set Fields to Same Size	Ίδιο μέγεθος πεδίων
+	Set layer visibility	Ορισμός ορατότητας επιπέδου
+	Set measurement scale	Ορισμός κλίμακας μέτρησης
+	Set Page Boxes	Ορισμός πλαισίων σελίδας
+	Set page boxes	Ορισμός πλαισίων σελίδας
+	Set page boxes…	Ορισμός πλαισίων σελίδας…
+	Set page transitions	Ορισμός εναλλαγών σελίδων
+	Set properties	Ορισμός ιδιοτήτων
+	Set status	Ορισμός κατάστασης
+	Set status Accepted	Ορισμός κατάστασης: Αποδεκτό
+	Set status Cancelled	Ορισμός κατάστασης: Ακυρώθηκε
+	Set status Completed	Ορισμός κατάστασης: Ολοκληρώθηκε
+	Set status None	Ορισμός κατάστασης: Καμία
+	Set status Rejected	Ορισμός κατάστασης: Απορρίφθηκε
+	Set status Unmarked	Ορισμός κατάστασης: Χωρίς σήμανση
+	Set tab order	Ορισμός σειράς μετακίνησης με Tab
+	Set the image of {name}	Ορισμός εικόνας του {name}
+	Set to current page ({n})	Ορισμός στην τρέχουσα σελίδα ({n})
+	Set to zero	Ορισμός σε μηδέν
+	SHA-1 digest	Σύνοψη SHA-1
+	SHA-256 digest	Σύνοψη SHA-256
+	Shadings	Σκιάσεις
+	Shared Field Properties	Κοινές ιδιότητες πεδίων
+	Sheet {s} of {n}	Φύλλο {s} από {n}
+key	Shift	Shift
+	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Το Shift περιορίζει τις γωνίες σε βήματα των 45 μοιρών. Το Backspace αφαιρεί μια κορυφή. Το Escape ακυρώνει.
+	Shift- or Ctrl/Command-click to select several fields.	Χρησιμοποιήστε Shift ή Ctrl/Command μαζί με κλικ για να επιλέξετε πολλά πεδία.
+	Shift-click to select several objects. Drag empty space to select an area.	Κάντε κλικ με πατημένο το Shift για επιλογή πολλών αντικειμένων. Σύρετε σε κενό χώρο για να επιλέξετε περιοχή.
+	ships in milestone {m}	θα διατεθεί στο ορόσημο {m}
+	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	Εμφάνιση απλής γραμμής τίτλου για τα κουμπιά του παραθύρου αντί για τη γραμμή καρτελών. Το GNOME δεν σχεδιάζει γραμμές τίτλου για τις εφαρμογές, οπότε αυτή δεν ακολουθεί το θέμα του.
+	Show a field	Εμφάνιση πεδίου
+	Show all	Εμφάνιση όλων
+	Show all comments	Εμφάνιση όλων των σχολίων
+	Show certificate…	Εμφάνιση πιστοποιητικού…
+	Show cover page in two-page view	Εμφάνιση εξωφύλλου στην προβολή δύο σελίδων
+	Show layer	Εμφάνιση επιπέδου
+	Show less	Εμφάνιση λιγότερων
+	Show password	Εμφάνιση κωδικού πρόσβασης
+	Show Report	Εμφάνιση αναφοράς
+	Show the accessibility report	Εμφάνιση αναφοράς προσβασιμότητας
+	Show this dialog when the Checker starts	Εμφάνιση αυτού του παραθύρου κατά την έναρξη του ελέγχου
+	Show {n} more	Εμφάνιση {n} ακόμη
+	Shown while the pointer is over a mark.	Εμφανίζεται όσο ο δείκτης είναι πάνω από μια σήμανση.
+	Shrink oversized pages	Σμίκρυνση υπερμεγέθων σελίδων
+	Side by side	Δίπλα-δίπλα
+	Side panels	Πλευρικοί πίνακες
+	Sign	Υπογραφή
+	Sign a sheet of white paper and take a photo of it in bright, even light (use the flash). Choose the photo or drop it here: PdfCraft finds the signature and removes the paper.	Υπογράψτε σε ένα λευκό φύλλο χαρτιού και φωτογραφίστε το σε έντονο, ομοιόμορφο φως (χρησιμοποιήστε το φλας). Επιλέξτε τη φωτογραφία ή αφήστε την εδώ: το PdfCraft βρίσκει την υπογραφή και αφαιρεί το χαρτί.
+	Sign Here	Υπογράψτε εδώ
+	Sign this field…	Υπογραφή αυτού του πεδίου…
+	Sign with a Digital ID	Υπογραφή με ψηφιακή ταυτότητα
+	Sign yourself	Υπογράψτε εσείς
+	Signature	Υπογραφή
+	signature	υπογραφή
+	Signature Details	Λεπτομέρειες υπογραφής
+	Signature is INVALID:	Η υπογραφή είναι ΜΗ ΕΓΚΥΡΗ:
+	Signature is valid:	Η υπογραφή είναι έγκυρη:
+	Signature panel	Πίνακας υπογραφών
+	Signature validity is UNKNOWN:	Η εγκυρότητα της υπογραφής είναι ΑΓΝΩΣΤΗ:
+	Signatures	Υπογραφές
+	Signatures panel	Πίνακας υπογραφών
+	Signed and all signatures are valid.	Το έγγραφο είναι υπογεγραμμένο και όλες οι υπογραφές είναι έγκυρες.
+	Signed and saved to {path}	Υπογράφηκε και αποθηκεύτηκε στο {path}
+	Signer	Υπογράφων
+	Signer's name	Όνομα υπογράφοντος
+	Signing time	Ώρα υπογραφής
+	Simplified field notation:	Απλοποιημένη σύνταξη πεδίων:
+	Single file	Ένα αρχείο
+	Single Page	Μία σελίδα
+	Single page	Μονή σελίδα
+	Single Page Continuous	Συνεχής προβολή μίας σελίδας
+	Single word or phrase	Μία λέξη ή φράση
+	Skip Rule	Παράλειψη κανόνα
+	Skipped	Παραλείφθηκε
+	Slash	Πλάγια γραμμή
+scroll speed	Slow	Αργή
+	Smaller pages	Μικρότερες σελίδες
+	Snap to drawing	Προσκόλληση στο σχέδιο
+	Snapping	Προσκόλληση
+	Social Security Number	Αριθμός κοινωνικής ασφάλισης
+	Social Security Numbers	Αριθμοί κοινωνικής ασφάλισης
+	Solid	Συνεχής
+	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	Ορισμένοι σελιδοδείκτες δεν εμφανίζονται εδώ: ο πίνακας παρουσιάζει περιορισμένο αριθμό και βάθος εμφώλευσης.
+	Some content could not be classified safely and was kept in the count.	Ορισμένο περιεχόμενο δεν ήταν δυνατό να ταξινομηθεί αξιόπιστα και παρέμεινε στην καταμέτρηση.
+	Some page content couldn't be read; snapping uses the rest.	Δεν ήταν δυνατή η ανάγνωση μέρους του περιεχομένου της σελίδας· η προσκόλληση χρησιμοποιεί το υπόλοιπο.
+	Some pages contain no countable text. Scanned images need OCR first.	Ορισμένες σελίδες δεν περιέχουν κείμενο για καταμέτρηση. Οι σαρωμένες εικόνες χρειάζονται πρώτα OCR.
+	Sort comments by:	Ταξινόμηση σχολίων κατά:
+	Sort items	Ταξινόμηση στοιχείων
+	sorted ascending	ταξινομημένα σε αύξουσα σειρά
+	sorted descending	ταξινομημένα σε φθίνουσα σειρά
+	Source	Πηγή
+key	Space	Διάστημα
+	Space Audit	Έλεγχος χώρου
+	Split document	Διαχωρισμός εγγράφου
+	Split document…	Διαχωρισμός εγγράφου…
+	Split into files…	Διαχωρισμός σε αρχεία…
+	Spreadsheet (.xlsx)	Υπολογιστικό φύλλο (.xlsx)
+	Squiggly	Κυματιστή υπογράμμιση
+	Squiggly underline	Κυματιστή υπογράμμιση
+	Squiggly underline text	Κυματιστή υπογράμμιση κειμένου
+	Stamp palette	Παλέτα σφραγίδων
+	Stamps	Σφραγίδες
+	Standard Business	Τυπική επαγγελματική
+	Standards	Πρότυπα
+	Start	Αρχή
+action wizard	Start	Έναρξη
+	Start Checking	Έναρξη ελέγχου
+	Start page number	Αρχικός αριθμός σελίδας
+	Steps	Βήματα
+	Sticky note	Αυτοκόλλητη σημείωση
+	Strength: {s}	Ισχύς: {s}
+	Strikethrough text	Διακριτή διαγραφή κειμένου
+	Strong	Ισχυρός
+	Structure Info	Πληροφορίες δομής
+certificate	Subject	Υποκείμενο πιστοποιητικού
+	Submit a form	Υποβολή φόρμας
+	sum (+)	άθροισμα (+)
+	Summarize	Σύνοψη
+	Summarize comments	Σύνοψη σχολίων
+	Summarize Options	Επιλογές σύνοψης
+	Switch light / dark theme	Εναλλαγή φωτεινού / σκοτεινού θέματος
+	Switch to List view to change the pages it takes.	Μεταβείτε στην προβολή λίστας για να αλλάξετε ποιες σελίδες θα συμπεριληφθούν.
+	Switch to two-page view first to show the cover page	Μεταβείτε πρώτα στην προβολή δύο σελίδων για να εμφανιστεί το εξώφυλλο
+	Tab order	Σειρά μετακίνησης με Tab
+	Tab order by columns	Σειρά μετακίνησης με Tab κατά στήλες
+	Tab order by rows	Σειρά μετακίνησης με Tab κατά γραμμές
+	Tab order is consistent with structure order	Η σειρά μετακίνησης με Tab ακολουθεί τη δομή του εγγράφου
+	Tab order: by columns	Σειρά μετακίνησης με Tab: κατά στήλες
+	Tab order: by document structure	Σειρά μετακίνησης με Tab: κατά δομή εγγράφου
+	Tab order: by rows	Σειρά μετακίνησης με Tab: κατά γραμμές
+	Tab order: move a field with its arrows.	Σειρά μετακίνησης με Tab: μετακινήστε ένα πεδίο με τα βέλη του.
+	Table cells belong in a row. Fix the table's tags.	Τα κελιά του πίνακα πρέπει να βρίσκονται μέσα σε γραμμή. Διορθώστε τις ετικέτες του πίνακα.
+	Table rows belong directly in a table or its head, body or foot. Fix the table's tags.	Οι γραμμές πίνακα πρέπει να ανήκουν απευθείας στον πίνακα ή στην κεφαλίδα, το σώμα ή το υποσέλιδό του. Διορθώστε τις ετικέτες δομής του πίνακα.
+	Tables must contain the same number of columns in each row and rows in each column	Οι πίνακες πρέπει να έχουν ίδιο αριθμό στηλών ανά γραμμή και γραμμών ανά στήλη
+	Tables must have a summary	Οι πίνακες πρέπει να έχουν σύνοψη
+	Tables should have headers	Οι πίνακες πρέπει να διαθέτουν κεφαλίδες
+	Tag form fields	Επισήμανση πεδίων φόρμας
+	Tag type	Τύπος ετικέτας
+	Tagged annotations	Σχόλια με ετικέτες δομής
+	Tagged content	Περιεχόμενο με ετικέτες δομής
+	Tagged form fields	Πεδία φόρμας με ετικέτες δομής
+	Tagged multimedia	Πολυμέσα με ετικέτες δομής
+	Tagged PDF	PDF με ετικέτες δομής
+	Tags	Ετικέτες
+	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	Οι ετικέτες δίνουν στο έγγραφο λογική δομή που ακολουθούν οι βοηθητικές τεχνολογίες. Προσθέστε ετικέτες στο έγγραφο («Αυτόματη προσθήκη ετικετών PDF»).
+	Tags panel	Πίνακας ετικετών
+	Take a snapshot	Λήψη στιγμιότυπου
+	Text (plain)	Απλό κείμενο
+	Text alignment:	Στοίχιση κειμένου:
+	Text box	Πλαίσιο κειμένου
+	Text Color:	Χρώμα κειμένου:
+	Text field	Πεδίο κειμένου
+	Text Field Properties	Ιδιότητες πεδίου κειμένου
+	Text in images isn't found; recognise text (OCR) first.	Το κείμενο μέσα σε εικόνες δεν εντοπίζεται. Πραγματοποιήστε πρώτα αναγνώριση κειμένου (OCR).
+	Text is compared word by word; the differences are shown on the new file.	Το κείμενο συγκρίνεται λέξη προς λέξη και οι διαφορές εμφανίζονται στο νέο αρχείο.
+	Text language is specified	Έχει καθοριστεί η γλώσσα του κειμένου
+	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Το κείμενο πρέπει να ξεχωρίζει επαρκώς από το φόντο για άτομα με μειωμένη όραση. Ελέγξτε τα χρώματα οπτικά ή με εργαλείο αντίθεσης.
+	Text recognition is already running	Η αναγνώριση κειμένου εκτελείται ήδη
+	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Η αναγνώριση κειμένου δεν είναι εγκατεστημένη: λείπουν τα αρχεία μοντέλων. Εγκαταστήστε ξανά το PdfCraft ή ορίστε το PDFCRAFT_MODELS στον φάκελο που τα περιέχει.
+	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Η αναγνώριση κειμένου δεν έχει εγκατασταθεί: λείπουν τα μοντέλα της (εκτελέστε `cargo xtask models` ή ορίστε το PDFCRAFT_MODELS).
+	Text to find	Κείμενο προς αναζήτηση
+	Text to insert	Κείμενο προς εισαγωγή
+	Text used as a clipping path cannot be moved with this selection.	Δεν είναι δυνατή η μετακίνηση κειμένου που χρησιμοποιείται ως διαδρομή αποκοπής με αυτή την επιλογή.
+	Text, marks and signatures become part of the page. Other comments stay editable.	Το κείμενο, τα σημάδια και οι υπογραφές γίνονται μέρος της σελίδας. Τα υπόλοιπα σχόλια παραμένουν επεξεργάσιμα.
+	TH and TD	TH και TD
+	TH and TD must be children of TR	Τα TH και TD πρέπει να είναι θυγατρικά στοιχεία του TR
+	Thai and Arabic use regular fallback fonts when available.	Τα ταϊλανδικά και τα αραβικά χρησιμοποιούν κανονικές εναλλακτικές γραμματοσειρές, όταν είναι διαθέσιμες.
+	That didn't work: an internal error stopped it ({m}).	Η ενέργεια απέτυχε λόγω εσωτερικού σφάλματος ({m}).
+	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Η ενέργεια διακόπηκε από εσωτερικό σφάλμα ({m}). Τα έγγραφά σας δεν άλλαξαν.
+	The checker found 1 problem which may prevent the document from being fully accessible.	Ο έλεγχος εντόπισε 1 πρόβλημα που ενδέχεται να εμποδίζει την πλήρη προσβασιμότητα του εγγράφου.
+	The checker found no problems in this document.	Ο έλεγχος δεν εντόπισε προβλήματα σε αυτό το έγγραφο.
+	The checker found {n} problems which may prevent the document from being fully accessible.	Ο έλεγχος εντόπισε {n} προβλήματα που ενδέχεται να εμποδίζουν την πλήρη προσβασιμότητα του εγγράφου.
+	The clipboard has no image or text	Το πρόχειρο δεν περιέχει εικόνα ή κείμενο
+	The document changed while you were choosing a file, so nothing was changed.	Το έγγραφο τροποποιήθηκε ενώ επιλέγατε αρχείο, οπότε δεν εφαρμόστηκε καμία αλλαγή.
+	The document changed while you were editing field properties.	Το έγγραφο τροποποιήθηκε ενώ επεξεργαζόσασταν τις ιδιότητες των πεδίων.
+	The document has additional actions (/AA)	Το έγγραφο περιέχει πρόσθετες ενέργειες (/AA)
+	The document has document-level JavaScript	Το έγγραφο περιέχει JavaScript σε επίπεδο εγγράφου
+	the document has no form fields	το έγγραφο δεν περιέχει πεδία φόρμας
+	the document has no page tree	το έγγραφο δεν διαθέτει δομή σελίδων
+	the document has no tags	το έγγραφο δεν περιέχει ετικέτες δομής
+	The document has no XMP metadata	Το έγγραφο δεν περιέχει μεταδεδομένα XMP
+	The document is encrypted	Το έγγραφο είναι κρυπτογραφημένο
+	The document is no longer open.	Το έγγραφο δεν είναι πλέον ανοιχτό.
+	the document is protected by a password	το έγγραφο προστατεύεται με κωδικό πρόσβασης
+	The document now conforms to {level}; save it to keep the changes	Το έγγραφο συμμορφώνεται πλέον με το {level}· αποθηκεύστε το για να διατηρήσετε τις αλλαγές
+	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Το έγγραφο ανοίγει χωρίς κωδικό. Ο κωδικός απαιτείται για αλλαγή των περιορισμών και εφαρμόζεται κατά την αποθήκευση.
+	The document was closed before it could be saved.	Το έγγραφο έκλεισε προτού αποθηκευτεί.
+	The document's security settings don't allow copying text and images	Οι ρυθμίσεις ασφαλείας του εγγράφου δεν επιτρέπουν την αντιγραφή κειμένου και εικόνων
+	The document's security settings don't allow filling in form fields	Οι ρυθμίσεις ασφάλειας του εγγράφου δεν επιτρέπουν τη συμπλήρωση πεδίων φόρμας
+	The document's security settings don't allow this change	Οι ρυθμίσεις ασφαλείας του εγγράφου δεν επιτρέπουν αυτή την αλλαγή
+	The existing action will be preserved.	Η υπάρχουσα ενέργεια θα διατηρηθεί.
+	The field properties could not be changed.	Δεν ήταν δυνατή η αλλαγή των ιδιοτήτων πεδίων.
+	The field properties dialog is no longer open.	Το παράθυρο ιδιοτήτων πεδίων δεν είναι πλέον ανοιχτό.
+	The field {name} no longer exists.	Το πεδίο {name} δεν υπάρχει πλέον.
+	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Οι γραμματοσειρές με τις οποίες γράφει το PdfCraft δεν μπορούν να σχεδιάσουν το «{c}» ({code}), γι' αυτό εμφανίζεται ως ? σε κάθε πρόγραμμα προβολής PDF. Το κείμενο αποθηκεύεται.
+	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Η φόρμα ζητά υποβολή στο {u}, αλλά το PdfCraft δεν αποστέλλει δεδομένα φόρμας. Αποθηκεύστε το έγγραφο για να διατηρήσετε τις καταχωρίσεις σας.
+	The form asks viewers to make appearances (NeedAppearances)	Η φόρμα απαιτεί από το πρόγραμμα προβολής να δημιουργεί εμφανίσεις πεδίων (NeedAppearances)
+	the image is empty	η εικόνα είναι κενή
+	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Το κλειδί βρίσκεται στην Κλειδοθήκη του macOS, η οποία ενδέχεται να ζητήσει άδεια χρήσης από το PdfCraft.
+	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Το κλειδί βρίσκεται στο χώρο αποθήκευσης πιστοποιητικών των Windows, ο οποίος ενδέχεται να ζητήσει άδεια χρήσης από το PdfCraft.
+	The Keychain's digital IDs couldn't be listed: {e}	Δεν ήταν δυνατή η εμφάνιση των ψηφιακών ταυτοτήτων της Κλειδοθήκης: {e}
+	The labels are in English: the signature's font can't draw them in this language.	Οι ετικέτες είναι στα αγγλικά: η γραμματοσειρά της υπογραφής δεν μπορεί να τις σχεδιάσει σε αυτή τη γλώσσα.
+	The linked PDF opened, but its named destination was not applied.	Το συνδεδεμένο PDF άνοιξε, αλλά ο ονομασμένος προορισμός του δεν εφαρμόστηκε.
+	The linked PDF opened, but its page destination was out of range.	Το συνδεδεμένο PDF άνοιξε, αλλά ο προορισμός σελίδας του είναι εκτός εύρους.
+	The newest {n} of {total} PDFs	Τα {n} νεότερα από {total} PDF
+	The operation failed.	Η λειτουργία απέτυχε.
+	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Οι σελίδες εξήχθησαν αλλά δεν διαγράφηκαν, επειδή το έγγραφο τροποποιήθηκε ενώ επιλέγατε φάκελο.
+	the password is incorrect	ο κωδικός πρόσβασης είναι λανθασμένος
+	The password is only used to read the file; it isn't saved.	Ο κωδικός χρησιμοποιείται μόνο για την ανάγνωση του αρχείου και δεν αποθηκεύεται.
+	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Οι γραμματοσειρές κειμένου PDF δεν μπορούν να εμφανίσουν τον χαρακτήρα «{c}» ({code}). Επιλέξτε κείμενο που υποστηρίζεται.
+	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Ρυθμίσεις του προγράμματος οδήγησης εκτυπωτή για αυτή την εκτύπωση: δίσκος τροφοδοσίας, τύπος χαρτιού, τελική επεξεργασία και άλλα.
+	The replacement file doesn't have that many pages.	Το αρχείο αντικατάστασης δεν έχει τόσες σελίδες.
+	The same password is tried on each file.	Ο ίδιος κωδικός πρόσβασης δοκιμάζεται σε κάθε αρχείο.
+	The selected area has been copied ({w} × {h} pixels)	Η επιλεγμένη περιοχή αντιγράφηκε ({w} × {h} εικονοστοιχεία)
+	The selected fields could not be found. Select them again.	Δεν βρέθηκαν τα επιλεγμένα πεδία. Επιλέξτε τα ξανά.
+	The signature will be invisible.	Η υπογραφή θα είναι αόρατη.
+	The text is the same	Το κείμενο είναι ίδιο
+	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	τα μοντέλα αναγνώρισης κειμένου δεν είναι εγκατεστημένα (επανεγκαταστήστε το PdfCraft ή ορίστε το PDFCRAFT_MODELS στον φάκελο που τα περιέχει)
+	The title in the metadata and the document information differ	Ο τίτλος στα μεταδεδομένα διαφέρει από τον τίτλο στις πληροφορίες εγγράφου
+	the title must not be empty	ο τίτλος δεν επιτρέπεται να είναι κενός
+	The value is shown as typed.	Η τιμή εμφανίζεται όπως πληκτρολογήθηκε.
+	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Το παράθυρο πρέπει να εμφανίζει περιγραφικό τίτλο αντί για το όνομα αρχείου. Ορίστε τίτλο και επιλέξτε Αρχική προβολή > Εμφάνιση: Τίτλος εγγράφου.
+	The Windows store's digital IDs couldn't be listed: {e}	Δεν ήταν δυνατή η ανάκτηση των ψηφιακών ταυτοτήτων από το αποθετήριο των Windows: {e}
+	there are no pages to print	δεν υπάρχουν σελίδες προς εκτύπωση
+	There are no redaction marks (mark text, areas or pages first)	Δεν υπάρχουν σημάνσεις απόκρυψης (σημάνετε πρώτα κείμενο, περιοχές ή σελίδες)
+	There are no redaction marks to apply	Δεν υπάρχουν σημάνσεις απόκρυψης για εφαρμογή
+	there are no redaction marks to apply	δεν υπάρχουν σημάνσεις απόκρυψης προς εφαρμογή
+	These files can't be read, so they won't be in the combined PDF:	Αυτά τα αρχεία δεν διαβάζονται, οπότε δεν θα συμπεριληφθούν στο συνδυασμένο PDF:
+	These objects could not be moved. Select them again and try a smaller move.	Δεν ήταν δυνατή η μετακίνηση αυτών των αντικειμένων. Επιλέξτε τα ξανά και δοκιμάστε μικρότερη μετακίνηση.
+	Thick	Παχύ
+	Thin	Λεπτό
+	This area has too many overlapping paths; intersection snapping is limited.	Αυτή η περιοχή έχει υπερβολικά πολλές επικαλυπτόμενες διαδρομές· η προσκόλληση σε τομές είναι περιορισμένη.
+	This certificate is in your list of trusted certificates.	Αυτό το πιστοποιητικό βρίσκεται στη λίστα αξιόπιστων πιστοποιητικών σας.
+	This certificate is not trusted. Signatures made with it show an unknown identity.	Αυτό το πιστοποιητικό δεν είναι αξιόπιστο. Οι υπογραφές που δημιουργούνται με αυτό εμφανίζουν άγνωστη ταυτότητα.
+	This certificate is trusted through a certificate above it in the chain.	Αυτό το πιστοποιητικό θεωρείται αξιόπιστο μέσω άλλου πιστοποιητικού της αλυσίδας.
+	This comment's appearance can't be changed yet.	Δεν είναι ακόμη δυνατή η αλλαγή της εμφάνισης αυτού του σχολίου.
+	This compatibility level supports only plain ASCII passwords.	Αυτό το επίπεδο συμβατότητας υποστηρίζει μόνο κωδικούς πρόσβασης με χαρακτήρες ASCII.
+	This dialog shows the details of a certificate and its chain.	Αυτό το παράθυρο εμφανίζει τις λεπτομέρειες ενός πιστοποιητικού και της αλυσίδας του.
+	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Αυτό το έγγραφο ζητά να ανοίξει σε λειτουργία πλήρους οθόνης: η σελίδα γεμίζει την οθόνη και τίποτα άλλο δεν εμφανίζεται. Πατήστε Esc οποιαδήποτε στιγμή για έξοδο.
+	This document can't be checked: it couldn't be read for editing	Δεν είναι δυνατός ο έλεγχος αυτού του εγγράφου: δεν ήταν δυνατή η ανάγνωσή του για επεξεργασία
+	This document contains {n} interactive form fields.	Το έγγραφο περιέχει {n} διαδραστικά πεδία φόρμας.
+	This document has no attachments.	Αυτό το έγγραφο δεν έχει συνημμένα.
+	This document has no comments to flatten	Το έγγραφο δεν έχει σχόλια για ενσωμάτωση
+	This document has no document-level scripts.	Αυτό το έγγραφο δεν περιέχει σενάρια σε επίπεδο εγγράφου.
+	This document has no editable structure tags.	Αυτό το έγγραφο δεν έχει επεξεργάσιμες ετικέτες δομής.
+	This document has no form fields to flatten	Το έγγραφο δεν έχει πεδία φόρμας για ενσωμάτωση
+	This document has no form fields you can fill in	Το έγγραφο δεν έχει πεδία φόρμας που μπορούν να συμπληρωθούν
+	This document has no form fields.	Αυτό το έγγραφο δεν περιέχει πεδία φόρμας.
+	This document has no layers.	Αυτό το έγγραφο δεν έχει επίπεδα.
+	This document has no pages.	Αυτό το έγγραφο δεν έχει σελίδες.
+	This document has no restrictions to lift	Αυτό το έγγραφο δεν έχει περιορισμούς προς άρση
+	This document has no signatures.	Αυτό το έγγραφο δεν περιέχει υπογραφές.
+	This document has no tagged figures.	Αυτό το έγγραφο δεν περιέχει εικόνες με ετικέτες δομής.
+	This document has no {kind} to change	Το έγγραφο δεν έχει {kind} για τροποποίηση
+	This document hasn't been checked yet.	Αυτό το έγγραφο δεν έχει ελεγχθεί ακόμη.
+	This document is secured. Some changes are restricted by its security settings.	Το έγγραφο προστατεύεται. Ορισμένες αλλαγές περιορίζονται από τις ρυθμίσεις ασφαλείας του.
+	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	το έγγραφο είναι υπογεγραμμένο: η επανεγγραφή του θα ακύρωνε τις υπογραφές του (αποθηκεύστε το με σταδιακή ενημέρωση)
+	This document is trying to open a local file:	Αυτό το έγγραφο προσπαθεί να ανοίξει ένα τοπικό αρχείο:
+	This document isn't password-protected	Το έγγραφο δεν προστατεύεται με κωδικό
+	This drawing exceeds the snapping limit; only the first paths are used.	Το σχέδιο υπερβαίνει το όριο προσκόλλησης· χρησιμοποιούνται μόνο οι πρώτες διαδρομές.
+	This field is locked. Unlock it to change its properties.	Το πεδίο είναι κλειδωμένο. Ξεκλειδώστε το για να αλλάξετε τις ιδιότητές του.
+	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Η γραμματοσειρά αυτού του πεδίου δεν μπορεί να σχεδιάσει το «{c}» ({code}), γι' αυτό το PdfCraft δείχνει ? στη θέση του. Η τιμή αποθηκεύεται και άλλα προγράμματα προβολής PDF επανασχεδιάζουν το πεδίο από αυτήν.
+	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Αυτό το αρχείο άλλαξε στον δίσκο. Η επαναφόρτωση δείχνει τη νέα έκδοση και απορρίπτει τις μη αποθηκευμένες αλλαγές σας· η αποθήκευση την αντικαθιστά με αυτή την έκδοση.
+	This file is already as small as it can be made ({size}). No copy was saved.	Το αρχείο έχει ήδη το μικρότερο δυνατό μέγεθος ({size}). Δεν αποθηκεύτηκε αντίγραφο.
+	this file isn't XFDF, FDF, XML or text form data	αυτό το αρχείο δεν περιέχει δεδομένα φόρμας XFDF, FDF, XML ή κειμένου
+	This file was damaged and has been repaired. Saving keeps the repaired version.	Το αρχείο ήταν κατεστραμμένο και επιδιορθώθηκε. Η αποθήκευση διατηρεί την επιδιορθωμένη έκδοση.
+	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Αυτός ο φάκελος δεν είναι διαθέσιμος αυτή τη στιγμή. Μπορεί να έχει μετακινηθεί ή ο δίσκος ή ο συγχρονισμός νέφους να είναι εκτός σύνδεσης.
+	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Αυτή η φόρμα περιέχει επίσης δεδομένα XFA, τα οποία το PdfCraft δεν διαβάζει ακόμη. Μπορείτε να συμπληρώσετε τα πεδία της, αλλά το Acrobat ενδέχεται να εμφανίσει τις τιμές XFA.
+	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Τα σενάρια αυτής της φόρμας είναι απενεργοποιημένα, επειδή ένα από αυτά εκτελούνταν για πολύ ώρα. Ανοίξτε ξανά το έγγραφο για να εκτελεστούν ξανά.
+	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Πρόκειται για δυναμική φόρμα XFA, την οποία το PdfCraft δεν μπορεί ακόμη να εμφανίσει. Εμφανίζεται η προσωρινή σελίδα του αρχείου.
+	This measurement needs at least {n} points.	Αυτή η μέτρηση απαιτεί τουλάχιστον {n} σημεία.
+	This page contains objects that cannot be selected together.	Αυτή η σελίδα περιέχει αντικείμενα που δεν μπορούν να επιλεγούν μαζί.
+	This page couldn't be displayed.\n{e}	Δεν ήταν δυνατή η εμφάνιση αυτής της σελίδας.\n{e}
+	This PDF uses the unsupported {s} action.	Αυτό το PDF χρησιμοποιεί τη μη υποστηριζόμενη ενέργεια {s}.
+	This printer offers no settings of its own.	Αυτός ο εκτυπωτής δεν διαθέτει πρόσθετες ρυθμίσεις.
+	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Το πρόγραμμα οδήγησης αυτού του εκτυπωτή δεν δέχεται ρυθμίσεις εκτύπωσης διπλής όψης από άλλα προγράμματα, οπότε ισχύει η δική του ρύθμιση. Αλλάξτε τη στις Ιδιότητες…
+	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Αυτή η διεύθυνση χρησιμοποιεί γράμματα από διαφορετικά αλφάβητα, συνηθισμένη μέθοδος παραπλάνησης με ονόματα ιστοτόπων.
+	This web address uses letters from another alphabet, which can look like familiar ones.	Αυτή η διεύθυνση περιέχει γράμματα άλλου αλφαβήτου που μοιάζουν με γνωστούς χαρακτήρες.
+	Tile scale:	Κλίμακα πλακιδίων:
+	Timed responses	Απαντήσεις με χρονικό περιορισμό
+	Timestamp	Χρονοσήμανση
+	to	έως
+	To change locked fields, also set Locked to No.	Για να αλλάξετε κλειδωμένα πεδία, ορίστε επίσης το «Κλειδωμένο» σε «Όχι».
+	to {n}	έως {n}
+	To:	Έως:
+	Today: {date}	Σήμερα: {date}
+	Toggle fit page / fit width	Εναλλαγή προσαρμογής στη σελίδα / στο πλάτος
+	Tools panel side	Πλευρά πλαισίου εργαλείων
+	Tooltip:	Συμβουλή εργαλείου:
+	Top-level bookmarks ({n})	Σελιδοδείκτες πρώτου επιπέδου ({n})
+	TR must be a child of Table, THead, TBody, or TFoot	Το TR πρέπει να είναι θυγατρικό στοιχείο των Table, THead, TBody ή TFoot
+	Trim the picture with its handles; Enter or Done applies	Περικόψτε την εικόνα με τις λαβές της· Enter ή Τέλος για εφαρμογή
+	Trust	Εμπιστοσύνη
+	Try the form as people filling it in will see it	Δοκιμή της φόρμας όπως θα τη βλέπουν όσοι τη συμπληρώνουν
+	Turn upside down (180°)	Αναποδογύρισμα (180°)
+	Two-page view	Προβολή δύο σελίδων
+	Two-sided:	Εκτύπωση διπλής όψης:
+	Two-Up (Cover Page)	Δύο σελίδες (με εξώφυλλο)
+	Two-Up (Facing)	Δύο αντικριστές σελίδες
+	Two-Up Continuous (Cover Page)	Συνεχής προβολή δύο σελίδων (με εξώφυλλο)
+	Two-Up Continuous (Facing)	Συνεχής προβολή αντικριστών σελίδων
+signature pad	Type	Πληκτρολόγηση
+	Type a password.	Πληκτρολογήστε έναν κωδικό πρόσβασης.
+	Type Password	Πληκτρολογήστε κωδικό πρόσβασης
+	Type text	Πληκτρολόγηση κειμένου
+	Type the web address.	Πληκτρολογήστε τη διεύθυνση της ιστοσελίδας.
+	Type your {what}.	Πληκτρολογήστε {what}.
+	Unchecked	Μη επιλεγμένο
+	Underline text	Υπογράμμιση κειμένου
+	Undid {label}	Αναιρέθηκε: {label}
+	Unit	Μονάδα
+	Unknown author	Άγνωστος συντάκτης
+	Unlock comment	Ξεκλείδωμα σχολίου
+	Unlock {name}	Ξεκλείδωμα του {name}
+	Unlock {n} files	Ξεκλείδωμα {n} αρχείων
+	Unlocked {n} of {m} files	Ξεκλειδώθηκαν {n} από {m} αρχεία
+	Unlocked: the combined file won't be password-protected	Ξεκλειδώθηκε: το συνδυασμένο αρχείο δεν θα προστατεύεται με κωδικό πρόσβασης
+	Unlock…	Ξεκλείδωμα…
+	Unpin	Ξεκαρφίτσωμα
+	Unpin {folder}	Ξεκαρφίτσωμα του {folder}
+	Unplaced	Χωρίς τοποθέτηση
+	Unsupported measurements	Μη υποστηριζόμενες μετρήσεις
+	Update background	Ενημέρωση φόντου
+	Update background…	Ενημέρωση φόντου…
+	Update header & footer	Ενημέρωση κεφαλίδας και υποσέλιδου
+	Update header & footer…	Ενημέρωση κεφαλίδας και υποσέλιδου…
+	Update watermark	Ενημέρωση υδατογραφήματος
+	Update watermark…	Ενημέρωση υδατογραφήματος…
+	URL to submit to	Διεύθυνση URL υποβολής
+	Use 72 DPI (one point per pixel)	Χρήση 72 DPI (ένα σημείο ανά εικονοστοιχείο)
+	Use a certificate	Χρήση πιστοποιητικού
+	Use a Digital ID from a file	Χρήση ψηφιακής ταυτότητας από αρχείο
+	Use custom DPI	Χρήση προσαρμοσμένης ανάλυσης DPI
+	Use each image's embedded DPI; use 72 DPI when it is absent.	Χρήση της ενσωματωμένης ανάλυσης DPI κάθε εικόνας· αν δεν υπάρχει, χρήση 72 DPI.
+	Use Flate to encode streams that are not encoded	Χρήση συμπίεσης Flate για ροές που δεν είναι συμπιεσμένες
+	Use guided actions	Χρήση καθοδηγούμενων ενεργειών
+	Use image resolution	Χρήση ανάλυσης εικόνας
+	Use it when a printer skips text, shading or transparency. The print is no longer searchable text; with Print in grayscale, the pictures are grey.	Χρησιμοποιήστε το όταν ένας εκτυπωτής παραλείπει κείμενο, σκίαση ή διαφάνεια. Η εκτύπωση δεν είναι πλέον κείμενο με δυνατότητα αναζήτησης· με εκτύπωση σε αποχρώσεις του γκρι, οι εικόνες είναι γκρι.
+	Use JavaScript	Χρήση JavaScript
+	Use now	Χρήση τώρα
+	Use overlay text	Χρήση κειμένου επικάλυψης
+	Use print production	Χρήση εργαλείων προεκτύπωσης
+	Use system setting	Χρήση ρύθμισης συστήματος
+	Use system title bar	Χρήση γραμμής τίτλου συστήματος
+	Use {what}	Χρήση {what}
+	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	Χρησιμοποιείται όταν το PDF δεν ορίζει διάταξη ή μεγέθυνση. Η συνεχής κύλιση δεν προσκολλάται στις σελίδες.
+	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	Χρησιμοποιείται κατά το άνοιγμα PDF. Μια ρητά επιλεγμένη λειτουργία εκκίνησης ή ελέγχου υπερισχύει για την τρέχουσα συνεδρία.
+	User Interface Options	Επιλογές περιβάλλοντος χρήστη
+	User password	Κωδικός χρήστη
+	Valid	Έγκυρο
+	Valid for 5 years, for digital signatures. Self-signed IDs are usually not trusted by others.	Ισχύει για 5 χρόνια για ψηφιακές υπογραφές. Οι αυτοϋπογεγραμμένες ταυτότητες συνήθως δεν θεωρούνται αξιόπιστες από άλλους.
+	Valid from	Ισχύει από
+	Valid to	Έγκυρο έως
+	Validate	Επικύρωση
+	Validate all	Επικύρωση όλων
+	Validate all signatures	Επικύρωση όλων των υπογραφών
+	Validity ends	Λήξη ισχύος
+	Validity starts	Έναρξη ισχύος
+	Value is not calculated	Δεν υπολογίζεται τιμή
+	Value is the	Η τιμή είναι το
+	Verify	Επαλήθευση
+	Verify to see what the document needs.	Εκτελέστε επαλήθευση για να δείτε τι χρειάζεται το έγγραφο.
+	Version {v}	Έκδοση {v}
+	Vertical reversed	Κατακόρυφα αντίστροφα
+	Vertical text cannot be moved with this selection.	Δεν είναι δυνατή η μετακίνηση κατακόρυφου κειμένου με αυτή την επιλογή.
+	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Το βίντεο, ο ήχος και το εμπλουτισμένο περιεχόμενο πρέπει να έχουν ετικέτες για να αναγγέλλονται. Προσθέστε ετικέτες στα σχόλια πολυμέσων.
+	View less	Λιγότερα
+	View more	Περισσότερα
+	View revision {n}	Προβολή αναθεώρησης {n}
+	View signed version	Προβολή υπογεγραμμένης έκδοσης
+	Viewing	Προβολή
+	Viewport	Περιοχή προβολής
+	Viewport rectangle in page points (x, y, width, height)	Ορθογώνιο προβολής σε σημεία σελίδας (x, y, πλάτος, ύψος)
+	Visible Rectangle	Ορατό ορθογώνιο
+	Visual	Οπτικό
+	Warning	Warning
+	watermark	υδατογράφημα
+	Weak	Αδύναμος
+	Welcome to PdfCraft	Καλώς ορίσατε στο PdfCraft
+	What takes up the space in this file, by kind of content.	Τι καταλαμβάνει τον χώρο σε αυτό το αρχείο, ανά είδος περιεχομένου.
+	What word or phrase would you like to search for?	Ποια λέξη ή φράση θέλετε να αναζητήσετε;
+	White on black	Λευκό σε μαύρο
+	Whole words only	Μόνο ολόκληρες λέξεις
+	Window Options	Επιλογές παραθύρου
+	Windows store  ·  	Αποθήκη πιστοποιητικών Windows  ·  
+	Word count	Καταμέτρηση λέξεων
+	Word counting stopped unexpectedly.	Η καταμέτρηση λέξεων σταμάτησε απροσδόκητα.
+	Word count…	Καταμέτρηση λέξεων…
+	Write this email?	Σύνταξη αυτού του email;
+	Wrong password	Λανθασμένος κωδικός πρόσβασης
+	Wrote 1 file to {dir}	Γράφτηκε 1 αρχείο στον φάκελο {dir}
+	Wrote {n} files to {dir}	Γράφτηκαν {n} αρχεία στον φάκελο {dir}
+	X Object Forms	Φόρμες XObject
+	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	Φόρμα XFA: τα πεδία και τα δεδομένα XFA συγχρονίζονται, ώστε άλλα προγράμματα προβολής να εμφανίζουν όσα συμπληρώνετε.
+	Yellow on black	Κίτρινο σε μαύρο
+	You are about to apply 1 redaction mark. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	Πρόκειται να εφαρμόσετε 1 επισήμανση απόκρυψης. Το κείμενο, οι εικόνες και τα σχέδια κάτω από τις επισημάνσεις, καθώς και τα σχόλια και τα πεδία φόρμας που επικαλύπτονται, θα αφαιρεθούν οριστικά.
+	You are about to apply {n} redaction marks. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	Πρόκειται να εφαρμόσετε {n} επισημάνσεις απόκρυψης. Το κείμενο, οι εικόνες και τα σχέδια κάτω από τις επισημάνσεις, καθώς και τα σχόλια και τα πεδία φόρμας που επικαλύπτονται, θα αφαιρεθούν οριστικά.
+	You can pin up to {n} folders. Unpin one first.	Μπορείτε να καρφιτσώσετε έως {n} φακέλους. Ξεκαρφιτσώστε πρώτα έναν.
+	You have version {c}. All releases are listed at {page}.	Έχετε την έκδοση {c}. Όλες οι εκδόσεις βρίσκονται στη διεύθυνση {page}.
+	You have version {c}. Download the new version from its release page.	Έχετε την έκδοση {c}. Κάντε λήψη της νέας έκδοσης από τη σελίδα εκδόσεών της.
+	Your changes will be lost if you don't save them.	Οι αλλαγές σας θα χαθούν εάν δεν τις αποθηκεύσετε.
+	Your name	Το όνομά σας
+	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy ή yy έτος · m ή mm μήνας · mmm ή mmmm όνομα μήνα · d ή dd ημέρα · ddd ή dddd ημέρα εβδομάδας. Τα H, h, M, s και t είναι σύμβολα ώρας και δεν χρησιμοποιούνται μόνα τους: βάλτε {escape} πριν από ένα γράμμα για να εμφανιστεί αυτούσιο.
+	ZIP	ZIP
+	Zip Code	Ταχυδρομικός κώδικας
+	Zip Code + 4	Ταχυδρομικός κώδικας + 4
+	Zoom in ({key})	Μεγέθυνση ({key})
+	Zoom in (⌘+)	Μεγέθυνση (⌘+)
+	Zoom in / out (also pinch or {key}-scroll)	Μεγέθυνση / σμίκρυνση (επίσης με χειρονομία ή κύλιση με {key})
+	Zoom in / out (also pinch or ⌘-scroll)	Μεγέθυνση / σμίκρυνση (επίσης με σύγκλιση δακτύλων ή κύλιση με ⌘)
+	Zoom out ({key})	Σμίκρυνση ({key})
+	Zoom out (⌘−)	Σμίκρυνση (⌘−)
+	Zoom to page level	Προσαρμογή στη σελίδα
+	{0}: {1}	{0}: {1}
+	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	Οι χαρακτήρες {chars} δεν μπορούν ακόμη να εγγραφούν στο PDF: το κείμενο συμπλήρωσης και υπογραφής υποστηρίζει μόνο δυτικοευρωπαϊκούς χαρακτήρες. Επιλέξτε αριθμητική μορφή, όπως dd.mm.yyyy.
+	{c} of {n}{more}	{c} από {n}{more}
+	{dpi} pixels/inch	{dpi} εικονοστοιχεία/ίντσα
+	{field}: {e}	{field}: {e}
+	{file} is too large for a stamp (at most {n} MB)	Το {file} είναι πολύ μεγάλο για σφραγίδα (μέγιστο μέγεθος {n} MB)
+	{folder} is already pinned to Home	Ο φάκελος {folder} είναι ήδη καρφιτσωμένος στην αρχική
+	{kind} field	Πεδίο {kind}
+	{kind} Properties	Ιδιότητες: {kind}
+	{kind} · page {p}	{kind} · σελίδα {p}
+	{kind} — click to show it on the page	{kind} — κάντε κλικ για εμφάνιση στη σελίδα
+	{k} of {n}	{k} από {n}
+	{label} (1 issue)	{label} (1 πρόβλημα)
+	{label} ({n} issues)	{label} ({n} προβλήματα)
+	{label} failed: {e}	Αποτυχία {label}: {e}
+	{month} {day}, {y}	{day} {month} {y}
+	{month} {y}	{month} {y}
+	{msg} to {dir}	{msg} στο {dir}
+	{name} (default)	{name} (προεπιλογή)
+	{name} can't be combined: {why}	Το {name} δεν μπορεί να συνδυαστεί: {why}
+	{name} has no action	Το {name} δεν έχει ενέργεια
+	{name} is read-only	Το {name} είναι μόνο για ανάγνωση
+	{name} is too large for a word list (at most 1 MB).	Το αρχείο {name} είναι πολύ μεγάλο για λίστα λέξεων (μέγιστο 1 MB).
+	{name} submits the form to {url}; PdfCraft doesn't send form data. Save the document to keep your entries.	Το {name} υποβάλλει τη φόρμα στο {url}, αλλά το PdfCraft δεν αποστέλλει δεδομένα φόρμας. Αποθηκεύστε το έγγραφο για να διατηρήσετε τις καταχωρίσεις σας.
+	{name} — unsaved changes	{name} — μη αποθηκευμένες αλλαγές
+	{name}: choosing images arrives on the web with file pickers for images	{name}: η επιλογή εικόνων θα διατεθεί στη διαδικτυακή έκδοση με επιλογή αρχείων εικόνας
+	{name}: the {other} action isn't supported yet	{name}: η ενέργεια {other} δεν υποστηρίζεται ακόμη
+	{n} contributors · {c} commits	{n} συντελεστές · {c} καταχωρίσεις
+	{n} days ago	πριν από {n} ημέρες
+	{n} differences found	Βρέθηκαν {n} διαφορές
+@plural	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	{n} όνομα πεδίου συγκρούεται με προηγούμενα αρχεία και θα μετονομαστεί: {list}|{n} ονόματα πεδίων συγκρούονται με προηγούμενα αρχεία και θα μετονομαστούν: {list}
+	{n} fields selected	Επιλέχθηκαν {n} πεδία
+@plural	{n} field|{n} fields	{n} πεδίο|{n} πεδία
+	{n} files done	Ολοκληρώθηκαν {n} αρχεία
+	{n} files need attention	{n} αρχεία χρειάζονται έλεγχο
+	{n} instances	{n} εμφανίσεις
+	{n} issues	{n} προβλήματα
+	{n} marks	{n} επισημάνσεις
+	{n} match(es) marked for redaction.	{n} αντιστοιχίες επισημάνθηκαν για απόκρυψη.
+	{n} measurements use an unsupported format and are left out.	{n} μετρήσεις έχουν μη υποστηριζόμενη μορφή και παραλείπονται.
+@plural	{n} object selected|{n} objects selected	{n} επιλεγμένο αντικείμενο|{n} επιλεγμένα αντικείμενα
+	{n} pages	{n} σελίδες
+	{n} pages selected	Επιλέχθηκαν {n} σελίδες
+	{n} pages selected.	Επιλέχθηκαν {n} σελίδες.
+@plural	{n} page|{n} pages	{n} σελίδα|{n} σελίδες
+	{n} selected	{n} επιλεγμένα
+	{n} tags	{n} ετικέτες
+	{n} word(s) or phrase(s)	{n} λέξεις ή φράσεις
+	{n} {kind}	{n} {kind}
+	{rule} - {status}	{rule} - {status}
+	{s} action	Ενέργεια {s}
+	{verb} as "{name}"	{verb} ως «{name}»
+	{verb} Background	{verb} φόντου
+	{verb} Header and Footer	{verb} κεφαλίδας και υποσέλιδου
+	{verb} Watermark	{verb} υδατογραφήματος
+	{who} in this document tried to open an address PdfCraft won't open: {e}.	Το στοιχείο {who} σε αυτό το έγγραφο προσπάθησε να ανοίξει διεύθυνση που το PdfCraft δεν επιτρέπει: {e}.
+	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	Το στοιχείο {who} σε αυτό το έγγραφο προσπάθησε να ανοίξει μη επιτρεπόμενη διεύθυνση: {e}. Από τα έγγραφα ανοίγουν μόνο σύνδεσμοι ιστού (http, https) και ηλεκτρονικού ταχυδρομείου (mailto).
+	{who} in this document wants to open this address in your browser:	Το στοιχείο {who} σε αυτό το έγγραφο θέλει να ανοίξει αυτή τη διεύθυνση στο πρόγραμμα περιήγησης:
+	{who} in this document wants to open your email app with this address:	Το στοιχείο {who} σε αυτό το έγγραφο θέλει να ανοίξει την εφαρμογή ηλεκτρονικού ταχυδρομείου με αυτή τη διεύθυνση:
+	{words} on {pages}	{words} σε {pages}
+	ΔLOC	Δγραμμές
+	— (protection is applied when you save)	— (η προστασία εφαρμόζεται κατά την αποθήκευση)
+	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	Το «{name}» άλλαξε στον δίσκο μετά το άνοιγμα ή την τελευταία αποθήκευση. Η αποθήκευση τώρα αντικαθιστά αυτή τη νεότερη έκδοση με αυτήν εδώ.
+	“{name}” has security restrictions. Enter its permissions password to lift them.	Το «{name}» έχει περιορισμούς ασφαλείας. Εισαγάγετε τον κωδικό δικαιωμάτων για να αρθούν οι περιορισμοί.
+	“{name}” is protected. Enter a password to open it.	Το «{name}» προστατεύεται. Εισαγάγετε κωδικό πρόσβασης για να το ανοίξετε.
+	−LOC	−Γραμμές

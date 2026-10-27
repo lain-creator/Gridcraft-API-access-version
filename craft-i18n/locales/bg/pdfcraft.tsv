@@ -1,0 +1,2105 @@
+# Български (bg) interface catalog for PdfCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	  · not fixable here	  · не може да се поправи тук
+	 (page {p})	 (страница {p})
+	 (searching… {s} of {p} pages)	 (търсене… {s} от {p} страници)
+	 ({n} at {dpi} dpi, the largest size they can be drawn at)	 ({n} с {dpi} dpi, най-голямата резолюция, с която могат да бъдат изобразени)
+	 ({s} not exported: {first})	 ({s} не са експортирани: {first})
+	 on page {p}	 на страница {p}
+	 · password-protected	 · защитен с парола
+	% of all commits	% от всички къмитове
+	+Bin	+Bin
+	+LOC	+LOC
+	, Expires: 	, валиден до: 
+	1 difference found	Открита е 1 разлика
+	1 file done	Обработен е 1 файл
+	1 file needs attention	1 файл изисква внимание
+	1 instance	1 съвпадение
+	1 issue	1 проблем
+	1 mark	1 маркировка
+	1 page	1 страница
+	1 page selected	Избрана е 1 страница
+	1 page selected.	Избрана е 1 страница.
+	180 degrees	180 градуса
+	4 x 6 in label (101.6 x 152.4 mm)	Етикет 4 × 6 in (101,6 × 152,4 mm)
+	9 digit, A letter, O letter or digit, X any character	9 цифра, A буква, O буква или цифра, X произволен знак
+	; 1 page already had text	; 1 страница вече съдържаше текст
+	; failed: {list}	; неуспешни: {list}
+	; {n} pages already had text	; {n} страници вече съдържаха текст
+	? of {n}	? от {n}
+	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} къмита, +{added} / −{deleted} реда (Δ {delta}), +{bin_added} / −{bin_deleted} двоични ресурса, {first} – {last}
+	`{command}` {when}	`{command}` {when}
+	a bookmark cannot be moved inside itself	отметка не може да бъде преместена в самата себе си
+	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Независимо разработено PDF приложение с отворен код, написано на Rust. MIT OR Apache-2.0.
+	A diagonal CONFIDENTIAL watermark on every page.	Диагонален воден знак CONFIDENTIAL на всяка страница.
+	a document must keep at least one page	документът трябва да съдържа поне една страница
+	A document needs at least one page: copy instead	Документът трябва да има поне една страница: използвайте копиране
+	A form field has additional actions	Поле на формуляр има допълнителни действия
+	A selected field has no widget on any page, so the fields can't be edited together.	Едно от избраните полета няма елемент на нито една страница, затова полетата не могат да се редактират заедно.
+	A stream refers to an external file	Поток препраща към външен файл
+	A stream uses LZW compression	Поток използва LZW компресия
+	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Резюмето описва предназначението и оформлението на таблицата. Добавете атрибут Summary към всяка таблица.
+	About	За програмата
+	About PdfCraft	За PdfCraft
+	Accepted	Прието
+	Accessibility Checker	Проверка на достъпността
+	Accessibility Checker Options	Опции на проверката за достъпност
+	Accessibility permission flag	Флаг за разрешение за достъпност
+	Accessibility permission flag is set	Флагът за разрешение за достъпност е зададен
+	Acrobat 3.0 and later (40-bit RC4)	Acrobat 3.0 и по-нови (40-битов RC4)
+	Acrobat 5.0 and later (128-bit RC4)	Acrobat 5.0 и по-нови (128-битов RC4)
+	Acrobat 7.0 and later (128-bit AES)	Acrobat 7.0 и по-нови (128-битов AES)
+	Acrobat X and later (256-bit AES)	Acrobat X и по-нови (256-битов AES)
+	Action name:	Име на действието:
+	Action Wizard	Съветник за действия
+	Action Wizard…	Съветник за действия…
+	Actions list	Списък с действия
+	Actual size	Действителен размер
+	Actual text	Действителен текст
+	Add	Добави
+	Add a button	Добави бутон
+	Add a callout	Добави изнесена бележка
+	Add a checkbox	Добави отметка (квадратче)
+	Add a comment	Добави коментар
+	Add a date field	Добави поле за дата
+	Add a digital signature field	Добави поле за цифров подпис
+	Add a drop-down list	Добави падащ списък
+	Add a list box	Добави списъчно поле
+	Add a radio button	Добави радиобутон
+	Add a reply	Добави отговор
+	Add a stamp	Добави печат
+	Add a sticky note	Добави бележка
+	Add a sticky note here	Добави бележка тук
+	Add a text box	Добави текстово поле
+	Add a text field	Добави текстово поле за попълване
+	Add alternate text	Добави алтернативен текст
+	Add alternate text…	Добави алтернативен текст…
+	Add an Action	Добави действие
+	Add an image field	Добави поле за изображение
+	Add arrow	Добави стрелка
+	Add at least two files	Добавете поне два файла
+	Add background	Добави фон
+	Add background…	Добави фон…
+	Add Bates numbering…	Добави номериране на Бейтс…
+	Add bookmark	Добави отметка
+	Add callout	Добави изнесен надпис
+	Add checkmark	Добави знак за отметка
+	Add cloud	Добави облак
+	Add comment	Добавяне на коментар
+	Add comments	Добави коментари
+	Add connected lines	Добави свързани линии
+	Add content	Добави съдържание
+	Add cross	Добави кръстче
+	Add dot	Добави точка
+	Add drawing	Добави рисунка
+	Add field	Добави поле
+	Add file attachment	Добави прикачен файл
+	Add files to combine	Добавете файлове за обединяване
+	Add files…	Добави файлове…
+	Add folder	Добави папка
+	Add folder and subfolders	Добави папка и подпапки
+	Add folder and subfolders…	Добави папка и подпапки…
+	Add folder…	Добави папка…
+	Add footer	Добави долен колонтитул
+	Add form components	Добавяне на компоненти на формуляр
+	Add header	Добави горен колонтитул
+	Add header & footer	Добави горен и долен колонтитул
+	Add header & footer…	Добави горен и долен колонтитул…
+	Add highlight	Добави маркиране
+	Add image	Добави изображение
+	Add image…	Добави изображение…
+	Add inserted text	Добави вмъкнат текст
+	Add line	Добави линия
+	Add link	Добави връзка
+	Add open documents	Добави отворените документи
+	Add or edit links	Добави или редактирай връзки
+	Add oval	Добави овал
+	Add Page Numbers	Добавяне на номера на страници
+	Add polygon	Добави многоъгълник
+	Add printer marks	Добави печатарски маркери
+	Add rectangle	Добави правоъгълник
+	Add redaction mark	Добави маркировка за заличаване
+	Add search index	Добави индекс за търсене
+	Add signature	Добави подпис
+	Add squiggly underline	Добави вълнообразно подчертаване
+	Add stamp	Добави печат
+	Add Step	Добави стъпка
+	Add sticky note	Добави бележка
+	Add strikethrough	Добави зачертаване
+	Add text	Добави текст
+	Add text box	Добави текстово поле
+	Add the choices people pick from.	Добавете възможностите, от които потребителите избират.
+	Add the files to combine	Добавете файловете за обединяване
+	Add the steps this action runs, in order.	Добавете стъпките, които това действие изпълнява, по ред.
+	Add to Trusted Certificates	Добави към надеждните сертификати
+	Add to trusted certificates	Добави към надеждните сертификати
+	Add underline	Добави подчертаване
+	Add watermark	Добави воден знак
+	Add watermark…	Добави воден знак…
+	Added 1 comment	Добавен е 1 коментар
+	Added more than once	Добавен повече от веднъж
+	Added the first {n} files in {folder}	Добавени са първите {n} файла от {folder}
+	Added {n} comments	Добавени са {n} коментара
+	Adding images arrives on the web with file pickers for images	Добавянето на изображения в уеб версията ще стане достъпно с инструментите за избор на файлове с изображения
+	Adds invisible text over each word; the page image is not changed	Добавя невидим текст върху всяка дума; изображението на страницата не се променя
+	Advanced optimization	Разширена оптимизация
+	Advanced options	Разширени опции
+	Advanced Options {chevron}	Разширени опции {chevron}
+	Advanced search…	Разширено търсене…
+	AI assistant	AI асистент
+	Algorithm	Алгоритъм
+	Align	Подравни
+	Align left	Подравни вляво
+	Align right	Подравни вдясно
+	All annotations are tagged	Всички анотации са етикетирани
+	All document contents	Цялото съдържание на документа
+	All document contents except metadata	Цялото съдържание на документа без метаданните
+	All form fields are tagged	Всички полета на формуляри са етикетирани
+	All form fields have description	Всички полета на формуляри имат описание
+	All multimedia objects are tagged	Всички мултимедийни обекти са етикетирани
+	All open documents	Всички отворени документи
+	All page content is tagged	Цялото съдържание на страниците е етикетирано
+	All pages in document	Всички страници в документа
+	All pages in range	Всички страници в диапазона
+	All tools	Всички инструменти
+	Allow	Разреши
+	Allow Rich Text Formatting	Разреши форматиране на текста
+	Allow user to enter custom text	Разреши на потребителя да въвежда собствен текст
+	Allowed	Разрешено
+	already a PDF	вече е PDF
+	Also recognize pages that already have text	Разпознай и страници, които вече съдържат текст
+	Alternate Text	Алтернативен текст
+	Alternate text	Алтернативен текст
+	Alternate text inside an element that already has alternate text is never read. Remove the inner alternate text.	Алтернативен текст в елемент, който вече има алтернативен текст, никога не се прочита. Премахнете вътрешния алтернативен текст.
+	Alternate text must be associated with some content	Алтернативният текст трябва да е свързан с някакво съдържание
+	Alternate text on an element that contains a link or field hides that annotation from assistive technology. Move the alternate text.	Алтернативен текст в елемент, който съдържа връзка или поле, скрива тази анотация от помощните технологии. Преместете алтернативния текст.
+	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Алтернативен текст в елемент без съдържание на страницата никога не се достига. Премахнете го или свържете елемента със съдържание.
+	Alternate text should not hide annotation	Алтернативният текст не трябва да скрива анотация
+	Alternate text that will never be read	Алтернативен текст, който никога няма да бъде прочетен
+	An action is already running	Вече се изпълнява действие
+	An action with this name already exists.	Вече съществува действие с това име.
+	An embedded file has no AFRelationship	Вграден файл няма AFRelationship
+	An image asks to be interpolated	Изображение изисква интерполация
+	An image has alternates or OPI information	Изображение има алтернативи или OPI информация
+	An open-source PDF workbench — local, private, and scriptable.	PDF работна среда с отворен код — локална, поверителна и програмируема.
+	and {n} more	и още {n}
+	Animation that flashes can cause seizures. Check scripts and media for flicker.	Мигащата анимация може да предизвика пристъпи. Проверете скриптовете и мултимедията за трептене.
+	Annotations, form fill-in, and digital signatures	Анотации, попълване на формуляри и цифрови подписи
+	Any except extracting pages	Всички без извличане на страници
+	Anyone opening the document will need this password. It's applied when you save.	Всеки, който отваря документа, ще се нуждае от тази парола. Тя се прилага при записване.
+	Appear behind page	Под съдържанието на страницата
+	Appear on top of page	Над съдържанието на страницата
+	Appearance mode	Режим на облика
+	Appearance settings…	Настройки на облика…
+	Applied 1 redaction mark. Save to remove the content from the file.	Приложена е 1 маркировка за заличаване. Запишете, за да премахнете съдържанието от файла.
+	Applied {n} redaction marks. Save to remove the content from the file.	Приложени са {n} маркировки за заличаване. Запишете, за да премахнете съдържанието от файла.
+	Applies to 1 page	Прилага се към 1 страница
+	Applies to {n} pages	Прилага се към {n} страници
+	Apply	Приложи
+	Apply PDF standards	Приложи PDF стандарти
+	Apply redactions	Приложи заличаванията
+	Apply redactions…	Приложи заличаванията…
+	Apply scale	Приложи мащаба
+	Appropriate nesting	Правилно влагане
+	April	Април
+	Arbitrary Mask	Произволна маска
+	Archive documents	Архивирай документи
+	Area	Площ
+	Ask about this document	Попитай за този документ
+	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Запитва GitHub за най-новото издание. Нищо не се изтегля и не се инсталира автоматично.
+	Associated with content	Свързан със съдържание
+	At least one signature has problems.	Поне един подпис има проблеми.
+	At least one signature is invalid.	Поне един подпис е невалиден.
+	At most	Най-много
+	Attach a file	Прикачи файл
+	Attach file	Прикачи файл
+	Attachment	Прикачен файл
+	Attachments	Прикачени файлове
+	Attachments Panel and Page	Панел „Прикачени файлове“ и страница
+	Audit space usage	Анализ на използваното пространство
+	Audit space usage…	Анализ на използваното място…
+	August	Август
+	Auto follows the system's text size. Pages always render at the display's full resolution.	Автоматично следва размера на текста в системата. Страниците винаги се изобразяват с пълната разделителна способност на екрана.
+	Auto portrait/landscape	Автоматично портрет/пейзаж
+	Auto-rotate pages	Автоматично завъртане на страниците
+	Auto-size text to fit redaction region	Автоматично оразмеряване на текста според областта на заличаване
+	Automatically tag PDF	Автоматично тагване на PDF
+	average	средното
+	Back	Назад
+	Back side only	Само обратна страна
+	Back to all tools	Назад към всички инструменти
+	Back to the document	Обратно към документа
+	background	фон
+	Bates numbering	Номериране на Бейтс
+	Before each selected page (select pages in Organize)	Преди всяка избрана страница (изберете страници в Организиране)
+	Before the number	Пред числото
+	Beveled	Скосена
+	Bicubic downsampling to	Бикубично понижаване на резолюцията до
+	Binding	Подвързване
+	Binding:	Подвързване:
+	Black on white	Черно на бяло
+	Blank page	Празна страница
+	Bold	Удебелен
+	Booklet	Брошура
+	Booklet subset:	Част от брошурата:
+	Bookmark options	Опции за отметки
+	Bookmarks	Отметки
+	Bookmarks are present in large documents	В големите документи има отметки
+	Bookmarks Panel and Page	Панел „Отметки“ и страница
+	Border Color:	Цвят на рамката:
+	Borders and Colors	Рамки и цветове
+	Box	Поле
+	Bring your own model (off by default)	Използвайте собствен модел (изключено по подразбиране)
+	Browser's print dialog	Диалог за печат на браузъра
+	Butt	Тъп край
+	Button	Бутон
+	Button is checked by default	Бутонът е избран по подразбиране
+	Button Properties	Свойства на бутон
+	Button Style:	Стил на бутона:
+	Buttons with the same name and value are selected in unison	Бутоните с еднакви име и стойност се избират едновременно
+	Bytes	Байтове
+	Calibrate from two points	Калибрирай по две точки
+	Callout	Изнесена бележка
+	Can't be read: {e}	Не може да бъде прочетен: {e}
+	Cancelled	Отменено
+	Cancelling…	Отказване…
+	Case-sensitive	Чувствително към регистъра
+	Center	Центрирано
+	Center Footer Text	Текст на долния колонтитул в центъра
+	Center Header Text	Текст на горния колонтитул в центъра
+	Center horizontally	Центрирай хоризонтално
+	Center vertically	Центрирай вертикално
+	Center window on screen	Центрирай прозореца на екрана
+	Centre	Центрирай
+	Certificate Viewer	Преглед на сертификати
+	Certificates	Сертификати
+	Certified by {by}	Сертифициран от {by}
+	Certify	Сертифицирай
+	Certify (invisible signature)	Сертифицирай (невидим подпис)
+	Certify (visible signature)	Сертифицирай (видим подпис)
+	Change comment properties	Промени свойствата на коментара
+	Change field properties	Промени свойствата на полето
+	Change initial view	Промени началния изглед
+	Change initials	Промени инициалите
+	Change link properties	Промени свойствата на връзката
+	Change reading options	Промени опциите за четене
+	Change reading options…	Промени опциите за четене…
+	Change settings…	Промени настройките…
+	Change signature	Промени подписа
+	Change tag properties	Промяна на свойствата на етикета
+	Change the colour of line art as well as text	Да се променя цветът и на линиите, не само на текста
+	Change {key}	Промени {key}
+	Change {what}	Промени {what}
+	Changes allowed	Разрешени промени
+	Changing the document	Промяна на документа
+	Character encoding	Кодиране на знаците
+	Character limit 0 means no limit. A comb of characters needs a limit.	Ограничение 0 означава без ограничение. Клетките за знаци изискват ограничение.
+	Character limit:	Ограничение на знаците:
+	Character spacing	Разредка между знаците
+	characters	знака
+	Characters without spaces	Знаци без интервали
+	Check	Отметка
+	Check Again	Провери отново
+	Check again	Провери отново
+	Check box is checked by default	Отметката е поставена по подразбиране
+	Check Box Properties	Свойства на отметка
+	Check Box Style:	Стил на квадратчето за отметка:
+	Check for accessibility	Провери за достъпност
+	Check for accessibility…	Провери достъпността…
+	Check for updates…	Провери за актуализации…
+	Check spelling	Проверка на правописа
+	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Проверете дали етикетите се четат в реда, в който би чел зрящ читател. Използвайте инструмента „Ред на четене“ или панела „Етикети“, за да го коригирате.
+	Check the pages	Проверете страниците
+	Check the pages of {name}: {why}	Проверете страниците на {name}: {why}
+	CheckBox	Квадратче за отметка
+	Checkbox	Отметка (квадратче)
+	Checked	Отметнато
+	Checking for a newer version…	Проверка за по-нова версия…
+	Checking Options ({on} of 32 in all categories)	Опции за проверка ({on} от 32 във всички категории)
+	Checkmark	Отметка
+	Choose a folder for the exported files	Изберете папка за експортираните файлове
+	Choose a folder for the extracted pages	Изберете папка за извлечените страници
+	Choose a folder for the results	Изберете папка за резултатите
+	Choose a folder for the searchable files	Изберете папка за файловете с възможност за търсене
+	Choose a folder for the split files	Изберете папка за разделените файлове
+	Choose a folder on this computer to pin	Изберете папка на този компютър, която да закачите
+	Choose a layout:	Изберете оформление:
+	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Изберете PNG или JPEG изображение (до 4 MiB). Прозрачността се запазва.
+	Choose a stamp, then click on the page to place it.	Изберете печат, след което щракнете върху страницата, за да го поставите.
+	Choose an image	Изберете изображение
+	Choose images	Избери изображения
+	Choose image…	Избор на изображение…
+	Choose photo…	Избор на снимка…
+	Choose the digital ID that you want to use for signing:	Изберете цифровия идентификатор, с който искате да подпишете:
+	Clean Up	Почистване
+	Clean-up	Почистване
+	Clear	Изчисти
+	Clear All	Изчисти всички
+	Clear all	Изчисти всичко
+	Clear form	Изчисти формуляра
+	Clear Recent Files	Изчисти последно отваряните файлове
+	Clear redaction marks	Изчисти маркировките за заличаване
+	Clear selection / close find	Изчисти избора / затвори търсенето
+	Click on the page to add a {tool}, or drag to set its size	Щракнете върху страницата, за да добавите {tool}, или плъзнете, за да зададете размера
+	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Щракнете върху страницата, за да добавите текст; всяко щракване създава ново поле, а ✓ завършва. Плъзнете елементите, за да ги преместите, плъзнете ъгъл, за да промените размера, щракнете двукратно върху текст, за да го редактирате.
+	Click text or an image to edit it	Щракнете върху текст или изображение, за да го редактирате
+	Click the first point to begin.	Щракнете върху първата точка, за да започнете.
+	Click to sort, drag to move the column. Drag its edge to resize it.	Щракнете за сортиране, плъзнете, за да преместите колоната. Плъзнете ръба на колоната, за да промените размера.
+	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	Щракнете върху върховете. Enter или двукратно щракване завършва периметър или площ. Щракнете върху първата точка, за да затворите площ.
+	Clockwise 90 degrees	По часовниковата стрелка на 90 градуса
+	Close	Затвори
+	Close all	Затвори всички
+	Close file	Затвори файла
+	Close panel	Затвори панела
+	Close Tab	Затваряне на раздела
+	Closed arrow	Затворена стрелка
+	Cloud	Облак
+	Collapse	Свий
+	Collapse all	Свий всички
+	Collapse all bookmarks	Свий всички отметки
+	Collapse all pages	Свий всички страници
+	Collapse tag	Свий тага
+	Collate	Подреди по копия
+	Color contrast	Цветови контраст
+	Color Images	Цветни изображения
+	Color Spaces	Цветови пространства
+	Colours are remapped while rendering; the document itself never changes.	Цветовете се променят при изчертаването; самият документ никога не се променя.
+	Column select	Избор на колона
+	Comb of	Разделено на
+	Comb of characters	Гребен от знаци
+	Combine	Обедини
+	Combine files	Обедини файлове
+	Combine files…	Обедини файлове…
+	Combine the rest	Обедини останалите
+	Combined {n} files	Обединени са {n} файла
+	Combo	Комбиниран списък
+	Coming in milestone	Очаква се в етап
+	Coming in milestone {m}. Items marked Ready work today.	Очаква се в етап {m}. Елементите, отбелязани като готови, работят още днес.
+	Comment	Comment
+	Comment and form data	Данни от коментари и формуляри
+	Comment list	Списък с коментари
+	Commenting	Коментиране
+	Commenting, filling in form fields, and signing existing signature fields	Коментиране, попълване на полета на формуляр и подписване в съществуващи полета за подпис
+	Comments & Forms	Коментари и формуляри
+	Comments and markups	Коментари и маркировки
+	Comments only	Само коментари
+	Comments panel	Панел с коментари
+	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Коментарите, връзките и полетата трябва да са в дървото на етикетите, за да бъдат обявявани. Етикетирайте анотациите.
+	Commit selected value immediately	Приеми избраната стойност веднага
+	Commits	Къмитове
+	Common Properties	Общи свойства
+	Company	Компания
+	Compare Files	Сравняване на файлове
+	Compare files	Сравни файлове
+	Compare files…	Сравни файлове…
+	Compare this file with an older version: Compare files… in All tools.	Сравнете този файл с по-стара версия: „Сравни файлове…“ във „Всички инструменти“.
+	Completed	Завършено
+	Compress a PDF	Компресирай PDF
+	Compress document structure (object streams)	Компресирай структурата на документа (потоци от обекти)
+	Configure a Digital ID for Signing	Конфигуриране на цифров идентификатор за подписване
+	Configure New Digital ID	Конфигурирай нов цифров идентификатор
+	Confirm Password	Потвърдете паролата
+	Conformance level:	Ниво на съответствие:
+	Connected lines	Свързани линии
+	Console	Конзола
+	Content copying	Копиране на съдържание
+	Content copying for accessibility	Копиране на съдържание за достъпност
+	Content Streams	Потоци на съдържанието
+	Continuous scrolling	Непрекъснато превъртане
+	Convert	Конвертиране
+	Convert colors	Преобразувай цветовете
+	Copied {what}	Копирано: {what}
+	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Броят копия, двустранният печат и цветът се избират в диалога за печат на браузъра.
+	Copy	Копирай
+	Copy Image	Копирай изображението
+	Copy Image in Original Format	Копирай изображението в оригиналния формат
+	Copy or cut pages first	Първо копирайте или изрежете страници
+	Copy pages	Копирай страниците
+	Copy selected text	Копирай избрания текст
+	Copy text	Копирай текста
+	Correct recognized text	Коригирай разпознатия текст
+	Could not save: {e}	Неуспешно записване: {e}
+	Couldn't add {name}: {e}	{name} не можа да бъде добавен: {e}
+	Couldn't check for updates: {e}	Неуспешна проверка за актуализации: {e}
+	Couldn't combine files: {e}	Файловете не можаха да бъдат обединени: {e}
+	Couldn't copy the image: {e}	Изображението не можа да бъде копирано: {e}
+	Couldn't create a PDF: {e}	Не можа да се създаде PDF файл: {e}
+	Couldn't download {name}: {e}	{name} не можа да бъде изтеглен: {e}
+	Couldn't extract pages: {e}	Страниците не можаха да бъдат извлечени: {e}
+	Couldn't fit the visible content: {e}	Видимото съдържание не може да бъде побрано: {e}
+	Couldn't follow linked PDF: {reason}	Свързаният PDF не можа да бъде отворен: {reason}
+	Couldn't import the signature image: {e}	Изображението на подписа не може да бъде импортирано: {e}
+	Couldn't open revision {n}: {e}	Неуспешно отваряне на редакция {n}: {e}
+	Couldn't open the printer's preferences: {e}	Предпочитанията на принтера не можаха да се отворят: {e}
+	Couldn't open the result: {e}	Резултатът не можа да бъде отворен: {e}
+	Couldn't open the signed version: {e}	Неуспешно отваряне на подписаната версия: {e}
+	Couldn't optimize the file	Файлът не можа да бъде оптимизиран
+	Couldn't optimize the file: {e}	Файлът не можа да бъде оптимизиран: {e}
+	Couldn't print from the browser ({e}); downloaded {name} to print instead	Не може да се печата от браузъра ({e}); вместо това за печат е изтеглен {name}
+	Couldn't read {name}: {e}	{name} не можа да бъде прочетен: {e}
+	Couldn't recover {name}: {e}	{name} не можа да бъде възстановен: {e}
+	Couldn't reload {name}: {e}	Неуспешно презареждане на {name}: {e}
+	Couldn't save the image: {e}	Изображението не можа да бъде записано: {e}
+	Couldn't save {name}: {e}	{name} не можа да бъде записан: {e}
+	Couldn't save: {e}	Записването не бе успешно: {e}
+	Couldn't split: {e}	Разделянето не бе успешно: {e}
+	Couldn't summarize comments: {e}	Коментарите не можаха да бъдат обобщени: {e}
+	Couldn't take the snapshot: {e}	Не можа да се направи моментна снимка: {e}
+	Couldn't unlock {name}: {e}	{name} не може да се отключи: {e}
+	Couldn't use the photo: {e}	Снимката не може да се използва: {e}
+	Couldn't use {name}: {e}	{name} не можа да бъде използван: {e}
+	Couldn't write {name}: {e}	{name} не можа да бъде записан: {e}
+	Couldn't write {path}: {e}	Не можа да се запише {path}: {e}
+	Counterclockwise 90 degrees	Обратно на часовниковата стрелка на 90 градуса
+	Counting words… {n} pages read	Преброяване на думи… прочетени страници: {n}
+	Country/Region	Държава/регион
+	Create	Създай
+	Create a new Digital ID (self-signed, saved to a password-protected file)	Създай нов цифров идентификатор (самоподписан, записан във файл, защитен с парола)
+	Create a PDF	Създай PDF
+	Create accessibility report	Създай отчет за достъпност
+	Create Custom Stamp	Създаване на персонализиран печат
+	Create custom stamp…	Създай персонализиран печат…
+	Create from	Създай от
+	Create Link	Създай връзка
+	Create link	Създай връзка
+	Create links from URLs	Създай връзки от URL адреси
+	Create Link…	Създай връзка…
+	Create PDF Comment Summary	Създай PDF обобщение на коментарите
+	Create PDF comment summary…	Създай обобщение на коментарите в PDF…
+	Create PDF from clipboard	Създай PDF от клипборда
+	Create PDF from file…	Създай PDF от файл…
+	Create PDF from images	Създай PDF от изображения
+	Create PDF from images…	Създай PDF от изображения…
+	Create PDF from multiple files…	Създай PDF от няколко файла…
+	Create separate PDFs…	Създаване на отделни PDF файлове…
+	Create {what}	Създай {what}
+	Created 1 link	Създадена е 1 връзка
+	Created a comment summary	Създадено е обобщение на коментарите
+	Created a PDF from the first {n} files	Създаден е PDF от първите {n} файла
+	Created a PDF from {n} files	Създаден е PDF от {n} файла
+	Created a PDF from {n} files; left out: {names}	Създаден е PDF от {n} файла; пропуснати: {names}
+	Created {n} links	Създадени са {n} връзки
+	Creates 1 file from {n} pages.	Създава 1 файл от {n} страници.
+	Creates {f} files from {n} pages.	Създава {f} файла от {n} страници.
+	Credit Cards	Кредитни карти
+	Crop (% trimmed from each side)	Изрязване (% отрязани от всяка страна)
+	Crop Image	Изрязване на изображението
+	Crop page	Изрежи страницата
+	Crop pages	Изрежи страници
+	Cross	Кръстче
+key	Ctrl	Ctrl
+	Currency symbol:	Символ за валута:
+	Current page	Текуща страница
+	Current page ({n})	Текуща страница ({n})
+	Current page only	Само текущата страница
+	Current page — type a page number or label (such as iv) and press Enter	Текуща страница — въведете номер или етикет на страница (например iv) и натиснете Enter
+	Custom	Персонализиран
+	Custom font	Потребителски шрифт
+	Custom scale:	Потребителски мащаб:
+	Custom stamps arrive on the web with file pickers for images	Потребителските печати в уеб версията ще станат достъпни с инструментите за избор на файлове с изображения
+	Custom text:	Потребителски текст:
+	Custom:	Персонализиран:
+	Cut	Изрежи
+	Cut and stack	Изрежи и подреди
+	Cut Image	Изрежи изображението
+	Cut marks	Маркери за рязане
+	Cut pages	Изрежи страниците
+	Cut {what}	Изрязано: {what}
+	Cuts each page to its printed area, turns it upright and fits it to the sheet without stretching. One label per sheet.	Изрязва всяка страница до отпечатаната ѝ област, завърта я изправено и я побира в листа без разтягане. Един етикет на лист.
+	Dark	Тъмен
+	Dark gray theme	Тъмносива тема
+	Dark theme	Тъмна тема
+	Dashed	Пунктирна
+	Date field	Поле за дата
+	Date: 	Дата: 
+	December	Декември
+	Decimal places:	Знаци след десетичната запетая:
+	Decimals	Десетични знаци
+	Declared conformance: {shown}	Декларирано съответствие: {shown}
+	Decorative figure	Декоративна фигура
+	Default page display	Показване на страниците по подразбиране
+	Default Value:	Стойност по подразбиране:
+	Default workspace mode	Режим на работното пространство по подразбиране
+	Default zoom	Мащаб по подразбиране
+	Default:	По подразбиране:
+	Delete	Изтрий
+key	Delete	Delete
+	Delete bookmark	Изтрий отметката
+	Delete comment	Изтрий коментара
+	Delete content	Изтрий съдържанието
+	Delete document JavaScript	Изтрий JavaScript на документа
+	Delete field	Изтрий полето
+	Delete image	Изтрий изображението
+	Delete link	Изтрий връзката
+	Delete page	Изтрий страницата
+	Delete page {label}	Изтриване на страница {label}
+	Delete pages	Изтрий страници
+	Delete pages (Delete)	Изтрий страниците (Delete)
+	Delete pages after extracting	Изтрий страниците след извличане
+	Delete selected fields	Изтрий избраните полета
+	Delete selected pages (Organize)	Изтрий избраните страници (Организиране)
+	Delete stamp	Изтрий печата
+	Delete {o}	Изтрий {o}
+	Describe the figure	Опишете фигурата
+	Detect form fields	Открий полета на формуляр
+	Detected 1 form field	Открито е 1 поле на формуляр
+	Detected {n} form fields	Открити са {n} полета на формуляр
+	Device colour is used, but there is no PDF/A output intent	Използва се цвят, зависим от устройството, но няма изходно намерение за PDF/A
+	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Използва се DeviceCMYK: необходимо е CMYK изходно намерение (не се добавя автоматично)
+	Diagnostic details	Диагностични подробности
+	Digital ID	Цифров идентификатор
+	Digital ID password	Парола за цифровия идентификатор
+	Digital signature	Цифров подпис
+	Digital Signature Properties	Свойства на цифров подпис
+	Digitally sign	Подпиши цифрово
+	Digitally signed by	Цифрово подписано от
+	Discard	Отхвърли
+	Discard all comments, forms and multimedia	Премахни всички коментари, формуляри и мултимедия
+	Discard all links, actions and JavaScript	Премахни всички връзки, действия и JavaScript
+	Discard all object data (file attachments)	Премахни всички данни на обекти (прикачени файлове)
+	Discard alternate images	Премахни алтернативните изображения
+	Discard bookmarks	Премахни отметките
+	Discard document information and metadata	Премахни информацията за документа и метаданните
+	Discard document tags	Премахни таговете на документа
+	Discard embedded page thumbnails	Премахни вградените миниатюри на страниците
+	Discard embedded print settings	Премахни вградените настройки за печат
+	Discard hidden layer content	Премахни съдържанието на скритите слоеве
+	Discard hidden text	Премахни скрития текст
+	Discard Objects	Премахване на обекти
+	Discard private data of other applications	Премахни частните данни на други приложения
+	Discard this text (Esc)	Отхвърли този текст (Esc)
+	Discard User Data	Премахване на потребителски данни
+	Display theme	Тема на показване
+	Distinguished name	Отличително име
+	Distribute	Разпредели
+	DN: 	DN: 
+	Document actions	Действия на документа
+	Document and markups	Документ и маркировки
+	Document and stamps	Документ и печати
+	Document assembly	Сглобяване на документа
+	Document has appropriate color contrast	Документът има подходящ цветови контраст
+	Document is not image-only PDF	Документът не е PDF само с изображения
+	Document is tagged PDF	Документът е етикетиран PDF
+	Document JavaScripts	JavaScript скриптове на документа
+	Document JavaScripts…	JavaScript на документа…
+	Document language	Език на документа
+	Document Overhead	Служебни данни на документа
+	Document Properties	Свойства на документа
+	Document properties ({key})	Свойства на документа ({key})
+	Document properties…	Свойства на документа…
+	Document sanitized. Save to finish: saving rewrites the whole file.	Документът е почистен. Запишете, за да завършите: записването пренаписва целия файл.
+	Document structure provides a logical reading order	Структурата на документа осигурява логически ред на четене
+	Document title is showing in title bar	Заглавието на документа се показва в заглавната лента
+	Documents and view	Документи и изглед
+	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Документите с повече от 20 страници се нуждаят от отметки за навигация. Добавете отметки за основните раздели.
+	Don't save	Не записвай
+	Done adding text	Готово с добавянето на текст
+	Double-click	Двукратно щракване
+	Download	Изтегли
+	Downloaded {name}	Изтеглен: {name}
+@plural	Downloaded {n} PDF|Downloaded {n} PDFs	Изтеглен е {n} PDF|Изтеглени са {n} PDF файла
+	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Изтеглянето на прикачени файлове в уеб версията ще стане достъпно с M3.10 ({n} байта готови)
+	Downsample to	Намали разделителната способност до
+	DPI sets the printed page size without resampling the image.	DPI определя размера на отпечатаната страница без преизчисляване на изображението.
+	Drag a rectangle around the area to copy	Очертайте правоъгълник около областта за копиране
+	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Очертайте правоъгълник върху страница, за да я изрежете; щракнете двукратно върху страница за „Задай полета на страницата“
+	Drag a rectangle to create a link; double-click a link to edit it	Очертайте правоъгълник, за да създадете връзка; щракнете двукратно върху връзка, за да я редактирате
+	Drag the corners onto the document's edges, then choose Enhance page.	Плъзнете ъглите до краищата на документа, след това изберете „Подобри страницата“.
+	Drag the selection to move it. Esc clears the selection.	Плъзнете избраното, за да го преместите. Esc премахва избора.
+	Drag to draw the area where the signature should appear.	Плъзнете, за да очертаете областта, където да се появи подписът.
+	Drag to reorder	Плъзнете, за да пренаредите
+	Draw a cloud	Нарисувай облак
+	Draw a line	Нарисувай линия
+	Draw a polygon	Нарисувай многоъгълник
+	Draw a rectangle	Нарисувай правоъгълник
+	Draw an arrow	Нарисувай стрелка
+	Draw an oval	Нарисувай овал
+	Draw connected lines	Нарисувай свързани линии
+	Draw freehand	Рисувай свободно
+	Draw your {what} below.	Нарисувайте {what} по-долу.
+	Drawing	Рисуване
+	Drawing scale	Мащаб на чертежа
+	Drawing scale changes. Use Actual size for full-scale plans.	Мащабът на чертежа се променя. Използвайте Действителен размер за планове в оригинален мащаб.
+	Drop PDFs, images, text files or folders here, or choose them.	Пуснете тук PDF файлове, изображения, текстови файлове или папки или ги изберете.
+	Drop-down list	Падащ списък
+	Dropdown Properties	Свойства на падащ списък
+	Duplicate "{name}" onto:	Дублирай „{name}“ върху:
+	Duplicate Field	Дублиране на поле
+	Duplicate field	Дублирай полето
+	Duplicate page	Дублирай страницата
+	Duplicate pages	Дублирай страници
+	Dynamic XFA form laid out from its template: {pages}, {fields}.	Динамичен XFA формуляр, оформен по своя шаблон: {pages}, {fields}.
+	E-Sign	Е-подпис
+	e.g. en-US	напр. en-US
+	e.g. My stamps	напр. Моите печати
+	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Всяко поле се нуждае от подсказка, която казва какво да се въведе. Добавете я в „Свойства на полето > Общи > Подсказка“.
+	Each file holds as many of the {n} pages as fit.	Всеки файл съдържа толкова от общо {n} страници, колкото се поберат.
+	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	Всяко изображение се измерва там, където страниците го изобразяват; изображението се заменя само ако резултатът е по-малък.
+	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	Всяко изображение веднъж, именувано по документа и страницата. JPEG изображенията се записват непроменени, а останалите – като PNG.
+	Earlier in tab order	По-напред в реда на табулация
+comment menu	Edit	Редактирай
+	Edit a PDF	Редактирай PDF
+	Edit Action	Редактиране на действие
+	Edit comment	Редактирай коментара
+	Edit content	Редактирай съдържанието
+	Edit document JavaScript	Редактирай JavaScript на документа
+	Edit fields	Редактирай полетата
+	Edit image	Редактирай изображение
+	Edit script of {name}	Редактирай скрипта на {name}
+	Edit text	Редактирай текста
+	Edit text & images	Редактирай текст и изображения
+	Edit text…	Редактирай текста…
+	Edit…	Редактирай…
+	Email Address	Имейл адрес
+	Email Addresses	Имейл адреси
+	Embedded Files	Вградени файлове
+	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	Вградените файлове трябва също да са PDF/A файлове (за други използвайте PDF/A-3)
+	Enable Acrobat JavaScript	Включи Acrobat JavaScript
+	Enable copying of text, images, and other content	Разреши копиране на текст, изображения и друго съдържание
+	Enable text access for screen reader devices for the visually impaired	Разреши достъп до текста за екранни четци за хора със зрителни увреждания
+	Encrypt	Шифровай
+	Encrypt with certificate	Шифровай със сертификат
+	Encryption	Шифроване
+key	End	End
+	Endpoints	Крайни точки
+	Enhance camera image	Подобри снимка от камера
+	Enhance page	Подобри страницата
+	Enhance scanned file	Подобри сканиран файл
+	Enter permissions password…	Въведете паролата за разрешения…
+	Enter the password that opens it	Въведете паролата за отваряне
+	Enter the permissions password to allow combining	Въведете паролата за разрешения, за да позволите обединяването
+	Entire page	Цялата страница
+	Erase drawings	Изтрий рисунките
+	Eraser	Гумичка
+key	Esc	Esc
+	Even and Odd Pages	Четни и нечетни страници
+	Even pages	Четни страници
+	Even Pages Only	Само четни страници
+	Every PDF, image and text file in the folder	Всички PDF файлове, изображения и текстови файлове в папката
+	Every PDF, image and text file in the folder and the folders inside it	Всички PDF файлове, изображения и текстови файлове в папката и в папките в нея
+	Everything on a page must be tagged or marked as an artifact (decoration, headers, footers). Tag the untagged content.	Всичко на страницата трябва да е етикетирано или маркирано като артефакт (украса, горни и долни колонтитули). Етикетирайте неетикетираното съдържание.
+	Exclude image/OCR text	Изключване на текст от изображения/OCR
+	Exclude images smaller than	Изключи изображения, по-малки от
+	Exclude tagged code blocks	Изключване на маркираните блокове с код
+	Exclude tagged tables	Изключване на маркираните таблици
+	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	Изключването използва PDF тагове. Немаркираните таблици и код остават включени. Изключването на изображения премахва и невидимия текст.
+	Execute a menu item	Изпълни елемент от менюто
+	Expand	Разгъни
+	Expand all	Разгъни всички
+	Expand all bookmarks	Разгъни всички отметки
+	Expand all pages	Разгъни всички страници
+	Expand tag	Разгъни тага
+	Expand top-level bookmarks	Разгъни отметките от първо ниво
+	Explain	Обясни
+	Export	Експортирай
+	Export a PDF	Експортирай PDF
+	Export all comments to data file…	Експортирай всички коментари във файл с данни…
+	Export All Images	Експортиране на всички изображения
+	Export all images	Експортирай всички изображения
+	Export all images…	Експортирай всички изображения…
+	Export all to data file…	Експортирай всички във файл с данни…
+	Export certificate	Експортирай сертификата
+	Export certificate…	Експортирай сертификата…
+	Export comments	Експортирай коментарите
+	Export data	Експортирай данни
+	Export form data	Експортирай данните от формуляра
+	Export form data…	Експортирай данните от формуляра…
+	Export measurements	Експортирай измерванията
+	Export measurements as CSV	Експортирай измерванията като CSV
+	Export stopped: {e}	Експортирането е спряно: {e}
+	Export to HTML…	Експортирай в HTML…
+	Export to Image	Експортиране като изображение
+	Export to image…	Експортирай като изображение…
+	Export to PowerPoint…	Експортирай в PowerPoint…
+	Export to RTF…	Експортирай в RTF…
+	Export to Text	Експортиране като текст
+	Export to text…	Експортирай като текст…
+	Export to Word…	Експортирай в Word…
+	Export Value: {on}	Стойност за експорт: {on}
+	Exported 1 image	Експортирано е 1 изображение
+	Exported the text of 1 page	Експортиран е текстът на 1 страница
+	Exported the text of {n} pages	Експортиран е текстът на {n} страници
+	Exported {n} images	Експортирани са {n} изображения
+	Exporting… {d} of {t}	Експортиране… {d} от {t}
+	Export…	Експортирай…
+	Extended Graphics States	Разширени графични състояния
+	Extract pages	Извлечи страници
+	Extract pages as separate files	Извлечи страниците като отделни файлове
+	Extract pages to a new document	Извлечи страниците в нов документ
+	Extract pages…	Извлечи страници…
+	Extracted 1 page	Извлечена е 1 страница
+	Extracted {n} pages	Извлечени са {n} страници
+	Failed	Неуспешно
+scroll speed	Fast	Висока
+	February	Февруари
+	Field descriptions	Описания на полетата
+	Field is used for file selection	Полето се използва за избор на файл
+	Field list	Списък с полета
+	Field names (comma-separated)	Имена на полета (разделени със запетая)
+	Field names with + - * / and parentheses; put \\ before spaces in names.	Имена на полета с + - * / и скоби; поставете \\ пред интервалите в имената.
+	Field properties…	Свойства на полето…
+	Field value is in range:	Стойността на полето е в диапазона:
+	Field value is not validated	Стойността на полето не се проверява
+	Field: {field} on page {p}	Поле: {field} на страница {p}
+	Fields to reset (comma-separated; empty: all)	Полета за нулиране (разделени със запетая; празно: всички)
+	Figure {i} of {n}{page}	Фигура {i} от {n}{page}
+	Figures alternate text	Алтернативен текст на фигурите
+	Figures require alternate text	Фигурите изискват алтернативен текст
+	File (.p12, .pfx)	Файл (.p12, .pfx)
+	File attachments	Прикачени файлове
+	File name	Име на файла
+	File size	Размер на файла
+@id	file.word_count	Брой думи…
+	Files are combined from top to bottom. Leave Pages empty to take every page.	Файловете се обединяват отгоре надолу. Оставете „Страници“ празно, за да се вземат всички страници.
+	Files are combined in the order shown. Drag them to change it.	Файловете се обединяват в показания ред. Плъзнете ги, за да го промените.
+	Files are combined in this order. Leave Pages empty to take every page.	Файловете се обединяват в този ред. Оставете „Страници“ празно, за да се вземат всички страници.
+	Files for {name}	Файлове за {name}
+	Files you open in PdfCraft appear here. Drop a PDF anywhere to open it.	Файловете, които отваряте в PdfCraft, се показват тук. Пуснете PDF файл където и да е, за да го отворите.
+	Fill	Попълни
+	Fill & Sign	Попълни и подпиши
+	Fill & Sign dates	Дати при попълване и подписване
+	Fill & Sign signature	Подпис от „Попълни и подпиши“
+	Fill & Sign: add text	Попълни и подпиши: добави текст
+	Fill & Sign: change initials	Попълни и подпиши: промяна на инициалите
+	Fill & Sign: change signature	Попълни и подпиши: промяна на подписа
+	Fill & Sign: checkmark	Попълни и подпиши: отметка
+	Fill & Sign: cross	Попълни и подпиши: кръстче
+	Fill & Sign: date	Попълни и подпиши: дата
+	Fill & Sign: dot	Попълни и подпиши: точка
+	Fill & Sign: initials	Попълни и подпиши: инициали
+	Fill & Sign: line	Попълни и подпиши: линия
+	Fill & Sign: remove saved initials	Попълни и подпиши: премахване на запазените инициали
+	Fill & Sign: remove saved signature	Попълни и подпиши: премахване на запазения подпис
+	Fill & Sign: sign	Попълни и подпиши: подпиши
+	Fill Color:	Цвят на запълване:
+	Fill colour	Цвят на запълване
+	Fill colour:	Цвят на запълването:
+	Fill colour: none	Цвят на запълване: няма
+	Fill in {name}	Попълни {name}
+	Filling in form fields and signing existing signature fields	Попълване на полета на формуляр и подписване в съществуващи полета за подпис
+	Filling of form fields	Попълване на полета на формуляр
+	Filter comments	Филтрирай коментарите
+	Find a tag	Намери таг
+	Find options	Опции за търсене
+	Find text	Намери текст
+	Find text and redact	Намери текст и заличи
+	Find text and redact…	Намери текст и заличи…
+	Find tools and commands	Намери инструменти и команди
+	Find tools and commands…	Намери инструменти и команди…
+	Find untagged content	Намиране на немаркирано съдържание
+	Finding document fonts…	Търсене на шрифтове за документа…
+	Finish or discard the text being edited before selecting several objects.	Завършете или отменете редактирането на текста, преди да изберете няколко обекта.
+	First / last page	Първа / последна страница
+	First commit	Първи къмит
+	Fit	Побери
+	Fit Height	Побери по височина
+	Fit one full page	Побери една цяла страница
+	Fit Page	Побери страницата
+	Fit to height	Побери по височина
+	Fit to page	Побери в страницата
+	Fit to width	Побери по ширина
+	Fit to width scrolling	Побери по ширина с превъртане
+	Fit Visible	Побери видимото
+	Fit visible	Побери видимото
+	Fit Width	Побери по ширина
+	Fix	Поправи
+	Fix hairlines	Поправи тънките линии
+	Fix reading order	Поправи реда на четене
+	Fixed what could be fixed; 1 problem remains	Поправено е всичко възможно; остава 1 проблем
+	Fixed what could be fixed; {n} problems remain	Поправено е всичко възможно; остават {n} проблема
+	Flatten	Сплескай
+	Flatten comments	Сплескай коментарите
+	Flatten Fill & Sign when saving	Сплескай „Попълни и подпиши“ при запазване
+	Flatten form fields	Сплескай полетата на формуляра
+	Flip Horizontal	Обърни хоризонтално
+	Flip horizontal	Обърни хоризонтално
+	Flip image	Обърни изображението
+	Flip on long edge	Обръщане по дългия ръб
+	Flip on short edge	Обръщане по късия ръб
+	Flip Vertical	Обърни вертикално
+	Flip vertical	Обърни вертикално
+	Float panel	Откачи панела
+	Folders	Папки
+	Font colour:	Цвят на шрифта:
+	Font size 0 uses automatic sizing.	Размер на шрифта 0 включва автоматично оразмеряване.
+	Font size:	Размер на шрифта:
+	Font: Helvetica	Шрифт: Helvetica
+	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Шрифтовете трябва да съпоставят знаците си с Unicode, за да може текстът да се чете и копира. Поправете шрифтовете или създайте PDF файла наново.
+	for images above	за изображения над
+	For page sizes and margins.	За размери на страници и полета.
+	Form data and PDF forms	Данни от формуляри и PDF формуляри
+	Form fields	Полета на формуляр
+	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Полетата на формуляри се сплескват: стойностите им остават видими. Записването презаписва целия файл.
+	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	Полетата на формуляри трябва да са в дървото на етикетите (етикети Form), за да бъдат обявявани. Етикетирайте полетата на формуляра.
+	Form fields only	Само полета на формуляр
+	Form fields panel	Панел с полета на формуляра
+	Form fill-in and digital signatures	Попълване на формуляри и цифрови подписи
+	Format text	Форматирай текст
+	Forms	Формуляри
+	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Формулите и подобни нетекстови елементи се нуждаят от алтернативен текст. Добавете им алтернативен текст.
+	Found {n} untagged content problems.	Открити са {n} проблема с немаркирано съдържание.
+	From a PDF page or an image	От страница на PDF или изображение
+	From colour	От цвят
+	From {file}	От {file}
+	From:	От:
+	Front side only	Само лицева страна
+	Full screen mode	Цял екран
+	Geospatial location	Геопространствено местоположение
+	Get help, share feedback and follow development on Discord.	Получете помощ, споделете мнение и следете разработката в Discord.
+	Go to a page view	Отиди на изглед на страница
+	Go to page {p}	Отиди на страница {p}
+	Go to page…	Отиди на страница…
+	Go to the page	Отиди на страницата
+	Go to this result	Към този резултат
+	Grab bag	Смесица
+	Grayscale Images	Изображения в сива скала
+	Green on black	Зелено на черно
+	Greyscale	Нива на сивото
+	Hand (H)	Ръка (H)
+	Has JavaScript actions (run in M6)	Има JavaScript действия (изпълняват се в M6)
+	Header and footer	Горен и долен колонтитул
+	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Заглавните клетки (TH) казват на слушателите какво съдържа всяка колона или ред. Маркирайте заглавните клетки.
+	header or footer	горен или долен колонтитул
+	Headers	Заглавни клетки
+	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Нивата на заглавията не трябва да се прескачат (H1, последвано от H3). Етикетирайте заглавията наново.
+	Hidden layers	Скрити слоеве
+	Hide a field	Скрий поле
+	Hide all comments	Скрий всички коментари
+	Hide field highlights	Скрий маркирането на полетата
+	Hide hover previews for highlights without comment text	Скриване на прегледите при посочване за маркирания без текст на коментар
+	Hide layer	Скрий слоя
+	Hide menu bar	Скрий лентата с менюта
+	Hide password	Скрий паролата
+	Hide toolbars	Скрий лентите с инструменти
+	Hide window controls	Скрий контролите на прозореца
+	Hides annotation	Скрива анотация
+	High Resolution	Висока резолюция
+	Highlight	Маркиране
+	Highlight fields	Маркирай полетата
+	Highlight Style:	Стил на маркиране:
+	Highlight text	Маркирай текст
+key	Home	Home
+	Horizontal reversed	Хоризонтално обратно
+	HTML web page	HTML уеб страница
+	Identity	Самоличност
+	Image (PNG)	Изображение (PNG)
+	Image field	Поле за изображение
+	Image-only PDF	PDF само с изображения
+	Images and text	Изображения и текст
+	Images and text (converted to PDF)	Изображения и текст (конвертирани в PDF)
+	Import comments…	Импортирай коментари…
+	Import data	Импортирай данни
+	Import form data…	Импортирай данни за формуляр…
+	Import list…	Импортиране на списък…
+	Import {name}	Импортирай {name}
+	Importing data arrives on the web with file pickers for data files	Импортирането на данни в уеб версията ще стане достъпно с инструментите за избор на файлове с данни
+	In multiple files	В няколко файла
+	In this file	В този файл
+	Includes unsaved changes	Съдържа незаписани промени
+	Incorrect password. Try again.	Грешна парола. Опитайте отново.
+	Indent	Увеличи отстъпа
+	Initial View	Начален изглед
+	Initials	Инициали
+	initials	инициали
+	Ink sensitivity	Чувствителност към мастило
+	Insert	Вмъкни
+	Insert a blank page after the selection	Вмъкни празна страница след избраното
+	Insert a file at the end	Вмъкни файл в края
+	Insert a file before page {label}	Вмъкни файл преди страница {label}
+	Insert blank page	Вмъкни празна страница
+	Insert Date	Вмъкни дата
+	Insert Page Number	Вмъкни номер на страница
+	Insert pages	Вмъкни страници
+	Insert pages from a file…	Вмъкни страници от файл…
+	Insert pages from file…	Вмъкни страници от файл…
+	Insert pages from {name}	Вмъкни страници от {name}
+	Insert pages from {name} — 1 field renamed	Вмъкни страници от {name} — 1 поле е преименувано
+	Insert pages from {name} — fields renamed	Вмъкни страници от {name} — полета са преименувани
+	Insert text	Вмъкни текст
+	Inserted	Вмъкнато
+	Inserting, deleting, and rotating pages	Вмъкване, изтриване и завъртане на страници
+	Inset	Вдлъбнато
+	Inspector	Инспектор
+	Installed fonts…	Инсталирани шрифтове…
+	Intended usage	Предназначение
+	Interface size	Размер на интерфейса
+	Intersection	Пресечна точка
+	Intersections	Пресечни точки
+	Invisible Rectangle	Невидим правоъгълник
+	Irregular tables confuse cell navigation. Give every row the same number of cells (counting spans).	Неравномерните таблици объркват навигацията по клетки. Дайте на всеки ред еднакъв брой клетки (като броите обединените).
+	is available	е налично
+	is not available yet	все още не е налично
+	Issued by	Издаден от
+	Issued by: 	Издаден от: 
+	Issued to	Издаден на
+	Issuer	Издател
+	Item List	Списък с елементи
+	Item:	Елемент:
+	Items marked Ready work today.	Елементите, отбелязани като „Готово“, работят още сега.
+	Its security settings don't allow copying pages	Настройките му за защита не позволяват копиране на страници
+	January	Януари
+	JavaScript	JavaScript
+	JavaScript Console	Конзола за JavaScript
+	JavaScript console…	JavaScript конзола…
+	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript е изключен (Настройки > JavaScript).
+	JavaScript, e.g. getField("total").value	JavaScript, напр. getField("total").value
+	Join our Discord	Присъедини се към нашия Discord
+	Join the ArtCraft community	Присъедини се към общността на ArtCraft
+	July	Юли
+	June	Юни
+	Keep source fonts	Запазване на оригиналните шрифтове
+	Keep tool selected	Запази инструмента избран
+	Keep tool selected: on	Запази инструмента избран: вкл.
+	Key Algorithm	Алгоритъм на ключа
+	Key usage	Употреба на ключа
+	Keyboard shortcuts	Клавишни комбинации
+	Keychain  ·  	Keychain  ·  
+	Labels: {preview}. Later pages keep their labels.	Етикети: {preview}. Следващите страници запазват етикетите си.
+	Landscape and Portrait Pages	Пейзажни и портретни страници
+	Landscape Pages	Пейзажни страници
+	Landscape pages	Пейзажни страници
+	Larger pages	По-големи страници
+	Last commit	Последен къмит
+	Later in tab order	По-назад в реда на табулация
+	Layers Panel and Page	Панел „Слоеве“ и страница
+	Layout and Magnification	Оформление и мащаб
+	Lbl and LBody	Lbl и LBody
+	Lbl and LBody must be children of LI	Lbl и LBody трябва да са дъщерни елементи на LI
+	Leave out files that can't be read?	Да се пропуснат ли файловете, които не могат да бъдат прочетени?
+	Left Edge	Ляв ръб
+	Left Footer Text	Текст на долния колонтитул вляво
+	Left Header Text	Текст на горния колонтитул вляво
+	Left out: {names}	Пропуснати: {names}
+	LI must be a child of L	LI трябва да е дъщерен елемент на L
+	Light	Светъл
+	Light blue	Светлосиньо
+	Light theme	Светла тема
+	Limit of	Ограничение от
+	Line ending	Край на линията
+	Line Style:	Стил на линията:
+	Line thickness	Дебелина на линията
+	Line Thickness:	Дебелина на линията:
+	Link Action	Действие на връзката
+	Link Appearance	Външен вид на връзката
+	Link Properties	Свойства на връзката
+	Link Type:	Тип на връзката:
+	Links, actions and JavaScripts	Връзки, действия и JavaScript скриптове
+	List box	Списъчно поле
+	List Box Properties	Свойства на списъчно поле
+	List items	Елементи на списък
+	List items belong in a list. Fix the list's tags.	Елементите на списък трябва да са в списък. Поправете етикетите на списъка.
+	List labels and bodies belong in a list item. Fix the list's tags.	Етикетите и телата на списъка трябва да са в елемент на списък. Поправете етикетите на списъка.
+	Lists	Списъци
+	Load document font	Зареждане на шрифт на документа
+	Load font…	Зареждане на шрифт…
+	Local cross-PDF links require the desktop app	Локалните връзки между PDF файлове изискват настолното приложение
+	Location: 	Местоположение: 
+	Lock comment	Заключи коментара
+	Locked	Заключено
+	Logical Reading Order	Логически ред на четене
+	Looking for PDFs…	Търсене на PDF файлове…
+	Looking for printers…	Търсене на принтери…
+	Low resolution	Ниска разделителна способност
+	Low Resolution (150 dpi)	Ниска разделителна способност (150 dpi)
+	Make accessible	Направи достъпен
+	Make Current Properties Default	Направи текущите свойства подразбиращи се
+	Make Properties Default	Направи свойствата подразбиращи се
+	Make properties default	Задаване като свойства по подразбиране
+	Make scans searchable, then make them smaller.	Прави сканираните документи търсими, след което ги смалява.
+	Manage embedded index	Управлявай вградения индекс
+	March	Март
+	Margins (in)	Полета (in)
+	Mark all	Маркирай всички
+	Mark as artifact	Маркиране като артефакт
+	Mark as comments	Маркирай като коментари
+	Mark as Confidential	Маркиране като поверително
+	Mark content as artifact	Маркиране на съдържание като артефакт
+	Mark figure as decorative	Отбележи фигурата като декоративна
+	Mark Page Range	Маркирай диапазон от страници
+	Mark with checkmark	Отбележи с отметка
+	Marked	Маркирано
+	Markup	Маркировка
+	Marquee zoom	Мащабиране с рамка
+	Mask:	Маска:
+	Match page at 100%	Хартия по страницата, мащаб 100%
+	Maximum	Максимално
+	maximum	максимума
+	May	Май
+	Measure area	Измери площ
+	Measure distance	Измери разстояние
+	Measure objects	Измерване на обекти
+	Measure perimeter	Измери периметър
+	Measurement information	Информация за измерването
+	Measurement snapping	Прилепване при измерване
+	Measuring tool	Инструмент за измерване
+	Menu	Меню
+	Merge data files into spreadsheet…	Обедини файлове с данни в електронна таблица…
+	Merge image fragments	Обединяване на фрагменти от изображения
+	Merged 1 file into {path}	Слят е 1 файл в {path}
+	Merged {n} files into {path}	Слети са {n} файла в {path}
+	Merging data files needs the desktop app	Сливането на файлове с данни изисква настолното приложение
+	Microsoft Word (.docx)	Microsoft Word (.docx)
+	Midpoints	Средни точки
+	Minimum	Минимално
+	minimum	минимума
+	Mixed	Различни стойности
+	Mobile	Мобилни устройства
+	Modified	Променено
+	Modify page	Промени страница
+	More options	Още опции
+	More options:	Още опции:
+	More ways to add files	Още начини за добавяне на файлове
+	Mouse Down	Натискане на бутона на мишката
+	Mouse Enter	Влизане на мишката
+	Mouse Exit	Излизане на мишката
+	Mouse Up	Отпускане на бутона на мишката
+	Move bookmark	Премести отметката
+	Move comment	Премести коментара
+	Move down	Премести надолу
+	Move earlier	Премести по-напред
+	Move image	Премести изображението
+	Move later	Премести по-назад
+	Move object	Преместване на обект
+	Move objects	Преместване на обекти
+	Move page	Премести страницата
+	Move pages	Премести страниците
+	Move tag earlier	Преместване на етикета по-рано
+	Move tag later	Преместване на етикета по-късно
+	Move to group	Премести в група
+	Move up	Премести нагоре
+	Multi-line	Многоредово
+	Multiple	Няколко
+	Multiple files	Няколко файла
+	Multiple selection	Множествен избор
+	Multiple words or phrases	Няколко думи или фрази
+	Name on new comments	Име в новите коментари
+	Named Destinations	Именувани местоназначения
+	Navigation links	Навигационни връзки
+	Navigation links are not repetitive	Навигационните връзки не се повтарят
+	Navigation tab	Навигационен раздел
+	needs an AI provider (off by default)	изисква доставчик на ИИ (изключено по подразбиране)
+	Needs manual check	Нужна е ръчна проверка
+	Negative number style:	Стил на отрицателните числа:
+	Nested alternate text	Вложен алтернативен текст
+	New Action	Ново действие
+	New Action…	Ново действие…
+	New blank PDF	Нов празен PDF
+	New bookmark	Нова отметка
+	New bookmark ({key})	Нова отметка ({key})
+	New bookmarks from structure	Нови отметки от структурата
+	New file only	Само новият файл
+	New file:	Нов файл:
+	New file: {name}	Нов файл: {name}
+	New {tool} comments will look like this one	Новите коментари от тип {tool} ще изглеждат като този
+	Next ({key})	Следващо ({key})
+	Next / previous match	Следващо / предишно съвпадение
+	Next figure	Следваща фигура
+	Next month	Следващ месец
+	Next sheet	Следващ лист
+	Next tab	Следващ раздел
+	Next view	Следващ изглед
+	No actions	Няма действия
+	No changes allowed	Не се разрешават промени
+	No changes to save	Няма промени за записване
+	No check has run yet.	Още не е извършвана проверка.
+	No color	Без цвят
+	No colour	Без цвят
+	No comments match.	Няма съвпадащи коментари.
+	No comments yet.	Все още няма коментари.
+	No contributor data was built into this copy.	В това копие няма вградени данни за сътрудниците.
+	No differences in the text.	Няма разлики в текста.
+	No digital IDs yet.	Все още няма цифрови идентификатори.
+	No documents are open	Няма отворени документи
+	No file chosen	Не е избран файл
+	No fill	Без запълване
+	No fonts are referenced by the pages.	Страниците не използват шрифтове.
+	No form fields were detected	Не са открити полета на формуляр
+	No inaccessible scripts	Няма недостъпни скриптове
+	No issues found	Не са открити проблеми
+	No links to remove	Няма връзки за премахване
+	No matches	Няма съвпадения
+	No matching tools	Няма съответстващи инструменти
+	No model credits were built into this copy.	В това копие няма вградени данни за моделите.
+	No openly licensed document fonts found. Load a font file.	Не са открити шрифтове с отворен лиценз. Заредете файл с шрифт.
+	no output folder was chosen	не е избрана папка за изхода
+	No pages match those choices	Няма страници, отговарящи на този избор
+	No pages selected	Няма избрани страници
+	No PDFs in this folder yet	В тази папка все още няма PDF файлове
+	No PDFs, images or text files found in {folder}	Не са открити PDF файлове, изображения или текстови файлове в {folder}
+	No photo chosen	Няма избрана снимка
+	No preview	Няма преглед
+	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Не са намерени принтери. Проверете дали принтерът е инсталиран и дали услугата за опашка за печат работи, след което отворете „Печат“ отново.
+	No problems found: the document conforms to {level}.	Не са открити проблеми: документът съответства на {level}.
+	No security	Без защита
+	No sheets	Няма листове
+	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	В рамката не е открит подпис. Преместете рамката върху подписа или увеличете чувствителността към мастило.
+	No status has been set.	Не е зададено състояние.
+	no such document	няма такъв документ
+	No unlinked web addresses were found in the text	В текста не са открити уеб адреси без връзка
+	No untagged content was found.	Не е намерено немаркирано съдържание.
+	no unused output name	няма свободно име за изходния файл
+	none	няма
+	None (prefix only)	Без (само префикс)
+	None found	Няма открити
+	None of those files can be made into a PDF; use PDFs, images or .txt files	Нито един от тези файлове не може да бъде превърнат в PDF; използвайте PDF файлове, изображения или .txt файлове
+	None — everything is allowed	Няма — всичко е разрешено
+scroll speed	Normal	Нормална
+	Not allowed	Не е разрешено
+	Not now	Не сега
+	Not present	Няма
+	Note	Бележка
+	nothing in the file matches this document	нищо във файла не съответства на този документ
+	Nothing to redo	Няма какво да се повтори
+	nothing to redo	няма какво да се повтори
+	Nothing to undo	Няма какво да се отмени
+	nothing to undo	няма какво да се отмени
+	November	Ноември
+	Number	Число
+	Number every page in the footer.	Номерира всяка страница в долния колонтитул.
+	Number of pages	Брой страници
+	Number pages	Номерирай страниците
+	Number pages…	Номерирай страниците…
+	October	Октомври
+	Odd pages	Нечетни страници
+	Odd Pages Only	Само нечетни страници
+	of the following fields:	на следните полета:
+	of {name}	от {name}
+	of {pages}	от {pages}
+animation effects	Off	Изключени
+	Offset from centre	Отместване от центъра
+	Old file:	Стар файл:
+	Old file: {name}	Стар файл: {name}
+animation effects	On	Включени
+	On Blur	При загуба на фокус
+	On Focus	При фокусиране
+	on page {label}	на страница {label}
+	On the web, open or drop an image to convert it	В уеб версията отворете или пуснете изображение, за да го конвертирате
+	One word or phrase per line	По една дума или фраза на ред
+	One {f} file per page, named after the document.	По един {f} файл на страница, именуван по документа.
+	Only allow this if you trust the source document.	Разрешете това само ако имате доверие на изходния документ.
+	Only change the colour of black text or line art	Да се променя само цветът на черния текст и линиите
+	Only checked properties will change. Mixed means the selected fields have different values.	Ще се променят само отметнатите свойства. „Различни стойности“ означава, че избраните полета имат различни стойности.
+	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Продължете само ако имате доверие на този документ. Адресът може да пренася информация от документа, например въведеното във формуляра му.
+	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Променя се само съдържанието на страниците: връзките, коментарите, полетата на формуляра и отметките на оригиналните страници остават.
+	Open	Отвори
+	Open a document first	Първо отворете документ
+	Open a PDF ({key})	Отвори PDF файл ({key})
+	Open a PDF to measure it.	Отворете PDF файл, за да го измервате.
+	Open a web link	Отвори уеб връзка
+	Open a web page	Отвори уеб страница
+	Open accessibility report	Отвори отчета за достъпност
+	Open arrow	Отворена стрелка
+	Open email app	Отвори имейл приложението
+	Open file	Отвори файл
+	Open in a new tab	Отвори в нов раздел
+	Open in Full Screen mode	Отвори в режим на цял екран
+	Open in Full Screen mode?	Отваряне в режим на цял екран?
+	Open the file as it was saved then	Отвори файла във вида, в който е записан тогава
+	Open the older version first	Първо отворете по-старата версия
+	Open this local PDF?	Да се отвори ли този локален PDF?
+	Open this web page?	Да се отвори ли тази уебстраница?
+	Open to page	Отвори на страница
+	open to see what it will include	отворете, за да видите какво ще включва
+	Opened with	Отворен с
+	Opened, but its security settings don't allow combining. Enter the permissions password.	Файлът е отворен, но настройките му за защита не позволяват обединяване. Въведете паролата за разрешения.
+	Opening the browser's print dialog…	Отваряне на диалога за печат на браузъра…
+	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Отваря предпочитанията на драйвера на принтера. Те се запазват за всеки печат от този компютър; избраните тук копия, двустранен печат, сива скала и хартия продължават да важат.
+	Open…	Отвори…
+	Optimization cancelled	Оптимизирането е отказано
+	Optimization is already running	Оптимизирането вече се изпълнява
+	Optimize	Оптимизиране
+	Optimize PDF…	Оптимизирай PDF…
+	Optimize Scanned Documents	Оптимизиране на сканирани документи
+	Optimize scanned documents	Оптимизирай сканирани документи
+	Optimize scanned documents…	Оптимизирай сканирани документи…
+	Optimizing… cleaning up	Оптимизиране… почистване
+	Optimizing… image {d} of {t}	Оптимизиране… изображение {d} от {t}
+	Optimizing… merging identical objects	Оптимизиране… сливане на еднакви обекти
+	Optimizing… merging image fragments	Оптимизиране… обединяване на фрагменти от изображения
+	Optimizing… removing user data	Оптимизиране… премахване на потребителски данни
+	Optimizing… writing the copy	Оптимизиране… записване на копието
+	Optional	По избор
+	Optional: needs an AI provider you configure	По избор: изисква доставчик на ИИ, който сами конфигурирате
+	Orange	Оранжево
+	Organization Name	Име на организацията
+	Organizational Unit	Организационна единица
+	Organize pages	Организиране на страници
+	Original: replace pages	Оригинал: замени страниците
+	Other colour…	Друг цвят…
+	Other elements alternate text	Алтернативен текст на други елементи
+	Other elements that require alternate text	Други елементи, които изискват алтернативен текст
+	Outdent	Намали отстъпа
+	Outline colour:	Цвят на контура:
+	Output	Резултат
+	Output appears here.	Резултатът се показва тук.
+	Output intent: {list}	Изходно предназначение: {list}
+	Output preview	Преглед на изхода
+	Owner password (no restrictions apply)	Парола на собственика (без ограничения)
+	Page background	Фон на страницата
+	Page Content	Съдържание на страниците
+	Page display	Показване на страниците
+	Page display: {layout}	Показване на страниците: {layout}
+	Page does not require timed responses	Страницата не изисква отговор в ограничено време
+	Page grid	Мрежа от страници
+	Page labels	Етикети на страниците
+	Page layout	Оформление на страниците
+	Page navigation	Навигация по страниците
+	Page number	Номер на страница
+	Page Only	Само страница
+	Page options	Опции на страницата
+	Page order:	Ред на страниците:
+	Page properties	Свойства на страницата
+	Page Range	Диапазон на страниците
+	Page Range Options	Опции за диапазон на страниците
+	Page size	Размер на страницата
+	Page Sizing & Handling	Размер и обработка на страниците
+	Page thumbnails	Миниатюри на страниците
+	Page transitions	Преходи между страниците
+	Page will not cause screen flicker	Страницата няма да предизвика трептене на екрана
+	Page {label}	Страница {label}
+	Page {p} of {n}	Страница {p} от {n}
+	pages	страници
+	Pages counted	Преброени страници
+	Pages from	Страници от
+	Pages of {name} to combine, e.g. 1-3, 6	Страници от {name} за обединяване, напр. 1-3, 6
+	Pages Panel and Page	Панел „Страници“ и страница
+	Pages per file	Страници на файл
+	Pages per sheet:	Страници на лист:
+	Pages selected	Избрани страници
+	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Страниците, които са само снимки на текст, не могат да се четат на глас или да се търсят. Разпознайте текста (OCR), за да добавите текстов слой.
+	Pages to Print	Страници за печат
+	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Страниците с връзки, коментари или полета трябва да се обхождат с Tab по реда на структурата. Поправката задава реда на табулация на всяка страница на „Използвай структурата на документа“.
+	Pages:	Страници:
+	Pages: {k} of {n}	Страници: {k} от {n}
+	Paper:	Хартия:
+	Part of	Част от
+	Passed	Успешно
+	Password protection will be applied when you save	Защитата с парола ще бъде приложена при записване
+	Password required	Изисква се парола
+	Password security	Защита с парола
+	Password-protected	Защитен с парола
+	Paste after	Постави след
+	Paste pages	Постави страниците
+	Path	Контур
+	Paths	Контури
+	Pattern	Шаблон
+	Patterns	Шаблони
+	Patterns (graphics objects)	Шарки (графични обекти)
+	PDF Optimizer	PDF оптимизатор
+	PDF or image	PDF или изображение
+	PDF page: {size}	PDF страница: {size}
+	PDF producer	PDF генератор
+	PDF scale: {scale}%	Мащаб на PDF: {scale}%
+	PDF version	Версия на PDF
+	PDF, images and text	PDF, изображения и текст
+	PDF/A…	PDF/A…
+	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft не беше затворен нормално. Тези документи имат автоматично записани промени:
+	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft рисува без графичен процесор, затова може да е бавен. Обновяването на графичния драйвер може да помогне.
+	PdfCraft on GitHub	PdfCraft в GitHub
+	PdfCraft web page	Уебстраница на PdfCraft
+	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft работи офлайн. Без телеметрия, без акаунт и без обработка в облака, освен ако не добавите доставчик.
+	PdfCraft {c} is up to date.	PdfCraft {c} е актуална.
+	PdfCraft {v} is available.	Налична е PdfCraft {v}.
+	People may need more time to respond. Check that nothing has a time limit.	Някои хора може да се нуждаят от повече време за отговор. Проверете дали нищо няма времево ограничение.
+	Permissions password	Парола за разрешения
+	Permitted actions after certifying	Разрешени действия след сертифициране
+	Phone Number	Телефонен номер
+	Phone Numbers	Телефонни номера
+	Pick a tool in the quick bar, or type above.	Изберете инструмент от бързата лента или пишете по-горе.
+	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Изображенията се нуждаят от алтернативен текст, който ги описва, или трябва да са маркирани като декоративни. Добавете алтернативен текст към всяка фигура.
+	Pictures on those pages are recognized too; words already in the page's text are not added again	Изображенията на тези страници също се разпознават; думите, които вече са в текста на страницата, не се добавят отново
+	Pin a folder to Home	Закачи папка в Начало
+	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Закачете папка, за да виждате тук най-новите PDF файлове в нея – например папката, в която записва скенерът ви или синхронизирано облачно хранилище.
+	Pin a folder…	Закачи папка…
+	Pin folder to Home…	Закачи папка в Начало…
+	Pink	Розово
+	Pinned folders need the desktop app	Закачените папки изискват настолното приложение
+	Pinned {folder} to Home	{folder} е закачена в Начало
+	Plain text in reading order; pages are separated by form feeds.	Обикновен текст в реда на четене; страниците се разделят със знаци за нова страница.
+	Planned	Планирано
+	Planned for milestone	Планирано за етап
+	Planned for milestone {m} — open to see what it will include	Планирано за етап {m} — отворете, за да видите какво ще включва
+	Planned · {m}	Планирано · {m}
+	Points from the page's bottom-left corner.	Точки от долния ляв ъгъл на страницата.
+	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	Преносимият режим е изключен: в {folder} не може да се записва ({error}). Вместо това настройките се пазят в потребителската ви папка.
+	Portrait Pages	Портретни страници
+	Portrait pages	Портретни страници
+	Post	Публикувай
+	PostScript / EPS	PostScript / EPS
+	PostScript XObjects aren't allowed	PostScript XObject обекти не са разрешени
+	Preflight	Предпечатна проверка
+	Prepare a form	Подготви формуляр
+	Prepare for accessibility	Подготви за достъпност
+	Prepare for Distribution	Подготовка за разпространение
+	Prepare for distribution	Подготви за разпространение
+	Prepare for distribution…	Подготви за разпространение…
+	Preparing sheet {done} of {total} for printing…	Подготовка за печат на лист {done} от {total}…
+	Preparing {n} sheets for printing…	Подготовка на листове за печат: {n}…
+	Presentation (.pptx)	Презентация (.pptx)
+	Preview	Преглед
+	Preview unavailable: {e}	Няма преглед: {e}
+	Preview: page {p} of {n}	Преглед: страница {p} от {n}
+	Previous ({key})	Предишно ({key})
+	Previous / next page	Предишна / следваща страница
+	Previous figure	Предишна фигура
+	Previous month	Предишен месец
+	Previous sheet	Предишен лист
+	Previous tab	Предишен раздел
+	Previous view	Предишен изглед
+	Primary language	Основен език
+	Print ({key})	Печат ({key})
+	Print as image	Печат като изображение
+	Print in grayscale	Печат в сива скала
+	Print page border	Отпечатай рамка на страницата
+	Print production	Печатна подготовка
+	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Отпечатайте едностранно. Запазете реда на листовете, изрежете по маркировките, след което подредете купчините отляво надясно и отгоре надолу.
+	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage или LastPage
+	Printer paper and scaling may differ. Check driver settings.	Хартията и мащабът на принтера може да се различават. Проверете настройките на драйвера.
+	Printer properties	Свойства на принтера
+	Printing allowed	Разрешен печат
+	Print…	Отпечатай…
+	Privacy	Поверителност
+	Private data of other applications	Лични данни на други приложения
+	product (x)	произведението (x)
+	Properties…	Свойства…
+	Protect a PDF	Защити PDF
+	Protect Using Password	Защита с парола
+	Protect using password…	Защити с парола…
+	Protect with password	Защити с парола
+	Protected: the combined file won't keep its security settings	Защитен: обединеният файл няма да запази настройките за защита
+	PRs	PR
+	Public key	Публичен ключ
+	Purple	Лилаво
+	PushButton	Бутон
+	Radio	Радиобутон
+	Radio button	Радиобутон
+	Radio Button Properties	Свойства на радиобутон
+	Re-type Password	Повторете паролата
+	Read	Четене
+	Read mode	Режим на четене
+	Read Only	Само за четене
+	Reading colours	Цветове за четене
+	Reason	Причина
+	Reason: 	Причина: 
+	Recent colours	Последни цветове
+	Recognize Text	Разпознаване на текст
+	Recognize text	Разпознай текст
+	Recognize text in multiple files…	Разпознай текст в няколко файла…
+	Recognize Text…	Разпознаване на текст…
+	Recognize text…	Разпознай текст…
+	Recognized 1 word	Разпозната е 1 дума
+	Recognized {n} words	Разпознати са {n} думи
+	Recognized {w} words in 1 file	Разпознати са {w} думи в 1 файл
+	Recognized {w} words in {n} files	Разпознати са {w} думи в {n} файла
+	Recognizing text… file {d} of {t}	Разпознаване на текст… файл {d} от {t}
+	Recognizing text… page {d} of {t}	Разпознаване на текст… страница {d} от {t}
+	Recommended tools	Препоръчани инструменти
+	Recover	Възстанови
+	Recover unsaved documents?	Да се възстановят ли незаписаните документи?
+	Redact	Заличаване
+	Redact a PDF	Заличи в PDF
+	Redact all	Заличи всичко
+	Redact Image	Заличи изображението
+	Redact pages	Заличи страници
+	Redact pages…	Заличи страници…
+	Redact text and images	Заличи текст и изображения
+	Redacted area fill colour:	Цвят на запълване на заличената област:
+	Redaction code:	Код за заличаване:
+	Redaction mark appearance	Вид на маркировката за заличаване
+	Redaction properties…	Свойства на заличаването…
+	Redaction Tool Properties	Свойства на инструмента за заличаване
+	Redid {label}	Повторено: {label}
+	Redo	Повтори
+	Redo {action}	Повтори {action}
+	Reduce file size	Намали размера на файла
+	Reduce file size…	Намали размера на файла…
+	Regularity	Регулярност
+	Rejected	Отхвърлено
+	Reliable character encoding is provided	Осигурено е надеждно кодиране на знаците
+	Reload documents when their files change on disk	Презареждай документите, когато файловете им се променят на диска
+	Remove	Премахни
+	Remove "{name}" from this list? The file itself is not deleted.	Да се премахне ли „{name}“ от този списък? Самият файл няма да бъде изтрит.
+	Remove all links	Премахни всички връзки
+	Remove background	Премахни фона
+	Remove checkmark	Премахни отметката
+	Remove Crop	Премахване на изрязването
+	Remove from Recent	Премахни от последно отваряните
+	Remove header & footer	Премахни горния и долния колонтитул
+	Remove hidden information	Премахни скритата информация
+	Remove hidden information and flatten comments and form fields, so recipients see only the pages.	Премахва скритата информация и сплесква коментарите и полетата на формуляри, така че получателите да виждат само страниците.
+	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	Премахва скритата информация, метаданните, скриптовете и вграденото съдържание и презаписва файловете.
+	Remove hidden information…	Премахни скритата информация…
+	Remove invalid links and bookmarks	Премахни невалидните връзки и отметки
+	Remove page	Премахни страницата
+	Remove redaction marks	Премахни маркировките за заличаване
+	Remove security	Премахни защитата
+	Remove this leaf tag from reading order and mark its direct content as an artifact	Премахнете този листов етикет от реда на четене и маркирайте прякото му съдържание като артефакт
+	Remove unreferenced named destinations	Премахни неизползваните именувани местоназначения
+	Remove unused objects and merge identical ones	Премахни неизползваните обекти и обедини еднаквите
+	Remove watermark	Премахни водния знак
+	Remove {name}	Премахни {name}
+	Remove {name} from Recent	Премахни {name} от последно отваряните
+	Remove {n} files	Премахни {n} файла
+	Remove {n} pages	Премахни {n} страници
+	Removed 1 hidden item. Save to remove them from the file.	Премахнат е 1 скрит елемент. Запишете, за да ги премахнете от файла.
+	Removed 1 link	Премахната е 1 връзка
+	Removed {n} hidden items. Save to remove them from the file.	Премахнати са {n} скрити елемента. Запишете, за да ги премахнете от файла.
+	Removed {n} links	Премахнати връзки: {n}
+	Rename	Преименувай
+	Rename bookmark	Преименувай отметката
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Изобразяване: hayro (bootstrap) · Интерфейс: egui · Икони: Lucide (ISC) · Шрифтове: Inter, JetBrains Mono, Dancing Script (OFL)
+	Reopen Closed Tab	Отваряне на затворения раздел
+	Reopen the files that were open when PdfCraft last closed	Отваряй отново файловете, които бяха отворени при последното затваряне на PdfCraft
+	Repair log	Дневник на поправките
+	Repairs	Поправки
+	Repeat overlay text	Повтаряй текста върху заличаването
+	Repeated navigation links should be skippable. Check links that appear on every page.	Повтарящите се навигационни връзки трябва да могат да се пропускат. Проверете връзките, които се появяват на всяка страница.
+	Replace	Замени
+	Replace document colours	Замяна на цветовете на документа
+	Replace image	Замени изображението
+	Replace Image…	Замени изображението…
+	Replace page	Замени страницата
+	Replace Pages	Замяна на страници
+	Replace pages	Замени страници
+	Replace pages…	Замени страници…
+	Replace text	Замени текст
+	Replaced	Заменено
+	Replacement text	Заместващ текст
+	Replacement: pages of {name}	Заместител: страници от {name}
+	Replaces the existing one on those pages.	Заменя съществуващия на тези страници.
+	Replacing images arrives on the web with image file pickers	Замяната на изображения в уеб версията ще стане достъпна с инструментите за избор на файлове с изображения
+	Replacing images on page {p} arrives on the web with image pickers ({i})	Замяната на изображения на страница {p} в уеб версията ще стане достъпна с инструментите за избор на изображения ({i})
+	Report Options	Опции на отчета
+	Report…	Отчет…
+	Required	Задължително
+	Requires user to enter a password for:	Изисква от потребителя да въведе парола за:
+	Reset a form	Нулирай формуляр
+	Reset columns	Нулирай колоните
+	Reset page size	Възстанови размера на страниците
+	Reset panel layout	Възстанови оформлението на панелите
+	Reset to printer defaults	Възстанови настройките по подразбиране на принтера
+	Resize comment	Преоразмери коментара
+	Resize panel window	Преоразмери прозореца на панела
+	Resize panels	Преоразмери панелите
+	Resize window to initial page	Преоразмери прозореца спрямо началната страница
+	Restrictions	Ограничения
+	Restrictions lifted	Ограниченията са премахнати
+	Retain existing	Запази съществуващата
+	Reveal in File Explorer	Показване във файловия мениджър
+	Reverse closed arrow	Обърната затворена стрелка
+	Reverse open arrow	Обърната отворена стрелка
+	Reverse pages	Обърнат ред на страниците
+	Reverse the order	Обърни реда
+	Revert	Върни последно записаното
+	Revert changes	Отмени промените
+	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Да се върне ли последната записана версия на „{name}“? Промените след нея няма да могат да бъдат отменени.
+	Reverted to the last saved version	Възстановена е последната записана версия
+	Review History	История на прегледа
+	Revisions	Редакции
+	Rich Text Format (.rtf)	Rich Text Format (.rtf)
+	Right Edge	Десен ръб
+	Right Footer Text	Текст на долния колонтитул вдясно
+	Right Header Text	Текст на горния колонтитул вдясно
+	Rotate	Завърти
+	Rotate Clockwise	Завърти по часовниковата стрелка
+	Rotate clockwise	Завърти по часовниковата стрелка
+	Rotate Counterclockwise	Завърти обратно на часовниковата стрелка
+	Rotate counterclockwise	Завърти обратно на часовниковата стрелка
+	Rotate image	Завърти изображението
+	Rotate page	Завърти страницата
+	Rotate page {label} clockwise	Завъртане на страница {label} по часовниковата стрелка
+	Rotate page {label} counterclockwise	Завъртане на страница {label} обратно на часовниковата стрелка
+	Rotate Pages	Завъртане на страници
+	Rotate pages	Завърти страници
+	Rotate pages clockwise	Завърти страниците по часовниковата стрелка
+	Rotate pages counterclockwise	Завърти страниците обратно на часовниковата стрелка
+	Rotate pages…	Завърти страници…
+	Rotate view	Завърти изгледа
+	Rotate view clockwise	Завърти изгледа по часовниковата стрелка
+	Rotate view clockwise ({key})	Завърти изгледа по часовниковата стрелка ({key})
+	Rotate view counterclockwise	Завърти изгледа обратно на часовниковата стрелка
+	Run	Изпълни
+	Run a JavaScript	Изпълни JavaScript
+	Run JavaScript	Изпълни JavaScript
+	Running action… file {d} of {t}	Изпълнение на действие… файл {d} от {t}
+	Same as interface ({language})	Като интерфейса ({language})
+	Sanitize	Почисти
+	Sanitize document	Почисти документа
+	Sanitize Documents	Почистване на документи
+	Sanitize document…	Почисти документа…
+	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Почистването премахва скритата информация от документа: метаданни, прикачени файлове, коментари, полета на формуляри (сплескани), скрит текст и слоеве, отметки, връзки, действия и скриптове, както и лични данни на приложения.
+	Save	Запиши
+	Save & Close	Запиши и затвори
+	Save ({key})	Запиши ({key})
+	Save anyway	Запис въпреки това
+	Save as PDF/A	Запиши като PDF/A
+	Save as PDF/A-1b	Запиши като PDF/A-1b
+	Save as PDF/A-2b	Запиши като PDF/A-2b
+	Save as PDF/A-3b	Запиши като PDF/A-3b
+	Save as PDF/UA	Запиши като PDF/UA
+	Save as PDF/X	Запиши като PDF/X
+	Save as…	Запиши като…
+	Save attachment…	Запиши прикачения файл…
+	Save changes to “{name}” before closing?	Да се запишат ли промените в „{name}“ преди затваряне?
+	Save image	Запиши изображението
+	Save Image As…	Запиши изображението като…
+	Save or revert changes before selecting another tag.	Запазете или отменете промените, преди да изберете друг таг.
+	Save over the changed file?	Да се запише ли върху променения файл?
+	Save pages	Запиши страниците
+	Save tag properties	Запази свойствата на тага
+	Save the accessibility report	Запиши отчета за достъпност
+	Save the document afterwards: saving rewrites the whole file so no trace of the removed content stays in it.	След това запишете документа: записването презаписва целия файл, така че в него да не остане следа от премахнатото съдържание.
+	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	След това запишете документа; записването презаписва целия файл, така че в него да не остане нищо от премахнатото.
+	Save the spreadsheet	Запиши електронната таблица
+	Save these pages as one PDF	Запиши тези страници като един PDF файл
+	Saved measurements	Запазени измервания
+	Saved measurements.	Измерванията са запазени.
+	Saved the print-ready PDF to {path}	Готовият за печат PDF е записан в {path}
+	Saved {name}	Записан: {name}
+	Saved {place}: {before} → {after} (not smaller){detail}	Записано {place}: {before} → {after} (не е по-малко){detail}
+	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Записано {place}: {before} → {after} (с {pct}% по-малко){detail}
+	Saved, but reopening failed: {e}	Записано, но повторното отваряне не бе успешно: {e}
+	Scale relative to target page	Мащабирай спрямо целевата страница
+	Scan	Сканиране
+	Scan & OCR	Сканиране и OCR
+	Screen flicker	Трептене на екрана
+	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Екранните четци избират гласа си според езика на документа. Задайте го в „Свойства на документа > Разширени > Език“.
+	Script Name:	Име на скрипта:
+	Script:	Скрипт:
+	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Скриптовете се изпълняват в изолирана среда без достъп до файлове или мрежа. Скрипт, който иска да отвори уебстраница, първо се нуждае от вашето разрешение. При изключен JavaScript стандартните функции на Acrobat за форматиране, валидиране и изчисляване продължават да работят.
+	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Скриптовете се изпълняват в изолирана среда без достъп до файлове и мрежа. При изключен JavaScript стандартните функции на Acrobat за форматиране, проверка и изчисление продължават да работят.
+	Scroll long text	Превъртай дълъг текст
+	Scroll speed (mouse wheel and arrow keys)	Скорост на превъртане (колелце на мишката и клавиши със стрелки)
+	Scroll tabs left	Превърти разделите наляво
+	Scroll tabs right	Превърти разделите надясно
+	Search comments	Търсене в коментарите
+	Search tools and commands…	Търсене на инструменти и команди…
+	Searchable Image (Exact)	Изображение с възможност за търсене (точно)
+	Searching… {s} of {p} pages	Търсене… {s} от {p} страници
+	Searching… {s}/{p}	Търсене… {s}/{p}
+	Security	Защита
+	Security method	Метод на защита
+	Security properties	Свойства на защитата
+	Security properties…	Свойства на защитата…
+	Security settings	Настройки за защита
+	Security settings must allow assistive technology to read the content ("Enable text access for screen reader devices"). Change the document's security to allow it.	Настройките за защита трябва да позволяват на помощните технологии да четат съдържанието („Разреши достъп до текста за екранни четци“). Променете защитата на документа, за да го позволите.
+	Security will be removed when you save	Защитата ще бъде премахната при записване
+	Select (V)	Избиране (V)
+	Select a file first	Първо изберете файл
+	Select a file for the stamp	Изберете файл за печата
+	Select a password-protected file first	Първо изберете файл, защитен с парола
+	Select a word	Избери дума
+	Select Action:	Изберете действие:
+	Select All	Избери всички
+	Select all pages (Organize)	Избери всички страници (Организиране)
+	Select at most 1000 objects at a time.	Изберете най-много 1000 обекта наведнъж.
+	Select data files to merge	Изберете файлове с данни за сливане
+	Select files to compare	Изберете файлове за сравняване
+	Select format category:	Изберете категория формат:
+	Select Icon	Избери икона
+	Select page {label}	Избиране на страница {label}
+	Select pages	Избери страници
+	Select the items to remove from this document.	Изберете елементите, които да се премахнат от документа.
+	Select Trigger:	Изберете задействане:
+	Selected image files: {count}	Избрани файлове с изображения: {count}
+	Selected pages	Избрани страници
+	Selection	Избраните
+	Self-signed	Самоподписан
+	Sending sheet {s} of {n} to {printer}…	Изпращане на лист {s} от {n} до {printer}…
+	Sending to {printer}…	Изпращане до {printer}…
+	Sent to {printer}: {msg}	Изпратено до {printer}: {msg}
+	Separate PDFs	Отделни PDF файлове
+	Separator style:	Стил на разделителя:
+	September	Септември
+	Serial number	Сериен номер
+	Set Alternate Text	Задаване на алтернативен текст
+	Set alternate text	Задай алтернативен текст
+	Set bookmark destination	Задай местоназначение на отметката
+	Set document title	Задай заглавие на документа
+	Set Fields to Same Size	Задай еднакъв размер на полетата
+	Set layer visibility	Задай видимост на слоя
+	Set measurement scale	Задай мащаб на измерване
+	Set Page Boxes	Задай полета на страницата
+	Set page boxes	Задай полета на страницата
+	Set page boxes…	Задай полета на страницата…
+	Set page transitions	Задаване на преходи между страници
+	Set properties	Задай свойства
+	Set status	Задай състояние
+	Set status Accepted	Задай състояние „Прието“
+	Set status Cancelled	Задай състояние „Отменено“
+	Set status Completed	Задай състояние „Завършено“
+	Set status None	Задай състояние „Няма“
+	Set status Rejected	Задай състояние „Отхвърлено“
+	Set status Unmarked	Задай състояние „Неотбелязано“
+	Set tab order	Задай реда на обхождане
+	Set the image of {name}	Задай изображението на {name}
+	Set to current page ({n})	Задай текущата страница ({n})
+	Set to zero	Задай нула
+	Shadings	Преливания
+	Shared Field Properties	Общи свойства на полетата
+	Sheet {s} of {n}	Лист {s} от {n}
+key	Shift	Shift
+	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift ограничава до 45 градуса. Backspace премахва връх. Escape отменя.
+	Shift- or Ctrl/Command-click to select several fields.	Щракнете с Shift или Ctrl/Command, за да изберете няколко полета.
+	Shift-click to select several objects. Drag empty space to select an area.	Щракнете с Shift, за да изберете няколко обекта. Плъзнете в празно място, за да изберете област.
+	ships in milestone {m}	ще бъде включено в етап {m}
+	Show	Покажи
+	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	Показване на обикновена заглавна лента за бутоните на прозореца вместо лентата с раздели. GNOME не рисува заглавни ленти за приложенията, затова тази не следва темата му.
+	Show a field	Покажи поле
+	Show all	Покажи всички
+	Show all comments	Покажи всички коментари
+	Show certificate…	Покажи сертификата…
+	Show cover page in two-page view	Показвай корицата в изглед с две страници
+	Show layer	Покажи слоя
+	Show less	Покажи по-малко
+	Show password	Покажи паролата
+	Show Report	Покажи отчета
+	Show the accessibility report	Покажи отчета за достъпност
+	Show this dialog when the Checker starts	Показвай този диалог при стартиране на проверката
+	Show {n} more	Покажи още {n}
+	Show:	Показвай:
+	Shown while the pointer is over a mark.	Показва се, докато показалецът е над маркировка.
+	Shrink oversized pages	Смали прекалено големите страници
+	Side by side	Един до друг
+	Side panels	Странични панели
+	Sign	Подпиши
+	Sign a sheet of white paper and take a photo of it in bright, even light (use the flash). Choose the photo or drop it here: PdfCraft finds the signature and removes the paper.	Подпишете се на лист бяла хартия и го снимайте на ярка, равномерна светлина (със светкавица). Изберете снимката или я пуснете тук: PdfCraft открива подписа и премахва хартията.
+	Sign Here	Подпишете тук
+	Sign this field…	Подпиши това поле…
+	Sign with a Digital ID	Подпиши с цифров идентификатор
+	Sign yourself	Подпишете сами
+	Signature	Подпис
+	signature	подпис
+	Signature Details	Подробности за подписа
+	Signature is INVALID:	Подписът е НЕВАЛИДЕН:
+	Signature is valid:	Подписът е валиден:
+	Signature panel	Панел с подписи
+	Signature validity is UNKNOWN:	Валидността на подписа е НЕИЗВЕСТНА:
+	Signatures	Подписи
+	Signatures panel	Панел с подписи
+	Signed and all signatures are valid.	Подписан, всички подписи са валидни.
+	Signed and saved to {path}	Подписано и записано в {path}
+	Signer	Подписал
+	Signer's name	Име на подписващия
+	Signing time	Час на подписване
+	Simplified field notation:	Опростен запис с полета:
+	Single file	Един файл
+	Single Page	Единична страница
+	Single page	Единична страница
+	Single Page Continuous	Единична страница, непрекъснато
+	Single word or phrase	Отделна дума или фраза
+	Skip Rule	Пропусни правилото
+	Skipped	Пропуснато
+	Slash	Наклонена черта
+scroll speed	Slow	Ниска
+	Smaller pages	По-малки страници
+	Snap to drawing	Прилепване към чертежа
+	Snapping	Прилепване
+	Social Security Number	Номер на социално осигуряване (САЩ)
+	Social Security Numbers	Номера на социално осигуряване (САЩ)
+	Solid	Плътна
+	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	Някои отметки не са показани тук: панелът показва ограничен брой, с ограничена дълбочина на влагане.
+	Some content could not be classified safely and was kept in the count.	Част от съдържанието не може да бъде класифицирана надеждно и е включена в броя.
+	Some page content couldn't be read; snapping uses the rest.	Част от съдържанието на страницата не може да бъде прочетена; прилепването използва останалото.
+	Some pages contain no countable text. Scanned images need OCR first.	Някои страници не съдържат текст за преброяване. Сканираните изображения първо изискват OCR.
+	Sort comments by:	Сортирай коментарите по:
+	Sort items	Сортирай елементите
+	sorted ascending	сортирано във възходящ ред
+	sorted descending	сортирано в низходящ ред
+key	Space	Интервал
+	Space Audit	Анализ на мястото
+	Special	Специален
+	Split	Раздели
+	Split document	Разделяне на документ
+	Split document…	Раздели документа…
+	Split into files…	Раздели на файлове…
+	Spreadsheet (.xlsx)	Електронна таблица (.xlsx)
+	Squiggly underline	Вълнообразно подчертаване
+	Squiggly underline text	Подчертай текст с вълнообразна линия
+	Stamp palette	Палитра с печати
+	Stamps	Печати
+	Standard Business	Стандартни бизнес
+	Standards	Стандарти
+	Start	Начало
+action wizard	Start	Старт
+	Start Checking	Започни проверката
+	Start page number	Начален номер на страница
+	Steps	Стъпки
+	Sticky note	Бележка
+	Strength: {s}	Надеждност: {s}
+	Strikethrough text	Зачертай текст
+	Strong	Силна
+	Structure Info	Информация за структурата
+	Submit a form	Изпрати формуляр
+	sum (+)	сумата (+)
+	Summarize	Обобщи
+	Summarize comments	Обобщи коментарите
+	Summarize Options	Опции за обобщение
+	Summary	Резюме
+	Switch light / dark theme	Превключи светла / тъмна тема
+	Switch to List view to change the pages it takes.	Превключете към изглед списък, за да промените кои страници се вземат.
+	Switch to two-page view first to show the cover page	Първо превключете към изглед с две страници, за да се покаже корицата
+	Tab order	Ред на табулация
+	Tab order by columns	Ред на табулация по колони
+	Tab order by rows	Ред на табулация по редове
+	Tab order is consistent with structure order	Редът на табулация съответства на реда на структурата
+	Tab order: by columns	Ред на табулация: по колони
+	Tab order: by document structure	Ред на табулация: по структурата на документа
+	Tab order: by rows	Ред на табулация: по редове
+	Tab order: move a field with its arrows.	Ред на обхождане: преместете поле със стрелките му.
+	Table cells belong in a row. Fix the table's tags.	Клетките на таблица трябва да са в ред. Поправете етикетите на таблицата.
+	Tables must contain the same number of columns in each row and rows in each column	Таблиците трябва да имат еднакъв брой колони във всеки ред и редове във всяка колона
+	Tables must have a summary	Таблиците трябва да имат резюме
+	Tables should have headers	Таблиците трябва да имат заглавни клетки
+	Tag form fields	Маркиране на полетата на формуляра
+	Tag type	Тип на тага
+	Tagged annotations	Етикетирани анотации
+	Tagged content	Етикетирано съдържание
+	Tagged form fields	Етикетирани полета на формуляри
+	Tagged multimedia	Етикетирана мултимедия
+	Tagged PDF	PDF с етикети
+	Tags	Тагове
+	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	Етикетите придават на документа логическа структура, която помощните технологии следват. Етикетирайте документа („Автоматично етикетиране на PDF“).
+	Tags panel	Панел с тагове
+	Take a snapshot	Направи моментна снимка
+	Text (plain)	Текст (обикновен)
+	Text alignment:	Подравняване на текста:
+	Text box	Текстово поле
+	Text Color:	Цвят на текста:
+	Text field	Текстово поле
+	Text Field Properties	Свойства на текстово поле
+	Text in images isn't found; recognise text (OCR) first.	Текстът в изображения не се открива; първо разпознайте текста (OCR).
+	Text is compared word by word; the differences are shown on the new file.	Текстът се сравнява дума по дума; разликите се показват в новия файл.
+	Text language is specified	Езикът на текста е зададен
+	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Текстът трябва да контрастира достатъчно с фона си за хора с намалено зрение. Проверете цветовете на око или с инструмент за контраст.
+	Text recognition is already running	Разпознаването на текст вече се изпълнява
+	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Разпознаването на текст не е инсталирано: файловете на моделите му липсват. Инсталирайте PdfCraft отново или задайте в PDFCRAFT_MODELS папката, която ги съдържа.
+	Text to find	Текст за търсене
+	Text to insert	Текст за вмъкване
+	Text used as a clipping path cannot be moved with this selection.	Текстът, използван като изрязващ контур, не може да се премести с този избор.
+	Text, marks and signatures become part of the page. Other comments stay editable.	Текстът, маркировките и подписите стават част от страницата. Другите коментари остават редактируеми.
+	TH and TD	TH и TD
+	TH and TD must be children of TR	TH и TD трябва да са дъщерни елементи на TR
+	Thai and Arabic use regular fallback fonts when available.	Тайландският и арабският използват резервни шрифтове с нормален стил, когато са налични.
+	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Действието не бе успешно: прекъсна го вътрешна грешка ({m}). Документите ви не са променени.
+	The checker found 1 problem which may prevent the document from being fully accessible.	Проверката откри 1 проблем, който може да попречи документът да бъде напълно достъпен.
+	The checker found no problems in this document.	Проверката не откри проблеми в този документ.
+	The checker found {n} problems which may prevent the document from being fully accessible.	Проверката откри {n} проблема, които могат да попречат документът да бъде напълно достъпен.
+	The clipboard has no image or text	В клипборда няма изображение или текст
+	The document changed while you were editing field properties.	Документът се промени, докато редактирахте свойствата на полетата.
+	The document has additional actions (/AA)	Документът има допълнителни действия (/AA)
+	The document has document-level JavaScript	Документът съдържа JavaScript на ниво документ
+	the document has no form fields	документът няма полета на формуляр
+	the document has no page tree	документът няма дърво на страниците
+	the document has no tags	документът няма тагове
+	The document has no XMP metadata	Документът няма XMP метаданни
+	The document is encrypted	Документът е шифрован
+	The document is no longer open.	Документът вече не е отворен.
+	the document is protected by a password	документът е защитен с парола
+	The document now conforms to {level}; save it to keep the changes	Документът вече отговаря на {level}; запишете го, за да запазите промените
+	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Документът се отваря без парола; тази парола е нужна за промяна на ограниченията. Тя се прилага при записване.
+	The document's security settings don't allow copying text and images	Настройките за защита на документа не позволяват копиране на текст и изображения
+	The document's security settings don't allow filling in form fields	Настройките за защита на документа не позволяват попълване на полетата на формуляра
+	The document's security settings don't allow this change	Настройките за защита на документа не позволяват тази промяна
+	The existing action will be preserved.	Съществуващото действие ще бъде запазено.
+	The field properties could not be changed.	Свойствата на полетата не можаха да бъдат променени.
+	The field properties dialog is no longer open.	Прозорецът със свойства на полетата вече не е отворен.
+	The field {name} no longer exists.	Полето {name} вече не съществува.
+	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Шрифтовете, с които PdfCraft пише, не могат да покажат „{c}“ ({code}), затова във всяка програма за PDF то се показва като ?. Текстът е запазен.
+	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Формулярът изисква да бъде изпратен до {u}; PdfCraft не изпраща данни от формуляри. Запишете документа, за да запазите въведеното.
+	The form asks viewers to make appearances (NeedAppearances)	Формулярът изисква от програмите за преглед да генерират изгледите на полетата (NeedAppearances)
+	The image has been copied ({w} × {h} pixels)	Изображението е копирано ({w} × {h} пиксела)
+	The image has been copied as a {ext} file	Изображението е копирано като файл {ext}
+	the image is empty	изображението е празно
+	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Ключът е в macOS Keychain, който може да поиска разрешение PdfCraft да го използва.
+	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Ключът е в хранилището за сертификати на Windows, което може да поиска разрешение PdfCraft да го използва.
+	The Keychain's digital IDs couldn't be listed: {e}	Цифровите идентификатори от Keychain не можаха да бъдат изброени: {e}
+	The labels are in English: the signature's font can't draw them in this language.	Етикетите са на английски: шрифтът на подписа не може да ги изобрази на този език.
+	The linked PDF opened, but its named destination was not applied.	Свързаният PDF се отвори, но именуваната му цел не беше приложена.
+	The linked PDF opened, but its page destination was out of range.	Свързаният PDF се отвори, но целевата му страница е извън обхвата.
+	The newest {n} of {total} PDFs	Най-новите {n} от {total} PDF файла
+	The operation failed.	Операцията е неуспешна.
+	The page has changed; select the image again	Страницата е променена; изберете изображението отново
+	the password is incorrect	паролата е грешна
+	The password is only used to read the file; it isn't saved.	Паролата се използва само за четене на файла; тя не се запазва.
+	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифтовете за PDF текст не могат да изобразят „{c}“ ({code}). Изберете поддържан текст.
+	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Собствените настройки на драйвера на принтера за този печат: тава за хартия, вид хартия, довършителна обработка и други.
+	The replacement file doesn't have that many pages.	Заместващият файл няма толкова страници.
+	The same password is tried on each file.	Една и съща парола се опитва за всеки файл.
+	The selected area has been copied ({w} × {h} pixels)	Избраната област е копирана ({w} × {h} пиксела)
+	The selected fields could not be found. Select them again.	Избраните полета не бяха намерени. Изберете ги отново.
+	The signature will be invisible.	Подписът ще бъде невидим.
+	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Стандартните шрифтове не могат да покажат „{c}“ ({code}). Засега като текст могат да се добавят само западноевропейски символи.
+	The text is the same	Текстът е същият
+	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	моделите за разпознаване на текст не са инсталирани (инсталирайте PdfCraft отново или задайте в PDFCRAFT_MODELS папката, която ги съдържа)
+	The title in the metadata and the document information differ	Заглавието в метаданните и в информацията за документа се различават
+	the title must not be empty	заглавието не може да е празно
+	The value is shown as typed.	Стойността се показва както е въведена.
+	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Прозорецът трябва да показва смислено заглавие вместо името на файла. Задайте заглавие и „Начален изглед > Показване: Заглавие на документа“.
+	there are no pages to print	няма страници за печат
+	There are no redaction marks (mark text, areas or pages first)	Няма маркировки за заличаване (първо маркирайте текст, области или страници)
+	There are no redaction marks to apply	Няма маркировки за заличаване, които да бъдат приложени
+	there are no redaction marks to apply	няма маркировки за заличаване, които да бъдат приложени
+	These files can't be read, so they won't be in the combined PDF:	Тези файлове не могат да бъдат прочетени, затова няма да бъдат в обединения PDF:
+	These objects could not be moved. Select them again and try a smaller move.	Тези обекти не можаха да бъдат преместени. Изберете ги отново и опитайте по-малко отместване.
+	Thick	Дебела
+	Thin	Тънка
+	This area has too many overlapping paths; intersection snapping is limited.	Тази област има твърде много припокриващи се контури; прилепването към пресечни точки е ограничено.
+	This certificate is in your list of trusted certificates.	Този сертификат е в списъка ви с надеждни сертификати.
+	This certificate is not trusted. Signatures made with it show an unknown identity.	Този сертификат не е надежден. Подписите, направени с него, показват неизвестна самоличност.
+	This certificate is trusted through a certificate above it in the chain.	Този сертификат е надежден чрез сертификат над него във веригата.
+	This comment's appearance can't be changed yet.	Външният вид на този коментар все още не може да се променя.
+	This compatibility level supports only plain ASCII passwords.	Това ниво на съвместимост поддържа само пароли с обикновени ASCII знаци.
+	This dialog shows the details of a certificate and its chain.	Този диалог показва подробностите за сертификат и неговата верига.
+	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Този документ иска да се отвори в режим на цял екран: страницата изпълва екрана и нищо друго не се показва. Натиснете Esc по всяко време, за да излезете.
+	This document can't be checked: it couldn't be read for editing	Този документ не може да бъде проверен: не можа да бъде прочетен за редактиране
+	This document contains {n} interactive form fields.	Този документ съдържа {n} интерактивни полета на формуляр.
+	This document has no attachments.	Този документ няма прикачени файлове.
+	This document has no comments to flatten	Този документ няма коментари за сплескване
+	This document has no document-level scripts.	Този документ няма скриптове на ниво документ.
+	This document has no editable structure tags.	Този документ няма структурни тагове за редактиране.
+	This document has no form fields to flatten	Този документ няма полета на формуляр за сплескване
+	This document has no form fields you can fill in	Този документ няма полета на формуляр, които могат да се попълнят
+	This document has no form fields.	Този документ няма полета на формуляр.
+	This document has no layers.	Този документ няма слоеве.
+	This document has no pages.	Този документ няма страници.
+	This document has no restrictions to lift	Този документ няма ограничения за премахване
+	This document has no signatures.	Този документ няма подписи.
+	This document has no tagged figures.	Този документ няма етикетирани фигури.
+	This document has no {kind} to change	Този документ няма {kind} за промяна
+	This document hasn't been checked yet.	Този документ все още не е проверен.
+	This document is secured. Some changes are restricted by its security settings.	Този документ е защитен. Някои промени са ограничени от настройките му за защита.
+	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	този документ е подписан: презаписването му би обезсилило подписите (вместо това го запишете инкрементално)
+	This document is trying to open a local file:	Този документ се опитва да отвори локален файл:
+	This document isn't password-protected	Този документ не е защитен с парола
+	This drawing exceeds the snapping limit; only the first paths are used.	Този чертеж надвишава ограничението за прилепване; използват се само първите контури.
+	This field is locked. Unlock it to change its properties.	Това поле е заключено. Отключете го, за да промените свойствата му.
+	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Шрифтът на това поле не може да покаже „{c}“ ({code}), затова PdfCraft показва ? на негово място. Стойността е запазена и другите програми за PDF преначертават полето по нея.
+	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Този файл беше променен на диска. „Презареждане“ показва новата версия и отхвърля незаписаните ви промени; „Запис“ я заменя с тази версия.
+	This file is already as small as it can be made ({size}). No copy was saved.	Файлът вече е възможно най-малък ({size}). Не е записано копие.
+	this file isn't XFDF, FDF, XML or text form data	този файл не е XFDF, FDF, XML или текстови данни на формуляр
+	This file was damaged and has been repaired. Saving keeps the repaired version.	Този файл беше повреден и е поправен. При записване се запазва поправената версия.
+	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Тази папка в момента не е достъпна. Може да е преместена или дискът, на който е, или облачната синхронизация да не са на линия.
+	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Този формуляр съдържа и XFA данни, които PdfCraft все още не чете. Можете да попълвате полетата му, но Acrobat може да покаже вместо това XFA стойностите.
+	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Скриптовете на този формуляр са изключени, защото един от тях се изпълняваше твърде дълго. Отворете документа отново, за да се изпълнят пак.
+	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Това е динамичен XFA формуляр, който PdfCraft все още не може да показва. Виждате заместващата страница на файла.
+	This measurement needs at least {n} points.	Това измерване изисква поне {n} точки.
+	This page contains objects that cannot be selected together.	Тази страница съдържа обекти, които не могат да се изберат заедно.
+	This page couldn't be displayed.\n{e}	Тази страница не може да бъде показана.\n{e}
+	This PDF uses the unsupported {s} action.	Този PDF използва неподдържаното действие {s}.
+	This printer offers no settings of its own.	Този принтер няма собствени настройки.
+	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Драйверът на този принтер не приема настройки за двустранен печат от други програми и прилага собствената си настройка. Променете я от Свойства…
+	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Този уеб адрес смесва букви от различни азбуки — често използван начин за имитиране на името на друг сайт.
+	This web address uses letters from another alphabet, which can look like familiar ones.	Този уеб адрес използва букви от друга азбука, които може да изглеждат като познати.
+	Tile scale:	Мащаб на плочките:
+	Timed responses	Времеви ограничения за отговор
+	Timestamp	Времеви печат
+	to	до
+	To change locked fields, also set Locked to No.	За да промените заключени полета, задайте и „Заключено“ на „Не“.
+	to {n}	до {n}
+	To:	До:
+	Today: {date}	Днес: {date}
+	Toggle fit page / fit width	Превключи между „побери страницата“ и „побери по ширина“
+	Tools panel side	Страна на панела с инструменти
+	Tooltip:	Подсказка:
+	Top-level bookmarks ({n})	Отметки от най-горно ниво ({n})
+	TR must be a child of Table, THead, TBody, or TFoot	TR трябва да е дъщерен елемент на Table, THead, TBody или TFoot
+	Translate	Преведи
+	Trim the picture with its handles; Enter or Done applies	Изрежете картината чрез дръжките; Enter или Готово прилага
+	Trust	Доверие
+	Try the form as people filling it in will see it	Изпробвайте формуляра така, както ще го виждат попълващите го
+	Turn upside down (180°)	Обърни наопаки (180°)
+	Two-page view	Изглед с две страници
+	Two-sided:	Двустранен печат:
+	Two-Up (Cover Page)	Две страници (с корица)
+	Two-Up (Facing)	Две страници (една срещу друга)
+	Two-Up Continuous (Cover Page)	Две страници, непрекъснато (с корица)
+	Two-Up Continuous (Facing)	Две страници, непрекъснато (една срещу друга)
+signature pad	Type	Въвеждане
+	Type a password.	Въведете парола.
+	Type Password	Въведете парола
+	Type text	Въведете текст
+	Type the web address.	Въведете уеб адреса.
+	Type your {what}.	Въведете {what}.
+	Unchecked	Неотметнато
+	Underline text	Подчертай текст
+	Undid {label}	Отменено: {label}
+	Undo	Отмени
+	Undo {action}	Отмени {action}
+	Unit	Единица
+	Unknown	Неизвестно
+	Unknown author	Неизвестен автор
+	Unlock	Отключи
+	Unlock comment	Отключи коментара
+	Unlock {name}	Отключи {name}
+	Unlock {n} files	Отключи {n} файла
+	Unlocked {n} of {m} files	Отключени са {n} от {m} файла
+	Unlocked: the combined file won't be password-protected	Отключен: обединеният файл няма да бъде защитен с парола
+	Unlock…	Отключи…
+	Unpin	Откачи
+	Unpin {folder}	Откачи {folder}
+	Unplaced	Неразположени
+	Unsupported measurements	Неподдържани измервания
+	Update background	Актуализирай фона
+	Update background…	Актуализирай фона…
+	Update header & footer	Актуализирай горния и долния колонтитул
+	Update header & footer…	Актуализирай горния и долния колонтитул…
+	Update watermark	Актуализирай водния знак
+	Update watermark…	Актуализирай водния знак…
+	URL to submit to	URL за изпращане
+	Use 72 DPI (one point per pixel)	Използвай 72 DPI (една точка на пиксел)
+	Use a certificate	Използвай сертификат
+	Use a Digital ID from a file	Използвай цифров идентификатор от файл
+	Use custom DPI	Използвай потребителска DPI стойност
+	Use each image's embedded DPI; use 72 DPI when it is absent.	Използва се вградената DPI стойност на всяко изображение; при липса се използва 72 DPI.
+	Use Flate to encode streams that are not encoded	Кодирай с Flate некодираните потоци
+	Use guided actions	Използвай напътствани действия
+	Use image resolution	Използвай разделителната способност на изображението
+	Use it when a printer skips text, shading or transparency. The print is no longer searchable text; with Print in grayscale, the pictures are grey.	Използвайте го, когато принтерът пропуска текст, сенки или прозрачност. Отпечатаното вече не е текст за търсене; с печат в сиво изображенията са сиви.
+	Use JavaScript	Използвай JavaScript
+	Use now	Използвай сега
+	Use overlay text	Използвай текст върху заличаването
+	Use print production	Подготовка за печат
+	Use system setting	Използвай системната настройка
+	Use system title bar	Използване на системната заглавна лента
+	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	Използва се, когато PDF файлът не задава оформление или мащаб. Непрекъснатото превъртане никога не спира на границите между страниците.
+	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	Използва се при отваряне на PDF файлове. Изрично зададен режим при стартиране или управление има предимство за сесията.
+	User Interface Options	Опции на потребителския интерфейс
+	User password	Потребителска парола
+	Valid	Валиден
+	Valid for 5 years, for digital signatures. Self-signed IDs are usually not trusted by others.	Валиден 5 години, за цифрови подписи. Самоподписаните идентификатори обикновено не се ползват с доверие от другите.
+	Valid from	Валиден от
+	Valid to	Валиден до
+	Validate	Проверка
+	Validate all	Провери всички
+	Validate all signatures	Провери всички подписи
+	Validity ends	Край на валидността
+	Validity starts	Начало на валидността
+	Value is not calculated	Стойността не се изчислява
+	Value is the	Стойността е
+	Verify	Провери
+	Verify to see what the document needs.	Проверете, за да видите от какво се нуждае документът.
+	Version {v}	Версия {v}
+	Vertical reversed	Вертикално обратно
+	Vertical text cannot be moved with this selection.	Вертикалният текст не може да се премести с този избор.
+	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Видеото, звукът и мултимедийното съдържание трябва да са етикетирани, за да бъдат обявявани. Етикетирайте мултимедийните анотации.
+	View less	Покажи по-малко
+	View more	Покажи повече
+	View revision {n}	Покажи редакция {n}
+	View signed version	Покажи подписаната версия
+	Viewing	Преглед
+	Viewport	Област на изгледа
+	Viewport rectangle in page points (x, y, width, height)	Правоъгълник на изгледа в точки на страницата (x, y, ширина, височина)
+	Visible Rectangle	Видим правоъгълник
+	Visual	Визуално
+	watermark	воден знак
+	Weak	Слаба
+	Welcome to PdfCraft	Добре дошли в PdfCraft
+	What takes up the space in this file, by kind of content.	Какво заема мястото в този файл, по вид съдържание.
+	What word or phrase would you like to search for?	Каква дума или фраза искате да търсите?
+	White on black	Бяло на черно
+	Whole words only	Само цели думи
+	Window Options	Опции на прозореца
+	Windows store  ·  	Хранилище на Windows  ·  
+	Word count	Брой думи
+	Word counting stopped unexpectedly.	Преброяването на думи спря неочаквано.
+	Word count…	Брой думи…
+	Write this email?	Да се напише ли този имейл?
+	Wrong password	Грешна парола
+	Wrote 1 file to {dir}	Записан е 1 файл в {dir}
+	Wrote {n} files to {dir}	Записани са {n} файла в {dir}
+	X Object Forms	Форми X Object
+	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA формуляр: полетата и XFA данните му се поддържат синхронизирани, така че другите програми за преглед показват попълненото от вас.
+	Yellow on black	Жълто на черно
+	You are about to apply 1 redaction mark. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	На път сте да приложите 1 маркировка за заличаване. Текстът, изображенията и чертежите под маркировките, както и коментарите и полетата на формуляри, които ги припокриват, се премахват завинаги.
+	You are about to apply {n} redaction marks. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	На път сте да приложите {n} маркировки за заличаване. Текстът, изображенията и чертежите под маркировките, както и коментарите и полетата на формуляри, които ги припокриват, се премахват завинаги.
+	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Разглеждате редакция {rev} на „{from}“. Това е моментна снимка: промените тук няма да засегнат оригинала.
+	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Разглеждате подписаната версия на „{from}“ (редакция {rev}). Това е моментна снимка: промените тук няма да засегнат оригинала.
+	You can pin up to {n} folders. Unpin one first.	Можете да закачите до {n} папки. Първо откачете една.
+	You have version {c}. All releases are listed at {page}.	Имате версия {c}. Всички издания са изброени на {page}.
+	You have version {c}. Download the new version from its release page.	Имате версия {c}. Изтеглете новата версия от страницата на изданието.
+	Your changes will be lost if you don't save them.	Промените ви ще бъдат загубени, ако не ги запишете.
+	Your name	Вашето име
+	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy или yy година · m или mm месец · mmm или mmmm име на месеца · d или dd ден · ddd или dddd ден от седмицата. H, h, M, s и t са букви за час и не могат да се използват самостоятелно: поставете {escape} пред буква, за да се покаже както е.
+	ZIP	ZIP
+	Zip Code	Пощенски код
+	Zip Code + 4	Пощенски код + 4
+	Zoom in ({key})	Увеличи мащаба ({key})
+	Zoom in / out (also pinch or {key}-scroll)	Увеличи / намали (също с щипване или {key} + превъртане)
+	Zoom out ({key})	Намали мащаба ({key})
+	Zoom to page level	Мащаб до ниво страница
+	{0}: {1}	{0}: {1}
+	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	{chars} все още не може да се запише в PDF: текстът при попълване и подписване поддържа само западноевропейски знаци. Изберете числов формат, например dd.mm.yyyy.
+	{c} of {n}{more}	{c} от {n}{more}
+	{dpi} pixels/inch	{dpi} пиксела/инч
+	{field}: {e}	{field}: {e}
+	{file} is too large for a stamp (at most {n} MB)	{file} е твърде голям за печат (най-много {n} MB)
+	{folder} is already pinned to Home	{folder} вече е закачена в Начало
+	{kind} field	Поле {kind}
+	{kind} Properties	Свойства: {kind}
+	{kind} · page {p}	{kind} · страница {p}
+	{kind} — click to show it on the page	{kind} — щракнете, за да го покажете на страницата
+	{k} of {n}	{k} от {n}
+	{label} (1 issue)	{label} (1 проблем)
+	{label} ({n} issues)	{label} ({n} проблема)
+	{label} failed: {e}	{label} — неуспешно: {e}
+	{month} {day}, {y}	{day} {month} {y} г.
+	{month} {y}	{month} {y}
+	{msg} to {dir}	{msg} в {dir}
+	{name} (default)	{name} (по подразбиране)
+	{name} can't be combined: {why}	{name} не може да бъде обединен: {why}
+	{name} has no action	{name} няма действие
+	{name} is read-only	{name} е само за четене
+	{name} is too large for a word list (at most 1 MB).	{name} е твърде голям за списък с думи (най-много 1 MB).
+	{name} submits the form to {url}; PdfCraft doesn't send form data. Save the document to keep your entries.	{name} изпраща формуляра до {url}; PdfCraft не изпраща данни от формуляри. Запишете документа, за да запазите въведеното.
+	{name} — unsaved changes	{name} — незаписани промени
+	{name}: choosing images arrives on the web with file pickers for images	{name}: изборът на изображения в уеб версията ще стане достъпен с инструментите за избор на файлове с изображения
+	{name}: the {other} action isn't supported yet	{name}: действието {other} все още не се поддържа
+	{n} contributors · {c} commits	{n} сътрудници · {c} къмита
+	{n} days ago	преди {n} дни
+	{n} differences found	Открити са {n} разлики
+@plural	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	Име на {n} поле се разминава с по-ранните файлове и ще бъде преименувано: {list}|Имена на {n} полета се разминават с по-ранните файлове и ще бъдат преименувани: {list}
+	{n} fields selected	Избрани полета: {n}
+@plural	{n} field|{n} fields	{n} поле|{n} полета
+	{n} files done	Обработени са {n} файла
+	{n} files need attention	{n} файла изискват внимание
+	{n} instances	{n} съвпадения
+	{n} issues	{n} проблема
+	{n} marks	{n} маркировки
+	{n} match(es) marked for redaction.	{n} съвпадение(я) маркирани за заличаване.
+	{n} measurements use an unsupported format and are left out.	{n} измервания използват неподдържан формат и са пропуснати.
+@plural	{n} object selected|{n} objects selected	Избран е {n} обект|Избрани са {n} обекта
+	{n} pages	{n} страници
+	{n} pages selected	Избрани страници: {n}
+	{n} pages selected.	Избрани са {n} страници.
+@plural	{n} page|{n} pages	{n} страница|{n} страници
+	{n} selected	Избрани: {n}
+	{n} tags	{n} тага
+	{n} word(s) or phrase(s)	{n} дума(и) или фраза(и)
+	{n} {kind}	{n} {kind}
+	{rule} - {status}	{rule} - {status}
+	{s} action	Действие {s}
+	{verb} as "{name}"	{verb} като „{name}“
+	{verb} Background	{verb} фон
+	{verb} Header and Footer	{verb} горен и долен колонтитул
+	{verb} Watermark	{verb} воден знак
+	{who} in this document wants to open this address in your browser:	{who} в този документ иска да отвори този адрес в браузъра ви:
+	{who} in this document wants to open your email app with this address:	{who} в този документ иска да отвори имейл приложението ви с този адрес:
+	{words} on {pages}	{words} на {pages}
+	ΔLOC	ΔLOC
+	— (protection is applied when you save)	— (защитата се прилага при записване)
+	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	„{name}“ беше променен на диска след отварянето или последното записване. Записването сега заменя тази по-нова версия с настоящата.
+	“{name}” has security restrictions. Enter its permissions password to lift them.	„{name}“ има ограничения за защита. Въведете паролата за разрешения, за да ги премахнете.
+	“{name}” is protected. Enter a password to open it.	„{name}“ е защитен. Въведете парола, за да го отворите.
+	−LOC	−LOC

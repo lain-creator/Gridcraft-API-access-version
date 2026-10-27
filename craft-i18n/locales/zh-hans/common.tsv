@@ -1,0 +1,1286 @@
+# 简体中文 (zh-hans) interface catalog for every Crafting App.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	% of all commits	占全部提交的比例
+	(Custom)	（自定义）
+	(none)	（无）
+	1 file	1 个文件
+	16 bit	16 位
+	24 bit	24 位
+	24 bits/pixel	24 位/像素
+	32 bit	32 位
+	32 bits/pixel	32 位/像素
+	8 bit	8 位
+	About	关于
+	Absolute	绝对
+	Absolute Colorimetric	绝对比色
+	Accented Edges	强化的边缘
+	Accessibility	无障碍
+	Accurate	精确
+	Actions	动作
+	Activate Panel	激活面板
+	Active	当前
+	Actual Size	实际大小
+	Adaptive	自适应
+	Add	添加
+	Add a comment	添加注释
+	Add Guide	添加参考线
+	Add to Dictionary	添加到词典
+	Add to favorites	添加到收藏
+	Add to Swatches	添加到色板
+	Adjust	调整
+	Adjustments	调整
+	Advanced	高级
+	Align	对齐
+	Align center	居中对齐
+	Align Left	左对齐
+	Align left	左对齐
+	Align Right	右对齐
+	Align right	右对齐
+	Align Text	对齐文本
+	Align to Selection	对齐选区
+	Alignment	对齐方式
+	Alignment:	对齐：
+	All	全部
+	All Caps	全部大写
+	All Categories	所有类别
+	All files	所有文件
+	All Layers	所有图层
+	All pages	所有页面
+	All Slices	所有切片
+	Alpha	Alpha
+	Alt	Alt
+	Always	始终
+	Amount	数量
+	Amount:	数量：
+	Angle	角度
+	Angle:	角度：
+	Angular	角度
+	Animation	动画
+	Animation effects	动画效果
+	Anti-Alias	消除锯齿
+	Anti-alias	消除锯齿
+	Any	任意
+	Appearance	外观
+	Appearance Settings…	外观设置…
+	Application	应用程序
+	Apply	应用
+	Apply Character Style	应用字符样式
+	Apply Data Set	应用数据集
+	Apply to:	应用于：
+	Arc	弧形
+	Area	面积
+	Arrange	排列
+	Arrow	箭头
+	Arrows	箭头
+	Artboard	画板
+	Artboards	画板
+	ArtCraft	ArtCraft
+	ArtCraft Website	ArtCraft 网站
+	ArtCraft website	ArtCraft 网站
+	Artistic	艺术效果
+	Ascending	升序
+	Aspect Ratio	长宽比
+	Assign	指定
+	Assign Profile…	指定配置文件…
+	Audio	音频
+	Author	作者
+	Author:	作者：
+	Auto	自动
+	Auto ({percent}%)	自动 ({percent}%)
+	Auto Color	自动颜色
+	Automate	自动化
+	Automatic	自动
+	Automatically	自动
+	Available	可用
+	Average	平均
+	Background	背景
+	Background Color	背景颜色
+	Background Contents	背景内容
+	Backspace	Backspace
+	Balance	平衡
+	Bar	竖线对齐
+	Baseline	基线
+	Baseline Shift	基线偏移
+	Basic	基本
+	Basic Latin	基本拉丁文
+	Batch	批处理
+	Batch…	批处理…
+	Bend:	弯曲：
+	Bicubic	双三次
+	Binary assets added	新增二进制资源
+	Binary assets removed	删除二进制资源
+	Bitmap	位图
+	Black	黑
+	Black & White	黑白
+	Black and white	黑白
+	Black Intensity	黑色强度
+	Blacks	黑色
+	Blend Mode	混合模式
+	Blending Mode	混合模式
+	Block	块
+	Blocks	块
+	Blue	蓝色
+	Blur	模糊
+	Blur Angle	模糊角度
+	Bold	粗体
+	Border	边框
+	Border Thickness	边框粗细
+	Borders	边框
+	Both	两者
+	Both sides	双面
+	Bottom	下
+	Bottom Left	左下
+	Bottom Right	右下
+	Bottom:	下：
+	Break Link	断开链接
+	Brick	砖形
+	Brightness	亮度
+	Bring Forward	前移一层
+	Bring to Front	置于顶层
+	Brown	棕
+	Browse	浏览
+	Browse…	浏览…
+	Brush Size	笔刷大小
+	Brush Strokes	画笔描边
+	Brushes	画笔
+	Bulge	凸出
+	Bullet	项目符号
+	Burlap	粗麻布
+	Calculate	计算
+	Cancel	取消
+	Canvas	画布
+	Caption	题注
+	Cascade	层叠
+	Case Sensitive	区分大小写
+	Category:	分类：
+	Cell Size	单元格大小
+	Center	居中
+	Center X	中心 X
+	Center Y	中心 Y
+	Centered	居中
+	Centimeters	厘米
+	Chamfer	倒角
+	Change	更改
+	Change All	全部更改
+	Change Case	更改大小写
+	Change Panel Layout	更改面板布局
+	Channel	色版
+	Channel Mixer	通道混合器
+	Channels	声道
+	Character	字符
+	Character Styles	字符样式
+	Characters	字符数
+	Check for Updates	检查更新
+	Check for updates	检查更新
+	Check Spelling…	检查拼写…
+	Checkerboard	棋盘
+	Choose…	选择…
+	Circle	圆形
+	City	城市
+	Clarity	清晰度
+	Classic	经典
+	Clear	清除
+	Clear All	全部清除
+	Clear Guides	清除参考线
+	Clear History	清除历史记录
+	Clear Recent Files	清除最近文件
+	Clipboard	剪贴板
+	Clipping Mask	剪切蒙版
+	Clone	克隆
+	Close	关闭
+	Close (Esc)	关闭 (Esc)
+	Close All	全部关闭
+	Close Panel	关闭面板
+	Cmd	Cmd
+	CMYK Color	CMYK 颜色
+	CMYK:	CMYK：
+	Coarse Dots	粗点
+	Collapse	折叠
+	Collate	逐份打印
+	Color	颜色
+	Color Balance	色彩平衡
+	Color Burn	颜色加深
+	Color Dodge	颜色减淡
+	Color Management	色彩管理
+	Color Mode	颜色模式
+	Color Picker	拾色器
+	Color Settings	颜色设置
+	Color Settings…	颜色设置…
+	Color Space	色彩空间
+	Color Swatches	色板
+	Color Table	颜色表
+	Color:	颜色：
+	Colorize	着色
+	Colors	颜色
+	Colors:	颜色：
+	Color…	颜色…
+	Colour	颜色
+	Column width	列宽
+	Columns	列
+	Columns:	列数：
+	Combine	合并
+	Command	命令
+	Commands:	命令：
+	Comment	注释
+	Comments	注释
+	Commits	提交数
+	Community	社区
+	Company	公司
+	Compare	比较
+	Comparison	比较
+	Compatibility	兼容性
+	Composite	合成
+	Compression	压缩
+	Cone	锥形
+	Contains	包含
+	Continue	继续
+	Contrast	对比度
+	Contributors	贡献者
+	Convert	转换
+	Convert to Shape	转换为形状
+	Convert to sRGB	转换为 sRGB
+	Copies	份数
+	Copies:	份数：
+	Copy	复制
+	Copyright	版权
+	Corner	尖角
+	Corners	转角
+	Correction	校正
+	Couldn't open {name}: {e}	无法打开{name}：{e}
+@msg	Couldn't open {name}: {e}	无法打开 {name}：{e}
+	Country	国家/地区
+	Crack Brightness	裂缝亮度
+	Crack Depth	裂缝深度
+	Crack Spacing	裂缝间距
+	Create	创建
+	Create Clipping Mask	创建剪切蒙版
+	Crop	裁剪
+	Cross	叉号
+	Crosshatch	阴影线
+	Crystallize	晶格化
+	Crystallize…	晶格化…
+	Ctrl	Ctrl
+	Current	当前
+	Current page	当前页
+	Current Time	当前时间
+	Curvature	曲率
+	Curve	曲线
+	Curves	曲线
+	Curves…	曲线…
+	Custom	自定义
+	Customize…	自定义…
+	Cut	剪切
+	Cyan	青色
+	Dark	深色
+	Dark Gray	深灰色
+	Dark gray	深灰色
+	Dark Strokes	深色线条
+	Dark Theme	深色主题
+	Darken	变暗
+	Darkness	暗度
+	Dashed	虚线
+	Data	数据
+	Data Sets	数据集
+	Date	日期
+	Date and Time	日期和时间
+	Date Created	创建日期
+	Date format	日期格式
+	Dates	日期
+	De-Interlace	逐行
+	Decrease Font Size	减小字体大小
+	Default	默认
+	Delete	删除
+	Delete Brush	删除画笔
+	Delete Group	删除组
+	Delete Layer	删除图层
+	Delete Mask	删除蒙版
+	Delete Style	删除样式
+	Delete Workspace	删除工作区
+	Deleted	删除
+	Delete…	删除…
+	Depth	深度
+	Desaturate	去饱和
+	Descending	降序
+	Description	描述
+	Description:	描述：
+	Deselect	取消选择
+	Deselect All	取消全选
+	Destination	目标位置
+	Destination:	目的地：
+	Details	详细信息
+	Diagonal	对角线
+	Diameter	直径
+	Diameter:	直径：
+	Diamond	菱形
+	Difference	差值
+	Diffuse Glow	扩散亮光
+	Diffusion	扩散
+	Digits	数字
+	Dimensions	尺寸
+	Direct Selection Tool	直接选择工具
+	Direction	方向
+	Direction Balance	方向平衡
+	Direction:	方向：
+	Discard	放弃
+	Discord	Discord
+	Discretionary Ligatures	任意连字
+	Dismiss	关闭
+	Display	显示
+	Display name	显示名称
+	Distance	距离
+	Distort	扭曲
+	Distortion	扭曲
+	Distribute	分布
+	Divide	分割
+	Dock Panel	停放面板
+	Document	文档
+	Document Title	文档标题
+	Documents	文档
+	Don't Save	不保存
+	Done	完成
+	Dot	圆点
+	Dots	点线
+	Dotted	点线
+	Double-click	双击
+	Down	向下
+	Download	下载
+	Draft	草稿
+	Draw	绘制
+	Drop Shadow	投影
+	Drop Shadow…	阴影…
+	Duplicate	复制
+	Duplicate Layer	复制图层
+	Duplicate…	复制…
+	Duplication	复制
+	Duration	持续时间
+	Dutch	荷兰语
+	Dynamic	动态
+	Dynamics	动态
+	Edge	边缘
+	Edge Brightness	边缘亮度
+	Edge Intensity	边缘强度
+	Edge Only	仅边缘
+	Edge Simplicity	边缘简化度
+	Edge Thickness	边缘厚度
+	Edge Width	边缘宽度
+	Edit	编辑
+	Edit Contents	编辑内容
+	Edit Original	编辑原稿
+	Edit Toolbar	编辑工具栏
+	Editing	编辑
+	Edit…	编辑…
+	Effect	效果
+	Effects	效果
+	Elevation	标高
+	Eliminate	消除
+	Ellipse	椭圆
+	Ellipse Tool	椭圆工具
+	Ellipsis	删节号
+	Em Dash	长破折号
+	Em Space	全角空格
+	Embed	嵌入
+	Emboss	浮雕
+	En Dash	短破折号
+	En Space	半角空格
+	Enable	启用
+	Endpoint	端点
+	Enlarged	扩大
+	Enter	回车
+	Entire Font	整个字体
+	Envelope DL	DL 信封
+	Erase	擦除
+	Eraser	橡皮擦
+	Eraser Tool	橡皮擦工具
+	Error	错误
+	Even Fields	偶数场
+	Even pages only	仅偶数页
+	Exact	精确
+	Example: {sample}	示例：{sample}
+	Exclusion	排除
+	Exit	退出
+	Expand	扩展
+	Export	导出
+	Export As	导出为
+	Export As…	导出为…
+	Export Options	导出选项
+	Export PDF	导出 PDF
+	Export to	导出为
+	Exported to {path}	已导出至 {path}
+	Exported {path}	已导出 {path}
+	Export…	导出…
+	Exposure	曝光
+	Expression	表达式
+	Extract	提取
+	Eyedropper	吸管
+	Eyedropper Tool	吸管工具
+	Faded Film	褪色胶片
+	Fast	快
+	Favorites	收藏
+	Feather	羽化
+	Field	字段
+	Field properties	字段属性
+	Fields	字段
+	Fields:	场：
+	File	文件
+	File Format	文件格式
+	File Handling	文件处理
+	File Info…	文件信息…
+	File Name	文件名
+	File Size	文件大小
+	Files	文件
+	Fill	填充
+	Fill:	填色：
+	Filter	滤镜
+	Find	查找
+	Find and Replace	查找和替换
+	Find Next	查找下一个
+	Find:	查找：
+	Find…	查找…
+	Fine Dots	细点
+	Finish	完成
+	First	首次提交
+	First commit	首次提交
+	Fit	适合
+	Fit in View	适合视图
+	Fixed	固定
+	Flash	闪光
+	Flatten	拼合
+	Flip	翻转
+	Flip Horizontal	水平翻转
+	Flip Vertical	垂直翻转
+	Focus	焦点
+	Folder	文件夹
+	Font	字体
+	Font Size	字号
+	Font size	字号
+	Font Size:	字号：
+	Font:	字体：
+	Fonts	字体
+	Format	格式
+	Format:	格式：
+	Fractions	分数字
+	Frame	帧
+	Free	自由
+	Free Transform	自由变换
+	French	法语
+	Frequency	频率
+	From	从
+	Frosted	磨砂
+	Full	完整
+	Full Screen	全屏
+	Full Screen Mode	全屏模式
+	Functions	功能
+	Gamma	灰度系数
+	Gamma Correction	伽马校正
+	Gamut Warning	色域警告
+	Gaussian Blur	高斯模糊
+	Gaussian Blur…	高斯模糊…
+	General	常规
+	General…	常规…
+	Generate	生成
+	Geometry	几何图形
+	German	德语
+	GitHub	GitHub
+	Glass	玻璃
+	Global	全局
+	Glow	发光
+	Glow Brightness	发光亮度
+	Glow Size	发光大小
+	Glyphs	字形
+	Good	良好
+	Gradient	渐变
+	Gradient Tool	渐变工具
+	Gradients	渐变
+	Grain	颗粒
+	Grain Type	颗粒类型
+	Graininess	颗粒
+	Grainy Dots	颗粒点
+	Graphic	图形
+	Graphics	图形
+	Gray	灰色
+	Gray Gamma 2.2	灰度 Gamma 2.2
+	Grayscale	灰度
+	Green	绿色
+	Grid	网格
+	Grid Size:	网格大小：
+	Grid view	网格视图
+	Gridline every	网格线间隔
+	Group	编组
+	Group with	组合到
+	Groups	编组
+	Grout Width	缝隙宽度
+	Guides	参考线
+	Halftone Pattern	半调图案
+	Hand	抓手
+	Hand Tool	抓手工具
+	Hard	硬
+	Hard Light	强光
+	Hard Mix	硬混合
+	Headings	标题
+	Heart	心形
+	Height	高度
+	Height:	高：
+	Help	帮助
+	Hexagon	六边形
+	Hidden	已隐藏
+	Hidden text	隐藏文本
+	Hide	隐藏
+	Hide All	隐藏全部
+	Hide Grid	隐藏网格
+	Hide Others	隐藏其他
+	High	高
+	High Pass	高通
+	High Resolution	高分辨率
+	High resolution	高分辨率
+	Highlight Area	高光区域
+	Highlights	高光
+	Hindi	印地数字
+	Histogram	直方图
+	History	历史记录
+	Hollow	空心
+	Home	主页
+	Horizontal	水平
+	Horizontal scale	水平缩放
+	Horizontally	水平
+	Hue	色相
+	Hue Shift	色相偏移
+	Hue/Saturation…	色相/饱和度…
+	Hyphenation	连字符
+	Icon	图标
+	Ignore	忽略
+	Ignore All	全部忽略
+	Image	图像
+	Image Size	图像大小
+	Images	图像
+	Import	导入
+	Import…	导入…
+	Inches	英寸
+	Increase Font Size	增大字体大小
+	Index	索引
+	Inflate	膨胀
+	Info	信息
+	Inner Glow…	内光晕…
+	Input:	输入：
+	Insert	插入
+	Inside	内部
+	Inspect Document	检查文档
+	Install Plug-in	安装插件
+	Install Plug-in…	安装增效工具…
+	Intensity	强度
+	Interface	界面
+	Interface Language	界面语言
+	Interface language	界面语言
+	Interface Theme	界面主题
+	Interlaced	交错
+	Interpolation	插值
+	Intersect	相交
+	Intersection	交点
+	Invert	反相
+	Invert Mask	反转蒙版
+	Isolate	隔离
+	Italian	意大利语
+	Italic	斜体
+	Japanese	日语
+	Join	连接
+	Join our Discord	加入我们的 Discord
+	Join the ArtCraft Discord	加入 ArtCraft Discord
+	Join the ArtCraft Discord…	加入 ArtCraft Discord…
+	Join us on Discord	在 Discord 上加入我们
+	just now	刚刚
+	Justification	对齐设置
+	Justify	两端对齐
+	Keep:	保留：
+	Kerning	字距调整
+	Keyboard Shortcuts	键盘快捷键
+	Keyboard Shortcuts…	键盘快捷键…
+	Keywords	关键字
+	Kind	类型
+	Korean	韩语
+	Lab	Lab
+	Label	标签
+	Labels	标签
+	Landscape	横向
+	Language	语言
+	Language Options	语言选项
+@id	language.name	简体中文
+	Language:	语言：
+	Large	大
+	Lasso	套索
+	Lasso Tool	套索工具
+	Last	最近提交
+	Last commit	最近提交
+	Later	稍后
+	Layer	图层
+	Layers	图层
+	Layout	布局
+	Layout:	布局：
+	Leading	行距
+	Left	左
+	Left Diagonal	左对角线
+	Left to Right	从左到右
+	Left:	左：
+	Legal	法律用纸
+	Length	长度
+	Length:	长度：
+	Lens Flare	镜头光晕
+	Less	较少
+	Letter	信纸
+	Level	级别
+	Level 1	级别 1
+	Level 2	级别 2
+	Level 3	级别 3
+	Level 4	级别 4
+	Levels	色阶
+	Levels…	色阶…
+	Libraries	库
+	Library	库
+	Light	浅色
+	Light Blue	浅蓝色
+	Light Direction	光照方向
+	Light Gray	浅灰色
+	Light gray	浅灰色
+	Light Intensity	光照强度
+	Light Theme	浅色主题
+	Light Type	光类型
+	Lighten	变亮
+	Lighter Color	浅色
+	Lighting	照明
+	Lighting Effects	光照效果
+	Lightness	亮度
+	Line	直线
+	Line delta	行数变化
+	Line spacing	行距
+	Linear	线性
+	Linear Burn	线性加深
+	Linear Gradient	线性渐变
+	Linear Light	线性光
+	Lines	实线
+	Lines +/−	新增 / 删除行数
+	Lines added	新增行数
+	Lines deleted	删除行数
+	Link	链接
+	Links	链接
+	List	列表
+	List View	列表视图
+	List view	列表视图
+	Location	位置
+	Location:	位置：
+	Lock	锁定
+	Lock Guides	锁定参考线
+	Lock Slices	锁定切片
+	Locked	已锁定
+	Long Lines	长线
+	Long Strokes	长笔画
+	Low	低
+	lowercase	小写
+	Luminance	亮度
+	Luminosity	亮度
+	Magenta	洋红
+	Magic Wand Tool	魔棒工具
+	Magnification	放大
+	Margins	边距
+	Mask	蒙版
+	Masks	遮罩
+	Matte	杂边
+	Maximize	最大化
+	Maximum	最高
+	Measure	度量
+	Median	中位数
+	Medium	中等
+	Medium Dots	中等点
+	Medium Gray	中灰色
+	Medium Lines	中等线
+	Merge	合并
+	Merge Cells	合并单元格
+	Merge Layers	合并图层
+	Merged PRs	已合并的 PR
+	Mesh	网格
+	Message:	信息：
+	Metadata	元数据
+	Method	方法
+	Method:	方法：
+	Mezzotint	铜版雕刻
+	Mezzotint…	铜版雕刻…
+	Middle	中部
+	Midpoint	中点
+	Midtones	中间调
+	Millimeters	毫米
+	Minimize	最小化
+	Minimum	最小值
+	Mirror	镜像
+	Missing	缺失
+	Mobile	移动设备
+	Mode	模式
+	Mode:	模式：
+	Model	模型
+	Models	模型
+	Modern	现代
+	Modified	已修改
+	Modify	修改
+	Monitor RGB	显示器 RGB
+	Mono	单色
+	Monochrome	单色
+	More	较多
+	Mosaic	马赛克
+	Mosaic Tiles	马赛克拼贴
+	Motion	运动
+	Move	移动
+	Move Down	下移
+	Move Panel	移动面板
+	Move Up	上移
+	Multiply	正片叠底
+	Name	名称
+	Name (A–Z)	名称（A–Z）
+	Name:	名称：
+	Navigation	导航
+	Navigator	导航器
+	Neon Glow	霓虹灯光
+	Never	从不
+	New	新建
+	New Document	新建文档
+	New document	新文档
+	New from Template	从模板新建
+	New Group	新建组
+	New Guide	新建参考线
+	New Layer	新建图层
+	New Layer…	新建图层…
+	New Style…	新建样式…
+	New Swatch…	新建色板…
+	New Window	新建窗口
+	New Workspace	新建工作区
+	New Workspace…	新建工作区…
+	New…	新建…
+	Next	下一条
+	Next Appearance Mode	下一个外观模式
+	Next Change	下一处修订
+	Next Page	下一页
+	Next page	下一页
+	No	否
+	No Color	无颜色
+	No Dither	无仿色
+	No Document	未打开文档
+	No document	未打开文档
+	No document open	未打开文档
+	No limit	无限制
+	No matches.	没有匹配项。
+	No matching commands	无匹配命令
+	No recent files	没有最近的文件
+	No results	无结果
+	No Selection	未选择对象
+	No selection	未选择
+	Noise	杂色
+	Nonbreaking Space	不断行空格
+	None	无
+	Normal	正常
+	Not available	不可用
+	NTSC Colors	NTSC 颜色
+	Number	数量
+	Object	对象
+	Octagon	八边形
+	Odd Fields	奇数场
+	Odd pages only	仅奇数页
+	Off	关
+	Offline	脱机
+	Offset	偏移
+	Offset:	偏移：
+	OK	确定
+	Omit	省略
+	On	开
+	Only Web Colors	仅 Web 颜色
+	Opacity	不透明度
+	Opacity:	不透明度：
+	Open	打开
+	Open link	打开链接
+	Open Recent	打开最近文件
+	OpenType	OpenType
+	Open…	打开…
+	Optimized	优化
+	Options	选项
+	Options…	选项…
+	Orange	橙色
+	Ordinals	序数字
+	Orientation	方向
+	Orientation:	方向：
+	Original	原始
+	Other	其他
+	Outer Glow…	外光晕…
+	Outline	轮廓
+	Output	输出
+	Output:	输出：
+	Outside	外部
+	Oval	椭圆
+	Overlap:	重叠：
+	Overlay	叠加
+	Package…	打包…
+	Page	页面
+	Page {page} of {pages}	第 {page} 页，共 {pages} 页
+	Pages	页面
+	Painting	绘画
+	Panel	面板
+	Panel menu	面板菜单
+	Panel Options…	面板选项…
+	Panels	面板
+	Paper	纸张
+	Paragraph	段落
+	Paragraph Styles	段落样式
+	Password	密码
+	Paste	粘贴
+	Paste Special	特殊粘贴
+	Patchwork	拼缀图
+	Path	路径
+	Path:	路径：
+	Paths	路径
+	Pattern	图案
+	Pattern Type	图案类型
+	Pause	暂停
+	Pen	钢笔
+	Pen Tool	钢笔工具
+	Pencil	铅笔
+	Pencil Tool	铅笔工具
+	Pentagon	五边形
+	Percent	百分比
+	Percentage	百分比
+	Performance	性能
+	Perimeter	周长
+	Perspective	透视
+	Photo	照片
+	Photocopy	复印
+	Picas	派卡
+	Pin Light	点光
+	Pink	粉
+	Pixel	像素
+	Pixelate	像素化
+	Pixels	像素
+	Play	播放
+	Plug-ins	增效工具
+	Point	点
+	Pointillize	点彩
+	Pointillize…	点彩…
+	Points	点
+	Polygon	多边形
+	Polygon Tool	多边形工具
+	Polyline	多段线
+	Portrait	纵向
+	Portuguese	葡萄牙语
+	Position	位置
+	Position:	位置：
+	Postcard	明信片
+	Poster	海报
+	Poster Edges	海报边缘
+	Posterization	海报化
+	Posterize	色调分离
+	Preferences	首选项
+	Preferences…	首选项…
+	Prefix	前缀
+	Preserve	保留
+	Preserve Luminosity	保留亮度
+	Preset	预设
+	Preset Manager	预设管理器
+	Preset:	预设：
+	Presets	预设
+	Presets:	预设：
+	Press keys…	请按快捷键…
+	Pressure	压力
+	Preview	预览
+	Previous	上一个
+	Previous Change	上一处修订
+	Previous Page	上一页
+	Previous page	上一页
+	Print	打印
+	Printer	打印机
+	Printer:	打印机：
+	Printing	打印
+	Print…	打印…
+	Profile	配置文件
+	Progressive	渐进式
+	Proof Setup	校样设置
+	Properties	属性
+	Protect	保护
+	PRs	PR 数
+	Punctuation	标点符号
+	Purple	紫
+	Pyramid	棱锥图
+	Quality	质量
+	Quick Actions	快速操作
+	Radial	径向
+	Radial Blur	径向模糊
+	Radial Blur…	径向模糊…
+	Radial Gradient	径向渐变
+	Radius	半径
+	Radius:	半径：
+	Random	随机
+	Range	范围
+	Range:	范围：
+	Rasterize	栅格化
+	Ratio	比例
+	Rays	射线
+	Ready	就绪
+	Real name	真实姓名
+	Recent	最近
+	Recent Colors	最近使用的颜色
+	Recent Files	最近使用的文件
+	Recover	恢复
+	Rectangle	矩形
+	Rectangle Tool	矩形工具
+	Rectangular	矩形
+	Red	红色
+	Redo	重做
+	Reduce Noise	降低噪声
+	Refine	优化
+	Reflected	反射的
+	Refresh	刷新
+	Regular	常规
+	Relative	相对
+	Relative Colorimetric	相对比色
+	Relaxed	放松
+	Relief	凸现
+	Reload	重新加载
+	Remove	删除
+	Remove Background	移除背景
+	Remove from favorites	从收藏中移除
+	Rename	重命名
+	Rename Group…	重命名组…
+	Rename Style	重命名样式
+	Rename…	重命名…
+	Repeat	重复
+	Replace	替换
+	Replace:	替换：
+	Reply	回复
+	Report	报告
+	Report an Issue…	报告问题…
+	Reselect	重新选择
+	Reset	重置
+	Reset Preferences	重置首选项
+	Reset…	重置…
+	Resize panel window	调整面板窗口大小
+	Resize panels	调整面板大小
+	Resolution	分辨率
+	Resolution:	分辨率：
+	Restore	恢复
+	Result	结果
+	Resume	继续
+	Reveal in Finder	在 Finder 中显示
+	Reverse	反向
+	Reverse the order	反转顺序
+	Revert	恢复
+	Review	审阅
+	RGB	RGB
+	RGB Color	RGB 颜色
+	RGB:	RGB：
+	Right	右
+	Right Diagonal	右对角线
+	Right:	右：
+	Rotate	旋转
+	Rotate:	旋转：
+	Rotation	旋转
+	Rotation:	旋转：
+	Rounded Rectangle	圆角矩形
+	Roundness	圆度
+	Roundness:	圆度：
+	Rows	行
+	Ruler	标尺
+	Rulers	标尺
+	Rulers & Grids	标尺和网格
+	Russian	俄语
+	Sample Size	采样大小
+	Sandstone	砂岩
+	Saturation	饱和度
+	Save	保存
+	Save a Copy	存储副本
+	Save a Copy…	保存副本…
+	Save As	另存为
+	Save as PDF	另存为 PDF
+	Save as Template	另存为模板
+	Save as Template…	存为模板…
+	Save As…	另存为…
+	Save Preset…	保存预设…
+	Save Selection	保存选区
+	Save Selection…	保存选区…
+	Saved	已保存
+	Save…	存储…
+	Scale	缩放
+	Scale:	缩放：
+	Scaling	缩放
+	Scratch Disks	暂存盘
+	Scratch Disks…	暂存盘…
+	Screen	滤色
+	Screen Mode	屏幕模式
+	Scripts	脚本
+	Search	搜索
+	Security	安全性
+	Segments	分段数
+	Select	选择
+	Select All	全选
+	Select Objects	选择对象
+	Select:	选择：
+	Selected pages	选定的页面
+	Selection	所选内容
+	Selection Tool	选择工具
+	Selective	选择性
+	Send Backward	后移一层
+	Send to Back	置于底层
+	Sensitivity	灵敏度
+	Sent to {printer}	已发送到 {printer}
+	Services	服务
+	Set	设置
+	Set as Default	设为默认
+	Set:	集：
+	Settings	设置
+	Settings:	设置：
+	Settings…	设置…
+	Shadow	阴影
+	Shadows	阴影
+	Shape	形状
+	Shape Effects	形状效果
+	Shape:	形状：
+	Shapes	形状
+	Share	共享
+	Sharpen	锐化
+	Sharpness	锐化程度
+	Shift	Shift
+	Short Lines	短线
+	Short Strokes	短笔画
+	Shortcut	快捷键
+	Shortcuts	快捷键
+	Show	显示
+	Show All	全部显示
+	Show Grid	显示网格
+	Show Guides	显示参考线
+	Show in Folder	在文件夹中显示
+	Show Mask	显示蒙版
+	Show Mesh	显示网格
+	Show Rulers	显示标尺
+	Show rulers	显示标尺
+	Show Tool Tips	显示工具提示
+	Show:	显示：
+	Sides:	边数：
+	Simplify	简化
+	Size	尺寸
+	Size:	尺寸：
+	Sketch	素描
+	Skew	倾斜
+	Slice	切片
+	Slice Options	切片选项
+	Slice Options…	切片选项…
+	Slice Tool	切片工具
+	Slices	切片
+	Small	小
+	Small Caps	小型大写
+	Smart Blur	智能模糊
+	Smart Blur…	智能模糊…
+	Smart Guides	智能参考线
+	Smart quotes	智能引号
+	Smoothness	平滑度
+	Snap to Grid	对齐网格
+	Soft	弱
+	Soft Light	柔光
+	Soften	柔化
+	Softness	柔和度
+	Solarize	日晒
+	Sort	排序
+	Sort by	排序方式
+	Source	源
+	Source code on GitHub	GitHub 源代码
+	Spaces	空格
+	Spacing	间距
+	Spacing:	间距：
+	Spanish	西班牙语
+	Spatter	喷溅
+	Special	特殊
+	Speckle	斑点
+	Speed	速度
+	Spelling	拼写
+	Spherize	球面化
+	Split	拆分
+	Spot Color	专色
+	Spray Radius	喷色半径
+	Square	正方形
+	Square Size	方形大小
+	sRGB IEC61966-2.1	sRGB IEC61966-2.1
+	Stacked	堆积
+	Stained Glass	染色玻璃
+	Stamp	图章
+	Standard	标准
+	Standard Ligatures	标准连字
+	Star	星形
+	Start at:	起始编号：
+	Statistics	统计信息
+	Status	状态
+	Status Bar	状态栏
+	Stippled	点刻
+	Stop	停止
+	Strength	力度
+	Stretch	拉伸
+	Strikethrough	删除线
+	Stroke	描边
+	Stroke Color	描边颜色
+	Stroke Length	描边长度
+	Stroke Options	描边选项
+	Stroke:	描边：
+	Studio	工作室
+	Style	样式
+	Style:	样式：
+	Styles	样式
+	Stylize	风格化
+	Subdivisions	细分
+	Subject	主题
+	Subscript	下标
+	Subset	子集
+	Subtitle	字幕
+	Subtract	减去
+	Sumi-e	水墨画
+	Summary	摘要
+	Superscript	上标
+	Swatches	色板
+	Symbol	符号
+	Symbols	符号
+	Sync with system	跟随系统
+	System	系统
+	Tab	定位字符
+	Table	表格
+	Table style	表格样式
+	Tables	表格
+	Tabloid	小报
+	Tabs	制表符
+	Taper	锥化
+	Target	目标
+	Target:	目标：
+	Temperature	色温
+	Templates	模板
+	Text	文本
+	Text color	文字颜色
+	Text:	文本：
+	Texture	纹理
+	The passwords don't match.	两次输入的密码不一致。
+	Theme	主题
+	Thickness	粗细
+	This document has no bookmarks.	本文档没有书签。
+	Threshold	阈值
+	Thumbnails	缩略图
+	Tile	平铺
+	Tile Size	拼贴大小
+	Tilt	倾斜
+	Time	时间
+	Timecode	时间码
+	Timeline	时间轴
+	Tint	色调
+	Tint Color	色调颜色
+	Title	标题
+	To	到
+	Tolerance	容差
+	Tolerance:	容差：
+	Tool	工具
+	Toolbars	工具栏
+	Tools	工具
+	Top	上
+	Top Left	左上
+	Top Right	右上
+	Top:	上：
+	Total	总计
+	Total:	总计：
+	Tracking	字距
+	Transform	变换
+	Translate	翻译
+	Transparency	透明度
+	Transparent	透明
+	Trap…	陷印…
+	Triangle	三角形
+	Turbulent	湍流
+	Twirl	旋转扭曲
+	Twist	扭转
+	Type	类型
+	Type Tool	文字工具
+	Type:	类型：
+	Typewriter	打字机
+	Type…	文字…
+	Typing	输入文字
+	Underline	下划线
+	Undo	撤销
+	Undo {action}	撤消{action}
+	Ungroup	取消编组
+	Uniform	统一
+	Union	并集
+	Units	单位
+	Unknown	未知
+	Unlock	解除锁定
+	Unsaved changes	未保存的更改
+	Unsharp Mask	反锐化遮罩
+	Untitled	未命名
+	Up	上移
+	Update	更新
+	Updates	更新
+	UPPERCASE	大写
+	Use Default	使用默认值
+	User	用户
+	Username	用户名
+	Value	值
+	Value:	值：
+	Variables	变量
+	Version	版本
+	Version {version}	版本 {version}
+	Vertical	垂直
+	Vertical Alignment	垂直对齐
+	Vertical Type Tool	直排文字工具
+	Vertically	垂直
+	Very High	极高
+	Vibrance	自然饱和度
+	Video	视频
+	View	视图
+	Violet	紫罗兰色
+	Visibility	可见性
+	Vivid Light	亮光
+	Voice	人声
+	W:	W：
+	Warning	警告
+	Warnings	警告
+	Warp	变形
+	Watermark	水印
+	Wave	波浪
+	Wave…	波形…
+	Web	Web
+	Website	网站
+	Weight	粗细
+	Wet	湿润
+	White	白色
+	White Intensity	白色强度
+	White Is High	白色为高
+	Whites	白色
+	Width	宽度
+	Width and Height	宽度与高度
+	Width:	宽：
+	Window	窗口
+	Windows	Windows
+	Words	词数
+	Working CMYK	工作 CMYK
+	Workspace	工作区
+	Workspaces	工作区
+	Yellow	黄色
+	Yes	是
+	yesterday	昨天
+	Your changes will be lost if you don't save them.	如果不存储，你的更改将会丢失。
+	Zoom	缩放
+	Zoom In	放大
+	Zoom in	放大
+	Zoom Out	缩小
+	Zoom out	缩小
+	Zoom Tool	缩放工具
+@plural	{n} commit|{n} commits	{n} 次提交
+	{n} files	{n} 个文件
+	{n} h ago	{n} 小时前
+@plural	{n} item|{n} items	{n} 个项目
+@plural	{n} Layer|{n} Layers	{n} 个图层
+	{n} min ago	{n} 分钟前
+@plural	{n} step|{n} steps	{n} 个步骤
+	−Bin	删除资源
+	● Recording	● 录制中

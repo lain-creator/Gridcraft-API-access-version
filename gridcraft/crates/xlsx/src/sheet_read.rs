@@ -516,7 +516,22 @@ fn read_cell(cx: &mut Ctx<'_>, sheet: &mut Sheet, st: &mut RowState, c: &El, pos
     let dynamic = c.attr("cm").is_some();
     let formula = c.child("f").and_then(|f| read_formula(cx, st, f, pos, dynamic));
     let value = if formula.is_none() && in_dynamic(st, pos) { Value::Empty } else { value };
-    sheet.cells.set(pos, Cell { value, formula: formula.map(Arc::new), style });
+    let rich_text = match c.attr("t") {
+        Some("s") => v.and_then(|v| v.trim().parse::<usize>().ok()).and_then(|i| cx.rich_sst.get(i)).cloned().unwrap_or_default(),
+        Some("inlineStr") => c
+            .child("is")
+            .map(|e| {
+                let text = xml::rich_text(e);
+                let (runs, props) = xml::phonetic_data(e, &text);
+                if !runs.is_empty() || props.is_some() {
+                    cx.phonetics.push(gridcraft_model::PhoneticString { text, runs, props });
+                }
+                crate::rich_text::read(e, &cx.palette)
+            })
+            .unwrap_or_default(),
+        _ => Vec::new(),
+    };
+    sheet.cells.set(pos, Cell { value, formula: formula.map(Arc::new), style, rich_text });
 }
 
 fn read_formula(cx: &mut Ctx<'_>, st: &mut RowState, f: &El, pos: CellRef, dynamic: bool) -> Option<Formula> {
