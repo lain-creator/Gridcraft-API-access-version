@@ -13,6 +13,7 @@ mod clip_html;
 pub mod cmd;
 pub mod display;
 pub mod fill;
+pub mod insights;
 pub mod io;
 pub mod links;
 pub mod outline;

@@ -151,6 +151,7 @@ pub fn command_specs() -> &'static [CommandSpec] {
         v.extend(whatif::specs());
         v.extend(forecast::specs());
         v.extend(analysis::specs());
+        v.extend(crate::insights::specs());
         v.extend(print::specs());
         v
     })

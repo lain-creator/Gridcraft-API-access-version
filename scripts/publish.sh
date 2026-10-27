@@ -8,7 +8,7 @@ fi
 repository="$1"
 package_dir="$2"
 project_dir="$(cd "$(dirname "$0")/.." && pwd)"
-tag="v0.12.1-api.20261027.2"
+tag="v0.12.1-api.20261027.3"
 gh auth status --hostname github.com
 git -C "$project_dir" diff --quiet
 git -C "$project_dir" diff --cached --quiet
@@ -20,7 +20,7 @@ gh release create "$tag" \
   --verify-tag \
   --title "GridCraft API Edition · 字体保真与 XLS 支持" \
   --notes-file "$project_dir/RELEASE-NOTES.md" \
-  "$package_dir/GridCraft-0.12.1-api.20261027.2-macos-arm64.zip" \
-  "$package_dir/GridCraft-0.12.1-api.20261027.2-win64.zip" \
-  "$package_dir/GridCraft-0.12.1-api.20261027.2-source.zip" \
+  "$package_dir/GridCraft-0.12.1-api.20261027.3-macos-arm64.zip" \
+  "$package_dir/GridCraft-0.12.1-api.20261027.3-win64.zip" \
+  "$package_dir/GridCraft-0.12.1-api.20261027.3-source.zip" \
   "$package_dir/SHA256SUMS.txt"

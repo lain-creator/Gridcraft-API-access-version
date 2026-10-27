@@ -60,4 +60,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" --verify-tag --title "GridCraft API Edition · 字体保真与 XLS 支持" --notes-file RELEASE-NOTES.md dist/*.zip dist/*.sha256 dist/SHA256SUMS.txt
+          gh release create "$GITHUB_REF_NAME" --verify-tag --title "GridCraft API Edition · AI 智能图表与数据分析" --notes-file RELEASE-NOTES.md dist/*.zip dist/*.sha256 dist/SHA256SUMS.txt

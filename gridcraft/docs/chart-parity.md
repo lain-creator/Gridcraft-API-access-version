@@ -1,5 +1,7 @@
 # Chart parity
 
+Local edition update (2026-10-27): optional API chart recommendations use validated plans and existing native chart types; aggregation is local, previews do not edit the workbook, and insertion adds a literal snapshot data sheet plus chart as one undo step. See [local-ai-insights.md](local-ai-insights.md). No new chart types, axis fidelity or upstream readiness claim.
+
 > **Last reviewed:** 2026-10-18 · **Last updated:** 2026-10-24 · **Change:** minor (100% stacked area charts) · **Target:** Microsoft Excel (Microsoft 365), Excel for Mac 16.113.4
 
 Excel's chart types and chart elements against GridCraft. Part of

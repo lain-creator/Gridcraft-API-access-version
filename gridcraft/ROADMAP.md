@@ -1,5 +1,7 @@
 # GridCraft roadmap
 
+Local API edition update (2026-10-27, 0.12.1-api.20261027.3): bounded typed selection profiling, deterministic statistics, AI chart recommendations/preview/explicit native insertion with undo, and grounded analysis. See [local-ai-insights.md](docs/local-ai-insights.md). This does not change the upstream parity estimates below.
+
 **Stage: alpha** · next: beta, ~25 points of "ready for real work" and ~160–240 h away
 
 > **Last reviewed:** 2026-10-11 · **Last updated:** 2026-10-23 · **Change:** minor (accounting negatives such as `$(1,234)` read as numbers; INDEX with one index on a 2-D reference is #REF! as in Excel; earlier: Page Setup paper sizes: JIS B4/B5/B6, the Japanese postcards and envelopes, and A6; long flat operator chains up to Excel's formula limit) · **Target:** Microsoft Excel (Microsoft 365)

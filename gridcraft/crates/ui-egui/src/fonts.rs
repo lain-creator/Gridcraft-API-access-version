@@ -358,7 +358,16 @@ pub fn bind_faces(fonts: &mut egui::FontDefinitions, family: &str, faces: &[Face
     if faces.is_empty() {
         return Vec::new();
     }
-    let base: Vec<String> = fonts.families.get(&egui::FontFamily::Proportional).cloned().unwrap_or_default();
+    let mut base: Vec<String> = fonts.families.get(&egui::FontFamily::Proportional).cloned().unwrap_or_default();
+    // Workbook faces bind before Proportional is replaced with the full UI chain.
+    // An installed Latin face must retain the cell role's non-Latin fallbacks.
+    if let Some(cell_chain) = fonts.families.get(&egui::FontFamily::Name(crate::theme::CELL.into())) {
+        for key in cell_chain {
+            if !base.contains(key) {
+                base.push(key.clone());
+            }
+        }
+    }
     let mut bound: Vec<String> = Vec::new();
     for (bold, italic) in [(false, false), (true, false), (false, true), (true, true)] {
         let Some(primary) = pick_face(faces, bold, italic) else { continue };
@@ -656,6 +665,27 @@ mod tests {
         assert!(bound.contains(&role_key("Ubuntu", true, true)));
         assert_eq!(fonts.font_data.len(), before + 1, "one file, loaded once");
         let _ = std::fs::remove_dir_all(&dir);
+    }
+
+    #[cfg(not(target_arch = "wasm32"))]
+    #[test]
+    fn installed_latin_faces_keep_the_cell_scripts_in_their_fallback_chain() {
+        let dir = std::env::temp_dir().join(format!("gridcraft-font-script-chain-{}", std::process::id()));
+        std::fs::create_dir_all(&dir).expect("test dir");
+        let path = dir.join("Ubuntu-Light.ttf");
+        std::fs::write(&path, epaint_default_fonts::UBUNTU_LIGHT).expect("font");
+        let face = Face { family: "Ubuntu".into(), names: vec!["Ubuntu".into()], path, index: 0, weight: 300.0, italic: false };
+        let mut fonts = egui::FontDefinitions::default();
+        fonts.font_data.insert("test-script-fallback".into(), std::sync::Arc::new(egui::FontData::from_static(epaint_default_fonts::UBUNTU_LIGHT)));
+        fonts.families.insert(egui::FontFamily::Name(crate::theme::CELL.into()), vec!["test-script-fallback".into()]);
+        bind_faces(&mut fonts, "Ubuntu", &[face]);
+        for (bold, italic) in [(false, false), (true, false), (false, true), (true, true)] {
+            let chain = fonts.families.get(&egui::FontFamily::Name(role_key("Ubuntu", bold, italic).into())).expect("role");
+            assert!(chain.contains(&"test-script-fallback".into()));
+            assert_ne!(chain.first().map(String::as_str), Some("test-script-fallback"));
+        }
+        std::fs::remove_file(dir.join("Ubuntu-Light.ttf")).expect("test font cleanup");
+        std::fs::remove_dir(dir).expect("test dir cleanup");
     }
 
     /// On a Windows machine with Malgun Gothic, the real file carries its Korean name.

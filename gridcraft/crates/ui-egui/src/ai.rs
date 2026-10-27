@@ -6,6 +6,8 @@ use std::sync::{
 use std::thread::JoinHandle;
 
 use crate::SheetApp;
+#[path = "ai_insights.rs"]
+mod insights;
 #[cfg(test)]
 #[path = "ai_tests.rs"]
 mod tests;
@@ -193,6 +195,12 @@ struct Turn {
 struct Job {
     cancel: Arc<AtomicBool>,
     worker: Option<JoinHandle<Result<String, String>>>,
+    purpose: Purpose,
+}
+enum Purpose {
+    Chat,
+    Charts(Box<gridcraft_engine::insights::TableSnapshot>),
+    Analysis(Box<gridcraft_engine::insights::TableSnapshot>),
 }
 impl Drop for Job {
     fn drop(&mut self) {
@@ -214,6 +222,7 @@ pub struct State {
     retired: Vec<Job>,
     cache_key: String,
     preview: Result<SelectionSnapshot, String>,
+    insights: insights::InsightState,
 }
 impl Default for State {
     fn default() -> Self {
@@ -231,6 +240,7 @@ impl Default for State {
             retired: Vec::new(),
             cache_key: String::new(),
             preview: Err("请先框选单元格。".into()),
+            insights: insights::InsightState::default(),
         }
     }
 }
@@ -245,6 +255,7 @@ impl State {
             self.input.clear();
             self.feedback.clear();
             self.cache_key.clear();
+            self.insights.reset();
             self.document = document;
         }
     }
@@ -270,6 +281,7 @@ impl SheetApp {
     pub(crate) fn ai_command(&mut self, id: &str, params: &Json) -> Option<Result<Json, String>> {
         Some(match id {
             "ui.ai" => {
+                self.ai.insights.mode = insights::Mode::Chat;
                 self.ai.visible = true;
                 self.ai.minimized = false;
                 Ok(json!({"visible":true}))
@@ -287,6 +299,29 @@ impl SheetApp {
                 Ok(json!({"visible":false}))
             }
             "ui.ai.selection" => capture_selection(&self.session).and_then(|s| serde_json::to_value(s).map_err(|e| e.to_string())),
+            "ui.ai.charts" | "ui.ai.analyze" => {
+                self.ai.insights.mode = if id == "ui.ai.charts" { insights::Mode::Charts } else { insights::Mode::Analysis };
+                self.ai.visible = true;
+                self.ai.minimized = false;
+                Ok(json!({"visible":true}))
+            }
+            "ui.ai.charts.generate" => self.start_insight(
+                true,
+                params.get("goal").and_then(Json::as_str).unwrap_or(""),
+                params.get("hasHeaders").and_then(Json::as_bool).unwrap_or(true),
+            ),
+            "ui.ai.analyze.run" => self.start_insight(
+                false,
+                params.get("goal").and_then(Json::as_str).unwrap_or(""),
+                params.get("hasHeaders").and_then(Json::as_bool).unwrap_or(true),
+            ),
+            "ui.ai.charts.insert" => match usize::try_from(params.get("index").and_then(Json::as_u64).unwrap_or(0)) {
+                Ok(index) => self.insert_insight_chart(index, params.get("onSource").and_then(Json::as_bool).unwrap_or(true)),
+                Err(_) => Err("图表方案索引过大。".into()),
+            },
+            "ui.ai.insights.status" => Ok(
+                json!({"pending":self.ai.job.is_some(),"plans":self.ai.insights.plans,"analysis":self.ai.insights.analysis,"feedback":self.ai.insights.feedback,"table":self.ai.insights.table}),
+            ),
             "ui.ai.ask" => self.ask_ai(params.get("question").and_then(Json::as_str).unwrap_or("")),
             "ui.ai.cancel" => {
                 if let Some(j) = &self.ai.job {
@@ -300,6 +335,7 @@ impl SheetApp {
                 } else {
                     self.ai.turns.clear();
                     self.ai.feedback.clear();
+                    self.ai.insights.reset();
                     Ok(json!({"cleared":true}))
                 }
             }
@@ -337,7 +373,7 @@ impl SheetApp {
             .spawn(move || service(profile, messages, &worker_cancel))
             .map_err(|e| e.to_string())?;
         self.ai.turns.push(Turn { question: question.into(), label: snapshot.label(), user_payload: payload, answer: None, error: None });
-        self.ai.job = Some(Job { cancel, worker: Some(worker) });
+        self.ai.job = Some(Job { cancel, worker: Some(worker), purpose: Purpose::Chat });
         self.ai.visible = true;
         self.ai.minimized = false;
         self.ai.input.clear();
@@ -370,6 +406,11 @@ impl SheetApp {
             .and_then(|w| w.join().map_err(|_| "API 任务异常，请重试。".to_string()))
             .and_then(|r| r);
         let result = if job.cancel.load(Ordering::Relaxed) { Err("已停止等待，未自动重试。".into()) } else { result };
+        if !matches!(&job.purpose, Purpose::Chat) {
+            let purpose = std::mem::replace(&mut job.purpose, Purpose::Chat);
+            self.finish_insight(purpose, result);
+            return;
+        }
         if let Some(turn) = self.ai.turns.last_mut() {
             match result {
                 Ok(answer) if answer.len() <= 256 * 1024 && !answer.trim().is_empty() => turn.answer = Some(answer),
@@ -422,7 +463,7 @@ pub fn show(app: &mut SheetApp, ui: &mut egui::Ui) {
         };
         panel.frame(egui::Frame::NONE.fill(t.ribbon).inner_margin(10)).show(ui, |ui| {
             ui.horizontal(|ui| {
-                ui.strong("AI 选区问答");
+                ui.strong("AI 助手");
                 if ui.small_button("设置").clicked() {
                     state.settings_open = true;
                 }
@@ -438,6 +479,15 @@ pub fn show(app: &mut SheetApp, ui: &mut egui::Ui) {
             });
             if let Ok(p) = state.settings.selected() {
                 ui.small(format!("{} · {}", p.name, p.model));
+            }
+            ui.horizontal(|ui| {
+                ui.selectable_value(&mut state.insights.mode, insights::Mode::Chat, "选区问答");
+                ui.selectable_value(&mut state.insights.mode, insights::Mode::Charts, "智能图表");
+                ui.selectable_value(&mut state.insights.mode, insights::Mode::Analysis, "数据分析");
+            });
+            if state.insights.mode != insights::Mode::Chat {
+                insights::show(app, &mut state, ui);
+                return;
             }
             ui.separator();
             match &state.preview {
@@ -516,6 +566,7 @@ pub fn show(app: &mut SheetApp, ui: &mut egui::Ui) {
         });
     }
     app.ai = state;
+    insights::dispatch(app);
     if clear {
         let _ = app.run("ui.ai.clear", json!({}));
     }
@@ -611,7 +662,7 @@ pub fn settings_window(app: &mut SheetApp, ctx: &egui::Context) {
                                         answer: None,
                                         error: None,
                                     });
-                                    state.job = Some(Job { cancel, worker: Some(worker) });
+                                    state.job = Some(Job { cancel, worker: Some(worker), purpose: Purpose::Chat });
                                     state.visible = true;
                                 }
                                 Err(e) => state.feedback = e.to_string(),
