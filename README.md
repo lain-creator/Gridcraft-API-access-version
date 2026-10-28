@@ -1,5 +1,7 @@
 # GridCraft API Edition
 
+`0.12.1-api.20261029.1`：Mac / Win64 公开包编译内置同一份 **798 条 PCB 公共词库**，新安装无需导入。本机个人补充保持独立，不写入公开包。详见 [公共词库说明](gridcraft/docs/local-public-pcb-glossary.md)。
+
 在 GridCraft v0.12.1 上增加可配置的第三方 API 翻译和选区问答。这是定制版本，不是 Storytold 的官方发行版。
 
 新版 `0.12.1-api.20261028.1` 将问答、数据分析、图表推荐统一到右上角“AI 对话”。AI 根据问题判断任务、表头和行列方向；横向日期/数值不再误判成只有一个数据点。少量数据或无适用图表仍保留分析回答，图表在回答中预览并确认插入。沿用现有 API 设置。详见 [智能图表与数据分析](gridcraft/docs/local-ai-insights.md)。以对应 Release 的构建状态为发布依据。

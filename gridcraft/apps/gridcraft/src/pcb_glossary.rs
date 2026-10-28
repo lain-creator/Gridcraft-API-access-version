@@ -1,4 +1,4 @@
-//! Local, user-imported terminology. Never contacts the glossary website or ships user data.
+//! Embedded public PCB terminology plus separate, user-imported local additions.
 use std::{collections::BTreeSet, io::Read, path::Path};
 
 use gridcraft_ui_egui::ai::GlossaryInfo;
@@ -16,7 +16,7 @@ pub struct Term {
     #[serde(default)]
     pub aliases: Vec<String>,
 }
-#[derive(Default)]
+#[derive(Clone, Default)]
 pub struct Glossary {
     terms: Vec<Term>,
     source: String,
@@ -34,15 +34,39 @@ enum Input {
     Object(Document),
 }
 
-// This contradictory source pair describes foil, not copper-clad material. Keep the
-// original record for audit, but never instruct a model to use a known incorrect pair.
+// Preserve known incorrect legacy pairs for local audit, but do not use them
+// as translation instructions. The public base contains none of these pairs.
 fn quarantined(term: &Term) -> bool {
-    term.en.eq_ignore_ascii_case("Copper clad") && term.zh == "铜箔"
+    [("Copper clad", "铜箔"), ("DFM", "自动功能"), ("Rigid", "精密的"), ("Template", "天平"), ("histogram", "元素"), ("Lifted Lands", "残铜")]
+        .iter()
+        .any(|(en, zh)| term.en.eq_ignore_ascii_case(en) && term.zh == *zh)
 }
 fn valid_field(s: &str, limit: usize) -> bool {
     s.chars().count() <= limit && !s.chars().any(char::is_control)
 }
 impl Glossary {
+    pub fn builtin() -> Result<Self, String> {
+        Self::parse(include_bytes!(concat!(env!("CARGO_MANIFEST_DIR"), "/../../assets/pcb-glossary-public.json")))
+    }
+    /// The public base is compiled into every binary. Personal imports remain
+    /// separate on disk; identical pairs retain aliases from both sources.
+    pub fn with_local(local: Self) -> Result<Self, String> {
+        let mut combined = Self::builtin()?;
+        for term in local.terms {
+            if let Some(existing) = combined.terms.iter_mut().find(|t| t.en.eq_ignore_ascii_case(&term.en) && t.zh == term.zh) {
+                for alias in term.aliases {
+                    if !existing.aliases.iter().any(|a| a.eq_ignore_ascii_case(&alias)) {
+                        existing.aliases.push(alias);
+                    }
+                }
+            } else {
+                combined.terms.push(term);
+            }
+        }
+        combined.source = "内置 PCB 公共词库 2026.10 + 本机补充".into();
+        let bytes = serde_json::to_vec(&Document { source: combined.source, items: combined.terms }).map_err(|_| "无法合并专业词库。")?;
+        Self::parse(&bytes)
+    }
     pub fn parse(bytes: &[u8]) -> Result<Self, String> {
         if bytes.len() as u64 > MAX_BYTES {
             return Err("术语库不能超过 4 MB。".into());
@@ -138,14 +162,16 @@ fn read(path: &Path) -> Result<Glossary, String> {
     Glossary::parse(&bytes)
 }
 pub fn load() -> Result<Glossary, String> {
-    if !super::prefs_enabled() {
-        return Ok(Glossary::default());
+    let path = if super::prefs_enabled() { super::config_dir().map(|p| p.join("pcb-glossary.json")) } else { None };
+    load_with_user(path.as_deref())
+}
+fn load_with_user(path: Option<&Path>) -> Result<Glossary, String> {
+    if let Some(path) = path
+        && path.try_exists().map_err(|_| "无法检查术语库文件。")?
+    {
+        return Glossary::with_local(read(path)?);
     }
-    let path = super::config_dir().ok_or("无法定位术语库目录。")?.join("pcb-glossary.json");
-    if !path.try_exists().map_err(|_| "无法检查术语库文件。")? {
-        return Ok(Glossary::default());
-    }
-    read(&path)
+    Glossary::builtin()
 }
 /// None reads status; Some imports a validated file atomically. No dialogs or network.
 pub fn manage(path: Option<&str>) -> Result<GlossaryInfo, String> {
@@ -157,8 +183,9 @@ pub fn manage(path: Option<&str>) -> Result<GlossaryInfo, String> {
     glossary.source = Path::new(path).file_name().and_then(|n| n.to_str()).unwrap_or("本地 JSON 词库").chars().take(200).collect();
     let dir = super::config_dir().ok_or("无法定位术语库目录。")?;
     std::fs::create_dir_all(&dir).map_err(|_| "无法创建术语库目录。")?;
+    let effective = Glossary::with_local(glossary.clone())?.info();
     save(&dir.join("pcb-glossary.json"), &glossary)?;
-    Ok(glossary.info())
+    Ok(effective)
 }
 fn save(path: &Path, glossary: &Glossary) -> Result<(), String> {
     use std::io::Write;
@@ -176,6 +203,36 @@ mod tests {
     use super::*;
     use serde_json::json;
     type TestResult = Result<(), Box<dyn std::error::Error>>;
+    #[test]
+    fn public_glossary_needs_no_personal_files_and_uses_correct_pcb_terms() -> TestResult {
+        let glossary = Glossary::builtin()?;
+        assert_eq!(glossary.info().entries, 798);
+        assert_eq!(glossary.info().quarantined, 0);
+        for (text, expected) in [("压合结构", "Lamination structure"), ("叠层", "Stack-up"), ("芯板", "Core"), ("DFM", "DFM")] {
+            assert!(glossary.relevant(text)?.iter().any(|term| term.en == expected), "{text}");
+        }
+        assert!(glossary.relevant("score coreless")?.is_empty());
+        assert!(glossary.relevant("Lamination structure")?.iter().any(|term| term.zh == "压合结构"));
+        Ok(())
+    }
+    #[test]
+    fn clean_install_and_personal_supplement_never_require_or_modify_user_data() -> TestResult {
+        let dir = tempfile::tempdir()?;
+        let path = dir.path().join("personal.json");
+        assert_eq!(load_with_user(None)?.info().entries, 798);
+        assert_eq!(load_with_user(Some(&path))?.info().entries, 798);
+        let local = r#"[{"en":"Pad","zh":"焊盘","aliases":["custom-pad"]},{"en":"Synthetic X","zh":"测试专用词"}]"#.as_bytes();
+        std::fs::write(&path, local)?;
+        let merged = load_with_user(Some(&path))?;
+        assert_eq!(merged.info().entries, 799);
+        assert_eq!(merged.relevant("custom-pad")?.len(), 1);
+        assert!(merged.relevant("叠层")?.iter().any(|t| t.en == "Stack-up"));
+        assert!(merged.relevant("Synthetic X")?.iter().any(|t| t.zh == "测试专用词"));
+        assert_eq!(std::fs::read(&path)?, local);
+        let bad = Glossary::parse(r#"[{"en":"DFM","zh":"自动功能"}]"#.as_bytes())?;
+        assert!(bad.relevant("DFM")?.is_empty());
+        Ok(())
+    }
     pub fn fixture() -> Result<Glossary, String> {
         Glossary::parse(
             json!([

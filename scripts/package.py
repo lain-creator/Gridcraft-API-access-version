@@ -8,17 +8,18 @@ parser.add_argument('--platform',choices=['macos-arm64','win64'],required=True)
 parser.add_argument('--binary',type=Path,required=True)
 parser.add_argument('--output',type=Path,required=True)
 parser.add_argument('--version')
-parser.add_argument('--patch-label',default='20261027.6 Configurable API edition')
+parser.add_argument('--patch-label',default='20261029.1 Embedded public PCB glossary')
 args=parser.parse_args()
 root=Path(__file__).resolve().parents[1]
 source=root/args.app
 name='GridCraft' if args.app=='gridcraft' else 'WordCraft'
 short_version='0.12.1' if args.app=='gridcraft' else '0.11.0'
 out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
-version=args.version or ('0.12.1-api.20261028.1' if args.app=='gridcraft' else '0.11.0-wordcraft.20261027.2')
+version=args.version or ('0.12.1-api.20261029.1' if args.app=='gridcraft' else '0.11.0-wordcraft.20261027.2')
 if not version or any(c not in '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-' for c in version):
     raise SystemExit('Invalid package version')
 archive=out/f'{name}-{version}-{args.platform}.zip'
+if archive.exists():raise SystemExit('Refusing to overwrite existing package')
 if not args.binary.is_file():raise SystemExit('The compiled binary does not exist')
 
 with tempfile.TemporaryDirectory(prefix='gridcraft-api-package-') as temp:
@@ -46,6 +47,7 @@ with tempfile.TemporaryDirectory(prefix='gridcraft-api-package-') as temp:
         for filename in ['LICENSE-MIT','LICENSE-APACHE','ATTRIBUTION.md']:
             shutil.copy2(root/'craft-i18n'/filename,destination/('craft-i18n-'+filename))
         shutil.copytree(root/'third-party/wordcraft-craft-libs-1774443',destination/'wordcraft-craft-libs-1774443')
+    shutil.copy2(source/'assets/pcb-glossary-public.json',destination/'pcb-glossary-public.json')
     for path in (source/'docs').glob('local-*.md'):shutil.copy2(path,destination/path.name)
     for path in (source/'assets/fonts').glob('OFL-*.txt'):shutil.copy2(path,destination/path.name)
     if args.platform=='macos-arm64':

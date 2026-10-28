@@ -1,0 +1,5252 @@
+{
+  "source": "PCB 公共专业词库 2026.10 · 含用户授权公开的 PCB 补充词汇",
+  "items": [
+    {
+      "en": "BGA",
+      "zh": "球栅阵列封装",
+      "category": "Assembly",
+      "aliases": [
+        "Ball grid array"
+      ]
+    },
+    {
+      "en": "CCA",
+      "zh": "电路卡组件",
+      "category": "Assembly",
+      "aliases": [
+        "Circuit Card Assembly"
+      ]
+    },
+    {
+      "en": "Component placement",
+      "zh": "元件贴装",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Component side",
+      "zh": "元件面",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Conformal coating",
+      "zh": "三防涂覆",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "CSP",
+      "zh": "芯片级封装",
+      "category": "Assembly",
+      "aliases": [
+        "Chip scale package",
+        "Chip Scale Package (CSP)"
+      ]
+    },
+    {
+      "en": "DIP",
+      "zh": "双列直插封装",
+      "category": "Assembly",
+      "aliases": [
+        "Dual in-line package"
+      ]
+    },
+    {
+      "en": "DIP",
+      "zh": "插件工艺",
+      "category": "Assembly",
+      "aliases": [
+        "Through-hole assembly"
+      ]
+    },
+    {
+      "en": "Flux",
+      "zh": "助焊剂",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Hand soldering",
+      "zh": "手工焊接",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Lead-free",
+      "zh": "无铅",
+      "category": "Assembly",
+      "aliases": [
+        "Lead free"
+      ]
+    },
+    {
+      "en": "PCA",
+      "zh": "印制电路组件",
+      "category": "Assembly",
+      "aliases": [
+        "Printed Circuit Assembly"
+      ]
+    },
+    {
+      "en": "PCBA",
+      "zh": "印制电路板组件",
+      "category": "Assembly",
+      "aliases": [
+        "Printed circuit board assembly",
+        "PCB assembly"
+      ]
+    },
+    {
+      "en": "QFN",
+      "zh": "四方扁平无引脚封装",
+      "category": "Assembly",
+      "aliases": [
+        "Quad flat no-leads package"
+      ]
+    },
+    {
+      "en": "Reflow soldering",
+      "zh": "回流焊",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Repair",
+      "zh": "修理",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Rework",
+      "zh": "返修",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Selective soldering",
+      "zh": "选择性焊接",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "SMT",
+      "zh": "表面贴装技术",
+      "category": "Assembly",
+      "aliases": [
+        "Surface mount technology",
+        "surface mouted technology"
+      ]
+    },
+    {
+      "en": "Solder paste",
+      "zh": "锡膏",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Solder side",
+      "zh": "焊接面",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Solderability",
+      "zh": "可焊性",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Stencil",
+      "zh": "钢网",
+      "category": "Assembly",
+      "aliases": [
+        "Stencial"
+      ]
+    },
+    {
+      "en": "Through-hole assembly",
+      "zh": "通孔插装",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Underfill",
+      "zh": "底部填充",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Wave soldering",
+      "zh": "波峰焊",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Wetting",
+      "zh": "润湿",
+      "category": "Assembly",
+      "aliases": []
+    },
+    {
+      "en": "Barrel crack",
+      "zh": "孔壁裂纹",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Black pad",
+      "zh": "黑盘",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Blistering",
+      "zh": "起泡",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Bow",
+      "zh": "板弯",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Burr",
+      "zh": "毛刺",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Cold solder joint",
+      "zh": "冷焊点",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Copper nodule",
+      "zh": "铜瘤",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Corner crack",
+      "zh": "孔角裂纹",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Crazing",
+      "zh": "白纹",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Delamination",
+      "zh": "分层",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Dewetting",
+      "zh": "退润湿",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Head-in-pillow",
+      "zh": "枕头效应",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Insufficient solder",
+      "zh": "少锡",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Lifted pad",
+      "zh": "焊盘翘起",
+      "category": "Defects",
+      "aliases": [
+        "Lifted Lands"
+      ]
+    },
+    {
+      "en": "Measling",
+      "zh": "白斑",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Missing plating",
+      "zh": "漏镀",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Nail heading",
+      "zh": "钉头",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Non-wetting",
+      "zh": "不润湿",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Open circuit",
+      "zh": "开路",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Pad cratering",
+      "zh": "焊盘坑裂",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Plating void",
+      "zh": "镀层空洞",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Resin recession",
+      "zh": "树脂凹缩",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Scratch",
+      "zh": "划伤",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Short circuit",
+      "zh": "短路",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Smear",
+      "zh": "钻污",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Solder ball",
+      "zh": "锡珠",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Solder bridge",
+      "zh": "锡桥",
+      "category": "Defects",
+      "aliases": [
+        "连锡"
+      ]
+    },
+    {
+      "en": "Solder bridge",
+      "zh": "连锡",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Tombstoning",
+      "zh": "立碑",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Twist",
+      "zh": "板扭",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Void",
+      "zh": "空洞",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Warpage",
+      "zh": "翘曲",
+      "category": "Defects",
+      "aliases": []
+    },
+    {
+      "en": "Wicking",
+      "zh": "爬锡",
+      "category": "Defects",
+      "aliases": [
+        "灯芯效应"
+      ]
+    },
+    {
+      "en": "Annular ring",
+      "zh": "孔环",
+      "category": "Design",
+      "aliases": [
+        "焊环"
+      ]
+    },
+    {
+      "en": "Anti-pad",
+      "zh": "避空焊盘",
+      "category": "Design",
+      "aliases": [
+        "Antipad"
+      ]
+    },
+    {
+      "en": "Aspect ratio",
+      "zh": "厚径比",
+      "category": "Design",
+      "aliases": [
+        "深径比"
+      ]
+    },
+    {
+      "en": "Blind via",
+      "zh": "盲孔",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Buried via",
+      "zh": "埋孔",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Castellated hole",
+      "zh": "半孔",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Characteristic impedance",
+      "zh": "特性阻抗",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Clearance",
+      "zh": "电气间隙",
+      "category": "Design",
+      "aliases": [
+        "间隙"
+      ]
+    },
+    {
+      "en": "Controlled impedance",
+      "zh": "阻抗控制",
+      "category": "Design",
+      "aliases": [
+        "Impedance control",
+        "Inpedance control"
+      ]
+    },
+    {
+      "en": "Copper area",
+      "zh": "铜面积",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Copper pour",
+      "zh": "铺铜",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Counterbore",
+      "zh": "沉孔",
+      "category": "Design",
+      "aliases": [
+        "Counter boad"
+      ]
+    },
+    {
+      "en": "Countersink",
+      "zh": "沉头孔",
+      "category": "Design",
+      "aliases": [
+        "Counter sink"
+      ]
+    },
+    {
+      "en": "Creepage distance",
+      "zh": "爬电距离",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Differential impedance",
+      "zh": "差分阻抗",
+      "category": "Design",
+      "aliases": [
+        "Differential resistart"
+      ]
+    },
+    {
+      "en": "Drill diameter",
+      "zh": "钻孔直径",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Edge plating",
+      "zh": "包边电镀",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Finished hole diameter",
+      "zh": "成品孔径",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Gold finger",
+      "zh": "金手指",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Hole diameter",
+      "zh": "孔径",
+      "category": "Design",
+      "aliases": [
+        "Hole size"
+      ]
+    },
+    {
+      "en": "Hole position tolerance",
+      "zh": "孔位公差",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Impedance",
+      "zh": "阻抗",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Impedance control",
+      "zh": "阻抗控制",
+      "category": "Design",
+      "aliases": [
+        "Controlled impedance"
+      ]
+    },
+    {
+      "en": "Impedance simulation",
+      "zh": "阻抗模拟",
+      "category": "Design",
+      "aliases": [
+        "Impedance calculation",
+        "阻抗仿真"
+      ]
+    },
+    {
+      "en": "Impedance tolerance",
+      "zh": "阻抗公差",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Line width",
+      "zh": "线宽",
+      "category": "Design",
+      "aliases": [
+        "Trace width"
+      ]
+    },
+    {
+      "en": "Microstrip",
+      "zh": "微带线",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Microvia",
+      "zh": "微孔",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Mounting hole",
+      "zh": "安装孔",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Non-plated through hole",
+      "zh": "非金属化孔",
+      "category": "Design",
+      "aliases": [
+        "NPTH"
+      ]
+    },
+    {
+      "en": "Pad",
+      "zh": "焊盘",
+      "category": "Design",
+      "aliases": [
+        "Land"
+      ]
+    },
+    {
+      "en": "Plane clearance",
+      "zh": "平面避空",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Plated slot",
+      "zh": "金属化槽孔",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Plated through hole",
+      "zh": "金属化孔",
+      "category": "Design",
+      "aliases": [
+        "PTH",
+        "Plated Though Hole(PTH)",
+        "Plating Through Hole"
+      ]
+    },
+    {
+      "en": "Single-ended impedance",
+      "zh": "单端阻抗",
+      "category": "Design",
+      "aliases": [
+        "Single ended impedance"
+      ]
+    },
+    {
+      "en": "Slot",
+      "zh": "槽孔",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Solder mask dam",
+      "zh": "阻焊桥",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Solder mask expansion",
+      "zh": "阻焊扩展",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Solder mask opening",
+      "zh": "阻焊开窗",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Space",
+      "zh": "线距",
+      "category": "Design",
+      "aliases": [
+        "Spacing"
+      ]
+    },
+    {
+      "en": "Stripline",
+      "zh": "带状线",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Stub",
+      "zh": "残桩",
+      "category": "Design",
+      "aliases": [
+        "Via stub"
+      ]
+    },
+    {
+      "en": "Teardrop",
+      "zh": "泪滴",
+      "category": "Design",
+      "aliases": [
+        "泪珠"
+      ]
+    },
+    {
+      "en": "Thermal pad",
+      "zh": "散热焊盘",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Thermal relief",
+      "zh": "热焊盘连接",
+      "category": "Design",
+      "aliases": [
+        "Thermal relief connection"
+      ]
+    },
+    {
+      "en": "Thermal via",
+      "zh": "散热孔",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Through via",
+      "zh": "通孔",
+      "category": "Design",
+      "aliases": [
+        "Through-hole via",
+        "Through hole via"
+      ]
+    },
+    {
+      "en": "Trace",
+      "zh": "走线",
+      "category": "Design",
+      "aliases": [
+        "Track"
+      ]
+    },
+    {
+      "en": "Trace spacing",
+      "zh": "线距",
+      "category": "Design",
+      "aliases": [
+        "Line spacing"
+      ]
+    },
+    {
+      "en": "Trace width",
+      "zh": "线宽",
+      "category": "Design",
+      "aliases": [
+        "Line width"
+      ]
+    },
+    {
+      "en": "Transmission line",
+      "zh": "传输线",
+      "category": "Design",
+      "aliases": []
+    },
+    {
+      "en": "Via",
+      "zh": "过孔",
+      "category": "Design",
+      "aliases": [
+        "导通孔",
+        "Via hole"
+      ]
+    },
+    {
+      "en": "Via stub",
+      "zh": "过孔残桩",
+      "category": "Design",
+      "aliases": [
+        "Stub"
+      ]
+    },
+    {
+      "en": "Via-in-pad",
+      "zh": "盘中孔",
+      "category": "Design",
+      "aliases": [
+        "Via in pad"
+      ]
+    },
+    {
+      "en": "Artwork number",
+      "zh": "菲林编号",
+      "category": "Engineering documentation",
+      "aliases": [
+        "Artwork No."
+      ]
+    },
+    {
+      "en": "Customer part number",
+      "zh": "客户料号",
+      "category": "Engineering documentation",
+      "aliases": [
+        "Customer P/N"
+      ]
+    },
+    {
+      "en": "Mechanical drawing number",
+      "zh": "机械图纸编号",
+      "category": "Engineering documentation",
+      "aliases": [
+        "Mech Drawing No."
+      ]
+    },
+    {
+      "en": "Model number",
+      "zh": "型号",
+      "category": "Engineering documentation",
+      "aliases": [
+        "Model No."
+      ]
+    },
+    {
+      "en": "Part number",
+      "zh": "料号",
+      "category": "Engineering documentation",
+      "aliases": [
+        "Part No."
+      ]
+    },
+    {
+      "en": "Project number",
+      "zh": "项目编号",
+      "category": "Engineering documentation",
+      "aliases": [
+        "Project No."
+      ]
+    },
+    {
+      "en": "Land",
+      "zh": "焊盘",
+      "category": "Features",
+      "aliases": []
+    },
+    {
+      "en": "Through hole via",
+      "zh": "通孔",
+      "category": "Features",
+      "aliases": [
+        "PTH"
+      ]
+    },
+    {
+      "en": "Array",
+      "zh": "阵列",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Bare board",
+      "zh": "裸板",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Bill of materials",
+      "zh": "物料清单",
+      "category": "General",
+      "aliases": [
+        "BOM"
+      ]
+    },
+    {
+      "en": "Board dimensions",
+      "zh": "板尺寸",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Board outline",
+      "zh": "板框",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Board thickness",
+      "zh": "板厚",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Coupon",
+      "zh": "测试条",
+      "category": "General",
+      "aliases": [
+        "Test coupon"
+      ]
+    },
+    {
+      "en": "DFA",
+      "zh": "可装配性设计",
+      "category": "General",
+      "aliases": [
+        "Design for assembly"
+      ]
+    },
+    {
+      "en": "DFM",
+      "zh": "可制造性设计",
+      "category": "General",
+      "aliases": [
+        "Design for manufacturing",
+        "Design for manufacturability"
+      ]
+    },
+    {
+      "en": "Double-sided PCB",
+      "zh": "双面板",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Drill file",
+      "zh": "钻孔文件",
+      "category": "General",
+      "aliases": [
+        "NC drill file"
+      ]
+    },
+    {
+      "en": "Engineering drawing",
+      "zh": "工程图纸",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "EQ",
+      "zh": "工程问询",
+      "category": "General",
+      "aliases": [
+        "Engineering query",
+        "工程问题确认"
+      ]
+    },
+    {
+      "en": "Fabrication drawing",
+      "zh": "制造图",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Fiducial mark",
+      "zh": "光学定位点",
+      "category": "General",
+      "aliases": [
+        "Fiducial",
+        "基准点",
+        "Fiducial uark"
+      ]
+    },
+    {
+      "en": "Finished board thickness",
+      "zh": "成品板厚",
+      "category": "General",
+      "aliases": [
+        "Finish thickness"
+      ]
+    },
+    {
+      "en": "Flexible PCB",
+      "zh": "柔性板",
+      "category": "General",
+      "aliases": [
+        "FPC",
+        "Flex PCB",
+        "柔性电路板",
+        "Flexible Printed Circuit, FPC"
+      ]
+    },
+    {
+      "en": "Gerber file",
+      "zh": "Gerber 文件",
+      "category": "General",
+      "aliases": [
+        "Gerber data"
+      ]
+    },
+    {
+      "en": "HDI",
+      "zh": "高密度互连",
+      "category": "General",
+      "aliases": [
+        "High density interconnect"
+      ]
+    },
+    {
+      "en": "Marking",
+      "zh": "标识",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Multilayer PCB",
+      "zh": "多层板",
+      "category": "General",
+      "aliases": [
+        "Multilayer board",
+        "Mulitilayer"
+      ]
+    },
+    {
+      "en": "Netlist",
+      "zh": "网络表",
+      "category": "General",
+      "aliases": [
+        "Net list"
+      ]
+    },
+    {
+      "en": "Panel",
+      "zh": "拼板",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Panelization",
+      "zh": "拼板设计",
+      "category": "General",
+      "aliases": [
+        "Panelisation"
+      ]
+    },
+    {
+      "en": "PCB",
+      "zh": "印制电路板",
+      "category": "General",
+      "aliases": [
+        "Printed circuit board",
+        "印制线路板"
+      ]
+    },
+    {
+      "en": "PWB",
+      "zh": "印制线路板",
+      "category": "General",
+      "aliases": [
+        "Printed wiring board"
+      ]
+    },
+    {
+      "en": "Revision",
+      "zh": "版本",
+      "category": "General",
+      "aliases": [
+        "修订版本"
+      ]
+    },
+    {
+      "en": "Rigid PCB",
+      "zh": "刚性板",
+      "category": "General",
+      "aliases": [
+        "Rigid printed circuit board"
+      ]
+    },
+    {
+      "en": "Rigid-flex PCB",
+      "zh": "刚挠结合板",
+      "category": "General",
+      "aliases": [
+        "Rigid flex PCB",
+        "软硬结合板",
+        "Rigid flex"
+      ]
+    },
+    {
+      "en": "Single-sided PCB",
+      "zh": "单面板",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Tolerance",
+      "zh": "公差",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Tooling hole",
+      "zh": "工艺定位孔",
+      "category": "General",
+      "aliases": [
+        "定位孔"
+      ]
+    },
+    {
+      "en": "Unit",
+      "zh": "单元",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "Working panel",
+      "zh": "生产拼板",
+      "category": "General",
+      "aliases": []
+    },
+    {
+      "en": "AXI",
+      "zh": "自动X射线检测",
+      "category": "Inspection",
+      "aliases": [
+        "Automated X-ray Inspection"
+      ]
+    },
+    {
+      "en": "Back drilling",
+      "zh": "背钻",
+      "category": "Manufacturing",
+      "aliases": [
+        "Backdrilling",
+        "Controlled-depth drilling",
+        "Controlled depth drilling"
+      ]
+    },
+    {
+      "en": "Baking",
+      "zh": "烘烤",
+      "category": "Manufacturing",
+      "aliases": [
+        "烘板"
+      ]
+    },
+    {
+      "en": "Beveling",
+      "zh": "倒斜边",
+      "category": "Manufacturing",
+      "aliases": [
+        "Bevelling"
+      ]
+    },
+    {
+      "en": "Black oxide",
+      "zh": "黑氧化",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Breakaway tab",
+      "zh": "工艺连接桥",
+      "category": "Manufacturing",
+      "aliases": [
+        "Break-away tab"
+      ]
+    },
+    {
+      "en": "Brown oxide",
+      "zh": "棕化",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Carbon ink",
+      "zh": "碳油",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Chamfer",
+      "zh": "倒角",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Conductive paste",
+      "zh": "导电膏",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Copper plating",
+      "zh": "电镀铜",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Copper-filled via",
+      "zh": "铜填孔",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Deburring",
+      "zh": "去毛刺",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Depth-controlled drilling",
+      "zh": "控深钻孔",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Desmear",
+      "zh": "除胶渣",
+      "category": "Manufacturing",
+      "aliases": [
+        "去钻污",
+        "除胶渣，去钻污"
+      ]
+    },
+    {
+      "en": "Developing",
+      "zh": "显影",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Drill",
+      "zh": "钻孔",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Dry film",
+      "zh": "干膜",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Electroless copper",
+      "zh": "化学沉铜",
+      "category": "Manufacturing",
+      "aliases": [
+        "无电沉铜",
+        "PTH copper"
+      ]
+    },
+    {
+      "en": "Electrolytic gold",
+      "zh": "电镀金",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Electrolytic nickel",
+      "zh": "电镀镍",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "ENEPIG",
+      "zh": "化学镍钯浸金",
+      "category": "Manufacturing",
+      "aliases": [
+        "Electroless nickel electroless palladium immersion gold"
+      ]
+    },
+    {
+      "en": "ENIG",
+      "zh": "化学镍浸金",
+      "category": "Manufacturing",
+      "aliases": [
+        "Electroless nickel immersion gold",
+        "化学镍金",
+        "Chamical gold"
+      ]
+    },
+    {
+      "en": "Etch factor",
+      "zh": "蚀刻因子",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Etchback",
+      "zh": "回蚀",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Etching",
+      "zh": "蚀刻",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Exposure",
+      "zh": "曝光",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Film stripping",
+      "zh": "退膜",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Gold thickness",
+      "zh": "金厚",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Hard gold",
+      "zh": "硬金",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "HASL",
+      "zh": "热风整平",
+      "category": "Manufacturing",
+      "aliases": [
+        "Hot air solder leveling",
+        "Hot air leveling",
+        "喷锡"
+      ]
+    },
+    {
+      "en": "Hole wall copper thickness",
+      "zh": "孔壁铜厚",
+      "category": "Manufacturing",
+      "aliases": [
+        "Plated throngh hole copper thickness"
+      ]
+    },
+    {
+      "en": "Immersion gold",
+      "zh": "沉金",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Immersion silver",
+      "zh": "沉银",
+      "category": "Manufacturing",
+      "aliases": [
+        "化银",
+        "IAg",
+        "沉银/化银"
+      ]
+    },
+    {
+      "en": "Immersion tin",
+      "zh": "沉锡",
+      "category": "Manufacturing",
+      "aliases": [
+        "化锡",
+        "ISn",
+        "沉锡/化锡"
+      ]
+    },
+    {
+      "en": "Laser drilling",
+      "zh": "激光钻孔",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Lead-free HASL",
+      "zh": "无铅热风整平",
+      "category": "Manufacturing",
+      "aliases": [
+        "无铅喷锡"
+      ]
+    },
+    {
+      "en": "Legend",
+      "zh": "字符标记",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Mechanical drilling",
+      "zh": "机械钻孔",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Mouse bite",
+      "zh": "邮票孔连接",
+      "category": "Manufacturing",
+      "aliases": [
+        "Mouse bites"
+      ]
+    },
+    {
+      "en": "Nickel thickness",
+      "zh": "镍厚",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "OSP",
+      "zh": "有机保焊膜",
+      "category": "Manufacturing",
+      "aliases": [
+        "Organic solderability preservative",
+        "Organic Solerability Peservatives(OSP)",
+        "抗氧化"
+      ]
+    },
+    {
+      "en": "Panel plating",
+      "zh": "全板电镀",
+      "category": "Manufacturing",
+      "aliases": [
+        "板电",
+        "PP"
+      ]
+    },
+    {
+      "en": "Pattern plating",
+      "zh": "图形电镀",
+      "category": "Manufacturing",
+      "aliases": [
+        "图电"
+      ]
+    },
+    {
+      "en": "Plasma treatment",
+      "zh": "等离子处理",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Plating",
+      "zh": "电镀",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Resin plugging",
+      "zh": "树脂塞孔",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Routing",
+      "zh": "锣板",
+      "category": "Manufacturing",
+      "aliases": [
+        "Milling",
+        "铣板",
+        "锣板，铣板"
+      ]
+    },
+    {
+      "en": "Secondary drilling",
+      "zh": "二次钻孔",
+      "category": "Manufacturing",
+      "aliases": [
+        "Sencondary drill"
+      ]
+    },
+    {
+      "en": "Silkscreen",
+      "zh": "丝印",
+      "category": "Manufacturing",
+      "aliases": [
+        "Silk screen",
+        "丝印字符",
+        "Legend"
+      ]
+    },
+    {
+      "en": "Soft gold",
+      "zh": "软金",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Solder mask",
+      "zh": "阻焊",
+      "category": "Manufacturing",
+      "aliases": [
+        "Soldermask",
+        "Solder resist"
+      ]
+    },
+    {
+      "en": "Solder mask color",
+      "zh": "阻焊颜色",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Surface finish",
+      "zh": "表面处理",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Tenting",
+      "zh": "盖孔",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Tin stripping",
+      "zh": "退锡",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Tooling hole",
+      "zh": "工具孔",
+      "category": "Manufacturing",
+      "aliases": [
+        "定位孔"
+      ]
+    },
+    {
+      "en": "Undercut",
+      "zh": "侧蚀",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "V-score",
+      "zh": "V 割",
+      "category": "Manufacturing",
+      "aliases": [
+        "V-cut",
+        "V scoring"
+      ]
+    },
+    {
+      "en": "Via capping",
+      "zh": "孔上镀铜盖帽",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Via filling",
+      "zh": "填孔",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Wet film",
+      "zh": "湿膜",
+      "category": "Manufacturing",
+      "aliases": []
+    },
+    {
+      "en": "Base copper thickness",
+      "zh": "基铜厚度",
+      "category": "Materials",
+      "aliases": [
+        "Base copper"
+      ]
+    },
+    {
+      "en": "Ceramic substrate",
+      "zh": "陶瓷基板",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Coefficient of thermal expansion",
+      "zh": "热膨胀系数",
+      "category": "Materials",
+      "aliases": [
+        "CTE"
+      ]
+    },
+    {
+      "en": "Copper foil",
+      "zh": "铜箔",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Copper-clad",
+      "zh": "覆铜",
+      "category": "Materials",
+      "aliases": [
+        "Copper clad"
+      ]
+    },
+    {
+      "en": "Copper-clad core",
+      "zh": "覆铜芯板",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Copper-clad laminate",
+      "zh": "覆铜板",
+      "category": "Materials",
+      "aliases": [
+        "CCL"
+      ]
+    },
+    {
+      "en": "Core",
+      "zh": "芯板",
+      "category": "Materials",
+      "aliases": [
+        "Core material",
+        "芯料",
+        "芯板（芯料）"
+      ]
+    },
+    {
+      "en": "Decomposition temperature",
+      "zh": "热分解温度",
+      "category": "Materials",
+      "aliases": [
+        "Td",
+        "Td:(Timperature decomposition)"
+      ]
+    },
+    {
+      "en": "Dielectric",
+      "zh": "介质",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Dielectric constant",
+      "zh": "介电常数",
+      "category": "Materials",
+      "aliases": [
+        "Dk",
+        "Relative permittivity",
+        "Er"
+      ]
+    },
+    {
+      "en": "Dielectric thickness",
+      "zh": "介质厚度",
+      "category": "Materials",
+      "aliases": [
+        "介电层厚度"
+      ]
+    },
+    {
+      "en": "Dissipation factor",
+      "zh": "介质损耗因子",
+      "category": "Materials",
+      "aliases": [
+        "Df",
+        "Loss tangent"
+      ]
+    },
+    {
+      "en": "Epoxy resin",
+      "zh": "环氧树脂",
+      "category": "Materials",
+      "aliases": [
+        "环氧基树脂"
+      ]
+    },
+    {
+      "en": "Finished copper thickness",
+      "zh": "成品铜厚",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "FR-4",
+      "zh": "FR-4 环氧玻纤板材",
+      "category": "Materials",
+      "aliases": [
+        "FR4"
+      ]
+    },
+    {
+      "en": "FR-4",
+      "zh": "FR-4环氧玻纤板材",
+      "category": "Materials",
+      "aliases": [
+        "FR4"
+      ]
+    },
+    {
+      "en": "Gel time",
+      "zh": "凝胶时间",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Glass cloth",
+      "zh": "玻璃纤维布",
+      "category": "Materials",
+      "aliases": [
+        "Glass fabric",
+        "玻纤布"
+      ]
+    },
+    {
+      "en": "Glass style",
+      "zh": "玻纤布型号",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Glass transition temperature",
+      "zh": "玻璃化转变温度",
+      "category": "Materials",
+      "aliases": [
+        "Tg",
+        "Tg:(glass transition temperature",
+        "玻璃化湿度"
+      ]
+    },
+    {
+      "en": "Halogen-free",
+      "zh": "无卤",
+      "category": "Materials",
+      "aliases": [
+        "Halogen free"
+      ]
+    },
+    {
+      "en": "Inner-layer copper",
+      "zh": "内层铜",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Laminate",
+      "zh": "覆铜板",
+      "category": "Materials",
+      "aliases": [
+        "CCL",
+        "Copper Clad Laminate",
+        "板材"
+      ]
+    },
+    {
+      "en": "Metal-core PCB",
+      "zh": "金属基板",
+      "category": "Materials",
+      "aliases": [
+        "MCPCB"
+      ]
+    },
+    {
+      "en": "Moisture absorption",
+      "zh": "吸水率",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Outer-layer copper",
+      "zh": "外层铜",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Peel strength",
+      "zh": "剥离强度",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Polyimide",
+      "zh": "聚酰亚胺",
+      "category": "Materials",
+      "aliases": [
+        "PI"
+      ]
+    },
+    {
+      "en": "Prepreg",
+      "zh": "半固化片",
+      "category": "Materials",
+      "aliases": [
+        "PP",
+        "预浸料"
+      ]
+    },
+    {
+      "en": "PTFE",
+      "zh": "聚四氟乙烯",
+      "category": "Materials",
+      "aliases": [
+        "Polt tetra fluoro ethylene(PTFE)",
+        "Toflon"
+      ]
+    },
+    {
+      "en": "Resin",
+      "zh": "树脂",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Resin content",
+      "zh": "树脂含量",
+      "category": "Materials",
+      "aliases": [
+        "RC"
+      ]
+    },
+    {
+      "en": "Resin flow",
+      "zh": "树脂流动度",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Shelf life",
+      "zh": "保存期限",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Storage condition",
+      "zh": "储存条件",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Thermal conductivity",
+      "zh": "导热系数",
+      "category": "Materials",
+      "aliases": []
+    },
+    {
+      "en": "Breakaway tab",
+      "zh": "工艺边连接桥",
+      "category": "Panelization",
+      "aliases": [
+        "Tab route",
+        "打断点"
+      ]
+    },
+    {
+      "en": "Panelization",
+      "zh": "拼板",
+      "category": "Panelization",
+      "aliases": [
+        "Panelizing",
+        "拼图"
+      ]
+    },
+    {
+      "en": "V-cut",
+      "zh": "V割",
+      "category": "Panelization",
+      "aliases": [
+        "V-score",
+        "V scoring"
+      ]
+    },
+    {
+      "en": "2nd Drilling",
+      "zh": "二钻",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "A.O.I",
+      "zh": "自动光学检查",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Automatic Optical Inspection"
+      ]
+    },
+    {
+      "en": "Acceptable quality level (AQL)",
+      "zh": "可接受质量水平",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Acceptance Quality Level (AQL)",
+      "zh": "允收水平",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Acceptance Specification",
+      "zh": "接收标准",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Accuracy",
+      "zh": "精确度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Acid cleaning",
+      "zh": "酸性除油",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Acid dip",
+      "zh": "酸洗",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Activating",
+      "zh": "活化",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Active carbon treatment",
+      "zh": "活性碳处理",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "After Pressed Thickness",
+      "zh": "压板后之厚度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Alignment",
+      "zh": "对位",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Alkaline cleaning",
+      "zh": "碱性除油",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Anti-Static Bag",
+      "zh": "静电胶袋",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Array size",
+      "zh": "排版尺寸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Artwork",
+      "zh": "底片",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Artwork Drawing",
+      "zh": "菲林图形",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Artwork Film",
+      "zh": "原装菲林",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Artwork Modification",
+      "zh": "菲林修改",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "As Original Geber File",
+      "zh": "按原档",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Aspect ratio",
+      "zh": "深径比",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Assembly",
+      "zh": "组装，装配",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Axis",
+      "zh": "轴",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Back Light Test",
+      "zh": "背光测试",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Back-up",
+      "zh": "垫板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Backplane",
+      "zh": "背板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Baking",
+      "zh": "烘板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Ball Grid Array (BGA)",
+      "zh": "球栅阵列",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Base Copper",
+      "zh": "底铜(也叫基铜）",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Base copper foil",
+      "zh": "基铜箔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Base Copper Thickness",
+      "zh": "底铜厚度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Base Material",
+      "zh": "基材",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Bevel angle",
+      "zh": "斜边角度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Bevel depth",
+      "zh": "斜边深度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Bevelling",
+      "zh": "斜边",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Blind via hole",
+      "zh": "盲孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Blistering",
+      "zh": "起泡/水泡",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Board baking",
+      "zh": "焗板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Board cut",
+      "zh": "开料",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Board Cutting",
+      "zh": "开料",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Board or unit size",
+      "zh": "板子单元尺寸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Board Size",
+      "zh": "板的尺寸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Bottom side",
+      "zh": "底层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Bottom-only",
+      "zh": "底层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Bow and twist",
+      "zh": "板弯和板曲",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Break Away",
+      "zh": "拆断边",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Brown oxidation",
+      "zh": "棕化",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Brushing",
+      "zh": "磨刷",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Build-up",
+      "zh": "积层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Bullet pad",
+      "zh": "子弹盘",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Buried /blind via",
+      "zh": "埋/盲孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Buried hole",
+      "zh": "埋孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "C/M",
+      "zh": "元件字符",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Component Marking"
+      ]
+    },
+    {
+      "en": "CAD",
+      "zh": "计算机辅助设计",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "computer-aided design"
+      ]
+    },
+    {
+      "en": "Capability",
+      "zh": "工艺能力",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Capacity",
+      "zh": "生产能力",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Carbon",
+      "zh": "碳油",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Carbon Ink Print",
+      "zh": "印碳油",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Carbon printing",
+      "zh": "碳油印刷",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Carbon treatment",
+      "zh": "碳处理",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Carrier",
+      "zh": "带板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Ceramic substrate",
+      "zh": "陶瓷",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Certificate of Compliance",
+      "zh": "合格证书",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Chemical cleaning",
+      "zh": "化学清洗",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Chemical corrosion",
+      "zh": "化学腐蚀",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Chemistry Laboratory",
+      "zh": "化学实验室",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Circuit",
+      "zh": "线路",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Clearance",
+      "zh": "间距/间隙",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Component hole",
+      "zh": "零件孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Component mark",
+      "zh": "字符",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Component Side(C/S)",
+      "zh": "元件面",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Composite layers",
+      "zh": "复合层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Computer numerical control",
+      "zh": "计算机数控",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Computer Numerial Control (CNC)"
+      ]
+    },
+    {
+      "en": "Conductor",
+      "zh": "导体",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Conductor width",
+      "zh": "导线宽度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Conductor width/space",
+      "zh": "导体线宽/线隙",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Connection",
+      "zh": "联结",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Contact resistance",
+      "zh": "接触电阻",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Copper border",
+      "zh": "板边设计",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Copper clad epoxy glass laminate",
+      "zh": "玻离树脂覆铜板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Core material",
+      "zh": "内层芯板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Corner",
+      "zh": "角线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Corner mark",
+      "zh": "板角记号",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Corner REG.Hole",
+      "zh": "角位对位孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Cosmetic",
+      "zh": "外观",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Cracking",
+      "zh": "裂缝",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Creasing",
+      "zh": "皱折",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Cross-section",
+      "zh": "切片",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Cross-sectional area",
+      "zh": "截面积",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Crossection area"
+      ]
+    },
+    {
+      "en": "Cu/Sn Plating",
+      "zh": "镀铜锡",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Current efficiency",
+      "zh": "电流效率",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Customer Drilling File",
+      "zh": "客户钻孔资料",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "D/F",
+      "zh": "干膜",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Dry Film"
+      ]
+    },
+    {
+      "en": "D/F Registration Hole",
+      "zh": "干菲林对位孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Date code",
+      "zh": "周期",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Datum hole",
+      "zh": "基准参考孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Daughter board",
+      "zh": "子板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Defect",
+      "zh": "缺陷",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Densitometer",
+      "zh": "光密度计",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Densitomefer"
+      ]
+    },
+    {
+      "en": "Desiccant",
+      "zh": "干燥剂",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Dessicant"
+      ]
+    },
+    {
+      "en": "Design origin",
+      "zh": "设计原点",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Diameter",
+      "zh": "直径",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Diazo film",
+      "zh": "重氮片",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Dielectric breakdown",
+      "zh": "介电击穿",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Dielectric Thickness",
+      "zh": "介电层厚度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Dielectric withstand test",
+      "zh": "耐压测试",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Dielectric Voltage Test"
+      ]
+    },
+    {
+      "en": "Dielectrics specified",
+      "zh": "介质规格",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Dimension",
+      "zh": "尺寸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Dimensional stability",
+      "zh": "尺寸稳定性",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Dimensional Tolerance",
+      "zh": "尺寸公差",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Double side",
+      "zh": "双面",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Double sided board",
+      "zh": "双面板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Double-Side Printed Board",
+      "zh": "双面板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Drill bit",
+      "zh": "钻咀",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Drill chart",
+      "zh": "分孔图、表",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Drilling",
+      "zh": "钻孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Drilling Roughness",
+      "zh": "钻孔粗糙度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Dry Film",
+      "zh": "干菲林",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Dry film gloss",
+      "zh": "干膜绿油",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Dry Film-Pattern",
+      "zh": "干膜线路",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "E-Test",
+      "zh": "电测试",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Electric Open/Short Test",
+        "Electrical Test"
+      ]
+    },
+    {
+      "en": "E-Test Marking",
+      "zh": "电测试标记",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "E-test report",
+      "zh": "测式报告",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "ECN",
+      "zh": "工程更改通知",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Engineering Change Notification"
+      ]
+    },
+    {
+      "en": "Electrical Test Fixture",
+      "zh": "电测试 针床",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Electroconductive paste",
+      "zh": "导电胶",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Electroless",
+      "zh": "无电沉",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Electroless Gold/Au",
+      "zh": "无电沉金",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Electroless Ni",
+      "zh": "无电沉镍",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Electromigration",
+      "zh": "电迁移",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Electro migration"
+      ]
+    },
+    {
+      "en": "Entek",
+      "zh": "有机涂覆",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Epoxy glass substrate",
+      "zh": "环氧玻璃基板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Etch",
+      "zh": "蚀刻",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Etchback",
+      "zh": "凹蚀",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Expose",
+      "zh": "曝光",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "External layer",
+      "zh": "外层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Filling",
+      "zh": "填充",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Film",
+      "zh": "底片（菲林）",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Film Fabrication",
+      "zh": "菲林制作",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Final inspection report",
+      "zh": "出货检验报告",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Final QC",
+      "zh": "最终检查",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Final quality audit",
+      "zh": "最终质量审核",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "FQA"
+      ]
+    },
+    {
+      "en": "Fine line",
+      "zh": "细线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Fine pitch",
+      "zh": "密距",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Finish Overall Board Thickness",
+      "zh": "成品总板厚度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Finish Type",
+      "zh": "成品类型",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Finished",
+      "zh": "成品",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Finished Web Thickness",
+      "zh": "残厚",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Fixture",
+      "zh": "夹具",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Flammability",
+      "zh": "可燃性",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Flammability rating",
+      "zh": "阻燃等级",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Flammability Rate"
+      ]
+    },
+    {
+      "en": "Flash Gold",
+      "zh": "薄金",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Flatness",
+      "zh": "平坦度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Ghost image",
+      "zh": "重影",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Gloss",
+      "zh": "半光亮",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Gold finger bevel",
+      "zh": "金手指斜边",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Gold Finger(G/F)",
+      "zh": "金手指",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Gold Plated",
+      "zh": "电金，镀金",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Golden board",
+      "zh": "金板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Grid",
+      "zh": "网格",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "HAL",
+      "zh": "喷锡",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "HASL",
+        "Hot Air Leveling",
+        "Hot air(Solder)leveling",
+        "hot air leveling"
+      ]
+    },
+    {
+      "en": "Halogen free materials",
+      "zh": "无卤素板材",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hand Rout",
+      "zh": "手锣",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hardness",
+      "zh": "硬度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Heat Sealed",
+      "zh": "热密封",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Heat Shrink-warp",
+      "zh": "热收缩",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hipot test",
+      "zh": "高压电测",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Histogram",
+      "zh": "直方图",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Holding time",
+      "zh": "停留时间",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole",
+      "zh": "孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole breakout",
+      "zh": "破孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole count",
+      "zh": "孔数",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole density",
+      "zh": "孔的密度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole location",
+      "zh": "孔位",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole Location Chart",
+      "zh": "孔位座标表",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole locations",
+      "zh": "孔位置",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole Position Tolerance",
+      "zh": "孔位误差",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole size",
+      "zh": "孔尺寸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hole Wall Roughness",
+      "zh": "孔壁粗糙度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hot air leveling",
+      "zh": "喷锡",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hot Air Leveling(HAL)",
+      "zh": "热风整平",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Hot air solder levelled",
+      "zh": "喷锡",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Humidity",
+      "zh": "湿度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Image",
+      "zh": "影像",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Image Transfer",
+      "zh": "图象转移",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Imaging transfer",
+      "zh": "图形转移",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Immersion gold",
+      "zh": "沉金/化金",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Impedance test report",
+      "zh": "阻抗测试报告",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Inner copper foil",
+      "zh": "内层铜箔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Inner dry film",
+      "zh": "内层干膜",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Inner dry film stripping",
+      "zh": "内层干膜退膜",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Inner etching",
+      "zh": "内层蚀刻",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Inspection",
+      "zh": "检验",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Insulation",
+      "zh": "绝缘",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Insulation resistance Test",
+      "zh": "绝缘测试",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Insulator",
+      "zh": "绝缘层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Inter-plane separation",
+      "zh": "平面层间距",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Inter Plane Separation"
+      ]
+    },
+    {
+      "en": "Interleave Paper",
+      "zh": "隔纸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Internal layer",
+      "zh": "内层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Internal stress",
+      "zh": "内应力",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Ionic contamination test",
+      "zh": "离子污染测试",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Inoic testing"
+      ]
+    },
+    {
+      "en": "IPQC",
+      "zh": "流程QC",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "In-process quality control"
+      ]
+    },
+    {
+      "en": "Isolation",
+      "zh": "孤立",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Isolation Resistance",
+      "zh": "绝缘电阻",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Key slot",
+      "zh": "槽孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Kraft Paper",
+      "zh": "牛皮纸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Laminate Thickness",
+      "zh": "材料厚度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Laminate type",
+      "zh": "板材类型",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Lamination void",
+      "zh": "层间空洞",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Landless hole",
+      "zh": "无焊盘孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Laser plotter",
+      "zh": "激光绘图机",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Laser plotting",
+      "zh": "激光绘图",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Laser via hole",
+      "zh": "激光穿孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Lay up",
+      "zh": "叠合",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Lay up setup",
+      "zh": "压合结构",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Lay-up Instruction",
+      "zh": "压板指示",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Layer",
+      "zh": "层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Layout",
+      "zh": "布线布局",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Lag out"
+      ]
+    },
+    {
+      "en": "Layup",
+      "zh": "层压配本",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Lead free",
+      "zh": "无铅",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Lead pitch",
+      "zh": "脚距",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Legend",
+      "zh": "文字",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Legend Width",
+      "zh": "字符宽度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "line/signal",
+      "zh": "线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "linedown",
+      "zh": "缩线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Liquid photoimageable solder mask",
+      "zh": "液态感光阻焊",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "liquid photo image",
+        "LPI"
+      ]
+    },
+    {
+      "en": "Logic diagram",
+      "zh": "逻辑图形",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Lot size",
+      "zh": "批量（这里指批量流程卡）",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Maintenance",
+      "zh": "保养",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Manufacturing instruction",
+      "zh": "制造指示",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "manufacture instruction",
+        "MI"
+      ]
+    },
+    {
+      "en": "Master drawing",
+      "zh": "菲林图形",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Material",
+      "zh": "板材",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Material Thickness",
+      "zh": "材料厚度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Material Type",
+      "zh": "材料类型",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Matte",
+      "zh": "哑色",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Matte Solder Mask",
+      "zh": "哑绿油",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Max. X-out",
+      "zh": "坏板上限",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Measure",
+      "zh": "测量",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Mechanical cleaning",
+      "zh": "机械清洗",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Microsection Report",
+      "zh": "切片报告，横切面报告",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Microstrip",
+      "zh": "微条线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Min Conductor Copper Thickness",
+      "zh": "最小线路铜厚",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Min Hole Wall Copper Thickness",
+      "zh": "最小孔壁铜厚",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Min trace",
+      "zh": "最小线宽",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Min. Gold Plating Thickness",
+      "zh": "最小金厚",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Min. Nickel Thickness",
+      "zh": "最小镍厚",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Min. Tin-Lead Thickness (After HAL)",
+      "zh": "最小锡厚",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Min.Spacing between Line to Pad",
+      "zh": "线与焊盘之间的最小距离",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Min.Spacing between Pad to Pad",
+      "zh": "焊盘与焊盘之间的最小距离",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Minimum line width",
+      "zh": "最小线宽",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Minimum spacing",
+      "zh": "最小间距",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Mirroring",
+      "zh": "镜像",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Molded",
+      "zh": "模塑",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Mother board",
+      "zh": "主板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Moulding",
+      "zh": "模房",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Multi-layer Laminate",
+      "zh": "多层板材料",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Multilayer",
+      "zh": "多层板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Mylar",
+      "zh": "胶片",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Negative",
+      "zh": "负片",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Net list",
+      "zh": "网络表",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Netlist testing required",
+      "zh": "要网络测试",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Network",
+      "zh": "网络",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Nick",
+      "zh": "缺口",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Nickel gold immersion",
+      "zh": "化镍金",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Nickel Plated",
+      "zh": "电镍，镀镍",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "No. of holes",
+      "zh": "孔数",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "No.of Array/Panel",
+      "zh": "每个拼板套板数",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "No.of Panel per Stack",
+      "zh": "每叠板数",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "No.of Panel/Sheet",
+      "zh": "每张大料拼板数",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "No.of Pcs Per Bag",
+      "zh": "每包数量",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "No.of Unit/Array",
+      "zh": "每套单元数",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Nominal value",
+      "zh": "标称值",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Normal value"
+      ]
+    },
+    {
+      "en": "Non-Circular land",
+      "zh": "非圆形PAD",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Not more than",
+      "zh": "不超过",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Oblong",
+      "zh": "长圆形",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Offset",
+      "zh": "偏移",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "OHM",
+      "zh": "电阻单位Ω",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "On comp side",
+      "zh": "在零件面",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "On sold side",
+      "zh": "在焊接面",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Open/short",
+      "zh": "开路/短路",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Optical Inspection",
+      "zh": "光学检验",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Optimization",
+      "zh": "最佳化(设计)",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "origin",
+      "zh": "零点",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Outer copper foil",
+      "zh": "外层铜箔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Outer dry film",
+      "zh": "外层干膜",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Outline",
+      "zh": "外形",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Output/throughput",
+      "zh": "产量",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Oven",
+      "zh": "焗炉",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Overall board thickness",
+      "zh": "总板厚",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Packing",
+      "zh": "包装",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "pad reroute",
+      "zh": "绕线路",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Panel Area",
+      "zh": "拼板面积",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Panel Plated Crack",
+      "zh": "板镀缺口",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Panel plating",
+      "zh": "整板电镀",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Panel Size",
+      "zh": "拼板尺寸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Panel Utilization",
+      "zh": "拼板利用率",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pass rate",
+      "zh": "通过率",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Passivation",
+      "zh": "钝化",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pattern",
+      "zh": "线路",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pattern Inspection",
+      "zh": "线路检查",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Peck drilling",
+      "zh": "啄钻",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Peel off",
+      "zh": "剥离",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Peelable",
+      "zh": "可剥性",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Peelable blue mask",
+      "zh": "蓝胶",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Peelable Mask",
+      "zh": "可脱油",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Peeling",
+      "zh": "剥离",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Photo plotting",
+      "zh": "图形输出",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Photo via hole",
+      "zh": "菲林过孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Photoimageable solder mask",
+      "zh": "感光阻焊",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Photimageable"
+      ]
+    },
+    {
+      "en": "Photoplotter",
+      "zh": "光绘机",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Photoplotler"
+      ]
+    },
+    {
+      "en": "Physical Laboratory",
+      "zh": "物理实验室",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pin hole",
+      "zh": "针孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pink ring",
+      "zh": "粉红圈",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pinning hole",
+      "zh": "钻孔管位",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pitch",
+      "zh": "间距",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Plane",
+      "zh": "平面层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Plating Crack",
+      "zh": "电镀裂缝",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Plating line",
+      "zh": "电镀线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Plating rack",
+      "zh": "电镀架",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Plug Hole",
+      "zh": "塞孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Plug via holes",
+      "zh": "导通孔塞孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Plugged(filled) soldermask in via hole",
+      "zh": "导电孔塞油",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "PO",
+      "zh": "订单",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Purchase Order"
+      ]
+    },
+    {
+      "en": "Polymer",
+      "zh": "聚合体",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Porosity",
+      "zh": "孔隙率",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Positive",
+      "zh": "正片",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pre-dip",
+      "zh": "预浸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pressing",
+      "zh": "压板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Primary side",
+      "zh": "首面",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Print",
+      "zh": "印刷",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Printed Circuit Board",
+      "zh": "印制电路板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Probe",
+      "zh": "探针",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Probe point",
+      "zh": "针床测点",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Process",
+      "zh": "工序",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Process flow",
+      "zh": "工序流程",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Production",
+      "zh": "生产",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Profile",
+      "zh": "外形",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Profiling",
+      "zh": "外形加工",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Profiling process",
+      "zh": "外形加工",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Pull away",
+      "zh": "拉离",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Punch",
+      "zh": "啤模",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Punching",
+      "zh": "啤板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Punching Mould Drawing",
+      "zh": "啤模图形",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "QA",
+      "zh": "品质部",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Quality assurance",
+        "Quanlity Assurance",
+        "quality assurance"
+      ]
+    },
+    {
+      "en": "QA Audit",
+      "zh": "品质审计",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Quad flat package",
+      "zh": "四方扁平封装",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Quad Palt Pack (QFP)"
+      ]
+    },
+    {
+      "en": "Quality",
+      "zh": "质量",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Quantity",
+      "zh": "数量",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Rack",
+      "zh": "挂架",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Radius",
+      "zh": "半径",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Raw Material Utilization",
+      "zh": "原材料利用率",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Rectangle",
+      "zh": "矩形",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Rectifier",
+      "zh": "整流器",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Redundancy",
+      "zh": "冗余",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Register mark",
+      "zh": "对位点",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Registration",
+      "zh": "对位",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Requirements",
+      "zh": "要求",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Resist",
+      "zh": "抗蚀剂",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Resolution",
+      "zh": "分辨率",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Revision level",
+      "zh": "修订版本",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Rigid",
+      "zh": "刚性",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Roller coating",
+      "zh": "涂覆",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Roughening",
+      "zh": "粗化",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Round pad",
+      "zh": "圆盘",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "S/M",
+      "zh": "阻焊",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Solder Mask"
+      ]
+    },
+    {
+      "en": "S/M Material",
+      "zh": "绿油物料",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Sample",
+      "zh": "样板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Scaling factor",
+      "zh": "缩放比例因素",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Schematic diagram",
+      "zh": "原理图",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Shematic diagram"
+      ]
+    },
+    {
+      "en": "Scoring",
+      "zh": "刻槽",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Scoring angle",
+      "zh": "切割角度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Scratch",
+      "zh": "划痕",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Scrubbing",
+      "zh": "磨板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Secondary side",
+      "zh": "第二面",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Sheet Size",
+      "zh": "大料尺寸",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Shippment",
+      "zh": "出货",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Short",
+      "zh": "短路",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Signal",
+      "zh": "信号",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Signal line",
+      "zh": "信号线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "silk",
+      "zh": "字符层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Silk screen",
+      "zh": "丝印",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Silkscreen/legend/Component Mark",
+      "zh": "文字",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Silver film",
+      "zh": "银盐片(黑菲林）",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Silver paste",
+      "zh": "银膏",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Single-ended",
+      "zh": "单端",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Singel end"
+      ]
+    },
+    {
+      "en": "Single/double",
+      "zh": "单层/双面",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Slot/Slotting",
+      "zh": "槽孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Smallest hole size",
+      "zh": "最小孔径",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Smobc with hasl",
+      "zh": "喷锡板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "snap",
+      "zh": "捕捉",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Solder mask color",
+      "zh": "防焊颜色",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Solder mask sides",
+      "zh": "防焊层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Solder mask type",
+      "zh": "防焊类型",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Solder sample",
+      "zh": "焊锡样板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Solder Side C/M",
+      "zh": "阻焊面字符",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Solder Side Cir.",
+      "zh": "焊接面线路",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Solder Side S/M",
+      "zh": "焊接面阻焊",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Solder-side circuit",
+      "zh": "焊接面线路",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Solder Side Circuit"
+      ]
+    },
+    {
+      "en": "Soldermask",
+      "zh": "绿油层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Solvent resistance test",
+      "zh": "耐溶剂测试",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Solvent Test"
+      ]
+    },
+    {
+      "en": "Spacing",
+      "zh": "线隙",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Special requirement",
+      "zh": "特殊要求",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Specification",
+      "zh": "规格，规范",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Spindle",
+      "zh": "主轴",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Split",
+      "zh": "裂片",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Square pad",
+      "zh": "方形焊盘",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Stamp hole",
+      "zh": "邮票孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Standard",
+      "zh": "标准值",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Statistical Process Control",
+      "zh": "统计过程控制",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Step drilling",
+      "zh": "分步钻孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Step scale",
+      "zh": "光梯尺(爆光尺）",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Supported hole",
+      "zh": "支撑点",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Surface",
+      "zh": "表面",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Surface mount technology",
+      "zh": "表面组装技术",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Surrounding land",
+      "zh": "环绕焊盘",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Surround by land"
+      ]
+    },
+    {
+      "en": "Swimming",
+      "zh": "滑移",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Tab",
+      "zh": "接点、金手指",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Tack",
+      "zh": "初粘性",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Tape Test",
+      "zh": "胶纸试验",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Target Hole",
+      "zh": "目标孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Teardrop",
+      "zh": "泪珠",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Template",
+      "zh": "模板",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Tent",
+      "zh": "盖油",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Tenting",
+      "zh": "封孔",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Test",
+      "zh": "测试",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Test Parameter",
+      "zh": "测试参数",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Test pattern",
+      "zh": "测试图形",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Test stamp",
+      "zh": "测试印章",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Test voltage",
+      "zh": "测试电压",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Testing Voltage"
+      ]
+    },
+    {
+      "en": "Thermal pad",
+      "zh": "散热PAD",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Thickness",
+      "zh": "厚度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Tin Content",
+      "zh": "锡含量",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Tin-lead plating",
+      "zh": "电镀铅锡",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Tin/Lead Ratio",
+      "zh": "锡/铅比例",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Tin/Lead Stripping",
+      "zh": "退铅锡",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Top circuit",
+      "zh": "顶层线路",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Top paste",
+      "zh": "顶层锡膏",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Top side",
+      "zh": "板面",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Top-only",
+      "zh": "顶层",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Touch up",
+      "zh": "修理(执漏)",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Track/conductor",
+      "zh": "导线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Transmission",
+      "zh": "传输线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Transmittance",
+      "zh": "透过率",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Transportation",
+      "zh": "运输",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Trim line",
+      "zh": "修剪",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "TWIST",
+      "zh": "板翘",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Ultrasonic cleaning",
+      "zh": "超声波清洗",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Underwriters Laboratories Inc.",
+      "zh": "美国保险商实验所",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Unit",
+      "zh": "单元，单位",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Unit Arrangement",
+      "zh": "单元排版",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Unit Layout Per Panel",
+      "zh": "单元拼板图",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Uv-blocking",
+      "zh": "阻挡紫外线",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Vacuum lamination",
+      "zh": "真空压制",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Vacuum packing",
+      "zh": "真空包装",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Vacunm Pack"
+      ]
+    },
+    {
+      "en": "Vendor identification and UL marking",
+      "zh": "供应商标识及 UL 标记",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Vendor logo and ul UL"
+      ]
+    },
+    {
+      "en": "Via hole treatment",
+      "zh": "导电孔处理",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Visual inspection",
+      "zh": "目检",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Visual inspection and warpage",
+      "zh": "外观与翘曲",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Visual & Warpage"
+      ]
+    },
+    {
+      "en": "Voltage",
+      "zh": "电压",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "W/F",
+      "zh": "湿膜",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Wet Film"
+      ]
+    },
+    {
+      "en": "Warp & Twist",
+      "zh": "翘曲和弯曲",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Warp and Twist",
+      "zh": "板曲度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Warp direction",
+      "zh": "经向",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Length wise dimension"
+      ]
+    },
+    {
+      "en": "Waste water treatment",
+      "zh": "污水处理",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Water rinsing",
+      "zh": "水洗",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Weft direction",
+      "zh": "纬向",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Cross wise dimension"
+      ]
+    },
+    {
+      "en": "Width",
+      "zh": "宽度",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "Wiring",
+      "zh": "线路",
+      "category": "PCB manufacturing terminology",
+      "aliases": []
+    },
+    {
+      "en": "X-out",
+      "zh": "打\"X\"报告",
+      "category": "PCB manufacturing terminology",
+      "aliases": [
+        "Cross-out"
+      ]
+    },
+    {
+      "en": "Comparative tracking index",
+      "zh": "相比漏电起痕指数",
+      "category": "Properties",
+      "aliases": [
+        "CTI"
+      ]
+    },
+    {
+      "en": "Conductive anodic filament",
+      "zh": "导电阳极丝",
+      "category": "Reliability",
+      "aliases": [
+        "CAF"
+      ]
+    },
+    {
+      "en": "Bottom layer",
+      "zh": "底层",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Copper balance",
+      "zh": "铜分布平衡",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Copper weight",
+      "zh": "铜重",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Cure temperature",
+      "zh": "固化温度",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Cure time",
+      "zh": "固化时间",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Dielectric layer",
+      "zh": "介质层",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Ground plane",
+      "zh": "地平面",
+      "category": "Stackup",
+      "aliases": [
+        "GND plane",
+        "接地层"
+      ]
+    },
+    {
+      "en": "Ground plane",
+      "zh": "地层",
+      "category": "Stackup",
+      "aliases": [
+        "GND plane",
+        "接地层"
+      ]
+    },
+    {
+      "en": "Inner layer",
+      "zh": "内层",
+      "category": "Stackup",
+      "aliases": [
+        "Internal layer"
+      ]
+    },
+    {
+      "en": "Lamination",
+      "zh": "压合",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Lamination pressure",
+      "zh": "压合压力",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Lamination structure",
+      "zh": "压合结构",
+      "category": "Stackup",
+      "aliases": [
+        "Lay-up structure",
+        "Lay up setup"
+      ]
+    },
+    {
+      "en": "Lay-up",
+      "zh": "叠合",
+      "category": "Stackup",
+      "aliases": [
+        "Lay up",
+        "Layup"
+      ]
+    },
+    {
+      "en": "Layer count",
+      "zh": "层数",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Outer layer",
+      "zh": "外层",
+      "category": "Stackup",
+      "aliases": [
+        "External layer"
+      ]
+    },
+    {
+      "en": "Post-cure",
+      "zh": "后固化",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Power plane",
+      "zh": "电源平面",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Power plane",
+      "zh": "电源层",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Press cycle",
+      "zh": "压合周期",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Press-fit",
+      "zh": "压接",
+      "category": "Stackup",
+      "aliases": [
+        "Press fit"
+      ]
+    },
+    {
+      "en": "Reference plane",
+      "zh": "参考平面",
+      "category": "Stackup",
+      "aliases": [
+        "Referance plane"
+      ]
+    },
+    {
+      "en": "Sequential lamination",
+      "zh": "顺序压合",
+      "category": "Stackup",
+      "aliases": [
+        "Sequential build-up"
+      ]
+    },
+    {
+      "en": "Signal layer",
+      "zh": "信号层",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Stack-up",
+      "zh": "叠层结构",
+      "category": "Stackup",
+      "aliases": [
+        "Stackup",
+        "Layer stack",
+        "叠层",
+        "层叠结构"
+      ]
+    },
+    {
+      "en": "Stackup",
+      "zh": "叠层结构",
+      "category": "Stackup",
+      "aliases": [
+        "Layer stack"
+      ]
+    },
+    {
+      "en": "Symmetric stack-up",
+      "zh": "对称叠层",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Top layer",
+      "zh": "顶层",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "Vacuum lamination",
+      "zh": "真空压合",
+      "category": "Stackup",
+      "aliases": []
+    },
+    {
+      "en": "IPC-6012",
+      "zh": "刚性印制板鉴定与性能规范IPC-6012",
+      "category": "Standards",
+      "aliases": []
+    },
+    {
+      "en": "IPC-A-600",
+      "zh": "印制板验收标准IPC-A-600",
+      "category": "Standards",
+      "aliases": []
+    },
+    {
+      "en": "IPC-A-610",
+      "zh": "电子组件验收标准IPC-A-610",
+      "category": "Standards",
+      "aliases": []
+    },
+    {
+      "en": "UL 94 V-0",
+      "zh": "UL 94 V-0阻燃等级",
+      "category": "Standards",
+      "aliases": [
+        "V-0"
+      ]
+    },
+    {
+      "en": "ENEPIG",
+      "zh": "化学镍钯金",
+      "category": "Surface",
+      "aliases": [
+        "Electroless Nickel Electroless Palladium Immersion Gold"
+      ]
+    },
+    {
+      "en": "ENIG",
+      "zh": "化学镍金",
+      "category": "Surface",
+      "aliases": [
+        "Electroless Nickel Immersion Gold",
+        "Electroless nickel immersion gold",
+        "沉镍金"
+      ]
+    },
+    {
+      "en": "Acceptance criteria",
+      "zh": "验收标准",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "AOI",
+      "zh": "自动光学检测",
+      "category": "Testing",
+      "aliases": [
+        "Automated optical inspection",
+        "Automatic optical inspection"
+      ]
+    },
+    {
+      "en": "AQL",
+      "zh": "接收质量限",
+      "category": "Testing",
+      "aliases": [
+        "Acceptance quality limit"
+      ]
+    },
+    {
+      "en": "AXI",
+      "zh": "自动 X 射线检测",
+      "category": "Testing",
+      "aliases": [
+        "Automated X-ray inspection"
+      ]
+    },
+    {
+      "en": "CAF",
+      "zh": "导电阳极丝",
+      "category": "Testing",
+      "aliases": [
+        "Conductive anodic filament"
+      ]
+    },
+    {
+      "en": "Certificate of analysis",
+      "zh": "分析证书",
+      "category": "Testing",
+      "aliases": [
+        "COA"
+      ]
+    },
+    {
+      "en": "Certificate of conformity",
+      "zh": "符合性证书",
+      "category": "Testing",
+      "aliases": [
+        "COC",
+        "compliance of certificate"
+      ]
+    },
+    {
+      "en": "Continuity test",
+      "zh": "导通测试",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Date code",
+      "zh": "日期码",
+      "category": "Testing",
+      "aliases": [
+        "WWYY",
+        "YYWW",
+        "WKYR"
+      ]
+    },
+    {
+      "en": "Electrical test",
+      "zh": "电气测试",
+      "category": "Testing",
+      "aliases": [
+        "E-test",
+        "电测"
+      ]
+    },
+    {
+      "en": "Electrical test",
+      "zh": "电测",
+      "category": "Testing",
+      "aliases": [
+        "E-test"
+      ]
+    },
+    {
+      "en": "Final inspection",
+      "zh": "最终检验",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "First article inspection",
+      "zh": "首件检验",
+      "category": "Testing",
+      "aliases": [
+        "FAI"
+      ]
+    },
+    {
+      "en": "Flying probe test",
+      "zh": "飞针测试",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Functional test",
+      "zh": "功能测试",
+      "category": "Testing",
+      "aliases": [
+        "FCT"
+      ]
+    },
+    {
+      "en": "Hi-pot test",
+      "zh": "耐压测试",
+      "category": "Testing",
+      "aliases": [
+        "Hipot",
+        "Dielectric withstand test"
+      ]
+    },
+    {
+      "en": "ICT",
+      "zh": "在线测试",
+      "category": "Testing",
+      "aliases": [
+        "In-circuit test"
+      ]
+    },
+    {
+      "en": "Impedance report",
+      "zh": "阻抗报告",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Impedance test",
+      "zh": "阻抗测试",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Insulation resistance",
+      "zh": "绝缘电阻",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Ionic cleanliness",
+      "zh": "离子清洁度",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Ionic contamination",
+      "zh": "离子污染",
+      "category": "Testing",
+      "aliases": [
+        "离子性污染"
+      ]
+    },
+    {
+      "en": "IPC-6012",
+      "zh": "刚性印制板鉴定与性能规范 IPC-6012",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "IPC-A-600",
+      "zh": "印制板验收标准 IPC-A-600",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "IPC-A-610",
+      "zh": "电子组件验收标准 IPC-A-610",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Lot number",
+      "zh": "批次号",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Microsection",
+      "zh": "金相切片",
+      "category": "Testing",
+      "aliases": [
+        "Cross-section",
+        "切片"
+      ]
+    },
+    {
+      "en": "Microsection report",
+      "zh": "切片报告",
+      "category": "Testing",
+      "aliases": [
+        "Microseetion report"
+      ]
+    },
+    {
+      "en": "Sampling inspection",
+      "zh": "抽样检验",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Thermal cycling",
+      "zh": "温度循环",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Thermal shock",
+      "zh": "热冲击",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Thermal stress",
+      "zh": "热应力",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Traceability",
+      "zh": "可追溯性",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "UL 94 V-0",
+      "zh": "UL 94 V-0 阻燃等级",
+      "category": "Testing",
+      "aliases": []
+    },
+    {
+      "en": "Yield",
+      "zh": "良品率",
+      "category": "Testing",
+      "aliases": []
+    }
+  ]
+}

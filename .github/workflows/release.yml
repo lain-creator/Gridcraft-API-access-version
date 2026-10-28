@@ -1,63 +1,97 @@
-name: Build API edition
+name: Build and release GridCraft API Edition
 on:
   push:
     tags: ['v*-api.*']
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Existing v*-api.* tag to rebuild and publish; blank only builds'
+        required: false
+        type: string
 permissions:
   contents: read
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
         include:
           - os: windows-latest
             target: x86_64-pc-windows-msvc
             platform: win64
             executable: gridcraft.exe
-          - os: macos-14
+          # Intel runner avoids the constrained/deprecated macOS 14 arm64 pool.
+          # Xcode links the unchanged aarch64 target using the macOS SDK.
+          - os: macos-15-intel
             target: aarch64-apple-darwin
             platform: macos-arm64
             executable: gridcraft
     runs-on: ${{ matrix.os }}
+    env:
+      CRAFT_I18N_DIR: ${{ github.workspace }}/craft-i18n
+      CRAFT_I18N_REQUIRED: '1'
+      MACOSX_DEPLOYMENT_TARGET: '11.0'
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.release_tag || github.ref }}
+      - name: Check packaging
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
       - uses: dtolnay/rust-toolchain@1.95.0
         with:
           targets: ${{ matrix.target }}
       - uses: Swatinem/rust-cache@v2
         with:
           workspaces: gridcraft
-          key: ${{ matrix.target }}
+          key: gridcraft-${{ matrix.target }}
       - name: Build
         working-directory: gridcraft
         run: cargo build --locked --release -p gridcraft --target ${{ matrix.target }}
         env:
           GRIDCRAFT_REQUIRE_WINRES: '1'
       - name: Package
-        run: python scripts/package.py --platform ${{ matrix.platform }} --binary gridcraft/target/${{ matrix.target }}/release/${{ matrix.executable }} --output dist --patch-label "20261028.1 Unified AI conversation and horizontal data analysis"
+        shell: bash
+        env:
+          REQUESTED_TAG: ${{ inputs.release_tag }}
+        run: |
+          set -euo pipefail
+          version=0.12.1-api.20261029.1
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then version="${GITHUB_REF_NAME#v}"; fi
+          if [[ -n "$REQUESTED_TAG" ]]; then
+            [[ "$REQUESTED_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+-api\.[0-9.]+$ ]] || { echo 'Invalid existing API release tag'; exit 1; }
+            git show-ref --verify --quiet "refs/tags/$REQUESTED_TAG"
+            [[ "$(git rev-parse HEAD)" == "$(git rev-parse "$REQUESTED_TAG^{commit}")" ]]
+            version="${REQUESTED_TAG#v}"
+          fi
+          python scripts/package.py --platform '${{ matrix.platform }}' --binary 'gridcraft/target/${{ matrix.target }}/release/${{ matrix.executable }}' --version "$version" --output dist
       - uses: actions/upload-artifact@v4
         with:
           name: GridCraft-${{ matrix.platform }}
           path: dist/*
   publish:
-    if: startsWith(github.ref, 'refs/tags/')
+    if: startsWith(github.ref, 'refs/tags/') || inputs.release_tag != ''
     needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.release_tag || github.ref }}
       - uses: actions/download-artifact@v4
         with:
           path: dist
           merge-multiple: true
-      - name: Add source and checksums
+      - name: Add project source and checksums
         shell: bash
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag || github.ref_name }}
         run: |
-          git archive --format=zip --prefix=GridCraft-API-source/ HEAD --output "dist/GridCraft-${GITHUB_REF_NAME#v}-source.zip"
+          set -euo pipefail
+          git archive --format=zip --prefix=GridCraft-API-source/ HEAD --output "dist/GridCraft-${RELEASE_TAG#v}-source.zip"
           (cd dist && sha256sum *.zip > SHA256SUMS.txt && sha256sum -c SHA256SUMS.txt)
-      - name: Publish release without overwriting existing assets
+      - name: Publish GridCraft release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          gh release create "$GITHUB_REF_NAME" --verify-tag --title "GridCraft API Edition · 统一 AI 对话与横向数据分析" --notes-file RELEASE-NOTES.md dist/*.zip dist/*.sha256 dist/SHA256SUMS.txt
+          RELEASE_TAG: ${{ inputs.release_tag || github.ref_name }}
+        run: gh release create "$RELEASE_TAG" --verify-tag --latest --title "GridCraft API Edition · ${RELEASE_TAG#v}" --notes-file RELEASE-NOTES.md dist/*.zip dist/*.sha256 dist/SHA256SUMS.txt

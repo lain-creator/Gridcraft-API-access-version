@@ -682,7 +682,7 @@ mod tests {
         Ok(())
     }
     #[test]
-    fn glossary_is_sent_on_initial_and_repair_requests_and_source_stays_unchanged() -> TestResult {
+    fn built_in_glossary_is_sent_on_initial_and_repair_requests_and_source_stays_unchanged() -> TestResult {
         use std::io::Write;
         let listener = std::net::TcpListener::bind("127.0.0.1:0")?;
         let addr = listener.local_addr()?;
@@ -724,23 +724,25 @@ mod tests {
             }
             Ok(requests)
         });
-        let glossary = Glossary::parse(r#"[{"en":"Lay up setup","zh":"压合结构"},{"en":"Pad","zh":"焊盘"}]"#.as_bytes())?;
+        let glossary = Glossary::builtin()?;
         let mut r = fixture()?;
         r.scope = Scope::Selection { sheet: 0, ranges: vec![gridcraft_engine::core::RangeRef::parse("A1").ok_or("range")?] };
         let source = "请确认压合结构是否OK";
+        let matched = glossary.relevant(source)?.len();
         Arc::make_mut(&mut r.wb).sheet_mut(0).ok_or("sheet")?.set_value(CellRef::new(0, 0), Value::Text(source.into()));
         let original = r.wb.clone();
         let profile = gridcraft_ui_egui::ai::Profile { base_url: format!("http://{addr}"), model: "synthetic".into(), ..Default::default() };
         let result = translate_with_glossary(r, Arc::default(), &AtomicBool::new(false), &profile, &glossary)?;
         assert_eq!(result.changed, 1);
-        assert!(result.details.iter().any(|d| d.reason.contains("PCB 术语命中 1 条")));
+        assert!(result.details.iter().any(|d| d.reason.contains(&format!("PCB 术语命中 {matched} 条"))));
         assert_eq!(original.sheet(0).ok_or("sheet")?.value(CellRef::new(0, 0)).as_text(), Some(source));
         let requests = worker.join().map_err(|_| "mock thread")??;
         assert_eq!(requests.len(), 2);
         for request in &requests {
             let data: Json = serde_json::from_str(request["messages"][1]["content"].as_str().ok_or("message")?)?;
-            assert_eq!(data["items"][0]["pcb_glossary"].as_array().ok_or("terms")?.len(), 1);
-            assert_eq!(data["items"][0]["pcb_glossary"][0]["en"], "Lay up setup");
+            let terms = data["items"][0]["pcb_glossary"].as_array().ok_or("terms")?;
+            assert_eq!(terms.len(), matched);
+            assert!(terms.iter().any(|t| t["en"] == "Lamination structure"));
             assert!(!data.to_string().contains("焊盘"));
         }
         assert!(requests[1]["messages"][0]["content"].as_str().ok_or("system")?.contains("不能译成 press-fit"));

@@ -127,7 +127,7 @@ impl GlossaryInfo {
             "尚未导入 PCB 词库；仍启用 PCB 压合术语与原文忠实性规则。".into()
         } else {
             format!(
-                "已导入 {} 条；{} 条待核对不参与匹配，{} 组多义词按上下文判断。来源：{}",
+                "已启用 {} 条；{} 条待核对不参与匹配，{} 组多义词按上下文判断。来源：{}",
                 self.entries, self.quarantined, self.ambiguous, self.source
             )
         }
