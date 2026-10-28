@@ -26,7 +26,7 @@ class PackageTests(unittest.TestCase):
                 names = zipped.namelist()
                 public = json.loads(zipped.read(next(n for n in names if n.endswith("/pcb-glossary-public.json"))))
                 self.assertEqual(len(public["items"]), 798)
-                self.assertEqual(public, json.loads((root / "gridcraft/assets/pcb-glossary-public.json").read_text()))
+                self.assertEqual(public, json.loads((root / "gridcraft/assets/pcb-glossary-public.json").read_bytes()))
                 self.assertTrue(any(n.endswith("/GridCraft.exe") for n in names))
                 self.assertFalse(any(n.endswith(("/pcb-glossary.json", "/ai-api.json", "/.env")) for n in names))
             self.assertEqual((output / (archive.name + ".sha256")).read_text().split()[0],

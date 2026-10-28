@@ -28,6 +28,7 @@ jobs:
             executable: gridcraft
     runs-on: ${{ matrix.os }}
     env:
+      PYTHONUTF8: '1'
       CRAFT_I18N_DIR: ${{ github.workspace }}/craft-i18n
       CRAFT_I18N_REQUIRED: '1'
       MACOSX_DEPLOYMENT_TARGET: '11.0'
