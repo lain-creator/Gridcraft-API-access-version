@@ -1,0 +1,55 @@
+name: Retire migrated WordCraft download only
+on:
+  push:
+    tags: ['wordcraft-migration-20261028']
+permissions:
+  contents: read
+jobs:
+  retire:
+    if: github.repository == 'lain-creator/Gridcraft-API-access-version' && github.ref_name == 'wordcraft-migration-20261028'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      NEW_REPO: lain-creator/WordCraft-API-Edition
+      NEW_TAG: v0.11.0-api.20261028.1
+      OLD_TAG: v0.11.0-wordcraft.20261027.2
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify replacement packages against locally audited checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s WORDCRAFT-MIGRATION-SHA256SUMS.txt
+          gh release view "$NEW_TAG" --repo "$NEW_REPO" --json tagName,isDraft,isPrerelease,assets > replacement-release.json
+          jq -e --arg tag "$NEW_TAG" '.tagName == $tag and .isDraft == false and .isPrerelease == false and (.assets | length == 6)' replacement-release.json
+          gh release download "$NEW_TAG" --repo "$NEW_REPO" --dir replacement --pattern '*.zip' --pattern SHA256SUMS.txt
+          (cd replacement && sha256sum -c ../WORDCRAFT-MIGRATION-SHA256SUMS.txt && sha256sum -c SHA256SUMS.txt)
+      - name: Remove exactly the user-requested old WordCraft release and attachments
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/releases" > releases-before.json
+          jq '[.[] | select(.tag_name | startswith("v0.12.1-api.")) | {id,tag_name,assets:[.assets[]|{id,name,digest}]}] | sort_by(.tag_name)' releases-before.json > grid-before.json
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$OLD_TAG" > retired-release-backup.json
+          jq -e --arg tag "$OLD_TAG" '.tag_name == $tag and (.assets | length == 6) and all(.assets[]; .name == "SHA256SUMS.txt" or (.name | startswith("WordCraft-0.11.0-wordcraft.20261027.2-")))' retired-release-backup.json
+          # The user requested removal of the old download links. Keep its Git tag/history.
+          gh release delete "$OLD_TAG" --repo "$GITHUB_REPOSITORY" --yes
+          status=$(curl --silent --show-error --output /dev/null --write-out '%{http_code}' "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/$OLD_TAG")
+          test "$status" = 404
+          gh api "repos/$GITHUB_REPOSITORY/releases" > releases-after.json
+          jq '[.[] | select(.tag_name | startswith("v0.12.1-api.")) | {id,tag_name,assets:[.assets[]|{id,name,digest}]}] | sort_by(.tag_name)' releases-after.json > grid-after.json
+          diff -u grid-before.json grid-after.json
+          echo 'Only the old WordCraft Release and its six attachments were removed; GridCraft releases are unchanged.'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: WordCraft-migration-audit
+          path: |
+            replacement-release.json
+            retired-release-backup.json
+            releases-before.json
+            releases-after.json
+            grid-before.json
+            grid-after.json

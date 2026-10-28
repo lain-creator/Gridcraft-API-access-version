@@ -4,7 +4,7 @@
 
 新版 `0.12.1-api.20261028.1` 将问答、数据分析、图表推荐统一到右上角“AI 对话”。AI 根据问题判断任务、表头和行列方向；横向日期/数值不再误判成只有一个数据点。少量数据或无适用图表仍保留分析回答，图表在回答中预览并确认插入。沿用现有 API 设置。详见 [智能图表与数据分析](gridcraft/docs/local-ai-insights.md)。以对应 Release 的构建状态为发布依据。
 
-本仓库保留先前的中文界面、XLS 转换、图片显示与剪贴板图片修复。GridCraft 源码在 `gridcraft/`，本地依赖在 `craft-libs/`。WordCraft 中文修复版在 `wordcraft/`，翻译目录在 `craft-i18n/`，使用独立 Release 和安装包，`0.11.0-wordcraft.20261027.2` 起移除固定网站调用，改由用户自行填写 API 信息。
+本仓库保留先前的中文界面、XLS 转换、图片显示与剪贴板图片修复。GridCraft 源码在 `gridcraft/`，本地依赖在 `craft-libs/`。WordCraft API Edition 已迁移到独立仓库 [WordCraft-API-Edition](https://github.com/lain-creator/WordCraft-API-Edition)，不再在本仓库发布安装包；本仓库中的旧源码和标签仅供历史溯源。
 
 2026-10-27 保真更新：按中文字体设计选择替代并提示；保留单元格分段字体/字号/颜色；自动行高使用真实显示字体测量，自定义行高和原单元格对齐不强制改变。详见 `gridcraft/docs/local-document-fidelity.md`。
 
@@ -14,11 +14,11 @@
 
 ## WordCraft API 版
 
-在 Releases 选择 WordCraft 独立发行版，改进中文字体替代和 DOCX 图片负裁剪读写/边缘拉伸，保留中英翻译及选区取值修复。下载 `WordCraft-…-macos-arm64.zip` 或 `WordCraft-…-win64.zip`。
+请到 [WordCraft 独立下载页](https://github.com/lain-creator/WordCraft-API-Edition/releases/latest) 获取 Mac Apple 芯片或 Windows x64 安装包。新版保留自定义 API 翻译、精确选区和表格取值、中文字体替代、DOCX 图片裁剪和拉伸修复。新下载校验成功后，按用户要求删除本仓库旧 WordCraft Release 及附件；GridCraft 发布不变。
 
 开始功能区点击“API 设置”，选择服务商并填写地址、模型 ID、API Key。支持 GPT / OpenAI、MiniMax、DeepSeek、Kimi、小米 MiMo 及自定义兼容接口；三个翻译按钮共用设置，不再调用固定网站。候选文字按范围发送，生成独立副本；不自动重试，拟跳过项可能复核一次。详见 [WordCraft API 使用说明](wordcraft/docs/local-api-assistant.md)。
 
-构建：设 `CRAFT_I18N_DIR` 为本仓库 `craft-i18n/` 绝对路径、`CRAFT_I18N_REQUIRED=1`，在 `wordcraft/` 运行 `cargo build --locked --release -p wordcraft`。Cargo 获取公开固定版 craft-libs。打包使用 `scripts/package.py --app wordcraft`。
+WordCraft 的源码构建、打包和后续更新请使用独立仓库的说明。本仓库已停用旧 WordCraft 发布工作流，避免再次混发。
 
 ## 使用
 

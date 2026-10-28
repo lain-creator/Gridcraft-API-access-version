@@ -1,5 +1,7 @@
 # WordCraft API Edition · 自定义 API 中英翻译
 
+> 2026-10-28：本说明保留作历史记录。WordCraft 已迁移至独立仓库 [WordCraft-API-Edition](https://github.com/lain-creator/WordCraft-API-Edition)，新下载入口为[独立 Releases](https://github.com/lain-creator/WordCraft-API-Edition/releases/latest)。按用户要求，在新 Mac / Win64 安装包校验后删除本仓库旧 WordCraft Release 和附件，保留源码标签和历史。后续不在 GridCraft 仓库混发 WordCraft。
+
 版本 `0.11.0-wordcraft.20261027.2`，基于上游 v0.11.0 的定制版，非官方发行版。
 
 - 新增“API 设置”：GPT / OpenAI、MiniMax、DeepSeek、Kimi、小米 MiMo、自定义 OpenAI 兼容接口。用户自行填写地址、模型 ID、API Key；支持 Chat Completions / Responses、Bearer / api-key、超时及附加 JSON。
