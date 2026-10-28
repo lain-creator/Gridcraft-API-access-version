@@ -42,6 +42,67 @@ fn profile_preserves_zero_and_missing_and_excludes_unselected_data() -> Result<(
     assert_eq!(prepared.rows, vec![vec![json!("甲"), json!(20.0)], vec![json!("乙"), json!(10.0)]]);
     Ok(())
 }
+
+#[test]
+fn one_sample_can_be_profiled_and_charted_without_inventing_more_data() -> Result<()> {
+    let mut s = fixture()?;
+    s.execute("selection.set", json!({"range":"A2:B2"}))?;
+    let t = capture(&s, false)?;
+    assert_eq!(t.rows.len(), 1);
+    assert_eq!(t.columns.get(1).and_then(|c| c.sum), Some(0.0));
+    let mut p = plan();
+    p.aggregation = Aggregation::None;
+    assert_eq!(prepare(&t, &p)?.rows.len(), 1);
+    p.chart_type = ChartType::Line;
+    assert!(prepare(&t, &p).is_err());
+    p.chart_type = ChartType::Pie;
+    assert!(prepare(&t, &p).is_err());
+    Ok(())
+}
+
+#[test]
+fn horizontal_series_are_not_limited_to_thirty_two_days() -> Result<()> {
+    let mut s = Session::new();
+    s.new_workbook();
+    let d = s.doc_mut()?;
+    let sh = Arc::make_mut(&mut d.wb).sheet_mut(0).ok_or_else(|| err("sheet"))?;
+    for col in 0..40 {
+        sh.set_value(CellRef::new(0, col), Value::Number(f64::from(col + 1)));
+        sh.set_value(CellRef::new(1, col), Value::Number(1.0));
+    }
+    s.execute("selection.set", json!({"range":"A1:AN2"}))?;
+    assert!(capture_layout(&s, false, false).is_err());
+    let t = capture_layout(&s, false, true)?;
+    assert_eq!(t.rows.len(), 40);
+    assert_eq!(t.columns.get(1).and_then(|c| c.sum), Some(40.0));
+    Ok(())
+}
+
+#[test]
+fn transposed_snapshot_roundtrips_and_rejects_stale_or_outside_row_ids() -> Result<()> {
+    let mut s = Session::new();
+    s.new_workbook();
+    s.execute("range.setValues", json!({"range":"D2","values":[["日期","一日","二日","三日"],["数量","1","2","3"]]}))?;
+    s.execute("selection.set", json!({"range":"D2:G3"}))?;
+    let t = capture_layout(&s, true, true)?;
+    let mut p = plan();
+    p.x_column = "R2".into();
+    p.y_columns = vec!["R3".into()];
+    p.aggregation = Aggregation::None;
+    p.sort = Sort::Source;
+    assert_eq!(prepare(&t, &p)?.rows.len(), 3);
+    let params = t.params(&p, true);
+    s.execute("insert.aiChart", params.clone())?;
+    let bytes = gridcraft_xlsx::write_xlsx(&s.doc()?.wb).map_err(|e| err(e.to_string()))?;
+    let (wb, _) = gridcraft_xlsx::read_xlsx(&bytes).map_err(|e| err(e.to_string()))?;
+    let chart = wb.sheet(0).and_then(|sh| sh.charts.first()).ok_or_else(|| err("chart"))?;
+    assert_eq!(gridcraft_chart::resolve(&wb, 0, chart).series.first().map(|s| &s.values), Some(&vec![Some(1.0), Some(2.0), Some(3.0)]));
+    s.execute("edit.undo", json!({}))?;
+    assert!(s.execute("insert.aiChart", params).is_err());
+    p.y_columns = vec!["R999".into()];
+    assert!(prepare(&t, &p).is_err());
+    Ok(())
+}
 #[test]
 fn local_mean_and_numeric_count_are_not_model_values() -> Result<()> {
     let s = fixture()?;

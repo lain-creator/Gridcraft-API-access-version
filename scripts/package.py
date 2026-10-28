@@ -15,7 +15,7 @@ source=root/args.app
 name='GridCraft' if args.app=='gridcraft' else 'WordCraft'
 short_version='0.12.1' if args.app=='gridcraft' else '0.11.0'
 out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
-version=args.version or ('0.12.1-api.20261027.3' if args.app=='gridcraft' else '0.11.0-wordcraft.20261027.2')
+version=args.version or ('0.12.1-api.20261028.1' if args.app=='gridcraft' else '0.11.0-wordcraft.20261027.2')
 if not version or any(c not in '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.-' for c in version):
     raise SystemExit('Invalid package version')
 archive=out/f'{name}-{version}-{args.platform}.zip'

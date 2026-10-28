@@ -144,17 +144,7 @@ pub fn title_bar(app: &mut SheetApp, ui: &mut Ui) {
                     }
                 });
                 if app.services.ai_complete.is_some() {
-                    ui.menu_button("AI 图表 / 分析", |ui| {
-                        if ui.button("AI 智能图表").clicked() {
-                            app.run_or_alert("ui.ai.charts", json!({}));
-                            ui.close();
-                        }
-                        if ui.button("AI 数据分析").clicked() {
-                            app.run_or_alert("ui.ai.analyze", json!({}));
-                            ui.close();
-                        }
-                    });
-                    if ui.button("AI 选区问答").clicked() {
+                    if ui.button("AI 对话").on_hover_text("在同一对话中提问、分析数据和生成图表").clicked() {
                         app.run_or_alert("ui.ai", json!({}));
                     }
                     if ui.button("API 设置").clicked() {

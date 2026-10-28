@@ -52,6 +52,7 @@ pub struct TableSnapshot {
     pub sheet: String,
     pub range: String,
     pub has_headers: bool,
+    pub transposed: bool,
     pub columns: Vec<ColumnStats>,
     pub rows: Vec<Vec<Datum>>,
     pub duplicate_rows: usize,
@@ -63,7 +64,7 @@ impl TableSnapshot {
         format!("{}!{} · {} 行 × {} 列", self.sheet, self.range, self.rows.len(), self.columns.len())
     }
     pub fn params(&self, plan: &ChartPlan, on_source: bool) -> Json {
-        json!({"document":self.document,"revision":self.revision,"sheet":self.sheet_index,"range":self.range,"hasHeaders":self.has_headers,"plan":plan,"onSource":on_source})
+        json!({"document":self.document,"revision":self.revision,"sheet":self.sheet_index,"range":self.range,"hasHeaders":self.has_headers,"transposed":self.transposed,"plan":plan,"onSource":on_source})
     }
 }
 
@@ -80,30 +81,50 @@ fn total(values: &[f64]) -> Option<f64> {
 
 /// Only the selected rectangle is read. Empty cells stay empty; text numbers stay text.
 pub fn capture(s: &Session, has_headers: bool) -> Result<TableSnapshot> {
+    capture_layout(s, has_headers, false)
+}
+/// Transpose the selected values in memory only; original cells and addresses are preserved.
+pub fn capture_layout(s: &Session, has_headers: bool, transposed: bool) -> Result<TableSnapshot> {
     let d = s.doc()?;
     if d.selection.ranges.len() != 1 {
         return Err(err("智能图表和数据分析需要一个连续矩形选区，请连同表头框选。"));
     }
     let range = *d.selection.ranges.first().ok_or_else(|| err("请先框选数据。"))?;
-    capture_range(s, d.sheet_index(), range, has_headers)
+    capture_layout_range(s, d.sheet_index(), range, has_headers, transposed)
 }
+#[cfg(test)]
 fn capture_range(s: &Session, sheet_index: usize, range: RangeRef, has_headers: bool) -> Result<TableSnapshot> {
+    capture_layout_range(s, sheet_index, range, has_headers, false)
+}
+fn capture_layout_range(s: &Session, sheet_index: usize, range: RangeRef, has_headers: bool, transposed: bool) -> Result<TableSnapshot> {
     let d = s.doc()?;
     if !range.start.is_valid()
         || !range.end.is_valid()
         || range.start.row > range.end.row
         || range.start.col > range.end.col
         || range.count() > 10_000
-        || range.end.col.saturating_sub(range.start.col) >= 32
     {
-        return Err(err("请缩小到 32 列、10000 个格子以内的连续选区；最多发送 1000 个非空单元格。"));
+        return Err(err("请缩小到 10000 个格子以内的连续选区；最多发送 1000 个非空单元格。"));
     }
     let sh = d.wb.sheet(sheet_index).ok_or_else(|| err("原工作表不存在。"))?;
     if sh.merges.iter().any(|r| r.intersects(&range)) {
         return Err(err("选区包含合并单元格，无法可靠判断数据行列。请仅选择未合并的数据表。"));
     }
-    let first = range.start.row.saturating_add(u32::from(has_headers));
-    if first > range.end.row {
+    let width = range.end.col.saturating_sub(range.start.col) + 1;
+    let height = range.end.row.saturating_sub(range.start.row) + 1;
+    let (column_count, row_count) = if transposed { (height, width) } else { (width, height) };
+    if column_count > 32 {
+        return Err(err("当前方向的逻辑列/系列超过32个，请调整选区或使用另一方向。"));
+    }
+    let at = |row: u32, col: u32| {
+        if transposed {
+            CellRef::new(range.start.row + col, range.start.col + row)
+        } else {
+            CellRef::new(range.start.row + row, range.start.col + col)
+        }
+    };
+    let first = u32::from(has_headers);
+    if first >= row_count {
         return Err(err("选区只有表头，没有数据行；无表头数据请取消“首行为表头”。"));
     }
     let mut count = 0usize;
@@ -135,28 +156,28 @@ fn capture_range(s: &Session, sheet_index: usize, range: RangeRef, has_headers: 
         Ok(Datum { address: at.a1(), text, kind: kind.into(), number })
     };
     let mut columns = Vec::new();
-    for col in range.start.col..=range.end.col {
-        let at = CellRef::new(range.start.row, col);
-        let column = CellRef::new(0, col).a1().trim_end_matches('1').to_string();
-        let name = if has_headers { datum(at, &mut count, &mut bytes)?.text } else { column.clone() };
+    for col in 0..column_count {
+        let cell = at(0, col);
+        let column = if transposed { format!("R{}", cell.row + 1) } else { CellRef::new(0, cell.col).a1().trim_end_matches('1').to_string() };
+        let name = if has_headers { datum(cell, &mut count, &mut bytes)?.text } else { column.clone() };
         columns.push(ColumnStats { column: column.clone(), name: if name.is_empty() { column } else { name }, ..Default::default() });
     }
     let mut rows = Vec::new();
     let mut unique = BTreeSet::new();
     let mut duplicate_rows = 0;
     let mut hidden_rows = 0;
-    for row in first..=range.end.row {
+    for row in first..row_count {
         let mut cells = Vec::new();
         let mut key = Vec::new();
-        for col in range.start.col..=range.end.col {
-            let cell = datum(CellRef::new(row, col), &mut count, &mut bytes)?;
+        for col in 0..column_count {
+            let cell = datum(at(row, col), &mut count, &mut bytes)?;
             key.push((cell.kind.clone(), cell.text.clone()));
             cells.push(cell);
         }
         if cells.iter().any(|c| c.kind != "empty") && !unique.insert(key) {
             duplicate_rows += 1;
         }
-        if sh.is_row_hidden(row) {
+        if !transposed && sh.is_row_hidden(range.start.row + row) {
             hidden_rows += 1;
         }
         rows.push(cells);
@@ -165,6 +186,10 @@ fn capture_range(s: &Session, sheet_index: usize, range: RangeRef, has_headers: 
         return Err(err("选区没有数据。"));
     }
     let mut notes = vec!["统计由本机按列计算；日期不作金额求和，文本数字不自动转换。空白不当作 0；合计行未自动排除。".into()];
+    if transposed {
+        hidden_rows = (range.start.row..=range.end.row).filter(|&r| sh.is_row_hidden(r)).count();
+        notes.push("横向数据按列展开为记录；R加行号代表原表的数据行。仅在内存中转换方向，未修改原表。".into());
+    }
     if hidden_rows > 0 {
         notes.push(format!("包含 {hidden_rows} 个隐藏/筛选行，统计和图表都包含这些行。"));
     }
@@ -207,6 +232,7 @@ fn capture_range(s: &Session, sheet_index: usize, range: RangeRef, has_headers: 
         sheet: sh.name.to_string(),
         range: range.a1(),
         has_headers,
+        transposed,
         columns,
         rows,
         duplicate_rows,
@@ -420,8 +446,9 @@ pub fn prepare(table: &TableSnapshot, plan: &ChartPlan) -> Result<PreparedChart>
         keys = group_keys;
         notes.push(format!("分组方式：{}；计数仅统计有效数值。", plan.aggregation.label()));
     }
-    if rows.len() < 2 || rows.len() > 500 {
-        return Err(err("图表需要 2～500 个数据点，请调整选区或分组方式。"));
+    let minimum = if matches!(plan.chart_type, ChartType::Bar | ChartType::Column) { 1 } else { 2 };
+    if rows.len() < minimum || rows.len() > 500 {
+        return Err(err(format!("此类图表需要 {minimum}～500 个数据点；仍可在对话中分析现有数据。")));
     }
     if rows.iter().all(|r| r.iter().skip(1).all(Json::is_null)) {
         return Err(err("数值列没有有效数据。"));
@@ -482,7 +509,13 @@ fn validate_current(s: &Session, p: &Json) -> Result<TableSnapshot> {
         return Err(err("工作簿或数据已经变化，请返回原工作表并重新分析/生成图表。"));
     }
     let range = p.get("range").and_then(Json::as_str).and_then(RangeRef::parse).ok_or_else(|| err("缺少原选区。"))?;
-    capture_range(s, d.sheet_index(), range, p.get("hasHeaders").and_then(Json::as_bool).unwrap_or(true))
+    capture_layout_range(
+        s,
+        d.sheet_index(),
+        range,
+        p.get("hasHeaders").and_then(Json::as_bool).unwrap_or(true),
+        p.get("transposed").and_then(Json::as_bool).unwrap_or(false),
+    )
 }
 fn plan_param(p: &Json) -> Result<ChartPlan> {
     serde_json::from_value(p.get("plan").cloned().ok_or_else(|| err("缺少图表方案。"))?).map_err(|e| err(format!("无效图表方案：{e}")))
@@ -627,13 +660,13 @@ fn insert(s: &mut Session, p: &Json) -> Result<Json> {
 }
 pub fn specs() -> Vec<CommandSpec> {
     vec![
-        cmd!(query "data.aiProfile","AI Data Profile",[],None,"{hasHeaders?: true} → bounded typed selection and deterministic column statistics",has_doc,|s,p|serde_json::to_value(capture(s,p.get("hasHeaders").and_then(Json::as_bool).unwrap_or(true))?).map_err(|e|err(e.to_string()))),
+        cmd!(query "data.aiProfile","AI Data Profile",[],None,"{hasHeaders?: true,transposed?:false} → bounded typed selection and deterministic column statistics",has_doc,|s,p|serde_json::to_value(capture_layout(s,p.get("hasHeaders").and_then(Json::as_bool).unwrap_or(true),p.get("transposed").and_then(Json::as_bool).unwrap_or(false))?).map_err(|e|err(e.to_string()))),
         cmd!(
             "insert.aiChart",
             "Insert AI Chart",
             [],
             None,
-            "{document, revision, sheet, range, hasHeaders?, plan:{title,chartType,xColumn,yColumns,aggregation?,sort?,reason,xTitle?,yTitle?},onSource?:true} — validated plan, literal helper data, one undo step",
+            "{document, revision, sheet, range, hasHeaders?, transposed?, plan:{title,chartType,xColumn,yColumns,aggregation?,sort?,reason,xTitle?,yTitle?},onSource?:true} — validated plan, literal helper data, one undo step",
             has_doc,
             insert
         ),

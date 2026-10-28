@@ -34,7 +34,7 @@ jobs:
         env:
           GRIDCRAFT_REQUIRE_WINRES: '1'
       - name: Package
-        run: python scripts/package.py --platform ${{ matrix.platform }} --binary gridcraft/target/${{ matrix.target }}/release/${{ matrix.executable }} --output dist
+        run: python scripts/package.py --platform ${{ matrix.platform }} --binary gridcraft/target/${{ matrix.target }}/release/${{ matrix.executable }} --output dist --patch-label "20261028.1 Unified AI conversation and horizontal data analysis"
       - uses: actions/upload-artifact@v4
         with:
           name: GridCraft-${{ matrix.platform }}
@@ -60,4 +60,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" --verify-tag --title "GridCraft API Edition · AI 智能图表与数据分析" --notes-file RELEASE-NOTES.md dist/*.zip dist/*.sha256 dist/SHA256SUMS.txt
+          gh release create "$GITHUB_REF_NAME" --verify-tag --title "GridCraft API Edition · 统一 AI 对话与横向数据分析" --notes-file RELEASE-NOTES.md dist/*.zip dist/*.sha256 dist/SHA256SUMS.txt

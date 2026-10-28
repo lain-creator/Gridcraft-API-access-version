@@ -8,6 +8,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let minimized = std::env::args().any(|s| s == "--minimized");
     let charts = std::env::args().any(|s| s == "--charts");
     let analysis = std::env::args().any(|s| s == "--analysis");
+    let horizontal = std::env::args().any(|s| s == "--horizontal");
     let _ = gridcraft_ui_egui::fonts::catalog();
     let mut session = gridcraft_engine::Session::new();
     session.new_workbook();
@@ -28,12 +29,22 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         session.run("cell.set", json!({"cell":cell,"input":input}))?;
     }
     session.run("selection.set", json!({"range":"A1:D3"}))?;
+    if horizontal {
+        session = gridcraft_engine::Session::new();
+        session.new_workbook();
+        session.run("range.setValues",json!({"range":"D2","values":[["日期","46300","46301","46302","46303","46304","46305","46306","46307","46308","46309","46310"],["数量","1","1","4","1","3","1","1","1","2","1","1"]]}))?;
+        session.run("home.numberFormat", json!({"range":"E2:O2","code":"d-mmm"}))?;
+        session.run("selection.set", json!({"range":"D2:O3"}))?;
+    }
     let mut app = SheetApp::new(
         session,
         Services {
             ai_complete: Some(std::sync::Arc::new(move |_, _, _| {
+                if horizontal {
+                    return Ok(json!({"answer":"已识别为横向11天记录，并非只有一个数据点。\n本机统计：合计17，平均约1.55，最大4、最小1。可用折线图比较每日变化；仅11天不能预测长期趋势。\n这是合成数据演示，图表确认后才插入。","hasHeaders":true,"transposed":true,"charts":[{"title":"每日数量变化","chartType":"line","xColumn":"R2","yColumns":["R3"],"reason":"日期在第2行、数量在第3行，按列展开11个数据点，保留日期顺序。","xTitle":"日期","yTitle":"数量"}]}).to_string());
+                }
                 if charts {
-                    return Ok(json!({"charts":[{"title":"产品金额对比","chartType":"bar","xColumn":"A","yColumns":["D"],"aggregation":"none","sort":"valueDesc","reason":"比较两个项目的金额，横向条形图方便阅读产品名称；按金额降序排列。","xTitle":"项目","yTitle":"金额"},{"title":"产品金额占比","chartType":"doughnut","xColumn":"A","yColumns":["D"],"aggregation":"none","sort":"source","reason":"两项均为正数，可用环形图查看各项目贡献。","xTitle":"项目","yTitle":"金额"}]}).to_string());
+                    return Ok(json!({"answer":"两项金额合计5,280。条形图适合比较项目，环形图可展示贡献；两条记录不能推断趋势。","hasHeaders":true,"transposed":false,"charts":[{"title":"产品金额对比","chartType":"bar","xColumn":"A","yColumns":["D"],"aggregation":"none","sort":"valueDesc","reason":"比较两个项目的金额，横向条形图方便阅读产品名称；按金额降序排列。","xTitle":"项目","yTitle":"金额"},{"title":"产品金额占比","chartType":"doughnut","xColumn":"A","yColumns":["D"],"aggregation":"none","sort":"source","reason":"两项均为正数，可用环形图查看各项目贡献。","xTitle":"项目","yTitle":"金额"}]}).to_string());
                 }
                 Ok("框选区域的计算如下：\nD2 = 1000 × 4.78 = 4,780\nD3 = 1 × 500 = 500\n两项金额合计为 5,280。\n以上为合成数据的界面演示回答。"
                     .into())
@@ -43,7 +54,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         },
     );
     app.ui.language = gridcraft_ui_egui::i18n::Language::Zh;
-    if charts {
+    if horizontal {
+        app.ask_ai("分析选中的数据，并生成合适的图表。")?;
+    } else if charts {
         app.run("ui.ai.charts.generate", json!({"goal":"比较各产品金额，并推荐适合的图表"}))?;
     } else if analysis {
         app.run("ui.ai.analyze.run", json!({"goal":"核对金额，比较两个项目的贡献"}))?;
