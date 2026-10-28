@@ -20,6 +20,7 @@ mod graphics;
 mod logging;
 #[cfg(target_os = "macos")]
 mod native_menu;
+mod pcb_glossary;
 mod print;
 #[cfg(any(target_os = "macos", target_os = "windows"))]
 mod xls_compat;
@@ -168,6 +169,14 @@ fn services() -> Services {
         translate_workbook: Some(std::sync::Arc::new(ai_translation::translate)),
         ai_complete: Some(std::sync::Arc::new(ai_api::complete)),
         ai_save_settings: Some(Box::new(ai_api::save_settings)),
+        ai_glossary: Some(Box::new(pcb_glossary::manage)),
+        pick_glossary: Some(Box::new(|| {
+            rfd::FileDialog::new()
+                .set_title("导入 PCB 术语库 JSON")
+                .add_filter("术语库 JSON", &["json"])
+                .pick_file()
+                .map(|p| p.to_string_lossy().into_owned())
+        })),
         copy_html: Some(Box::new(move |html, text| {
             let mut clipboard = clipboard.borrow_mut();
             if clipboard.is_none() {

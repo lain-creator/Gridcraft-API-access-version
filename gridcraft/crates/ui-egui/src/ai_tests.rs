@@ -3,6 +3,48 @@ use crate::Services;
 use egui_kittest::kittest::Queryable as _;
 use std::sync::Mutex;
 
+#[test]
+fn glossary_command_is_local_and_never_opens_a_picker_programmatically() -> Result<(), String> {
+    let mut app = fixture()?;
+    let paths = Arc::new(Mutex::new(Vec::new()));
+    let seen = paths.clone();
+    app.services.ai_glossary = Some(Box::new(move |path| {
+        seen.lock().map_err(|e| e.to_string())?.push(path.map(str::to_string));
+        Ok(GlossaryInfo { entries: 8, quarantined: 1, ambiguous: 1, source: "synthetic.json".into() })
+    }));
+    app.services.pick_glossary = Some(Box::new(|| panic!("programmatic calls must not open dialogs")));
+    app.services.ai_complete = Some(Arc::new(|_, _, _| panic!("glossary import must not call an API")));
+    let count = app.session.documents().len();
+    assert_eq!(app.run("ui.ai.glossary", json!({}))?["entries"], 8);
+    app.run("ui.ai.glossary", json!({"path":"/synthetic/pcb.json"}))?;
+    assert!(app.run("ui.ai.glossary", json!({"path":7})).is_err());
+    assert!(app.run("ui.ai.glossary", json!({"path":""})).is_err());
+    assert_eq!(*paths.lock().map_err(|e| e.to_string())?, vec![None, Some("/synthetic/pcb.json".into())]);
+    assert_eq!(app.session.documents().len(), count);
+    Ok(())
+}
+
+#[test]
+fn glossary_settings_layout_has_visible_import_and_refresh() -> Result<(), String> {
+    let mut app = fixture()?;
+    app.services.ai_glossary = Some(Box::new(|_| Ok(GlossaryInfo { entries: 733, quarantined: 1, ambiguous: 40, source: "PCBtool.json".into() })));
+    app.run("ui.ai.settings", json!({}))?;
+    let mut h = egui_kittest::Harness::builder().with_size(egui::vec2(1440.0, 900.0)).build_ui_state(
+        |ui, app: &mut SheetApp| {
+            let ctx = ui.ctx().clone();
+            app.logic(&ctx);
+            app.ui(ui);
+        },
+        app,
+    );
+    h.run_steps(5);
+    h.get_by_label("刷新词库状态").click();
+    h.run_steps(3);
+    assert!(h.state().ai.glossary_status.contains("733"));
+    assert!(h.query_by_label("导入词库 JSON…").is_some());
+    Ok(())
+}
+
 fn fixture() -> Result<SheetApp, String> {
     let mut session = Session::new();
     session.new_workbook();

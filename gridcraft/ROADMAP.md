@@ -1,5 +1,7 @@
 # GridCraft roadmap
 
+Local API edition update (2026-10-28, PCB glossary): user-imported local terminology, bounded longest-phrase matching, contextual ambiguity handling, matched-term API prompts, and regression guards for lamination/press-fit and unsupported attachment claims. No bundled private glossary or new website dependency; see [local-api-assistant.md](docs/local-api-assistant.md). Upstream parity estimates unchanged.
+
 Local API edition update (2026-10-27, 0.12.1-api.20261027.3): bounded typed selection profiling, deterministic statistics, AI chart recommendations/preview/explicit native insertion with undo, and grounded analysis. See [local-ai-insights.md](docs/local-ai-insights.md). This does not change the upstream parity estimates below.
 
 Local API edition update (2026-10-28, 0.12.1-api.20261028.1): one conversation for questions, analysis and charts; model-selected bounded row/column and header interpretations with immutable local statistics, horizontal date/value series, and useful small-sample responses even without charts. All chart writes remain locally validated and explicitly confirmed. Upstream parity estimates unchanged.

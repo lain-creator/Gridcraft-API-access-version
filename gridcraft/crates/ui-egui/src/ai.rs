@@ -113,6 +113,26 @@ pub struct Message {
 }
 pub type Completion = Arc<dyn Fn(Profile, Vec<Message>, &AtomicBool) -> Result<String, String> + Send + Sync>;
 pub type SaveSettings = Box<dyn Fn(&Settings) -> Result<(), String>>;
+pub type ManageGlossary = Box<dyn Fn(Option<&str>) -> Result<GlossaryInfo, String>>;
+#[derive(Clone, Default, Debug, Serialize)]
+pub struct GlossaryInfo {
+    pub entries: usize,
+    pub quarantined: usize,
+    pub ambiguous: usize,
+    pub source: String,
+}
+impl GlossaryInfo {
+    fn label(&self) -> String {
+        if self.entries == 0 {
+            "尚未导入 PCB 词库；仍启用 PCB 压合术语与原文忠实性规则。".into()
+        } else {
+            format!(
+                "已导入 {} 条；{} 条待核对不参与匹配，{} 组多义词按上下文判断。来源：{}",
+                self.entries, self.quarantined, self.ambiguous, self.source
+            )
+        }
+    }
+}
 
 #[derive(Clone, Debug, Serialize)]
 pub struct SelectionCell {
@@ -216,6 +236,7 @@ pub struct State {
     expanded: bool,
     input: String,
     feedback: String,
+    glossary_status: String,
     turns: Vec<Turn>,
     scroll_to_turn: Option<usize>,
     document: Option<u64>,
@@ -235,6 +256,7 @@ impl Default for State {
             expanded: false,
             input: String::new(),
             feedback: String::new(),
+            glossary_status: "点击“刷新词库状态”查看本机词库。".into(),
             turns: Vec::new(),
             scroll_to_turn: None,
             document: None,
@@ -289,9 +311,11 @@ impl SheetApp {
                 Ok(json!({"visible":true}))
             }
             "ui.ai.settings" => {
+                let _ = self.manage_ai_glossary(&json!({}));
                 self.ai.settings_open = true;
                 Ok(json!({"settingsOpen":true}))
             }
+            "ui.ai.glossary" => self.manage_ai_glossary(params),
             "ui.ai.minimize" => {
                 self.ai.minimized = params.get("on").and_then(Json::as_bool).unwrap_or(true);
                 Ok(json!({"minimized":self.ai.minimized}))
@@ -348,6 +372,20 @@ impl SheetApp {
             ),
             _ => return None,
         })
+    }
+    fn manage_ai_glossary(&mut self, params: &Json) -> Result<Json, String> {
+        let result = (|| {
+            let path = match params.get("path") {
+                Some(value) => Some(value.as_str().filter(|s| !s.trim().is_empty() && s.len() <= 4096).ok_or("请提供有效的 JSON 词库路径。")?),
+                None => None,
+            };
+            self.services.ai_glossary.as_ref().ok_or("当前环境不支持本机术语库导入。")?(path)
+        })();
+        self.ai.glossary_status = match &result {
+            Ok(info) => info.label(),
+            Err(error) => error.clone(),
+        };
+        result.and_then(|info| serde_json::to_value(info).map_err(|e| e.to_string()))
     }
     pub fn ask_ai(&mut self, question: &str) -> Result<Json, String> {
         self.ask_ai_with_headers(question, None)
@@ -605,7 +643,8 @@ pub fn settings_window(app: &mut SheetApp, ctx: &egui::Context) {
     }
     let mut state = std::mem::take(&mut app.ai);
     let mut open = true;
-    egui::Window::new("第三方 API 设置").open(&mut open).default_width(560.0).resizable(true).show(ctx, |ui| {
+    let mut glossary_action = None;
+    egui::Window::new("第三方 API 设置").open(&mut open).default_width(560.0).resizable(true).vscroll(true).show(ctx, |ui| {
         let name = state.settings.selected().map(|p| p.name.clone()).unwrap_or_else(|_| "选择服务商".into());
         egui::ComboBox::from_label("服务商").selected_text(name).show_ui(ui, |ui| {
             for (index, p) in state.settings.profiles.iter().enumerate() {
@@ -652,6 +691,20 @@ pub fn settings_window(app: &mut SheetApp, ctx: &egui::Context) {
             ui.add(egui::TextEdit::multiline(&mut p.extra_body).desired_rows(3).desired_width(f32::INFINITY));
         });
         ui.small("翻译按钮和选区问答共用当前服务商。MiniMax 国内账号可将地址改为 https://api.minimaxi.com/v1。预设模型不代表当前账户已获授权。");
+        ui.separator();
+        ui.label("PCB 专业术语库（本机）");
+        ui.label(&state.glossary_status);
+        ui.small("翻译优先参考命中词条；多义词按上下文判断。仅将命中词条随选区发给当前 API，不连接原词库网站。导入不改变表格或 API 密钥。");
+        ui.horizontal(|ui| {
+            if ui.button("导入词库 JSON…").clicked()
+                && let Some(path) = app.services.pick_glossary.as_ref().and_then(|pick| pick())
+            {
+                glossary_action = Some(json!({"path":path}));
+            }
+            if ui.button("刷新词库状态").clicked() {
+                glossary_action = Some(json!({}));
+            }
+        });
         ui.horizontal(|ui| {
             if ui.button("保存设置").clicked() {
                 state.feedback = match app.services.ai_save_settings.as_ref() {
@@ -702,4 +755,7 @@ pub fn settings_window(app: &mut SheetApp, ctx: &egui::Context) {
     });
     state.settings_open = open;
     app.ai = state;
+    if let Some(params) = glossary_action {
+        app.run_or_alert("ui.ai.glossary", params);
+    }
 }

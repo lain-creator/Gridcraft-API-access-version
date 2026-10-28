@@ -184,6 +184,8 @@ pub struct Notice {
 pub struct Services {
     pub ai_complete: Option<ai::Completion>,
     pub ai_save_settings: Option<ai::SaveSettings>,
+    pub ai_glossary: Option<ai::ManageGlossary>,
+    pub pick_glossary: Option<Box<dyn Fn() -> Option<String>>>,
     /// Optional native, out-of-process XLS converter. Invoked on a worker, never the UI thread.
     pub convert_xls: Option<xls_import::Converter>,
     pub translate_workbook: Option<translation::Translator>,

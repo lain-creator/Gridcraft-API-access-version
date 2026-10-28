@@ -11,6 +11,7 @@ description = "GridCraft desktop app"
 workspace = true
 
 [dependencies]
+serde.workspace = true
 gridcraft-metafile = { workspace = true }
 regex = { workspace = true }
 gridcraft-engine = { workspace = true }
