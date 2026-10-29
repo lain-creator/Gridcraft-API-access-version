@@ -509,11 +509,12 @@ pub fn show(app: &mut SheetApp, ui: &mut egui::Ui) {
             state.preview = capture_selection(&app.session);
             state.cache_key = key;
         }
-        let max = (ui.available_width() * if state.expanded { 0.72 } else { 0.55 }).max(280.0);
+        let available = ui.available_width().max(1.0);
+        let max = (available * if state.expanded { 0.80 } else { 0.65 }).max(360.0).min((available - 100.0).max(1.0));
         let panel = if state.expanded {
-            egui::Panel::right("ai_expanded").exact_size(max)
+            egui::Panel::right("ai_expanded_v2").exact_size(max)
         } else {
-            egui::Panel::right("ai_assistant").default_size(380.0).min_size(280.0).max_size(max).resizable(true)
+            egui::Panel::right("ai_assistant_v2").default_size(560.0_f32.min(max)).min_size(360.0_f32.min(max)).max_size(max).resizable(true)
         };
         panel.frame(egui::Frame::NONE.fill(t.ribbon).inner_margin(10)).show(ui, |ui| {
             ui.horizontal(|ui| {
@@ -644,115 +645,121 @@ pub fn settings_window(app: &mut SheetApp, ctx: &egui::Context) {
     let mut state = std::mem::take(&mut app.ai);
     let mut open = true;
     let mut glossary_action = None;
-    egui::Window::new("第三方 API 设置").open(&mut open).default_width(560.0).resizable(true).vscroll(true).show(ctx, |ui| {
-        let name = state.settings.selected().map(|p| p.name.clone()).unwrap_or_else(|_| "选择服务商".into());
-        egui::ComboBox::from_label("服务商").selected_text(name).show_ui(ui, |ui| {
-            for (index, p) in state.settings.profiles.iter().enumerate() {
-                ui.selectable_value(&mut state.settings.active, index, &p.name);
-            }
-        });
-        let Some(p) = state.settings.profiles.get_mut(state.settings.active) else { return };
-        ui.label("API 地址（Base URL 或完整端点）");
-        ui.text_edit_singleline(&mut p.base_url);
-        ui.label("模型 ID（按服务商控制台填写，可自行更换）");
-        ui.text_edit_singleline(&mut p.model);
-        ui.label("API Key");
-        ui.add(egui::TextEdit::singleline(&mut p.api_key).password(true).hint_text("仅发送到上面的 API 地址"));
-        ui.checkbox(&mut p.remember_key, "使用系统钥匙串 / Windows 凭据管理器记住密钥");
-        ui.small("未勾选时，密钥仅用于本次运行。配置文件不保存明文密钥。");
-        ui.horizontal(|ui| {
-            ui.label("接口协议");
-            egui::ComboBox::from_id_salt("api_protocol")
-                .selected_text(match p.protocol {
-                    Protocol::ChatCompletions => "Chat Completions",
-                    Protocol::Responses => "OpenAI Responses",
-                })
-                .show_ui(ui, |ui| {
-                    ui.selectable_value(&mut p.protocol, Protocol::ChatCompletions, "Chat Completions");
-                    ui.selectable_value(&mut p.protocol, Protocol::Responses, "OpenAI Responses");
-                });
-        });
-        egui::CollapsingHeader::new("高级设置").show(ui, |ui| {
-            egui::ComboBox::from_label("密钥发送方式")
-                .selected_text(match p.authentication {
-                    Authentication::Bearer => "Authorization: Bearer",
-                    Authentication::ApiKey => "api-key",
-                })
-                .show_ui(ui, |ui| {
-                    ui.selectable_value(&mut p.authentication, Authentication::Bearer, "Authorization: Bearer");
-                    ui.selectable_value(&mut p.authentication, Authentication::ApiKey, "api-key");
-                });
-            ui.horizontal(|ui| {
-                ui.label("超时（秒）");
-                ui.add(egui::DragValue::new(&mut p.timeout_seconds).range(10..=600));
+    egui::Window::new("第三方 API 设置")
+        .id(egui::Id::new("api_settings_v2"))
+        .open(&mut open)
+        .default_size(egui::vec2(800.0, 680.0).min(ctx.content_rect().size() - egui::vec2(40.0, 70.0)))
+        .constrain_to(ctx.content_rect())
+        .resizable(true)
+        .vscroll(true)
+        .show(ctx, |ui| {
+            let name = state.settings.selected().map(|p| p.name.clone()).unwrap_or_else(|_| "选择服务商".into());
+            egui::ComboBox::from_label("服务商").selected_text(name).show_ui(ui, |ui| {
+                for (index, p) in state.settings.profiles.iter().enumerate() {
+                    ui.selectable_value(&mut state.settings.active, index, &p.name);
+                }
             });
-            ui.checkbox(&mut p.allow_http, "允许此接口使用未加密的 HTTP");
-            ui.label("附加请求参数（JSON 对象，如 temperature、thinking）");
-            ui.add(egui::TextEdit::multiline(&mut p.extra_body).desired_rows(3).desired_width(f32::INFINITY));
-        });
-        ui.small("翻译按钮和选区问答共用当前服务商。MiniMax 国内账号可将地址改为 https://api.minimaxi.com/v1。预设模型不代表当前账户已获授权。");
-        ui.separator();
-        ui.label("PCB 专业术语库（本机）");
-        ui.label(&state.glossary_status);
-        ui.small("翻译优先参考命中词条；多义词按上下文判断。仅将命中词条随选区发给当前 API，不连接原词库网站。导入不改变表格或 API 密钥。");
-        ui.horizontal(|ui| {
-            if ui.button("导入词库 JSON…").clicked()
-                && let Some(path) = app.services.pick_glossary.as_ref().and_then(|pick| pick())
-            {
-                glossary_action = Some(json!({"path":path}));
-            }
-            if ui.button("刷新词库状态").clicked() {
-                glossary_action = Some(json!({}));
-            }
-        });
-        ui.horizontal(|ui| {
-            if ui.button("保存设置").clicked() {
-                state.feedback = match app.services.ai_save_settings.as_ref() {
-                    Some(save) => match save(&state.settings) {
-                        Ok(()) => "已保存设置；密钥按所选方式保管。".into(),
-                        Err(e) => e,
-                    },
-                    None => "当前环境不保存设置；仅用于本次运行。".into(),
-                };
-            }
-            if ui.button("测试连接").clicked() {
-                // A harmless explicit prompt; testing never sends workbook data.
-                if let Some(service) = app.services.ai_complete.clone()
-                    && state.job.is_none()
+            let Some(p) = state.settings.profiles.get_mut(state.settings.active) else { return };
+            ui.label("API 地址（Base URL 或完整端点）");
+            ui.text_edit_singleline(&mut p.base_url);
+            ui.label("模型 ID（按服务商控制台填写，可自行更换）");
+            ui.text_edit_singleline(&mut p.model);
+            ui.label("API Key");
+            ui.add(egui::TextEdit::singleline(&mut p.api_key).password(true).hint_text("仅发送到上面的 API 地址"));
+            ui.checkbox(&mut p.remember_key, "使用系统钥匙串 / Windows 凭据管理器记住密钥");
+            ui.small("未勾选时，密钥仅用于本次运行。配置文件不保存明文密钥。");
+            ui.horizontal(|ui| {
+                ui.label("接口协议");
+                egui::ComboBox::from_id_salt("api_protocol")
+                    .selected_text(match p.protocol {
+                        Protocol::ChatCompletions => "Chat Completions",
+                        Protocol::Responses => "OpenAI Responses",
+                    })
+                    .show_ui(ui, |ui| {
+                        ui.selectable_value(&mut p.protocol, Protocol::ChatCompletions, "Chat Completions");
+                        ui.selectable_value(&mut p.protocol, Protocol::Responses, "OpenAI Responses");
+                    });
+            });
+            egui::CollapsingHeader::new("高级设置").show(ui, |ui| {
+                egui::ComboBox::from_label("密钥发送方式")
+                    .selected_text(match p.authentication {
+                        Authentication::Bearer => "Authorization: Bearer",
+                        Authentication::ApiKey => "api-key",
+                    })
+                    .show_ui(ui, |ui| {
+                        ui.selectable_value(&mut p.authentication, Authentication::Bearer, "Authorization: Bearer");
+                        ui.selectable_value(&mut p.authentication, Authentication::ApiKey, "api-key");
+                    });
+                ui.horizontal(|ui| {
+                    ui.label("超时（秒）");
+                    ui.add(egui::DragValue::new(&mut p.timeout_seconds).range(10..=600));
+                });
+                ui.checkbox(&mut p.allow_http, "允许此接口使用未加密的 HTTP");
+                ui.label("附加请求参数（JSON 对象，如 temperature、thinking）");
+                ui.add(egui::TextEdit::multiline(&mut p.extra_body).desired_rows(3).desired_width(f32::INFINITY));
+            });
+            ui.small("翻译按钮和选区问答共用当前服务商。MiniMax 国内账号可将地址改为 https://api.minimaxi.com/v1。预设模型不代表当前账户已获授权。");
+            ui.separator();
+            ui.label("PCB 专业术语库（本机）");
+            ui.label(&state.glossary_status);
+            ui.small("翻译优先参考命中词条；多义词按上下文判断。仅将命中词条随选区发给当前 API，不连接原词库网站。导入不改变表格或 API 密钥。");
+            ui.horizontal(|ui| {
+                if ui.button("导入词库 JSON…").clicked()
+                    && let Some(path) = app.services.pick_glossary.as_ref().and_then(|pick| pick())
                 {
-                    let profile = state.settings.selected().cloned();
-                    match profile {
-                        Ok(profile) => {
-                            let cancel = Arc::new(AtomicBool::new(false));
-                            let flag = cancel.clone();
-                            match std::thread::Builder::new()
-                                .name("api-connection-test".into())
-                                .spawn(move || service(profile, vec![Message { role: "user".into(), content: "请只回复：连接成功".into() }], &flag))
-                            {
-                                Ok(worker) => {
-                                    state.turns.push(Turn {
-                                        question: "测试 API 连接".into(),
-                                        label: "未发送表格内容".into(),
-                                        user_payload: String::new(),
-                                        answer: None,
-                                        model_answer: None,
-                                        error: None,
-                                    });
-                                    state.job = Some(Job { cancel, worker: Some(worker), purpose: Purpose::Chat });
-                                    state.visible = true;
+                    glossary_action = Some(json!({"path":path}));
+                }
+                if ui.button("刷新词库状态").clicked() {
+                    glossary_action = Some(json!({}));
+                }
+            });
+            ui.horizontal(|ui| {
+                if ui.button("保存设置").clicked() {
+                    state.feedback = match app.services.ai_save_settings.as_ref() {
+                        Some(save) => match save(&state.settings) {
+                            Ok(()) => "已保存设置；密钥按所选方式保管。".into(),
+                            Err(e) => e,
+                        },
+                        None => "当前环境不保存设置；仅用于本次运行。".into(),
+                    };
+                }
+                if ui.button("测试连接").clicked() {
+                    // A harmless explicit prompt; testing never sends workbook data.
+                    if let Some(service) = app.services.ai_complete.clone()
+                        && state.job.is_none()
+                    {
+                        let profile = state.settings.selected().cloned();
+                        match profile {
+                            Ok(profile) => {
+                                let cancel = Arc::new(AtomicBool::new(false));
+                                let flag = cancel.clone();
+                                match std::thread::Builder::new().name("api-connection-test".into()).spawn(move || {
+                                    service(profile, vec![Message { role: "user".into(), content: "请只回复：连接成功".into() }], &flag)
+                                }) {
+                                    Ok(worker) => {
+                                        state.turns.push(Turn {
+                                            question: "测试 API 连接".into(),
+                                            label: "未发送表格内容".into(),
+                                            user_payload: String::new(),
+                                            answer: None,
+                                            model_answer: None,
+                                            error: None,
+                                        });
+                                        state.job = Some(Job { cancel, worker: Some(worker), purpose: Purpose::Chat });
+                                        state.visible = true;
+                                    }
+                                    Err(e) => state.feedback = e.to_string(),
                                 }
-                                Err(e) => state.feedback = e.to_string(),
                             }
+                            Err(e) => state.feedback = e,
                         }
-                        Err(e) => state.feedback = e,
                     }
                 }
+            });
+            if !state.feedback.is_empty() {
+                ui.label(&state.feedback);
             }
         });
-        if !state.feedback.is_empty() {
-            ui.label(&state.feedback);
-        }
-    });
     state.settings_open = open;
     app.ai = state;
     if let Some(params) = glossary_action {

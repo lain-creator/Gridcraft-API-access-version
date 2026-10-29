@@ -56,7 +56,7 @@ jobs:
           REQUESTED_TAG: ${{ inputs.release_tag }}
         run: |
           set -euo pipefail
-          version=0.12.1-api.20261029.1
+          version=0.12.1-api.20261029.2
           if [[ "$GITHUB_REF" == refs/tags/* ]]; then version="${GITHUB_REF_NAME#v}"; fi
           if [[ -n "$REQUESTED_TAG" ]]; then
             [[ "$REQUESTED_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+-api\.[0-9.]+$ ]] || { echo 'Invalid existing API release tag'; exit 1; }

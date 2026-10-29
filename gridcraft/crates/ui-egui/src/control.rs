@@ -241,18 +241,19 @@ pub fn handle(app: &mut SheetApp, ctx: &egui::Context, method: &str, p: &Json) -
                     "{}; explicit UI action: sends eligible Chinese from the current selection; skips bilingual cells",
                 ),
                 ("ui.translateWorkbook", "翻译整个工作簿", "{}; explicit UI action: sends eligible Chinese from all sheets; skips bilingual cells"),
-                ("ui.translateChinese", "翻译成中文", "{}; sends eligible text from current selection; skips existing Chinese and bilingual cells"),
+                ("ui.translateEnglish", "中译英", "{scope?:selection|workbook}; default selection; explicit send to configured API"),
+                ("ui.translateChinese", "英译中", "{scope?:selection|workbook}; default selection; explicit send to configured API"),
                 (
                     "file.translateEnglish",
                     "Translate workbook to English",
-                    "{allowHttpUpload:true,scope:selection|workbook}; sends only eligible Chinese texts; preserves bilingual cells; opens a new unsaved workbook",
+                    "{allowApiUpload:true,scope:selection|workbook}; sends only eligible Chinese texts; preserves bilingual cells; opens a new unsaved workbook",
                 ),
                 ("file.translateEnglish.status", "Translation status", "{} → {state,pending,message?,changedCells?,skippedBilingual?,scope?}"),
                 ("file.translateEnglish.cancel", "Cancel local translation wait", "{}; cannot delete server-side uploads"),
                 (
                     "file.translateChinese",
                     "Translate to Chinese",
-                    "{allowHttpUpload:true,scope?:selection|workbook}; default selection; opens a new unsaved workbook",
+                    "{allowApiUpload:true,scope?:selection|workbook}; default selection; opens a new unsaved workbook",
                 ),
                 (
                     "file.translateChinese.status",

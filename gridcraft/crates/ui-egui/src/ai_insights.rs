@@ -259,7 +259,9 @@ pub(super) fn show(app: &mut SheetApp, state: &mut State, ui: &mut egui::Ui) {
             }
             if let Some((wb, si, chart)) = &st.preview {
                 let width = ui.available_width().max(180.0);
-                let (rect, _) = ui.allocate_exact_size(egui::vec2(width, width * 0.6), egui::Sense::hover());
+                // A wider conversation must not push its action buttons below the viewport.
+                // Full-size charts remain available through the dedicated preview window.
+                let (rect, _) = ui.allocate_exact_size(egui::vec2(width, (width * 0.6).min(260.0)), egui::Sense::hover());
                 ui.painter().rect_filled(rect, 2.0, egui::Color32::WHITE);
                 crate::chartview::paint_chart(ui.painter(), rect, wb, *si, chart);
                 if ui.small_button("放大预览").clicked() {

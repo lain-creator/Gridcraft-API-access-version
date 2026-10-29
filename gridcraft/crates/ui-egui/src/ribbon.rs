@@ -1274,17 +1274,7 @@ fn home(app: &mut SheetApp, ui: &mut Ui) {
     if app.services.translate_workbook.is_some() {
         sep(ui);
         ui.vertical(|ui| {
-            ui.spacing_mut().item_spacing.y = 3.0;
-            let ready = app.session.active().is_some();
-            for (label, command, tip) in [
-                ("翻译选中区域", "ui.translateSelection", "将当前框选内容翻译为英文，跳过中英双语单元格"),
-                ("翻译整个工作簿", "ui.translateWorkbook", "将所有工作表翻译为英文，跳过中英双语单元格"),
-                ("翻译成中文", "ui.translateChinese", "将当前框选内容翻译为中文，跳过已有中文或双语的单元格"),
-            ] {
-                if ui.add_enabled(ready, egui::Button::new(label).min_size(vec2(158.0, 22.0))).on_hover_text(tip).clicked() {
-                    app.run_or_alert(command, json!({}));
-                }
-            }
+            app.translation_controls(ui);
         });
     }
 }

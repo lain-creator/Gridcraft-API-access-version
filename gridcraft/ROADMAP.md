@@ -1,5 +1,7 @@
 # GridCraft roadmap
 
+> **API-UI.2 · 2026-10-29:** larger resizable translation/API windows, viewport constraints, unified 中译英 / 英译中 directions, independent selection/whole-file scope, backward-compatible commands. Synthetic/mock tests only; upstream parity estimates unchanged.
+
 > **Local API edition update: 2026-10-29** · 798 curated public PCB pairs, including user-authorized personal PCB terms, are embedded in binaries and public packages. Clean installs need no imported glossary; local additions remain separate and are merged in memory. No change to upstream parity estimates. See [public glossary](docs/local-public-pcb-glossary.md).
 
 Local API edition update (2026-10-28, PCB glossary): user-imported local terminology, bounded longest-phrase matching, contextual ambiguity handling, matched-term API prompts, and regression guards for lamination/press-fit and unsupported attachment claims. No bundled private glossary or new website dependency; see [local-api-assistant.md](docs/local-api-assistant.md). Upstream parity estimates unchanged.

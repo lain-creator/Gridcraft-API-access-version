@@ -90,10 +90,18 @@ pub(crate) struct State {
     status: Json,
     feedback: String,
     details: Vec<CellDecision>,
+    whole_workbook: bool,
 }
 impl Default for State {
     fn default() -> Self {
-        Self { job: None, visible: false, status: json!({"state":"idle","pending":false}), feedback: String::new(), details: Vec::new() }
+        Self {
+            job: None,
+            visible: false,
+            status: json!({"state":"idle","pending":false}),
+            feedback: String::new(),
+            details: Vec::new(),
+            whole_workbook: false,
+        }
     }
 }
 fn output_name(name: &str, target: TargetLanguage) -> String {
@@ -128,7 +136,7 @@ impl SheetApp {
 
     pub(crate) fn translation_command(&mut self, id: &str, p: &Json) -> Option<Result<Json, String>> {
         Some(match id {
-            "ui.translateSelection" | "ui.translateWorkbook" | "ui.translateChinese" | "ui.pcbtool" => {
+            "ui.translateSelection" | "ui.translateWorkbook" | "ui.translateEnglish" | "ui.translateChinese" | "ui.pcbtool" => {
                 self.translation.visible = true;
                 if self.translation.job.is_some() {
                     return Some(Ok(self.translation.status.clone()));
@@ -137,7 +145,11 @@ impl SheetApp {
                     return Some(Err("请先完成当前单元格编辑。".into()));
                 }
                 let target = if id == "ui.translateChinese" { TargetLanguage::Chinese } else { TargetLanguage::English };
-                let scope = if id == "ui.translateSelection" || id == "ui.translateChinese" { "selection" } else { "workbook" };
+                let scope = match id {
+                    "ui.translateEnglish" | "ui.translateChinese" => p.get("scope").and_then(Json::as_str).unwrap_or("selection"),
+                    "ui.translateSelection" => "selection",
+                    _ => "workbook",
+                };
                 // The explicit button is the user's request to send eligible text.
                 self.translation_snapshot(scope, target).and_then(|s| self.start_translation(s))
             }
@@ -259,12 +271,32 @@ impl SheetApp {
             }
         }
     }
+    pub(crate) fn translation_controls(&mut self, ui: &mut egui::Ui) {
+        ui.spacing_mut().item_spacing.y = 3.0;
+        egui::ComboBox::from_id_salt("translation_scope")
+            .width(88.0)
+            .selected_text(if self.translation.whole_workbook { "整个工作簿" } else { "当前选区" })
+            .show_ui(ui, |ui| {
+                ui.selectable_value(&mut self.translation.whole_workbook, false, "当前选区");
+                ui.selectable_value(&mut self.translation.whole_workbook, true, "整个工作簿");
+            });
+        for (label, command) in [("中译英", "ui.translateEnglish"), ("英译中", "ui.translateChinese")] {
+            if ui
+                .add_enabled(self.session.active().is_some(), egui::Button::new(label).min_size(egui::vec2(100.0, 22.0)))
+                .on_hover_text("仅点击方向按钮才发送所选范围；AI 检查双语完整性，优先 PCB 专业术语")
+                .clicked()
+            {
+                let scope = if self.translation.whole_workbook { "workbook" } else { "selection" };
+                self.run_or_alert(command, json!({"scope":scope}));
+            }
+        }
+    }
     pub(crate) fn translation_options(&mut self, ui: &mut egui::Ui) {
         if self.services.translate_workbook.is_none() {
             return;
         }
         ui.strong("第三方 API 中英翻译");
-        ui.label("“开始”工具栏右侧：“翻译选中区域”和“翻译整个工作簿”翻译为英文；“翻译成中文”处理当前选区。打开文件不自动翻译。");
+        ui.label("“开始”工具栏右侧：先选择当前选区或整个工作簿，再点击“中译英”或“英译中”。打开文件或切换范围不发送内容。");
         ui.label(crate::i18n::current(ui.ctx()).tr("由 AI 判断是否已有完整译文；PCB/PTH/NPTH、型号和单位不再当作完整英文。结果保留原文，译文继承该单元格的字体和字号，自动换行并按需增高行。"));
         ui.label(
             crate::i18n::current(ui.ctx())
@@ -277,10 +309,14 @@ impl SheetApp {
         }
         let mut visible = true;
         egui::Window::new("API · 中英翻译")
+            .id(egui::Id::new("translation_result_v2"))
             .open(&mut visible)
-            .default_width(500.0)
-            .resizable(false)
-            .default_pos(ctx.content_rect().center() - egui::vec2(250.0, 120.0))
+            .default_size(egui::vec2(960.0, 640.0).min(ctx.content_rect().size() - egui::vec2(40.0, 70.0)))
+            .min_size(egui::vec2(360.0, 260.0).min(ctx.content_rect().size() * 0.7))
+            .constrain_to(ctx.content_rect())
+            .resizable(true)
+            .collapsible(true)
+            .vscroll(true)
             .show(ctx, |ui| {
                 if let Ok(profile) = self.ai.settings.selected() {
                     ui.label(format!("服务商：{} · {}", profile.name, profile.model));
@@ -303,12 +339,9 @@ impl SheetApp {
                     ui.label(&self.translation.feedback);
                     if !self.translation.details.is_empty() {
                         ui.collapsing("查看单元格处理明细", |ui| {
-                            egui::ScrollArea::vertical().max_height(240.0).show_rows(ui, 22.0, self.translation.details.len(), |ui, rows| {
-                                for index in rows {
-                                    if let Some(d) = self.translation.details.get(index) {
-                                        let label = format!("{}!{} · {}：{}", d.sheet, d.cell, d.action, d.reason);
-                                        ui.add(egui::Label::new(&label).truncate()).on_hover_text(label);
-                                    }
+                            egui::ScrollArea::vertical().max_height(ui.available_height().max(280.0)).show(ui, |ui| {
+                                for d in &self.translation.details {
+                                    ui.add(egui::Label::new(format!("{}!{} · {}：{}", d.sheet, d.cell, d.action, d.reason)).wrap());
                                 }
                             });
                         });
@@ -328,6 +361,33 @@ impl SheetApp {
 mod tests {
     use super::*;
     use crate::Services;
+    #[test]
+    fn large_translation_window_is_resizable_and_fits_small_screens() {
+        use egui_kittest::kittest::Queryable;
+        for width in [1440.0, 800.0] {
+            let mut app = fixture(Arc::new(|_, _, _| Err("No API calls expected".into()))).unwrap();
+            app.translation.visible = true;
+            app.translation.feedback = "合成界面检查：原文和译文保持独立，未调用 API。".into();
+            let mut h = egui_kittest::Harness::builder().with_size(egui::vec2(width, 900.0)).build_ui_state(
+                |ui, app: &mut SheetApp| {
+                    let ctx = ui.ctx().clone();
+                    app.logic(&ctx);
+                    app.ui(ui);
+                },
+                app,
+            );
+            h.run_steps(8);
+            let rect = h.get_by_label("API · 中英翻译").rect();
+            assert!(rect.width() <= width && rect.height() <= 900.0, "{rect:?}");
+            if width > 1000.0 {
+                assert!(rect.width() >= 900.0, "{rect:?}");
+                if let Ok(dir) = std::env::var("CRAFT_UI_QA_DIR") {
+                    h.render().unwrap().save(std::path::Path::new(&dir).join("gridcraft-translation.png")).unwrap();
+                }
+            }
+            assert!(h.state().translation.job.is_none());
+        }
+    }
     fn fixture(service: Translator) -> Result<SheetApp, String> {
         let mut session = gridcraft_engine::Session::new();
         session.new_workbook();
@@ -345,6 +405,35 @@ mod tests {
         }
         app.shutdown_translation();
         Err("test worker timeout".into())
+    }
+    #[test]
+    fn direction_buttons_send_only_the_chosen_scope_and_never_on_scope_change() -> Result<(), String> {
+        use egui_kittest::kittest::Queryable;
+        for whole in [false, true] {
+            for (button, target) in [("中译英", TargetLanguage::English), ("英译中", TargetLanguage::Chinese)] {
+                let calls = Arc::new(Mutex::new(Vec::new()));
+                let worker_calls = calls.clone();
+                let mut app = fixture(Arc::new(move |request, _, _| {
+                    worker_calls.lock().map_err(|e| e.to_string())?.push((request.target, request.scope));
+                    Ok(Translation::default())
+                }))?;
+                app.run("selection.set", json!({"range":"A1:B2"}))?;
+                app.translation.whole_workbook = whole;
+                let mut h = egui_kittest::Harness::builder()
+                    .with_size(egui::vec2(800.0, 600.0))
+                    .build_ui_state(|ui, app: &mut SheetApp| app.translation_controls(ui), app);
+                h.run_steps(3);
+                assert!(calls.lock().map_err(|e| e.to_string())?.is_empty());
+                h.get_by_label(button).click();
+                h.run_steps(3);
+                wait(h.state_mut())?;
+                let scope =
+                    if whole { Scope::Workbook } else { Scope::Selection { sheet: 0, ranges: vec![RangeRef::parse("A1:B2").ok_or("range")?] } };
+                assert_eq!(*calls.lock().map_err(|e| e.to_string())?, vec![(target, scope)]);
+                assert_eq!(h.state().session.active().ok_or("doc")?.selection.a1(), "A1:B2");
+            }
+        }
+        Ok(())
     }
     #[test]
     fn selected_snapshot_result_preserves_later_edits_and_selection() -> Result<(), String> {

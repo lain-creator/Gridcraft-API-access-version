@@ -190,7 +190,11 @@ fn assistant_panel_resizes_expands_and_restores_after_minimize() -> Result<(), S
     let panel = |h: &egui_kittest::Harness<'_, SheetApp>, name| {
         egui::containers::panel::PanelState::load(&h.ctx, egui::Id::new(name)).map(|s| s.outer_rect).ok_or("panel state")
     };
-    let initial = panel(&h, "ai_assistant")?;
+    let initial = panel(&h, "ai_assistant_v2")?;
+    assert!(initial.width() >= 550.0, "AI starts wider by default");
+    if let Ok(dir) = std::env::var("CRAFT_UI_QA_DIR") {
+        h.render().map_err(|e| e.to_string())?.save(std::path::Path::new(&dir).join("gridcraft-ai.png")).map_err(|e| e.to_string())?;
+    }
     // The exact shared edge is also the grid's inclusive right boundary.
     // Grab on the panel side of the built-in resize affordance.
     let edge = egui::pos2(initial.left() + 3.0, initial.center().y);
@@ -203,20 +207,20 @@ fn assistant_panel_resizes_expands_and_restores_after_minimize() -> Result<(), S
     h.run_steps(3);
     h.drop_at(edge - egui::vec2(100.0, 0.0));
     h.run_steps(2);
-    let resized = panel(&h, "ai_assistant")?.width();
+    let resized = panel(&h, "ai_assistant_v2")?.width();
     assert!(resized > initial.width() + 70.0);
     h.get_by_label("放大").click();
     h.run_steps(3);
-    assert!(panel(&h, "ai_expanded")?.width() > resized);
+    assert!(panel(&h, "ai_expanded_v2")?.width() > resized);
     h.get_by_label("缩小").click();
     h.run_steps(3);
-    assert!((panel(&h, "ai_assistant")?.width() - resized).abs() < 2.0);
+    assert!((panel(&h, "ai_assistant_v2")?.width() - resized).abs() < 2.0);
     h.get_by_label("—").click();
     h.run_steps(3);
     assert!(h.state().ai.minimized);
     h.get_by_label("AI").click();
     h.run_steps(3);
     assert!(!h.state().ai.minimized);
-    assert!((panel(&h, "ai_assistant")?.width() - resized).abs() < 2.0);
+    assert!((panel(&h, "ai_assistant_v2")?.width() - resized).abs() < 2.0);
     Ok(())
 }
